@@ -7,7 +7,7 @@
   "url": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024059_1_VIDEO"
  },
  "counts": {
-  "api_times": 7,
+  "api_times": 8,
   "clamped_times": 0,
   "confirmed_times": 1,
   "observed_times": 0,
@@ -103,9 +103,21 @@
    ],
    "count_after": 8,
    "t": "2026-09-19T08:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-19T10:06:39Z",
+     "code": "BU",
+     "name": "Myanmar",
+     "source": "api"
+    }
+   ],
+   "count_after": 9,
+   "t": "2026-09-19T10:00:00Z"
   }
  ],
- "generated": "2026-09-19T08:52:35Z",
+ "generated": "2026-09-19T10:44:21Z",
  "history": [
   {
    "count": 1,
@@ -138,6 +150,10 @@
   {
    "count": 8,
    "t": "2026-09-19T08:16:53Z"
+  },
+  {
+   "count": 9,
+   "t": "2026-09-19T10:06:39Z"
   }
  ],
  "integrity": {
@@ -150,10 +166,10 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "last_full_verification": "2026-09-19T08:46:04Z",
-  "listing_count": 8,
+  "listing_count": 9,
   "listing_lag": []
  },
- "last_checked": "2026-09-19T08:52:35Z",
+ "last_checked": "2026-09-19T10:44:21Z",
  "pending": [
   {
    "code": "ABB",
@@ -2559,15 +2575,6 @@
    "vernacular": "Língua de Sinais Moçambicana"
   },
   {
-   "code": "BU",
-   "direction": "ltr",
-   "locale": "my",
-   "name": "Myanmar",
-   "script": "MYANMAR",
-   "sign": false,
-   "vernacular": "မြန်မာ"
-  },
-  {
    "code": "BUS",
    "direction": "ltr",
    "locale": "sgn-mm",
@@ -4269,6 +4276,24 @@
    "title": "2026 ಆಡಳಿತ ಮಂಡಲಿ ಅಪ್ಡೇಟ್‌ #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KA",
    "vernacular": "ಕನ್ನಡ"
+  },
+  {
+   "api_published_at": "2026-09-19T10:06:39Z",
+   "beyond_baseline": false,
+   "code": "BU",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T10:44:21Z",
+   "listed_by_api": true,
+   "locale": "my",
+   "name": "Myanmar",
+   "published_at": "2026-09-19T10:06:39Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "MYANMAR",
+   "sign": false,
+   "title": "၂၀၂၆ အုပ်ချုပ်ရေးအဖွဲ့ဆီက နောက်ဆုံးရသတင်း #၆",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BU",
+   "vernacular": "မြန်မာ"
   }
  ],
  "removed": [],
@@ -4278,12 +4303,12 @@
  },
  "stats": {
   "added_1h": 1,
-  "added_24h": 8,
-  "added_4h": 3,
-  "days_since_release": 0.79,
-  "pending_count": 441,
-  "percent": 1.8,
-  "published_count": 8,
+  "added_24h": 9,
+  "added_4h": 4,
+  "days_since_release": 0.86,
+  "pending_count": 440,
+  "percent": 2.0,
+  "published_count": 9,
   "target": 449
  },
  "update": {
