@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.harryjoyce.gb-update-tracker</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/hjoyce/development/gb-update/tools/trigger-tracker.sh</string>
+  </array>
+
+  <!-- Every 30 minutes. StartInterval rather than StartCalendarInterval so a
+       sleeping Mac coalesces to a single run on wake instead of trying to
+       replay every missed wall-clock slot. -->
+  <key>StartInterval</key>
+  <integer>1800</integer>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>StandardOutPath</key>
+  <string>/Users/hjoyce/Library/Logs/gb-update-tracker.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/hjoyce/Library/Logs/gb-update-tracker.err.log</string>
+</dict>
+</plist>

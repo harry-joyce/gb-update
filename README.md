@@ -189,7 +189,45 @@ Two things worth knowing:
   data -- publish times come from each language's own record, so whenever a run
   lands it reconciles the full current state.
 
-## Running it locally
+## Local trigger (stopgap while GitHub's scheduler is broken)
+
+GitHub has never delivered a scheduled event to this repository. A minimal
+probe workflow — `*/10 * * * *`, one `echo`, `state: active` — never fired
+either, so the fault is repository/account level, not in these workflow files.
+Everything inspectable was ruled out: correct cron on the default branch,
+workflows active, re-registered twice (cron edit and disable/enable), 0 of
+2,000 Actions minutes used, no spending limit, no Actions-tab banner, account
+created in 2020, and no platform incident.
+
+So a launchd agent on the local Mac dispatches the workflow every 30 minutes
+instead:
+
+```sh
+tools/install-local-trigger.sh     # install and load
+tools/uninstall-local-trigger.sh   # remove when no longer needed
+tail -f ~/Library/Logs/gb-update-tracker.log
+```
+
+The Mac only *triggers* the run — the checking, committing and pushing stay in
+GitHub Actions, which works fine via `push` and `workflow_dispatch`. That avoids
+a second, divergent local code path.
+
+Two consequences worth knowing:
+
+- **It only runs while the Mac is awake and logged in.** `StartInterval` is used
+  rather than `StartCalendarInterval`, so a sleeping Mac coalesces to one run on
+  wake instead of replaying every missed slot. A gap costs freshness only —
+  publish times come from each language's own record, so the next run reconciles
+  the full state no matter how long the gap.
+- **`schedule-probe.yml` is deliberately left in place.** It is the cleanest
+  signal that GitHub's scheduling has recovered: the moment it starts appearing
+  in the Actions tab, the local agent can be uninstalled. Delete the probe then
+  too. Duplicate runs in the meantime are harmless — the tracker is idempotent
+  and throttled.
+
+## Running it manually
+
+
 
 ```sh
 python3 scripts/track.py          # check the API and update data/report.json
