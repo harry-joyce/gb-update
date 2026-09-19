@@ -89,21 +89,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 7,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 6,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 7
  },
  "counts": {
   "api_times": 19,
-  "awaiting_catalogue": 3,
+  "awaiting_catalogue": 7,
   "catalogued": 20,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 3,
+  "file_times": 7,
   "observed_times": 0,
-  "sign_languages": 3
+  "sign_languages": 4
  },
  "events": [
   {
@@ -334,13 +334,47 @@
      "in_catalog": false,
      "name": "Mizo",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-19T15:41:42Z",
+     "code": "ZSL",
+     "in_catalog": false,
+     "name": "Zimbabwe Sign Language",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-19T15:47:26Z",
+     "code": "PJ",
+     "in_catalog": false,
+     "name": "Punjabi",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 23,
+   "count_after": 25,
    "t": "2026-09-19T15:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-19T16:13:26Z",
+     "code": "D",
+     "in_catalog": false,
+     "name": "Danish",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-19T16:15:12Z",
+     "code": "AE",
+     "in_catalog": false,
+     "name": "Assamese",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 27,
+   "t": "2026-09-19T16:00:00Z"
   }
  ],
- "generated": "2026-09-19T15:45:34Z",
+ "generated": "2026-09-19T16:15:37Z",
  "history": [
   {
    "count": 1,
@@ -433,6 +467,22 @@
   {
    "count": 23,
    "t": "2026-09-19T15:40:18Z"
+  },
+  {
+   "count": 24,
+   "t": "2026-09-19T15:41:42Z"
+  },
+  {
+   "count": 25,
+   "t": "2026-09-19T15:47:26Z"
+  },
+  {
+   "count": 26,
+   "t": "2026-09-19T16:13:26Z"
+  },
+  {
+   "count": 27,
+   "t": "2026-09-19T16:15:12Z"
   }
  ],
  "integrity": {
@@ -446,13 +496,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": null,
-  "files_count": 23,
+  "files_count": 27,
   "last_full_verification": "2026-09-19T08:46:04Z",
   "listing_count": 20,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-19T15:45:34Z",
+ "last_checked": "2026-09-19T16:15:37Z",
  "pending": [
   {
    "code": "ABB",
@@ -606,15 +656,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "ashaninka"
-  },
-  {
-   "code": "AE",
-   "direction": "ltr",
-   "locale": "as",
-   "name": "Assamese",
-   "script": "BENGALI",
-   "sign": false,
-   "vernacular": "অসমীয়া"
   },
   {
    "code": "IE",
@@ -1182,15 +1223,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Dangme"
-  },
-  {
-   "code": "D",
-   "direction": "ltr",
-   "locale": "da",
-   "name": "Danish",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Dansk"
   },
   {
    "code": "DI",
@@ -3200,15 +3232,6 @@
    "vernacular": "Língua Gestual Portuguesa"
   },
   {
-   "code": "PJ",
-   "direction": "ltr",
-   "locale": "pa",
-   "name": "Punjabi",
-   "script": "GURMUKHI",
-   "sign": false,
-   "vernacular": "ਪੰਜਾਬੀ"
-  },
-  {
    "code": "PJN",
    "direction": "rtl",
    "locale": "pnb",
@@ -4271,15 +4294,6 @@
    "vernacular": "diidxazá"
   },
   {
-   "code": "ZSL",
-   "direction": "ltr",
-   "locale": "zib",
-   "name": "Zimbabwe Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Zimbabwe Sign Language"
-  },
-  {
    "code": "ZU",
    "direction": "ltr",
    "locale": "zu",
@@ -5037,6 +5051,137 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LS",
    "vernacular": "Mizo"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "ZSL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T15:41:42Z",
+   "files_at": "2026-09-19T15:41:42Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-19T15:41:42Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-19T16:15:37Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "zib",
+   "name": "Zimbabwe Sign Language",
+   "published_at": "2026-09-19T15:41:42Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-19T15:41:42Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ZSL",
+   "vernacular": "Zimbabwe Sign Language"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "PJ",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T15:47:26Z",
+   "files_at": "2026-09-19T15:47:26Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-19T15:47:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-19T16:15:37Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "pa",
+   "name": "Punjabi",
+   "published_at": "2026-09-19T15:47:26Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-19T15:47:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "GURMUKHI",
+   "sign": false,
+   "title": "ਵੀਡੀਓ",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=PJ",
+   "vernacular": "ਪੰਜਾਬੀ"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "D",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T16:13:26Z",
+   "files_at": "2026-09-19T16:13:26Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-19T16:13:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-19T16:15:37Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "da",
+   "name": "Danish",
+   "published_at": "2026-09-19T16:13:26Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-19T16:13:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Rapport nr. 6 fra Det Styrende Råd, 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=D",
+   "vernacular": "Dansk"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "AE",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T16:15:12Z",
+   "files_at": "2026-09-19T16:15:12Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-19T16:15:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-19T16:15:37Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "as",
+   "name": "Assamese",
+   "published_at": "2026-09-19T16:15:12Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-19T16:15:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "BENGALI",
+   "sign": false,
+   "title": "ভিডিঅʼ",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AE",
+   "vernacular": "অসমীয়া"
   }
  ],
  "removed": [],
@@ -5046,17 +5191,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
-  "added_24h": 22,
-  "added_4h": 13,
+  "added_1h": 7,
+  "added_24h": 26,
+  "added_4h": 17,
   "catalog_count": 20,
-  "catalog_lag": 3,
+  "catalog_lag": 7,
   "catalog_percent": 4.5,
-  "days_since_release": 1.07,
-  "pending_count": 426,
-  "percent": 5.1,
-  "published_count": 23,
-  "publisher_percent": 50.8,
+  "days_since_release": 1.09,
+  "pending_count": 422,
+  "percent": 6.0,
+  "published_count": 27,
+  "publisher_percent": 51.0,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
