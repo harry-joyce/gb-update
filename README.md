@@ -157,8 +157,32 @@ python3 scripts/build_weights.py ~/Downloads/Languages.xlsx
 `data/weights.json` holds publisher counts, so it is gitignored, as are
 `*.xlsx`. The script itself contains no data and is committed. `track.py` picks
 the file up if it exists and skips the figure silently if it does not — so a
-runner without the spreadsheet still produces a valid report, just without that
-tile.
+runner without it still produces a valid report, just without that tile.
+
+### Getting the weights to the runner
+
+The Actions runner checks the repository out, and `data/weights.json` is not in
+it. So the tracker workflow reconstructs the file from a repository secret,
+`LANGUAGE_WEIGHTS_B64`, writing it to disk for that job only:
+
+```sh
+base64 < data/weights.json | tr -d '\n' | gh secret set LANGUAGE_WEIGHTS_B64
+```
+
+Re-run that after every `build_weights.py` rebuild, or the live figure keeps
+using the old counts. Repository secrets are not exposed to pull requests from
+forks and cannot be read back out of the UI, so the counts stay out of the git
+history and off the public site — only the rounded percentage is ever
+committed. The encoded file is about 20 KB, well inside the 48 KB secret limit.
+
+The step is a deliberate no-op when the secret is unset, so the workflow still
+works for a checkout without it. It does, however, **abort the run** if
+`data/weights.json` is ever not gitignored: losing the figure for one cycle is
+cosmetic, and committing the counts would not be.
+
+`verify_times.py` needs none of this — it rewrites only the `integrity` block
+and leaves `stats` alone, so the figure survives the daily verification pass
+untouched.
 
 Three details decide what the number means:
 
@@ -175,8 +199,10 @@ Three details decide what the number means:
 - **The denominator is worldwide, not the expected set.** The percentage is
   measured against every publisher in the spreadsheet, so it is the literal
   share of the audience reached. The expected 449 languages cover 99.2% of
-  that total, which is why the figure tops out just short of 100 — the
-  ceiling is reported as `publisher_percent_ceiling` in `stats`.
+  that total, which is why the figure tops out just short of 100. That
+  shortfall is the point, not an artifact: reaching every expected language
+  still leaves part of the worldwide audience without the video. The ceiling
+  is reported as `publisher_percent_ceiling` in `stats`.
 
 Because the largest languages publish first, this figure runs far ahead of the
 language count: 10 of 449 languages was already most of the audience.

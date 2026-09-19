@@ -32,6 +32,31 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Publisher counts are confidential, so data/weights.json is gitignored
+      # and never in the repository. The runner gets it from a secret instead,
+      # writing it to disk for this job only. Without the secret the step is a
+      # no-op and track.py simply omits the audience figure.
+      - name: Provide publisher weights
+        env:
+          WEIGHTS_B64: ${{ secrets.LANGUAGE_WEIGHTS_B64 }}
+        run: |
+          if [ -z "$WEIGHTS_B64" ]; then
+            echo "No LANGUAGE_WEIGHTS_B64 secret set; audience figure will be omitted."
+            exit 0
+          fi
+          printf '%s' "$WEIGHTS_B64" | base64 -d > data/weights.json
+
+          # Refuse to continue if the file could ever be committed. A run
+          # without the figure is a cosmetic loss; leaking the counts is not.
+          if ! git check-ignore -q data/weights.json; then
+            echo "::error::data/weights.json is not gitignored -- refusing to run." >&2
+            rm -f data/weights.json
+            exit 1
+          fi
+          python3 -c "import json; d = json.load(open('data/weights.json')); \
+            assert d['publishers'] and d['global_publishers'], 'weights look empty'; \
+            print('weights loaded: %d languages' % len(d['publishers']))"
+
       - name: Check jw.org for newly available languages
         id: track
         run: python3 scripts/track.py
