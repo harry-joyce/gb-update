@@ -153,21 +153,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 19,
-  "awaiting_catalogue": 2,
+  "awaiting_catalogue": 3,
   "catalogued": 36,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 18,
+  "file_times": 19,
   "observed_times": 0,
-  "sign_languages": 4
+  "sign_languages": 5
  },
  "events": [
   {
@@ -475,6 +475,13 @@
   {
    "added": [
     {
+     "at": "2026-09-19T17:05:53Z",
+     "code": "LSP",
+     "in_catalog": false,
+     "name": "Paraguayan Sign Language",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-19T17:47:22Z",
      "code": "IC",
      "in_catalog": true,
@@ -503,7 +510,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 36,
+   "count_after": 37,
    "t": "2026-09-19T17:00:00Z"
   },
   {
@@ -523,11 +530,11 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 38,
+   "count_after": 39,
    "t": "2026-09-19T18:00:00Z"
   }
  ],
- "generated": "2026-09-19T18:45:50Z",
+ "generated": "2026-09-19T19:45:54Z",
  "history": [
   {
    "count": 1,
@@ -659,26 +666,30 @@
   },
   {
    "count": 33,
-   "t": "2026-09-19T17:47:22Z"
+   "t": "2026-09-19T17:05:53Z"
   },
   {
    "count": 34,
-   "t": "2026-09-19T17:47:58Z"
+   "t": "2026-09-19T17:47:22Z"
   },
   {
    "count": 35,
-   "t": "2026-09-19T17:48:40Z"
+   "t": "2026-09-19T17:47:58Z"
   },
   {
    "count": 36,
-   "t": "2026-09-19T17:50:21Z"
+   "t": "2026-09-19T17:48:40Z"
   },
   {
    "count": 37,
-   "t": "2026-09-19T18:19:23Z"
+   "t": "2026-09-19T17:50:21Z"
   },
   {
    "count": 38,
+   "t": "2026-09-19T18:19:23Z"
+  },
+  {
+   "count": 39,
    "t": "2026-09-19T18:40:20Z"
   }
  ],
@@ -693,13 +704,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": null,
-  "files_count": 38,
+  "files_count": 39,
   "last_full_verification": "2026-09-19T08:46:04Z",
   "listing_count": 36,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-19T18:45:50Z",
+ "last_checked": "2026-09-19T19:45:54Z",
  "pending": [
   {
    "code": "ABB",
@@ -3249,15 +3260,6 @@
    "vernacular": "Papiamentu (Kòrsou)"
   },
   {
-   "code": "LSP",
-   "direction": "ltr",
-   "locale": "pys",
-   "name": "Paraguayan Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "lengua de señas paraguaya"
-  },
-  {
    "code": "PR",
    "direction": "rtl",
    "locale": "fa",
@@ -5446,6 +5448,38 @@
    "vernacular": "తెలుగు"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LSP",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T17:05:53Z",
+   "files_at": "2026-09-19T17:05:53Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-19T17:05:53Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-19T19:45:54Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "pys",
+   "name": "Paraguayan Sign Language",
+   "published_at": "2026-09-19T17:05:53Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-19T17:05:53Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 | Informe 6 del Cuerpo Gobernante",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LSP",
+   "vernacular": "lengua de señas paraguaya"
+  },
+  {
    "api_published_at": "2026-09-19T17:47:33Z",
    "beyond_baseline": false,
    "catalog_at": "2026-09-19T17:47:33Z",
@@ -5649,16 +5683,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 6,
-  "added_24h": 37,
-  "added_4h": 18,
+  "added_1h": 0,
+  "added_24h": 38,
+  "added_4h": 15,
   "catalog_count": 36,
-  "catalog_lag": 2,
+  "catalog_lag": 3,
   "catalog_percent": 8.0,
-  "days_since_release": 1.2,
-  "pending_count": 411,
-  "percent": 8.5,
-  "published_count": 38,
+  "days_since_release": 1.24,
+  "pending_count": 410,
+  "percent": 8.7,
+  "published_count": 39,
   "publisher_percent": 61.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
