@@ -1,0 +1,27 @@
+name: Schedule probe
+
+# TEMPORARY DIAGNOSTIC. Two real workflows registered schedules and GitHub has
+# delivered no scheduled run at all (09:17, 10:17, 11:17, 12:47 UTC all missed)
+# despite correct config, an active workflow, 0/2000 Actions minutes used, no
+# spending limit, no Actions-tab banner and no platform incident. This workflow
+# is as small as a scheduled workflow can be: if it fires and the others do
+# not, the fault is in those files; if nothing fires, it is repository- or
+# account-level and belongs in a GitHub support ticket.
+#
+# Delete this file once scheduling is confirmed working.
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report that a scheduled run reached a runner
+        run: |
+          echo "Triggered by: ${{ github.event_name }}"
+          echo "UTC now: $(date -u '+%Y-%m-%dT%H:%M:%SZ')"
