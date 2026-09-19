@@ -123,7 +123,7 @@
    "t": "2026-09-19T10:00:00Z"
   }
  ],
- "generated": "2026-09-19T10:55:28Z",
+ "generated": "2026-09-19T11:56:25Z",
  "history": [
   {
    "count": 1,
@@ -176,12 +176,10 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "last_full_verification": "2026-09-19T08:46:04Z",
-  "listing_count": 9,
-  "listing_lag": [
-   "AM"
-  ]
+  "listing_count": 10,
+  "listing_lag": []
  },
- "last_checked": "2026-09-19T10:55:28Z",
+ "last_checked": "2026-09-19T11:56:25Z",
  "pending": [
   {
    "code": "ABB",
@@ -4304,7 +4302,7 @@
    "code": "AM",
    "direction": "ltr",
    "first_observed": "2026-09-19T10:54:07Z",
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "am",
    "name": "Amharic",
    "published_at": "2026-09-19T10:26:58Z",
@@ -4323,10 +4321,10 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
+  "added_1h": 0,
   "added_24h": 10,
-  "added_4h": 5,
-  "days_since_release": 0.87,
+  "added_4h": 3,
+  "days_since_release": 0.91,
   "pending_count": 439,
   "percent": 2.2,
   "published_count": 10,
@@ -4335,7 +4333,7 @@
  "sweep": {
   "discovered": [],
   "last_checked_count": 60,
-  "offset": 120,
+  "offset": 180,
   "pending_total": 439,
   "size": 60
  },
