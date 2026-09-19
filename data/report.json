@@ -89,19 +89,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 12,
+  "last_checked_count": 16,
   "newly_catalogued": [],
-  "offset": 5,
+  "offset": 13,
   "size": 40,
-  "unlisted_total": 12
+  "unlisted_total": 16
  },
  "counts": {
   "api_times": 19,
-  "awaiting_catalogue": 12,
+  "awaiting_catalogue": 16,
   "catalogued": 20,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 12,
+  "file_times": 16,
   "observed_times": 0,
   "sign_languages": 4
  },
@@ -407,9 +407,43 @@
    ],
    "count_after": 32,
    "t": "2026-09-19T16:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-19T17:47:22Z",
+     "code": "IC",
+     "in_catalog": false,
+     "name": "Icelandic",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-19T17:47:58Z",
+     "code": "NM",
+     "in_catalog": false,
+     "name": "Cinamwanga",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-19T17:48:40Z",
+     "code": "JCR",
+     "in_catalog": false,
+     "name": "Jamaican Creole",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-19T17:50:21Z",
+     "code": "TB",
+     "in_catalog": false,
+     "name": "Chitumbuka",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 36,
+   "t": "2026-09-19T17:00:00Z"
   }
  ],
- "generated": "2026-09-19T17:15:47Z",
+ "generated": "2026-09-19T18:15:47Z",
  "history": [
   {
    "count": 1,
@@ -538,6 +572,22 @@
   {
    "count": 32,
    "t": "2026-09-19T16:55:33Z"
+  },
+  {
+   "count": 33,
+   "t": "2026-09-19T17:47:22Z"
+  },
+  {
+   "count": 34,
+   "t": "2026-09-19T17:47:58Z"
+  },
+  {
+   "count": 35,
+   "t": "2026-09-19T17:48:40Z"
+  },
+  {
+   "count": 36,
+   "t": "2026-09-19T17:50:21Z"
   }
  ],
  "integrity": {
@@ -551,13 +601,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": null,
-  "files_count": 32,
+  "files_count": 36,
   "last_full_verification": "2026-09-19T08:46:04Z",
   "listing_count": 20,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-19T17:15:47Z",
+ "last_checked": "2026-09-19T18:15:47Z",
  "pending": [
   {
    "code": "ABB",
@@ -1091,15 +1141,6 @@
    "vernacular": "Chitonga (Zimbabwe)"
   },
   {
-   "code": "TB",
-   "direction": "ltr",
-   "locale": "tum",
-   "name": "Chitumbuka",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Chitumbuka"
-  },
-  {
    "code": "YA",
    "direction": "ltr",
    "locale": "yao",
@@ -1152,15 +1193,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Cibemba"
-  },
-  {
-   "code": "NM",
-   "direction": "ltr",
-   "locale": "mwn",
-   "name": "Cinamwanga",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Cinamwanga"
   },
   {
    "code": "CIN",
@@ -1802,15 +1834,6 @@
    "vernacular": "Ibinda"
   },
   {
-   "code": "IC",
-   "direction": "ltr",
-   "locale": "is",
-   "name": "Icelandic",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "íslenska"
-  },
-  {
    "code": "ID",
    "direction": "ltr",
    "locale": "idu",
@@ -1926,15 +1949,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Langue des signes ivoirienne"
-  },
-  {
-   "code": "JCR",
-   "direction": "ltr",
-   "locale": "jam-x-jcr",
-   "name": "Jamaican Creole",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Patwa"
   },
   {
    "code": "JML",
@@ -5356,6 +5370,137 @@
    "title": "వీడియో",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TU",
    "vernacular": "తెలుగు"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "IC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T17:47:22Z",
+   "files_at": "2026-09-19T17:47:22Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-19T17:47:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-19T18:15:47Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "is",
+   "name": "Icelandic",
+   "published_at": "2026-09-19T17:47:22Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-19T17:47:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Skilaboð frá stjórnandi ráði (nr. 6, 2026)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=IC",
+   "vernacular": "íslenska"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T17:47:58Z",
+   "files_at": "2026-09-19T17:47:58Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-19T17:47:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-19T18:15:47Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "mwn",
+   "name": "Cinamwanga",
+   "published_at": "2026-09-19T17:47:58Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-19T17:47:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NM",
+   "vernacular": "Cinamwanga"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "JCR",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T17:48:40Z",
+   "files_at": "2026-09-19T17:48:40Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-19T17:48:40Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-19T18:15:47Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "jam-x-jcr",
+   "name": "Jamaican Creole",
+   "published_at": "2026-09-19T17:48:40Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-19T17:48:40Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=JCR",
+   "vernacular": "Patwa"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TB",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T17:50:21Z",
+   "files_at": "2026-09-19T17:50:21Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-19T17:50:21Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-19T18:15:47Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tum",
+   "name": "Chitumbuka",
+   "published_at": "2026-09-19T17:50:21Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-19T17:50:21Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TB",
+   "vernacular": "Chitumbuka"
   }
  ],
  "removed": [],
@@ -5365,17 +5510,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 5,
-  "added_24h": 31,
+  "added_1h": 4,
+  "added_24h": 35,
   "added_4h": 18,
   "catalog_count": 20,
-  "catalog_lag": 12,
+  "catalog_lag": 16,
   "catalog_percent": 4.5,
-  "days_since_release": 1.14,
-  "pending_count": 417,
-  "percent": 7.1,
-  "published_count": 32,
-  "publisher_percent": 51.5,
+  "days_since_release": 1.18,
+  "pending_count": 413,
+  "percent": 8.0,
+  "published_count": 36,
+  "publisher_percent": 51.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
