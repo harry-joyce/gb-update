@@ -105,7 +105,7 @@
    "t": "2026-09-19T08:00:00Z"
   }
  ],
- "generated": "2026-09-19T08:44:44Z",
+ "generated": "2026-09-19T08:46:04Z",
  "history": [
   {
    "count": 1,
@@ -143,15 +143,18 @@
  "integrity": {
   "api_reset_detected": false,
   "api_reset_detected_at": null,
+  "bulk_rewrite_suspected": false,
   "drift_count": 0,
   "drifted": [],
   "english_api_first_published": {
    "latest": "2026-09-18T11:39:09Z",
    "pinned": "2026-09-18T11:39:09Z"
   },
-  "last_full_verification": "2026-09-19T08:42:35Z",
+  "last_full_verification": "2026-09-19T08:46:04Z",
   "listing_count": 8,
-  "listing_lag": []
+  "listing_lag": [],
+  "missing_items": [],
+  "verified_count": 8
  },
  "last_checked": "2026-09-19T08:44:44Z",
  "pending": [
