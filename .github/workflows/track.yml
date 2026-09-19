@@ -1,0 +1,65 @@
+name: Track language availability
+
+on:
+  schedule:
+    # Hourly, deliberately off the top of the hour (GitHub's scheduler is
+    # busiest at :00, which delays runs).
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/**
+      - config.json
+      - .github/workflows/track.yml
+
+permissions:
+  contents: write
+
+# Never let two runs race on the same data file.
+concurrency:
+  group: track-languages
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check jw.org for newly available languages
+        id: track
+        run: python3 scripts/track.py
+
+      - name: Record the result
+        if: steps.track.outputs.should_commit == 'true'
+        run: |
+          git config user.name "gb-update-tracker[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --quiet --cached; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          COUNT="${{ steps.track.outputs.count }}"
+          ADDED="${{ steps.track.outputs.added }}"
+          if [ "$ADDED" -gt 0 ]; then
+            MSG="$COUNT languages available (+$ADDED)"
+          else
+            MSG="$COUNT languages available (no change)"
+          fi
+          git commit -m "$MSG"
+          # Rebase before pushing in case a manual commit landed meanwhile.
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push failed (attempt $attempt); rebasing onto origin."
+            git pull --rebase --autostash origin main
+          done
+          echo "Could not push after 3 attempts." >&2
+          exit 1
