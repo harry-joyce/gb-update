@@ -105,7 +105,7 @@
    "t": "2026-09-19T08:00:00Z"
   }
  ],
- "generated": "2026-09-19T08:42:35Z",
+ "generated": "2026-09-19T08:44:44Z",
  "history": [
   {
    "count": 1,
@@ -143,7 +143,6 @@
  "integrity": {
   "api_reset_detected": false,
   "api_reset_detected_at": null,
-  "bulk_rewrite_suspected": false,
   "drift_count": 0,
   "drifted": [],
   "english_api_first_published": {
@@ -151,14 +150,10 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "last_full_verification": "2026-09-19T08:42:35Z",
-  "listing_count": 7,
-  "listing_lag": [
-   "KA"
-  ],
-  "missing_items": [],
-  "verified_count": 8
+  "listing_count": 8,
+  "listing_lag": []
  },
- "last_checked": "2026-09-19T08:41:31Z",
+ "last_checked": "2026-09-19T08:44:44Z",
  "pending": [
   {
    "code": "ABB",
@@ -4263,7 +4258,7 @@
    "code": "KA",
    "direction": "ltr",
    "first_observed": "2026-09-19T08:33:05Z",
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "kn",
    "name": "Kannada",
    "published_at": "2026-09-19T08:16:53Z",
@@ -4286,10 +4281,10 @@
   "added_7d": 8,
   "days_since_release": 0.78,
   "pending_count": 441,
-  "per_day_overall": 10.3,
+  "per_day_overall": 10.2,
   "percent": 1.8,
   "projected_completion": "2026-11-01",
-  "projected_days_remaining": 42.9,
+  "projected_days_remaining": 43.1,
   "published_count": 8,
   "target": 449
  },
