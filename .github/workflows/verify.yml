@@ -35,24 +35,37 @@ jobs:
         run: |
           git config user.name "gb-update-tracker[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/report.json
-          if git diff --quiet --cached; then
-            echo "No verification changes to record."
+
+          commit_and_push() {
+            git add data/report.json
+            if git diff --quiet --cached; then
+              echo "No verification changes to record."
+              return 0
+            fi
+            DRIFT="${{ steps.verify.outputs.drift }}"
+            if [ "${DRIFT:-0}" -gt 0 ]; then
+              git commit -m "Verified publish times ($DRIFT drifted)"
+            else
+              git commit -m "Verified publish times (no drift)"
+            fi
+            git push
+          }
+
+          if commit_and_push; then
             exit 0
           fi
-          DRIFT="${{ steps.verify.outputs.drift }}"
-          if [ "$DRIFT" -gt 0 ]; then
-            MSG="Verified publish times ($DRIFT drifted)"
-          else
-            MSG="Verified publish times (no drift)"
-          fi
-          git commit -m "$MSG"
+
+          # data/report.json is generated: never merge it. Reset to the newer
+          # upstream state and re-verify against that base instead.
           for attempt in 1 2 3; do
-            if git push; then
+            echo "Push rejected (attempt $attempt); re-verifying on top of origin."
+            git rebase --abort 2>/dev/null || true
+            git fetch origin main
+            git reset --hard origin/main
+            python3 scripts/verify_times.py
+            if commit_and_push; then
               exit 0
             fi
-            echo "Push failed (attempt $attempt); rebasing onto origin."
-            git pull --rebase --autostash origin main
           done
           echo "Could not push after 3 attempts." >&2
           exit 1
