@@ -136,9 +136,17 @@ Both selections persist in `localStorage`.
 
 ## Automation
 
-`.github/workflows/track.yml` runs hourly; `.github/workflows/verify.yml` runs
-daily at 03:41 and shares the same concurrency group, since both write
-`data/report.json`.
+Everything runs on **GitHub-hosted Actions runners** (`ubuntu-latest`, a fresh
+ephemeral VM per run) — nothing runs on a local machine, so the report keeps
+updating with no laptop involved.
+
+`.github/workflows/track.yml` runs hourly at **:17 UTC**;
+`.github/workflows/verify.yml` runs daily at **03:41 UTC**. GitHub cron is
+always UTC and has no timezone setting. Both share one concurrency group, since
+both write `data/report.json`.
+
+Scheduled workflows only run from the **default branch**, and a workflow's
+schedule is read from the copy of the file on that branch.
 
 The hourly job commits when the language list
 changes, when a resolved publish time changes (so editing `overrides.json` takes
