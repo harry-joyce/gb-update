@@ -177,19 +177,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 19,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 3,
   "catalogued": 42,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 23,
+  "file_times": 25,
   "observed_times": 0,
   "sign_languages": 6
  },
@@ -596,9 +596,29 @@
    ],
    "count_after": 43,
    "t": "2026-09-19T21:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-19T22:03:22Z",
+     "code": "TPO",
+     "in_catalog": false,
+     "name": "Portuguese (Portugal)",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-19T22:13:20Z",
+     "code": "QIC",
+     "in_catalog": false,
+     "name": "Quichua (Chimborazo)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 45,
+   "t": "2026-09-19T22:00:00Z"
   }
  ],
- "generated": "2026-09-19T21:46:04Z",
+ "generated": "2026-09-19T22:16:05Z",
  "history": [
   {
    "count": 1,
@@ -771,6 +791,14 @@
   {
    "count": 43,
    "t": "2026-09-19T21:38:49Z"
+  },
+  {
+   "count": 44,
+   "t": "2026-09-19T22:03:22Z"
+  },
+  {
+   "count": 45,
+   "t": "2026-09-19T22:13:20Z"
   }
  ],
  "integrity": {
@@ -784,13 +812,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": null,
-  "files_count": 43,
+  "files_count": 45,
   "last_full_verification": "2026-09-19T08:46:04Z",
   "listing_count": 42,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-19T21:46:04Z",
+ "last_checked": "2026-09-19T22:16:05Z",
  "pending": [
   {
    "code": "ABB",
@@ -3385,15 +3413,6 @@
    "vernacular": "Português (Angola)"
   },
   {
-   "code": "TPO",
-   "direction": "ltr",
-   "locale": "pt-pt",
-   "name": "Portuguese (Portugal)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Português (Portugal)"
-  },
-  {
    "code": "LGP",
    "direction": "ltr",
    "locale": "psr",
@@ -3473,15 +3492,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "quiché"
-  },
-  {
-   "code": "QIC",
-   "direction": "ltr",
-   "locale": "qug",
-   "name": "Quichua (Chimborazo)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "quichua (chimborazo)"
   },
   {
    "code": "QII",
@@ -5850,6 +5860,71 @@
    "title": "Відео",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=K",
    "vernacular": "українська"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TPO",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T22:03:22Z",
+   "files_at": "2026-09-19T22:03:22Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-19T22:03:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-19T22:16:05Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "pt-pt",
+   "name": "Portuguese (Portugal)",
+   "published_at": "2026-09-19T22:03:22Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-19T22:03:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vídeo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TPO",
+   "vernacular": "Português (Portugal)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "QIC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T22:13:20Z",
+   "files_at": "2026-09-19T22:13:20Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-19T22:13:20Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-19T22:16:05Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "qug",
+   "name": "Quichua (Chimborazo)",
+   "published_at": "2026-09-19T22:13:20Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-19T22:13:20Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Cuerpo Gobernante huillashcacuna (parte 6)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=QIC",
+   "vernacular": "quichua (chimborazo)"
   }
  ],
  "removed": [],
@@ -5859,17 +5934,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 41,
-  "added_4h": 10,
+  "added_1h": 3,
+  "added_24h": 43,
+  "added_4h": 8,
   "catalog_count": 42,
-  "catalog_lag": 1,
+  "catalog_lag": 3,
   "catalog_percent": 9.4,
-  "days_since_release": 1.32,
-  "pending_count": 406,
-  "percent": 9.6,
-  "published_count": 43,
-  "publisher_percent": 65.9,
+  "days_since_release": 1.34,
+  "pending_count": 404,
+  "percent": 10.0,
+  "published_count": 45,
+  "publisher_percent": 68.5,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
