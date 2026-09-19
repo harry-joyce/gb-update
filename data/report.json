@@ -7,7 +7,7 @@
   "url": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024059_1_VIDEO"
  },
  "counts": {
-  "api_times": 6,
+  "api_times": 7,
   "confirmed_times": 1,
   "sign_languages": 0
  },
@@ -89,9 +89,21 @@
    ],
    "count_after": 7,
    "t": "2026-09-19T07:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-19T08:16:53Z",
+     "code": "KA",
+     "name": "Kannada",
+     "source": "api"
+    }
+   ],
+   "count_after": 8,
+   "t": "2026-09-19T08:00:00Z"
   }
  ],
- "generated": "2026-09-19T08:32:21Z",
+ "generated": "2026-09-19T08:33:05Z",
  "history": [
   {
    "count": 1,
@@ -120,9 +132,13 @@
   {
    "count": 7,
    "t": "2026-09-19T07:39:39Z"
+  },
+  {
+   "count": 8,
+   "t": "2026-09-19T08:16:53Z"
   }
  ],
- "last_checked": "2026-09-19T08:32:21Z",
+ "last_checked": "2026-09-19T08:33:05Z",
  "pending": [
   {
    "code": "ABB",
@@ -1698,15 +1714,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kikamba"
-  },
-  {
-   "code": "KA",
-   "direction": "ltr",
-   "locale": "kn",
-   "name": "Kannada",
-   "script": "KANNADA",
-   "sign": false,
-   "vernacular": "ಕನ್ನಡ"
   },
   {
    "code": "KYK",
@@ -4215,6 +4222,22 @@
    "title": "Aggiornamento dal Corpo Direttivo n. 6 (2026)",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=I",
    "vernacular": "Italiano"
+  },
+  {
+   "api_published_at": "2026-09-19T08:16:53Z",
+   "beyond_baseline": false,
+   "code": "KA",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T08:33:05Z",
+   "locale": "kn",
+   "name": "Kannada",
+   "published_at": "2026-09-19T08:16:53Z",
+   "published_at_source": "api",
+   "script": "KANNADA",
+   "sign": false,
+   "title": "2026 ಆಡಳಿತ ಮಂಡಲಿ ಅಪ್ಡೇಟ್‌ #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KA",
+   "vernacular": "ಕನ್ನಡ"
   }
  ],
  "source": {
@@ -4222,15 +4245,15 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_24h": 7,
-  "added_7d": 7,
+  "added_24h": 8,
+  "added_7d": 8,
   "days_since_release": 0.77,
-  "pending_count": 442,
-  "per_day_overall": 9.1,
-  "percent": 1.6,
-  "projected_completion": "2026-11-07",
-  "projected_days_remaining": 48.8,
-  "published_count": 7,
+  "pending_count": 441,
+  "per_day_overall": 10.3,
+  "percent": 1.8,
+  "projected_completion": "2026-10-31",
+  "projected_days_remaining": 42.6,
+  "published_count": 8,
   "target": 449
  },
  "update": {
