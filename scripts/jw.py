@@ -1,13 +1,29 @@
 """Shared helpers for reading Governing Body Update availability from jw.org.
 
-Availability comes from the JW media ("mediator") API rather than the news
-article, because the API reports both the full language list for a video and a
-per-language `firstPublished` timestamp:
+Availability is read from two different JW APIs, because they answer two
+different questions about the same video and they do not agree:
 
-    /media-items/E/docid-<docid>_1_VIDEO   -> availableLanguages[] + firstPublished
+    pub-media  GETPUBMEDIALINKS?alllangs=1&docid=<docid>
+        Every language that has a media *file* on the CDN. This is the
+        endpoint the playback/download selector on the news article uses, and
+        it is the earliest public signal a language exists -- a file shows up
+        here as soon as it lands. One request returns the whole set, so
+        discovery needs no per-language probing at all. This is the PRIMARY
+        signal: it is what decides whether someone can watch the video.
 
-One request gives the whole language list; a per-language request gives that
-language's own publish time.
+    mediator   /media-items/E/docid-<docid>_1_VIDEO
+        availableLanguages[] -- every language published in the media
+        *catalogue*, which is what the /library/videos/ page lists. This runs
+        behind pub-media, sometimes by hours, and is kept as a SECOND series.
+
+Measured 19 Sep 2026, 14:5x UTC: pub-media listed 20 languages, the catalogue
+10. The ten extra had live, downloadable files with correct localised titles
+and no catalogue entry whatsoever, so counting the catalogue alone understated
+what a publisher could actually watch by half.
+
+A per-language request to either API gives that language's own detail: a
+localised title from both, `firstPublished` from the mediator, and
+`file.modifiedDatetime` per file from pub-media.
 """
 
 import json
@@ -23,6 +39,7 @@ UA = (
 )
 
 MEDIATOR = "https://b.jw-cdn.org/apis/mediator/v1"
+PUBMEDIA = "https://b.jw-cdn.org/apis/pub-media/GETPUBMEDIALINKS"
 LANGUAGES_URL = "https://www.jw.org/en/languages/"
 
 
@@ -44,8 +61,14 @@ def _ssl_context():
 _CONTEXT = _ssl_context()
 
 
-def fetch(url, attempts=4, timeout=45):
-    """GET a URL as text, retrying transient failures with backoff."""
+def fetch(url, attempts=4, timeout=45, allow_missing=False):
+    """GET a URL as text, retrying transient failures with backoff.
+
+    With allow_missing, a 404 returns None immediately instead of being
+    retried: pub-media answers 404 for a language that simply has no files for
+    a document yet, which is an ordinary answer, not a failure worth four
+    attempts and nine seconds of backoff.
+    """
     last = None
     for i in range(attempts):
         try:
@@ -54,7 +77,13 @@ def fetch(url, attempts=4, timeout=45):
             )
             with urllib.request.urlopen(req, timeout=timeout, context=_CONTEXT) as resp:
                 return resp.read().decode("utf-8", "replace")
-        except (urllib.error.URLError, urllib.error.HTTPError, OSError) as exc:
+        except urllib.error.HTTPError as exc:
+            if allow_missing and exc.code == 404:
+                return None
+            last = exc
+            if i < attempts - 1:
+                time.sleep(3 * (i + 1))
+        except (urllib.error.URLError, OSError) as exc:
             last = exc
             if i < attempts - 1:
                 time.sleep(3 * (i + 1))
@@ -62,7 +91,10 @@ def fetch(url, attempts=4, timeout=45):
 
 
 def fetch_json(url, **kwargs):
-    return json.loads(fetch(url, **kwargs))
+    body = fetch(url, **kwargs)
+    if body is None:
+        return None
+    return json.loads(body)
 
 
 # ---- media API ---------------------------------------------------------- #
@@ -100,6 +132,89 @@ def english_video_page(docid, category="StudioNewsReports"):
     return "https://www.jw.org/en/library/videos/#en/mediaitems/%s/docid-%s_1_VIDEO" % (
         category, docid
     )
+
+
+# ---- pub-media API (the primary signal) ---------------------------------- #
+
+def _pub_media_url(docid, code, alllangs=False):
+    params = [
+        ("output", "json"),
+        ("docid", str(docid)),
+        ("langwritten", code),
+        ("txtCMSLang", code),
+    ]
+    if alllangs:
+        params.append(("alllangs", "1"))
+    return PUBMEDIA + "?" + urllib.parse.urlencode(params)
+
+
+def pub_media_languages(docid):
+    """Every MEPS code that has a media file for the video.
+
+    One request, the whole set. With alllangs=1 the per-language file lists
+    come back as `__deferred` stubs rather than real entries, so this is a
+    language *roster* only -- titles and timestamps need pub_media_item().
+
+    Returns (sorted codes, the raw per-language metadata dict). The metadata is
+    a usable fallback for a code missing from jw.org's language index, since
+    pub-media states each language's own name, locale, script and direction.
+    """
+    payload = fetch_json(_pub_media_url(docid, "E", alllangs=True))
+    languages = (payload or {}).get("languages") or {}
+    return sorted(languages), languages
+
+
+def pub_media_item(docid, code):
+    """One language's files, or None if that language has none yet.
+
+    The per-file `modifiedDatetime` is the closest thing pub-media offers to a
+    publish time, and the earliest across a language's files is the best
+    estimate of when it became watchable. It is only an estimate: the value
+    moves when a file is re-encoded and replaced, which is why callers clamp it
+    and pin it (see resolve_file_time in track.py).
+    """
+    payload = fetch_json(_pub_media_url(docid, code), allow_missing=True)
+    if not isinstance(payload, dict):
+        # A 404 body is a JSON *list* ([{"title": "Not Found", ...}]), so a
+        # non-dict answer means "no files", not a malformed response.
+        return None
+    by_format = (payload.get("files") or {}).get(code) or {}
+
+    # Only the video files count. A language's entry also carries its subtitle
+    # track (fileformat AIVTT, mimetype text/vtt), whose `title` is the edition
+    # name -- "Ordinarie", not the video's title -- and whose timestamp says
+    # nothing about whether the video can be watched.
+    entries, formats = [], []
+    for fmt, arr in sorted(by_format.items()):
+        if not isinstance(arr, list):
+            continue  # an alllangs-style __deferred stub
+        videos = [e for e in arr if str(e.get("mimetype") or "").startswith("video/")]
+        if videos:
+            formats.append(fmt)
+            entries.extend(videos)
+    if not entries:
+        return None
+
+    title = ""
+    stamps = []
+    for entry in entries:
+        title = title or (entry.get("title") or "").strip()
+        stamp = normalise_pub_ts(((entry.get("file") or {}).get("modifiedDatetime")))
+        if stamp:
+            stamps.append(stamp)
+
+    return {
+        "title": title,
+        "modified": min(stamps) if stamps else None,
+        "latest_modified": max(stamps) if stamps else None,
+        "formats": formats,
+        "file_count": len(entries),
+    }
+
+
+def download_api(docid):
+    """The pub-media request behind the roster, for citing as a source."""
+    return _pub_media_url(docid, "E", alllangs=True)
 
 
 # ---- language metadata --------------------------------------------------- #
@@ -154,6 +269,18 @@ def utcnow():
         .isoformat()
         .replace("+00:00", "Z")
     )
+
+
+def normalise_pub_ts(value):
+    """'2026-09-19 14:49:52' -> '2026-09-19T14:49:52Z'.
+
+    pub-media quotes its file timestamps without a zone; they are UTC. Checked
+    against the CDN itself: the Swedish 240p file reported 14:49:52 here and
+    `Last-Modified: Sat, 19 Sep 2026 14:49:50 GMT` over HTTP.
+    """
+    if not value:
+        return None
+    return normalise_ts(str(value).strip().replace(" ", "T") + "Z")
 
 
 def normalise_ts(value):

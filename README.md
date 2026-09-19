@@ -2,7 +2,8 @@
 
 A self-updating report of how many languages the [2026 Governing Body Update #6
 video](https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO)
-has been published in, and how that number has grown since release.
+can be watched in, how many of those the media library has catalogued, and how
+both numbers have grown since release.
 
 **Site:** https://harry-joyce.github.io/gb-update/
 
@@ -11,39 +12,123 @@ Released **18 September 2026, 14:00 UTC**. Target: the **449 languages**
 
 ## How availability is determined
 
-The JW media ("mediator") API, not the web page:
+Two APIs, because jw.org publishes a video to two places at different times and
+the gap between them is wide enough to matter.
+
+### The primary signal: pub-media
+
+```
+https://b.jw-cdn.org/apis/pub-media/GETPUBMEDIALINKS?output=json&alllangs=1&docid=1112024060
+```
+
+`languages` lists every MEPS code that has a video **file** on the CDN. This is
+the endpoint behind the playback and download selector on the video's news
+article, and it is the earliest public signal that a language exists: a file
+appears here as soon as it lands. One request returns the whole roster, however
+many languages there are.
+
+A request for an individual language returns that language's real localised
+title and a `file.modifiedDatetime` per file. With `alllangs=1` the per-language
+file lists come back as `__deferred` stubs, so the roster call is a language
+list only — detail needs a per-language call, made once, when the language first
+appears.
+
+### The second series: the media catalogue
 
 ```
 https://b.jw-cdn.org/apis/mediator/v1/media-items/E/docid-1112024060_1_VIDEO
 ```
 
-The English record's `availableLanguages` array lists every language the video
-is currently published in — the whole list in one request. A request for an
-individual language returns that language's own `firstPublished` timestamp and
-translated title, so the timeline reflects **actual publication times** rather
-than when the tracker happened to look. Each language's detail is fetched once,
-when it first appears.
+The English record's `availableLanguages` array is what the language list on
+the video's own `/library/videos/` page offers, and a per-language request
+returns that language's `firstPublished` timestamp and title. This is the
+catalogue, and it **runs behind pub-media**, sometimes by hours.
+
+### Why the primary signal is pub-media
+
+Measured on 19 September 2026 at 14:5x UTC, one day into the rollout:
+
+| Signal | Languages |
+|---|---|
+| pub-media (files on the CDN) | **20** |
+| the media catalogue (`availableLanguages`) | 10 |
+
+The ten extra — Arabic (Egypt), Bengali, Chichewa, Italian Sign Language,
+Brazilian Sign Language, Norwegian, Nepali, Chilean Sign Language, Valencian
+and Swedish — had **no catalogue entry at all**, and yet each had live 720p
+files with the correct localised title, downloadable there and then. Swedish's
+file reported a CDN `Last-Modified` two minutes old and
+`x-amz-replication-status: PENDING` while it was checked.
+
+So counting the catalogue alone understated what a publisher could actually
+watch by half. The catalogue is still worth recording — it is what the video's
+own page shows, and the lag between the two lines is a real fact about the
+rollout — so it is kept as a second series rather than dropped.
+
+The gap closes in the end: for the finished Update #5 both APIs report exactly
+the same 449 languages, and every one of them matches a baseline code. The
+divergence is a property of a rollout in progress, not a permanent bias, which
+is why the target line is unaffected by the change of primary signal.
+
+Two languages move the other way: Marathi and Portuguese have a **translated
+news article** but 404 from pub-media and nothing in the catalogue, and their
+article pages still render a player. The article's own translation count (11 at
+the same moment) is a third number again, and is not tracked here: this report
+is about the video.
 
 Language names, native names, scripts and text direction come from
 `https://www.jw.org/en/languages/`, keyed by `langcode` — which *is* the MEPS
-code the media API uses (English `E`, German `X`, Basque `BQ`). All 449 baseline
-codes resolve.
+code both APIs use (English `E`, German `X`, Basque `BQ`). All 449 baseline
+codes resolve, as does every code pub-media has returned; where one ever does
+not, pub-media states the language's own name, locale, script and direction, and
+those are used rather than showing a bare code.
 
 ### Publish times and `data/overrides.json`
 
-`firstPublished` records when a file entered the CDN, which can precede public
-availability: English reports `2026-09-18T11:39:09Z` but was actually published
-at **14:00 UTC**. So confirmed times live in `data/overrides.json`, keyed by MEPS
-code, and take precedence:
+Neither API states when a language became *available*, so a time is resolved in
+this order:
+
+1. **A confirmed time** from `data/overrides.json`, keyed by MEPS code.
+2. **The catalogue's `firstPublished`**, which records the file's arrival on the
+   CDN. It is the earliest trustworthy upstream value, and for every language
+   checked it ran 4–23 minutes *ahead* of that language's pub-media file
+   timestamps — so it is preferred for the primary series too, whenever the
+   catalogue has reached the language at all.
+3. **An estimate from pub-media's file timestamps**, for a language with files
+   but no catalogue entry — see the clamp below.
+4. **The tracker's own first sighting**, if nothing else is usable.
+
+`firstPublished` can precede public availability: English reports
+`2026-09-18T11:39:09Z` but was actually published at **14:00 UTC**. So confirmed
+times take precedence:
 
 ```json
 { "times": { "E": "2026-09-18T14:00:00Z" } }
 ```
 
+`times` applies to the primary series; an optional `catalog_times` block
+overrides the catalogue series separately, and falls back to `times` when
+absent.
+
 The site marks each time with its provenance — unmarked for a confirmed time,
-`†` for an API time, `‡` if no publish time was available and the tracker's own
-first sighting had to be used. Add entries as confirmed times become known;
-remove one to fall back to the API value.
+`†` for a catalogue time, `§` for a pub-media estimate, `‡` if nothing was
+usable and the tracker's own first sighting had to be used. Add entries as
+confirmed times become known; remove one to fall back to the API value.
+
+### `modifiedDatetime` is a *last written* time, so it is clamped
+
+pub-media's file timestamps are not publish times. They move every time a file
+is re-encoded and replaced, and English proves how far: released at 14:00, its
+files report `2026-09-18T22:46:56Z` the same evening — nearly nine hours late.
+A language's subtitle track (fileformat `AIVTT`, mimetype `text/vtt`) is
+ignored for the same reason, and because its `title` is the edition name
+("Ordinarie") rather than the video's.
+
+So the estimate is confined to the window between the **release** and the moment
+the **tracker first saw the language**. That bound is what makes it safe: it can
+never be worse than the first-sighting fallback it replaces, and with checks
+every 30 minutes it is usually far sharper. Like every other upstream value it
+is read once and pinned.
 
 ### If the API rewrites its timestamps
 
@@ -64,9 +149,13 @@ instant. Four things prevent that:
    stop trusting the API and fall back to the time the tracker first saw them,
    marked `‡`. The site shows a banner explaining what happened.
 4. **Daily full verification.** `scripts/verify_times.py` re-reads every
-   published language once a day and records any drift in the `integrity`
-   block. It never changes a resolved time — it only reports. If ≥80% of
-   languages drift to one shared value, it flags `bulk_rewrite_suspected`.
+   language once a day — from *both* APIs — and records any drift in the
+   `integrity` block: `drift_count` for catalogue timestamps,
+   `file_drift_count` for pub-media's. It never changes a resolved time — it
+   only reports. If ≥80% of catalogued languages drift to one shared value, it
+   flags `bulk_rewrite_suspected`. A language with files but no catalogue entry
+   is counted as `awaiting_catalogue`, not as a missing record, because for
+   hours after release that is the normal state.
 
 Correcting a time is always a human decision: add an entry to
 `data/overrides.json`, which outranks everything above.
@@ -76,39 +165,43 @@ release time and marked `api_clamped`, since a file can sit in the CDN before it
 goes public. English demonstrates this — the API says `11:39:09Z`, and the clamp
 independently produces the confirmed `14:00Z`.
 
-### availableLanguages is cached per edge, so discovery is not left to it
+### Discovery no longer needs a rotating sweep
 
-The listing is served from a cache that varies by location and lags. Observed
-directly: the same request returned 9 languages from a GitHub runner and 10
-from a local machine 30 seconds apart, and Kannada disappeared from the listing
-for a while and then came back. Amharic's own record was fetchable at
+`availableLanguages` is served from a cache that varies by location and lags.
+Observed directly: the same request returned 9 languages from a GitHub runner
+and 10 from a local machine 30 seconds apart, and Kannada disappeared from the
+listing for a while and then came back. Amharic's own record was fetchable at
 10:26 UTC while the listing still omitted it.
 
-So the listing is a fast hint, not the source of truth. Every run also probes a
-rotating slice of **60 still-pending languages directly** (`SWEEP_SIZE` in
-`scripts/track.py`), which is authoritative. At 60 per run, twice an hour, the ~440
-pending languages are covered about every 3.5 hours, at roughly two requests a
-minute.
-Anything the sweep finds is added with its real publish time and tagged
-`"discovered_by": "sweep"`.
+When the catalogue was the only signal, the answer was to probe a rotating
+slice of 60 still-pending languages directly every run — roughly 120 requests
+an hour, covering the ~440 pending languages about every 3.5 hours, which
+bounded discovery latency rather than eliminating it.
 
-The effect is that a lagging listing costs discovery *latency* only, bounded by
-the sweep cycle — never a missed language, and never a wrong timestamp, since
-times come from each language's own record.
+pub-media removes the need. Its roster is **one request for every language**, so
+discovery is complete on every run and a new language is found within one
+30-minute cycle rather than one sweep cycle. What remains of the probe
+(`CATALOG_PROBE_SIZE`, 40) is aimed only at the catalogue: it checks languages
+that have files but are not yet in `availableLanguages`, which is what promotes
+a language into the second series ahead of the listing's cache. That set is
+small — the lag is usually minutes — so it is normally covered whole, every run.
 
-### availableLanguages is discovery, not proof of removal
+A steady-state run is therefore about two requests plus a handful, against 60+
+before, and nothing is discovered late because a rotation had not reached it.
 
-The English record's `availableLanguages` array is how new languages are
-found, but it is not treated as authoritative for *removal*. Kannada was
-observed dropping out of that array while its own media item stayed live, with
+### A roster is discovery, not proof of removal
+
+Neither roster is treated as authoritative for *removal*. Kannada was observed
+dropping out of `availableLanguages` while its own media item stayed live, with
 its Kannada title and a valid publish time. Trusting the listing would have
 deleted a genuinely published language and its banked timestamp.
 
-So a language that disappears from the listing is verified directly, and only a
-missing per-language media item counts as removal. Removed languages are moved
-to a `removed` archive in `report.json` rather than deleted, and are restored
-with their original timestamp if they come back. Languages in this state are
-listed in `integrity.listing_lag` and noted on the site.
+So a language that disappears from either roster is verified directly against
+both APIs, and only losing its files **and** its catalogue item counts as
+removal. Removed languages are moved to a `removed` archive in `report.json`
+rather than deleted, and are restored with their original timestamps if they
+come back. Languages live in the catalogue but missing from its listing are
+recorded in `integrity.listing_lag` and noted on the site.
 
 ### Why Update #5 has no rollout curve
 
@@ -138,6 +231,13 @@ two controls:
   from dates to hours automatically.
 
 Both selections persist in `localStorage`.
+
+The catalogue series is deliberately **not** drawn. The site is read by people
+who want to know how many languages have published, and a second line inviting
+them to work out the difference between "has files" and "is catalogued" costs
+them more than it tells them. The series is still recorded — `catalog_count`,
+`catalog_lag` and `catalog_history` in `data/report.json` — for anyone who needs
+it, and the headline count is the one that matters either way.
 
 ## Percentage of publishers reached
 
@@ -205,7 +305,7 @@ Three details decide what the number means:
   is reported as `publisher_percent_ceiling` in `stats`.
 
 Because the largest languages publish first, this figure runs far ahead of the
-language count: 10 of 449 languages was already most of the audience.
+language count: 20 of 449 languages was already just over half the audience.
 
 Only the rounded percentage reaches `data/report.json` — never a count, and
 never a per-language weight. One decimal place is a privacy decision as much as
@@ -220,9 +320,9 @@ already published in the annual report.
 | Path | Purpose |
 |---|---|
 | `index.html`, `assets/` | The site. Static, dependency-free, reads `data/report.json`. |
-| `scripts/track.py` | The half-hourly check. Writes `data/report.json`. |
-| `scripts/jw.py` | Shared media-API fetching and parsing. |
-| `scripts/verify_times.py` | Daily: re-reads every publish time and reports drift. Never overwrites. |
+| `scripts/track.py` | The half-hourly check of both signals. Writes `data/report.json`. |
+| `scripts/jw.py` | Shared pub-media and media-catalogue fetching and parsing. |
+| `scripts/verify_times.py` | Daily: re-reads every timestamp from both APIs and reports drift. Never overwrites. |
 | `scripts/build_baseline.py` | One-off: snapshots the baseline update and the language index. |
 | `scripts/build_weights.py` | One-off per spreadsheet revision: turns publisher counts into `data/weights.json`. |
 | `config.json` | Which video is tracked, its release time, and the baseline. |
@@ -246,14 +346,18 @@ both write `data/report.json`.
 Scheduled workflows only run from the **default branch**, and a workflow's
 schedule is read from the copy of the file on that branch.
 
-Each run commits when the language list
-changes, when a resolved publish time changes (so editing `overrides.json` takes
-effect), or when the record is more than `min_commit_interval_hours` (1) old —
-so the history stays readable instead of gaining 24 no-op commits a day.
+Each run commits when the language roster changes, when the catalogue count
+moves, when a resolved time changes (so editing `overrides.json` takes effect),
+or when the record is more than `min_commit_interval_hours` (1) old — so the
+history stays readable instead of gaining 24 no-op commits a day.
 
-If the API returns no languages, the script **exits non-zero without writing**
-rather than recording a false drop to zero, so a change in the API shows up as a
-failed workflow run instead of corrupted data.
+If **both** APIs return no languages, the script **exits non-zero without
+writing** rather than recording a false drop to zero, so a change in the APIs
+shows up as a failed workflow run instead of corrupted data. If only one fails,
+the run proceeds on the other and says so in `integrity`
+(`pub_media_unavailable` / `catalogue_unavailable`), which the site surfaces as
+a banner — a pub-media outage would otherwise halve the headline count with no
+explanation.
 
 Two things worth knowing:
 
@@ -264,8 +368,9 @@ Two things worth knowing:
   repository's schedule delivered nothing for its first three slots after being
   registered, despite correct configuration and no platform incident. Running
   twice an hour limits what one dropped slot costs. A missed slot never loses
-  data -- publish times come from each language's own record, so whenever a run
-  lands it reconciles the full current state.
+  data -- the roster is complete in one request and times come from each
+  language's own record, so whenever a run lands it reconciles the full current
+  state.
 
 ## Local trigger (stopgap while GitHub's scheduler is broken)
 

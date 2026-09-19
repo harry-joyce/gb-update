@@ -1,9 +1,9 @@
 name: Verify publish times
 
-# The hourly tracker pins each language's API timestamp, so a later bulk
-# rewrite cannot corrupt banked data -- but it would also go unnoticed. This
-# job refetches every published language once a day and records any drift. It
-# never changes a resolved publish time.
+# The tracker pins each language's upstream timestamps, so a later rewrite
+# cannot corrupt banked data -- but it would also go unnoticed. This job
+# refetches every language once a day, from both pub-media and the media
+# catalogue, and records any drift. It never changes a resolved time.
 on:
   schedule:
     - cron: "41 3 * * *"
@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Re-read every published language's publish time
+      - name: Re-read every language's timestamps from both APIs
         id: verify
         run: python3 scripts/verify_times.py
 
@@ -43,10 +43,12 @@ jobs:
               return 0
             fi
             DRIFT="${{ steps.verify.outputs.drift }}"
-            if [ "${DRIFT:-0}" -gt 0 ]; then
-              git commit -m "Verified publish times ($DRIFT drifted)"
+            FILE_DRIFT="${{ steps.verify.outputs.file_drift }}"
+            TOTAL=$(( ${DRIFT:-0} + ${FILE_DRIFT:-0} ))
+            if [ "$TOTAL" -gt 0 ]; then
+              git commit -m "Verified times (${DRIFT:-0} catalogue, ${FILE_DRIFT:-0} file drifted)"
             else
-              git commit -m "Verified publish times (no drift)"
+              git commit -m "Verified times (no drift)"
             fi
             git push
           }

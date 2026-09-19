@@ -73,11 +73,15 @@ jobs:
               echo "Nothing to commit."
               return 0
             fi
+            # Both signals go in the message: the watchable count is the
+            # headline, and the catalogue count says how far the media library
+            # is behind it.
             COUNT=$(python3 -c "import json;print(json.load(open('data/report.json'))['stats']['published_count'])")
+            CATALOGUED=$(python3 -c "import json;print(json.load(open('data/report.json'))['stats'].get('catalog_count', 0))")
             if [ -n "$1" ]; then
-              git commit -m "$COUNT languages available (+$1)"
+              git commit -m "$COUNT languages watchable, $CATALOGUED catalogued (+$1)"
             else
-              git commit -m "$COUNT languages available"
+              git commit -m "$COUNT languages watchable, $CATALOGUED catalogued"
             fi
             git push
           }

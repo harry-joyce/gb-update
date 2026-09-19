@@ -229,6 +229,13 @@
       legend.push(plural(counts.clamped_times, "time was", "times were") +
         " reported by the API as earlier than the release and clamped to the release time.");
     }
+    if (counts.file_times) {
+      legend.push(plural(counts.file_times, "time is", "times are") +
+        " marked \u00a7 \u2014 approximate. jw.org did not report a publish time for " +
+        (counts.file_times === 1 ? "this language" : "these languages") +
+        " yet, so the time comes from the video file itself and can be no later " +
+        "than when this tracker first saw it.");
+    }
     if (counts.observed_times) {
       legend.push(plural(counts.observed_times, "time is", "times are") +
         " marked \u2021 \u2014 no API publish time was usable, so the tracker's own " +
@@ -252,15 +259,19 @@
     var src = report.source || {};
     $("footer-source").innerHTML = "Source: " +
       '<a href="' + esc(src.page || upd.url) + '" rel="noopener">the video on jw.org</a>' +
-      (src.api ? ' via <a href="' + esc(src.api) + '" rel="noopener">the JW media API</a>' : "");
+      (src.files_api
+        ? ' via <a href="' + esc(src.files_api) + '" rel="noopener">its media service</a>'
+        : "");
     $("footer-method").innerHTML =
-      "The media API lists every language a video is published in, plus each language's own " +
-      "publish time, so the timeline reflects actual publication rather than when this " +
-      "tracker happened to look. Confirmed times recorded in " +
+      "The count comes from jw.org\u2019s own media service, which reports every " +
+      "language a video is available to watch or download in \u2014 the same list the " +
+      "language selector under the video offers. Each language brings its own publish " +
+      "time, so the timeline reflects when languages actually went up rather than when " +
+      "this tracker happened to look, and a time is recorded once and never rewritten " +
+      "afterwards. Times confirmed by hand, in " +
       '<a href="https://github.com/harry-joyce/gb-update/blob/main/data/overrides.json" rel="noopener">overrides.json</a>' +
-      " take precedence over the API value. Each language's API timestamp is pinned the " +
-      "first time it is read, so a later upstream rewrite cannot alter the recorded " +
-      "rollout; a daily job re-reads every language and reports any drift." +
+      ", take precedence. A daily check re-reads every language and reports anything " +
+      "that has changed upstream." +
       ((report.integrity || {}).last_full_verification
         ? " Last verified " + fmtUTC(report.integrity.last_full_verification) + "."
         : "");
@@ -276,6 +287,12 @@
      nothing for a confirmed time, dagger for anything derived from the API,
      double dagger when only the tracker's own sighting was available. */
   function provenanceMark(source, note) {
+    if (source === "file_estimated") {
+      return '<abbr class="ts-mark" title="' +
+        esc(note || "Estimated from pub-media\u2019s file timestamps, which record the " +
+          "last time a file was written rather than when it was first published") +
+        '">\u00a7</abbr>';
+    }
     if (source === "api") {
       return '<abbr class="ts-mark" title="' +
         esc(note || "From the media API\u2019s firstPublished, which records when the " +
@@ -295,18 +312,29 @@
     return "";
   }
 
+  /* Notices are written for a reader who is here for the number, not for the
+     plumbing: anything that could make the count wrong gets said plainly, and
+     the rest stays in data/report.json for whoever wants it. */
   function renderIntegrity(report) {
     var box = $("integrity");
     var info = report.integrity || {};
     var items = [];
 
+    if (info.pub_media_unavailable) {
+      items.push(
+        "<strong>jw.org\u2019s media service could not be read on the last check</strong>, " +
+        "so the count may be behind. It corrects itself on the next check that " +
+        "succeeds."
+      );
+    }
+
     if (info.api_reset_detected) {
       items.push(
-        "<strong>The media API has rewritten its publish timestamps.</strong> This is " +
+        "<strong>jw.org has rewritten its publish times for this video.</strong> This is " +
         "what happened to Update #5, where all 449 languages ended up reporting one " +
-        "identical time. Every time already recorded here was pinned when it was first " +
-        "read and is unaffected; languages appearing from now on fall back to the time " +
-        "the tracker first saw them, marked \u2021." +
+        "identical time. Every time already recorded here was saved when it was first " +
+        "read and is unaffected; languages appearing from now on show the time this " +
+        "tracker first saw them, marked \u2021." +
         (info.api_reset_detected_at
           ? " Detected " + esc(fmtUTC(info.api_reset_detected_at)) + "."
           : "")
@@ -315,37 +343,30 @@
 
     if (info.bulk_rewrite_suspected) {
       items.push(
-        "<strong>Daily verification found a bulk rewrite.</strong> " +
-        esc(info.drift_count) + " languages now report a single shared timestamp " +
-        "upstream. The times shown here are the ones recorded as the rollout happened."
+        "<strong>The daily check found that jw.org has replaced its publish times " +
+        "with one shared value.</strong> The times shown here are the ones recorded " +
+        "as the rollout happened."
       );
-    } else if (info.drift_count) {
-      items.push(
-        "<strong>" + esc(info.drift_count) + " publish " +
-        (info.drift_count === 1 ? "time has" : "times have") +
-        " changed upstream</strong> since first recorded. The originally recorded " +
-        "times are still shown."
-      );
+    } else {
+      var changed = (info.drift_count || 0) + (info.file_drift_count || 0);
+      if (changed) {
+        items.push(
+          "<strong>" + esc(changed) + " publish " +
+          (changed === 1 ? "time has" : "times have") +
+          " changed on jw.org</strong> since first recorded. The times first " +
+          "recorded are still shown."
+        );
+      }
     }
 
-    if ((info.listing_lag || []).length) {
-      var names = (report.published || [])
-        .filter(function (p) { return info.listing_lag.indexOf(p.code) !== -1; })
-        .map(function (p) { return p.name; });
+    var missing = (info.missing_items || []).filter(function (m) {
+      return m.signal !== "catalogue";
+    });
+    if (missing.length) {
       items.push(
-        (names.length === 1 ? names[0] + " is" : names.join(", ") + " are") +
-        " no longer in the API's language list but " +
-        (names.length === 1 ? "its own record is" : "their own records are") +
-        " still live, so " + (names.length === 1 ? "it is" : "they are") +
-        " still counted as published."
-      );
-    }
-
-    if ((info.missing_items || []).length) {
-      items.push(
-        "No media record found for " +
-        esc(info.missing_items.map(function (m) { return m.name || m.code; }).join(", ")) +
-        " at the last verification."
+        "The video could no longer be found in " +
+        esc(missing.map(function (m) { return m.name || m.code; }).join(", ")) +
+        " at the last daily check."
       );
     }
 
@@ -355,13 +376,55 @@
       : "<ul>" + items.map(function (i) { return "<li>" + i + "</li>"; }).join("") + "</ul>";
   }
 
-
   /* ---- chart ---------------------------------------------------------- */
   var RANGES = { "6h": 6 * 36e5, "24h": 24 * 36e5, "3d": 3 * 864e5, "7d": 7 * 864e5 };
 
+  function seriesFrom(history, lastChecked) {
+    var pts = (history || []).map(function (h) {
+      return { t: new Date(h.t).getTime(), count: h.count };
+    }).filter(function (p) { return !isNaN(p.t); });
+    /* Extend to the last check so a flat stretch reads as flat, not missing. */
+    if (pts.length && !isNaN(lastChecked) && lastChecked > pts[pts.length - 1].t) {
+      pts.push({ t: lastChecked, count: pts[pts.length - 1].count, synthetic: true });
+    }
+    return pts;
+  }
+
+  /* Carry the running total into the window, so a narrowed view does not
+     pretend the count restarted at zero. */
+  function clipSeries(points, tStart, fromStart) {
+    var visible = [], countAtStart = 0;
+    for (var i = 0; i < points.length; i++) {
+      if (points[i].t <= tStart) { countAtStart = points[i].count; }
+      else { visible.push(points[i]); }
+    }
+    visible.unshift({ t: tStart, count: countAtStart, clipped: !fromStart });
+    return visible;
+  }
+
+  /* A language appears at a moment, so the value holds between publishes. */
+  function stepPath(visible, x, y) {
+    var d = "";
+    visible.forEach(function (p, i) {
+      if (i === 0) { d += "M" + x(p.t) + "," + y(p.count); }
+      else {
+        d += "L" + x(p.t) + "," + y(visible[i - 1].count);
+        d += "L" + x(p.t) + "," + y(p.count);
+      }
+    });
+    return d;
+  }
+
+  function pointAt(visible, t) {
+    var best = visible.length ? visible[0] : null;
+    for (var i = 0; i < visible.length; i++) {
+      if (visible[i].t <= t) { best = visible[i]; }
+    }
+    return best;
+  }
+
   function drawChart(report) {
     var svg = $("chart");
-    var history = (report.history || []).slice();
     var target = (report.baseline || {}).count || null;
     var W = 880, H = 300;
     var pad = { t: 22, r: 66, b: 38, l: 54 };
@@ -370,16 +433,9 @@
     while (svg.lastChild && svg.lastChild.id !== "chart-desc") { svg.removeChild(svg.lastChild); }
     var desc = $("chart-desc");
 
-    var points = history.map(function (h) {
-      return { t: new Date(h.t).getTime(), count: h.count };
-    }).filter(function (p) { return !isNaN(p.t); });
-    if (!points.length) { desc.textContent = "No history recorded yet."; return; }
-
-    /* Extend to the last check so a flat stretch reads as flat, not missing. */
     var lastChecked = new Date(report.last_checked).getTime();
-    if (!isNaN(lastChecked) && lastChecked > points[points.length - 1].t) {
-      points.push({ t: lastChecked, count: points[points.length - 1].count, synthetic: true });
-    }
+    var points = seriesFrom(report.history, lastChecked);
+    if (!points.length) { desc.textContent = "No history recorded yet."; return; }
 
     /* ---- time window ---- */
     var tEnd = points[points.length - 1].t;
@@ -388,14 +444,7 @@
     if (tEnd - tStart < 36e5) { tStart = tEnd - 36e5; }
     var fromStart = tStart <= points[0].t;
 
-    /* Carry the running total into the window, so a narrowed view does not
-       pretend the count restarted at zero. */
-    var visible = [], countAtStart = 0;
-    for (var i = 0; i < points.length; i++) {
-      if (points[i].t <= tStart) { countAtStart = points[i].count; }
-      else { visible.push(points[i]); }
-    }
-    visible.unshift({ t: tStart, count: countAtStart, clipped: !fromStart });
+    var visible = clipSeries(points, tStart, fromStart);
 
     /* ---- vertical scale ---- */
     var counts = visible.map(function (p) { return p.count; });
@@ -467,20 +516,13 @@
       }).textContent = "expected";
     }
 
-    /* step series: a language appears at a moment, so hold the value between */
-    var d = "";
-    visible.forEach(function (p, i) {
-      if (i === 0) { d += "M" + x(p.t) + "," + y(p.count); }
-      else {
-        d += "L" + x(p.t) + "," + y(visible[i - 1].count);
-        d += "L" + x(p.t) + "," + y(p.count);
-      }
+    var d = stepPath(visible, x, y);
+    var floor = y(yMin);
+    add("path", {
+      class: "series-area",
+      d: d + "L" + x(visible[visible.length - 1].t) + "," + floor +
+         "L" + x(tStart) + "," + floor + "Z"
     });
-    var base = y(yMin);
-    var area = d + "L" + x(visible[visible.length - 1].t) + "," + base +
-      "L" + x(tStart) + "," + base + "Z";
-
-    add("path", { class: "series-area", d: area });
     add("path", { class: "series-line", d: d });
 
     var last = visible[visible.length - 1];
@@ -492,7 +534,7 @@
     desc.textContent =
       "Line chart of cumulative languages" +
       (fromStart
-        ? " from release on " + fmtUTC(report.update.release || history[0].t, true)
+        ? " from release on " + fmtUTC(report.update.release || report.history[0].t, true)
         : " over the last " + state.chart.range) +
       ", reaching " + last.count + " by " + fmtUTC(report.last_checked) +
       ". Vertical axis " + yMin + " to " + yMax +
@@ -512,17 +554,14 @@
       var box = svg.getBoundingClientRect();
       var px = (ev.clientX - box.left) / box.width * W;
       var tAt = tStart + (px - pad.l) / (W - pad.l - pad.r) * (tEnd - tStart);
-      var best = visible[0];
-      for (var j = 0; j < visible.length; j++) {
-        if (visible[j].t <= tAt) { best = visible[j]; }
-      }
+      var best = pointAt(visible, tAt);
       cross.setAttribute("x1", x(best.t));
       cross.setAttribute("x2", x(best.t));
       cross.setAttribute("opacity", 1);
       hoverDot.setAttribute("cx", x(best.t));
       hoverDot.setAttribute("cy", y(best.count));
       hoverDot.setAttribute("opacity", 1);
-      tip.innerHTML = "<strong>" + best.count + " languages</strong>" +
+      tip.innerHTML = "<strong>" + plural(best.count, "language", "languages") + "</strong>" +
         '<span class="tt-date">' +
         (best.synthetic ? "as of last check \u2022 " : best.clipped ? "start of view \u2022 " : "") +
         fmtUTC(new Date(best.t).toISOString()) + "</span>";
@@ -606,7 +645,8 @@
     rows.sort(function (a, b) {
       var av = a[sort.key], bv = b[sort.key];
       if (sort.key === "published_at") {
-        av = new Date(av).getTime() || 0; bv = new Date(bv).getTime() || 0;
+        av = new Date(a.files_at || a.published_at).getTime() || 0;
+        bv = new Date(b.files_at || b.published_at).getTime() || 0;
       } else {
         av = String(av).toLowerCase(); bv = String(bv).toLowerCase();
       }
@@ -615,8 +655,10 @@
 
     var tbody = $("table-published").tBodies[0];
     tbody.innerHTML = rows.map(function (r) {
-      var mark = provenanceMark(r.published_at_source, r.published_at_note);
-      var when = '<span class="exact">' + esc(fmtUTC(r.published_at)) + "</span>" + mark;
+      var mark = provenanceMark(r.files_at_source || r.published_at_source,
+                                r.files_at_note || r.published_at_note);
+      var when = '<span class="exact">' + esc(fmtUTC(r.files_at || r.published_at)) +
+        "</span>" + mark;
       var name = '<span class="lang-name">' + esc(r.name) + "</span>" +
         (r.beyond_baseline ? '<span class="chip new">new</span>' : "") +
         (r.sign ? '<span class="chip">sign</span>' : "") +
