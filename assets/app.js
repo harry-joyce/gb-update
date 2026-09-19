@@ -259,9 +259,11 @@
         ? " Last verified " + fmtUTC(report.integrity.last_full_verification) + "."
         : "");
     $("footer-checked").textContent =
-      "Last checked " + fmtUTC(report.last_checked) +
-      " (" + relative(report.last_checked) + "). Checks run hourly; the report is " +
-      "only rewritten when the language list changes or the record goes stale.";
+      "Last recorded check " + fmtUTC(report.last_checked) +
+      " (" + relative(report.last_checked) + "). Checks run every 30 minutes, but the " +
+      "report is only rewritten when the language list changes or the record is over " +
+      "an hour old \u2014 so this timestamp can trail the newest check. A new language " +
+      "is always committed immediately, so the count itself is never behind.";
   }
 
   /* One symbol per provenance class, with the detail in the tooltip:

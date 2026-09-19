@@ -170,7 +170,7 @@ schedule is read from the copy of the file on that branch.
 
 Each run commits when the language list
 changes, when a resolved publish time changes (so editing `overrides.json` takes
-effect), or when the record is more than `min_commit_interval_hours` (6) old —
+effect), or when the record is more than `min_commit_interval_hours` (1) old —
 so the history stays readable instead of gaining 24 no-op commits a day.
 
 If the API returns no languages, the script **exits non-zero without writing**
