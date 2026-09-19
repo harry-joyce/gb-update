@@ -45,6 +45,51 @@ The site marks each time with its provenance — unmarked for a confirmed time,
 first sighting had to be used. Add entries as confirmed times become known;
 remove one to fall back to the API value.
 
+### If the API rewrites its timestamps
+
+It already does, on a schedule we can't control: once an item is finished the
+media API replaces every language's `firstPublished` with one bulk value — all
+449 of Update #5's languages now report `2026-07-31T13:24:54`. If that happened
+to Update #6 naively, the whole rollout history would collapse to a single
+instant. Four things prevent that:
+
+1. **Pinning.** Each language's API timestamp is read exactly once, when the
+   language first appears, and then never refetched. A later rewrite cannot
+   reach data already banked. This is the load-bearing protection.
+2. **Detection.** The English record is refetched every run anyway (it is what
+   lists the languages), so comparing it against its pinned value detects a
+   rewrite for free. Without this, pinning would protect old rows silently
+   while new languages kept trusting a poisoned API.
+3. **Degradation.** Once a rewrite is detected, languages appearing afterwards
+   stop trusting the API and fall back to the time the tracker first saw them,
+   marked `‡`. The site shows a banner explaining what happened.
+4. **Daily full verification.** `scripts/verify_times.py` re-reads every
+   published language once a day and records any drift in the `integrity`
+   block. It never changes a resolved time — it only reports. If ≥80% of
+   languages drift to one shared value, it flags `bulk_rewrite_suspected`.
+
+Correcting a time is always a human decision: add an entry to
+`data/overrides.json`, which outranks everything above.
+
+A related guard: an API time *earlier than the release* is clamped up to the
+release time and marked `api_clamped`, since a file can sit in the CDN before it
+goes public. English demonstrates this — the API says `11:39:09Z`, and the clamp
+independently produces the confirmed `14:00Z`.
+
+### availableLanguages is discovery, not proof of removal
+
+The English record's `availableLanguages` array is how new languages are
+found, but it is not treated as authoritative for *removal*. Kannada was
+observed dropping out of that array while its own media item stayed live, with
+its Kannada title and a valid publish time. Trusting the listing would have
+deleted a genuinely published language and its banked timestamp.
+
+So a language that disappears from the listing is verified directly, and only a
+missing per-language media item counts as removal. Removed languages are moved
+to a `removed` archive in `report.json` rather than deleted, and are restored
+with their original timestamp if they come back. Languages in this state are
+listed in `integrity.listing_lag` and noted on the site.
+
 ### Why Update #5 has no rollout curve
 
 The media API reports a single bulk `firstPublished` for every language of a
@@ -66,6 +111,7 @@ for everything except English.
 | `index.html`, `assets/` | The site. Static, dependency-free, reads `data/report.json`. |
 | `scripts/track.py` | The hourly check. Writes `data/report.json`. |
 | `scripts/jw.py` | Shared media-API fetching and parsing. |
+| `scripts/verify_times.py` | Daily: re-reads every publish time and reports drift. Never overwrites. |
 | `scripts/build_baseline.py` | One-off: snapshots the baseline update and the language index. |
 | `config.json` | Which video is tracked, its release time, and the baseline. |
 | `data/overrides.json` | Confirmed publish times. Hand-edited. |
@@ -75,7 +121,11 @@ for everything except English.
 
 ## Automation
 
-`.github/workflows/track.yml` runs hourly. It commits when the language list
+`.github/workflows/track.yml` runs hourly; `.github/workflows/verify.yml` runs
+daily at 03:41 and shares the same concurrency group, since both write
+`data/report.json`.
+
+The hourly job commits when the language list
 changes, when a resolved publish time changes (so editing `overrides.json` takes
 effect), or when the record is more than `min_commit_interval_hours` (6) old —
 so the history stays readable instead of gaining 24 no-op commits a day.

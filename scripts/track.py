@@ -71,8 +71,8 @@ def main():
     previous = load("data/report.json")
     now = jw.utcnow()
 
-    codes, english_item = jw.available_languages(docid)
-    if not codes:
+    listed, english_item = jw.available_languages(docid)
+    if not listed:
         raise SystemExit(
             "refusing to write report: the media API returned no languages for "
             "docid %s. The item or API may have changed." % docid
@@ -80,47 +80,95 @@ def main():
 
     index, refreshed = language_index()
 
-    # Everything already known, so each language's detail is fetched only once.
+    # Each language's detail is fetched exactly once, and the API timestamp it
+    # returned is then PINNED forever. That is deliberate: the media API
+    # rewrites firstPublished to a single bulk value once an item is finished
+    # (all 449 of Update #5's languages report 2026-07-31T13:24:54), which
+    # would otherwise flatten this update's whole rollout history on the day it
+    # completes. Pinning means such a rewrite cannot reach data already banked.
     known = {e["code"]: e for e in (previous or {}).get("published", [])}
-    current = set(codes)
-    added = sorted(c for c in current if c not in known)
-    removed = sorted(c for c in known if c not in current)
+    archive = {e["code"]: e for e in (previous or {}).get("removed", [])}
 
     release = tracked.get("release") or jw.normalise_ts(english_item.get("firstPublished"))
 
-    published = []
-    for code in sorted(current):
+    # The English record is refetched every run as a side effect of listing the
+    # languages, so comparing it against its pinned value detects a bulk
+    # rewrite for free -- without which a pin would protect old data silently
+    # while new languages kept trusting a poisoned API.
+    prior_integrity = (previous or {}).get("integrity") or {}
+    english_api_now = jw.normalise_ts(english_item.get("firstPublished"))
+    english_api_pinned = (
+        (prior_integrity.get("english_api_first_published") or {}).get("pinned")
+        or english_api_now
+    )
+    api_reset = bool(
+        english_api_pinned and english_api_now and english_api_now != english_api_pinned
+    )
+    reset_detected_at = prior_integrity.get("api_reset_detected_at")
+    if api_reset and not reset_detected_at:
+        reset_detected_at = now
+
+    # availableLanguages is treated as *discovery only*, never as proof of
+    # removal: Kannada vanished from it while its own media item stayed live,
+    # so trusting it to un-publish would delete a real language and its banked
+    # publish time. A language that drops out of the listing is verified
+    # directly, and only a missing per-language item counts as removal.
+    candidates = set(listed) | set(known)
+    published, removed_entries, lagging = [], [], []
+
+    for code in sorted(candidates):
         meta = jw.describe(code, index)
-        prior = known.get(code)
+        prior = known.get(code) or archive.get(code)
+        in_listing = code in listed
+        item = None
+        fetched = False
+
+        if not in_listing:
+            item, fetched = jw.media_item(docid, code), True
+            if item is None:
+                if prior:
+                    removed_entries.append(
+                        dict(prior, removed_at=now, removed_reason="no media item")
+                    )
+                continue
+            lagging.append(code)
 
         if prior and prior.get("api_published_at") is not None:
             api_ts = prior["api_published_at"]
             title = prior.get("title") or meta["name"]
             first_observed = prior.get("first_observed") or now
         else:
-            item = jw.media_item(docid, code)
+            if not fetched:
+                item = jw.media_item(docid, code)
             api_ts = jw.normalise_ts((item or {}).get("firstPublished"))
             title = ((item or {}).get("title") or "").strip() or meta["name"]
             first_observed = (prior or {}).get("first_observed") or now
 
-        override = overrides.get(code)
-        if override:
-            published_at, source = jw.normalise_ts(override), "confirmed"
-        elif api_ts:
-            published_at, source = api_ts, "api"
-        else:
-            published_at, source = first_observed, "observed"
+        published_at, source, note = resolve_time(
+            code, overrides, api_ts, first_observed, release, api_reset, prior
+        )
 
         meta.update(
             title=title,
             url=jw.watch_url(code, docid),
             published_at=published_at,
             published_at_source=source,
+            published_at_note=note,
             api_published_at=api_ts,
             first_observed=first_observed,
+            listed_by_api=in_listing,
             beyond_baseline=bool(baseline.get("codes")) and code not in set(baseline["codes"]),
         )
         published.append(meta)
+
+    current = {p["code"] for p in published}
+    added = sorted(c for c in current if c not in known)
+    removed = sorted(e["code"] for e in removed_entries)
+
+    # Keep anything previously archived that has not come back.
+    for code, entry in archive.items():
+        if code not in current and code not in removed:
+            removed_entries.append(entry)
 
     published.sort(key=lambda p: (p["published_at"] or "", p["name"].lower()))
 
@@ -158,13 +206,29 @@ def main():
             "count": target,
             "sign_language_count": baseline.get("sign_language_count"),
         },
+        "integrity": {
+            "api_reset_detected": api_reset,
+            "listing_lag": sorted(lagging),
+            "listing_count": len(listed),
+            "api_reset_detected_at": reset_detected_at,
+            "english_api_first_published": {
+                "pinned": english_api_pinned,
+                "latest": english_api_now,
+            },
+            "last_full_verification": prior_integrity.get("last_full_verification"),
+            "drift_count": prior_integrity.get("drift_count"),
+            "drifted": prior_integrity.get("drifted") or [],
+        },
         "counts": {
             "confirmed_times": sum(1 for p in published if p["published_at_source"] == "confirmed"),
             "api_times": sum(1 for p in published if p["published_at_source"] == "api"),
+            "clamped_times": sum(1 for p in published if p["published_at_source"] == "api_clamped"),
+            "observed_times": sum(1 for p in published if p["published_at_source"] == "observed"),
             "sign_languages": sum(1 for p in published if p["sign"]),
         },
         "stats": build_stats(len(current), target, release, published),
         "published": published,
+        "removed": sorted(removed_entries, key=lambda e: e.get("removed_at") or ""),
         "pending": pending,
         "history": history,
         "events": events,
@@ -179,7 +243,11 @@ def main():
         # Any change to a resolved publish time (e.g. a new override) counts too.
         old_times = {e["code"]: e.get("published_at") for e in (previous or {}).get("published", [])}
         new_times = {p["code"]: p["published_at"] for p in published}
-        should_commit = old_times != new_times
+        should_commit = (
+            sorted(prior_integrity.get("listing_lag") or []) != sorted(lagging)
+        ) or old_times != new_times or (
+            api_reset and not prior_integrity.get("api_reset_detected")
+        )
     if not should_commit:
         last = parse_iso((previous or {}).get("last_checked"))
         max_age = datetime.timedelta(hours=config.get("min_commit_interval_hours", 6))
@@ -195,6 +263,17 @@ def main():
         summary += " | +%d: %s" % (len(added), names)
     if removed:
         summary += " | -%d: %s" % (len(removed), ", ".join(removed))
+    if lagging:
+        print(
+            "note: %d language(s) missing from availableLanguages but still live, "
+            "kept published: %s" % (len(lagging), ", ".join(sorted(lagging)))
+        )
+    if api_reset:
+        print(
+            "WARNING: the media API rewrote firstPublished for English "
+            "(pinned %s, now %s). Banked times are kept; new languages will fall "
+            "back to first-sighting times." % (english_api_pinned, english_api_now)
+        )
     print(summary)
     print("should_commit=%s" % ("true" if should_commit else "false"))
 
@@ -208,6 +287,43 @@ def main():
     if summary_path:
         with open(summary_path, "a", encoding="utf-8") as fh:
             fh.write("### %s\n\n%s\n" % (tracked["label"], summary))
+
+
+def resolve_time(code, overrides, api_ts, first_observed, release, api_reset, prior):
+    """Decide a language's publish time, and say where it came from.
+
+    Precedence: a hand-confirmed time, then the API's own timestamp, then the
+    moment the tracker first saw the language. A time already resolved from a
+    trustworthy API reading keeps its value even after a reset is detected.
+    """
+    override = overrides.get(code)
+    if override:
+        return jw.normalise_ts(override), "confirmed", None
+
+    # A value banked before any reset stays put.
+    if prior and prior.get("published_at_source") in ("api", "api_clamped"):
+        return prior["published_at"], prior["published_at_source"], prior.get("published_at_note")
+
+    if not api_ts:
+        return first_observed, "observed", "the API reported no publish time"
+
+    if api_reset:
+        return (
+            first_observed,
+            "observed",
+            "the API's timestamps were rewritten, so its value is not trustworthy; "
+            "this is when the tracker first saw the language",
+        )
+
+    # firstPublished records CDN arrival, which can precede public release.
+    if release and api_ts < release:
+        return (
+            release,
+            "api_clamped",
+            "the API reported %s, before the release; clamped to the release time" % api_ts,
+        )
+
+    return api_ts, "api", None
 
 
 def build_history(published, release):

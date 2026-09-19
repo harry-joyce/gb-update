@@ -219,10 +219,21 @@
       "Languages that received " + esc(base.short || "the previous update") +
       " but do not yet have " + esc(upd.short || "this update") + ".";
 
+    renderIntegrity(report);
+
     var counts = report.counts || {};
     var legend = [];
     if (counts.confirmed_times) {
       legend.push(plural(counts.confirmed_times, "time is", "times are") + " confirmed.");
+    }
+    if (counts.clamped_times) {
+      legend.push(plural(counts.clamped_times, "time was", "times were") +
+        " reported by the API as earlier than the release and clamped to the release time.");
+    }
+    if (counts.observed_times) {
+      legend.push(plural(counts.observed_times, "time is", "times are") +
+        " marked \u2021 \u2014 no API publish time was usable, so the tracker's own " +
+        "first sighting is shown.");
     }
     if (counts.api_times) {
       legend.push(plural(counts.api_times, "time is", "times are") +
@@ -248,12 +259,101 @@
       "publish time, so the timeline reflects actual publication rather than when this " +
       "tracker happened to look. Confirmed times recorded in " +
       '<a href="https://github.com/harry-joyce/gb-update/blob/main/data/overrides.json" rel="noopener">overrides.json</a>' +
-      " take precedence over the API value.";
+      " take precedence over the API value. Each language's API timestamp is pinned the " +
+      "first time it is read, so a later upstream rewrite cannot alter the recorded " +
+      "rollout; a daily job re-reads every language and reports any drift." +
+      ((report.integrity || {}).last_full_verification
+        ? " Last verified " + fmtUTC(report.integrity.last_full_verification) + "."
+        : "");
     $("footer-checked").textContent =
       "Last checked " + fmtUTC(report.last_checked) +
       " (" + relative(report.last_checked) + "). Checks run hourly; the report is " +
       "only rewritten when the language list changes or the record goes stale.";
   }
+
+  /* One symbol per provenance class, with the detail in the tooltip:
+     nothing for a confirmed time, dagger for anything derived from the API,
+     double dagger when only the tracker's own sighting was available. */
+  function provenanceMark(source, note) {
+    if (source === "api") {
+      return '<abbr class="ts-mark" title="' +
+        esc(note || "From the media API\u2019s firstPublished, which records when the " +
+          "file entered the CDN and may precede public availability") +
+        '">\u2020</abbr>';
+    }
+    if (source === "api_clamped") {
+      return '<abbr class="ts-mark" title="' +
+        esc(note || "The API reported a time before the release; clamped to the release time") +
+        '">\u2020</abbr>';
+    }
+    if (source === "observed") {
+      return '<abbr class="ts-mark" title="' +
+        esc(note || "No publish time was available; this is when the tracker first saw it") +
+        '">\u2021</abbr>';
+    }
+    return "";
+  }
+
+  function renderIntegrity(report) {
+    var box = $("integrity");
+    var info = report.integrity || {};
+    var items = [];
+
+    if (info.api_reset_detected) {
+      items.push(
+        "<strong>The media API has rewritten its publish timestamps.</strong> This is " +
+        "what happened to Update #5, where all 449 languages ended up reporting one " +
+        "identical time. Every time already recorded here was pinned when it was first " +
+        "read and is unaffected; languages appearing from now on fall back to the time " +
+        "the tracker first saw them, marked \u2021." +
+        (info.api_reset_detected_at
+          ? " Detected " + esc(fmtUTC(info.api_reset_detected_at)) + "."
+          : "")
+      );
+    }
+
+    if (info.bulk_rewrite_suspected) {
+      items.push(
+        "<strong>Daily verification found a bulk rewrite.</strong> " +
+        esc(info.drift_count) + " languages now report a single shared timestamp " +
+        "upstream. The times shown here are the ones recorded as the rollout happened."
+      );
+    } else if (info.drift_count) {
+      items.push(
+        "<strong>" + esc(info.drift_count) + " publish " +
+        (info.drift_count === 1 ? "time has" : "times have") +
+        " changed upstream</strong> since first recorded. The originally recorded " +
+        "times are still shown."
+      );
+    }
+
+    if ((info.listing_lag || []).length) {
+      var names = (report.published || [])
+        .filter(function (p) { return info.listing_lag.indexOf(p.code) !== -1; })
+        .map(function (p) { return p.name; });
+      items.push(
+        (names.length === 1 ? names[0] + " is" : names.join(", ") + " are") +
+        " no longer in the API's language list but " +
+        (names.length === 1 ? "its own record is" : "their own records are") +
+        " still live, so " + (names.length === 1 ? "it is" : "they are") +
+        " still counted as published."
+      );
+    }
+
+    if ((info.missing_items || []).length) {
+      items.push(
+        "No media record found for " +
+        esc(info.missing_items.map(function (m) { return m.name || m.code; }).join(", ")) +
+        " at the last verification."
+      );
+    }
+
+    box.hidden = items.length === 0;
+    box.innerHTML = items.length === 1
+      ? items[0]
+      : "<ul>" + items.map(function (i) { return "<li>" + i + "</li>"; }).join("") + "</ul>";
+  }
+
 
   /* ---- chart ---------------------------------------------------------- */
   function drawChart(report) {
@@ -463,14 +563,7 @@
 
     var tbody = $("table-published").tBodies[0];
     tbody.innerHTML = rows.map(function (r) {
-      var mark = "";
-      if (r.published_at_source === "api") {
-        mark = '<abbr class="ts-mark" title="From the media API\u2019s firstPublished; ' +
-          'may precede public availability">\u2020</abbr>';
-      } else if (r.published_at_source === "observed") {
-        mark = '<abbr class="ts-mark" title="No publish time available; this is when the ' +
-          'tracker first saw it">\u2021</abbr>';
-      }
+      var mark = provenanceMark(r.published_at_source, r.published_at_note);
       var when = '<span class="exact">' + esc(fmtUTC(r.published_at)) + "</span>" + mark;
       var name = '<span class="lang-name">' + esc(r.name) + "</span>" +
         (r.beyond_baseline ? '<span class="chip new">new</span>' : "") +
@@ -551,9 +644,7 @@
     $("feed").innerHTML = rows.map(function (e) {
       var added = e.added || [];
       var names = added.map(function (a) {
-        var mark = a.source === "api" ? '<abbr class="ts-mark" title="Time from the media API">\u2020</abbr>'
-          : a.source === "observed" ? '<abbr class="ts-mark" title="First observed by the tracker">\u2021</abbr>'
-          : "";
+        var mark = provenanceMark(a.source, a.note);
         return "<strong>" + esc(a.name) + "</strong> " +
           '<span class="feed-time">' + esc(timeOnly(a.at)) + "</span>" + mark;
       });
