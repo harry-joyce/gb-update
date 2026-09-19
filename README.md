@@ -86,8 +86,9 @@ for a while and then came back. Amharic's own record was fetchable at
 
 So the listing is a fast hint, not the source of truth. Every run also probes a
 rotating slice of **60 still-pending languages directly** (`SWEEP_SIZE` in
-`scripts/track.py`), which is authoritative. At 60 per run the ~440 pending
-languages are covered about every 7 hours, at roughly one request a minute.
+`scripts/track.py`), which is authoritative. At 60 per run, twice an hour, the ~440
+pending languages are covered about every 3.5 hours, at roughly two requests a
+minute.
 Anything the sweep finds is added with its real publish time and tagged
 `"discovered_by": "sweep"`.
 
@@ -143,7 +144,7 @@ Both selections persist in `localStorage`.
 | Path | Purpose |
 |---|---|
 | `index.html`, `assets/` | The site. Static, dependency-free, reads `data/report.json`. |
-| `scripts/track.py` | The hourly check. Writes `data/report.json`. |
+| `scripts/track.py` | The half-hourly check. Writes `data/report.json`. |
 | `scripts/jw.py` | Shared media-API fetching and parsing. |
 | `scripts/verify_times.py` | Daily: re-reads every publish time and reports drift. Never overwrites. |
 | `scripts/build_baseline.py` | One-off: snapshots the baseline update and the language index. |
@@ -159,7 +160,7 @@ Everything runs on **GitHub-hosted Actions runners** (`ubuntu-latest`, a fresh
 ephemeral VM per run) — nothing runs on a local machine, so the report keeps
 updating with no laptop involved.
 
-`.github/workflows/track.yml` runs hourly at **:17 UTC**;
+`.github/workflows/track.yml` runs every 30 minutes, at **:17 and :47 UTC**;
 `.github/workflows/verify.yml` runs daily at **03:41 UTC**. GitHub cron is
 always UTC and has no timezone setting. Both share one concurrency group, since
 both write `data/report.json`.
@@ -167,7 +168,7 @@ both write `data/report.json`.
 Scheduled workflows only run from the **default branch**, and a workflow's
 schedule is read from the copy of the file on that branch.
 
-The hourly job commits when the language list
+Each run commits when the language list
 changes, when a resolved publish time changes (so editing `overrides.json` takes
 effect), or when the record is more than `min_commit_interval_hours` (6) old —
 so the history stays readable instead of gaining 24 no-op commits a day.
@@ -181,8 +182,12 @@ Two things worth knowing:
 - GitHub disables scheduled workflows in repositories with no activity for 60
   days. Commits made by the bot don't reset that timer, so if the rollout runs
   long, push any commit (or hit **Run workflow**) to keep the schedule alive.
-- Scheduled runs are queued, not exact; an hourly job often lands a few minutes
-  late.
+- Scheduled runs are queued, not exact, and GitHub sheds them under load: this
+  repository's schedule delivered nothing for its first three slots after being
+  registered, despite correct configuration and no platform incident. Running
+  twice an hour limits what one dropped slot costs. A missed slot never loses
+  data -- publish times come from each language's own record, so whenever a run
+  lands it reconciles the full current state.
 
 ## Running it locally
 

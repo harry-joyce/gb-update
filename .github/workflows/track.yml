@@ -2,9 +2,10 @@ name: Track language availability
 
 on:
   schedule:
-    # Hourly, deliberately off the top of the hour (GitHub's scheduler is
-    # busiest at :00, which delays runs).
-    - cron: "17 * * * *"
+    # Every 30 minutes, at :17 and :47. Deliberately not "*/30", which fires at
+    # :00 and :30 -- the most congested minutes on GitHub's scheduler. Two
+    # offsets also mean a single dropped slot only costs 30 minutes.
+    - cron: "17,47 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
