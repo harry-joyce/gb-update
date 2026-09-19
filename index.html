@@ -4,6 +4,13 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Language availability tracker — 2026 Governing Body Update #6</title>
+<script>
+  // Applied before first paint so the chosen theme never flashes.
+  try {
+    var t = localStorage.getItem("theme");
+    if (t === "light" || t === "dark") { document.documentElement.setAttribute("data-theme", t); }
+  } catch (e) {}
+</script>
 <meta name="description" content="Tracks how many languages the 2026 Governing Body Update #6 has been published in on jw.org, and how that has grown over time." />
 <meta name="color-scheme" content="light dark" />
 <link rel="stylesheet" href="assets/styles.css" />
@@ -17,7 +24,11 @@
       <h1 id="update-title">2026 Governing Body Update #6</h1>
       <p class="sub" id="update-meta"></p>
     </div>
-    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour theme">Theme</button>
+    <div class="theme-switch" role="group" aria-label="Colour theme">
+      <button type="button" data-theme-choice="light" aria-pressed="false">Light</button>
+      <button type="button" data-theme-choice="dark" aria-pressed="false">Dark</button>
+      <button type="button" data-theme-choice="system" aria-pressed="true">System</button>
+    </div>
   </header>
 
   <div id="error" class="err" hidden></div>
@@ -76,14 +87,15 @@
             <tr>
               <th class="sortable" data-sort="name" scope="col">Language <span class="arrow">↑</span></th>
               <th scope="col">Code</th>
-              <th class="sortable" data-sort="first_seen" scope="col">First seen <span class="arrow">↑</span></th>
-              <th scope="col">Published title</th>
+              <th class="sortable" data-sort="published_at" scope="col">Published <span class="arrow">↑</span></th>
+              <th scope="col">Title in that language</th>
             </tr>
           </thead>
           <tbody></tbody>
         </table>
         <p class="empty" id="empty-published" hidden>No languages match that search.</p>
       </div>
+      <p class="card-note" id="published-legend"></p>
     </section>
 
     <section class="panel" role="tabpanel" id="panel-pending" aria-labelledby="tab-pending" hidden>
@@ -109,14 +121,14 @@
     </section>
 
     <section class="panel" role="tabpanel" id="panel-activity" aria-labelledby="tab-activity" hidden>
-      <p class="card-note" style="margin:0 0 6px">Each entry is one check in which the available-language list changed.</p>
+      <p class="card-note" style="margin:0 0 6px">Publishes grouped by the hour they happened, most recent first.</p>
       <ul class="feed" id="feed"></ul>
       <p class="empty" id="empty-activity" hidden>No changes recorded yet.</p>
     </section>
 
     <footer>
       <p id="footer-source"></p>
-      <p>Availability is read from the <code>rel="alternate"</code> language links that jw.org publishes on the English article — one per language the article actually exists in. Dates shown are when this tracker first observed a language, not an official publication time.</p>
+      <p id="footer-method"></p>
       <p id="footer-checked"></p>
     </footer>
 

@@ -1,1570 +1,4102 @@
 {
  "baseline": {
-  "count": 193,
+  "count": 449,
   "label": "2026 Governing Body Update #5",
   "short": "Update #5",
-  "url": "https://www.jw.org/en/news/region/global/2026-Governing-Body-Update-5/"
+  "sign_language_count": 72,
+  "url": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024059_1_VIDEO"
+ },
+ "counts": {
+  "api_times": 6,
+  "confirmed_times": 1,
+  "sign_languages": 0
  },
  "events": [
   {
    "added": [
     {
-     "code": "en",
-     "name": "English"
+     "at": "2026-09-18T14:00:00Z",
+     "code": "E",
+     "name": "English",
+     "source": "confirmed"
     }
    ],
    "count_after": 1,
-   "removed": [],
-   "seed": true,
-   "t": "2026-09-18T00:00:00Z"
+   "t": "2026-09-18T14:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-18T20:53:43Z",
+     "code": "X",
+     "name": "German",
+     "source": "api"
+    }
+   ],
+   "count_after": 2,
+   "t": "2026-09-18T20:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-18T23:55:38Z",
+     "code": "BQ",
+     "name": "Basque",
+     "source": "api"
+    }
+   ],
+   "count_after": 3,
+   "t": "2026-09-18T23:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-19T00:21:42Z",
+     "code": "AN",
+     "name": "Catalan",
+     "source": "api"
+    }
+   ],
+   "count_after": 4,
+   "t": "2026-09-19T00:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-19T04:42:14Z",
+     "code": "HI",
+     "name": "Hindi",
+     "source": "api"
+    }
+   ],
+   "count_after": 5,
+   "t": "2026-09-19T04:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-19T07:17:46Z",
+     "code": "S",
+     "name": "Spanish",
+     "source": "api"
+    },
+    {
+     "at": "2026-09-19T07:39:39Z",
+     "code": "I",
+     "name": "Italian",
+     "source": "api"
+    }
+   ],
+   "count_after": 7,
+   "t": "2026-09-19T07:00:00Z"
   }
  ],
- "ever_seen": {
-  "en": {
-   "exact": false,
-   "t": "2026-09-18T00:00:00Z"
-  }
- },
- "generated": "2026-09-19T08:17:08Z",
+ "generated": "2026-09-19T08:32:21Z",
  "history": [
   {
    "count": 1,
-   "t": "2026-09-18T00:00:00Z"
+   "t": "2026-09-18T14:00:00Z"
+  },
+  {
+   "count": 2,
+   "t": "2026-09-18T20:53:43Z"
+  },
+  {
+   "count": 3,
+   "t": "2026-09-18T23:55:38Z"
+  },
+  {
+   "count": 4,
+   "t": "2026-09-19T00:21:42Z"
+  },
+  {
+   "count": 5,
+   "t": "2026-09-19T04:42:14Z"
+  },
+  {
+   "count": 6,
+   "t": "2026-09-19T07:17:46Z"
+  },
+  {
+   "count": 7,
+   "t": "2026-09-19T07:39:39Z"
   }
  ],
- "last_checked": "2026-09-19T08:17:08Z",
+ "last_checked": "2026-09-19T08:32:21Z",
  "pending": [
   {
-   "code": "af",
+   "code": "ABB",
    "direction": "ltr",
+   "locale": "aba",
+   "name": "Abbey",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Abɛ"
+  },
+  {
+   "code": "AU",
+   "direction": "ltr",
+   "locale": "abn",
+   "name": "Abua",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Abua"
+  },
+  {
+   "code": "AC",
+   "direction": "ltr",
+   "locale": "ach",
+   "name": "Acholi",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Acholi"
+  },
+  {
+   "code": "AF",
+   "direction": "ltr",
+   "locale": "af",
    "name": "Afrikaans",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Afrikaans"
   },
   {
-   "code": "aha",
+   "code": "AHN",
    "direction": "ltr",
+   "locale": "aha",
    "name": "Ahanta",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Aɣɩnda"
   },
   {
-   "code": "sq",
+   "code": "AJG",
    "direction": "ltr",
+   "locale": "ajg",
+   "name": "Aja",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Aja"
+  },
+  {
+   "code": "AKA",
+   "direction": "ltr",
+   "locale": "ahk",
+   "name": "Akha",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Akha"
+  },
+  {
+   "code": "AL",
+   "direction": "ltr",
+   "locale": "sq",
    "name": "Albanian",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "shqip"
   },
   {
-   "code": "am",
+   "code": "ALU",
    "direction": "ltr",
+   "locale": "alz",
+   "name": "Alur",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Alur"
+  },
+  {
+   "code": "ASL",
+   "direction": "ltr",
+   "locale": "ase",
+   "name": "American Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "American Sign Language"
+  },
+  {
+   "code": "AM",
+   "direction": "ltr",
+   "locale": "am",
    "name": "Amharic",
    "script": "ETHIOPIC",
    "sign": false,
    "vernacular": "አማርኛ"
   },
   {
-   "code": "ar",
+   "code": "LAS",
+   "direction": "ltr",
+   "locale": "sgn-ao",
+   "name": "Angolan Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Língua angolana de sinais"
+  },
+  {
+   "code": "A",
    "direction": "rtl",
+   "locale": "ar",
    "name": "Arabic",
    "script": "ARABIC",
    "sign": false,
    "vernacular": "العربية"
   },
   {
-   "code": "arz",
+   "code": "AEY",
    "direction": "rtl",
+   "locale": "arz",
    "name": "Arabic (Egypt)",
    "script": "ARABIC",
    "sign": false,
    "vernacular": "العربية (اللهجة المصرية)"
   },
   {
-   "code": "hy",
+   "code": "ALN",
+   "direction": "rtl",
+   "locale": "apc",
+   "name": "Arabic (Lebanon)",
+   "script": "ARABIC",
+   "sign": false,
+   "vernacular": "العربية (اللهجة اللبنانية)"
+  },
+  {
+   "code": "ASN",
+   "direction": "rtl",
+   "locale": "apd",
+   "name": "Arabic (Sudanese)",
+   "script": "ARABIC",
+   "sign": false,
+   "vernacular": "العربية (اللهجة السودانية)"
+  },
+  {
+   "code": "LSA",
    "direction": "ltr",
+   "locale": "aed",
+   "name": "Argentinean Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de señas argentina"
+  },
+  {
+   "code": "REA",
+   "direction": "ltr",
+   "locale": "hy",
    "name": "Armenian",
    "script": "ARMENIAN",
    "sign": false,
    "vernacular": "Հայերեն"
   },
   {
-   "code": "as",
+   "code": "AHK",
    "direction": "ltr",
+   "locale": "cni",
+   "name": "Ashaninka",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "ashaninka"
+  },
+  {
+   "code": "AE",
+   "direction": "ltr",
+   "locale": "as",
    "name": "Assamese",
    "script": "BENGALI",
    "sign": false,
    "vernacular": "অসমীয়া"
   },
   {
-   "code": "ay",
+   "code": "IE",
    "direction": "ltr",
+   "locale": "teo",
+   "name": "Ateso",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Ateso"
+  },
+  {
+   "code": "AKN",
+   "direction": "ltr",
+   "locale": "djk",
+   "name": "Aukan",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Okanisitongo"
+  },
+  {
+   "code": "AUS",
+   "direction": "ltr",
+   "locale": "asf",
+   "name": "Australian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Auslan (Australian Sign Language)"
+  },
+  {
+   "code": "AP",
+   "direction": "ltr",
+   "locale": "ay",
    "name": "Aymara",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Aymara"
   },
   {
-   "code": "az",
+   "code": "AJR",
    "direction": "ltr",
+   "locale": "az",
    "name": "Azerbaijani",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Azərbaycan"
   },
   {
-   "code": "bas",
+   "code": "AR",
    "direction": "ltr",
+   "locale": "bm",
+   "name": "Bambara",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Bamanankan"
+  },
+  {
+   "code": "BNM",
+   "direction": "ltr",
+   "locale": "bjo",
+   "name": "Banda (Mid-Southern)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Banda (Mid-Southern)"
+  },
+  {
+   "code": "AO",
+   "direction": "ltr",
+   "locale": "bci",
+   "name": "Baoule",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Wawle"
+  },
+  {
+   "code": "BAK",
+   "direction": "ltr",
+   "locale": "ba",
+   "name": "Bashkir",
+   "script": "CYRILLIC",
+   "sign": false,
+   "vernacular": "башҡорт"
+  },
+  {
+   "code": "BS",
+   "direction": "ltr",
+   "locale": "bas",
    "name": "Bassa (Cameroon)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Basaa (Kamerun)"
   },
   {
-   "code": "bbc",
+   "code": "BA",
    "direction": "ltr",
+   "locale": "bsq",
+   "name": "Bassa (Liberia)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Ɓǎsɔ́ɔ̀ (Ɖàbíɖà)"
+  },
+  {
+   "code": "AK",
+   "direction": "ltr",
+   "locale": "btx",
+   "name": "Batak (Karo)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Batak (Karo)"
+  },
+  {
+   "code": "BT",
+   "direction": "ltr",
+   "locale": "bbc",
    "name": "Batak (Toba)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Batak (Toba)"
   },
   {
-   "code": "bn",
+   "code": "SBF",
    "direction": "ltr",
+   "locale": "sfb",
+   "name": "Belgian French Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Langue des signes de Belgique francophone"
+  },
+  {
+   "code": "BZK",
+   "direction": "ltr",
+   "locale": "bzj",
+   "name": "Belize Kriol",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Bileez Kriol"
+  },
+  {
+   "code": "BMB",
+   "direction": "ltr",
+   "locale": "bmb",
+   "name": "Bembe",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kibembe"
+  },
+  {
+   "code": "BE",
+   "direction": "ltr",
+   "locale": "bn",
    "name": "Bengali",
    "script": "BENGALI",
    "sign": false,
    "vernacular": "বাংলা"
   },
   {
-   "code": "bcl",
+   "code": "BI",
    "direction": "ltr",
+   "locale": "bcl",
    "name": "Bicol",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Bicol"
   },
   {
-   "code": "bi",
+   "code": "LM",
    "direction": "ltr",
+   "locale": "bi",
    "name": "Bislama",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Bislama"
   },
   {
-   "code": "bg",
+   "code": "TCR",
    "direction": "ltr",
+   "locale": "pov",
+   "name": "Bissau Guinean Creole",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kriol di Gine-Bisau"
+  },
+  {
+   "code": "BVL",
+   "direction": "ltr",
+   "locale": "bvl",
+   "name": "Bolivian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de señas boliviana"
+  },
+  {
+   "code": "BO",
+   "direction": "ltr",
+   "locale": "bum",
+   "name": "Boulou",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Bulu"
+  },
+  {
+   "code": "LSB",
+   "direction": "ltr",
+   "locale": "bzs",
+   "name": "Brazilian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Língua brasileira de sinais (Libras)"
+  },
+  {
+   "code": "BSL",
+   "direction": "ltr",
+   "locale": "bfi",
+   "name": "British Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "British Sign Language"
+  },
+  {
+   "code": "BL",
+   "direction": "ltr",
+   "locale": "bg",
    "name": "Bulgarian",
    "script": "CYRILLIC",
    "sign": false,
    "vernacular": "български"
   },
   {
-   "code": "sgn-cm",
+   "code": "BRS",
    "direction": "ltr",
+   "locale": "sgn-bi",
+   "name": "Burundi Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Langue des signes burundaise"
+  },
+  {
+   "code": "ET",
+   "direction": "ltr",
+   "locale": "btg",
+   "name": "Bété",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "ˈBhɛtɩgbʋʋ"
+  },
+  {
+   "code": "CB",
+   "direction": "ltr",
+   "locale": "km",
+   "name": "Cambodian",
+   "script": "CAMBODIAN",
+   "sign": false,
+   "vernacular": "ខ្មែរ"
+  },
+  {
+   "code": "CBL",
+   "direction": "ltr",
+   "locale": "sgn-kh",
+   "name": "Cambodian Sign Language",
+   "script": "CAMBODIAN",
+   "sign": true,
+   "vernacular": "ភាសាសញ្ញាខ្មែរ"
+  },
+  {
+   "code": "CML",
+   "direction": "ltr",
+   "locale": "sgn-cm",
    "name": "Cameroon Sign Language",
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Langue des signes camerounaise"
   },
   {
-   "code": "cat",
+   "code": "CRB",
    "direction": "ltr",
-   "name": "Catalan",
+   "locale": "car-x-crb",
+   "name": "Carib",
    "script": "ROMAN",
    "sign": false,
-   "vernacular": "català"
+   "vernacular": "Kariʼnia"
   },
   {
-   "code": "ceb",
+   "code": "CV",
    "direction": "ltr",
+   "locale": "ceb",
    "name": "Cebuano",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Cebuano"
   },
   {
-   "code": "yue-hans",
+   "code": "CRS",
    "direction": "ltr",
+   "locale": "sgn-cf",
+   "name": "Central African Republic Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Langue des signes centrafricaine"
+  },
+  {
+   "code": "CGM",
+   "direction": "ltr",
+   "locale": "tso-mz",
+   "name": "Changana (Mozambique)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "xiChangana (Moçambique)"
+  },
+  {
+   "code": "CC",
+   "direction": "ltr",
+   "locale": "cbk",
+   "name": "Chavacano",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Chavacano"
+  },
+  {
+   "code": "CN",
+   "direction": "ltr",
+   "locale": "ny",
+   "name": "Chichewa",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Chichewa"
+  },
+  {
+   "code": "SCH",
+   "direction": "ltr",
+   "locale": "csg",
+   "name": "Chilean Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de señas chilena"
+  },
+  {
+   "code": "HK",
+   "direction": "ltr",
+   "locale": "cnh",
+   "name": "Chin (Hakha)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Chin (Hakha)"
+  },
+  {
+   "code": "CNS",
+   "direction": "ltr",
+   "locale": "yue-hans",
    "name": "Chinese Cantonese (Simplified)",
    "script": "CHINESE",
    "sign": false,
    "vernacular": "中文简体（广东话）"
   },
   {
-   "code": "yue-hant",
+   "code": "CHC",
    "direction": "ltr",
+   "locale": "yue-hant",
    "name": "Chinese Cantonese (Traditional)",
    "script": "CHINESE",
    "sign": false,
    "vernacular": "中文繁體（廣東話）"
   },
   {
-   "code": "cmn-hans",
+   "code": "CHS",
    "direction": "ltr",
+   "locale": "cmn-hans",
    "name": "Chinese Mandarin (Simplified)",
    "script": "CHINESE",
    "sign": false,
    "vernacular": "中文简体（普通话）"
   },
   {
-   "code": "cmn-hant",
+   "code": "CH",
    "direction": "ltr",
+   "locale": "cmn-hant",
    "name": "Chinese Mandarin (Traditional)",
    "script": "CHINESE",
    "sign": false,
    "vernacular": "中文繁體（國語）"
   },
   {
-   "code": "toi",
+   "code": "CSL",
    "direction": "ltr",
+   "locale": "csl",
+   "name": "Chinese Sign Language",
+   "script": "CHINESE",
+   "sign": true,
+   "vernacular": "中国手语"
+  },
+  {
+   "code": "CG",
+   "direction": "ltr",
+   "locale": "toi",
    "name": "Chitonga",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Chitonga"
   },
   {
-   "code": "tog",
+   "code": "CT",
    "direction": "ltr",
+   "locale": "tog",
    "name": "Chitonga (Malawi)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Chitonga (Malawi)"
   },
   {
-   "code": "toi-zw",
+   "code": "CGW",
    "direction": "ltr",
+   "locale": "toi-zw",
    "name": "Chitonga (Zimbabwe)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Chitonga (Zimbabwe)"
   },
   {
-   "code": "tum",
+   "code": "TB",
    "direction": "ltr",
+   "locale": "tum",
    "name": "Chitumbuka",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Chitumbuka"
   },
   {
-   "code": "yao",
+   "code": "YA",
    "direction": "ltr",
+   "locale": "yao",
    "name": "Chiyao",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Chiyao"
   },
   {
-   "code": "bem",
+   "code": "CK",
    "direction": "ltr",
+   "locale": "cjk",
+   "name": "Chokwe",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Chokwe"
+  },
+  {
+   "code": "CHL",
+   "direction": "ltr",
+   "locale": "ctu",
+   "name": "Chol",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "ch'ol"
+  },
+  {
+   "code": "CPI",
+   "direction": "ltr",
+   "locale": "cce",
+   "name": "Chopi",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Txitxopi"
+  },
+  {
+   "code": "CO",
+   "direction": "ltr",
+   "locale": "chw",
+   "name": "Chuabo",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Etxuwabo"
+  },
+  {
+   "code": "CW",
+   "direction": "ltr",
+   "locale": "bem",
    "name": "Cibemba",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Cibemba"
   },
   {
-   "code": "nya",
+   "code": "NM",
    "direction": "ltr",
+   "locale": "mwn",
+   "name": "Cinamwanga",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Cinamwanga"
+  },
+  {
+   "code": "CIN",
+   "direction": "ltr",
+   "locale": "nya",
    "name": "Cinyanja",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Cinyanja"
   },
   {
-   "code": "hr",
+   "code": "LSC",
    "direction": "ltr",
+   "locale": "csn",
+   "name": "Colombian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de señas colombiana"
+  },
+  {
+   "code": "CGS",
+   "direction": "ltr",
+   "locale": "sgn-cd",
+   "name": "Congolese Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Langue des signes congolaise"
+  },
+  {
+   "code": "RA",
+   "direction": "ltr",
+   "locale": "rar",
+   "name": "Cook Islands Māori",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kuki Airani"
+  },
+  {
+   "code": "SCR",
+   "direction": "ltr",
+   "locale": "csr",
+   "name": "Costa Rican Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de señas costarricense"
+  },
+  {
+   "code": "C",
+   "direction": "ltr",
+   "locale": "hr",
    "name": "Croatian",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "hrvatski"
   },
   {
-   "code": "cs",
+   "code": "HZJ",
    "direction": "ltr",
+   "locale": "csq",
+   "name": "Croatian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "hrvatski znakovni jezik"
+  },
+  {
+   "code": "CBS",
+   "direction": "ltr",
+   "locale": "csf",
+   "name": "Cuban Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de señas cubana"
+  },
+  {
+   "code": "B",
+   "direction": "ltr",
+   "locale": "cs",
    "name": "Czech",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "čeština"
   },
   {
-   "code": "dga",
+   "code": "CSE",
    "direction": "ltr",
+   "locale": "cse",
+   "name": "Czech Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "český znakový jazyk"
+  },
+  {
+   "code": "DGA",
+   "direction": "ltr",
+   "locale": "dga",
    "name": "Dagaare",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Dagaare"
   },
   {
-   "code": "naq-x-dmr",
+   "code": "DMR",
    "direction": "ltr",
+   "locale": "naq-x-dmr",
    "name": "Damara",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Damara"
   },
   {
-   "code": "ada",
+   "code": "DG",
    "direction": "ltr",
+   "locale": "ada",
    "name": "Dangme",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Dangme"
   },
   {
-   "code": "da",
+   "code": "D",
    "direction": "ltr",
+   "locale": "da",
    "name": "Danish",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Dansk"
   },
   {
-   "code": "dua",
+   "code": "DI",
    "direction": "ltr",
+   "locale": "din",
+   "name": "Dinka",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Dinka"
+  },
+  {
+   "code": "DA",
+   "direction": "ltr",
+   "locale": "dua",
    "name": "Douala",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Douala"
   },
   {
-   "code": "nl",
+   "code": "LF",
    "direction": "ltr",
+   "locale": "dhv",
+   "name": "Drehu",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Drehu"
+  },
+  {
+   "code": "O",
+   "direction": "ltr",
+   "locale": "nl",
    "name": "Dutch",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Nederlands"
   },
   {
-   "code": "bin",
+   "code": "EBA",
    "direction": "ltr",
+   "locale": "igb",
+   "name": "Ebira",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Ebira"
+  },
+  {
+   "code": "SEC",
+   "direction": "ltr",
+   "locale": "ecs",
+   "name": "Ecuadorian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de señas ecuatoriana"
+  },
+  {
+   "code": "ED",
+   "direction": "ltr",
+   "locale": "bin",
    "name": "Edo",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Edo"
   },
   {
-   "code": "efi",
+   "code": "EF",
    "direction": "ltr",
+   "locale": "efi",
    "name": "Efik",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Efịk"
   },
   {
-   "code": "et",
+   "code": "EMB",
    "direction": "ltr",
+   "locale": "cto",
+   "name": "Emberá (Catío)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "embera katio"
+  },
+  {
+   "code": "EMC",
+   "direction": "ltr",
+   "locale": "cmi",
+   "name": "Emberá (Chamí)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "ẽbẽra beɗea chamí"
+  },
+  {
+   "code": "IH",
+   "direction": "ltr",
+   "locale": "ish",
+   "name": "Esan",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Esan"
+  },
+  {
+   "code": "ST",
+   "direction": "ltr",
+   "locale": "et",
    "name": "Estonian",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "eesti"
   },
   {
-   "code": "ee",
+   "code": "ESL",
    "direction": "ltr",
+   "locale": "eth",
+   "name": "Ethiopian Sign Language",
+   "script": "ETHIOPIC",
+   "sign": true,
+   "vernacular": "የኢትዮጵያ ምልክት ቋንቋ"
+  },
+  {
+   "code": "EW",
+   "direction": "ltr",
+   "locale": "ee",
    "name": "Ewe",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Eʋegbe"
   },
   {
-   "code": "ewo",
+   "code": "EWN",
    "direction": "ltr",
+   "locale": "ewo",
    "name": "Ewondo",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ewondo"
   },
   {
-   "code": "fat",
+   "code": "FGN",
    "direction": "ltr",
+   "locale": "fan",
+   "name": "Fang",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Fang"
+  },
+  {
+   "code": "FA",
+   "direction": "ltr",
+   "locale": "fat",
    "name": "Fante",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Mfantse"
   },
   {
-   "code": "fj",
+   "code": "FN",
    "direction": "ltr",
+   "locale": "fj",
    "name": "Fijian",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "vakaViti"
   },
   {
-   "code": "fi",
+   "code": "FSL",
    "direction": "ltr",
+   "locale": "psp",
+   "name": "Filipino Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Filipino Sign Language"
+  },
+  {
+   "code": "FI",
+   "direction": "ltr",
+   "locale": "fi",
    "name": "Finnish",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "suomi"
   },
   {
-   "code": "fon",
+   "code": "FID",
    "direction": "ltr",
+   "locale": "fse",
+   "name": "Finnish Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "suomalainen viittomakieli"
+  },
+  {
+   "code": "FO",
+   "direction": "ltr",
+   "locale": "fon",
    "name": "Fon",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Fɔngbe"
   },
   {
-   "code": "gur",
+   "code": "FF",
    "direction": "ltr",
+   "locale": "gur",
    "name": "Frafra",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Farefare"
   },
   {
-   "code": "fr",
+   "code": "F",
    "direction": "ltr",
+   "locale": "fr",
    "name": "French",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Français"
   },
   {
-   "code": "gaa",
+   "code": "LSF",
    "direction": "ltr",
+   "locale": "fsl",
+   "name": "French Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Langue des signes française"
+  },
+  {
+   "code": "GA",
+   "direction": "ltr",
+   "locale": "gaa",
    "name": "Ga",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ga"
   },
   {
-   "code": "ka",
+   "code": "GLC",
    "direction": "ltr",
+   "locale": "gl",
+   "name": "Galician",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Galego"
+  },
+  {
+   "code": "GRF",
+   "direction": "ltr",
+   "locale": "cab",
+   "name": "Garifuna",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Garifuna"
+  },
+  {
+   "code": "GBA",
+   "direction": "ltr",
+   "locale": "gba",
+   "name": "Gbaya",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Gbaya"
+  },
+  {
+   "code": "GE",
+   "direction": "ltr",
+   "locale": "ka",
    "name": "Georgian",
    "script": "GEORGIAN",
    "sign": false,
    "vernacular": "ქართული"
   },
   {
-   "code": "de",
+   "code": "DGS",
    "direction": "ltr",
-   "name": "German",
+   "locale": "gsg",
+   "name": "German Sign Language",
    "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Deutsch"
+   "sign": true,
+   "vernacular": "Deutsche Gebärdensprache"
   },
   {
-   "code": "el",
+   "code": "GHS",
    "direction": "ltr",
+   "locale": "gse",
+   "name": "Ghanaian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Ghanaian Sign Language"
+  },
+  {
+   "code": "GTN",
+   "direction": "ltr",
+   "locale": "toh",
+   "name": "Gitonga",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Gitonga"
+  },
+  {
+   "code": "GN",
+   "direction": "ltr",
+   "locale": "gkn",
+   "name": "Gokana",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Gokana"
+  },
+  {
+   "code": "G",
+   "direction": "ltr",
+   "locale": "el",
    "name": "Greek",
    "script": "GREEK",
    "sign": false,
    "vernacular": "Ελληνική"
   },
   {
-   "code": "gug",
+   "code": "GSL",
    "direction": "ltr",
+   "locale": "gss",
+   "name": "Greek Sign Language",
+   "script": "GREEK",
+   "sign": true,
+   "vernacular": "Ελληνική Νοηματική Γλώσσα"
+  },
+  {
+   "code": "GL",
+   "direction": "ltr",
+   "locale": "kl",
+   "name": "Greenlandic",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kalaallisut"
+  },
+  {
+   "code": "GCR",
+   "direction": "ltr",
+   "locale": "gcf",
+   "name": "Guadeloupean Creole",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kréyòl Gwadloup"
+  },
+  {
+   "code": "GI",
+   "direction": "ltr",
+   "locale": "gug",
    "name": "Guarani",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "guarani"
   },
   {
-   "code": "gu",
+   "code": "LSG",
    "direction": "ltr",
+   "locale": "gsm",
+   "name": "Guatemalan Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de señas de Guatemala"
+  },
+  {
+   "code": "GRZ",
+   "direction": "ltr",
+   "locale": "gkp",
+   "name": "Guerze",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kpɛlɛɛwoo"
+  },
+  {
+   "code": "GNC",
+   "direction": "ltr",
+   "locale": "gcr",
+   "name": "Guianese Creole",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kréyòl gwiyanè"
+  },
+  {
+   "code": "GU",
+   "direction": "ltr",
+   "locale": "gu",
    "name": "Gujarati",
    "script": "GUJARATI",
    "sign": false,
    "vernacular": "ગુજરાતી"
   },
   {
-   "code": "guw",
+   "code": "EG",
    "direction": "ltr",
+   "locale": "guw",
    "name": "Gun",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Gungbe"
   },
   {
-   "code": "ht",
+   "code": "CR",
    "direction": "ltr",
+   "locale": "ht",
    "name": "Haitian Creole",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kreyòl ayisyen"
   },
   {
-   "code": "ha",
+   "code": "HA",
    "direction": "ltr",
+   "locale": "ha",
    "name": "Hausa",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Hausa"
   },
   {
-   "code": "he",
+   "code": "HVU",
+   "direction": "ltr",
+   "locale": "hav",
+   "name": "Havu",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Ekihavu"
+  },
+  {
+   "code": "HWP",
+   "direction": "ltr",
+   "locale": "hwc",
+   "name": "Hawai’i Pidgin",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Hawai’i Pidgin"
+  },
+  {
+   "code": "Q",
    "direction": "rtl",
+   "locale": "he",
    "name": "Hebrew",
    "script": "HEBREW",
    "sign": false,
    "vernacular": "עברית"
   },
   {
-   "code": "hil",
+   "code": "HR",
    "direction": "ltr",
+   "locale": "hz",
+   "name": "Herero",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Otjiherero"
+  },
+  {
+   "code": "HV",
+   "direction": "ltr",
+   "locale": "hil",
    "name": "Hiligaynon",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Hiligaynon"
   },
   {
-   "code": "hi",
+   "code": "MO",
    "direction": "ltr",
-   "name": "Hindi",
-   "script": "DEVANAGARI",
-   "sign": false,
-   "vernacular": "हिंदी"
-  },
-  {
-   "code": "ho",
-   "direction": "ltr",
+   "locale": "ho",
    "name": "Hiri Motu",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Hiri Motu"
   },
   {
-   "code": "hmn",
+   "code": "HM",
    "direction": "ltr",
+   "locale": "hmn",
    "name": "Hmong (White)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Hmoob Dawb"
   },
   {
-   "code": "hu",
+   "code": "SHO",
    "direction": "ltr",
+   "locale": "hds",
+   "name": "Honduras Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de señas hondureña"
+  },
+  {
+   "code": "H",
+   "direction": "ltr",
+   "locale": "hu",
    "name": "Hungarian",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "magyar"
   },
   {
-   "code": "iba",
+   "code": "HDF",
    "direction": "ltr",
+   "locale": "hsh",
+   "name": "Hungarian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "magyar jelnyelv"
+  },
+  {
+   "code": "HSK",
+   "direction": "ltr",
+   "locale": "hrx",
+   "name": "Hunsrik",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Hunsrik"
+  },
+  {
+   "code": "IA",
+   "direction": "ltr",
+   "locale": "iba",
    "name": "Iban",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Iban"
   },
   {
-   "code": "is",
+   "code": "IG",
    "direction": "ltr",
+   "locale": "ibg",
+   "name": "Ibanag",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Ibanag"
+  },
+  {
+   "code": "IBI",
+   "direction": "ltr",
+   "locale": "yom-x-ibi",
+   "name": "Ibinda",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Ibinda"
+  },
+  {
+   "code": "IC",
+   "direction": "ltr",
+   "locale": "is",
    "name": "Icelandic",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "íslenska"
   },
   {
-   "code": "ig",
+   "code": "ID",
    "direction": "ltr",
+   "locale": "idu",
+   "name": "Idoma",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Idoma"
+  },
+  {
+   "code": "AA",
+   "direction": "ltr",
+   "locale": "igl",
+   "name": "Igala",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Igala"
+  },
+  {
+   "code": "IB",
+   "direction": "ltr",
+   "locale": "ig",
    "name": "Igbo",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Igbo"
   },
   {
-   "code": "ilo",
+   "code": "IGE",
    "direction": "ltr",
+   "locale": "ige",
+   "name": "Igede",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Igede"
+  },
+  {
+   "code": "IJ",
+   "direction": "ltr",
+   "locale": "ijc",
+   "name": "Ijaw",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Ijaw"
+  },
+  {
+   "code": "IL",
+   "direction": "ltr",
+   "locale": "ilo",
    "name": "Iloko",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Iloko"
   },
   {
-   "code": "id",
+   "code": "INS",
    "direction": "ltr",
+   "locale": "ins",
+   "name": "Indian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Indian Sign Language"
+  },
+  {
+   "code": "IN",
+   "direction": "ltr",
+   "locale": "id",
    "name": "Indonesian",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Indonesia"
   },
   {
-   "code": "it",
+   "code": "INI",
    "direction": "ltr",
-   "name": "Italian",
+   "locale": "inl",
+   "name": "Indonesian Sign Language",
    "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Italiano"
+   "sign": true,
+   "vernacular": "Bahasa Isyarat Indonesia"
   },
   {
-   "code": "ja",
+   "code": "CRE",
    "direction": "ltr",
+   "locale": "icr",
+   "name": "Islander Creole English",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "San Andrés Creole"
+  },
+  {
+   "code": "IS",
+   "direction": "ltr",
+   "locale": "iso",
+   "name": "Isoko",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Isoko"
+  },
+  {
+   "code": "ISL",
+   "direction": "ltr",
+   "locale": "ise",
+   "name": "Italian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Lingua dei segni italiana"
+  },
+  {
+   "code": "IT",
+   "direction": "ltr",
+   "locale": "its",
+   "name": "Itsekiri",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Itsekiri"
+  },
+  {
+   "code": "LSI",
+   "direction": "ltr",
+   "locale": "sgn-ci",
+   "name": "Ivorian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Langue des signes ivoirienne"
+  },
+  {
+   "code": "JCR",
+   "direction": "ltr",
+   "locale": "jam-x-jcr",
+   "name": "Jamaican Creole",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Patwa"
+  },
+  {
+   "code": "JML",
+   "direction": "ltr",
+   "locale": "jls",
+   "name": "Jamaican Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Jamaican Sign Language"
+  },
+  {
+   "code": "J",
+   "direction": "ltr",
+   "locale": "ja",
    "name": "Japanese",
    "script": "JAPANESE",
    "sign": false,
    "vernacular": "日本語"
   },
   {
-   "code": "jv",
+   "code": "JSL",
    "direction": "ltr",
+   "locale": "jsl",
+   "name": "Japanese Sign Language",
+   "script": "JAPANESE",
+   "sign": true,
+   "vernacular": "日本手話"
+  },
+  {
+   "code": "JA",
+   "direction": "ltr",
+   "locale": "jv",
    "name": "Javanese",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Jawa"
   },
   {
-   "code": "kea",
+   "code": "JWK",
    "direction": "ltr",
+   "locale": "whg",
+   "name": "Jiwaka",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Jiwaka Yu"
+  },
+  {
+   "code": "JL",
+   "direction": "ltr",
+   "locale": "dyu",
+   "name": "Jula",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Jula"
+  },
+  {
+   "code": "KAB",
+   "direction": "ltr",
+   "locale": "kbp",
+   "name": "Kabiye",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kabɩyɛ"
+  },
+  {
+   "code": "KBV",
+   "direction": "ltr",
+   "locale": "kea",
    "name": "Kabuverdianu",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kabuverdianu"
   },
   {
-   "code": "kck-x-kl",
+   "code": "KBY",
    "direction": "ltr",
+   "locale": "kab",
+   "name": "Kabyle",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Taqbaylit"
+  },
+  {
+   "code": "KL",
+   "direction": "ltr",
+   "locale": "kck-x-kl",
    "name": "Kalanga (Botswana)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kalanga (Botswana)"
   },
   {
-   "code": "kam",
+   "code": "KB",
    "direction": "ltr",
+   "locale": "kam",
    "name": "Kamba",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kikamba"
   },
   {
-   "code": "kn",
+   "code": "KA",
    "direction": "ltr",
+   "locale": "kn",
    "name": "Kannada",
    "script": "KANNADA",
    "sign": false,
    "vernacular": "ಕನ್ನಡ"
   },
   {
-   "code": "ksw",
+   "code": "KYK",
    "direction": "ltr",
+   "locale": "kny",
+   "name": "Kanyok",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Ciin-kanyok"
+  },
+  {
+   "code": "KR",
+   "direction": "ltr",
+   "locale": "ksw",
    "name": "Karen (S'gaw)",
    "script": "MYANMAR",
    "sign": false,
    "vernacular": "ကညီ(စှီၤ)ကျိာ်"
   },
   {
-   "code": "kk",
+   "code": "AZ",
    "direction": "ltr",
+   "locale": "kk",
    "name": "Kazakh",
    "script": "CYRILLIC",
    "sign": false,
    "vernacular": "қазақ"
   },
   {
-   "code": "kwy",
+   "code": "AZA",
+   "direction": "rtl",
+   "locale": "kk-arab",
+   "name": "Kazakh (Arabic)",
+   "script": "ARABIC",
+   "sign": false,
+   "vernacular": "قازاق ٴتىلى (ارابشا جازۋى)"
+  },
+  {
+   "code": "GK",
    "direction": "ltr",
+   "locale": "kek",
+   "name": "Kekchi",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "q’eqchi’"
+  },
+  {
+   "code": "KSI",
+   "direction": "ltr",
+   "locale": "xki",
+   "name": "Kenyan Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Kenyan Sign Language"
+  },
+  {
+   "code": "OG",
+   "direction": "ltr",
+   "locale": "ogo",
+   "name": "Khana",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Khana"
+  },
+  {
+   "code": "KD",
+   "direction": "ltr",
+   "locale": "kqn",
+   "name": "Kikaonde",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kikaonde"
+  },
+  {
+   "code": "KG",
+   "direction": "ltr",
+   "locale": "kwy",
    "name": "Kikongo",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kikongo"
   },
   {
-   "code": "ktu-x-kgl",
+   "code": "KGL",
    "direction": "ltr",
+   "locale": "ktu-x-kgl",
    "name": "Kikongo ya Leta",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kikongo ya leta"
   },
   {
-   "code": "ki",
+   "code": "KQ",
    "direction": "ltr",
+   "locale": "ki",
    "name": "Kikuyu",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Gĩkũyũ"
   },
   {
-   "code": "lu",
+   "code": "KU",
    "direction": "ltr",
+   "locale": "lu",
    "name": "Kiluba",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kiluba"
   },
   {
-   "code": "kmb",
+   "code": "KIM",
    "direction": "ltr",
+   "locale": "kmb",
    "name": "Kimbundu",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kimbundu"
   },
   {
-   "code": "rw",
+   "code": "KIN",
    "direction": "ltr",
+   "locale": "nnb",
+   "name": "Kinande",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kinande"
+  },
+  {
+   "code": "YW",
+   "direction": "ltr",
+   "locale": "rw",
    "name": "Kinyarwanda",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ikinyarwanda"
   },
   {
-   "code": "ky",
+   "code": "KIP",
    "direction": "ltr",
+   "locale": "pem",
+   "name": "Kipende",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kipende"
+  },
+  {
+   "code": "KZ",
+   "direction": "ltr",
+   "locale": "ky",
    "name": "Kirghiz",
    "script": "CYRILLIC",
    "sign": false,
    "vernacular": "кыргыз"
   },
   {
-   "code": "gil",
+   "code": "GB",
    "direction": "ltr",
+   "locale": "gil",
    "name": "Kiribati",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kiribati"
   },
   {
-   "code": "run",
+   "code": "RU",
    "direction": "ltr",
+   "locale": "run",
    "name": "Kirundi",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ikirundi"
   },
   {
-   "code": "kg",
+   "code": "KI",
    "direction": "ltr",
+   "locale": "kss",
+   "name": "Kisi",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kisiei"
+  },
+  {
+   "code": "KSN",
+   "direction": "ltr",
+   "locale": "sop",
+   "name": "Kisonge",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kisongye"
+  },
+  {
+   "code": "KIT",
+   "direction": "ltr",
+   "locale": "ktu-x-kit",
+   "name": "Kituba",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kituba"
+  },
+  {
+   "code": "KKL",
+   "direction": "ltr",
+   "locale": "kzn",
+   "name": "Kokola",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kokola"
+  },
+  {
+   "code": "MK",
+   "direction": "ltr",
+   "locale": "kg",
    "name": "Kongo",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kikongo (Rép. dém. du congo)"
   },
   {
-   "code": "gom",
+   "code": "KT",
    "direction": "ltr",
+   "locale": "gom",
    "name": "Konkani (Roman)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Konkani (Romi)"
   },
   {
-   "code": "ko",
+   "code": "KO",
    "direction": "ltr",
+   "locale": "ko",
    "name": "Korean",
    "script": "KOREAN",
    "sign": false,
    "vernacular": "한국어"
   },
   {
-   "code": "kri",
+   "code": "KSL",
    "direction": "ltr",
+   "locale": "kvk",
+   "name": "Korean Sign Language",
+   "script": "KOREAN",
+   "sign": true,
+   "vernacular": "한국 수어"
+  },
+  {
+   "code": "KP",
+   "direction": "ltr",
+   "locale": "xpe",
+   "name": "Kpelle",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kpelle"
+  },
+  {
+   "code": "KRI",
+   "direction": "ltr",
+   "locale": "kri",
    "name": "Krio",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Krio"
   },
   {
-   "code": "kj",
+   "code": "KHN",
    "direction": "ltr",
+   "locale": "sbs",
+   "name": "Kuhane (Subiya)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kuhane (Subiya)"
+  },
+  {
+   "code": "WG",
+   "direction": "ltr",
+   "locale": "kwn",
+   "name": "Kwangali",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Rukwangali"
+  },
+  {
+   "code": "KY",
+   "direction": "ltr",
+   "locale": "kj",
    "name": "Kwanyama",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Oshikwanyama"
   },
   {
-   "code": "lo",
+   "code": "NKN",
    "direction": "ltr",
+   "locale": "nyy-x-nkn",
+   "name": "Kyangonde",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kyangonde"
+  },
+  {
+   "code": "LMB",
+   "direction": "ltr",
+   "locale": "lai",
+   "name": "Lambya",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Chilambya"
+  },
+  {
+   "code": "LN",
+   "direction": "ltr",
+   "locale": "laj",
+   "name": "Lango",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Lango"
+  },
+  {
+   "code": "LA",
+   "direction": "ltr",
+   "locale": "lo",
    "name": "Laotian",
    "script": "LAOTIAN",
    "sign": false,
    "vernacular": "ລາວ"
   },
   {
-   "code": "ldi",
+   "code": "LR",
    "direction": "ltr",
+   "locale": "ldi",
    "name": "Lari",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kilari"
   },
   {
-   "code": "ln",
+   "code": "LT",
    "direction": "ltr",
+   "locale": "lv",
+   "name": "Latvian",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "latviešu"
+  },
+  {
+   "code": "LL",
+   "direction": "ltr",
+   "locale": "lln",
+   "name": "Lele",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Lele"
+  },
+  {
+   "code": "LND",
+   "direction": "ltr",
+   "locale": "led",
+   "name": "Lendu",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Baledha"
+  },
+  {
+   "code": "LJ",
+   "direction": "ltr",
+   "locale": "leh",
+   "name": "Lenje",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Cilenje"
+  },
+  {
+   "code": "LHK",
+   "direction": "ltr",
+   "locale": "koo",
+   "name": "Lhukonzo",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Lhukonzo"
+  },
+  {
+   "code": "ELI",
+   "direction": "ltr",
+   "locale": "lir",
+   "name": "Liberian English",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Liberian English"
+  },
+  {
+   "code": "LI",
+   "direction": "ltr",
+   "locale": "ln",
    "name": "Lingala",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Lingala"
   },
   {
-   "code": "lt",
+   "code": "L",
    "direction": "ltr",
+   "locale": "lt",
    "name": "Lithuanian",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "lietuvių"
   },
   {
-   "code": "pdt",
+   "code": "LE",
    "direction": "ltr",
+   "locale": "ngl",
+   "name": "Lomwe",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Elomwe"
+  },
+  {
+   "code": "LWX",
+   "direction": "ltr",
+   "locale": "pdt",
    "name": "Low German",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Plautdietsch"
   },
   {
-   "code": "luo",
+   "code": "LU",
    "direction": "ltr",
+   "locale": "lg",
+   "name": "Luganda",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Luganda"
+  },
+  {
+   "code": "LG",
+   "direction": "ltr",
+   "locale": "lgg",
+   "name": "Lugbara",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Lugbara"
+  },
+  {
+   "code": "LD",
+   "direction": "ltr",
+   "locale": "lun",
+   "name": "Lunda",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Lunda"
+  },
+  {
+   "code": "LO",
+   "direction": "ltr",
+   "locale": "luo",
    "name": "Luo",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Dholuo"
   },
   {
-   "code": "mg",
+   "code": "LV",
    "direction": "ltr",
+   "locale": "lue",
+   "name": "Luvale",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Luvale"
+  },
+  {
+   "code": "MC",
+   "direction": "ltr",
+   "locale": "mk",
+   "name": "Macedonian",
+   "script": "CYRILLIC",
+   "sign": false,
+   "vernacular": "македонски"
+  },
+  {
+   "code": "MAC",
+   "direction": "ltr",
+   "locale": "vmw",
+   "name": "Macua",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Emakhuwa"
+  },
+  {
+   "code": "TTM",
+   "direction": "ltr",
+   "locale": "mzc",
+   "name": "Madagascar Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Tenin’ny Tanana Malagasy"
+  },
+  {
+   "code": "MHM",
+   "direction": "ltr",
+   "locale": "xmc",
+   "name": "Makhuwa-Marrevone",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Makhuwa-Marrevone"
+  },
+  {
+   "code": "MWM",
+   "direction": "ltr",
+   "locale": "mgh",
+   "name": "Makhuwa-Meetto",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Imakhuwa Imeetto"
+  },
+  {
+   "code": "MHS",
+   "direction": "ltr",
+   "locale": "vmk",
+   "name": "Makhuwa-Shirima",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Makhuwa-Shirima"
+  },
+  {
+   "code": "MKD",
+   "direction": "ltr",
+   "locale": "kde",
+   "name": "Makonde",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Shimakonde"
+  },
+  {
+   "code": "MG",
+   "direction": "ltr",
+   "locale": "mg",
    "name": "Malagasy",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Malagasy"
   },
   {
-   "code": "ms",
+   "code": "MSL",
    "direction": "ltr",
+   "locale": "sgn-mw",
+   "name": "Malawi Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Chinenero Chamanja cha ku Malawi"
+  },
+  {
+   "code": "ML",
+   "direction": "ltr",
+   "locale": "ms",
    "name": "Malay",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Melayu"
   },
   {
-   "code": "ml",
+   "code": "MY",
    "direction": "ltr",
+   "locale": "ml",
    "name": "Malayalam",
    "script": "MALAYALAM",
    "sign": false,
    "vernacular": "മലയാളം"
   },
   {
-   "code": "mt",
+   "code": "BIM",
    "direction": "ltr",
+   "locale": "xml",
+   "name": "Malaysian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Bahasa Isyarat Malaysia"
+  },
+  {
+   "code": "MT",
+   "direction": "ltr",
+   "locale": "mt",
    "name": "Maltese",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Malti"
   },
   {
-   "code": "mgr",
+   "code": "MZ",
    "direction": "ltr",
+   "locale": "mam",
+   "name": "Mam",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "mam"
+  },
+  {
+   "code": "MWL",
+   "direction": "ltr",
+   "locale": "mgr",
    "name": "Mambwe-Lungu",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Cimambwe-Lungu"
   },
   {
-   "code": "mr",
+   "code": "MNJ",
    "direction": "ltr",
+   "locale": "mzv",
+   "name": "Mandja",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Mandja"
+  },
+  {
+   "code": "MNO",
+   "direction": "ltr",
+   "locale": "mev",
+   "name": "Mano",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Maa"
+  },
+  {
+   "code": "MYW",
+   "direction": "ltr",
+   "locale": "mny",
+   "name": "Manyawa",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Emanyawa"
+  },
+  {
+   "code": "MPD",
+   "direction": "ltr",
+   "locale": "arn",
+   "name": "Mapudungun",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "mapudungun"
+  },
+  {
+   "code": "MR",
+   "direction": "ltr",
+   "locale": "mr",
    "name": "Marathi",
    "script": "DEVANAGARI",
    "sign": false,
    "vernacular": "मराठी"
   },
   {
-   "code": "mfe",
+   "code": "MTC",
    "direction": "ltr",
+   "locale": "gcf-x-mtc",
+   "name": "Martiniquan Creole",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kréyol Matinik"
+  },
+  {
+   "code": "MSH",
+   "direction": "ltr",
+   "locale": "shr",
+   "name": "Mashi",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Mashi"
+  },
+  {
+   "code": "CE",
+   "direction": "ltr",
+   "locale": "mfe",
    "name": "Mauritian Creole",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kreol Morisien"
   },
   {
-   "code": "yua",
+   "code": "MAY",
    "direction": "ltr",
+   "locale": "yua",
    "name": "Maya",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "maaya"
   },
   {
-   "code": "mn",
+   "code": "MBD",
    "direction": "ltr",
+   "locale": "mck",
+   "name": "Mbunda",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Mbunda"
+  },
+  {
+   "code": "MNS",
+   "direction": "ltr",
+   "locale": "sgn-pg",
+   "name": "Melanesian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Melanesian Sign Language"
+  },
+  {
+   "code": "UU",
+   "direction": "ltr",
+   "locale": "mer",
+   "name": "Meru",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kĩmĩĩrũ"
+  },
+  {
+   "code": "LSM",
+   "direction": "ltr",
+   "locale": "mfs",
+   "name": "Mexican Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de señas mexicana"
+  },
+  {
+   "code": "MGL",
+   "direction": "ltr",
+   "locale": "xmf",
+   "name": "Mingrelian",
+   "script": "GEORGIAN",
+   "sign": false,
+   "vernacular": "მარგალური"
+  },
+  {
+   "code": "MIS",
+   "direction": "ltr",
+   "locale": "miq",
+   "name": "Miskito",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "miskitu"
+  },
+  {
+   "code": "MX",
+   "direction": "ltr",
+   "locale": "mco",
+   "name": "Mixe (North Central)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "ayuk"
+  },
+  {
+   "code": "MXG",
+   "direction": "ltr",
+   "locale": "mxv",
+   "name": "Mixtec (Guerrero)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "tu’un sâví"
+  },
+  {
+   "code": "MXO",
+   "direction": "ltr",
+   "locale": "jmx",
+   "name": "Mixtec (Huajuapan)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Tu̱ʼun ndaʼví"
+  },
+  {
+   "code": "MXT",
+   "direction": "ltr",
+   "locale": "meh",
+   "name": "Mixtec (Tlaxiaco)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "saʼan savi"
+  },
+  {
+   "code": "LS",
+   "direction": "ltr",
+   "locale": "lus",
+   "name": "Mizo",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Mizo"
+  },
+  {
+   "code": "KHA",
+   "direction": "ltr",
+   "locale": "mn",
    "name": "Mongolian",
    "script": "CYRILLIC",
    "sign": false,
    "vernacular": "монгол"
   },
   {
-   "code": "mos",
+   "code": "MM",
    "direction": "ltr",
+   "locale": "mos",
    "name": "Moore",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Moore"
   },
   {
-   "code": "my",
+   "code": "MTU",
    "direction": "ltr",
+   "locale": "meu",
+   "name": "Motu",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Motu"
+  },
+  {
+   "code": "MOU",
+   "direction": "ltr",
+   "locale": "mse",
+   "name": "Moussey",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Moussey"
+  },
+  {
+   "code": "SLM",
+   "direction": "ltr",
+   "locale": "mzy",
+   "name": "Mozambican Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Língua de Sinais Moçambicana"
+  },
+  {
+   "code": "BU",
+   "direction": "ltr",
+   "locale": "my",
    "name": "Myanmar",
    "script": "MYANMAR",
    "sign": false,
    "vernacular": "မြန်မာ"
   },
   {
-   "code": "ncx",
+   "code": "BUS",
    "direction": "ltr",
+   "locale": "sgn-mm",
+   "name": "Myanmar Sign Language",
+   "script": "MYANMAR",
+   "sign": true,
+   "vernacular": "မြန်မာ လက်သင်္ကေတပြဘာသာစကား"
+  },
+  {
+   "code": "NHC",
+   "direction": "ltr",
+   "locale": "ncx",
    "name": "Nahuatl (Central)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "náhuatl del centro"
   },
   {
-   "code": "ngu",
+   "code": "NHG",
    "direction": "ltr",
+   "locale": "ngu",
    "name": "Nahuatl (Guerrero)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "náhuatl de guerrero"
   },
   {
-   "code": "nch",
+   "code": "NHH",
    "direction": "ltr",
+   "locale": "nch",
    "name": "Nahuatl (Huasteca)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "náhuatl de la huasteca"
   },
   {
-   "code": "ncj",
+   "code": "NHT",
    "direction": "ltr",
+   "locale": "ncj",
    "name": "Nahuatl (Northern Puebla)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "náhuatl del norte de Puebla"
   },
   {
-   "code": "nr",
+   "code": "NHV",
    "direction": "ltr",
+   "locale": "nhk",
+   "name": "Nahuatl (Veracruz)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "náhuatl de Veracruz"
+  },
+  {
+   "code": "NDA",
+   "direction": "ltr",
+   "locale": "ndc",
+   "name": "Ndau",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Cindau"
+  },
+  {
+   "code": "NDW",
+   "direction": "ltr",
+   "locale": "ndc-x-ndw",
+   "name": "Ndau (Western)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Ndau (Western)"
+  },
+  {
+   "code": "NBL",
+   "direction": "ltr",
+   "locale": "nr",
    "name": "Ndebele",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "IsiNdebele"
   },
   {
-   "code": "nd",
+   "code": "NBZ",
    "direction": "ltr",
+   "locale": "nd",
    "name": "Ndebele (Zimbabwe)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ndebele (Zimbabwe)"
   },
   {
-   "code": "ne",
+   "code": "OD",
    "direction": "ltr",
+   "locale": "ng",
+   "name": "Ndonga",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Oshindonga"
+  },
+  {
+   "code": "NP",
+   "direction": "ltr",
+   "locale": "ne",
    "name": "Nepali",
    "script": "DEVANAGARI",
    "sign": false,
    "vernacular": "नेपाली"
   },
   {
-   "code": "ngb",
+   "code": "NSL",
    "direction": "ltr",
+   "locale": "nsp",
+   "name": "Nepali Sign Language",
+   "script": "DEVANAGARI",
+   "sign": true,
+   "vernacular": "नेपाली साङ्केतिक भाषा"
+  },
+  {
+   "code": "NG",
+   "direction": "ltr",
+   "locale": "sba",
+   "name": "Ngambaye",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Ngambay"
+  },
+  {
+   "code": "NGL",
+   "direction": "ltr",
+   "locale": "nba",
+   "name": "Ngangela",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Ngangela"
+  },
+  {
+   "code": "NGN",
+   "direction": "ltr",
+   "locale": "ngb",
    "name": "Ngbandi (Northern)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ngbandi (ya Nɔrdi)"
   },
   {
-   "code": "no",
+   "code": "NI",
    "direction": "ltr",
+   "locale": "nia",
+   "name": "Nias",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Nias"
+  },
+  {
+   "code": "LSN",
+   "direction": "ltr",
+   "locale": "ncs",
+   "name": "Nicaraguan Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lenguaje de señas nicaragüense"
+  },
+  {
+   "code": "NC",
+   "direction": "ltr",
+   "locale": "caq",
+   "name": "Nicobarese",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Nicobarese"
+  },
+  {
+   "code": "NNS",
+   "direction": "ltr",
+   "locale": "nsi",
+   "name": "Nigerian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Nigerian Sign Language"
+  },
+  {
+   "code": "NKY",
+   "direction": "ltr",
+   "locale": "nka",
+   "name": "Nkoya",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Nkoya"
+  },
+  {
+   "code": "N",
+   "direction": "ltr",
+   "locale": "no",
    "name": "Norwegian",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Norsk"
   },
   {
-   "code": "nzi",
+   "code": "NSM",
    "direction": "ltr",
+   "locale": "nse-mz",
+   "name": "Nsenga (Mozambique)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Chinsenga (Mozambique)"
+  },
+  {
+   "code": "NEN",
+   "direction": "ltr",
+   "locale": "nse",
+   "name": "Nsenga (Zambia)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Cinsenga"
+  },
+  {
+   "code": "NK",
+   "direction": "ltr",
+   "locale": "nyk",
+   "name": "Nyaneka",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Nyaneka"
+  },
+  {
+   "code": "NYU",
+   "direction": "ltr",
+   "locale": "nyu",
+   "name": "Nyungwe",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Cinyungwe"
+  },
+  {
+   "code": "NZ",
+   "direction": "ltr",
+   "locale": "nzi",
    "name": "Nzema",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Nzema"
   },
   {
-   "code": "om",
+   "code": "OBL",
    "direction": "ltr",
+   "locale": "ann",
+   "name": "Obolo",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Obolo"
+  },
+  {
+   "code": "OI",
+   "direction": "ltr",
+   "locale": "or",
+   "name": "Odia",
+   "script": "ORIYA",
+   "sign": false,
+   "vernacular": "ଓଡ଼ିଆ"
+  },
+  {
+   "code": "OKP",
+   "direction": "ltr",
+   "locale": "oke",
+   "name": "Okpe",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Okpe"
+  },
+  {
+   "code": "OA",
+   "direction": "ltr",
+   "locale": "om",
    "name": "Oromo",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Afaan Oromoo"
   },
   {
-   "code": "pag",
+   "code": "OSS",
    "direction": "ltr",
+   "locale": "os",
+   "name": "Ossetian",
+   "script": "CYRILLIC",
+   "sign": false,
+   "vernacular": "ирон"
+  },
+  {
+   "code": "OT",
+   "direction": "ltr",
+   "locale": "tll",
+   "name": "Otetela",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Ɔtɛtɛla"
+  },
+  {
+   "code": "OTM",
+   "direction": "ltr",
+   "locale": "ote",
+   "name": "Otomi (Mezquital Valley)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Ñañu"
+  },
+  {
+   "code": "PSL",
+   "direction": "ltr",
+   "locale": "lsp",
+   "name": "Panamanian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de señas panameñas"
+  },
+  {
+   "code": "PN",
+   "direction": "ltr",
+   "locale": "pag",
    "name": "Pangasinan",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Pangasinan"
   },
   {
-   "code": "pap-x-paa",
+   "code": "PA",
    "direction": "ltr",
-   "name": "Papiamento (Aruba)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Papiamento (Aruba)"
-  },
-  {
-   "code": "pap",
-   "direction": "ltr",
+   "locale": "pap",
    "name": "Papiamento (Curaçao)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Papiamentu (Kòrsou)"
   },
   {
-   "code": "fa",
+   "code": "LSP",
+   "direction": "ltr",
+   "locale": "pys",
+   "name": "Paraguayan Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de señas paraguaya"
+  },
+  {
+   "code": "PR",
    "direction": "rtl",
+   "locale": "fa",
    "name": "Persian",
    "script": "ARABIC",
    "sign": false,
    "vernacular": "فارسی"
   },
   {
-   "code": "pl",
+   "code": "SPE",
    "direction": "ltr",
+   "locale": "prl",
+   "name": "Peruvian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de señas peruana"
+  },
+  {
+   "code": "PHM",
+   "direction": "ltr",
+   "locale": "phm",
+   "name": "Phimbi",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Chiphimbi"
+  },
+  {
+   "code": "PGW",
+   "direction": "ltr",
+   "locale": "wes-x-pgw",
+   "name": "Pidgin (West Africa)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Pidgin (West Africa)"
+  },
+  {
+   "code": "P",
+   "direction": "ltr",
+   "locale": "pl",
    "name": "Polish",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "polski"
   },
   {
-   "code": "pt-ao",
+   "code": "PDF",
    "direction": "ltr",
+   "locale": "pso",
+   "name": "Polish Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "polski język migowy"
+  },
+  {
+   "code": "PQM",
+   "direction": "ltr",
+   "locale": "poh",
+   "name": "Poqomchi'",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "poqomchi'"
+  },
+  {
+   "code": "TNG",
+   "direction": "ltr",
+   "locale": "pt-ao",
    "name": "Portuguese (Angola)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Português (Angola)"
   },
   {
-   "code": "pt",
+   "code": "T",
    "direction": "ltr",
+   "locale": "pt",
    "name": "Portuguese (Brazil)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Português (Brasil)"
   },
   {
-   "code": "pt-pt",
+   "code": "TPO",
    "direction": "ltr",
+   "locale": "pt-pt",
    "name": "Portuguese (Portugal)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Português (Portugal)"
   },
   {
-   "code": "pa",
+   "code": "LGP",
    "direction": "ltr",
+   "locale": "psr",
+   "name": "Portuguese Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Língua Gestual Portuguesa"
+  },
+  {
+   "code": "PJ",
+   "direction": "ltr",
+   "locale": "pa",
    "name": "Punjabi",
    "script": "GURMUKHI",
    "sign": false,
    "vernacular": "ਪੰਜਾਬੀ"
   },
   {
-   "code": "pnb",
+   "code": "PJN",
    "direction": "rtl",
+   "locale": "pnb",
    "name": "Punjabi (Shahmukhi)",
    "script": "URDU",
    "sign": false,
    "vernacular": "پنجابی (شاہ مُکھی)"
   },
   {
-   "code": "quy",
+   "code": "LSQ",
    "direction": "ltr",
+   "locale": "fcs",
+   "name": "Quebec Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Langue des signes québécoise"
+  },
+  {
+   "code": "QUN",
+   "direction": "ltr",
+   "locale": "que",
+   "name": "Quechua (Ancash)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Quechua (Ancash)"
+  },
+  {
+   "code": "QUA",
+   "direction": "ltr",
+   "locale": "quy",
    "name": "Quechua (Ayacucho)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Quechua (Ayacucho)"
   },
   {
-   "code": "qu",
+   "code": "QUB",
    "direction": "ltr",
+   "locale": "qu",
    "name": "Quechua (Bolivia)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Quechua (Bolivia)"
   },
   {
-   "code": "quz",
+   "code": "QU",
    "direction": "ltr",
+   "locale": "quz",
    "name": "Quechua (Cuzco)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "quechua (Cusco)"
   },
   {
-   "code": "qub",
+   "code": "QUL",
    "direction": "ltr",
+   "locale": "qub",
    "name": "Quechua (Huallaga Huánuco)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Quechua de Huánuco (Huallaga)"
   },
   {
-   "code": "quc",
+   "code": "QC",
    "direction": "ltr",
+   "locale": "quc",
    "name": "Quiche",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "quiché"
   },
   {
-   "code": "qug",
+   "code": "QIC",
    "direction": "ltr",
+   "locale": "qug",
    "name": "Quichua (Chimborazo)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "quichua (chimborazo)"
   },
   {
-   "code": "qvi",
+   "code": "QII",
    "direction": "ltr",
+   "locale": "qvi",
    "name": "Quichua (Imbabura)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "quichua (imbabura)"
   },
   {
-   "code": "ro",
+   "code": "M",
    "direction": "ltr",
+   "locale": "ro",
    "name": "Romanian",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Română"
   },
   {
-   "code": "rmy",
+   "code": "LMG",
    "direction": "ltr",
+   "locale": "rms",
+   "name": "Romanian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Limba semnelor române"
+  },
+  {
+   "code": "RM",
+   "direction": "ltr",
+   "locale": "rmn-x-rm",
+   "name": "Romany (Macedonia)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "romane (Makedonija)"
+  },
+  {
+   "code": "RMC",
+   "direction": "ltr",
+   "locale": "rmn-cyrl",
+   "name": "Romany (Macedonia) Cyrillic",
+   "script": "CYRILLIC",
+   "sign": false,
+   "vernacular": "романе (Македонија) кирилица"
+  },
+  {
+   "code": "RMR",
+   "direction": "ltr",
+   "locale": "rmy",
    "name": "Romany (Romania)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Rromani (România)"
   },
   {
-   "code": "rmn-x-rmg",
+   "code": "RMG",
    "direction": "ltr",
+   "locale": "rmn-x-rmg",
    "name": "Romany (Southern Greece)",
    "script": "GREEK",
    "sign": false,
    "vernacular": "Ρομανί (Νότια Ελλάδα)"
   },
   {
-   "code": "ru",
+   "code": "RMV",
    "direction": "ltr",
+   "locale": "rmy-x-rmv",
+   "name": "Romany (Vlax, Russia)",
+   "script": "CYRILLIC",
+   "sign": false,
+   "vernacular": "романи (влахитско, Россия)"
+  },
+  {
+   "code": "RN",
+   "direction": "ltr",
+   "locale": "rng",
+   "name": "Ronga",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Xironga"
+  },
+  {
+   "code": "RNY",
+   "direction": "ltr",
+   "locale": "diu",
+   "name": "Rumanyo",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Rumanyo"
+  },
+  {
+   "code": "RR",
+   "direction": "ltr",
+   "locale": "nyn",
+   "name": "Runyankore",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Runyankore"
+  },
+  {
+   "code": "U",
+   "direction": "ltr",
+   "locale": "ru",
    "name": "Russian",
    "script": "CYRILLIC",
    "sign": false,
    "vernacular": "русский"
   },
   {
-   "code": "sm",
+   "code": "RSL",
    "direction": "ltr",
+   "locale": "rsl",
+   "name": "Russian Sign Language",
+   "script": "CYRILLIC",
+   "sign": true,
+   "vernacular": "русский жестовый"
+  },
+  {
+   "code": "RT",
+   "direction": "ltr",
+   "locale": "ttj",
+   "name": "Rutoro",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Rutoro"
+  },
+  {
+   "code": "RWS",
+   "direction": "ltr",
+   "locale": "sgn-rw",
+   "name": "Rwandan Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Ururimi rw'amarenga yo mu Rwanda"
+  },
+  {
+   "code": "RCR",
+   "direction": "ltr",
+   "locale": "rcf",
+   "name": "Réunion Creole",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kréol Rénioné"
+  },
+  {
+   "code": "LUC",
+   "direction": "ltr",
+   "locale": "acf",
+   "name": "Saint Lucian Creole",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kwéyòl (Patwa)"
+  },
+  {
+   "code": "LSS",
+   "direction": "ltr",
+   "locale": "esn",
+   "name": "Salvadoran Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de señas salvadoreña"
+  },
+  {
+   "code": "SM",
+   "direction": "ltr",
+   "locale": "sm",
    "name": "Samoan",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Faa-Samoa"
   },
   {
-   "code": "sg",
+   "code": "SG",
    "direction": "ltr",
+   "locale": "sg",
    "name": "Sango",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Sango"
   },
   {
-   "code": "nso",
+   "code": "SAR",
    "direction": "ltr",
+   "locale": "mwm",
+   "name": "Sar",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Sar"
+  },
+  {
+   "code": "SHW",
+   "direction": "ltr",
+   "locale": "sfw",
+   "name": "Sehwi",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Sehwi"
+  },
+  {
+   "code": "SEN",
+   "direction": "ltr",
+   "locale": "seh",
+   "name": "Sena",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Cisena"
+  },
+  {
+   "code": "SE",
+   "direction": "ltr",
+   "locale": "nso",
    "name": "Sepedi",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Sepedi"
   },
   {
-   "code": "nso-x-spl",
+   "code": "SPL",
    "direction": "ltr",
+   "locale": "nso-x-spl",
    "name": "Sepulana",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Sepulana"
   },
   {
-   "code": "sr-cyrl",
+   "code": "SB",
    "direction": "ltr",
+   "locale": "sr-cyrl",
    "name": "Serbian (Cyrillic)",
    "script": "CYRILLIC",
    "sign": false,
    "vernacular": "српски (ћирилица)"
   },
   {
-   "code": "sr-latn",
+   "code": "SBO",
    "direction": "ltr",
+   "locale": "sr-latn",
    "name": "Serbian (Roman)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "srpski (latinica)"
   },
   {
-   "code": "st",
+   "code": "SU",
    "direction": "ltr",
+   "locale": "st",
    "name": "Sesotho (Lesotho)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Sesotho (Lesotho)"
   },
   {
-   "code": "st-za",
+   "code": "SSA",
    "direction": "ltr",
+   "locale": "st-za",
    "name": "Sesotho (South Africa)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Sesotho (South Africa)"
   },
   {
-   "code": "tn",
+   "code": "TN",
    "direction": "ltr",
+   "locale": "tn",
    "name": "Setswana",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Setswana"
   },
   {
-   "code": "sn",
+   "code": "SC",
    "direction": "ltr",
+   "locale": "crs",
+   "name": "Seychelles Creole",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Kreol Seselwa"
+  },
+  {
+   "code": "CA",
+   "direction": "ltr",
+   "locale": "sn",
    "name": "Shona",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Shona"
   },
   {
-   "code": "loz",
+   "code": "DM",
    "direction": "ltr",
+   "locale": "sid",
+   "name": "Sidama",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Sidaamu Afoo"
+  },
+  {
+   "code": "SK",
+   "direction": "ltr",
+   "locale": "loz",
    "name": "Silozi",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Silozi"
   },
   {
-   "code": "si",
+   "code": "SN",
    "direction": "ltr",
+   "locale": "si",
    "name": "Sinhala",
    "script": "SINHALESE",
    "sign": false,
    "vernacular": "සිංහල"
   },
   {
-   "code": "sk",
+   "code": "V",
    "direction": "ltr",
+   "locale": "sk",
    "name": "Slovak",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "slovenčina"
   },
   {
-   "code": "sl",
+   "code": "VSL",
    "direction": "ltr",
+   "locale": "svk",
+   "name": "Slovak Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "slovenský posunkový jazyk"
+  },
+  {
+   "code": "SV",
+   "direction": "ltr",
+   "locale": "sl",
    "name": "Slovenian",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "slovenščina"
   },
   {
-   "code": "nsx",
+   "code": "SP",
    "direction": "ltr",
+   "locale": "pis",
+   "name": "Solomon Islands Pidgin",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Solomon Islands Pidgin"
+  },
+  {
+   "code": "SGO",
+   "direction": "ltr",
+   "locale": "nsx",
    "name": "Songo",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Songo"
   },
   {
-   "code": "es",
+   "code": "SGM",
    "direction": "ltr",
-   "name": "Spanish",
+   "locale": "soe",
+   "name": "Songomeno",
    "script": "ROMAN",
    "sign": false,
-   "vernacular": "español"
+   "vernacular": "Losongomino"
   },
   {
-   "code": "srn",
+   "code": "SAS",
    "direction": "ltr",
+   "locale": "sfs",
+   "name": "South African Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "South African Sign Language"
+  },
+  {
+   "code": "LSE",
+   "direction": "ltr",
+   "locale": "ssp",
+   "name": "Spanish Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de signos española"
+  },
+  {
+   "code": "SR",
+   "direction": "ltr",
+   "locale": "srn",
    "name": "Sranantongo",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Sranantongo"
   },
   {
-   "code": "sw",
+   "code": "SW",
    "direction": "ltr",
+   "locale": "sw",
    "name": "Swahili",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kiswahili"
   },
   {
-   "code": "swc",
+   "code": "ZS",
    "direction": "ltr",
+   "locale": "swc",
    "name": "Swahili (Congo)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kiswahili (Congo)"
   },
   {
-   "code": "ss",
+   "code": "SWK",
    "direction": "ltr",
+   "locale": "swc-x-swk",
+   "name": "Swahili (Katanga)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Swahili (Katanga)"
+  },
+  {
+   "code": "SWI",
+   "direction": "ltr",
+   "locale": "ss",
    "name": "Swati",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "SiSwati"
   },
   {
-   "code": "sv",
+   "code": "SWS",
    "direction": "ltr",
+   "locale": "sgn-sz",
+   "name": "Swazi Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Swazi Sign Language"
+  },
+  {
+   "code": "Z",
+   "direction": "ltr",
+   "locale": "sv",
    "name": "Swedish",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Svenska"
   },
   {
-   "code": "tl",
+   "code": "SSL",
    "direction": "ltr",
+   "locale": "swl",
+   "name": "Swedish Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Svenskt teckenspråk"
+  },
+  {
+   "code": "TBW",
+   "direction": "ltr",
+   "locale": "tap",
+   "name": "Taabwa",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Taabwa"
+  },
+  {
+   "code": "TG",
+   "direction": "ltr",
+   "locale": "tl",
    "name": "Tagalog",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Tagalog"
   },
   {
-   "code": "ty",
+   "code": "TH",
    "direction": "ltr",
+   "locale": "ty",
    "name": "Tahitian",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Tahiti"
   },
   {
-   "code": "tg",
+   "code": "TSL",
    "direction": "ltr",
+   "locale": "tss",
+   "name": "Taiwanese Sign Language",
+   "script": "CHINESE",
+   "sign": true,
+   "vernacular": "台灣手語"
+  },
+  {
+   "code": "TJ",
+   "direction": "ltr",
+   "locale": "tg",
    "name": "Tajiki",
    "script": "CYRILLIC",
    "sign": false,
    "vernacular": "тоҷикӣ"
   },
   {
-   "code": "vec",
+   "code": "TAL",
    "direction": "ltr",
+   "locale": "vec",
    "name": "Talian",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Talian"
   },
   {
-   "code": "ta",
+   "code": "TL",
    "direction": "ltr",
+   "locale": "ta",
    "name": "Tamil",
    "script": "TAMIL",
    "sign": false,
    "vernacular": "தமிழ்"
   },
   {
-   "code": "tt",
+   "code": "TND",
    "direction": "ltr",
+   "locale": "tdx",
+   "name": "Tandroy",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Tandroy"
+  },
+  {
+   "code": "TNK",
+   "direction": "ltr",
+   "locale": "xmv",
+   "name": "Tankarana",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Tankarana"
+  },
+  {
+   "code": "TZL",
+   "direction": "ltr",
+   "locale": "tza",
+   "name": "Tanzanian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Lugha ya Alama ya Tanzania"
+  },
+  {
+   "code": "TRS",
+   "direction": "ltr",
+   "locale": "tsz",
+   "name": "Tarascan",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Purépecha"
+  },
+  {
+   "code": "TAT",
+   "direction": "ltr",
+   "locale": "tt",
    "name": "Tatar",
    "script": "CYRILLIC",
    "sign": false,
    "vernacular": "татар"
   },
   {
-   "code": "te",
+   "code": "TU",
    "direction": "ltr",
+   "locale": "te",
    "name": "Telugu",
    "script": "TELUGU",
    "sign": false,
    "vernacular": "తెలుగు"
   },
   {
-   "code": "tdt",
+   "code": "TTP",
    "direction": "ltr",
+   "locale": "tdt",
    "name": "Tetun Dili",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Tetun Dili"
   },
   {
-   "code": "th",
+   "code": "TEW",
    "direction": "ltr",
+   "locale": "twx",
+   "name": "Tewe",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Ciutee"
+  },
+  {
+   "code": "SI",
+   "direction": "ltr",
+   "locale": "th",
    "name": "Thai",
    "script": "THAI",
    "sign": false,
    "vernacular": "ไทย"
   },
   {
-   "code": "tpi",
+   "code": "SIL",
    "direction": "ltr",
+   "locale": "tsq",
+   "name": "Thai Sign Language",
+   "script": "THAI",
+   "sign": true,
+   "vernacular": "ภาษามือไทย"
+  },
+  {
+   "code": "TCN",
+   "direction": "ltr",
+   "locale": "tca",
+   "name": "Ticuna",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Ticuna"
+  },
+  {
+   "code": "TI",
+   "direction": "ltr",
+   "locale": "ti",
+   "name": "Tigrinya",
+   "script": "ETHIOPIC",
+   "sign": false,
+   "vernacular": "ትግርኛ"
+  },
+  {
+   "code": "TV",
+   "direction": "ltr",
+   "locale": "tiv",
+   "name": "Tiv",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Tiv"
+  },
+  {
+   "code": "TLN",
+   "direction": "ltr",
+   "locale": "tcf",
+   "name": "Tlapanec",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "me̱ʼpha̱a̱"
+  },
+  {
+   "code": "TJO",
+   "direction": "ltr",
+   "locale": "toj",
+   "name": "Tojolabal",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "tojol-abʼal"
+  },
+  {
+   "code": "MP",
+   "direction": "ltr",
+   "locale": "tpi",
    "name": "Tok Pisin",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Tok Pisin"
   },
   {
-   "code": "to",
+   "code": "TO",
    "direction": "ltr",
+   "locale": "to",
    "name": "Tongan",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Faka-Tonga"
   },
   {
-   "code": "lua",
+   "code": "TOT",
    "direction": "ltr",
+   "locale": "top",
+   "name": "Totonac",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "totonaco"
+  },
+  {
+   "code": "TPR",
+   "direction": "ltr",
+   "locale": "tui",
+   "name": "Toupouri",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Toupouri"
+  },
+  {
+   "code": "SH",
+   "direction": "ltr",
+   "locale": "lua",
    "name": "Tshiluba",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Tshiluba"
   },
   {
-   "code": "ts",
+   "code": "AW",
    "direction": "ltr",
+   "locale": "tsc",
+   "name": "Tshwa",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "ciTshwa"
+  },
+  {
+   "code": "TS",
+   "direction": "ltr",
+   "locale": "ts",
    "name": "Tsonga",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Xitsonga"
   },
   {
-   "code": "tr",
+   "code": "TK",
    "direction": "ltr",
+   "locale": "tr",
    "name": "Turkish",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Türkçe"
   },
   {
-   "code": "tk",
+   "code": "TMR",
    "direction": "ltr",
+   "locale": "tk",
    "name": "Turkmen",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "türkmen"
   },
   {
-   "code": "tw",
+   "code": "VL",
    "direction": "ltr",
+   "locale": "tvl",
+   "name": "Tuvaluan",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Tuvalu"
+  },
+  {
+   "code": "TW",
+   "direction": "ltr",
+   "locale": "tw",
    "name": "Twi",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Twi"
   },
   {
-   "code": "uk",
+   "code": "TZE",
    "direction": "ltr",
+   "locale": "tzh",
+   "name": "Tzeltal",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "tseltal"
+  },
+  {
+   "code": "TZO",
+   "direction": "ltr",
+   "locale": "tzo",
+   "name": "Tzotzil",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "tsotsil"
+  },
+  {
+   "code": "USL",
+   "direction": "ltr",
+   "locale": "ugn",
+   "name": "Ugandan Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Ugandan Sign Language"
+  },
+  {
+   "code": "K",
+   "direction": "ltr",
+   "locale": "uk",
    "name": "Ukrainian",
    "script": "CYRILLIC",
    "sign": false,
    "vernacular": "українська"
   },
   {
-   "code": "umb",
+   "code": "UB",
    "direction": "ltr",
+   "locale": "umb",
    "name": "Umbundu",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Umbundu"
   },
   {
-   "code": "ur",
+   "code": "UD",
    "direction": "rtl",
+   "locale": "ur",
    "name": "Urdu",
    "script": "URDU",
    "sign": false,
    "vernacular": "اُردو"
   },
   {
-   "code": "uz-cyrl",
+   "code": "UR",
    "direction": "ltr",
+   "locale": "urh",
+   "name": "Urhobo",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Urhobo"
+  },
+  {
+   "code": "UZ",
+   "direction": "ltr",
+   "locale": "uz-cyrl",
    "name": "Uzbek",
    "script": "CYRILLIC",
    "sign": false,
    "vernacular": "ўзбекча"
   },
   {
-   "code": "ca-x-vlc",
+   "code": "VLC",
    "direction": "ltr",
+   "locale": "ca-x-vlc",
    "name": "Valencian",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "valencià"
   },
   {
-   "code": "ve",
+   "code": "VE",
    "direction": "ltr",
+   "locale": "ve",
    "name": "Venda",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Luvenda"
   },
   {
-   "code": "vi",
+   "code": "LSV",
    "direction": "ltr",
+   "locale": "vsl",
+   "name": "Venezuelan Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "lengua de señas venezolana"
+  },
+  {
+   "code": "VZ",
+   "direction": "ltr",
+   "locale": "skg-x-vz",
+   "name": "Vezo",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Vezo"
+  },
+  {
+   "code": "VT",
+   "direction": "ltr",
+   "locale": "vi",
    "name": "Vietnamese",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Việt"
   },
   {
-   "code": "war",
+   "code": "SLV",
    "direction": "ltr",
+   "locale": "hab",
+   "name": "Vietnamese Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Việt Nam (Ngôn ngữ ký hiệu)"
+  },
+  {
+   "code": "WA",
+   "direction": "ltr",
+   "locale": "wls",
+   "name": "Wallisian",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Faka'uvea"
+  },
+  {
+   "code": "SA",
+   "direction": "ltr",
+   "locale": "war",
    "name": "Waray-Waray",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Waray-Waray"
   },
   {
-   "code": "guc",
+   "code": "WY",
    "direction": "ltr",
+   "locale": "guc",
    "name": "Wayuunaiki",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Wayuunaiki"
   },
   {
-   "code": "cy",
+   "code": "W",
    "direction": "ltr",
+   "locale": "cy",
    "name": "Welsh",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Cymraeg"
   },
   {
-   "code": "wo",
+   "code": "WL",
    "direction": "ltr",
+   "locale": "wal",
+   "name": "Wolaita",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Wolayttattuwa"
+  },
+  {
+   "code": "WO",
+   "direction": "ltr",
+   "locale": "wo",
    "name": "Wolof",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Wolof"
   },
   {
-   "code": "xh",
+   "code": "XO",
    "direction": "ltr",
+   "locale": "xh",
    "name": "Xhosa",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "IsiXhosa"
   },
   {
-   "code": "zai",
+   "code": "YCB",
    "direction": "ltr",
+   "locale": "daf",
+   "name": "Yacouba",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Yaoba"
+  },
+  {
+   "code": "YKM",
+   "direction": "ltr",
+   "locale": "yky",
+   "name": "Yakoma",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Yakoma"
+  },
+  {
+   "code": "YMB",
+   "direction": "ltr",
+   "locale": "yom-x-ymb",
+   "name": "Yombe",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Yombe"
+  },
+  {
+   "code": "YR",
+   "direction": "ltr",
+   "locale": "yo",
+   "name": "Yoruba",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Yorùbá"
+  },
+  {
+   "code": "ZAS",
+   "direction": "ltr",
+   "locale": "zsl",
+   "name": "Zambian Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Zambian Sign Language"
+  },
+  {
+   "code": "ZN",
+   "direction": "ltr",
+   "locale": "zne",
+   "name": "Zande",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Zande"
+  },
+  {
+   "code": "ZPI",
+   "direction": "ltr",
+   "locale": "zai",
    "name": "Zapotec (Isthmus)",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "diidxazá"
   },
   {
-   "code": "zu",
+   "code": "ZSL",
    "direction": "ltr",
+   "locale": "zib",
+   "name": "Zimbabwe Sign Language",
+   "script": "ROMAN",
+   "sign": true,
+   "vernacular": "Zimbabwe Sign Language"
+  },
+  {
+   "code": "ZU",
+   "direction": "ltr",
+   "locale": "zu",
    "name": "Zulu",
    "script": "ROMAN",
    "sign": false,
@@ -1573,35 +4105,142 @@
  ],
  "published": [
   {
+   "api_published_at": "2026-09-18T11:39:09Z",
    "beyond_baseline": false,
-   "code": "en",
+   "code": "E",
    "direction": "ltr",
-   "first_seen": "2026-09-18T00:00:00Z",
-   "first_seen_exact": false,
+   "first_observed": "2026-09-19T08:32:21Z",
+   "locale": "en",
    "name": "English",
+   "published_at": "2026-09-18T14:00:00Z",
+   "published_at_source": "confirmed",
    "script": "ROMAN",
    "sign": false,
    "title": "2026 Governing Body Update #6",
-   "url": "https://www.jw.org/en/news/region/global/2026-Governing-Body-Update-6/",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=E",
    "vernacular": "English"
+  },
+  {
+   "api_published_at": "2026-09-18T20:53:43Z",
+   "beyond_baseline": false,
+   "code": "X",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T08:32:21Z",
+   "locale": "de",
+   "name": "German",
+   "published_at": "2026-09-18T20:53:43Z",
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Aktueller Lagebericht der Leitenden Körperschaft, Nr. 6 (2026)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=X",
+   "vernacular": "Deutsch"
+  },
+  {
+   "api_published_at": "2026-09-18T23:55:38Z",
+   "beyond_baseline": false,
+   "code": "BQ",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T08:32:21Z",
+   "locale": "eu",
+   "name": "Basque",
+   "published_at": "2026-09-18T23:55:38Z",
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Zuzendari Batzordearen 6. eguneraketa (2026)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BQ",
+   "vernacular": "Euskara"
+  },
+  {
+   "api_published_at": "2026-09-19T00:21:42Z",
+   "beyond_baseline": false,
+   "code": "AN",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T08:32:21Z",
+   "locale": "cat",
+   "name": "Catalan",
+   "published_at": "2026-09-19T00:21:42Z",
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Informe núm. 6 del Consell Rector (2026)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AN",
+   "vernacular": "català"
+  },
+  {
+   "api_published_at": "2026-09-19T04:42:14Z",
+   "beyond_baseline": false,
+   "code": "HI",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T08:32:21Z",
+   "locale": "hi",
+   "name": "Hindi",
+   "published_at": "2026-09-19T04:42:14Z",
+   "published_at_source": "api",
+   "script": "DEVANAGARI",
+   "sign": false,
+   "title": "2026 शासी निकाय की तरफ से रिपोर्ट #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=HI",
+   "vernacular": "हिंदी"
+  },
+  {
+   "api_published_at": "2026-09-19T07:17:46Z",
+   "beyond_baseline": false,
+   "code": "S",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T08:32:21Z",
+   "locale": "es",
+   "name": "Spanish",
+   "published_at": "2026-09-19T07:17:46Z",
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 | Informe 6 del Cuerpo Gobernante",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=S",
+   "vernacular": "español"
+  },
+  {
+   "api_published_at": "2026-09-19T07:39:39Z",
+   "beyond_baseline": false,
+   "code": "I",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T08:32:21Z",
+   "locale": "it",
+   "name": "Italian",
+   "published_at": "2026-09-19T07:39:39Z",
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Aggiornamento dal Corpo Direttivo n. 6 (2026)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=I",
+   "vernacular": "Italiano"
   }
  ],
- "source": "https://www.jw.org/en/news/region/global/2026-Governing-Body-Update-6/",
+ "source": {
+  "api": "https://b.jw-cdn.org/apis/mediator/v1/media-items/E/docid-1112024060_1_VIDEO",
+  "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
+ },
  "stats": {
-  "added_24h": 0,
-  "added_7d": 0,
-  "days_since_release": 1.35,
-  "pending_count": 192,
-  "percent": 0.5,
-  "published_count": 1,
-  "target": 193
+  "added_24h": 7,
+  "added_7d": 7,
+  "days_since_release": 0.77,
+  "pending_count": 442,
+  "per_day_overall": 9.1,
+  "percent": 1.6,
+  "projected_completion": "2026-11-07",
+  "projected_days_remaining": 48.8,
+  "published_count": 7,
+  "target": 449
  },
  "update": {
-  "doc_id": "1112024060",
+  "api_first_published": "2026-09-18T11:39:09Z",
+  "docid": "1112024060",
+  "duration": "14m 33s",
   "label": "2026 Governing Body Update #6",
-  "release_date": "2026-09-18",
-  "release_date_text": "SEPTEMBER 18, 2026",
+  "release": "2026-09-18T14:00:00Z",
+  "release_source": "confirmed",
   "short": "Update #6",
-  "url": "https://www.jw.org/en/news/region/global/2026-Governing-Body-Update-6/"
+  "url": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  }
 }

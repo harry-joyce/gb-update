@@ -512,3 +512,59 @@ footer p { margin: 0 0 6px; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
+
+/* ---- theme switch ------------------------------------------------------ */
+.theme-switch {
+  flex: none;
+  display: inline-flex;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 2px;
+  gap: 2px;
+}
+
+.theme-switch button {
+  background: none;
+  border: none;
+  border-radius: 7px;
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 12.5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.theme-switch button:hover { color: var(--text-primary); }
+
+.theme-switch button[aria-pressed="true"] {
+  background: var(--surface-2);
+  color: var(--text-primary);
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+
+.theme-switch button:focus-visible {
+  outline: 2px solid var(--series-1);
+  outline-offset: 1px;
+}
+
+/* ---- publish-time provenance ------------------------------------------ */
+.ts-mark {
+  color: var(--text-muted);
+  font-size: 11px;
+  cursor: help;
+  margin-left: 2px;
+}
+
+.when .exact { font-weight: 550; }
+
+#published-legend { margin: 10px 0 0; }
+
+.feed-time {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.feed-when { line-height: 1.35; }

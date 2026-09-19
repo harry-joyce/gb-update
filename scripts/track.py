@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Check how many languages the tracked Governing Body Update is available in.
+"""Check which languages the tracked Governing Body Update video is published in.
 
-Reads the English article's rel=alternate links -- jw.org publishes one per
-language the article actually exists in -- and folds the result into
-data/report.json, which is the payload the website renders.
+Reads the JW media API: one request returns the video's full language list, and
+one request per *newly seen* language returns that language's own publish time
+and translated title. Results accumulate in data/report.json, the site's only
+data source.
 
-Writes a `should_commit` flag to $GITHUB_OUTPUT so CI only records a commit
+Writes a `should_commit` flag to $GITHUB_OUTPUT so CI records a commit only
 when something actually changed (or the report has gone stale).
 """
 
@@ -18,16 +19,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import jw  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-REPORT = os.path.join(ROOT, "data", "report.json")
 INDEX_MAX_AGE_DAYS = 7
-
-MONTHS = {
-    m: i + 1
-    for i, m in enumerate(
-        "january february march april may june july august september "
-        "october november december".split()
-    )
-}
 
 
 def load(rel, default=None):
@@ -43,35 +35,12 @@ def parse_iso(value):
         return None
     try:
         return datetime.datetime.fromisoformat(value.replace("Z", "+00:00"))
-    except ValueError:
-        return None
-
-
-def release_to_iso(text):
-    """'SEPTEMBER 18, 2026' -> '2026-09-18'. Returns None if unrecognised."""
-    if not text:
-        return None
-    cleaned = text.replace(",", " ").split()
-    month = day = year = None
-    for token in cleaned:
-        key = token.lower()
-        if key in MONTHS:
-            month = MONTHS[key]
-        elif token.isdigit():
-            if len(token) == 4:
-                year = int(token)
-            elif day is None:
-                day = int(token)
-    if not (month and day and year):
-        return None
-    try:
-        return datetime.date(year, month, day).isoformat()
-    except ValueError:
+    except (ValueError, AttributeError):
         return None
 
 
 def language_index():
-    """Cached jw.org language metadata, refreshed at most weekly."""
+    """Cached MEPS language metadata, refreshed at most weekly."""
     cached = load("data/languages.json")
     fetched = parse_iso((cached or {}).get("fetched"))
     fresh = fetched and (
@@ -95,103 +64,110 @@ def language_index():
 def main():
     config = load("config.json")
     tracked = config["tracked"]
+    docid = tracked["docid"]
+    category = tracked.get("category", "StudioNewsReports")
     baseline = load("data/baseline.json") or {}
+    overrides = (load("data/overrides.json") or {}).get("times") or {}
     previous = load("data/report.json")
     now = jw.utcnow()
 
-    page = jw.fetch(tracked["url"])
-    alternates = jw.parse_alternates(page)
-    if not alternates:
+    codes, english_item = jw.available_languages(docid)
+    if not codes:
         raise SystemExit(
-            "refusing to write report: no rel=alternate links found at %s. The page "
-            "markup may have changed, or the fetch was blocked." % tracked["url"]
+            "refusing to write report: the media API returned no languages for "
+            "docid %s. The item or API may have changed." % docid
         )
 
     index, refreshed = language_index()
 
-    # first_seen is sticky: it records when *we* first observed a language,
-    # because jw.org does not expose per-language publish timestamps.
-    seen = dict((previous or {}).get("ever_seen") or {})
-    current = set(alternates)
-    added = sorted(c for c in current if c not in seen)
-    removed = sorted(c for c in seen if c not in current)
+    # Everything already known, so each language's detail is fetched only once.
+    known = {e["code"]: e for e in (previous or {}).get("published", [])}
+    current = set(codes)
+    added = sorted(c for c in current if c not in known)
+    removed = sorted(c for c in known if c not in current)
 
-    # On the very first run we cannot know when the languages already present
-    # appeared, only that they predate this tracker -- so credit them to the
-    # release date and mark the timestamp inexact.
-    seeding = previous is None
-    release_raw = jw.parse_release_date(page)
-    release_iso = release_to_iso(release_raw)
-    stamp = (release_iso + "T00:00:00Z") if (seeding and release_iso) else now
-    for code in added:
-        seen[code] = {"t": stamp, "exact": not seeding}
-
-    baseline_codes = set(baseline.get("codes") or [])
-    target = baseline.get("count") or len(baseline_codes) or None
+    release = tracked.get("release") or jw.normalise_ts(english_item.get("firstPublished"))
 
     published = []
-    for code in sorted(current, key=lambda c: (index.get(c, {}).get("name") or c).lower()):
+    for code in sorted(current):
         meta = jw.describe(code, index)
+        prior = known.get(code)
+
+        if prior and prior.get("api_published_at") is not None:
+            api_ts = prior["api_published_at"]
+            title = prior.get("title") or meta["name"]
+            first_observed = prior.get("first_observed") or now
+        else:
+            item = jw.media_item(docid, code)
+            api_ts = jw.normalise_ts((item or {}).get("firstPublished"))
+            title = ((item or {}).get("title") or "").strip() or meta["name"]
+            first_observed = (prior or {}).get("first_observed") or now
+
+        override = overrides.get(code)
+        if override:
+            published_at, source = jw.normalise_ts(override), "confirmed"
+        elif api_ts:
+            published_at, source = api_ts, "api"
+        else:
+            published_at, source = first_observed, "observed"
+
         meta.update(
-            title=alternates[code]["title"],
-            url=alternates[code]["url"],
-            first_seen=seen.get(code, {}).get("t", now),
-            first_seen_exact=seen.get(code, {}).get("exact", True),
-            beyond_baseline=bool(baseline_codes) and code not in baseline_codes,
+            title=title,
+            url=jw.watch_url(code, docid),
+            published_at=published_at,
+            published_at_source=source,
+            api_published_at=api_ts,
+            first_observed=first_observed,
+            beyond_baseline=bool(baseline.get("codes")) and code not in set(baseline["codes"]),
         )
         published.append(meta)
 
-    pending = [
-        jw.describe(code, index)
-        for code in sorted(
-            baseline_codes - current, key=lambda c: (index.get(c, {}).get("name") or c).lower()
-        )
-    ]
+    published.sort(key=lambda p: (p["published_at"] or "", p["name"].lower()))
 
-    history = list((previous or {}).get("history") or [])
-    if not history or history[-1]["count"] != len(current):
-        history.append({"t": stamp if seeding else now, "count": len(current)})
+    baseline_codes = set(baseline.get("codes") or [])
+    pending = sorted(
+        (jw.describe(c, index) for c in baseline_codes - current),
+        key=lambda p: p["name"].lower(),
+    )
 
-    events = list((previous or {}).get("events") or [])
-    if added or removed:
-        events.append(
-            {
-                "t": stamp if seeding else now,
-                "seed": seeding,
-                "count_after": len(current),
-                "added": [
-                    {"code": c, "name": jw.describe(c, index)["name"]} for c in added
-                ],
-                "removed": [
-                    {"code": c, "name": jw.describe(c, index)["name"]} for c in removed
-                ],
-            }
-        )
+    history = build_history(published, release)
+    events = build_events(published)
+    target = baseline.get("count") or len(baseline_codes) or None
 
     report = {
         "generated": now,
         "last_checked": now,
-        "source": tracked["url"],
+        "source": {
+            "page": jw.english_video_page(docid, category),
+            "api": "%s/media-items/E/docid-%s_1_VIDEO" % (jw.MEDIATOR, docid),
+        },
         "update": {
-            "label": jw.parse_title(page) or tracked["label"],
+            "label": tracked["label"],
             "short": tracked["short"],
-            "url": tracked["url"],
-            "doc_id": jw.parse_doc_id(page),
-            "release_date_text": release_raw,
-            "release_date": release_iso,
+            "docid": docid,
+            "url": jw.english_video_page(docid, category),
+            "release": release,
+            "release_source": "confirmed" if tracked.get("release") else "api",
+            "api_first_published": jw.normalise_ts(english_item.get("firstPublished")),
+            "duration": english_item.get("durationFormattedMinSec"),
         },
         "baseline": {
             "label": baseline.get("label"),
             "short": baseline.get("short"),
             "url": baseline.get("url"),
             "count": target,
+            "sign_language_count": baseline.get("sign_language_count"),
         },
-        "stats": build_stats(len(current), target, release_iso, history, events),
+        "counts": {
+            "confirmed_times": sum(1 for p in published if p["published_at_source"] == "confirmed"),
+            "api_times": sum(1 for p in published if p["published_at_source"] == "api"),
+            "sign_languages": sum(1 for p in published if p["sign"]),
+        },
+        "stats": build_stats(len(current), target, release, published),
         "published": published,
         "pending": pending,
         "history": history,
         "events": events,
-        "ever_seen": seen,
     }
 
     if refreshed:
@@ -199,6 +175,11 @@ def main():
     write("data/report.json", report)
 
     should_commit = bool(added or removed) or previous is None or refreshed
+    if not should_commit:
+        # Any change to a resolved publish time (e.g. a new override) counts too.
+        old_times = {e["code"]: e.get("published_at") for e in (previous or {}).get("published", [])}
+        new_times = {p["code"]: p["published_at"] for p in published}
+        should_commit = old_times != new_times
     if not should_commit:
         last = parse_iso((previous or {}).get("last_checked"))
         max_age = datetime.timedelta(hours=config.get("min_commit_interval_hours", 6))
@@ -210,7 +191,8 @@ def main():
     if target:
         summary += " of %d (%.1f%%)" % (target, 100.0 * len(current) / target)
     if added:
-        summary += " | +%d: %s" % (len(added), ", ".join(added))
+        names = ", ".join(jw.describe(c, index)["name"] for c in added)
+        summary += " | +%d: %s" % (len(added), names)
     if removed:
         summary += " | -%d: %s" % (len(removed), ", ".join(removed))
     print(summary)
@@ -222,13 +204,61 @@ def main():
             fh.write("should_commit=%s\n" % ("true" if should_commit else "false"))
             fh.write("count=%d\n" % len(current))
             fh.write("added=%d\n" % len(added))
-    step_summary = os.environ.get("GITHUB_STEP_SUMMARY")
-    if step_summary:
-        with open(step_summary, "a", encoding="utf-8") as fh:
-            fh.write("### %s\n\n%s\n" % (report["update"]["label"], summary))
+    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary_path:
+        with open(summary_path, "a", encoding="utf-8") as fh:
+            fh.write("### %s\n\n%s\n" % (tracked["label"], summary))
 
 
-def build_stats(count, target, release_iso, history, events):
+def build_history(published, release):
+    """Cumulative count keyed on real publish times, not on when we polled."""
+    stamps = sorted(p["published_at"] for p in published if p["published_at"])
+    points = []
+    start = min([release] + stamps[:1]) if stamps else release
+    if start:
+        points.append({"t": start, "count": 0})
+    count = 0
+    for stamp in stamps:
+        count += 1
+        if points and points[-1]["t"] == stamp:
+            points[-1]["count"] = count
+        else:
+            points.append({"t": stamp, "count": count})
+    return points
+
+
+def build_events(published):
+    """Publishes grouped into UTC hour buckets, oldest first."""
+    buckets = {}
+    for p in published:
+        stamp = p["published_at"]
+        if not stamp:
+            continue
+        bucket = stamp[:13] + ":00:00Z"
+        buckets.setdefault(bucket, []).append(p)
+    events, running = [], 0
+    for bucket in sorted(buckets):
+        langs = sorted(buckets[bucket], key=lambda p: p["published_at"])
+        running += len(langs)
+        events.append(
+            {
+                "t": bucket,
+                "count_after": running,
+                "added": [
+                    {
+                        "code": p["code"],
+                        "name": p["name"],
+                        "at": p["published_at"],
+                        "source": p["published_at_source"],
+                    }
+                    for p in langs
+                ],
+            }
+        )
+    return events
+
+
+def build_stats(count, target, release, published):
     now = datetime.datetime.now(datetime.timezone.utc)
     stats = {
         "published_count": count,
@@ -237,29 +267,27 @@ def build_stats(count, target, release_iso, history, events):
         "percent": round(100.0 * count / target, 1) if target else None,
     }
 
-    # Only quote a pace once we have actually watched a language arrive --
-    # dividing the seeded count by elapsed days invents a trend from nothing.
-    observed_any = any(not e.get("seed") and e.get("added") for e in events)
-
-    if release_iso:
-        released = datetime.datetime.fromisoformat(release_iso + "T00:00:00+00:00")
+    released = parse_iso(release)
+    elapsed = None
+    if released:
         elapsed = (now - released).total_seconds() / 86400.0
         stats["days_since_release"] = round(max(elapsed, 0), 2)
-        if elapsed >= 0.5 and observed_any:
-            stats["per_day_overall"] = round(count / elapsed, 1)
+
+    stamps = [parse_iso(p["published_at"]) for p in published]
+    stamps = sorted(s for s in stamps if s)
 
     for label, hours in (("added_24h", 24), ("added_7d", 24 * 7)):
         cutoff = now - datetime.timedelta(hours=hours)
-        stats[label] = sum(
-            len(e.get("added") or [])
-            for e in events
-            if not e.get("seed") and (parse_iso(e.get("t")) or now) >= cutoff
-        )
+        stats[label] = sum(1 for s in stamps if s >= cutoff)
 
-    # Rough ETA from the trailing week's rate. Clearly a projection, not a promise.
+    if elapsed and elapsed >= 0.25 and count > 1:
+        stats["per_day_overall"] = round(count / elapsed, 1)
+
+    # Rough ETA from the trailing week's rate. A projection, not a promise.
     remaining = stats.get("pending_count")
     if remaining and stats.get("added_7d"):
-        rate = stats["added_7d"] / 7.0
+        window = min(7.0, elapsed or 7.0) or 7.0
+        rate = stats["added_7d"] / window
         if rate > 0:
             days = remaining / rate
             if days <= 400:

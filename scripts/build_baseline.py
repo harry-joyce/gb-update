@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
-"""Snapshot the baseline update's language list and the jw.org language index.
+"""Snapshot the baseline update's language list and the MEPS language index.
 
-Run this once (or again if the baseline update in config.json changes). The
-baseline gives the report a realistic target: the number of languages the
-previous Governing Body Update ultimately reached.
+Run once (or again when the baseline in config.json changes). The baseline is
+the report's target: how many languages the previous Governing Body Update
+video ultimately reached.
+
+Note the baseline deliberately stores only the language *list*, not publish
+times. The media API reports a single bulk `firstPublished` for every language
+of a completed item (Update #5 shows 2026-07-31T13:24:54 for all 449), so its
+historical rollout cannot be reconstructed -- only its final total is usable.
 """
 
 import json
@@ -20,36 +25,39 @@ def main():
     config = json.load(open(os.path.join(ROOT, "config.json")))
     baseline = config["baseline"]
 
-    page = jw.fetch(baseline["url"])
-    alternates = jw.parse_alternates(page)
-    if len(alternates) < 50:
+    codes, item = jw.available_languages(baseline["docid"])
+    if len(codes) < 100:
         raise SystemExit(
-            "refusing to write baseline: only %d languages found, expected ~190"
-            % len(alternates)
+            "refusing to write baseline: only %d languages found, expected ~450" % len(codes)
         )
 
     index = jw.fetch_language_index()
     if len(index) < 500:
         raise SystemExit("refusing to write language index: only %d entries" % len(index))
 
-    write(
-        "data/languages.json",
-        {"fetched": jw.utcnow(), "count": len(index), "languages": index},
-    )
+    unresolved = [c for c in codes if c not in index]
+    if unresolved:
+        print("warning: %d codes have no metadata: %s" % (len(unresolved), unresolved[:10]))
+
+    signs = sum(1 for c in codes if index.get(c, {}).get("sign"))
+
+    write("data/languages.json", {"fetched": jw.utcnow(), "count": len(index), "languages": index})
     write(
         "data/baseline.json",
         {
             "label": baseline["label"],
             "short": baseline["short"],
-            "url": baseline["url"],
-            "release_date": jw.parse_release_date(page),
-            "doc_id": jw.parse_doc_id(page),
+            "docid": baseline["docid"],
+            "url": jw.english_video_page(
+                baseline["docid"], config["tracked"].get("category", "StudioNewsReports")
+            ),
             "fetched": jw.utcnow(),
-            "count": len(alternates),
-            "codes": sorted(alternates),
+            "count": len(codes),
+            "sign_language_count": signs,
+            "codes": codes,
         },
     )
-    print("baseline: %d languages / index: %d languages" % (len(alternates), len(index)))
+    print("baseline: %d languages (%d sign) / index: %d" % (len(codes), signs, len(index)))
 
 
 def write(rel, payload):

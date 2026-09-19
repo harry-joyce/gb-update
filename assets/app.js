@@ -4,22 +4,62 @@
 
   var $ = function (id) { return document.getElementById(id); };
 
-  /* ---- theme ---------------------------------------------------------- */
-  var stored = null;
-  try { stored = localStorage.getItem("theme"); } catch (e) {}
-  if (stored === "light" || stored === "dark") {
-    document.documentElement.setAttribute("data-theme", stored);
+  /* ---- state ---------------------------------------------------------- */
+  var state = {
+    report: null,
+    sort: { published: { key: "published_at", dir: -1 }, pending: { key: "name", dir: 1 } },
+    query: { published: "", pending: "" }
+  };
+
+  /* ---- theme: light / dark / system, system being the default --------- */
+  var THEMES = ["light", "dark", "system"];
+
+  function storedTheme() {
+    try {
+      var value = localStorage.getItem("theme");
+      return THEMES.indexOf(value) === -1 ? "system" : value;
+    } catch (e) {
+      return "system";
+    }
   }
-  $("theme-toggle").addEventListener("click", function () {
-    var root = document.documentElement;
-    var isDark = root.getAttribute("data-theme") === "dark" ||
-      (!root.getAttribute("data-theme") &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches);
-    var next = isDark ? "light" : "dark";
-    root.setAttribute("data-theme", next);
-    try { localStorage.setItem("theme", next); } catch (e) {}
+
+  function applyTheme(choice) {
+    if (choice === "system") {
+      document.documentElement.removeAttribute("data-theme");
+    } else {
+      document.documentElement.setAttribute("data-theme", choice);
+    }
+    var buttons = document.querySelectorAll("[data-theme-choice]");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].setAttribute(
+        "aria-pressed", String(buttons[i].dataset.themeChoice === choice)
+      );
+    }
     if (state.report) { drawChart(state.report); }
-  });
+  }
+
+  (function initTheme() {
+    var buttons = document.querySelectorAll("[data-theme-choice]");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", function (ev) {
+        var choice = ev.currentTarget.dataset.themeChoice;
+        try {
+          if (choice === "system") { localStorage.removeItem("theme"); }
+          else { localStorage.setItem("theme", choice); }
+        } catch (e) {}
+        applyTheme(choice);
+      });
+    }
+    applyTheme(storedTheme());
+
+    // Follow the OS while "system" is selected.
+    var mq = window.matchMedia("(prefers-color-scheme: dark)");
+    var onChange = function () {
+      if (storedTheme() === "system" && state.report) { drawChart(state.report); }
+    };
+    if (mq.addEventListener) { mq.addEventListener("change", onChange); }
+    else if (mq.addListener) { mq.addListener(onChange); }
+  })();
 
   /* ---- formatting ----------------------------------------------------- */
   function fmtDate(iso) {
@@ -34,6 +74,28 @@
     return d.toLocaleString(undefined, {
       day: "numeric", month: "short", hour: "2-digit", minute: "2-digit"
     });
+  }
+
+  var MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+  function pad(n) { return (n < 10 ? "0" : "") + n; }
+
+  /* Publish times are quoted in UTC, so render them in UTC -- converting to
+     the viewer's zone would make them impossible to reconcile with the times
+     recorded in overrides.json. */
+  function fmtUTC(iso, withYear) {
+    var d = new Date(iso);
+    if (isNaN(d)) { return iso || "—"; }
+    return d.getUTCDate() + " " + MONTHS[d.getUTCMonth()] +
+      (withYear ? " " + d.getUTCFullYear() : "") + ", " +
+      pad(d.getUTCHours()) + ":" + pad(d.getUTCMinutes()) + " UTC";
+  }
+
+  function fmtUTCDate(iso) {
+    var d = new Date(iso);
+    if (isNaN(d)) { return iso || "—"; }
+    return d.getUTCDate() + " " + MONTHS[d.getUTCMonth()] + " " + d.getUTCFullYear();
   }
 
   function relative(iso) {
@@ -58,13 +120,6 @@
       .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
   }
-
-  /* ---- state ---------------------------------------------------------- */
-  var state = {
-    report: null,
-    sort: { published: { key: "first_seen", dir: -1 }, pending: { key: "name", dir: 1 } },
-    query: { published: "", pending: "" }
-  };
 
   /* ---- load ----------------------------------------------------------- */
   fetch("data/report.json", { cache: "no-store" })
@@ -94,10 +149,11 @@
     text($("update-title"), upd.label || "Governing Body Update");
 
     var meta = [];
-    if (upd.release_date) { meta.push("Released " + fmtDate(upd.release_date)); }
+    if (upd.release) { meta.push("Released " + fmtUTC(upd.release, true)); }
     if (s.days_since_release != null) {
       meta.push("day " + Math.floor(s.days_since_release + 1) + " of the rollout");
     }
+    if (upd.duration) { meta.push(upd.duration); }
     $("update-meta").innerHTML = meta.map(esc).join('<span class="dot">•</span>');
 
     /* hero */
@@ -106,14 +162,17 @@
       text($("hero-of"), "of about " + s.target + " expected");
       text($("hero-pct"), (s.percent == null ? "" : s.percent + "%"));
       var pct = Math.max(0, Math.min(100, s.percent || 0));
-      $("meter-fill").style.width = pct + "%";
+      $("meter-fill").style.width = Math.max(pct, pct > 0 ? 0.4 : 0) + "%";
       $("meter-caption").innerHTML =
-        plural(s.pending_count || 0, "language", "languages") + " still to come, based on the " +
-        esc(base.count || "?") + " languages " +
+        plural(s.pending_count || 0, "language", "languages") + " still to come, against the " +
+        esc(base.count) + " languages " +
         (base.url
           ? '<a href="' + esc(base.url) + '" rel="noopener">' + esc(base.short || "the previous update") + "</a>"
           : esc(base.short || "the previous update")) +
-        " ultimately reached.";
+        " reached" +
+        (base.sign_language_count
+          ? " (including " + esc(base.sign_language_count) + " sign languages)"
+          : "") + ".";
     } else {
       $("meter-caption").textContent = "No baseline available for comparison.";
     }
@@ -139,11 +198,14 @@
     }).join("");
 
     /* chart */
-    var noteBits = ["Cumulative count of languages this update is available in."];
+    var noteBits = [
+      "Cumulative count of languages, plotted on each language's own publish time."
+    ];
     if (base.count) {
       noteBits.push("The dashed line marks the " + base.count + " languages " +
-        (base.short || "the previous update") + " reached — its own rollout curve cannot be " +
-        "shown because jw.org does not publish per-language release dates.");
+        (base.short || "the previous update") + " reached. Its rollout curve cannot be " +
+        "drawn: the media API reports one bulk publish time for every language of a " +
+        "finished video, so only its final total is meaningful.");
     }
     text($("chart-note"), noteBits.join(" "));
     drawChart(report);
@@ -151,23 +213,44 @@
     /* tables */
     text($("count-published"), String((report.published || []).length));
     text($("count-pending"), String((report.pending || []).length));
-    var changeEvents = (report.events || []).filter(function (e) { return !e.seed; });
-    text($("count-activity"), String(changeEvents.length));
+    text($("count-activity"), String((report.events || []).length));
 
     $("pending-note").innerHTML =
       "Languages that received " + esc(base.short || "the previous update") +
       " but do not yet have " + esc(upd.short || "this update") + ".";
+
+    var counts = report.counts || {};
+    var legend = [];
+    if (counts.confirmed_times) {
+      legend.push(plural(counts.confirmed_times, "time is", "times are") + " confirmed.");
+    }
+    if (counts.api_times) {
+      legend.push(plural(counts.api_times, "time is", "times are") +
+        " marked \u2020 \u2014 taken from the media API's firstPublished, which records when " +
+        "the file entered the CDN and can run earlier than public availability. " +
+        "English reports " +
+        (upd.api_first_published ? fmtUTC(upd.api_first_published) : "an earlier time") +
+        " but was published at " + (upd.release ? fmtUTC(upd.release) : "14:00 UTC") + ".");
+    }
+    $("published-legend").innerHTML = legend.join(" ");
 
     renderPublished();
     renderPending();
     renderFeed(report.events || []);
 
     /* footer */
+    var src = report.source || {};
     $("footer-source").innerHTML = "Source: " +
-      '<a href="' + esc(report.source || upd.url) + '" rel="noopener">' +
-      esc(report.source || upd.url) + "</a>";
+      '<a href="' + esc(src.page || upd.url) + '" rel="noopener">the video on jw.org</a>' +
+      (src.api ? ' via <a href="' + esc(src.api) + '" rel="noopener">the JW media API</a>' : "");
+    $("footer-method").innerHTML =
+      "The media API lists every language a video is published in, plus each language's own " +
+      "publish time, so the timeline reflects actual publication rather than when this " +
+      "tracker happened to look. Confirmed times recorded in " +
+      '<a href="https://github.com/harry-joyce/gb-update/blob/main/data/overrides.json" rel="noopener">overrides.json</a>' +
+      " take precedence over the API value.";
     $("footer-checked").textContent =
-      "Last checked " + fmtDateTime(report.last_checked) +
+      "Last checked " + fmtUTC(report.last_checked) +
       " (" + relative(report.last_checked) + "). Checks run hourly; the report is " +
       "only rewritten when the language list changes or the record goes stale.";
   }
@@ -269,9 +352,9 @@
     }).textContent = last.count;
 
     desc.textContent =
-      "Line chart: " + points[0].count + " languages at release on " +
-      fmtDate(report.update.release_date || history[0].t) + ", rising to " +
-      last.count + " as of " + fmtDate(report.last_checked) +
+      "Line chart: 0 languages at release on " +
+      fmtUTC(report.update.release || history[0].t, true) + ", rising to " +
+      last.count + " by " + fmtUTC(report.last_checked) +
       (target ? ", against an expected total of " + target + "." : ".");
 
     /* hover layer */
@@ -299,7 +382,7 @@
       hoverDot.setAttribute("opacity", 1);
       tip.innerHTML = "<strong>" + best.count + " languages</strong>" +
         '<span class="tt-date">' +
-        (best.synthetic ? "as of last check • " : "") + fmtDateTime(new Date(best.t).toISOString()) +
+        (best.synthetic ? "as of last check • " : "") + fmtUTC(new Date(best.t).toISOString()) +
         "</span>";
       tip.style.opacity = 1;
       var left = x(best.t) / W * box.width;
@@ -326,7 +409,7 @@
     var raw = range / Math.max(count, 1);
     var mag = Math.pow(10, Math.floor(Math.log10(Math.max(raw, 1e-9))));
     var norm = raw / mag;
-    var mult = norm <= 1 ? 1 : norm <= 2 ? 2 : norm <= 5 ? 5 : 10;
+    var mult = norm <= 1.5 ? 1 : norm <= 3 ? 2 : norm <= 7 ? 5 : 10;
     return Math.max(1, Math.round(mult * mag));
   }
 
@@ -363,14 +446,14 @@
     var q = state.query.published.toLowerCase();
     if (q) {
       rows = rows.filter(function (r) {
-        return (r.name + " " + r.vernacular + " " + r.code + " " + (r.title || ""))
-          .toLowerCase().indexOf(q) !== -1;
+        return (r.name + " " + r.vernacular + " " + r.code + " " + (r.locale || "") +
+          " " + (r.title || "")).toLowerCase().indexOf(q) !== -1;
       });
     }
     var sort = state.sort.published;
     rows.sort(function (a, b) {
       var av = a[sort.key], bv = b[sort.key];
-      if (sort.key === "first_seen") {
+      if (sort.key === "published_at") {
         av = new Date(av).getTime() || 0; bv = new Date(bv).getTime() || 0;
       } else {
         av = String(av).toLowerCase(); bv = String(bv).toLowerCase();
@@ -380,9 +463,15 @@
 
     var tbody = $("table-published").tBodies[0];
     tbody.innerHTML = rows.map(function (r) {
-      var when = r.first_seen_exact
-        ? fmtDateTime(r.first_seen)
-        : '<span class="approx">' + esc(fmtDate(r.first_seen)) + " (at release)</span>";
+      var mark = "";
+      if (r.published_at_source === "api") {
+        mark = '<abbr class="ts-mark" title="From the media API\u2019s firstPublished; ' +
+          'may precede public availability">\u2020</abbr>';
+      } else if (r.published_at_source === "observed") {
+        mark = '<abbr class="ts-mark" title="No publish time available; this is when the ' +
+          'tracker first saw it">\u2021</abbr>';
+      }
+      var when = '<span class="exact">' + esc(fmtUTC(r.published_at)) + "</span>" + mark;
       var name = '<span class="lang-name">' + esc(r.name) + "</span>" +
         (r.beyond_baseline ? '<span class="chip new">new</span>' : "") +
         (r.sign ? '<span class="chip">sign</span>' : "") +
@@ -460,29 +549,34 @@
     var rows = events.slice().reverse();
     $("empty-activity").hidden = rows.length > 0;
     $("feed").innerHTML = rows.map(function (e) {
-      var added = e.added || [], removed = e.removed || [];
-      var names = added.map(function (a) { return "<strong>" + esc(a.name) + "</strong>"; });
-      var body;
-      if (e.seed) {
-        body = "Tracking began — " + plural(added.length, "language", "languages") +
-          " already available: " + names.join(", ");
-      } else if (added.length) {
-        body = names.join(", ");
-        if (removed.length) {
-          body += " · removed: " + removed.map(function (r) { return esc(r.name); }).join(", ");
-        }
-      } else {
-        body = "Removed: " + removed.map(function (r) { return esc(r.name); }).join(", ");
-      }
-      var delta = e.seed ? added.length : (added.length ? "+" + added.length : "−" + removed.length);
-      var cls = e.seed ? "seed" : (added.length ? "" : "neg");
+      var added = e.added || [];
+      var names = added.map(function (a) {
+        var mark = a.source === "api" ? '<abbr class="ts-mark" title="Time from the media API">\u2020</abbr>'
+          : a.source === "observed" ? '<abbr class="ts-mark" title="First observed by the tracker">\u2021</abbr>'
+          : "";
+        return "<strong>" + esc(a.name) + "</strong> " +
+          '<span class="feed-time">' + esc(timeOnly(a.at)) + "</span>" + mark;
+      });
       return "<li>" +
-        '<span class="feed-when">' + esc(fmtDateTime(e.t)) + "</span>" +
-        '<span class="feed-delta ' + cls + '">' + esc(delta) + "</span>" +
-        '<span class="feed-body"><span class="feed-langs">' + body + "</span>" +
-        '<span class="feed-total">Total available: ' + esc(e.count_after) + "</span></span>" +
+        '<span class="feed-when">' + esc(fmtUTCDate(e.t)) + "<br>" +
+        esc(hourLabel(e.t)) + "</span>" +
+        '<span class="feed-delta">+' + added.length + "</span>" +
+        '<span class="feed-body"><span class="feed-langs">' + names.join(", ") + "</span>" +
+        '<span class="feed-total">Total published: ' + esc(e.count_after) + "</span></span>" +
         "</li>";
     }).join("");
+  }
+
+  function hourLabel(iso) {
+    var d = new Date(iso);
+    if (isNaN(d)) { return ""; }
+    return pad(d.getUTCHours()) + ":00 UTC";
+  }
+
+  function timeOnly(iso) {
+    var d = new Date(iso);
+    if (isNaN(d)) { return ""; }
+    return pad(d.getUTCHours()) + ":" + pad(d.getUTCMinutes());
   }
 
   /* ---- interactions --------------------------------------------------- */

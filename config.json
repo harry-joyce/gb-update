@@ -2,12 +2,14 @@
   "tracked": {
     "label": "2026 Governing Body Update #6",
     "short": "Update #6",
-    "url": "https://www.jw.org/en/news/region/global/2026-Governing-Body-Update-6/"
+    "docid": "1112024060",
+    "category": "StudioNewsReports",
+    "release": "2026-09-18T14:00:00Z"
   },
   "baseline": {
     "label": "2026 Governing Body Update #5",
     "short": "Update #5",
-    "url": "https://www.jw.org/en/news/region/global/2026-Governing-Body-Update-5/"
+    "docid": "1112024059"
   },
   "min_commit_interval_hours": 6
 }

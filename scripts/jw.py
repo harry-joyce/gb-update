@@ -1,11 +1,20 @@
-"""Shared helpers for scraping jw.org language availability."""
+"""Shared helpers for reading Governing Body Update availability from jw.org.
 
-import html
+Availability comes from the JW media ("mediator") API rather than the news
+article, because the API reports both the full language list for a video and a
+per-language `firstPublished` timestamp:
+
+    /media-items/E/docid-<docid>_1_VIDEO   -> availableLanguages[] + firstPublished
+
+One request gives the whole language list; a per-language request gives that
+language's own publish time.
+"""
+
 import json
-import re
 import ssl
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 
 UA = (
@@ -13,16 +22,8 @@ UA = (
     "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 )
 
+MEDIATOR = "https://b.jw-cdn.org/apis/mediator/v1"
 LANGUAGES_URL = "https://www.jw.org/en/languages/"
-
-# <link rel="alternate" type="text/html" title="..." hreflang="..." href="..." />
-_LINK_RE = re.compile(r"<link\b[^>]*\brel=\"alternate\"[^>]*>", re.I)
-_ATTR_RE = re.compile(r"(\w[\w:-]*)\s*=\s*\"([^\"]*)\"")
-_PUBDATE_RE = re.compile(
-    r"<p[^>]*class=\"[^\"]*newsPublishDate[^\"]*\"[^>]*>(.*?)</p>", re.I | re.S
-)
-_DOCID_RE = re.compile(r"\bdocId-(\d+)")
-_TITLE_RE = re.compile(r"<title>(.*?)</title>", re.I | re.S)
 
 
 def _ssl_context():
@@ -60,59 +61,66 @@ def fetch(url, attempts=4, timeout=45):
     raise RuntimeError("failed to fetch %s: %s" % (url, last))
 
 
-def parse_alternates(page):
-    """Extract {langcode: {title, url}} from a jw.org article's hreflang links.
+def fetch_json(url, **kwargs):
+    return json.loads(fetch(url, **kwargs))
 
-    jw.org emits one rel=alternate link per language the article has actually
-    been published in, so this set *is* the availability list.
+
+# ---- media API ---------------------------------------------------------- #
+
+def media_item(docid, code="E"):
+    """One language's record for a video, or None if it has no version yet."""
+    url = "%s/media-items/%s/docid-%s_1_VIDEO" % (MEDIATOR, code, docid)
+    payload = fetch_json(url)
+    media = payload.get("media") or []
+    return media[0] if media else None
+
+
+def available_languages(docid):
+    """Every MEPS language code the video is currently published in."""
+    item = media_item(docid, "E")
+    if not item:
+        raise RuntimeError("no English media item for docid %s" % docid)
+    codes = item.get("availableLanguages") or []
+    return sorted(set(codes)), item
+
+
+def watch_url(code, docid):
+    """A jw.org link to one language's version of the video.
+
+    Built through jw.org's own finder redirect rather than by assembling a path:
+    every language localises its URL segments (German /bibliothek/videos/,
+    Basque /liburutegia/bideoak/), so a hand-built /<locale>/library/videos/
+    path 404s for everything except English.
     """
-    out = {}
-    for tag in _LINK_RE.findall(page):
-        attrs = dict(_ATTR_RE.findall(tag))
-        code = attrs.get("hreflang", "").strip()
-        href = attrs.get("href", "").strip()
-        if not code or code == "x-default" or not href:
-            continue
-        out[code] = {
-            "title": html.unescape(attrs.get("title", "")).strip(),
-            "url": href,
-        }
-    return out
+    return "https://www.jw.org/finder?lank=docid-%s_1_VIDEO&wtlocale=%s" % (docid, code)
 
 
-def parse_release_date(page):
-    """The date shown on the article. jw.org shows the update's release date
-    here, identical across languages -- not a per-language publish date."""
-    m = _PUBDATE_RE.search(page)
-    if not m:
-        return None
-    # The element holds the date, then a <br> and a category link.
-    raw = re.split(r"<br\b[^>]*>", m.group(1), maxsplit=1)[0]
-    text = re.sub(r"<[^>]+>", " ", raw)
-    return " ".join(html.unescape(text).split()) or None
+def english_video_page(docid, category="StudioNewsReports"):
+    """The English media-library page for the video."""
+    return "https://www.jw.org/en/library/videos/#en/mediaitems/%s/docid-%s_1_VIDEO" % (
+        category, docid
+    )
 
 
-def parse_doc_id(page):
-    m = _DOCID_RE.search(page)
-    return m.group(1) if m else None
-
-
-def parse_title(page):
-    m = _TITLE_RE.search(page)
-    return " ".join(html.unescape(m.group(1)).split()) if m else None
-
+# ---- language metadata --------------------------------------------------- #
 
 def fetch_language_index():
-    """symbol -> language metadata, trimmed to the fields the report uses."""
-    data = json.loads(fetch(LANGUAGES_URL))
+    """MEPS code -> language metadata.
+
+    jw.org's language list keys each entry by `langcode`, which *is* the MEPS
+    code the media API uses (English E, German X, Basque BQ), so this resolves
+    every code the API returns.
+    """
+    data = fetch_json(LANGUAGES_URL)
     index = {}
     for lang in data.get("languages", []):
-        symbol = lang.get("symbol")
-        if not symbol:
+        code = lang.get("langcode")
+        if not code:
             continue
-        index[symbol] = {
-            "name": lang.get("name") or symbol,
-            "vernacular": lang.get("vernacularName") or lang.get("name") or symbol,
+        index[code] = {
+            "locale": lang.get("symbol") or "",
+            "name": lang.get("name") or code,
+            "vernacular": lang.get("vernacularName") or lang.get("name") or code,
             "script": lang.get("script") or "",
             "direction": lang.get("direction") or "ltr",
             "sign": bool(lang.get("isSignLanguage")),
@@ -121,12 +129,13 @@ def fetch_language_index():
 
 
 def describe(code, index):
-    """Language metadata for a code, degrading gracefully for unknown codes."""
+    """Language metadata for a MEPS code, degrading gracefully if unknown."""
     meta = index.get(code)
     if meta:
         return dict(meta, code=code)
     return {
         "code": code,
+        "locale": "en",
         "name": code,
         "vernacular": code,
         "script": "",
@@ -141,6 +150,24 @@ def utcnow():
 
     return (
         datetime.datetime.now(datetime.timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z")
+    )
+
+
+def normalise_ts(value):
+    """'2026-09-18T11:39:09.182Z' -> '2026-09-18T11:39:09Z'."""
+    if not value:
+        return None
+    import datetime
+
+    try:
+        dt = datetime.datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return value
+    return (
+        dt.astimezone(datetime.timezone.utc)
         .replace(microsecond=0)
         .isoformat()
         .replace("+00:00", "Z")

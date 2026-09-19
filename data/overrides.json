@@ -1,0 +1,13 @@
+{
+  "_comment": [
+    "Authoritative publish times, keyed by MEPS language code, in UTC (ISO-8601).",
+    "These win over the media API's firstPublished, which records when a file",
+    "entered the CDN and can run earlier than public availability -- English",
+    "reports 2026-09-18T11:39:09Z but was actually published at 14:00Z.",
+    "Add an entry as a confirmed time becomes known; remove one to fall back",
+    "to the API value."
+  ],
+  "times": {
+    "E": "2026-09-18T14:00:00Z"
+  }
+}
