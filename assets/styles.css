@@ -434,6 +434,15 @@ tbody tr:hover { background: var(--surface-2); }
 .chip.new { color: var(--good); border-color: color-mix(in srgb, var(--good) 35%, var(--border)); }
 
 /* ---- activity feed ----------------------------------------------------- */
+.activity-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 0 0 10px;
+}
+.activity-head .card-note { margin: 0; }
+
 .feed { list-style: none; margin: 0; padding: 0; }
 
 .feed li {
@@ -446,7 +455,8 @@ tbody tr:hover { background: var(--surface-2); }
 
 .feed-when {
   flex: none;
-  width: 116px;
+  width: 124px;
+  white-space: nowrap;
   font-size: 12.5px;
   color: var(--text-muted);
   font-variant-numeric: tabular-nums;

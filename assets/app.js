@@ -9,6 +9,7 @@
     report: null,
     sort: { published: { key: "published_at", dir: -1 }, pending: { key: "name", dir: 1 } },
     chart: { y: "fit", range: "all" },
+    activity: { group: "hour" },
     query: { published: "", pending: "" }
   };
 
@@ -710,8 +711,35 @@
   }
 
   /* ---- activity feed -------------------------------------------------- */
+  /* Events arrive bucketed by the hour they happened. Day grouping folds
+     each run of same-date buckets into one row, so the feed stays in the
+     same shape and only the granularity changes. */
+  function byDay(events) {
+    var out = [], index = {};
+    events.forEach(function (e) {
+      var key = String(e.t).slice(0, 10);
+      var row = index[key];
+      if (!row) {
+        row = index[key] = { t: e.t, added: [], count_after: e.count_after };
+        out.push(row);
+      }
+      row.added = row.added.concat(e.added || []);
+      row.count_after = e.count_after;
+    });
+    out.forEach(function (row) {
+      row.added.sort(function (a, b) { return String(a.at) < String(b.at) ? -1 : 1; });
+    });
+    return out;
+  }
+
   function renderFeed(events) {
-    var rows = events.slice().reverse();
+    var byHour = state.activity.group === "hour";
+    var rows = (byHour ? events.slice() : byDay(events)).reverse();
+
+    text($("activity-note"), byHour
+      ? "Publishes grouped by the hour they happened, most recent first."
+      : "Publishes grouped by the day they happened, most recent first.");
+
     $("empty-activity").hidden = rows.length > 0;
     $("feed").innerHTML = rows.map(function (e) {
       var added = e.added || [];
@@ -722,7 +750,7 @@
       });
       return "<li>" +
         '<span class="feed-when">' + esc(fmtUTCDate(e.t)) + "<br>" +
-        esc(hourLabel(e.t)) + "</span>" +
+        esc(byHour ? hourLabel(e.t) : spanLabel(added)) + "</span>" +
         '<span class="feed-delta">+' + added.length + "</span>" +
         '<span class="feed-body"><span class="feed-langs">' + names.join(", ") + "</span>" +
         '<span class="feed-total">Total published: ' + esc(e.count_after) + "</span></span>" +
@@ -734,6 +762,16 @@
     var d = new Date(iso);
     if (isNaN(d)) { return ""; }
     return pad(d.getUTCHours()) + ":00 UTC";
+  }
+
+  /* In day mode the hour is gone from the heading, so show the window the
+     day's publishes actually landed in. */
+  function spanLabel(added) {
+    if (!added.length) { return ""; }
+    var first = timeOnly(added[0].at);
+    var last = timeOnly(added[added.length - 1].at);
+    if (!first || !last) { return ""; }
+    return (first === last ? first : first + "\u2013" + last) + " UTC";
   }
 
   function timeOnly(iso) {
@@ -790,6 +828,35 @@
     var buttons = document.querySelectorAll("[data-chart-y],[data-chart-range]");
     for (var j = 0; j < buttons.length; j++) {
       buttons[j].addEventListener("click", choose);
+    }
+    sync();
+  })();
+
+  /* ---- activity grouping ---------------------------------------------- */
+  (function initActivityGroup() {
+    try {
+      var saved = localStorage.getItem("activityGroup");
+      if (saved === "hour" || saved === "day") { state.activity.group = saved; }
+    } catch (e) {}
+
+    var buttons = document.querySelectorAll("[data-activity-group]");
+
+    function sync() {
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].setAttribute(
+          "aria-pressed",
+          String(buttons[i].dataset.activityGroup === state.activity.group)
+        );
+      }
+    }
+
+    for (var j = 0; j < buttons.length; j++) {
+      buttons[j].addEventListener("click", function (ev) {
+        state.activity.group = ev.currentTarget.dataset.activityGroup;
+        try { localStorage.setItem("activityGroup", state.activity.group); } catch (e) {}
+        sync();
+        if (state.report) { renderFeed(state.report.events || []); }
+      });
     }
     sync();
   })();

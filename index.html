@@ -137,7 +137,14 @@
     </section>
 
     <section class="panel" role="tabpanel" id="panel-activity" aria-labelledby="tab-activity" hidden>
-      <p class="card-note" style="margin:0 0 6px">Publishes grouped by the hour they happened, most recent first.</p>
+      <div class="activity-head">
+        <div class="seg" role="group" aria-label="Group publishes by">
+          <span class="seg-label">Group</span>
+          <button type="button" data-activity-group="hour" aria-pressed="true">Hour</button>
+          <button type="button" data-activity-group="day" aria-pressed="false">Day</button>
+        </div>
+        <p class="card-note" id="activity-note"></p>
+      </div>
       <ul class="feed" id="feed"></ul>
       <p class="empty" id="empty-activity" hidden>No changes recorded yet.</p>
     </section>
