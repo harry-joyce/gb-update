@@ -6,10 +6,102 @@
   "sign_language_count": 72,
   "url": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024059_1_VIDEO"
  },
+ "catalog_history": [
+  {
+   "count": 1,
+   "t": "2026-09-18T14:00:00Z"
+  },
+  {
+   "count": 2,
+   "t": "2026-09-18T20:53:43Z"
+  },
+  {
+   "count": 3,
+   "t": "2026-09-18T23:55:38Z"
+  },
+  {
+   "count": 4,
+   "t": "2026-09-19T00:21:42Z"
+  },
+  {
+   "count": 5,
+   "t": "2026-09-19T04:42:14Z"
+  },
+  {
+   "count": 6,
+   "t": "2026-09-19T07:17:46Z"
+  },
+  {
+   "count": 7,
+   "t": "2026-09-19T07:39:39Z"
+  },
+  {
+   "count": 8,
+   "t": "2026-09-19T08:16:53Z"
+  },
+  {
+   "count": 9,
+   "t": "2026-09-19T10:06:39Z"
+  },
+  {
+   "count": 10,
+   "t": "2026-09-19T10:26:58Z"
+  },
+  {
+   "count": 11,
+   "t": "2026-09-19T12:34:58Z"
+  },
+  {
+   "count": 12,
+   "t": "2026-09-19T12:49:56Z"
+  },
+  {
+   "count": 13,
+   "t": "2026-09-19T12:55:00Z"
+  },
+  {
+   "count": 14,
+   "t": "2026-09-19T13:08:49Z"
+  },
+  {
+   "count": 15,
+   "t": "2026-09-19T13:56:09Z"
+  },
+  {
+   "count": 16,
+   "t": "2026-09-19T13:57:24Z"
+  },
+  {
+   "count": 17,
+   "t": "2026-09-19T13:58:13Z"
+  },
+  {
+   "count": 18,
+   "t": "2026-09-19T14:03:14Z"
+  },
+  {
+   "count": 19,
+   "t": "2026-09-19T14:25:11Z"
+  },
+  {
+   "count": 20,
+   "t": "2026-09-19T14:28:46Z"
+  }
+ ],
+ "catalog_probe": {
+  "last_checked_count": 0,
+  "newly_catalogued": [],
+  "offset": 0,
+  "size": 40,
+  "unlisted_total": 0
+ },
  "counts": {
   "api_times": 19,
+  "awaiting_catalogue": 0,
+  "catalogued": 20,
   "clamped_times": 0,
   "confirmed_times": 1,
+  "file_times": 0,
   "observed_times": 0,
   "sign_languages": 3
  },
@@ -19,6 +111,7 @@
     {
      "at": "2026-09-18T14:00:00Z",
      "code": "E",
+     "in_catalog": true,
      "name": "English",
      "source": "confirmed"
     }
@@ -31,6 +124,7 @@
     {
      "at": "2026-09-18T20:53:43Z",
      "code": "X",
+     "in_catalog": true,
      "name": "German",
      "source": "api"
     }
@@ -43,6 +137,7 @@
     {
      "at": "2026-09-18T23:55:38Z",
      "code": "BQ",
+     "in_catalog": true,
      "name": "Basque",
      "source": "api"
     }
@@ -55,6 +150,7 @@
     {
      "at": "2026-09-19T00:21:42Z",
      "code": "AN",
+     "in_catalog": true,
      "name": "Catalan",
      "source": "api"
     }
@@ -67,6 +163,7 @@
     {
      "at": "2026-09-19T04:42:14Z",
      "code": "HI",
+     "in_catalog": true,
      "name": "Hindi",
      "source": "api"
     }
@@ -79,12 +176,14 @@
     {
      "at": "2026-09-19T07:17:46Z",
      "code": "S",
+     "in_catalog": true,
      "name": "Spanish",
      "source": "api"
     },
     {
      "at": "2026-09-19T07:39:39Z",
      "code": "I",
+     "in_catalog": true,
      "name": "Italian",
      "source": "api"
     }
@@ -97,6 +196,7 @@
     {
      "at": "2026-09-19T08:16:53Z",
      "code": "KA",
+     "in_catalog": true,
      "name": "Kannada",
      "source": "api"
     }
@@ -109,12 +209,14 @@
     {
      "at": "2026-09-19T10:06:39Z",
      "code": "BU",
+     "in_catalog": true,
      "name": "Myanmar",
      "source": "api"
     },
     {
      "at": "2026-09-19T10:26:58Z",
      "code": "AM",
+     "in_catalog": true,
      "name": "Amharic",
      "source": "api"
     }
@@ -127,18 +229,21 @@
     {
      "at": "2026-09-19T12:34:58Z",
      "code": "Z",
+     "in_catalog": true,
      "name": "Swedish",
      "source": "api"
     },
     {
      "at": "2026-09-19T12:49:56Z",
      "code": "NP",
+     "in_catalog": true,
      "name": "Nepali",
      "source": "api"
     },
     {
      "at": "2026-09-19T12:55:00Z",
      "code": "VLC",
+     "in_catalog": true,
      "name": "Valencian",
      "source": "api"
     }
@@ -151,24 +256,28 @@
     {
      "at": "2026-09-19T13:08:49Z",
      "code": "BE",
+     "in_catalog": true,
      "name": "Bengali",
      "source": "api"
     },
     {
      "at": "2026-09-19T13:56:09Z",
      "code": "AEY",
+     "in_catalog": true,
      "name": "Arabic (Egypt)",
      "source": "api"
     },
     {
      "at": "2026-09-19T13:57:24Z",
      "code": "SCH",
+     "in_catalog": true,
      "name": "Chilean Sign Language",
      "source": "api"
     },
     {
      "at": "2026-09-19T13:58:13Z",
      "code": "ISL",
+     "in_catalog": true,
      "name": "Italian Sign Language",
      "source": "api"
     }
@@ -181,18 +290,21 @@
     {
      "at": "2026-09-19T14:03:14Z",
      "code": "LSB",
+     "in_catalog": true,
      "name": "Brazilian Sign Language",
      "source": "api"
     },
     {
      "at": "2026-09-19T14:25:11Z",
      "code": "N",
+     "in_catalog": true,
      "name": "Norwegian",
      "source": "api"
     },
     {
      "at": "2026-09-19T14:28:46Z",
      "code": "CN",
+     "in_catalog": true,
      "name": "Chichewa",
      "source": "api"
     }
@@ -201,7 +313,7 @@
    "t": "2026-09-19T14:00:00Z"
   }
  ],
- "generated": "2026-09-19T15:15:32Z",
+ "generated": "2026-09-19T15:17:24Z",
  "history": [
   {
    "count": 1,
@@ -287,17 +399,21 @@
  "integrity": {
   "api_reset_detected": false,
   "api_reset_detected_at": null,
+  "catalogue_unavailable": null,
   "drift_count": 0,
   "drifted": [],
   "english_api_first_published": {
    "latest": "2026-09-18T11:39:09Z",
    "pinned": "2026-09-18T11:39:09Z"
   },
+  "file_drift_count": null,
+  "files_count": 20,
   "last_full_verification": "2026-09-19T08:46:04Z",
   "listing_count": 20,
-  "listing_lag": []
+  "listing_lag": [],
+  "pub_media_unavailable": null
  },
- "last_checked": "2026-09-19T15:15:32Z",
+ "last_checked": "2026-09-19T15:17:24Z",
  "pending": [
   {
    "code": "ABB",
@@ -4165,9 +4281,24 @@
   {
    "api_published_at": "2026-09-18T11:39:09Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-18T14:00:00Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "confirmed",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "E",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-18T22:46:56Z",
+   "files_at": "2026-09-18T14:00:00Z",
+   "files_at_note": null,
+   "files_at_source": "confirmed",
    "first_observed": "2026-09-19T08:32:21Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "en",
    "name": "English",
@@ -4183,9 +4314,23 @@
   {
    "api_published_at": "2026-09-18T20:53:43Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-18T20:53:43Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "X",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-18T20:53:31Z",
+   "files_at": "2026-09-18T20:53:43Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T08:32:21Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "de",
    "name": "German",
@@ -4201,9 +4346,23 @@
   {
    "api_published_at": "2026-09-18T23:55:38Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-18T23:55:38Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "BQ",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-18T23:55:28Z",
+   "files_at": "2026-09-18T23:55:38Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T08:32:21Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "eu",
    "name": "Basque",
@@ -4219,9 +4378,23 @@
   {
    "api_published_at": "2026-09-19T00:21:42Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T00:21:42Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "AN",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T00:21:27Z",
+   "files_at": "2026-09-19T00:21:42Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T08:32:21Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "cat",
    "name": "Catalan",
@@ -4237,9 +4410,24 @@
   {
    "api_published_at": "2026-09-19T04:42:14Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T04:42:14Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "HI",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T04:42:00Z",
+   "files_at": "2026-09-19T04:42:14Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T08:32:21Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "hi",
    "name": "Hindi",
@@ -4255,9 +4443,24 @@
   {
    "api_published_at": "2026-09-19T07:17:46Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T07:17:46Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "S",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T07:40:49Z",
+   "files_at": "2026-09-19T07:17:46Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T08:32:21Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "es",
    "name": "Spanish",
@@ -4273,9 +4476,23 @@
   {
    "api_published_at": "2026-09-19T07:39:39Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T07:39:39Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "I",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T07:39:28Z",
+   "files_at": "2026-09-19T07:39:39Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T08:32:21Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "it",
    "name": "Italian",
@@ -4291,9 +4508,24 @@
   {
    "api_published_at": "2026-09-19T08:16:53Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T08:16:53Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "KA",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T08:16:43Z",
+   "files_at": "2026-09-19T08:16:53Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T08:33:05Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "kn",
    "name": "Kannada",
@@ -4309,9 +4541,24 @@
   {
    "api_published_at": "2026-09-19T10:06:39Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T10:06:39Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "BU",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T10:06:30Z",
+   "files_at": "2026-09-19T10:06:39Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T10:44:21Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "my",
    "name": "Myanmar",
@@ -4327,9 +4574,24 @@
   {
    "api_published_at": "2026-09-19T10:26:58Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T10:26:58Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "AM",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T10:26:47Z",
+   "files_at": "2026-09-19T10:26:58Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T10:54:07Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "am",
    "name": "Amharic",
@@ -4345,9 +4607,23 @@
   {
    "api_published_at": "2026-09-19T12:34:58Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T12:34:58Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "Z",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T14:49:47Z",
+   "files_at": "2026-09-19T12:34:58Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T15:15:32Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "sv",
    "name": "Swedish",
@@ -4363,9 +4639,23 @@
   {
    "api_published_at": "2026-09-19T12:49:56Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T12:49:56Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "NP",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T12:49:45Z",
+   "files_at": "2026-09-19T12:49:56Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T15:15:32Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "ne",
    "name": "Nepali",
@@ -4381,9 +4671,23 @@
   {
    "api_published_at": "2026-09-19T12:55:00Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T12:55:00Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "VLC",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T12:54:48Z",
+   "files_at": "2026-09-19T12:55:00Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T15:15:32Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "ca-x-vlc",
    "name": "Valencian",
@@ -4399,9 +4703,24 @@
   {
    "api_published_at": "2026-09-19T13:08:49Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T13:08:49Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "BE",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T13:08:35Z",
+   "files_at": "2026-09-19T13:08:49Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T15:15:32Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "bn",
    "name": "Bengali",
@@ -4417,9 +4736,23 @@
   {
    "api_published_at": "2026-09-19T13:56:09Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T13:56:09Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "AEY",
    "direction": "rtl",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T13:55:54Z",
+   "files_at": "2026-09-19T13:56:09Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T15:15:32Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "arz",
    "name": "Arabic (Egypt)",
@@ -4435,9 +4768,23 @@
   {
    "api_published_at": "2026-09-19T13:57:24Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T13:57:24Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "SCH",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T13:57:16Z",
+   "files_at": "2026-09-19T13:57:24Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T15:15:32Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "csg",
    "name": "Chilean Sign Language",
@@ -4453,9 +4800,23 @@
   {
    "api_published_at": "2026-09-19T13:58:13Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T13:58:13Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "ISL",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T13:32:11Z",
+   "files_at": "2026-09-19T13:58:13Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T15:15:32Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "ise",
    "name": "Italian Sign Language",
@@ -4471,9 +4832,24 @@
   {
    "api_published_at": "2026-09-19T14:03:14Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T14:03:14Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "LSB",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T12:39:56Z",
+   "files_at": "2026-09-19T14:03:14Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T15:15:32Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "bzs",
    "name": "Brazilian Sign Language",
@@ -4489,9 +4865,23 @@
   {
    "api_published_at": "2026-09-19T14:25:11Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T14:25:11Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "N",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T14:24:59Z",
+   "files_at": "2026-09-19T14:25:11Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T15:15:32Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "no",
    "name": "Norwegian",
@@ -4507,9 +4897,24 @@
   {
    "api_published_at": "2026-09-19T14:28:46Z",
    "beyond_baseline": false,
+   "catalog_at": "2026-09-19T14:28:46Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-19T15:17:24Z",
    "code": "CN",
    "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T14:28:34Z",
+   "files_at": "2026-09-19T14:28:46Z",
+   "files_at_note": null,
+   "files_at_source": "api",
    "first_observed": "2026-09-19T15:15:32Z",
+   "in_catalog": true,
+   "in_files": true,
    "listed_by_api": true,
    "locale": "ny",
    "name": "Chichewa",
@@ -4526,12 +4931,16 @@
  "removed": [],
  "source": {
   "api": "https://b.jw-cdn.org/apis/mediator/v1/media-items/E/docid-1112024060_1_VIDEO",
+  "files_api": "https://b.jw-cdn.org/apis/pub-media/GETPUBMEDIALINKS?output=json&docid=1112024060&langwritten=E&txtCMSLang=E&alllangs=1",
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
   "added_1h": 2,
   "added_24h": 19,
   "added_4h": 10,
+  "catalog_count": 20,
+  "catalog_lag": 0,
+  "catalog_percent": 4.5,
   "days_since_release": 1.05,
   "pending_count": 429,
   "percent": 4.5,
@@ -4539,13 +4948,6 @@
   "publisher_percent": 50.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
- },
- "sweep": {
-  "discovered": [],
-  "last_checked_count": 60,
-  "offset": 360,
-  "pending_total": 429,
-  "size": 60
  },
  "update": {
   "api_first_published": "2026-09-18T11:39:09Z",
