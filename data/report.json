@@ -7,11 +7,11 @@
   "url": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024059_1_VIDEO"
  },
  "counts": {
-  "api_times": 9,
+  "api_times": 19,
   "clamped_times": 0,
   "confirmed_times": 1,
   "observed_times": 0,
-  "sign_languages": 0
+  "sign_languages": 3
  },
  "events": [
   {
@@ -121,9 +121,87 @@
    ],
    "count_after": 10,
    "t": "2026-09-19T10:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-19T12:34:58Z",
+     "code": "Z",
+     "name": "Swedish",
+     "source": "api"
+    },
+    {
+     "at": "2026-09-19T12:49:56Z",
+     "code": "NP",
+     "name": "Nepali",
+     "source": "api"
+    },
+    {
+     "at": "2026-09-19T12:55:00Z",
+     "code": "VLC",
+     "name": "Valencian",
+     "source": "api"
+    }
+   ],
+   "count_after": 13,
+   "t": "2026-09-19T12:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-19T13:08:49Z",
+     "code": "BE",
+     "name": "Bengali",
+     "source": "api"
+    },
+    {
+     "at": "2026-09-19T13:56:09Z",
+     "code": "AEY",
+     "name": "Arabic (Egypt)",
+     "source": "api"
+    },
+    {
+     "at": "2026-09-19T13:57:24Z",
+     "code": "SCH",
+     "name": "Chilean Sign Language",
+     "source": "api"
+    },
+    {
+     "at": "2026-09-19T13:58:13Z",
+     "code": "ISL",
+     "name": "Italian Sign Language",
+     "source": "api"
+    }
+   ],
+   "count_after": 17,
+   "t": "2026-09-19T13:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-19T14:03:14Z",
+     "code": "LSB",
+     "name": "Brazilian Sign Language",
+     "source": "api"
+    },
+    {
+     "at": "2026-09-19T14:25:11Z",
+     "code": "N",
+     "name": "Norwegian",
+     "source": "api"
+    },
+    {
+     "at": "2026-09-19T14:28:46Z",
+     "code": "CN",
+     "name": "Chichewa",
+     "source": "api"
+    }
+   ],
+   "count_after": 20,
+   "t": "2026-09-19T14:00:00Z"
   }
  ],
- "generated": "2026-09-19T14:29:44Z",
+ "generated": "2026-09-19T15:15:32Z",
  "history": [
   {
    "count": 1,
@@ -164,6 +242,46 @@
   {
    "count": 10,
    "t": "2026-09-19T10:26:58Z"
+  },
+  {
+   "count": 11,
+   "t": "2026-09-19T12:34:58Z"
+  },
+  {
+   "count": 12,
+   "t": "2026-09-19T12:49:56Z"
+  },
+  {
+   "count": 13,
+   "t": "2026-09-19T12:55:00Z"
+  },
+  {
+   "count": 14,
+   "t": "2026-09-19T13:08:49Z"
+  },
+  {
+   "count": 15,
+   "t": "2026-09-19T13:56:09Z"
+  },
+  {
+   "count": 16,
+   "t": "2026-09-19T13:57:24Z"
+  },
+  {
+   "count": 17,
+   "t": "2026-09-19T13:58:13Z"
+  },
+  {
+   "count": 18,
+   "t": "2026-09-19T14:03:14Z"
+  },
+  {
+   "count": 19,
+   "t": "2026-09-19T14:25:11Z"
+  },
+  {
+   "count": 20,
+   "t": "2026-09-19T14:28:46Z"
   }
  ],
  "integrity": {
@@ -176,10 +294,10 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "last_full_verification": "2026-09-19T08:46:04Z",
-  "listing_count": 10,
+  "listing_count": 20,
   "listing_lag": []
  },
- "last_checked": "2026-09-19T14:29:44Z",
+ "last_checked": "2026-09-19T15:15:32Z",
  "pending": [
   {
    "code": "ABB",
@@ -288,15 +406,6 @@
    "script": "ARABIC",
    "sign": false,
    "vernacular": "العربية"
-  },
-  {
-   "code": "AEY",
-   "direction": "rtl",
-   "locale": "arz",
-   "name": "Arabic (Egypt)",
-   "script": "ARABIC",
-   "sign": false,
-   "vernacular": "العربية (اللهجة المصرية)"
   },
   {
    "code": "ALN",
@@ -497,15 +606,6 @@
    "vernacular": "Kibembe"
   },
   {
-   "code": "BE",
-   "direction": "ltr",
-   "locale": "bn",
-   "name": "Bengali",
-   "script": "BENGALI",
-   "sign": false,
-   "vernacular": "বাংলা"
-  },
-  {
    "code": "BI",
    "direction": "ltr",
    "locale": "bcl",
@@ -549,15 +649,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Bulu"
-  },
-  {
-   "code": "LSB",
-   "direction": "ltr",
-   "locale": "bzs",
-   "name": "Brazilian Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Língua brasileira de sinais (Libras)"
   },
   {
    "code": "BSL",
@@ -666,24 +757,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Chavacano"
-  },
-  {
-   "code": "CN",
-   "direction": "ltr",
-   "locale": "ny",
-   "name": "Chichewa",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Chichewa"
-  },
-  {
-   "code": "SCH",
-   "direction": "ltr",
-   "locale": "csg",
-   "name": "Chilean Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "lengua de señas chilena"
   },
   {
    "code": "HK",
@@ -1611,15 +1684,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Isoko"
-  },
-  {
-   "code": "ISL",
-   "direction": "ltr",
-   "locale": "ise",
-   "name": "Italian Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Lingua dei segni italiana"
   },
   {
    "code": "IT",
@@ -2675,15 +2739,6 @@
    "vernacular": "Oshindonga"
   },
   {
-   "code": "NP",
-   "direction": "ltr",
-   "locale": "ne",
-   "name": "Nepali",
-   "script": "DEVANAGARI",
-   "sign": false,
-   "vernacular": "नेपाली"
-  },
-  {
    "code": "NSL",
    "direction": "ltr",
    "locale": "nsp",
@@ -2763,15 +2818,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Nkoya"
-  },
-  {
-   "code": "N",
-   "direction": "ltr",
-   "locale": "no",
-   "name": "Norwegian",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Norsk"
   },
   {
    "code": "NSM",
@@ -3548,15 +3594,6 @@
    "vernacular": "Swazi Sign Language"
   },
   {
-   "code": "Z",
-   "direction": "ltr",
-   "locale": "sv",
-   "name": "Swedish",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Svenska"
-  },
-  {
    "code": "SSL",
    "direction": "ltr",
    "locale": "swl",
@@ -3935,15 +3972,6 @@
    "vernacular": "ўзбекча"
   },
   {
-   "code": "VLC",
-   "direction": "ltr",
-   "locale": "ca-x-vlc",
-   "name": "Valencian",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "valencià"
-  },
-  {
    "code": "VE",
    "direction": "ltr",
    "locale": "ve",
@@ -4313,6 +4341,186 @@
    "title": "የ2026 የበላይ አካሉ ሪፖርት ቁጥር 6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AM",
    "vernacular": "አማርኛ"
+  },
+  {
+   "api_published_at": "2026-09-19T12:34:58Z",
+   "beyond_baseline": false,
+   "code": "Z",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T15:15:32Z",
+   "listed_by_api": true,
+   "locale": "sv",
+   "name": "Swedish",
+   "published_at": "2026-09-19T12:34:58Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Rapport 6 från den styrande kretsen 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=Z",
+   "vernacular": "Svenska"
+  },
+  {
+   "api_published_at": "2026-09-19T12:49:56Z",
+   "beyond_baseline": false,
+   "code": "NP",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T15:15:32Z",
+   "listed_by_api": true,
+   "locale": "ne",
+   "name": "Nepali",
+   "published_at": "2026-09-19T12:49:56Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "DEVANAGARI",
+   "sign": false,
+   "title": "२०२६ परिचालक निकायबाट अपडेट #६",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NP",
+   "vernacular": "नेपाली"
+  },
+  {
+   "api_published_at": "2026-09-19T12:55:00Z",
+   "beyond_baseline": false,
+   "code": "VLC",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T15:15:32Z",
+   "listed_by_api": true,
+   "locale": "ca-x-vlc",
+   "name": "Valencian",
+   "published_at": "2026-09-19T12:55:00Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 | Informe núm. 6 de la Junta Directiva",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=VLC",
+   "vernacular": "valencià"
+  },
+  {
+   "api_published_at": "2026-09-19T13:08:49Z",
+   "beyond_baseline": false,
+   "code": "BE",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T15:15:32Z",
+   "listed_by_api": true,
+   "locale": "bn",
+   "name": "Bengali",
+   "published_at": "2026-09-19T13:08:49Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "BENGALI",
+   "sign": false,
+   "title": "২০২৬ সালের পরিচালকগোষ্ঠীর আপডেট #৬",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BE",
+   "vernacular": "বাংলা"
+  },
+  {
+   "api_published_at": "2026-09-19T13:56:09Z",
+   "beyond_baseline": false,
+   "code": "AEY",
+   "direction": "rtl",
+   "first_observed": "2026-09-19T15:15:32Z",
+   "listed_by_api": true,
+   "locale": "arz",
+   "name": "Arabic (Egypt)",
+   "published_at": "2026-09-19T13:56:09Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ARABIC",
+   "sign": false,
+   "title": "تقرير رقم ٦ من الهيئة الحاكمة لسنة ٢٠٢٦‏",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AEY",
+   "vernacular": "العربية (اللهجة المصرية)"
+  },
+  {
+   "api_published_at": "2026-09-19T13:57:24Z",
+   "beyond_baseline": false,
+   "code": "SCH",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T15:15:32Z",
+   "listed_by_api": true,
+   "locale": "csg",
+   "name": "Chilean Sign Language",
+   "published_at": "2026-09-19T13:57:24Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 | Informe 6 del Cuerpo Gobernante",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SCH",
+   "vernacular": "lengua de señas chilena"
+  },
+  {
+   "api_published_at": "2026-09-19T13:58:13Z",
+   "beyond_baseline": false,
+   "code": "ISL",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T15:15:32Z",
+   "listed_by_api": true,
+   "locale": "ise",
+   "name": "Italian Sign Language",
+   "published_at": "2026-09-19T13:58:13Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Aggiornamento dal Corpo Direttivo n. 6 (2026)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ISL",
+   "vernacular": "Lingua dei segni italiana"
+  },
+  {
+   "api_published_at": "2026-09-19T14:03:14Z",
+   "beyond_baseline": false,
+   "code": "LSB",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T15:15:32Z",
+   "listed_by_api": true,
+   "locale": "bzs",
+   "name": "Brazilian Sign Language",
+   "published_at": "2026-09-19T14:03:14Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Boletim do Corpo Governante (2026) — n.º 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LSB",
+   "vernacular": "Língua brasileira de sinais (Libras)"
+  },
+  {
+   "api_published_at": "2026-09-19T14:25:11Z",
+   "beyond_baseline": false,
+   "code": "N",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T15:15:32Z",
+   "listed_by_api": true,
+   "locale": "no",
+   "name": "Norwegian",
+   "published_at": "2026-09-19T14:25:11Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Rapport nr. 6 2026 fra det styrende råd",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=N",
+   "vernacular": "Norsk"
+  },
+  {
+   "api_published_at": "2026-09-19T14:28:46Z",
+   "beyond_baseline": false,
+   "code": "CN",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T15:15:32Z",
+   "listed_by_api": true,
+   "locale": "ny",
+   "name": "Chichewa",
+   "published_at": "2026-09-19T14:28:46Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Lipoti la Bungwe Lolamulira la Nambala 6 la 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CN",
+   "vernacular": "Chichewa"
   }
  ],
  "removed": [],
@@ -4321,22 +4529,22 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 9,
-  "added_4h": 0,
-  "days_since_release": 1.02,
-  "pending_count": 439,
-  "percent": 2.2,
-  "published_count": 10,
-  "publisher_percent": 48.3,
+  "added_1h": 2,
+  "added_24h": 19,
+  "added_4h": 10,
+  "days_since_release": 1.05,
+  "pending_count": 429,
+  "percent": 4.5,
+  "published_count": 20,
+  "publisher_percent": 50.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
  "sweep": {
   "discovered": [],
   "last_checked_count": 60,
-  "offset": 300,
-  "pending_total": 439,
+  "offset": 360,
+  "pending_total": 429,
   "size": 60
  },
  "update": {
