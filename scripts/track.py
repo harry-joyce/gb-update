@@ -390,27 +390,12 @@ def build_stats(count, target, release, published):
         stats["days_since_release"] = round(max(elapsed, 0), 2)
 
     stamps = [parse_iso(p["published_at"]) for p in published]
-    stamps = sorted(s for s in stamps if s)
+    stamps = sorted(st for st in stamps if st)
 
-    for label, hours in (("added_24h", 24), ("added_7d", 24 * 7)):
+    for label, hours in (("added_1h", 1), ("added_4h", 4), ("added_24h", 24)):
         cutoff = now - datetime.timedelta(hours=hours)
-        stats[label] = sum(1 for s in stamps if s >= cutoff)
+        stats[label] = sum(1 for st in stamps if st >= cutoff)
 
-    if elapsed and elapsed >= 0.25 and count > 1:
-        stats["per_day_overall"] = round(count / elapsed, 1)
-
-    # Rough ETA from the trailing week's rate. A projection, not a promise.
-    remaining = stats.get("pending_count")
-    if remaining and stats.get("added_7d"):
-        window = min(7.0, elapsed or 7.0) or 7.0
-        rate = stats["added_7d"] / window
-        if rate > 0:
-            days = remaining / rate
-            if days <= 400:
-                stats["projected_days_remaining"] = round(days, 1)
-                stats["projected_completion"] = (
-                    now + datetime.timedelta(days=days)
-                ).date().isoformat()
     return stats
 
 

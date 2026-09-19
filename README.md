@@ -104,6 +104,21 @@ localises its URL segments (German `/bibliothek/videos/`, Basque
 `/liburutegia/bideoak/`), so a hand-built `/<locale>/library/videos/` path 404s
 for everything except English.
 
+## The chart's view options
+
+Against a 449-language target, early progress is a flat line, so the chart has
+two controls:
+
+- **Scale** — *Fit to data* (the default) scales the axis to the visible counts,
+  making the rollout's step pattern legible from day one; *Full target* pins the
+  axis to 0–449 for progress-against-goal context. The target line is drawn only
+  when it falls inside the visible scale.
+- **Range** — 6h / 24h / 3d / 7d / All. A narrowed range carries the running
+  total into the window rather than restarting at zero, and tick marks switch
+  from dates to hours automatically.
+
+Both selections persist in `localStorage`.
+
 ## Layout
 
 | Path | Purpose |

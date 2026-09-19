@@ -8,6 +8,7 @@
   var state = {
     report: null,
     sort: { published: { key: "published_at", dir: -1 }, pending: { key: "name", dir: 1 } },
+    chart: { y: "fit", range: "all" },
     query: { published: "", pending: "" }
   };
 
@@ -178,23 +179,17 @@
     }
 
     /* stat tiles */
-    var tiles = [];
-    tiles.push(["New in last 24 hours", s.added_24h == null ? "—" : "+" + s.added_24h]);
-    tiles.push(["New in last 7 days", s.added_7d == null ? "—" : "+" + s.added_7d]);
-    if (s.per_day_overall != null) {
-      tiles.push(["Average pace", s.per_day_overall + " <small>/ day</small>"]);
-    }
-    if (s.projected_completion) {
-      tiles.push([
-        "Projected to finish",
-        fmtDate(s.projected_completion) + " <small>at current pace</small>"
-      ]);
-    } else if (s.pending_count != null) {
-      tiles.push(["Still pending", String(s.pending_count)]);
-    }
+    var tiles = [
+      ["New in the last hour", s.added_1h],
+      ["New in the last 4 hours", s.added_4h],
+      ["New in the last 24 hours", s.added_24h]
+    ];
+    if (s.pending_count != null) { tiles.push(["Still pending", s.pending_count]); }
     $("tiles").innerHTML = tiles.map(function (t) {
+      var value = t[1] == null ? "\u2014"
+        : (t[0] === "Still pending" ? String(t[1]) : "+" + t[1]);
       return '<div class="tile"><p class="tile-label">' + esc(t[0]) +
-        '</p><p class="tile-value">' + t[1] + "</p></div>";
+        '</p><p class="tile-value">' + esc(value) + "</p></div>";
     }).join("");
 
     /* chart */
@@ -203,9 +198,7 @@
     ];
     if (base.count) {
       noteBits.push("The dashed line marks the " + base.count + " languages " +
-        (base.short || "the previous update") + " reached. Its rollout curve cannot be " +
-        "drawn: the media API reports one bulk publish time for every language of a " +
-        "finished video, so only its final total is meaningful.");
+        (base.short || "the previous update") + " reached.");
     }
     text($("chart-note"), noteBits.join(" "));
     drawChart(report);
@@ -356,43 +349,71 @@
 
 
   /* ---- chart ---------------------------------------------------------- */
+  var RANGES = { "6h": 6 * 36e5, "24h": 24 * 36e5, "3d": 3 * 864e5, "7d": 7 * 864e5 };
+
   function drawChart(report) {
     var svg = $("chart");
     var history = (report.history || []).slice();
     var target = (report.baseline || {}).count || null;
     var W = 880, H = 300;
-    var pad = { t: 22, r: 66, b: 34, l: 46 };
+    var pad = { t: 22, r: 66, b: 38, l: 54 };
 
     svg.setAttribute("viewBox", "0 0 " + W + " " + H);
     while (svg.lastChild && svg.lastChild.id !== "chart-desc") { svg.removeChild(svg.lastChild); }
     var desc = $("chart-desc");
 
-    if (!history.length) {
-      desc.textContent = "No history recorded yet.";
-      return;
-    }
-
-    /* Extend the series to "now" so a flat stretch reads as flat, not missing. */
     var points = history.map(function (h) {
       return { t: new Date(h.t).getTime(), count: h.count };
     }).filter(function (p) { return !isNaN(p.t); });
     if (!points.length) { desc.textContent = "No history recorded yet."; return; }
 
+    /* Extend to the last check so a flat stretch reads as flat, not missing. */
     var lastChecked = new Date(report.last_checked).getTime();
     if (!isNaN(lastChecked) && lastChecked > points[points.length - 1].t) {
       points.push({ t: lastChecked, count: points[points.length - 1].count, synthetic: true });
     }
 
-    var t0 = points[0].t;
-    var t1 = points[points.length - 1].t;
-    if (t1 - t0 < 36e5) { t1 = t0 + 36e5; }           // keep a minimum span
-    var maxCount = Math.max.apply(null, points.map(function (p) { return p.count; }));
-    var rawMax = Math.max(maxCount, target || 0, 1);
-    var step = niceStep(rawMax, 4);
-    var yMax = Math.max(Math.ceil(rawMax / step) * step, step);
+    /* ---- time window ---- */
+    var tEnd = points[points.length - 1].t;
+    var span = RANGES[state.chart.range];
+    var tStart = span ? Math.max(points[0].t, tEnd - span) : points[0].t;
+    if (tEnd - tStart < 36e5) { tStart = tEnd - 36e5; }
+    var fromStart = tStart <= points[0].t;
 
-    var x = function (t) { return pad.l + (t - t0) / (t1 - t0) * (W - pad.l - pad.r); };
-    var y = function (v) { return H - pad.b - (v / yMax) * (H - pad.t - pad.b); };
+    /* Carry the running total into the window, so a narrowed view does not
+       pretend the count restarted at zero. */
+    var visible = [], countAtStart = 0;
+    for (var i = 0; i < points.length; i++) {
+      if (points[i].t <= tStart) { countAtStart = points[i].count; }
+      else { visible.push(points[i]); }
+    }
+    visible.unshift({ t: tStart, count: countAtStart, clipped: !fromStart });
+
+    /* ---- vertical scale ---- */
+    var counts = visible.map(function (p) { return p.count; });
+    var vMin = Math.min.apply(null, counts), vMax = Math.max.apply(null, counts);
+    var yMin, yMax, step;
+
+    if (state.chart.y === "target" && target) {
+      yMin = 0;
+      step = niceStep(Math.max(target, vMax), 4);
+      yMax = Math.max(Math.ceil(Math.max(target, vMax) / step) * step, step);
+    } else {
+      var spread = Math.max(vMax - vMin, 1);
+      step = niceStep(spread, 4);
+      yMin = Math.floor(vMin / step) * step;
+      yMax = Math.ceil((vMax + spread * 0.1) / step) * step;
+      if (yMax <= yMin) { yMax = yMin + step; }
+      /* Don't truncate the axis for the sake of a sliver. */
+      if (yMin > 0 && yMin <= yMax * 0.15) { yMin = 0; }
+    }
+
+    var x = function (t) {
+      return pad.l + (t - tStart) / (tEnd - tStart) * (W - pad.l - pad.r);
+    };
+    var y = function (v) {
+      return H - pad.b - (v - yMin) / (yMax - yMin) * (H - pad.t - pad.b);
+    };
 
     var ns = "http://www.w3.org/2000/svg";
     function add(tag, attrs, parent) {
@@ -403,23 +424,30 @@
     }
 
     /* y gridlines + ticks */
-    var ticks = yTicks(yMax, step);
-    ticks.forEach(function (v) {
-      add("line", { class: "grid-line", x1: pad.l, x2: W - pad.r, y1: y(v), y2: y(v) });
+    for (var v = yMin; v <= yMax + 1e-6; v += step) {
+      var vy = y(v);
+      add("line", { class: "grid-line", x1: pad.l, x2: W - pad.r, y1: vy, y2: vy });
       add("text", {
-        class: "axis-text", x: pad.l - 9, y: y(v) + 4, "text-anchor": "end"
-      }).textContent = v;
-    });
+        class: "axis-text", x: pad.l - 9, y: vy + 4, "text-anchor": "end"
+      }).textContent = Math.round(v);
+    }
 
     /* x ticks */
-    xTicks(t0, t1).forEach(function (tick) {
+    var ticks = xTicks(tStart, tEnd);
+    ticks.forEach(function (tick, idx) {
       add("text", {
-        class: "axis-text", x: x(tick), y: H - pad.b + 18, "text-anchor": "middle"
-      }).textContent = tick === t0 ? "release" : shortDate(tick);
+        class: "axis-text", x: x(tick.t), y: H - pad.b + 18,
+        "text-anchor": idx === 0 ? "start" : idx === ticks.length - 1 ? "end" : "middle"
+      }).textContent = (idx === 0 && fromStart) ? "release" : tick.label;
     });
+    if (ticks.length && ticks[0].sub) {
+      add("text", {
+        class: "axis-note", x: pad.l, y: H - pad.b + 31
+      }).textContent = ticks[0].sub;
+    }
 
-    /* target reference line */
-    if (target && target <= yMax) {
+    /* target reference line, only when it falls inside the visible scale */
+    if (target && target >= yMin && target <= yMax) {
       add("line", {
         class: "target-line", x1: pad.l, x2: W - pad.r, y1: y(target), y2: y(target)
       });
@@ -431,31 +459,37 @@
       }).textContent = "expected";
     }
 
-    /* step series: a language appears at a moment, so hold the value between checks */
-    var d = "", area = "";
-    points.forEach(function (p, i) {
+    /* step series: a language appears at a moment, so hold the value between */
+    var d = "";
+    visible.forEach(function (p, i) {
       if (i === 0) { d += "M" + x(p.t) + "," + y(p.count); }
       else {
-        d += "L" + x(p.t) + "," + y(points[i - 1].count);
+        d += "L" + x(p.t) + "," + y(visible[i - 1].count);
         d += "L" + x(p.t) + "," + y(p.count);
       }
     });
-    area = d + "L" + x(points[points.length - 1].t) + "," + y(0) + "L" + x(t0) + "," + y(0) + "Z";
+    var base = y(yMin);
+    var area = d + "L" + x(visible[visible.length - 1].t) + "," + base +
+      "L" + x(tStart) + "," + base + "Z";
 
     add("path", { class: "series-area", d: area });
     add("path", { class: "series-line", d: d });
 
-    var last = points[points.length - 1];
+    var last = visible[visible.length - 1];
     add("circle", { class: "end-dot", cx: x(last.t), cy: y(last.count), r: 4.5 });
     add("text", {
       class: "end-label", x: x(last.t) + 10, y: y(last.count) + 4
     }).textContent = last.count;
 
     desc.textContent =
-      "Line chart: 0 languages at release on " +
-      fmtUTC(report.update.release || history[0].t, true) + ", rising to " +
-      last.count + " by " + fmtUTC(report.last_checked) +
-      (target ? ", against an expected total of " + target + "." : ".");
+      "Line chart of cumulative languages" +
+      (fromStart
+        ? " from release on " + fmtUTC(report.update.release || history[0].t, true)
+        : " over the last " + state.chart.range) +
+      ", reaching " + last.count + " by " + fmtUTC(report.last_checked) +
+      ". Vertical axis " + yMin + " to " + yMax +
+      (target && target >= yMin && target <= yMax
+        ? ", with an expected total of " + target + "." : ".");
 
     /* hover layer */
     var cross = add("line", { class: "crosshair", y1: pad.t, y2: H - pad.b, x1: 0, x2: 0, opacity: 0 });
@@ -469,10 +503,10 @@
     function onMove(ev) {
       var box = svg.getBoundingClientRect();
       var px = (ev.clientX - box.left) / box.width * W;
-      var tAt = t0 + (px - pad.l) / (W - pad.l - pad.r) * (t1 - t0);
-      var best = points[0];
-      for (var i = 0; i < points.length; i++) {
-        if (points[i].t <= tAt) { best = points[i]; }
+      var tAt = tStart + (px - pad.l) / (W - pad.l - pad.r) * (tEnd - tStart);
+      var best = visible[0];
+      for (var j = 0; j < visible.length; j++) {
+        if (visible[j].t <= tAt) { best = visible[j]; }
       }
       cross.setAttribute("x1", x(best.t));
       cross.setAttribute("x2", x(best.t));
@@ -482,8 +516,8 @@
       hoverDot.setAttribute("opacity", 1);
       tip.innerHTML = "<strong>" + best.count + " languages</strong>" +
         '<span class="tt-date">' +
-        (best.synthetic ? "as of last check • " : "") + fmtUTC(new Date(best.t).toISOString()) +
-        "</span>";
+        (best.synthetic ? "as of last check \u2022 " : best.clipped ? "start of view \u2022 " : "") +
+        fmtUTC(new Date(best.t).toISOString()) + "</span>";
       tip.style.opacity = 1;
       var left = x(best.t) / W * box.width;
       tip.style.left = Math.min(Math.max(left + 12, 4), box.width - tip.offsetWidth - 4) + "px";
@@ -513,31 +547,41 @@
     return Math.max(1, Math.round(mult * mag));
   }
 
-  function yTicks(max, step) {
-    var out = [];
-    for (var v = 0; v <= max + 1e-6; v += step) { out.push(Math.round(v)); }
+  /* Tick granularity follows the window: hours for a short view, days for a
+     long one, so a 6-hour range doesn't collapse onto a single date label. */
+  function xTicks(t0, t1) {
+    var HOUR = 36e5, DAY = 864e5, span = t1 - t0, out = [];
+    if (span <= DAY * 1.5) {
+      var stepH = span <= 8 * HOUR ? 1 : span <= 14 * HOUR ? 2 : 6;
+      var first = Math.ceil(t0 / (stepH * HOUR)) * (stepH * HOUR);
+      out.push({ t: t0, label: hhmm(t0), sub: fmtUTCDate(new Date(t0).toISOString()) });
+      for (var t = first; t < t1 - span * 0.04; t += stepH * HOUR) {
+        if (t > t0 + span * 0.04) { out.push({ t: t, label: hhmm(t) }); }
+      }
+      out.push({ t: t1, label: hhmm(t1) });
+      return out;
+    }
+    out.push({ t: t0, label: shortDate(t0) });
+    var stepDays = Math.max(1, Math.ceil(span / DAY / 5));
+    var midnight = new Date(t0);
+    midnight.setUTCHours(0, 0, 0, 0);
+    var d = midnight.getTime() + stepDays * DAY;
+    while (d < t1 - span * 0.06) {
+      if (d > t0 + span * 0.06) { out.push({ t: d, label: shortDate(d) }); }
+      d += stepDays * DAY;
+    }
+    out.push({ t: t1, label: shortDate(t1) });
     return out;
   }
 
-  /* Day-aligned ticks: rollouts are read in days, not arbitrary fractions. */
-  function xTicks(t0, t1) {
-    var DAY = 864e5, span = t1 - t0, out = [t0];
-    if (span > DAY * 1.5) {
-      var stepDays = Math.max(1, Math.ceil(span / DAY / 5));
-      var midnight = new Date(t0);
-      midnight.setHours(0, 0, 0, 0);
-      var t = midnight.getTime() + stepDays * DAY;
-      while (t < t1 - span * 0.06) {
-        if (t > t0 + span * 0.06) { out.push(t); }
-        t += stepDays * DAY;
-      }
-    }
-    out.push(t1);
-    return out;
+  function hhmm(t) {
+    var d = new Date(t);
+    return pad(d.getUTCHours()) + ":" + pad(d.getUTCMinutes());
   }
 
   function shortDate(t) {
-    return new Date(t).toLocaleDateString(undefined, { day: "numeric", month: "short" });
+    var d = new Date(t);
+    return d.getUTCDate() + " " + MONTHS[d.getUTCMonth()];
   }
 
   /* ---- published table ------------------------------------------------ */
@@ -684,6 +728,43 @@
       });
     });
   });
+
+  /* ---- chart view options --------------------------------------------- */
+  (function initChartOptions() {
+    try {
+      var saved = JSON.parse(localStorage.getItem("chartView") || "null");
+      if (saved && saved.y && saved.range) {
+        if (["fit", "target"].indexOf(saved.y) !== -1) { state.chart.y = saved.y; }
+        if (saved.range === "all" || RANGES[saved.range]) { state.chart.range = saved.range; }
+      }
+    } catch (e) {}
+
+    function sync() {
+      var all = document.querySelectorAll("[data-chart-y],[data-chart-range]");
+      for (var i = 0; i < all.length; i++) {
+        var el = all[i];
+        var on = el.dataset.chartY
+          ? el.dataset.chartY === state.chart.y
+          : el.dataset.chartRange === state.chart.range;
+        el.setAttribute("aria-pressed", String(on));
+      }
+    }
+
+    function choose(ev) {
+      var el = ev.currentTarget;
+      if (el.dataset.chartY) { state.chart.y = el.dataset.chartY; }
+      else { state.chart.range = el.dataset.chartRange; }
+      try { localStorage.setItem("chartView", JSON.stringify(state.chart)); } catch (e) {}
+      sync();
+      if (state.report) { drawChart(state.report); }
+    }
+
+    var buttons = document.querySelectorAll("[data-chart-y],[data-chart-range]");
+    for (var j = 0; j < buttons.length; j++) {
+      buttons[j].addEventListener("click", choose);
+    }
+    sync();
+  })();
 
   var tabs = ["published", "pending", "activity"];
   tabs.forEach(function (name) {

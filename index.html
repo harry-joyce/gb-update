@@ -56,6 +56,21 @@
       <div class="card-head">
         <h2 class="card-title" id="chart-heading">Languages available over time</h2>
         <p class="card-note" id="chart-note"></p>
+        <div class="chart-controls">
+          <div class="seg" role="group" aria-label="Vertical scale">
+            <span class="seg-label">Scale</span>
+            <button type="button" data-chart-y="fit" aria-pressed="true">Fit to data</button>
+            <button type="button" data-chart-y="target" aria-pressed="false">Full target</button>
+          </div>
+          <div class="seg" role="group" aria-label="Time range">
+            <span class="seg-label">Range</span>
+            <button type="button" data-chart-range="6h" aria-pressed="false">6h</button>
+            <button type="button" data-chart-range="24h" aria-pressed="false">24h</button>
+            <button type="button" data-chart-range="3d" aria-pressed="false">3d</button>
+            <button type="button" data-chart-range="7d" aria-pressed="false">7d</button>
+            <button type="button" data-chart-range="all" aria-pressed="true">All</button>
+          </div>
+        </div>
       </div>
       <div class="chart-body">
         <svg class="chart-svg" id="chart" role="img" aria-labelledby="chart-heading chart-desc">
