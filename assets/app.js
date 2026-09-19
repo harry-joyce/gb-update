@@ -220,36 +220,14 @@
 
     renderIntegrity(report);
 
-    var counts = report.counts || {};
-    var legend = [];
-    if (counts.confirmed_times) {
-      legend.push(plural(counts.confirmed_times, "time is", "times are") + " confirmed.");
-    }
-    if (counts.clamped_times) {
-      legend.push(plural(counts.clamped_times, "time was", "times were") +
-        " reported by the API as earlier than the release and clamped to the release time.");
-    }
-    if (counts.file_times) {
-      legend.push(plural(counts.file_times, "time is", "times are") +
-        " marked \u00a7 \u2014 approximate. jw.org did not report a publish time for " +
-        (counts.file_times === 1 ? "this language" : "these languages") +
-        " yet, so the time comes from the video file itself and can be no later " +
-        "than when this tracker first saw it.");
-    }
-    if (counts.observed_times) {
-      legend.push(plural(counts.observed_times, "time is", "times are") +
-        " marked \u2021 \u2014 no API publish time was usable, so the tracker's own " +
-        "first sighting is shown.");
-    }
-    if (counts.api_times) {
-      legend.push(plural(counts.api_times, "time is", "times are") +
-        " marked \u2020 \u2014 taken from the media API's firstPublished, which records when " +
-        "the file entered the CDN and can run earlier than public availability. " +
-        "English reports " +
-        (upd.api_first_published ? fmtUTC(upd.api_first_published) : "an earlier time") +
-        " but was published at " + (upd.release ? fmtUTC(upd.release) : "14:00 UTC") + ".");
-    }
-    $("published-legend").innerHTML = legend.join(" ");
+    $("published-legend").innerHTML = [
+      "\u00a7 \u2014 approximate: the time comes from the video file itself, " +
+        "not from jw.org.",
+      "\u2020 \u2014 approximate: the time is the media API\u2019s firstPublished, " +
+        "which can run earlier than public availability.",
+      "\u2021 \u2014 approximate: the time is this tracker\u2019s own first " +
+        "sighting of the language."
+    ].join("<br>");
 
     renderPublished();
     renderPending();
