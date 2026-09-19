@@ -231,6 +231,7 @@ def main():
     history = build_history(published, release)
     events = build_events(published)
     target = baseline.get("count") or len(baseline_codes) or None
+    stats = build_stats(len(current), target, release, published, weights)
 
     report = {
         "generated": now,
@@ -283,7 +284,7 @@ def main():
             "observed_times": sum(1 for p in published if p["published_at_source"] == "observed"),
             "sign_languages": sum(1 for p in published if p["sign"]),
         },
-        "stats": build_stats(len(current), target, release, published, weights),
+        "stats": stats,
         "published": published,
         "removed": sorted(removed_entries, key=lambda e: e.get("removed_at") or ""),
         "pending": pending,
@@ -304,6 +305,13 @@ def main():
             sorted(prior_integrity.get("listing_lag") or []) != sorted(lagging)
         ) or old_times != new_times or (
             api_reset and not prior_integrity.get("api_reset_detected")
+        ) or (
+            # The audience figure moves without any language changing: weights
+            # arriving for the first time, or a rebuilt spreadsheet. Without
+            # this the new value sits in an uncommitted file until something
+            # else happens to be worth a commit.
+            stats.get("publisher_percent")
+            != ((previous or {}).get("stats") or {}).get("publisher_percent")
         )
     if not should_commit:
         last = parse_iso((previous or {}).get("last_checked"))
