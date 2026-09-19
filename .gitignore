@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+
+# Publisher counts are confidential and must never enter the repository.
+data/weights.json
+*.xlsx

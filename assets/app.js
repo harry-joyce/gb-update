@@ -179,17 +179,23 @@
     }
 
     /* stat tiles */
+    function delta(n) { return n == null ? "\u2014" : "+" + n; }
     var tiles = [
-      ["New in the last hour", s.added_1h],
-      ["New in the last 4 hours", s.added_4h],
-      ["New in the last 24 hours", s.added_24h]
+      ["New in the last hour", delta(s.added_1h)],
+      ["New in the last 4 hours", delta(s.added_4h)],
+      ["New in the last 24 hours", delta(s.added_24h)]
     ];
-    if (s.pending_count != null) { tiles.push(["Still pending", s.pending_count]); }
+    if (s.pending_count != null) {
+      tiles.push(["Still pending", String(s.pending_count)]);
+    }
+    if (s.publisher_percent != null) {
+      // Weighted by how many publishers read each language, so this runs well
+      // ahead of the language count: the largest languages publish first.
+      tiles.push(["Percentage of publishers reached", s.publisher_percent + "%"]);
+    }
     $("tiles").innerHTML = tiles.map(function (t) {
-      var value = t[1] == null ? "\u2014"
-        : (t[0] === "Still pending" ? String(t[1]) : "+" + t[1]);
       return '<div class="tile"><p class="tile-label">' + esc(t[0]) +
-        '</p><p class="tile-value">' + esc(value) + "</p></div>";
+        '</p><p class="tile-value">' + esc(t[1]) + "</p></div>";
     }).join("");
 
     /* chart */

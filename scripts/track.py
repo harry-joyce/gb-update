@@ -74,6 +74,10 @@ def main():
     category = tracked.get("category", "StudioNewsReports")
     baseline = load("data/baseline.json") or {}
     overrides = (load("data/overrides.json") or {}).get("times") or {}
+    # Confidential publisher counts, built by scripts/build_weights.py from the
+    # language spreadsheet. Absent on any machine without it; the site simply
+    # omits the audience figure in that case.
+    weights = load("data/weights.json")
     previous = load("data/report.json")
     now = jw.utcnow()
 
@@ -279,7 +283,7 @@ def main():
             "observed_times": sum(1 for p in published if p["published_at_source"] == "observed"),
             "sign_languages": sum(1 for p in published if p["sign"]),
         },
-        "stats": build_stats(len(current), target, release, published),
+        "stats": build_stats(len(current), target, release, published, weights),
         "published": published,
         "removed": sorted(removed_entries, key=lambda e: e.get("removed_at") or ""),
         "pending": pending,
@@ -432,7 +436,40 @@ def build_events(published):
     return events
 
 
-def build_stats(count, target, release, published):
+def publisher_reach(published, weights):
+    """How much of the worldwide publisher audience the video already reaches.
+
+    The language count treats Dutch and Abaknon alike; this weights each
+    language by its publishers, so the figure tracks audience rather than
+    breadth. Only the rounded percentage is returned — the underlying counts
+    are confidential and must not reach data/report.json.
+    """
+    if not weights:
+        return {}
+    publishers = weights.get("publishers") or {}
+    aliases = weights.get("aliases") or {}
+    total = weights.get("global_publishers") or sum(publishers.values())
+    if not total:
+        return {}
+
+    # A script variant's readers are already counted under its counterpart, so
+    # it adds no audience of its own.
+    reached = sum(
+        0 if entry["code"] in aliases else publishers.get(entry["code"], 0)
+        for entry in published
+    )
+    return {
+        # One decimal place is deliberate: it is coarser than every language
+        # below ~9,300 publishers, so successive reports cannot be differenced
+        # to recover an individual language's count.
+        "publisher_percent": round(100.0 * reached / total, 1),
+        "publisher_percent_ceiling": round(
+            100.0 * (weights.get("expected_publishers") or total) / total, 1
+        ),
+    }
+
+
+def build_stats(count, target, release, published, weights=None):
     now = datetime.datetime.now(datetime.timezone.utc)
     stats = {
         "published_count": count,
@@ -440,6 +477,7 @@ def build_stats(count, target, release, published):
         "pending_count": max(target - count, 0) if target else None,
         "percent": round(100.0 * count / target, 1) if target else None,
     }
+    stats.update(publisher_reach(published, weights))
 
     released = parse_iso(release)
     elapsed = None

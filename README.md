@@ -139,6 +139,56 @@ two controls:
 
 Both selections persist in `localStorage`.
 
+## Percentage of publishers reached
+
+The language count treats every language alike: English and Abaknon each move
+it by one. The fifth tile under **Languages available now** answers the other
+question — how much of the worldwide audience can already watch the video —
+by weighting each language by the number of publishers who read it.
+
+The weights come from a confidential language/publisher spreadsheet that is
+**deliberately not in this repository**. `scripts/build_weights.py` reads it
+once per revision and writes `data/weights.json`:
+
+```sh
+python3 scripts/build_weights.py ~/Downloads/Languages.xlsx
+```
+
+`data/weights.json` holds publisher counts, so it is gitignored, as are
+`*.xlsx`. The script itself contains no data and is committed. `track.py` picks
+the file up if it exists and skips the figure silently if it does not — so a
+runner without the spreadsheet still produces a valid report, just without that
+tile.
+
+Three details decide what the number means:
+
+- **Matching.** Languages join by MEPS code, which is the spreadsheet's
+  *Language Symbol* column. 445 of the 449 expected codes match a row directly.
+- **Script variants carry no weight of their own.** The four that don't match —
+  Kazakh (Arabic), Chinese Cantonese (Simplified), Romany (Macedonia) and
+  Serbian (Roman) — are second scripts for populations the spreadsheet counts
+  once, under `AZ`, `CHC`, `RMC` and `SB`, all four of which are themselves in
+  the expected set. Crediting the variant separately would count those
+  publishers twice, so the `ALIASES` map in `build_weights.py` pins them to
+  zero. Three further languages (Arabic (Lebanon), Banda (Mid-Southern),
+  Portuguese (Angola)) match a row that genuinely reads zero.
+- **The denominator is worldwide, not the expected set.** The percentage is
+  measured against every publisher in the spreadsheet, so it is the literal
+  share of the audience reached. The expected 449 languages cover 99.2% of
+  that total, which is why the figure tops out just short of 100 — the
+  ceiling is reported as `publisher_percent_ceiling` in `stats`.
+
+Because the largest languages publish first, this figure runs far ahead of the
+language count: 10 of 449 languages was already most of the audience.
+
+Only the rounded percentage reaches `data/report.json` — never a count, and
+never a per-language weight. One decimal place is a privacy decision as much as
+a display one: 0.1% is coarser than every language below roughly 9,300
+publishers, so differencing successive reports against the languages that
+appeared between them cannot recover an individual language's count. The
+largest languages are inferable from the aggregate, but their figures are
+already published in the annual report.
+
 ## Layout
 
 | Path | Purpose |
@@ -148,11 +198,13 @@ Both selections persist in `localStorage`.
 | `scripts/jw.py` | Shared media-API fetching and parsing. |
 | `scripts/verify_times.py` | Daily: re-reads every publish time and reports drift. Never overwrites. |
 | `scripts/build_baseline.py` | One-off: snapshots the baseline update and the language index. |
+| `scripts/build_weights.py` | One-off per spreadsheet revision: turns publisher counts into `data/weights.json`. |
 | `config.json` | Which video is tracked, its release time, and the baseline. |
 | `data/overrides.json` | Confirmed publish times. Hand-edited. |
 | `data/report.json` | Current state **and** accumulated history — the site's only data source. |
 | `data/baseline.json` | The 449 languages Update #5 reached. |
 | `data/languages.json` | Cached MEPS language metadata. |
+| `data/weights.json` | Publisher counts per language. **Confidential, gitignored**, optional. |
 
 ## Automation
 
