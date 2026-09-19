@@ -76,6 +76,25 @@ release time and marked `api_clamped`, since a file can sit in the CDN before it
 goes public. English demonstrates this — the API says `11:39:09Z`, and the clamp
 independently produces the confirmed `14:00Z`.
 
+### availableLanguages is cached per edge, so discovery is not left to it
+
+The listing is served from a cache that varies by location and lags. Observed
+directly: the same request returned 9 languages from a GitHub runner and 10
+from a local machine 30 seconds apart, and Kannada disappeared from the listing
+for a while and then came back. Amharic's own record was fetchable at
+10:26 UTC while the listing still omitted it.
+
+So the listing is a fast hint, not the source of truth. Every run also probes a
+rotating slice of **60 still-pending languages directly** (`SWEEP_SIZE` in
+`scripts/track.py`), which is authoritative. At 60 per run the ~440 pending
+languages are covered about every 7 hours, at roughly one request a minute.
+Anything the sweep finds is added with its real publish time and tagged
+`"discovered_by": "sweep"`.
+
+The effect is that a lagging listing costs discovery *latency* only, bounded by
+the sweep cycle — never a missed language, and never a wrong timestamp, since
+times come from each language's own record.
+
 ### availableLanguages is discovery, not proof of removal
 
 The English record's `availableLanguages` array is how new languages are

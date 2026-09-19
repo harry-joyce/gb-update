@@ -14,12 +14,18 @@ import datetime
 import json
 import os
 import sys
+import time
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import jw  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INDEX_MAX_AGE_DAYS = 7
+# Languages probed directly per run, and the pause between those probes. At 60
+# per hour the ~440 pending languages are fully covered roughly every 7 hours,
+# at about one request a minute.
+SWEEP_SIZE = 60
+SWEEP_PAUSE_SECONDS = 0.1
 
 
 def load(rel, default=None):
@@ -86,6 +92,7 @@ def main():
     # (all 449 of Update #5's languages report 2026-07-31T13:24:54), which
     # would otherwise flatten this update's whole rollout history on the day it
     # completes. Pinning means such a rewrite cannot reach data already banked.
+    baseline_codes = set(baseline.get("codes") or [])
     known = {e["code"]: e for e in (previous or {}).get("published", [])}
     archive = {e["code"]: e for e in (previous or {}).get("removed", [])}
 
@@ -116,30 +123,14 @@ def main():
     candidates = set(listed) | set(known)
     published, removed_entries, lagging = [], [], []
 
-    for code in sorted(candidates):
+    def build_entry(code, item, prior, in_listing):
+        """Assemble one published-language record."""
         meta = jw.describe(code, index)
-        prior = known.get(code) or archive.get(code)
-        in_listing = code in listed
-        item = None
-        fetched = False
-
-        if not in_listing:
-            item, fetched = jw.media_item(docid, code), True
-            if item is None:
-                if prior:
-                    removed_entries.append(
-                        dict(prior, removed_at=now, removed_reason="no media item")
-                    )
-                continue
-            lagging.append(code)
-
         if prior and prior.get("api_published_at") is not None:
             api_ts = prior["api_published_at"]
             title = prior.get("title") or meta["name"]
             first_observed = prior.get("first_observed") or now
         else:
-            if not fetched:
-                item = jw.media_item(docid, code)
             api_ts = jw.normalise_ts((item or {}).get("firstPublished"))
             title = ((item or {}).get("title") or "").strip() or meta["name"]
             first_observed = (prior or {}).get("first_observed") or now
@@ -147,7 +138,6 @@ def main():
         published_at, source, note = resolve_time(
             code, overrides, api_ts, first_observed, release, api_reset, prior
         )
-
         meta.update(
             title=title,
             url=jw.watch_url(code, docid),
@@ -159,7 +149,26 @@ def main():
             listed_by_api=in_listing,
             beyond_baseline=bool(baseline.get("codes")) and code not in set(baseline["codes"]),
         )
-        published.append(meta)
+        return meta
+
+    for code in sorted(candidates):
+        prior = known.get(code) or archive.get(code)
+        in_listing = code in listed
+        item = None
+
+        if not in_listing:
+            item = jw.media_item(docid, code)
+            if item is None:
+                if prior:
+                    removed_entries.append(
+                        dict(prior, removed_at=now, removed_reason="no media item")
+                    )
+                continue
+            lagging.append(code)
+        elif not (prior and prior.get("api_published_at") is not None):
+            item = jw.media_item(docid, code)
+
+        published.append(build_entry(code, item, prior, in_listing))
 
     current = {p["code"] for p in published}
     added = sorted(c for c in current if c not in known)
@@ -170,9 +179,46 @@ def main():
         if code not in current and code not in removed:
             removed_entries.append(entry)
 
+    # availableLanguages is served from a cache that varies by edge: the same
+    # request can report 9 languages from one location and 10 from another,
+    # and CI runners were seen lagging behind a local machine by minutes. So
+    # the listing alone would let a published language stay invisible. Each run
+    # therefore probes a rotating slice of the still-pending languages
+    # directly, which is authoritative -- Amharic's own record was fetchable
+    # while the listing omitted it. The whole pending set is covered every
+    # SWEEP_SIZE-th of a cycle rather than in one expensive burst.
+    pending_codes = sorted(baseline_codes - current)
+    sweep_prior = (previous or {}).get("sweep") or {}
+    offset = int(sweep_prior.get("offset") or 0)
+    swept, discovered = [], []
+    if pending_codes:
+        if offset >= len(pending_codes):
+            offset = 0
+        slice_codes = pending_codes[offset:offset + SWEEP_SIZE]
+        if len(slice_codes) < SWEEP_SIZE:
+            slice_codes += pending_codes[:SWEEP_SIZE - len(slice_codes)]
+        for code in slice_codes:
+            swept.append(code)
+            try:
+                item = jw.media_item(docid, code)
+            except RuntimeError as exc:
+                print("warning: sweep could not check %s (%s)" % (code, exc))
+                continue
+            if item is not None:
+                entry = build_entry(code, item, archive.get(code), False)
+                entry["discovered_by"] = "sweep"
+                published.append(entry)
+                discovered.append(code)
+            time.sleep(SWEEP_PAUSE_SECONDS)
+        offset = (offset + SWEEP_SIZE) % len(pending_codes)
+
+    if discovered:
+        current = {p["code"] for p in published}
+        added = sorted(c for c in current if c not in known)
+        pending_codes = sorted(baseline_codes - current)
+
     published.sort(key=lambda p: (p["published_at"] or "", p["name"].lower()))
 
-    baseline_codes = set(baseline.get("codes") or [])
     pending = sorted(
         (jw.describe(c, index) for c in baseline_codes - current),
         key=lambda p: p["name"].lower(),
@@ -205,6 +251,13 @@ def main():
             "url": baseline.get("url"),
             "count": target,
             "sign_language_count": baseline.get("sign_language_count"),
+        },
+        "sweep": {
+            "offset": offset,
+            "size": SWEEP_SIZE,
+            "last_checked_count": len(swept),
+            "pending_total": len(pending_codes),
+            "discovered": discovered,
         },
         "integrity": {
             "api_reset_detected": api_reset,
@@ -263,6 +316,11 @@ def main():
         summary += " | +%d: %s" % (len(added), names)
     if removed:
         summary += " | -%d: %s" % (len(removed), ", ".join(removed))
+    if discovered:
+        print(
+            "sweep found %d language(s) the API listing had omitted: %s"
+            % (len(discovered), ", ".join(discovered))
+        )
     if lagging:
         print(
             "note: %d language(s) missing from availableLanguages but still live, "

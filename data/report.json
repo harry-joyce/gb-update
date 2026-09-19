@@ -7,7 +7,7 @@
   "url": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024059_1_VIDEO"
  },
  "counts": {
-  "api_times": 8,
+  "api_times": 9,
   "clamped_times": 0,
   "confirmed_times": 1,
   "observed_times": 0,
@@ -111,13 +111,19 @@
      "code": "BU",
      "name": "Myanmar",
      "source": "api"
+    },
+    {
+     "at": "2026-09-19T10:26:58Z",
+     "code": "AM",
+     "name": "Amharic",
+     "source": "api"
     }
    ],
-   "count_after": 9,
+   "count_after": 10,
    "t": "2026-09-19T10:00:00Z"
   }
  ],
- "generated": "2026-09-19T10:48:38Z",
+ "generated": "2026-09-19T10:54:07Z",
  "history": [
   {
    "count": 1,
@@ -154,6 +160,10 @@
   {
    "count": 9,
    "t": "2026-09-19T10:06:39Z"
+  },
+  {
+   "count": 10,
+   "t": "2026-09-19T10:26:58Z"
   }
  ],
  "integrity": {
@@ -166,10 +176,10 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "last_full_verification": "2026-09-19T08:46:04Z",
-  "listing_count": 9,
+  "listing_count": 10,
   "listing_lag": []
  },
- "last_checked": "2026-09-19T10:48:38Z",
+ "last_checked": "2026-09-19T10:54:07Z",
  "pending": [
   {
    "code": "ABB",
@@ -260,15 +270,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "American Sign Language"
-  },
-  {
-   "code": "AM",
-   "direction": "ltr",
-   "locale": "am",
-   "name": "Amharic",
-   "script": "ETHIOPIC",
-   "sign": false,
-   "vernacular": "አማርኛ"
   },
   {
    "code": "LAS",
@@ -4294,6 +4295,24 @@
    "title": "၂၀၂၆ အုပ်ချုပ်ရေးအဖွဲ့ဆီက နောက်ဆုံးရသတင်း #၆",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BU",
    "vernacular": "မြန်မာ"
+  },
+  {
+   "api_published_at": "2026-09-19T10:26:58Z",
+   "beyond_baseline": false,
+   "code": "AM",
+   "direction": "ltr",
+   "first_observed": "2026-09-19T10:54:07Z",
+   "listed_by_api": true,
+   "locale": "am",
+   "name": "Amharic",
+   "published_at": "2026-09-19T10:26:58Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ETHIOPIC",
+   "sign": false,
+   "title": "የ2026 የበላይ አካሉ ሪፖርት ቁጥር 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AM",
+   "vernacular": "አማርኛ"
   }
  ],
  "removed": [],
@@ -4302,14 +4321,21 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 9,
-  "added_4h": 4,
+  "added_1h": 2,
+  "added_24h": 10,
+  "added_4h": 5,
   "days_since_release": 0.87,
-  "pending_count": 440,
-  "percent": 2.0,
-  "published_count": 9,
+  "pending_count": 439,
+  "percent": 2.2,
+  "published_count": 10,
   "target": 449
+ },
+ "sweep": {
+  "discovered": [],
+  "last_checked_count": 60,
+  "offset": 60,
+  "pending_total": 439,
+  "size": 60
  },
  "update": {
   "api_first_published": "2026-09-18T11:39:09Z",
