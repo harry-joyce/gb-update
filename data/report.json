@@ -153,19 +153,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 2,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 2
  },
  "counts": {
   "api_times": 19,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 2,
   "catalogued": 36,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 17,
+  "file_times": 18,
   "observed_times": 0,
   "sign_languages": 4
  },
@@ -514,13 +514,20 @@
      "in_catalog": false,
      "name": "Portuguese (Brazil)",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-19T18:40:20Z",
+     "code": "MC",
+     "in_catalog": false,
+     "name": "Macedonian",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 37,
+   "count_after": 38,
    "t": "2026-09-19T18:00:00Z"
   }
  ],
- "generated": "2026-09-19T18:38:03Z",
+ "generated": "2026-09-19T18:45:50Z",
  "history": [
   {
    "count": 1,
@@ -669,6 +676,10 @@
   {
    "count": 37,
    "t": "2026-09-19T18:19:23Z"
+  },
+  {
+   "count": 38,
+   "t": "2026-09-19T18:40:20Z"
   }
  ],
  "integrity": {
@@ -682,13 +693,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": null,
-  "files_count": 37,
+  "files_count": 38,
   "last_full_verification": "2026-09-19T08:46:04Z",
   "listing_count": 36,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-19T18:38:03Z",
+ "last_checked": "2026-09-19T18:45:50Z",
  "pending": [
   {
    "code": "ABB",
@@ -2597,15 +2608,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Luvale"
-  },
-  {
-   "code": "MC",
-   "direction": "ltr",
-   "locale": "mk",
-   "name": "Macedonian",
-   "script": "CYRILLIC",
-   "sign": false,
-   "vernacular": "македонски"
   },
   {
    "code": "MAC",
@@ -5606,6 +5608,38 @@
    "title": "Vídeo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=T",
    "vernacular": "Português (Brasil)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T18:40:20Z",
+   "files_at": "2026-09-19T18:40:20Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-19T18:40:20Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-19T18:45:50Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "mk",
+   "name": "Macedonian",
+   "published_at": "2026-09-19T18:40:20Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-19T18:40:20Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CYRILLIC",
+   "sign": false,
+   "title": "Извештај бр. 6 од Водечкото тело (2026)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MC",
+   "vernacular": "македонски"
   }
  ],
  "removed": [],
@@ -5615,16 +5649,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 5,
-  "added_24h": 36,
-  "added_4h": 17,
+  "added_1h": 6,
+  "added_24h": 37,
+  "added_4h": 18,
   "catalog_count": 36,
-  "catalog_lag": 1,
+  "catalog_lag": 2,
   "catalog_percent": 8.0,
-  "days_since_release": 1.19,
-  "pending_count": 412,
-  "percent": 8.2,
-  "published_count": 37,
+  "days_since_release": 1.2,
+  "pending_count": 411,
+  "percent": 8.5,
+  "published_count": 38,
   "publisher_percent": 61.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
