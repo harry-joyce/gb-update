@@ -153,21 +153,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 4,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 4
  },
  "counts": {
   "api_times": 19,
-  "awaiting_catalogue": 3,
+  "awaiting_catalogue": 4,
   "catalogued": 36,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 19,
+  "file_times": 20,
   "observed_times": 0,
-  "sign_languages": 5
+  "sign_languages": 6
  },
  "events": [
   {
@@ -528,13 +528,20 @@
      "in_catalog": false,
      "name": "Macedonian",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-19T18:59:09Z",
+     "code": "SEC",
+     "in_catalog": false,
+     "name": "Ecuadorian Sign Language",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 39,
+   "count_after": 40,
    "t": "2026-09-19T18:00:00Z"
   }
  ],
- "generated": "2026-09-19T19:45:54Z",
+ "generated": "2026-09-19T20:15:57Z",
  "history": [
   {
    "count": 1,
@@ -691,6 +698,10 @@
   {
    "count": 39,
    "t": "2026-09-19T18:40:20Z"
+  },
+  {
+   "count": 40,
+   "t": "2026-09-19T18:59:09Z"
   }
  ],
  "integrity": {
@@ -704,13 +715,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": null,
-  "files_count": 39,
+  "files_count": 40,
   "last_full_verification": "2026-09-19T08:46:04Z",
   "listing_count": 36,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-19T19:45:54Z",
+ "last_checked": "2026-09-19T20:15:57Z",
  "pending": [
   {
    "code": "ABB",
@@ -1458,15 +1469,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ebira"
-  },
-  {
-   "code": "SEC",
-   "direction": "ltr",
-   "locale": "ecs",
-   "name": "Ecuadorian Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "lengua de señas ecuatoriana"
   },
   {
    "code": "ED",
@@ -5674,6 +5676,39 @@
    "title": "Извештај бр. 6 од Водечкото тело (2026)",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MC",
    "vernacular": "македонски"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SEC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T18:59:09Z",
+   "files_at": "2026-09-19T18:59:09Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-19T18:59:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-19T20:15:57Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ecs",
+   "name": "Ecuadorian Sign Language",
+   "published_at": "2026-09-19T18:59:09Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-19T18:59:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SEC",
+   "vernacular": "lengua de señas ecuatoriana"
   }
  ],
  "removed": [],
@@ -5684,15 +5719,15 @@
  },
  "stats": {
   "added_1h": 0,
-  "added_24h": 38,
-  "added_4h": 15,
+  "added_24h": 39,
+  "added_4h": 13,
   "catalog_count": 36,
-  "catalog_lag": 3,
+  "catalog_lag": 4,
   "catalog_percent": 8.0,
-  "days_since_release": 1.24,
-  "pending_count": 410,
-  "percent": 8.7,
-  "published_count": 39,
+  "days_since_release": 1.26,
+  "pending_count": 409,
+  "percent": 8.9,
+  "published_count": 40,
   "publisher_percent": 61.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
