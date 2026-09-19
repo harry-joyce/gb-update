@@ -89,19 +89,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 7,
+  "last_checked_count": 9,
   "newly_catalogued": [],
-  "offset": 6,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 7
+  "unlisted_total": 9
  },
  "counts": {
   "api_times": 19,
-  "awaiting_catalogue": 7,
+  "awaiting_catalogue": 9,
   "catalogued": 20,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 7,
+  "file_times": 9,
   "observed_times": 0,
   "sign_languages": 4
  },
@@ -368,13 +368,27 @@
      "in_catalog": false,
      "name": "Assamese",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-19T16:19:03Z",
+     "code": "OA",
+     "in_catalog": false,
+     "name": "Oromo",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-19T16:22:17Z",
+     "code": "TL",
+     "in_catalog": false,
+     "name": "Tamil",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 27,
+   "count_after": 29,
    "t": "2026-09-19T16:00:00Z"
   }
  ],
- "generated": "2026-09-19T16:15:37Z",
+ "generated": "2026-09-19T16:45:38Z",
  "history": [
   {
    "count": 1,
@@ -483,6 +497,14 @@
   {
    "count": 27,
    "t": "2026-09-19T16:15:12Z"
+  },
+  {
+   "count": 28,
+   "t": "2026-09-19T16:19:03Z"
+  },
+  {
+   "count": 29,
+   "t": "2026-09-19T16:22:17Z"
   }
  ],
  "integrity": {
@@ -496,13 +518,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": null,
-  "files_count": 27,
+  "files_count": 29,
   "last_full_verification": "2026-09-19T08:46:04Z",
   "listing_count": 20,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-19T16:15:37Z",
+ "last_checked": "2026-09-19T16:45:38Z",
  "pending": [
   {
    "code": "ABB",
@@ -3061,15 +3083,6 @@
    "vernacular": "Okpe"
   },
   {
-   "code": "OA",
-   "direction": "ltr",
-   "locale": "om",
-   "name": "Oromo",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Afaan Oromoo"
-  },
-  {
    "code": "OSS",
    "direction": "ltr",
    "locale": "os",
@@ -3806,15 +3819,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Talian"
-  },
-  {
-   "code": "TL",
-   "direction": "ltr",
-   "locale": "ta",
-   "name": "Tamil",
-   "script": "TAMIL",
-   "sign": false,
-   "vernacular": "தமிழ்"
   },
   {
    "code": "TND",
@@ -5182,6 +5186,72 @@
    "title": "ভিডিঅʼ",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AE",
    "vernacular": "অসমীয়া"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "OA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T16:19:03Z",
+   "files_at": "2026-09-19T16:19:03Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-19T16:19:03Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-19T16:45:38Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "om",
+   "name": "Oromo",
+   "published_at": "2026-09-19T16:19:03Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-19T16:19:03Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Viidiyoo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=OA",
+   "vernacular": "Afaan Oromoo"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-19T16:22:17Z",
+   "files_at": "2026-09-19T16:22:17Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-19T16:22:17Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-19T16:45:38Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ta",
+   "name": "Tamil",
+   "published_at": "2026-09-19T16:22:17Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-19T16:22:17Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "TAMIL",
+   "sign": false,
+   "title": "வீடியோக்கள்",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TL",
+   "vernacular": "தமிழ்"
   }
  ],
  "removed": [],
@@ -5191,17 +5261,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 7,
-  "added_24h": 26,
-  "added_4h": 17,
+  "added_1h": 5,
+  "added_24h": 28,
+  "added_4h": 18,
   "catalog_count": 20,
-  "catalog_lag": 7,
+  "catalog_lag": 9,
   "catalog_percent": 4.5,
-  "days_since_release": 1.09,
-  "pending_count": 422,
-  "percent": 6.0,
-  "published_count": 27,
-  "publisher_percent": 51.0,
+  "days_since_release": 1.12,
+  "pending_count": 420,
+  "percent": 6.5,
+  "published_count": 29,
+  "publisher_percent": 51.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
