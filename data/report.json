@@ -123,7 +123,7 @@
    "t": "2026-09-19T10:00:00Z"
   }
  ],
- "generated": "2026-09-19T10:54:07Z",
+ "generated": "2026-09-19T10:55:28Z",
  "history": [
   {
    "count": 1,
@@ -176,10 +176,12 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "last_full_verification": "2026-09-19T08:46:04Z",
-  "listing_count": 10,
-  "listing_lag": []
+  "listing_count": 9,
+  "listing_lag": [
+   "AM"
+  ]
  },
- "last_checked": "2026-09-19T10:54:07Z",
+ "last_checked": "2026-09-19T10:55:28Z",
  "pending": [
   {
    "code": "ABB",
@@ -4302,7 +4304,7 @@
    "code": "AM",
    "direction": "ltr",
    "first_observed": "2026-09-19T10:54:07Z",
-   "listed_by_api": true,
+   "listed_by_api": false,
    "locale": "am",
    "name": "Amharic",
    "published_at": "2026-09-19T10:26:58Z",
@@ -4333,7 +4335,7 @@
  "sweep": {
   "discovered": [],
   "last_checked_count": 60,
-  "offset": 60,
+  "offset": 120,
   "pending_total": 439,
   "size": 60
  },
