@@ -285,21 +285,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 21,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 3,
   "catalogued": 70,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 49,
+  "file_times": 51,
   "observed_times": 0,
-  "sign_languages": 12
+  "sign_languages": 13
  },
  "events": [
   {
@@ -974,13 +974,27 @@
      "in_catalog": false,
      "name": "Haitian Creole",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-20T19:41:14Z",
+     "code": "FID",
+     "in_catalog": false,
+     "name": "Finnish Sign Language",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-20T19:46:45Z",
+     "code": "EW",
+     "in_catalog": false,
+     "name": "Ewe",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 71,
+   "count_after": 73,
    "t": "2026-09-20T19:00:00Z"
   }
  ],
- "generated": "2026-09-20T19:18:29Z",
+ "generated": "2026-09-20T19:47:56Z",
  "history": [
   {
    "count": 1,
@@ -1265,6 +1279,14 @@
   {
    "count": 71,
    "t": "2026-09-20T19:15:04Z"
+  },
+  {
+   "count": 72,
+   "t": "2026-09-20T19:41:14Z"
+  },
+  {
+   "count": 73,
+   "t": "2026-09-20T19:46:45Z"
   }
  ],
  "integrity": {
@@ -1278,13 +1300,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 71,
+  "files_count": 73,
   "last_full_verification": "2026-09-20T08:47:48Z",
   "listing_count": 70,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-20T19:18:29Z",
+ "last_checked": "2026-09-20T19:47:56Z",
  "pending": [
   {
    "code": "ABB",
@@ -2034,15 +2056,6 @@
    "vernacular": "የኢትዮጵያ ምልክት ቋንቋ"
   },
   {
-   "code": "EW",
-   "direction": "ltr",
-   "locale": "ee",
-   "name": "Ewe",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Eʋegbe"
-  },
-  {
    "code": "EWN",
    "direction": "ltr",
    "locale": "ewo",
@@ -2086,15 +2099,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Filipino Sign Language"
-  },
-  {
-   "code": "FID",
-   "direction": "ltr",
-   "locale": "fse",
-   "name": "Finnish Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "suomalainen viittomakieli"
   },
   {
    "code": "FO",
@@ -6998,6 +7002,72 @@
    "title": "Videyo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CR",
    "vernacular": "Kreyòl ayisyen"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "FID",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T19:41:14Z",
+   "files_at": "2026-09-20T19:41:14Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T19:41:14Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T19:47:56Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "fse",
+   "name": "Finnish Sign Language",
+   "published_at": "2026-09-20T19:41:14Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T19:41:14Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=FID",
+   "vernacular": "suomalainen viittomakieli"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "EW",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T19:46:45Z",
+   "files_at": "2026-09-20T19:46:45Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T19:46:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T19:47:56Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ee",
+   "name": "Ewe",
+   "published_at": "2026-09-20T19:46:45Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T19:46:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=EW",
+   "vernacular": "Eʋegbe"
   }
  ],
  "removed": [],
@@ -7007,17 +7077,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
-  "added_24h": 31,
-  "added_4h": 8,
+  "added_1h": 4,
+  "added_24h": 33,
+  "added_4h": 9,
   "catalog_count": 70,
-  "catalog_lag": 1,
+  "catalog_lag": 3,
   "catalog_percent": 15.6,
-  "days_since_release": 2.22,
-  "pending_count": 378,
-  "percent": 15.8,
-  "published_count": 71,
-  "publisher_percent": 73.8,
+  "days_since_release": 2.24,
+  "pending_count": 376,
+  "percent": 16.3,
+  "published_count": 73,
+  "publisher_percent": 74.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
