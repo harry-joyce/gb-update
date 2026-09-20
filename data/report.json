@@ -298,24 +298,32 @@
   {
    "count": 74,
    "t": "2026-09-20T19:51:24Z"
+  },
+  {
+   "count": 75,
+   "t": "2026-09-20T22:44:28Z"
+  },
+  {
+   "count": 76,
+   "t": "2026-09-20T22:54:45Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 0
  },
  "counts": {
-  "api_times": 21,
-  "awaiting_catalogue": 1,
-  "catalogued": 74,
+  "api_times": 22,
+  "awaiting_catalogue": 0,
+  "catalogued": 76,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 53,
   "observed_times": 0,
-  "sign_languages": 15
+  "sign_languages": 16
  },
  "events": [
   {
@@ -1021,16 +1029,23 @@
     {
      "at": "2026-09-20T22:44:18Z",
      "code": "ASL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "American Sign Language",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-20T22:54:45Z",
+     "code": "BVL",
+     "in_catalog": true,
+     "name": "Bolivian Sign Language",
+     "source": "api"
     }
    ],
-   "count_after": 75,
+   "count_after": 76,
    "t": "2026-09-20T22:00:00Z"
   }
  ],
- "generated": "2026-09-20T22:48:10Z",
+ "generated": "2026-09-20T23:18:11Z",
  "history": [
   {
    "count": 1,
@@ -1331,6 +1346,10 @@
   {
    "count": 75,
    "t": "2026-09-20T22:44:18Z"
+  },
+  {
+   "count": 76,
+   "t": "2026-09-20T22:54:45Z"
   }
  ],
  "integrity": {
@@ -1344,13 +1363,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 75,
+  "files_count": 76,
   "last_full_verification": "2026-09-20T08:47:48Z",
-  "listing_count": 74,
+  "listing_count": 76,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-20T22:48:10Z",
+ "last_checked": "2026-09-20T23:18:11Z",
  "pending": [
   {
    "code": "ABB",
@@ -1666,15 +1685,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kriol di Gine-Bisau"
-  },
-  {
-   "code": "BVL",
-   "direction": "ltr",
-   "locale": "bvl",
-   "name": "Bolivian Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "lengua de señas boliviana"
   },
   {
    "code": "BO",
@@ -7128,12 +7138,12 @@
    "vernacular": "日本手話"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T22:44:28Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T22:44:28Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T23:18:11Z",
    "code": "ASL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7146,9 +7156,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T22:44:18Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T22:48:10Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ase",
    "name": "American Sign Language",
    "published_at": "2026-09-20T22:44:18Z",
@@ -7159,6 +7169,38 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ASL",
    "vernacular": "American Sign Language"
+  },
+  {
+   "api_published_at": "2026-09-20T22:54:45Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-20T22:54:45Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T23:18:11Z",
+   "code": "BVL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T22:31:13Z",
+   "files_at": "2026-09-20T22:54:45Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-20T23:18:11Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "bvl",
+   "name": "Bolivian Sign Language",
+   "published_at": "2026-09-20T22:54:45Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 | Informe 6 del Cuerpo Gobernante",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BVL",
+   "vernacular": "lengua de señas boliviana"
   }
  ],
  "removed": [],
@@ -7168,16 +7210,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 30,
-  "added_4h": 6,
-  "catalog_count": 74,
-  "catalog_lag": 1,
-  "catalog_percent": 16.5,
-  "days_since_release": 2.37,
-  "pending_count": 374,
-  "percent": 16.7,
-  "published_count": 75,
+  "added_1h": 2,
+  "added_24h": 31,
+  "added_4h": 5,
+  "catalog_count": 76,
+  "catalog_lag": 0,
+  "catalog_percent": 16.9,
+  "days_since_release": 2.39,
+  "pending_count": 373,
+  "percent": 16.9,
+  "published_count": 76,
   "publisher_percent": 74.3,
   "publisher_percent_ceiling": 99.2,
   "target": 449
