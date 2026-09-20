@@ -261,21 +261,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 2,
   "newly_catalogued": [],
-  "offset": 5,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 2
  },
  "counts": {
   "api_times": 20,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 2,
   "catalogued": 63,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 42,
+  "file_times": 44,
   "observed_times": 0,
-  "sign_languages": 8
+  "sign_languages": 9
  },
  "events": [
   {
@@ -876,13 +876,33 @@
      "in_catalog": true,
      "name": "Finnish",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-20T15:49:09Z",
+     "code": "KSI",
+     "in_catalog": false,
+     "name": "Kenyan Sign Language",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 63,
+   "count_after": 64,
    "t": "2026-09-20T15:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-20T17:13:45Z",
+     "code": "GA",
+     "in_catalog": false,
+     "name": "Ga",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 65,
+   "t": "2026-09-20T17:00:00Z"
   }
  ],
- "generated": "2026-09-20T16:17:39Z",
+ "generated": "2026-09-20T17:17:44Z",
  "history": [
   {
    "count": 1,
@@ -1135,6 +1155,14 @@
   {
    "count": 63,
    "t": "2026-09-20T15:31:56Z"
+  },
+  {
+   "count": 64,
+   "t": "2026-09-20T15:49:09Z"
+  },
+  {
+   "count": 65,
+   "t": "2026-09-20T17:13:45Z"
   }
  ],
  "integrity": {
@@ -1148,13 +1176,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 63,
+  "files_count": 65,
   "last_full_verification": "2026-09-20T08:47:48Z",
   "listing_count": 63,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-20T16:17:39Z",
+ "last_checked": "2026-09-20T17:17:44Z",
  "pending": [
   {
    "code": "ABB",
@@ -2003,15 +2031,6 @@
    "vernacular": "Langue des signes française"
   },
   {
-   "code": "GA",
-   "direction": "ltr",
-   "locale": "gaa",
-   "name": "Ga",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ga"
-  },
-  {
    "code": "GRF",
    "direction": "ltr",
    "locale": "cab",
@@ -2523,15 +2542,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "q’eqchi’"
-  },
-  {
-   "code": "KSI",
-   "direction": "ltr",
-   "locale": "xki",
-   "name": "Kenyan Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Kenyan Sign Language"
   },
   {
    "code": "OG",
@@ -6678,6 +6688,72 @@
    "title": "Hallintoelimen tilannepäivitys nro 6/2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=FI",
    "vernacular": "suomi"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KSI",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T15:49:09Z",
+   "files_at": "2026-09-20T15:49:09Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T15:49:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T17:17:44Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "xki",
+   "name": "Kenyan Sign Language",
+   "published_at": "2026-09-20T15:49:09Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T15:49:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KSI",
+   "vernacular": "Kenyan Sign Language"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "GA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T17:13:45Z",
+   "files_at": "2026-09-20T17:13:45Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T17:13:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T17:17:44Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "gaa",
+   "name": "Ga",
+   "published_at": "2026-09-20T17:13:45Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T17:13:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidio",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GA",
+   "vernacular": "Ga"
   }
  ],
  "removed": [],
@@ -6688,16 +6764,16 @@
  },
  "stats": {
   "added_1h": 1,
-  "added_24h": 36,
-  "added_4h": 6,
+  "added_24h": 32,
+  "added_4h": 7,
   "catalog_count": 63,
-  "catalog_lag": 0,
+  "catalog_lag": 2,
   "catalog_percent": 14.0,
-  "days_since_release": 2.1,
-  "pending_count": 386,
-  "percent": 14.0,
-  "published_count": 63,
-  "publisher_percent": 73.3,
+  "days_since_release": 2.14,
+  "pending_count": 384,
+  "percent": 14.5,
+  "published_count": 65,
+  "publisher_percent": 73.4,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
