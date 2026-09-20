@@ -217,21 +217,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 20,
-  "awaiting_catalogue": 2,
+  "awaiting_catalogue": 3,
   "catalogued": 52,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 33,
+  "file_times": 34,
   "observed_times": 0,
-  "sign_languages": 6
+  "sign_languages": 7
  },
  "events": [
   {
@@ -727,6 +727,13 @@
      "source": "api"
     },
     {
+     "at": "2026-09-20T09:41:22Z",
+     "code": "CSE",
+     "in_catalog": false,
+     "name": "Czech Sign Language",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-20T09:49:12Z",
      "code": "G",
      "in_catalog": false,
@@ -741,11 +748,11 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 54,
+   "count_after": 55,
    "t": "2026-09-20T09:00:00Z"
   }
  ],
- "generated": "2026-09-20T11:17:48Z",
+ "generated": "2026-09-20T11:50:59Z",
  "history": [
   {
    "count": 1,
@@ -957,10 +964,14 @@
   },
   {
    "count": 53,
-   "t": "2026-09-20T09:49:12Z"
+   "t": "2026-09-20T09:41:22Z"
   },
   {
    "count": 54,
+   "t": "2026-09-20T09:49:12Z"
+  },
+  {
+   "count": 55,
    "t": "2026-09-20T09:54:02Z"
   }
  ],
@@ -975,13 +986,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 54,
+  "files_count": 55,
   "last_full_verification": "2026-09-20T08:47:48Z",
   "listing_count": 52,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-20T11:17:48Z",
+ "last_checked": "2026-09-20T11:50:59Z",
  "pending": [
   {
    "code": "ABB",
@@ -1621,15 +1632,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "lengua de señas cubana"
-  },
-  {
-   "code": "CSE",
-   "direction": "ltr",
-   "locale": "cse",
-   "name": "Czech Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "český znakový jazyk"
   },
   {
    "code": "DGA",
@@ -6241,6 +6243,38 @@
    "catalog_at_note": null,
    "catalog_at_source": null,
    "catalog_observed": null,
+   "code": "CSE",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T09:41:22Z",
+   "files_at": "2026-09-20T09:41:22Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T09:41:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T11:50:59Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "cse",
+   "name": "Czech Sign Language",
+   "published_at": "2026-09-20T09:41:22Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T09:41:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Aktuální informace od vedoucího sboru č. 6/2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CSE",
+   "vernacular": "český znakový jazyk"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
    "code": "G",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -6307,15 +6341,15 @@
  },
  "stats": {
   "added_1h": 0,
-  "added_24h": 44,
-  "added_4h": 6,
+  "added_24h": 45,
+  "added_4h": 7,
   "catalog_count": 52,
-  "catalog_lag": 2,
+  "catalog_lag": 3,
   "catalog_percent": 11.6,
-  "days_since_release": 1.89,
-  "pending_count": 395,
-  "percent": 12.0,
-  "published_count": 54,
+  "days_since_release": 1.91,
+  "pending_count": 394,
+  "percent": 12.2,
+  "published_count": 55,
   "publisher_percent": 69.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
