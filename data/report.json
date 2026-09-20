@@ -194,19 +194,39 @@
   {
    "count": 47,
    "t": "2026-09-19T23:59:17Z"
+  },
+  {
+   "count": 48,
+   "t": "2026-09-20T07:14:48Z"
+  },
+  {
+   "count": 49,
+   "t": "2026-09-20T08:21:12Z"
+  },
+  {
+   "count": 50,
+   "t": "2026-09-20T08:45:07Z"
+  },
+  {
+   "count": 51,
+   "t": "2026-09-20T08:46:05Z"
+  },
+  {
+   "count": 52,
+   "t": "2026-09-20T09:31:16Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 0
  },
  "counts": {
-  "api_times": 19,
-  "awaiting_catalogue": 4,
-  "catalogued": 47,
+  "api_times": 20,
+  "awaiting_catalogue": 0,
+  "catalogued": 52,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 31,
@@ -662,7 +682,7 @@
     {
      "at": "2026-09-20T07:14:39Z",
      "code": "PJN",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Punjabi (Shahmukhi)",
      "source": "file_estimated"
     }
@@ -675,30 +695,43 @@
     {
      "at": "2026-09-20T08:21:02Z",
      "code": "UD",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Urdu",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-20T08:44:57Z",
      "code": "CH",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Chinese Mandarin (Traditional)",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-20T08:45:54Z",
      "code": "CHS",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Chinese Mandarin (Simplified)",
      "source": "file_estimated"
     }
    ],
    "count_after": 51,
    "t": "2026-09-20T08:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-20T09:31:16Z",
+     "code": "B",
+     "in_catalog": true,
+     "name": "Czech",
+     "source": "api"
+    }
+   ],
+   "count_after": 52,
+   "t": "2026-09-20T09:00:00Z"
   }
  ],
- "generated": "2026-09-20T08:47:48Z",
+ "generated": "2026-09-20T09:47:05Z",
  "history": [
   {
    "count": 1,
@@ -903,13 +936,15 @@
   {
    "count": 51,
    "t": "2026-09-20T08:45:54Z"
+  },
+  {
+   "count": 52,
+   "t": "2026-09-20T09:31:16Z"
   }
  ],
  "integrity": {
   "api_reset_detected": false,
   "api_reset_detected_at": null,
-  "awaiting_catalogue": 4,
-  "bulk_rewrite_suspected": false,
   "catalogue_unavailable": null,
   "drift_count": 0,
   "drifted": [],
@@ -918,49 +953,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "file_drifted": [
-   {
-    "code": "X",
-    "in_use": "2026-09-18T20:53:43Z",
-    "in_use_source": "api",
-    "live": "2026-09-19T16:24:02Z",
-    "name": "German",
-    "pinned": "2026-09-18T20:53:31Z"
-   },
-   {
-    "code": "KA",
-    "in_use": "2026-09-19T08:16:53Z",
-    "in_use_source": "api",
-    "live": "2026-09-20T05:17:27Z",
-    "name": "Kannada",
-    "pinned": "2026-09-19T08:16:43Z"
-   },
-   {
-    "code": "LSB",
-    "in_use": "2026-09-19T14:03:14Z",
-    "in_use_source": "api",
-    "live": "2026-09-19T19:00:30Z",
-    "name": "Brazilian Sign Language",
-    "pinned": "2026-09-19T12:39:56Z"
-   },
-   {
-    "code": "QII",
-    "in_use": "2026-09-19T23:44:40Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-20T00:31:46Z",
-    "name": "Quichua (Imbabura)",
-    "pinned": "2026-09-19T23:44:40Z"
-   }
-  ],
-  "files_count": 51,
+  "files_count": 52,
   "last_full_verification": "2026-09-20T08:47:48Z",
-  "listing_count": 47,
+  "listing_count": 52,
   "listing_lag": [],
-  "missing_items": [],
-  "pub_media_unavailable": null,
-  "verified_count": 51
+  "pub_media_unavailable": null
  },
- "last_checked": "2026-09-20T08:46:59Z",
+ "last_checked": "2026-09-20T09:47:05Z",
  "pending": [
   {
    "code": "ABB",
@@ -1600,15 +1599,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "lengua de señas cubana"
-  },
-  {
-   "code": "B",
-   "direction": "ltr",
-   "locale": "cs",
-   "name": "Czech",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "čeština"
   },
   {
    "code": "CSE",
@@ -6081,12 +6071,12 @@
    "vernacular": "монгол"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T07:14:48Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T07:14:48Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T09:47:05Z",
    "code": "PJN",
    "direction": "rtl",
    "discovered_by": "pub-media",
@@ -6098,9 +6088,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T07:14:39Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T07:16:50Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "pnb",
    "name": "Punjabi (Shahmukhi)",
    "published_at": "2026-09-20T07:14:39Z",
@@ -6113,12 +6103,12 @@
    "vernacular": "پنجابی (شاہ مُکھی)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T08:21:12Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T08:21:12Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T09:47:05Z",
    "code": "UD",
    "direction": "rtl",
    "discovered_by": "pub-media",
@@ -6130,9 +6120,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T08:21:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T08:46:59Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ur",
    "name": "Urdu",
    "published_at": "2026-09-20T08:21:02Z",
@@ -6145,12 +6135,12 @@
    "vernacular": "اُردو"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T08:45:07Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T08:45:07Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T09:47:05Z",
    "code": "CH",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -6162,9 +6152,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T08:44:57Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T08:46:59Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "cmn-hant",
    "name": "Chinese Mandarin (Traditional)",
    "published_at": "2026-09-20T08:44:57Z",
@@ -6177,12 +6167,12 @@
    "vernacular": "中文繁體（國語）"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T08:46:05Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T08:46:05Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T09:47:05Z",
    "code": "CHS",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -6194,9 +6184,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T08:45:54Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T08:46:59Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "cmn-hans",
    "name": "Chinese Mandarin (Simplified)",
    "published_at": "2026-09-20T08:45:54Z",
@@ -6207,6 +6197,38 @@
    "title": "2026来自中央长老团的报导（六）",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CHS",
    "vernacular": "中文简体（普通话）"
+  },
+  {
+   "api_published_at": "2026-09-20T09:31:16Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-20T09:31:16Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T09:47:05Z",
+   "code": "B",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T09:31:05Z",
+   "files_at": "2026-09-20T09:31:16Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-20T09:47:05Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "cs",
+   "name": "Czech",
+   "published_at": "2026-09-20T09:31:16Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Aktuální informace od vedoucího sboru č. 6/2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=B",
+   "vernacular": "čeština"
   }
  ],
  "removed": [],
@@ -6216,17 +6238,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
-  "added_24h": 43,
-  "added_4h": 4,
-  "catalog_count": 47,
-  "catalog_lag": 4,
-  "catalog_percent": 10.5,
-  "days_since_release": 1.78,
-  "pending_count": 398,
-  "percent": 11.4,
-  "published_count": 51,
-  "publisher_percent": 68.7,
+  "added_1h": 1,
+  "added_24h": 44,
+  "added_4h": 5,
+  "catalog_count": 52,
+  "catalog_lag": 0,
+  "catalog_percent": 11.6,
+  "days_since_release": 1.82,
+  "pending_count": 397,
+  "percent": 11.6,
+  "published_count": 52,
+  "publisher_percent": 68.8,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
