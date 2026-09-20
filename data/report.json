@@ -309,21 +309,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 22,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 76,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 53,
+  "file_times": 54,
   "observed_times": 0,
-  "sign_languages": 16
+  "sign_languages": 17
  },
  "events": [
   {
@@ -1043,9 +1043,22 @@
    ],
    "count_after": 76,
    "t": "2026-09-20T22:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-20T23:32:49Z",
+     "code": "JML",
+     "in_catalog": false,
+     "name": "Jamaican Sign Language",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 77,
+   "t": "2026-09-20T23:00:00Z"
   }
  ],
- "generated": "2026-09-20T23:18:11Z",
+ "generated": "2026-09-20T23:34:47Z",
  "history": [
   {
    "count": 1,
@@ -1350,6 +1363,10 @@
   {
    "count": 76,
    "t": "2026-09-20T22:54:45Z"
+  },
+  {
+   "count": 77,
+   "t": "2026-09-20T23:32:49Z"
   }
  ],
  "integrity": {
@@ -1363,13 +1380,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 76,
+  "files_count": 77,
   "last_full_verification": "2026-09-20T08:47:48Z",
   "listing_count": 76,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-20T23:18:11Z",
+ "last_checked": "2026-09-20T23:34:47Z",
  "pending": [
   {
    "code": "ABB",
@@ -2531,15 +2548,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Langue des signes ivoirienne"
-  },
-  {
-   "code": "JML",
-   "direction": "ltr",
-   "locale": "jls",
-   "name": "Jamaican Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Jamaican Sign Language"
   },
   {
    "code": "JA",
@@ -7201,6 +7209,39 @@
    "title": "2026 | Informe 6 del Cuerpo Gobernante",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BVL",
    "vernacular": "lengua de señas boliviana"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "JML",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T23:32:49Z",
+   "files_at": "2026-09-20T23:32:49Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T23:32:49Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T23:34:47Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "jls",
+   "name": "Jamaican Sign Language",
+   "published_at": "2026-09-20T23:32:49Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T23:32:49Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=JML",
+   "vernacular": "Jamaican Sign Language"
   }
  ],
  "removed": [],
@@ -7210,16 +7251,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 31,
-  "added_4h": 5,
+  "added_1h": 3,
+  "added_24h": 32,
+  "added_4h": 6,
   "catalog_count": 76,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 16.9,
-  "days_since_release": 2.39,
-  "pending_count": 373,
-  "percent": 16.9,
-  "published_count": 76,
+  "days_since_release": 2.4,
+  "pending_count": 372,
+  "percent": 17.1,
+  "published_count": 77,
   "publisher_percent": 74.3,
   "publisher_percent_ceiling": 99.2,
   "target": 449
