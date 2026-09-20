@@ -258,24 +258,48 @@
   {
    "count": 63,
    "t": "2026-09-20T15:39:31Z"
+  },
+  {
+   "count": 64,
+   "t": "2026-09-20T16:56:46Z"
+  },
+  {
+   "count": 65,
+   "t": "2026-09-20T17:13:56Z"
+  },
+  {
+   "count": 67,
+   "t": "2026-09-20T18:02:07Z"
+  },
+  {
+   "count": 68,
+   "t": "2026-09-20T18:20:21Z"
+  },
+  {
+   "count": 69,
+   "t": "2026-09-20T18:26:30Z"
+  },
+  {
+   "count": 70,
+   "t": "2026-09-20T18:57:43Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 6,
+  "last_checked_count": 1,
   "newly_catalogued": [],
-  "offset": 4,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 6
+  "unlisted_total": 1
  },
  "counts": {
-  "api_times": 20,
-  "awaiting_catalogue": 6,
-  "catalogued": 63,
+  "api_times": 21,
+  "awaiting_catalogue": 1,
+  "catalogued": 70,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 48,
+  "file_times": 49,
   "observed_times": 0,
-  "sign_languages": 11
+  "sign_languages": 12
  },
  "events": [
   {
@@ -779,7 +803,7 @@
     {
      "at": "2026-09-20T09:18:46Z",
      "code": "SSL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Swedish Sign Language",
      "source": "file_estimated"
     },
@@ -887,14 +911,14 @@
     {
      "at": "2026-09-20T15:49:09Z",
      "code": "KSI",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kenyan Sign Language",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-20T15:59:02Z",
      "code": "LSF",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "French Sign Language",
      "source": "file_estimated"
     }
@@ -907,14 +931,14 @@
     {
      "at": "2026-09-20T17:13:45Z",
      "code": "GA",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Ga",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-20T17:48:30Z",
      "code": "LR",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Lari",
      "source": "file_estimated"
     }
@@ -927,16 +951,36 @@
     {
      "at": "2026-09-20T18:20:09Z",
      "code": "RR",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Runyankore",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-20T18:57:43Z",
+     "code": "CBS",
+     "in_catalog": true,
+     "name": "Cuban Sign Language",
+     "source": "api"
+    }
+   ],
+   "count_after": 70,
+   "t": "2026-09-20T18:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-20T19:15:04Z",
+     "code": "CR",
+     "in_catalog": false,
+     "name": "Haitian Creole",
      "source": "file_estimated"
     }
    ],
-   "count_after": 69,
-   "t": "2026-09-20T18:00:00Z"
+   "count_after": 71,
+   "t": "2026-09-20T19:00:00Z"
   }
  ],
- "generated": "2026-09-20T18:47:52Z",
+ "generated": "2026-09-20T19:18:29Z",
  "history": [
   {
    "count": 1,
@@ -1213,6 +1257,14 @@
   {
    "count": 69,
    "t": "2026-09-20T18:20:09Z"
+  },
+  {
+   "count": 70,
+   "t": "2026-09-20T18:57:43Z"
+  },
+  {
+   "count": 71,
+   "t": "2026-09-20T19:15:04Z"
   }
  ],
  "integrity": {
@@ -1226,13 +1278,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 69,
+  "files_count": 71,
   "last_full_verification": "2026-09-20T08:47:48Z",
-  "listing_count": 63,
+  "listing_count": 70,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-20T18:47:52Z",
+ "last_checked": "2026-09-20T19:18:29Z",
  "pending": [
   {
    "code": "ABB",
@@ -1856,15 +1908,6 @@
    "vernacular": "hrvatski"
   },
   {
-   "code": "CBS",
-   "direction": "ltr",
-   "locale": "csf",
-   "name": "Cuban Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "lengua de señas cubana"
-  },
-  {
    "code": "DGA",
    "direction": "ltr",
    "locale": "dga",
@@ -2187,15 +2230,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Gungbe"
-  },
-  {
-   "code": "CR",
-   "direction": "ltr",
-   "locale": "ht",
-   "name": "Haitian Creole",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kreyòl ayisyen"
   },
   {
    "code": "HA",
@@ -6351,12 +6385,12 @@
    "vernacular": "中文简体（普通话）"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T18:26:30Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T18:26:30Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T19:18:29Z",
    "code": "SSL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -6368,9 +6402,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T09:18:46Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T18:47:52Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "swl",
    "name": "Swedish Sign Language",
    "published_at": "2026-09-20T09:18:46Z",
@@ -6736,12 +6770,12 @@
    "vernacular": "suomi"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T16:56:46Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T16:56:46Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T19:18:29Z",
    "code": "KSI",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -6754,9 +6788,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T15:49:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T17:17:44Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "xki",
    "name": "Kenyan Sign Language",
    "published_at": "2026-09-20T15:49:09Z",
@@ -6769,12 +6803,12 @@
    "vernacular": "Kenyan Sign Language"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T18:02:07Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T18:02:07Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T19:18:29Z",
    "code": "LSF",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -6787,9 +6821,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T15:59:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T18:17:49Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "fsl",
    "name": "French Sign Language",
    "published_at": "2026-09-20T15:59:02Z",
@@ -6802,12 +6836,12 @@
    "vernacular": "Langue des signes française"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T17:13:56Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T17:13:56Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T19:18:29Z",
    "code": "GA",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -6820,9 +6854,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T17:13:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T17:17:44Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "gaa",
    "name": "Ga",
    "published_at": "2026-09-20T17:13:45Z",
@@ -6835,12 +6869,12 @@
    "vernacular": "Ga"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T18:02:07Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T18:02:07Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T19:18:29Z",
    "code": "LR",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -6852,9 +6886,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T17:48:30Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T18:17:49Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ldi",
    "name": "Lari",
    "published_at": "2026-09-20T17:48:30Z",
@@ -6867,12 +6901,12 @@
    "vernacular": "Kilari"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T18:20:21Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T18:20:21Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T19:18:29Z",
    "code": "RR",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -6885,9 +6919,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T18:20:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T18:47:52Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "nyn",
    "name": "Runyankore",
    "published_at": "2026-09-20T18:20:09Z",
@@ -6898,6 +6932,72 @@
    "title": "Vidiyo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=RR",
    "vernacular": "Runyankore"
+  },
+  {
+   "api_published_at": "2026-09-20T18:57:43Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-20T18:57:43Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T19:18:29Z",
+   "code": "CBS",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T15:13:24Z",
+   "files_at": "2026-09-20T18:57:43Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-20T19:18:29Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "csf",
+   "name": "Cuban Sign Language",
+   "published_at": "2026-09-20T18:57:43Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 | Informe 6 del Cuerpo Gobernante",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CBS",
+   "vernacular": "lengua de señas cubana"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CR",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T19:15:04Z",
+   "files_at": "2026-09-20T19:15:04Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T19:15:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T19:18:29Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ht",
+   "name": "Haitian Creole",
+   "published_at": "2026-09-20T19:15:04Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T19:15:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Videyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CR",
+   "vernacular": "Kreyòl ayisyen"
   }
  ],
  "removed": [],
@@ -6907,17 +7007,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 30,
-  "added_4h": 6,
-  "catalog_count": 63,
-  "catalog_lag": 6,
-  "catalog_percent": 14.0,
-  "days_since_release": 2.2,
-  "pending_count": 380,
-  "percent": 15.4,
-  "published_count": 69,
-  "publisher_percent": 73.4,
+  "added_1h": 3,
+  "added_24h": 31,
+  "added_4h": 8,
+  "catalog_count": 70,
+  "catalog_lag": 1,
+  "catalog_percent": 15.6,
+  "days_since_release": 2.22,
+  "pending_count": 378,
+  "percent": 15.8,
+  "published_count": 71,
+  "publisher_percent": 73.8,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
