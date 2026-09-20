@@ -698,7 +698,7 @@
    "t": "2026-09-20T08:00:00Z"
   }
  ],
- "generated": "2026-09-20T08:46:59Z",
+ "generated": "2026-09-20T08:47:48Z",
  "history": [
   {
    "count": 1,
@@ -908,6 +908,8 @@
  "integrity": {
   "api_reset_detected": false,
   "api_reset_detected_at": null,
+  "awaiting_catalogue": 4,
+  "bulk_rewrite_suspected": false,
   "catalogue_unavailable": null,
   "drift_count": 0,
   "drifted": [],
@@ -916,11 +918,47 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
+  "file_drifted": [
+   {
+    "code": "X",
+    "in_use": "2026-09-18T20:53:43Z",
+    "in_use_source": "api",
+    "live": "2026-09-19T16:24:02Z",
+    "name": "German",
+    "pinned": "2026-09-18T20:53:31Z"
+   },
+   {
+    "code": "KA",
+    "in_use": "2026-09-19T08:16:53Z",
+    "in_use_source": "api",
+    "live": "2026-09-20T05:17:27Z",
+    "name": "Kannada",
+    "pinned": "2026-09-19T08:16:43Z"
+   },
+   {
+    "code": "LSB",
+    "in_use": "2026-09-19T14:03:14Z",
+    "in_use_source": "api",
+    "live": "2026-09-19T19:00:30Z",
+    "name": "Brazilian Sign Language",
+    "pinned": "2026-09-19T12:39:56Z"
+   },
+   {
+    "code": "QII",
+    "in_use": "2026-09-19T23:44:40Z",
+    "in_use_source": "file_estimated",
+    "live": "2026-09-20T00:31:46Z",
+    "name": "Quichua (Imbabura)",
+    "pinned": "2026-09-19T23:44:40Z"
+   }
+  ],
   "files_count": 51,
-  "last_full_verification": "2026-09-20T07:27:45Z",
+  "last_full_verification": "2026-09-20T08:47:48Z",
   "listing_count": 47,
   "listing_lag": [],
-  "pub_media_unavailable": null
+  "missing_items": [],
+  "pub_media_unavailable": null,
+  "verified_count": 51
  },
  "last_checked": "2026-09-20T08:46:59Z",
  "pending": [
