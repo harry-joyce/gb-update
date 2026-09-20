@@ -229,19 +229,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 20,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 3,
   "catalogued": 55,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 35,
+  "file_times": 37,
   "observed_times": 0,
   "sign_languages": 7
  },
@@ -771,13 +771,27 @@
      "in_catalog": false,
      "name": "Dutch",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-20T13:47:51Z",
+     "code": "RMC",
+     "in_catalog": false,
+     "name": "Romany (Macedonia) Cyrillic",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-20T13:48:47Z",
+     "code": "RM",
+     "in_catalog": false,
+     "name": "Romany (Macedonia)",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 56,
+   "count_after": 58,
    "t": "2026-09-20T13:00:00Z"
   }
  ],
- "generated": "2026-09-20T13:17:22Z",
+ "generated": "2026-09-20T14:17:34Z",
  "history": [
   {
    "count": 1,
@@ -1002,6 +1016,14 @@
   {
    "count": 56,
    "t": "2026-09-20T13:07:55Z"
+  },
+  {
+   "count": 57,
+   "t": "2026-09-20T13:47:51Z"
+  },
+  {
+   "count": 58,
+   "t": "2026-09-20T13:48:47Z"
   }
  ],
  "integrity": {
@@ -1015,13 +1037,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 56,
+  "files_count": 58,
   "last_full_verification": "2026-09-20T08:47:48Z",
   "listing_count": 55,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-20T13:17:22Z",
+ "last_checked": "2026-09-20T14:17:34Z",
  "pending": [
   {
    "code": "ABB",
@@ -3641,24 +3663,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Limba semnelor române"
-  },
-  {
-   "code": "RM",
-   "direction": "ltr",
-   "locale": "rmn-x-rm",
-   "name": "Romany (Macedonia)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "romane (Makedonija)"
-  },
-  {
-   "code": "RMC",
-   "direction": "ltr",
-   "locale": "rmn-cyrl",
-   "name": "Romany (Macedonia) Cyrillic",
-   "script": "CYRILLIC",
-   "sign": false,
-   "vernacular": "романе (Македонија) кирилица"
   },
   {
    "code": "RMR",
@@ -6383,6 +6387,70 @@
    "title": "Besturende Lichaam update 2026 nr. 6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=O",
    "vernacular": "Nederlands"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "RMC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T13:47:51Z",
+   "files_at": "2026-09-20T13:47:51Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T13:47:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T14:17:34Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "rmn-cyrl",
+   "name": "Romany (Macedonia) Cyrillic",
+   "published_at": "2026-09-20T13:47:51Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T13:47:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CYRILLIC",
+   "sign": false,
+   "title": "Извештај бр. 6 таро Водечко тело (2026)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=RMC",
+   "vernacular": "романе (Македонија) кирилица"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "RM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T13:48:47Z",
+   "files_at": "2026-09-20T13:48:47Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T13:48:47Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T14:17:34Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "rmn-x-rm",
+   "name": "Romany (Macedonia)",
+   "published_at": "2026-09-20T13:48:47Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T13:48:47Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Izveštaj br. 6 taro Vodečko telo (2026)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=RM",
+   "vernacular": "romane (Makedonija)"
   }
  ],
  "removed": [],
@@ -6392,16 +6460,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 42,
-  "added_4h": 5,
+  "added_1h": 2,
+  "added_24h": 40,
+  "added_4h": 3,
   "catalog_count": 55,
-  "catalog_lag": 1,
+  "catalog_lag": 3,
   "catalog_percent": 12.2,
-  "days_since_release": 1.97,
-  "pending_count": 393,
-  "percent": 12.5,
-  "published_count": 56,
+  "days_since_release": 2.01,
+  "pending_count": 391,
+  "percent": 12.9,
+  "published_count": 58,
   "publisher_percent": 69.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
