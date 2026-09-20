@@ -214,22 +214,34 @@
   {
    "count": 52,
    "t": "2026-09-20T09:31:16Z"
+  },
+  {
+   "count": 53,
+   "t": "2026-09-20T09:49:25Z"
+  },
+  {
+   "count": 54,
+   "t": "2026-09-20T09:54:11Z"
+  },
+  {
+   "count": 55,
+   "t": "2026-09-20T11:36:39Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 1,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 20,
-  "awaiting_catalogue": 3,
-  "catalogued": 52,
+  "awaiting_catalogue": 1,
+  "catalogued": 55,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 34,
+  "file_times": 35,
   "observed_times": 0,
   "sign_languages": 7
  },
@@ -729,30 +741,43 @@
     {
      "at": "2026-09-20T09:41:22Z",
      "code": "CSE",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Czech Sign Language",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-20T09:49:12Z",
      "code": "G",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Greek",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-20T09:54:02Z",
      "code": "V",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Slovak",
      "source": "file_estimated"
     }
    ],
    "count_after": 55,
    "t": "2026-09-20T09:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-20T13:07:55Z",
+     "code": "O",
+     "in_catalog": false,
+     "name": "Dutch",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 56,
+   "t": "2026-09-20T13:00:00Z"
   }
  ],
- "generated": "2026-09-20T11:50:59Z",
+ "generated": "2026-09-20T13:17:22Z",
  "history": [
   {
    "count": 1,
@@ -973,6 +998,10 @@
   {
    "count": 55,
    "t": "2026-09-20T09:54:02Z"
+  },
+  {
+   "count": 56,
+   "t": "2026-09-20T13:07:55Z"
   }
  ],
  "integrity": {
@@ -986,13 +1015,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 55,
+  "files_count": 56,
   "last_full_verification": "2026-09-20T08:47:48Z",
-  "listing_count": 52,
+  "listing_count": 55,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-20T11:50:59Z",
+ "last_checked": "2026-09-20T13:17:22Z",
  "pending": [
   {
    "code": "ABB",
@@ -1686,15 +1715,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Drehu"
-  },
-  {
-   "code": "O",
-   "direction": "ltr",
-   "locale": "nl",
-   "name": "Dutch",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Nederlands"
   },
   {
    "code": "EBA",
@@ -6237,12 +6257,12 @@
    "vernacular": "čeština"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T11:36:39Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T11:36:39Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T13:17:22Z",
    "code": "CSE",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -6254,9 +6274,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T09:41:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T11:50:59Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "cse",
    "name": "Czech Sign Language",
    "published_at": "2026-09-20T09:41:22Z",
@@ -6269,12 +6289,12 @@
    "vernacular": "český znakový jazyk"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T09:49:25Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T09:49:25Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T13:17:22Z",
    "code": "G",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -6286,9 +6306,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T09:49:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T10:17:06Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "el",
    "name": "Greek",
    "published_at": "2026-09-20T09:49:12Z",
@@ -6301,12 +6321,12 @@
    "vernacular": "Ελληνική"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T09:54:11Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T09:54:11Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T13:17:22Z",
    "code": "V",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -6318,9 +6338,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T09:54:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T10:17:06Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "sk",
    "name": "Slovak",
    "published_at": "2026-09-20T09:54:02Z",
@@ -6331,6 +6351,38 @@
    "title": "Aktuálne informácie od vedúceho zboru (č. 6/2026)",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=V",
    "vernacular": "slovenčina"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "O",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T13:07:55Z",
+   "files_at": "2026-09-20T13:07:55Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T13:07:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T13:17:22Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nl",
+   "name": "Dutch",
+   "published_at": "2026-09-20T13:07:55Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T13:07:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Besturende Lichaam update 2026 nr. 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=O",
+   "vernacular": "Nederlands"
   }
  ],
  "removed": [],
@@ -6340,17 +6392,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 45,
-  "added_4h": 7,
-  "catalog_count": 52,
-  "catalog_lag": 3,
-  "catalog_percent": 11.6,
-  "days_since_release": 1.91,
-  "pending_count": 394,
-  "percent": 12.2,
-  "published_count": 55,
-  "publisher_percent": 69.2,
+  "added_1h": 1,
+  "added_24h": 42,
+  "added_4h": 5,
+  "catalog_count": 55,
+  "catalog_lag": 1,
+  "catalog_percent": 12.2,
+  "days_since_release": 1.97,
+  "pending_count": 393,
+  "percent": 12.5,
+  "published_count": 56,
+  "publisher_percent": 69.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
