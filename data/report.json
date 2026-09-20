@@ -285,21 +285,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 4,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 4
  },
  "counts": {
   "api_times": 21,
-  "awaiting_catalogue": 3,
+  "awaiting_catalogue": 4,
   "catalogued": 70,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 51,
+  "file_times": 52,
   "observed_times": 0,
-  "sign_languages": 13
+  "sign_languages": 14
  },
  "events": [
   {
@@ -988,13 +988,20 @@
      "in_catalog": false,
      "name": "Ewe",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-20T19:51:13Z",
+     "code": "JSL",
+     "in_catalog": false,
+     "name": "Japanese Sign Language",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 73,
+   "count_after": 74,
    "t": "2026-09-20T19:00:00Z"
   }
  ],
- "generated": "2026-09-20T19:47:56Z",
+ "generated": "2026-09-20T20:18:18Z",
  "history": [
   {
    "count": 1,
@@ -1287,6 +1294,10 @@
   {
    "count": 73,
    "t": "2026-09-20T19:46:45Z"
+  },
+  {
+   "count": 74,
+   "t": "2026-09-20T19:51:13Z"
   }
  ],
  "integrity": {
@@ -1300,13 +1311,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 73,
+  "files_count": 74,
   "last_full_verification": "2026-09-20T08:47:48Z",
   "listing_count": 70,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-20T19:47:56Z",
+ "last_checked": "2026-09-20T20:18:18Z",
  "pending": [
   {
    "code": "ABB",
@@ -2495,15 +2506,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Jamaican Sign Language"
-  },
-  {
-   "code": "JSL",
-   "direction": "ltr",
-   "locale": "jsl",
-   "name": "Japanese Sign Language",
-   "script": "JAPANESE",
-   "sign": true,
-   "vernacular": "日本手話"
   },
   {
    "code": "JA",
@@ -7068,6 +7070,38 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=EW",
    "vernacular": "Eʋegbe"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "JSL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T19:51:13Z",
+   "files_at": "2026-09-20T19:51:13Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T19:51:13Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T20:18:18Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "jsl",
+   "name": "Japanese Sign Language",
+   "published_at": "2026-09-20T19:51:13Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T19:51:13Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "JAPANESE",
+   "sign": true,
+   "title": "2026 統治体からの話（6）",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=JSL",
+   "vernacular": "日本手話"
   }
  ],
  "removed": [],
@@ -7077,16 +7111,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 4,
-  "added_24h": 33,
-  "added_4h": 9,
+  "added_1h": 3,
+  "added_24h": 34,
+  "added_4h": 8,
   "catalog_count": 70,
-  "catalog_lag": 3,
+  "catalog_lag": 4,
   "catalog_percent": 15.6,
-  "days_since_release": 2.24,
-  "pending_count": 376,
-  "percent": 16.3,
-  "published_count": 73,
+  "days_since_release": 2.26,
+  "pending_count": 375,
+  "percent": 16.5,
+  "published_count": 74,
   "publisher_percent": 74.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
