@@ -197,19 +197,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
-  "offset": 2,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 19,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 47,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 27,
+  "file_times": 28,
   "observed_times": 0,
   "sign_languages": 6
  },
@@ -656,9 +656,22 @@
    ],
    "count_after": 47,
    "t": "2026-09-19T23:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-20T07:14:39Z",
+     "code": "PJN",
+     "in_catalog": false,
+     "name": "Punjabi (Shahmukhi)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 48,
+   "t": "2026-09-20T07:00:00Z"
   }
  ],
- "generated": "2026-09-20T06:46:48Z",
+ "generated": "2026-09-20T07:16:50Z",
  "history": [
   {
    "count": 1,
@@ -847,6 +860,10 @@
   {
    "count": 47,
    "t": "2026-09-19T23:59:05Z"
+  },
+  {
+   "count": 48,
+   "t": "2026-09-20T07:14:39Z"
   }
  ],
  "integrity": {
@@ -860,13 +877,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": null,
-  "files_count": 47,
+  "files_count": 48,
   "last_full_verification": "2026-09-19T08:46:04Z",
   "listing_count": 47,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-20T06:46:48Z",
+ "last_checked": "2026-09-20T07:16:50Z",
  "pending": [
   {
    "code": "ABB",
@@ -3461,15 +3478,6 @@
    "vernacular": "Língua Gestual Portuguesa"
   },
   {
-   "code": "PJN",
-   "direction": "rtl",
-   "locale": "pnb",
-   "name": "Punjabi (Shahmukhi)",
-   "script": "URDU",
-   "sign": false,
-   "vernacular": "پنجابی (شاہ مُکھی)"
-  },
-  {
    "code": "LSQ",
    "direction": "ltr",
    "locale": "fcs",
@@ -6021,6 +6029,38 @@
    "title": "Видео ",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KHA",
    "vernacular": "монгол"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "PJN",
+   "direction": "rtl",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T07:14:39Z",
+   "files_at": "2026-09-20T07:14:39Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T07:14:39Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T07:16:50Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "pnb",
+   "name": "Punjabi (Shahmukhi)",
+   "published_at": "2026-09-20T07:14:39Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T07:14:39Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "URDU",
+   "sign": false,
+   "title": "2026‏ لئی گورننگ باڈی وَلّوں تازہ خبر—نمبر 6‏",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=PJN",
+   "vernacular": "پنجابی (شاہ مُکھی)"
   }
  ],
  "removed": [],
@@ -6030,16 +6070,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 42,
-  "added_4h": 0,
+  "added_1h": 1,
+  "added_24h": 43,
+  "added_4h": 1,
   "catalog_count": 47,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 10.5,
-  "days_since_release": 1.7,
-  "pending_count": 402,
-  "percent": 10.5,
-  "published_count": 47,
+  "days_since_release": 1.72,
+  "pending_count": 401,
+  "percent": 10.7,
+  "published_count": 48,
   "publisher_percent": 68.5,
   "publisher_percent_ceiling": 99.2,
   "target": 449
