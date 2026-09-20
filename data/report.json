@@ -282,19 +282,35 @@
   {
    "count": 70,
    "t": "2026-09-20T18:57:43Z"
+  },
+  {
+   "count": 71,
+   "t": "2026-09-20T19:15:13Z"
+  },
+  {
+   "count": 72,
+   "t": "2026-09-20T19:42:08Z"
+  },
+  {
+   "count": 73,
+   "t": "2026-09-20T19:46:55Z"
+  },
+  {
+   "count": 74,
+   "t": "2026-09-20T19:51:24Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 21,
-  "awaiting_catalogue": 4,
-  "catalogued": 70,
+  "awaiting_catalogue": 0,
+  "catalogued": 74,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 52,
@@ -971,28 +987,28 @@
     {
      "at": "2026-09-20T19:15:04Z",
      "code": "CR",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Haitian Creole",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-20T19:41:14Z",
      "code": "FID",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Finnish Sign Language",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-20T19:46:45Z",
      "code": "EW",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Ewe",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-20T19:51:13Z",
      "code": "JSL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Japanese Sign Language",
      "source": "file_estimated"
     }
@@ -1001,7 +1017,7 @@
    "t": "2026-09-20T19:00:00Z"
   }
  ],
- "generated": "2026-09-20T21:36:53Z",
+ "generated": "2026-09-20T22:18:43Z",
  "history": [
   {
    "count": 1,
@@ -1313,11 +1329,11 @@
   "file_drift_count": 4,
   "files_count": 74,
   "last_full_verification": "2026-09-20T08:47:48Z",
-  "listing_count": 70,
+  "listing_count": 74,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-20T21:36:53Z",
+ "last_checked": "2026-09-20T22:18:43Z",
  "pending": [
   {
    "code": "ABB",
@@ -6973,12 +6989,12 @@
    "vernacular": "lengua de señas cubana"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T19:15:13Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T19:15:13Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T22:18:43Z",
    "code": "CR",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -6991,9 +7007,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T19:15:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T19:18:29Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ht",
    "name": "Haitian Creole",
    "published_at": "2026-09-20T19:15:04Z",
@@ -7006,12 +7022,12 @@
    "vernacular": "Kreyòl ayisyen"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T19:42:08Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T19:42:08Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T22:18:43Z",
    "code": "FID",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7024,9 +7040,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T19:41:14Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T19:47:56Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "fse",
    "name": "Finnish Sign Language",
    "published_at": "2026-09-20T19:41:14Z",
@@ -7039,12 +7055,12 @@
    "vernacular": "suomalainen viittomakieli"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T19:46:55Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T19:46:55Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T22:18:43Z",
    "code": "EW",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7057,9 +7073,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T19:46:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T19:47:56Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ee",
    "name": "Ewe",
    "published_at": "2026-09-20T19:46:45Z",
@@ -7072,12 +7088,12 @@
    "vernacular": "Eʋegbe"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T19:51:24Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T19:51:24Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-20T22:18:43Z",
    "code": "JSL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7089,9 +7105,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T19:51:13Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T20:18:18Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "jsl",
    "name": "Japanese Sign Language",
    "published_at": "2026-09-20T19:51:13Z",
@@ -7112,12 +7128,12 @@
  },
  "stats": {
   "added_1h": 0,
-  "added_24h": 32,
-  "added_4h": 7,
-  "catalog_count": 70,
-  "catalog_lag": 4,
-  "catalog_percent": 15.6,
-  "days_since_release": 2.32,
+  "added_24h": 29,
+  "added_4h": 6,
+  "catalog_count": 74,
+  "catalog_lag": 0,
+  "catalog_percent": 16.5,
+  "days_since_release": 2.35,
   "pending_count": 375,
   "percent": 16.5,
   "published_count": 74,
