@@ -671,7 +671,7 @@
    "t": "2026-09-20T07:00:00Z"
   }
  ],
- "generated": "2026-09-20T07:27:45Z",
+ "generated": "2026-09-20T08:16:57Z",
  "history": [
   {
    "count": 1,
@@ -869,8 +869,6 @@
  "integrity": {
   "api_reset_detected": false,
   "api_reset_detected_at": null,
-  "awaiting_catalogue": 1,
-  "bulk_rewrite_suspected": false,
   "catalogue_unavailable": null,
   "drift_count": 0,
   "drifted": [],
@@ -879,49 +877,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "file_drifted": [
-   {
-    "code": "X",
-    "in_use": "2026-09-18T20:53:43Z",
-    "in_use_source": "api",
-    "live": "2026-09-19T16:24:02Z",
-    "name": "German",
-    "pinned": "2026-09-18T20:53:31Z"
-   },
-   {
-    "code": "KA",
-    "in_use": "2026-09-19T08:16:53Z",
-    "in_use_source": "api",
-    "live": "2026-09-20T05:17:27Z",
-    "name": "Kannada",
-    "pinned": "2026-09-19T08:16:43Z"
-   },
-   {
-    "code": "LSB",
-    "in_use": "2026-09-19T14:03:14Z",
-    "in_use_source": "api",
-    "live": "2026-09-19T19:00:30Z",
-    "name": "Brazilian Sign Language",
-    "pinned": "2026-09-19T12:39:56Z"
-   },
-   {
-    "code": "QII",
-    "in_use": "2026-09-19T23:44:40Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-20T00:31:46Z",
-    "name": "Quichua (Imbabura)",
-    "pinned": "2026-09-19T23:44:40Z"
-   }
-  ],
   "files_count": 48,
   "last_full_verification": "2026-09-20T07:27:45Z",
   "listing_count": 47,
   "listing_lag": [],
-  "missing_items": [],
-  "pub_media_unavailable": null,
-  "verified_count": 48
+  "pub_media_unavailable": null
  },
- "last_checked": "2026-09-20T07:16:50Z",
+ "last_checked": "2026-09-20T08:16:57Z",
  "pending": [
   {
    "code": "ABB",
@@ -6108,13 +6070,13 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 43,
+  "added_1h": 0,
+  "added_24h": 40,
   "added_4h": 1,
   "catalog_count": 47,
   "catalog_lag": 1,
   "catalog_percent": 10.5,
-  "days_since_release": 1.72,
+  "days_since_release": 1.76,
   "pending_count": 401,
   "percent": 10.7,
   "published_count": 48,
