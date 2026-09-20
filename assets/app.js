@@ -293,7 +293,9 @@
 
   /* Notices are written for a reader who is here for the number, not for the
      plumbing: anything that could make the count wrong gets said plainly, and
-     the rest stays in data/report.json for whoever wants it. */
+     the rest stays in data/report.json for whoever wants it. They sit at the
+     foot of the page, just above the footer rule, so the caveats are there for
+     anyone who goes looking without greeting everyone else first. */
   function renderIntegrity(report) {
     var box = $("integrity");
     var info = report.integrity || {};
