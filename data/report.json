@@ -197,19 +197,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 4,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 4
  },
  "counts": {
   "api_times": 19,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 4,
   "catalogued": 47,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 28,
+  "file_times": 31,
   "observed_times": 0,
   "sign_languages": 6
  },
@@ -669,9 +669,36 @@
    ],
    "count_after": 48,
    "t": "2026-09-20T07:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-20T08:21:02Z",
+     "code": "UD",
+     "in_catalog": false,
+     "name": "Urdu",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-20T08:44:57Z",
+     "code": "CH",
+     "in_catalog": false,
+     "name": "Chinese Mandarin (Traditional)",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-20T08:45:54Z",
+     "code": "CHS",
+     "in_catalog": false,
+     "name": "Chinese Mandarin (Simplified)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 51,
+   "t": "2026-09-20T08:00:00Z"
   }
  ],
- "generated": "2026-09-20T08:16:57Z",
+ "generated": "2026-09-20T08:46:59Z",
  "history": [
   {
    "count": 1,
@@ -864,6 +891,18 @@
   {
    "count": 48,
    "t": "2026-09-20T07:14:39Z"
+  },
+  {
+   "count": 49,
+   "t": "2026-09-20T08:21:02Z"
+  },
+  {
+   "count": 50,
+   "t": "2026-09-20T08:44:57Z"
+  },
+  {
+   "count": 51,
+   "t": "2026-09-20T08:45:54Z"
   }
  ],
  "integrity": {
@@ -877,13 +916,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 48,
+  "files_count": 51,
   "last_full_verification": "2026-09-20T07:27:45Z",
   "listing_count": 47,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-20T08:16:57Z",
+ "last_checked": "2026-09-20T08:46:59Z",
  "pending": [
   {
    "code": "ABB",
@@ -1361,24 +1400,6 @@
    "script": "CHINESE",
    "sign": false,
    "vernacular": "中文繁體（廣東話）"
-  },
-  {
-   "code": "CHS",
-   "direction": "ltr",
-   "locale": "cmn-hans",
-   "name": "Chinese Mandarin (Simplified)",
-   "script": "CHINESE",
-   "sign": false,
-   "vernacular": "中文简体（普通话）"
-  },
-  {
-   "code": "CH",
-   "direction": "ltr",
-   "locale": "cmn-hant",
-   "name": "Chinese Mandarin (Traditional)",
-   "script": "CHINESE",
-   "sign": false,
-   "vernacular": "中文繁體（國語）"
   },
   {
    "code": "CSL",
@@ -4288,15 +4309,6 @@
    "vernacular": "Umbundu"
   },
   {
-   "code": "UD",
-   "direction": "rtl",
-   "locale": "ur",
-   "name": "Urdu",
-   "script": "URDU",
-   "sign": false,
-   "vernacular": "اُردو"
-  },
-  {
    "code": "UR",
    "direction": "ltr",
    "locale": "urh",
@@ -6061,6 +6073,102 @@
    "title": "2026‏ لئی گورننگ باڈی وَلّوں تازہ خبر—نمبر 6‏",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=PJN",
    "vernacular": "پنجابی (شاہ مُکھی)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "UD",
+   "direction": "rtl",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T08:21:02Z",
+   "files_at": "2026-09-20T08:21:02Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T08:21:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T08:46:59Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ur",
+   "name": "Urdu",
+   "published_at": "2026-09-20T08:21:02Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T08:21:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "URDU",
+   "sign": false,
+   "title": "2026ء میں گورننگ باڈی کی طرف سے  اپ‌ڈیٹ (‏نمبر 6)‏",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=UD",
+   "vernacular": "اُردو"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CH",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T08:44:57Z",
+   "files_at": "2026-09-20T08:44:57Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T08:44:57Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T08:46:59Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "cmn-hant",
+   "name": "Chinese Mandarin (Traditional)",
+   "published_at": "2026-09-20T08:44:57Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T08:44:57Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CHINESE",
+   "sign": false,
+   "title": "2026來自中央長老團的報導（六）",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CH",
+   "vernacular": "中文繁體（國語）"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CHS",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T08:45:54Z",
+   "files_at": "2026-09-20T08:45:54Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T08:45:54Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T08:46:59Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "cmn-hans",
+   "name": "Chinese Mandarin (Simplified)",
+   "published_at": "2026-09-20T08:45:54Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T08:45:54Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CHINESE",
+   "sign": false,
+   "title": "2026来自中央长老团的报导（六）",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CHS",
+   "vernacular": "中文简体（普通话）"
   }
  ],
  "removed": [],
@@ -6070,17 +6178,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 40,
-  "added_4h": 1,
+  "added_1h": 3,
+  "added_24h": 43,
+  "added_4h": 4,
   "catalog_count": 47,
-  "catalog_lag": 1,
+  "catalog_lag": 4,
   "catalog_percent": 10.5,
-  "days_since_release": 1.76,
-  "pending_count": 401,
-  "percent": 10.7,
-  "published_count": 48,
-  "publisher_percent": 68.5,
+  "days_since_release": 1.78,
+  "pending_count": 398,
+  "percent": 11.4,
+  "published_count": 51,
+  "publisher_percent": 68.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
