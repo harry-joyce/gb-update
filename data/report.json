@@ -301,21 +301,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 21,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 74,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 52,
+  "file_times": 53,
   "observed_times": 0,
-  "sign_languages": 14
+  "sign_languages": 15
  },
  "events": [
   {
@@ -1015,9 +1015,22 @@
    ],
    "count_after": 74,
    "t": "2026-09-20T19:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-20T22:44:18Z",
+     "code": "ASL",
+     "in_catalog": false,
+     "name": "American Sign Language",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 75,
+   "t": "2026-09-20T22:00:00Z"
   }
  ],
- "generated": "2026-09-20T22:18:43Z",
+ "generated": "2026-09-20T22:48:10Z",
  "history": [
   {
    "count": 1,
@@ -1314,6 +1327,10 @@
   {
    "count": 74,
    "t": "2026-09-20T19:51:13Z"
+  },
+  {
+   "count": 75,
+   "t": "2026-09-20T22:44:18Z"
   }
  ],
  "integrity": {
@@ -1327,13 +1344,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 74,
+  "files_count": 75,
   "last_full_verification": "2026-09-20T08:47:48Z",
   "listing_count": 74,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-20T22:18:43Z",
+ "last_checked": "2026-09-20T22:48:10Z",
  "pending": [
   {
    "code": "ABB",
@@ -1415,15 +1432,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Alur"
-  },
-  {
-   "code": "ASL",
-   "direction": "ltr",
-   "locale": "ase",
-   "name": "American Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "American Sign Language"
   },
   {
    "code": "LAS",
@@ -7118,6 +7126,39 @@
    "title": "2026 統治体からの話（6）",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=JSL",
    "vernacular": "日本手話"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "ASL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-20T22:44:18Z",
+   "files_at": "2026-09-20T22:44:18Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T22:44:18Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-20T22:48:10Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ase",
+   "name": "American Sign Language",
+   "published_at": "2026-09-20T22:44:18Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-20T22:44:18Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ASL",
+   "vernacular": "American Sign Language"
   }
  ],
  "removed": [],
@@ -7127,17 +7168,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 29,
+  "added_1h": 1,
+  "added_24h": 30,
   "added_4h": 6,
   "catalog_count": 74,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 16.5,
-  "days_since_release": 2.35,
-  "pending_count": 375,
-  "percent": 16.5,
-  "published_count": 74,
-  "publisher_percent": 74.2,
+  "days_since_release": 2.37,
+  "pending_count": 374,
+  "percent": 16.7,
+  "published_count": 75,
+  "publisher_percent": 74.3,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
