@@ -425,19 +425,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 25,
-  "awaiting_catalogue": 2,
+  "awaiting_catalogue": 3,
   "catalogued": 105,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 81,
+  "file_times": 82,
   "observed_times": 0,
   "sign_languages": 21
  },
@@ -1462,13 +1462,20 @@
      "in_catalog": false,
      "name": "Nyungwe",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-21T18:57:14Z",
+     "code": "SR",
+     "in_catalog": false,
+     "name": "Sranantongo",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 107,
+   "count_after": 108,
    "t": "2026-09-21T18:00:00Z"
   }
  ],
- "generated": "2026-09-21T18:41:27Z",
+ "generated": "2026-09-21T19:11:33Z",
  "history": [
   {
    "count": 1,
@@ -1897,6 +1904,10 @@
   {
    "count": 107,
    "t": "2026-09-21T18:32:21Z"
+  },
+  {
+   "count": 108,
+   "t": "2026-09-21T18:57:14Z"
   }
  ],
  "integrity": {
@@ -1910,13 +1921,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 107,
+  "files_count": 108,
   "last_full_verification": "2026-09-21T09:16:03Z",
   "listing_count": 105,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T18:41:27Z",
+ "last_checked": "2026-09-21T19:11:33Z",
  "pending": [
   {
    "code": "ABB",
@@ -4482,15 +4493,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "lengua de signos española"
-  },
-  {
-   "code": "SR",
-   "direction": "ltr",
-   "locale": "srn",
-   "name": "Sranantongo",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Sranantongo"
   },
   {
    "code": "ZS",
@@ -8491,6 +8493,38 @@
    "title": "Vidiyo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NYU",
    "vernacular": "Cinyungwe"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SR",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T18:57:14Z",
+   "files_at": "2026-09-21T18:57:14Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T18:57:14Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T19:11:33Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "srn",
+   "name": "Sranantongo",
+   "published_at": "2026-09-21T18:57:14Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T18:57:14Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Update nr. 6 fu a Tiri Skin 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SR",
+   "vernacular": "Sranantongo"
   }
  ],
  "removed": [],
@@ -8500,16 +8534,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
+  "added_1h": 2,
   "added_24h": 38,
-  "added_4h": 7,
+  "added_4h": 6,
   "catalog_count": 105,
-  "catalog_lag": 2,
+  "catalog_lag": 3,
   "catalog_percent": 23.4,
-  "days_since_release": 3.2,
-  "pending_count": 342,
-  "percent": 23.8,
-  "published_count": 107,
+  "days_since_release": 3.22,
+  "pending_count": 341,
+  "percent": 24.1,
+  "published_count": 108,
   "publisher_percent": 78.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
