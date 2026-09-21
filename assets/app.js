@@ -133,7 +133,11 @@
      carries a copy of the menu that could drift out of step with the other. */
   var UPDATES = [
     { file: "index.html", badge: "#6", short: "Update #6", note: "Tracking now" },
-    { file: "update-5.html", badge: "#5", short: "Update #5", note: "Archive" }
+    { file: "update-5.html", badge: "#5", short: "Update #5", note: "Archive" },
+    { file: "update-4.html", badge: "#4", short: "Update #4", note: "Archive" },
+    { file: "update-3.html", badge: "#3", short: "Update #3", note: "Archive" },
+    { file: "update-2.html", badge: "#2", short: "Update #2", note: "Archive" },
+    { file: "update-1.html", badge: "#1", short: "Update #1", note: "Archive" }
   ];
 
   /* The page being served. A directory URL is index.html -- which is how
@@ -582,6 +586,28 @@
     });
   }
 
+  /* Where to cut a long-tailed archive axis.
+     A language that catches up on an old update months later stretches the
+     axis until the real rollout is an unreadable spike: Update #3's last
+     language arrived 139 days after publication, four months behind the other
+     450, leaving the whole rollout in the left 8% of the plot. So when the
+     straggler tail is longer than the entire rollout that precedes it, the
+     axis stops at the rollout and the remainder is stated instead of drawn.
+     Returns null when the span is honest enough to plot whole, which is the
+     normal case -- Update #5 and #4 are unaffected. */
+  function clipPoint(points) {
+    if (points.length < 3) { return null; }
+    var first = points[0].t;
+    var last = points[points.length - 1].t;
+    var threshold = points[points.length - 1].count * 0.99;
+    var bulkEnd = last;
+    for (var i = 0; i < points.length; i++) {
+      if (points[i].count >= threshold) { bulkEnd = points[i].t; break; }
+    }
+    if (bulkEnd <= first) { return null; }
+    return (last - bulkEnd) > (bulkEnd - first) ? bulkEnd : null;
+  }
+
   function drawChart(report) {
     var svg = $("chart");
     var target = (report.baseline || {}).count || null;
@@ -616,16 +642,28 @@
          translation materials go out before any vernacular comes back -- so
          the domain has to stretch to reach it or the marker falls off the
          chart. A little padding past it keeps its rule off the axis. */
-      tStart = points[0].t;
-      for (var mi = 0; mi < markers.length; mi++) {
-        if (markers[mi].t < tStart) { tStart = markers[mi].t; }
+      var requestedStart = new Date((report.archive || {}).chart_start).getTime();
+      tStart = !isNaN(requestedStart) ? requestedStart : points[0].t;
+      if (isNaN(requestedStart)) {
+        for (var mi = 0; mi < markers.length; mi++) {
+          if (markers[mi].t < tStart) { tStart = markers[mi].t; }
+        }
+        if (tStart < points[0].t) { tStart -= (tEnd - tStart) * 0.035; }
       }
-      if (tStart < points[0].t) { tStart -= (tEnd - tStart) * 0.035; }
+      var clipT = isArchive ? clipPoint(points) : null;
+      if (clipT) { tEnd = clipT + (clipT - tStart) * 0.05; }
     }
     if (tEnd - tStart < 36e5) { tStart = tEnd - 36e5; }
     var fromStart = tStart <= points[0].t;
 
     var visible = clipSeries(points, tStart, fromStart);
+    /* Anything past the cut is not drawn; its count is reported at the edge so
+       the chart never appears to contradict the headline figure. */
+    var finalCount = points[points.length - 1].count;
+    var lastShownT = points[points.length - 1].t;
+    visible = visible.filter(function (p) { return p.t <= tEnd; });
+    if (!visible.length) { visible = [{ t: tStart, count: 0 }]; }
+    var omitted = finalCount - visible[visible.length - 1].count;
 
     /* ---- vertical scale ---- */
     var counts = visible.map(function (p) { return p.count; });
@@ -753,6 +791,16 @@
       class: "end-label", x: x(last.t) + 10, y: endY
     }).textContent = last.count;
 
+    /* Say what the cut left out, right where the axis stops. */
+    if (omitted > 0) {
+      add("text", {
+        class: "axis-note", x: x(last.t) + 10, y: endY + 15
+      }).textContent = "+" + omitted + " later";
+      add("text", {
+        class: "axis-note", x: W - pad.r, y: H - pad.b + 31, "text-anchor": "end"
+      }).textContent = "to " + fmtUTCDate(lastShownT);
+    }
+
     desc.textContent =
       "Line chart of cumulative languages" +
       (fromStart
@@ -770,7 +818,12 @@
         return m.t >= tStart && m.t <= tEnd;
       }).map(function (m) {
         return " " + m.label + " is marked at " + fmtUTC(m.t, true) + ".";
-      }).join("");
+      }).join("") +
+      (omitted > 0
+        ? " A further " + plural(omitted, "language", "languages") +
+          " arrived after the period shown, the last on " +
+          fmtUTCDate(lastShownT) + ", reaching " + finalCount + " in total."
+        : "");
 
     /* hover layer */
     var cross = add("line", { class: "crosshair", y1: pad.t, y2: H - pad.b, x1: 0, x2: 0, opacity: 0 });

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Language availability archive — 2026 Governing Body Update #3</title>
+<script>
+  // Applied before first paint so neither the theme nor the menu width flashes.
+  try {
+    var t = localStorage.getItem("theme");
+    if (t === "light" || t === "dark") { document.documentElement.setAttribute("data-theme", t); }
+    // Only an explicit choice is applied here. With neither class the
+    // stylesheet picks the default from a media query -- expanded on a wide
+    // screen, collapsed on a narrow one. Do not test window.innerWidth: it is
+    // 0 this early, before any layout.
+    var r = localStorage.getItem("rail");
+    if (r === "collapsed") { document.documentElement.className += " rail-collapsed"; }
+    else if (r === "open") { document.documentElement.className += " rail-open"; }
+  } catch (e) {}
+</script>
+<meta name="description" content="A reconstruction of how the 2026 Governing Body Update #3 rolled out across 451 languages, recovered from jw.org after the fact." />
+<meta name="color-scheme" content="light dark" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-report="data/report-1112024050.json">
+<div class="wrap">
+
+  <header class="masthead">
+    <div>
+      <p class="eyebrow">Language availability archive</p>
+      <h1 id="update-title">2026 Governing Body Update #3</h1>
+      <p class="sub" id="update-meta"></p>
+    </div>
+    <div class="theme-switch" role="group" aria-label="Colour theme">
+      <button type="button" data-theme-choice="light" aria-pressed="false">Light</button>
+      <button type="button" data-theme-choice="dark" aria-pressed="false">Dark</button>
+      <button type="button" data-theme-choice="system" aria-pressed="true">System</button>
+    </div>
+  </header>
+
+  <div id="error" class="err" hidden></div>
+
+  <main id="main" hidden>
+
+    <section class="card" aria-labelledby="hero-heading">
+      <div class="hero">
+        <h2 id="hero-heading" class="eyebrow" style="margin-bottom:12px">Languages reached</h2>
+        <div class="hero-figure">
+          <span class="hero-value" id="hero-value">—</span>
+          <span class="hero-of" id="hero-of"></span>
+          <span class="hero-pct" id="hero-pct"></span>
+        </div>
+        <div class="meter" role="img" aria-labelledby="meter-caption">
+          <div class="meter-fill" id="meter-fill" style="width:0%"></div>
+        </div>
+        <p class="meter-caption" id="meter-caption"></p>
+      </div>
+      <div class="tiles" id="tiles"></div>
+    </section>
+
+    <section class="card" aria-labelledby="chart-heading">
+      <div class="card-head">
+        <h2 class="card-title" id="chart-heading">Languages prepared over time</h2>
+        <ul class="chart-dates" id="chart-dates" hidden></ul>
+      </div>
+      <div class="chart-body">
+        <svg class="chart-svg" id="chart" role="img" aria-labelledby="chart-heading chart-desc">
+          <desc id="chart-desc"></desc>
+        </svg>
+        <div class="tooltip" id="tooltip" role="status" aria-live="off"></div>
+      </div>
+    </section>
+
+    <div class="tabs" role="tablist" aria-label="Report views">
+      <button class="tab" role="tab" id="tab-published" aria-controls="panel-published" aria-selected="true">
+        Languages <span class="badge" id="count-published"></span>
+      </button>
+      <button class="tab" role="tab" id="tab-pending" aria-controls="panel-pending" aria-selected="false">
+        Never received <span class="badge" id="count-pending"></span>
+      </button>
+      <button class="tab" role="tab" id="tab-activity" aria-controls="panel-activity" aria-selected="false">
+        Activity <span class="badge" id="count-activity"></span>
+      </button>
+    </div>
+
+    <section class="panel" role="tabpanel" id="panel-published" aria-labelledby="tab-published">
+      <div class="controls">
+        <input class="search" id="search-published" type="search" placeholder="Search language, code, or title…" aria-label="Search languages" />
+        <span class="result-count" id="result-published"></span>
+      </div>
+      <div class="table-scroll">
+        <table id="table-published">
+          <thead>
+            <tr>
+              <th class="sortable" data-sort="name" scope="col">Language <span class="arrow">↑</span></th>
+              <th scope="col">Code</th>
+              <th class="sortable" data-sort="published_at" scope="col">Prepared <span class="arrow">↑</span></th>
+              <th scope="col">Title in that language</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <p class="empty" id="empty-published" hidden>No languages match that search.</p>
+      </div>
+      <p class="card-note" id="published-legend"></p>
+    </section>
+
+    <section class="panel" role="tabpanel" id="panel-pending" aria-labelledby="tab-pending" hidden>
+      <p class="card-note" id="pending-note" style="margin:0 0 12px"></p>
+      <div class="controls">
+        <input class="search" id="search-pending" type="search" placeholder="Search pending languages…" aria-label="Search pending languages" />
+        <span class="result-count" id="result-pending"></span>
+      </div>
+      <div class="table-scroll">
+        <table id="table-pending">
+          <thead>
+            <tr>
+              <th class="sortable" data-sort="name" scope="col">Language <span class="arrow">↑</span></th>
+              <th scope="col">Native name</th>
+              <th scope="col">Code</th>
+              <th class="sortable" data-sort="script" scope="col">Script <span class="arrow">↑</span></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <p class="empty" id="empty-pending" hidden>Every language from the baseline received this update.</p>
+      </div>
+    </section>
+
+    <section class="panel" role="tabpanel" id="panel-activity" aria-labelledby="tab-activity" hidden>
+      <div class="activity-head">
+        <div class="seg" role="group" aria-label="Group publishes by">
+          <span class="seg-label">Group</span>
+          <button type="button" data-activity-group="hour" aria-pressed="true">Hour</button>
+          <button type="button" data-activity-group="day" aria-pressed="false">Day</button>
+        </div>
+        <p class="card-note" id="activity-note"></p>
+      </div>
+      <ul class="feed" id="feed"></ul>
+      <p class="empty" id="empty-activity" hidden>No changes recorded yet.</p>
+    </section>
+
+    <div id="integrity" class="notice" hidden></div>
+
+    <footer>
+      <p id="footer-source"></p>
+      <p id="footer-method"></p>
+      <p id="footer-checked"></p>
+    </footer>
+
+  </main>
+</div>
+<script src="assets/app.js"></script>
+</body>
+</html>

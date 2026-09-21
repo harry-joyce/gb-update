@@ -28,11 +28,12 @@ useless on a finished item:
 
 Validated three ways before being trusted. Where firstPublished is *not* the
 bulk value it is genuine, and the guid matches it to the second. Where a
-language's files have never been replaced the guid sits 10-32 seconds before
-the first file write, which is the expected order: the record is created, then
-its files are written. And against Update #6 -- which the live tracker watched
-in real time -- no guid postdates the tracker's own first sighting, in any of
-the languages checked.
+language's files have never been replaced the record is created a few seconds
+*after* its files land -- a median of 13 seconds, and later in all 336 of
+Update #5's un-re-transcoded languages without a single exception, which is a
+tighter relationship than anything the other fields offer. And against Update
+#6 -- which the live tracker watched in real time -- no guid postdates the
+tracker's own first sighting, in any of the languages checked.
 
 WHAT THE GUID IS NOT is a public-availability time. Records are created as each
 vernacular is *ingested*, which on a scheduled release runs days ahead of

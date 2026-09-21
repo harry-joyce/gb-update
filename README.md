@@ -222,10 +222,10 @@ datetime.fromtimestamp(int(guid[:8], 16), timezone.utc)
 
 No rewrite touches it. Where `firstPublished` is *not* the bulk value it is
 genuine, and the guid matches it to the second; where a language's files have
-never been replaced the guid sits 10–32 seconds before the first file write,
-which is the right order — the record is created, then its files are written.
-Checked against Update #6, which the tracker watched live, no guid postdates
-the tracker's own first sighting.
+never been replaced, the record is created a few seconds **after** its files
+land — a median of 13 seconds, and later in all 336 of Update #5's
+un-re-transcoded languages with no exceptions. Checked against Update #6, which
+the tracker watched live, no guid postdates the tracker's own first sighting.
 
 What the guid is **not** is a public-availability time. Records are created as
 each vernacular is taken in, and on a scheduled release that runs days ahead of
@@ -349,7 +349,7 @@ already published in the annual report.
 | Path | Purpose |
 |---|---|
 | `index.html`, `assets/` | The site. Static, dependency-free, reads `data/report.json`. |
-| `update-5.html` | The Update #5 archive. Same renderer, reads `data/report-1112024059.json` via `<body data-report>`. |
+| `update-1.html` … `update-5.html` | The finished-update archives. Same renderer as the live page, each reading its own `data/report-<docid>.json` named on `<body data-report>`. |
 | `scripts/track.py` | The half-hourly check of both signals. Writes `data/report.json`. |
 | `scripts/jw.py` | Shared pub-media and media-catalogue fetching and parsing. |
 | `scripts/verify_times.py` | Daily: re-reads every timestamp from both APIs and reports drift. Never overwrites. |
