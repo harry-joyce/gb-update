@@ -322,24 +322,48 @@
   {
    "count": 80,
    "t": "2026-09-21T06:52:16Z"
+  },
+  {
+   "count": 81,
+   "t": "2026-09-21T07:27:13Z"
+  },
+  {
+   "count": 82,
+   "t": "2026-09-21T07:39:29Z"
+  },
+  {
+   "count": 83,
+   "t": "2026-09-21T08:03:15Z"
+  },
+  {
+   "count": 84,
+   "t": "2026-09-21T08:33:51Z"
+  },
+  {
+   "count": 85,
+   "t": "2026-09-21T08:58:35Z"
+  },
+  {
+   "count": 86,
+   "t": "2026-09-21T10:15:19Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 6,
+  "last_checked_count": 1,
   "newly_catalogued": [],
-  "offset": 5,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 6
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 23,
-  "awaiting_catalogue": 6,
-  "catalogued": 80,
+  "awaiting_catalogue": 1,
+  "catalogued": 86,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 62,
+  "file_times": 63,
   "observed_times": 0,
-  "sign_languages": 19
+  "sign_languages": 20
  },
  "events": [
   {
@@ -1089,14 +1113,21 @@
   {
    "added": [
     {
+     "at": "2026-09-21T05:13:31Z",
+     "code": "AUS",
+     "in_catalog": false,
+     "name": "Australian Sign Language",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-21T05:48:16Z",
      "code": "NZS",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "New Zealand Sign Language",
      "source": "file_estimated"
     }
    ],
-   "count_after": 79,
+   "count_after": 80,
    "t": "2026-09-21T05:00:00Z"
   },
   {
@@ -1116,7 +1147,7 @@
      "source": "api"
     }
    ],
-   "count_after": 81,
+   "count_after": 82,
    "t": "2026-09-21T06:00:00Z"
   },
   {
@@ -1124,12 +1155,12 @@
     {
      "at": "2026-09-21T07:39:18Z",
      "code": "LF",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Drehu",
      "source": "file_estimated"
     }
    ],
-   "count_after": 82,
+   "count_after": 83,
    "t": "2026-09-21T07:00:00Z"
   },
   {
@@ -1137,26 +1168,26 @@
     {
      "at": "2026-09-21T08:03:06Z",
      "code": "KO",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Korean",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-21T08:33:42Z",
      "code": "MR",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Marathi",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-21T08:58:26Z",
      "code": "CNS",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Chinese Cantonese (Simplified)",
      "source": "file_estimated"
     }
    ],
-   "count_after": 85,
+   "count_after": 86,
    "t": "2026-09-21T08:00:00Z"
   },
   {
@@ -1164,16 +1195,16 @@
     {
      "at": "2026-09-21T10:15:09Z",
      "code": "TSL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Taiwanese Sign Language",
      "source": "file_estimated"
     }
    ],
-   "count_after": 86,
+   "count_after": 87,
    "t": "2026-09-21T10:00:00Z"
   }
  ],
- "generated": "2026-09-21T10:19:12Z",
+ "generated": "2026-09-21T10:49:14Z",
  "history": [
   {
    "count": 1,
@@ -1489,34 +1520,38 @@
   },
   {
    "count": 79,
-   "t": "2026-09-21T05:48:16Z"
+   "t": "2026-09-21T05:13:31Z"
   },
   {
    "count": 80,
-   "t": "2026-09-21T06:40:55Z"
+   "t": "2026-09-21T05:48:16Z"
   },
   {
    "count": 81,
-   "t": "2026-09-21T06:52:16Z"
+   "t": "2026-09-21T06:40:55Z"
   },
   {
    "count": 82,
-   "t": "2026-09-21T07:39:18Z"
+   "t": "2026-09-21T06:52:16Z"
   },
   {
    "count": 83,
-   "t": "2026-09-21T08:03:06Z"
+   "t": "2026-09-21T07:39:18Z"
   },
   {
    "count": 84,
-   "t": "2026-09-21T08:33:42Z"
+   "t": "2026-09-21T08:03:06Z"
   },
   {
    "count": 85,
-   "t": "2026-09-21T08:58:26Z"
+   "t": "2026-09-21T08:33:42Z"
   },
   {
    "count": 86,
+   "t": "2026-09-21T08:58:26Z"
+  },
+  {
+   "count": 87,
    "t": "2026-09-21T10:15:09Z"
   }
  ],
@@ -1531,13 +1566,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 86,
+  "files_count": 87,
   "last_full_verification": "2026-09-21T09:16:03Z",
-  "listing_count": 80,
+  "listing_count": 86,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T10:19:12Z",
+ "last_checked": "2026-09-21T10:49:14Z",
  "pending": [
   {
    "code": "ABB",
@@ -1700,15 +1735,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Okanisitongo"
-  },
-  {
-   "code": "AUS",
-   "direction": "ltr",
-   "locale": "asf",
-   "name": "Australian Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Auslan (Australian Sign Language)"
   },
   {
    "code": "AP",
@@ -7357,11 +7383,44 @@
   },
   {
    "api_published_at": null,
-   "beyond_baseline": true,
+   "beyond_baseline": false,
    "catalog_at": null,
    "catalog_at_note": null,
    "catalog_at_source": null,
    "catalog_observed": null,
+   "code": "AUS",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T05:13:31Z",
+   "files_at": "2026-09-21T05:13:31Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T05:13:31Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T10:49:14Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "asf",
+   "name": "Australian Sign Language",
+   "published_at": "2026-09-21T05:13:31Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T05:13:31Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AUS",
+   "vernacular": "Auslan (Australian Sign Language)"
+  },
+  {
+   "api_published_at": "2026-09-21T07:27:13Z",
+   "beyond_baseline": true,
+   "catalog_at": "2026-09-21T07:27:13Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T10:49:14Z",
    "code": "NZS",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7373,9 +7432,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T05:48:16Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T07:48:58Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "nzs",
    "name": "New Zealand Sign Language",
    "published_at": "2026-09-21T05:48:16Z",
@@ -7453,12 +7512,12 @@
    "vernacular": "中文繁體（廣東話）"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T07:39:29Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T07:39:29Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T10:49:14Z",
    "code": "LF",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7470,9 +7529,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T07:39:18Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T07:48:58Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "dhv",
    "name": "Drehu",
    "published_at": "2026-09-21T07:39:18Z",
@@ -7485,12 +7544,12 @@
    "vernacular": "Drehu"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T08:03:15Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T08:03:15Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T10:49:14Z",
    "code": "KO",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7502,9 +7561,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T08:03:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T08:19:01Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ko",
    "name": "Korean",
    "published_at": "2026-09-21T08:03:06Z",
@@ -7517,12 +7576,12 @@
    "vernacular": "한국어"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T08:33:51Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T08:33:51Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T10:49:14Z",
    "code": "MR",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7535,9 +7594,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T08:33:42Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T08:49:03Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "mr",
    "name": "Marathi",
    "published_at": "2026-09-21T08:33:42Z",
@@ -7550,12 +7609,12 @@
    "vernacular": "मराठी"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T08:58:35Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T08:58:35Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T10:49:14Z",
    "code": "CNS",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7567,9 +7626,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T08:58:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T09:19:06Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "yue-hans",
    "name": "Chinese Cantonese (Simplified)",
    "published_at": "2026-09-21T08:58:26Z",
@@ -7582,12 +7641,12 @@
    "vernacular": "中文简体（广东话）"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T10:15:19Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T10:15:19Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T10:49:14Z",
    "code": "TSL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7599,9 +7658,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T10:15:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T10:19:12Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "tss",
    "name": "Taiwanese Sign Language",
    "published_at": "2026-09-21T10:15:09Z",
@@ -7622,15 +7681,15 @@
  },
  "stats": {
   "added_1h": 1,
-  "added_24h": 29,
-  "added_4h": 7,
-  "catalog_count": 80,
-  "catalog_lag": 6,
-  "catalog_percent": 17.8,
-  "days_since_release": 2.85,
-  "pending_count": 363,
-  "percent": 19.2,
-  "published_count": 86,
+  "added_24h": 30,
+  "added_4h": 6,
+  "catalog_count": 86,
+  "catalog_lag": 1,
+  "catalog_percent": 19.2,
+  "days_since_release": 2.87,
+  "pending_count": 362,
+  "percent": 19.4,
+  "published_count": 87,
   "publisher_percent": 75.5,
   "publisher_percent_ceiling": 99.2,
   "target": 449
