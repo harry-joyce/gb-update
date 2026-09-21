@@ -313,19 +313,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 22,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 77,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 54,
+  "file_times": 55,
   "observed_times": 0,
   "sign_languages": 17
  },
@@ -1060,9 +1060,22 @@
    ],
    "count_after": 77,
    "t": "2026-09-20T23:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-21T01:54:49Z",
+     "code": "HM",
+     "in_catalog": false,
+     "name": "Hmong (White)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 78,
+   "t": "2026-09-21T01:00:00Z"
   }
  ],
- "generated": "2026-09-21T01:18:23Z",
+ "generated": "2026-09-21T02:18:29Z",
  "history": [
   {
    "count": 1,
@@ -1371,6 +1384,10 @@
   {
    "count": 77,
    "t": "2026-09-20T23:32:49Z"
+  },
+  {
+   "count": 78,
+   "t": "2026-09-21T01:54:49Z"
   }
  ],
  "integrity": {
@@ -1384,13 +1401,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 77,
+  "files_count": 78,
   "last_full_verification": "2026-09-20T08:47:48Z",
   "listing_count": 77,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T01:18:23Z",
+ "last_checked": "2026-09-21T02:18:29Z",
  "pending": [
   {
    "code": "ABB",
@@ -2363,15 +2380,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Hiri Motu"
-  },
-  {
-   "code": "HM",
-   "direction": "ltr",
-   "locale": "hmn",
-   "name": "Hmong (White)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Hmoob Dawb"
   },
   {
    "code": "SHO",
@@ -7246,6 +7254,39 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=JML",
    "vernacular": "Jamaican Sign Language"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "HM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T01:54:49Z",
+   "files_at": "2026-09-21T01:54:49Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T01:54:49Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T02:18:29Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "hmn",
+   "name": "Hmong (White)",
+   "published_at": "2026-09-21T01:54:49Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T01:54:49Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Yeeb Yaj Kiab",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=HM",
+   "vernacular": "Hmoob Dawb"
   }
  ],
  "removed": [],
@@ -7255,16 +7296,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 30,
-  "added_4h": 3,
+  "added_1h": 1,
+  "added_24h": 31,
+  "added_4h": 4,
   "catalog_count": 77,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 17.1,
-  "days_since_release": 2.47,
-  "pending_count": 372,
-  "percent": 17.1,
-  "published_count": 77,
+  "days_since_release": 2.51,
+  "pending_count": 371,
+  "percent": 17.4,
+  "published_count": 78,
   "publisher_percent": 74.3,
   "publisher_percent_ceiling": 99.2,
   "target": 449
