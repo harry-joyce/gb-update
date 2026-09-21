@@ -427,7 +427,7 @@
  "catalog_probe": {
   "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 2,
+  "offset": 0,
   "size": 40,
   "unlisted_total": 3
  },
@@ -1475,7 +1475,7 @@
    "t": "2026-09-21T18:00:00Z"
   }
  ],
- "generated": "2026-09-21T20:11:34Z",
+ "generated": "2026-09-21T21:11:39Z",
  "history": [
   {
    "count": 1,
@@ -1927,7 +1927,7 @@
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T20:11:34Z",
+ "last_checked": "2026-09-21T21:11:39Z",
  "pending": [
   {
    "code": "ABB",
@@ -8536,11 +8536,11 @@
  "stats": {
   "added_1h": 0,
   "added_24h": 34,
-  "added_4h": 5,
+  "added_4h": 4,
   "catalog_count": 105,
   "catalog_lag": 3,
   "catalog_percent": 23.4,
-  "days_since_release": 3.26,
+  "days_since_release": 3.3,
   "pending_count": 341,
   "percent": 24.1,
   "published_count": 108,
