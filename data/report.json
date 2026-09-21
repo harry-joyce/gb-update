@@ -422,19 +422,31 @@
   {
    "count": 105,
    "t": "2026-09-21T17:14:50Z"
+  },
+  {
+   "count": 106,
+   "t": "2026-09-21T17:29:34Z"
+  },
+  {
+   "count": 107,
+   "t": "2026-09-21T18:32:35Z"
+  },
+  {
+   "count": 108,
+   "t": "2026-09-21T18:57:25Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 25,
-  "awaiting_catalogue": 3,
-  "catalogued": 105,
+  "awaiting_catalogue": 0,
+  "catalogued": 108,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 82,
@@ -1446,7 +1458,7 @@
     {
      "at": "2026-09-21T17:29:26Z",
      "code": "SW",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Swahili",
      "source": "file_estimated"
     }
@@ -1459,14 +1471,14 @@
     {
      "at": "2026-09-21T18:32:21Z",
      "code": "NYU",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Nyungwe",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-21T18:57:14Z",
      "code": "SR",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Sranantongo",
      "source": "file_estimated"
     }
@@ -1475,7 +1487,7 @@
    "t": "2026-09-21T18:00:00Z"
   }
  ],
- "generated": "2026-09-21T21:11:39Z",
+ "generated": "2026-09-21T21:41:42Z",
  "history": [
   {
    "count": 1,
@@ -1923,11 +1935,11 @@
   "file_drift_count": 15,
   "files_count": 108,
   "last_full_verification": "2026-09-21T09:16:03Z",
-  "listing_count": 105,
+  "listing_count": 108,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T21:11:39Z",
+ "last_checked": "2026-09-21T21:41:42Z",
  "pending": [
   {
    "code": "ABB",
@@ -8429,12 +8441,12 @@
    "vernacular": "ትግርኛ"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T17:29:34Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T17:29:34Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T21:41:42Z",
    "code": "SW",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8447,9 +8459,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T17:29:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T17:41:19Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "sw",
    "name": "Swahili",
    "published_at": "2026-09-21T17:29:26Z",
@@ -8462,12 +8474,12 @@
    "vernacular": "Kiswahili"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T18:32:35Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T18:32:35Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T21:41:42Z",
    "code": "NYU",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8480,9 +8492,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T18:32:21Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T18:41:27Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "nyu",
    "name": "Nyungwe",
    "published_at": "2026-09-21T18:32:21Z",
@@ -8495,12 +8507,12 @@
    "vernacular": "Cinyungwe"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T18:57:25Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T18:57:25Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T21:41:42Z",
    "code": "SR",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8512,9 +8524,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T18:57:14Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T19:11:33Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "srn",
    "name": "Sranantongo",
    "published_at": "2026-09-21T18:57:14Z",
@@ -8536,11 +8548,11 @@
  "stats": {
   "added_1h": 0,
   "added_24h": 34,
-  "added_4h": 4,
-  "catalog_count": 105,
-  "catalog_lag": 3,
-  "catalog_percent": 23.4,
-  "days_since_release": 3.3,
+  "added_4h": 2,
+  "catalog_count": 108,
+  "catalog_lag": 0,
+  "catalog_percent": 24.1,
+  "days_since_release": 3.32,
   "pending_count": 341,
   "percent": 24.1,
   "published_count": 108,
