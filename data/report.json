@@ -437,21 +437,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 25,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 108,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 82,
+  "file_times": 83,
   "observed_times": 0,
-  "sign_languages": 21
+  "sign_languages": 22
  },
  "events": [
   {
@@ -1485,9 +1485,22 @@
    ],
    "count_after": 108,
    "t": "2026-09-21T18:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-21T21:54:54Z",
+     "code": "LSC",
+     "in_catalog": false,
+     "name": "Colombian Sign Language",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 109,
+   "t": "2026-09-21T21:00:00Z"
   }
  ],
- "generated": "2026-09-21T21:41:42Z",
+ "generated": "2026-09-21T22:41:52Z",
  "history": [
   {
    "count": 1,
@@ -1920,6 +1933,10 @@
   {
    "count": 108,
    "t": "2026-09-21T18:57:14Z"
+  },
+  {
+   "count": 109,
+   "t": "2026-09-21T21:54:54Z"
   }
  ],
  "integrity": {
@@ -1933,13 +1950,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 108,
+  "files_count": 109,
   "last_full_verification": "2026-09-21T09:16:03Z",
   "listing_count": 108,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T21:41:42Z",
+ "last_checked": "2026-09-21T22:41:52Z",
  "pending": [
   {
    "code": "ABB",
@@ -2453,15 +2470,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Cinyanja"
-  },
-  {
-   "code": "LSC",
-   "direction": "ltr",
-   "locale": "csn",
-   "name": "Colombian Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "lengua de señas colombiana"
   },
   {
    "code": "CGS",
@@ -8537,6 +8545,39 @@
    "title": "Update nr. 6 fu a Tiri Skin 2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SR",
    "vernacular": "Sranantongo"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LSC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T21:54:54Z",
+   "files_at": "2026-09-21T21:54:54Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T21:54:54Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T22:41:52Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "csn",
+   "name": "Colombian Sign Language",
+   "published_at": "2026-09-21T21:54:54Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T21:54:54Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LSC",
+   "vernacular": "lengua de señas colombiana"
   }
  ],
  "removed": [],
@@ -8546,17 +8587,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 34,
+  "added_1h": 1,
+  "added_24h": 35,
   "added_4h": 2,
   "catalog_count": 108,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 24.1,
-  "days_since_release": 3.32,
-  "pending_count": 341,
-  "percent": 24.1,
-  "published_count": 108,
-  "publisher_percent": 78.6,
+  "days_since_release": 3.36,
+  "pending_count": 340,
+  "percent": 24.3,
+  "published_count": 109,
+  "publisher_percent": 78.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
