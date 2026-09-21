@@ -397,19 +397,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 4,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 4
  },
  "counts": {
   "api_times": 24,
-  "awaiting_catalogue": 3,
+  "awaiting_catalogue": 4,
   "catalogued": 98,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 76,
+  "file_times": 77,
   "observed_times": 0,
   "sign_languages": 21
  },
@@ -1372,9 +1372,22 @@
    ],
    "count_after": 101,
    "t": "2026-09-21T14:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-21T15:05:06Z",
+     "code": "CPI",
+     "in_catalog": false,
+     "name": "Chopi",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 102,
+   "t": "2026-09-21T15:00:00Z"
   }
  ],
- "generated": "2026-09-21T14:59:19Z",
+ "generated": "2026-09-21T15:29:23Z",
  "history": [
   {
    "count": 1,
@@ -1779,6 +1792,10 @@
   {
    "count": 101,
    "t": "2026-09-21T14:53:23Z"
+  },
+  {
+   "count": 102,
+   "t": "2026-09-21T15:05:06Z"
   }
  ],
  "integrity": {
@@ -1792,13 +1809,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 101,
+  "files_count": 102,
   "last_full_verification": "2026-09-21T09:16:03Z",
   "listing_count": 98,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T14:59:19Z",
+ "last_checked": "2026-09-21T15:29:23Z",
  "pending": [
   {
    "code": "ABB",
@@ -2285,15 +2302,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "ch'ol"
-  },
-  {
-   "code": "CPI",
-   "direction": "ltr",
-   "locale": "cce",
-   "name": "Chopi",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Txitxopi"
   },
   {
    "code": "CO",
@@ -8230,6 +8238,39 @@
    "title": "Viidiyo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=DM",
    "vernacular": "Sidaamu Afoo"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CPI",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T15:05:06Z",
+   "files_at": "2026-09-21T15:05:06Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T15:05:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T15:29:23Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "cce",
+   "name": "Chopi",
+   "published_at": "2026-09-21T15:05:06Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T15:05:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vhidhiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CPI",
+   "vernacular": "Txitxopi"
   }
  ],
  "removed": [],
@@ -8240,15 +8281,15 @@
  },
  "stats": {
   "added_1h": 3,
-  "added_24h": 38,
+  "added_24h": 39,
   "added_4h": 14,
   "catalog_count": 98,
-  "catalog_lag": 3,
+  "catalog_lag": 4,
   "catalog_percent": 21.8,
-  "days_since_release": 3.04,
-  "pending_count": 348,
-  "percent": 22.5,
-  "published_count": 101,
+  "days_since_release": 3.06,
+  "pending_count": 347,
+  "percent": 22.7,
+  "published_count": 102,
   "publisher_percent": 78.0,
   "publisher_percent_ceiling": 99.2,
   "target": 449
