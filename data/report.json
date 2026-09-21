@@ -326,23 +326,20 @@
  ],
  "catalog_probe": {
   "last_checked_count": 2,
-  "newly_catalogued": [
-   "CHC",
-   "MP"
-  ],
+  "newly_catalogued": [],
   "offset": 0,
   "size": 40,
   "unlisted_total": 2
  },
  "counts": {
   "api_times": 23,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 2,
   "catalogued": 80,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 56,
+  "file_times": 58,
   "observed_times": 0,
-  "sign_languages": 17
+  "sign_languages": 18
  },
  "events": [
   {
@@ -1092,6 +1089,19 @@
   {
    "added": [
     {
+     "at": "2026-09-21T05:48:16Z",
+     "code": "NZS",
+     "in_catalog": false,
+     "name": "New Zealand Sign Language",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 79,
+   "t": "2026-09-21T05:00:00Z"
+  },
+  {
+   "added": [
+    {
      "at": "2026-09-21T06:40:55Z",
      "code": "MP",
      "in_catalog": true,
@@ -1106,11 +1116,24 @@
      "source": "api"
     }
    ],
-   "count_after": 80,
+   "count_after": 81,
    "t": "2026-09-21T06:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-21T07:39:18Z",
+     "code": "LF",
+     "in_catalog": false,
+     "name": "Drehu",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 82,
+   "t": "2026-09-21T07:00:00Z"
   }
  ],
- "generated": "2026-09-21T07:15:38Z",
+ "generated": "2026-09-21T07:48:58Z",
  "history": [
   {
    "count": 1,
@@ -1426,11 +1449,19 @@
   },
   {
    "count": 79,
-   "t": "2026-09-21T06:40:55Z"
+   "t": "2026-09-21T05:48:16Z"
   },
   {
    "count": 80,
+   "t": "2026-09-21T06:40:55Z"
+  },
+  {
+   "count": 81,
    "t": "2026-09-21T06:52:16Z"
+  },
+  {
+   "count": 82,
+   "t": "2026-09-21T07:39:18Z"
   }
  ],
  "integrity": {
@@ -1444,13 +1475,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 80,
+  "files_count": 82,
   "last_full_verification": "2026-09-20T08:47:48Z",
-  "listing_count": 78,
+  "listing_count": 80,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T07:15:38Z",
+ "last_checked": "2026-09-21T07:48:58Z",
  "pending": [
   {
    "code": "ABB",
@@ -2090,15 +2121,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Douala"
-  },
-  {
-   "code": "LF",
-   "direction": "ltr",
-   "locale": "dhv",
-   "name": "Drehu",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Drehu"
   },
   {
    "code": "EBA",
@@ -7314,6 +7336,38 @@
    "vernacular": "Hmoob Dawb"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": true,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NZS",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T05:48:16Z",
+   "files_at": "2026-09-21T05:48:16Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T05:48:16Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T07:48:58Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nzs",
+   "name": "New Zealand Sign Language",
+   "published_at": "2026-09-21T05:48:16Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T05:48:16Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 Governing Body Update #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NZS",
+   "vernacular": "New Zealand Sign Language"
+  },
+  {
    "api_published_at": "2026-09-21T06:41:02Z",
    "beyond_baseline": false,
    "catalog_at": "2026-09-21T06:41:02Z",
@@ -7334,7 +7388,7 @@
    "first_observed": "2026-09-21T06:48:51Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "tpi",
    "name": "Tok Pisin",
    "published_at": "2026-09-21T06:40:55Z",
@@ -7366,7 +7420,7 @@
    "first_observed": "2026-09-21T07:15:38Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "yue-hant",
    "name": "Chinese Cantonese (Traditional)",
    "published_at": "2026-09-21T06:52:16Z",
@@ -7377,6 +7431,38 @@
    "title": "2026來自中央長老團的報導（六）",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CHC",
    "vernacular": "中文繁體（廣東話）"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LF",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T07:39:18Z",
+   "files_at": "2026-09-21T07:39:18Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T07:39:18Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T07:48:58Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "dhv",
+   "name": "Drehu",
+   "published_at": "2026-09-21T07:39:18Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T07:39:18Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Maca Ka Hnyipixe Qaathene La Lapa Ne Xomi Meköt #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LF",
+   "vernacular": "Drehu"
   }
  ],
  "removed": [],
@@ -7387,15 +7473,15 @@
  },
  "stats": {
   "added_1h": 2,
-  "added_24h": 31,
-  "added_4h": 2,
+  "added_24h": 33,
+  "added_4h": 4,
   "catalog_count": 80,
-  "catalog_lag": 0,
+  "catalog_lag": 2,
   "catalog_percent": 17.8,
-  "days_since_release": 2.72,
-  "pending_count": 369,
-  "percent": 17.8,
-  "published_count": 80,
+  "days_since_release": 2.74,
+  "pending_count": 367,
+  "percent": 18.3,
+  "published_count": 82,
   "publisher_percent": 74.4,
   "publisher_percent_ceiling": 99.2,
   "target": 449
