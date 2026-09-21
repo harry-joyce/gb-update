@@ -349,19 +349,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 9,
+  "last_checked_count": 11,
   "newly_catalogued": [],
-  "offset": 4,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 9
+  "unlisted_total": 11
  },
  "counts": {
   "api_times": 23,
-  "awaiting_catalogue": 9,
+  "awaiting_catalogue": 11,
   "catalogued": 86,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 71,
+  "file_times": 73,
   "observed_times": 0,
   "sign_languages": 21
  },
@@ -1270,9 +1270,29 @@
    ],
    "count_after": 95,
    "t": "2026-09-21T12:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-21T13:00:17Z",
+     "code": "HWP",
+     "in_catalog": false,
+     "name": "Hawai’i Pidgin",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-21T13:28:57Z",
+     "code": "FA",
+     "in_catalog": false,
+     "name": "Fante",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 97,
+   "t": "2026-09-21T13:00:00Z"
   }
  ],
- "generated": "2026-09-21T12:59:10Z",
+ "generated": "2026-09-21T13:29:12Z",
  "history": [
   {
    "count": 1,
@@ -1653,6 +1673,14 @@
   {
    "count": 95,
    "t": "2026-09-21T12:43:15Z"
+  },
+  {
+   "count": 96,
+   "t": "2026-09-21T13:00:17Z"
+  },
+  {
+   "count": 97,
+   "t": "2026-09-21T13:28:57Z"
   }
  ],
  "integrity": {
@@ -1666,13 +1694,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 95,
+  "files_count": 97,
   "last_full_verification": "2026-09-21T09:16:03Z",
   "listing_count": 86,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T12:59:10Z",
+ "last_checked": "2026-09-21T13:29:12Z",
  "pending": [
   {
    "code": "ABB",
@@ -2368,15 +2396,6 @@
    "vernacular": "Fang"
   },
   {
-   "code": "FA",
-   "direction": "ltr",
-   "locale": "fat",
-   "name": "Fante",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Mfantse"
-  },
-  {
    "code": "FN",
    "direction": "ltr",
    "locale": "fj",
@@ -2546,15 +2565,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ekihavu"
-  },
-  {
-   "code": "HWP",
-   "direction": "ltr",
-   "locale": "hwc",
-   "name": "Hawai’i Pidgin",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Hawai’i Pidgin"
   },
   {
    "code": "HR",
@@ -7961,6 +7971,72 @@
    "title": "Film",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=P",
    "vernacular": "polski"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "HWP",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T13:00:17Z",
+   "files_at": "2026-09-21T13:00:17Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T13:00:17Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T13:29:12Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "hwc",
+   "name": "Hawai’i Pidgin",
+   "published_at": "2026-09-21T13:00:17Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T13:00:17Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=HWP",
+   "vernacular": "Hawai’i Pidgin"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "FA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T13:28:57Z",
+   "files_at": "2026-09-21T13:28:57Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T13:28:57Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T13:29:12Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "fat",
+   "name": "Fante",
+   "published_at": "2026-09-21T13:28:57Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T13:28:57Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=FA",
+   "vernacular": "Mfantse"
   }
  ],
  "removed": [],
@@ -7970,17 +8046,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 5,
-  "added_24h": 37,
-  "added_4h": 9,
+  "added_1h": 6,
+  "added_24h": 38,
+  "added_4h": 11,
   "catalog_count": 86,
-  "catalog_lag": 9,
+  "catalog_lag": 11,
   "catalog_percent": 19.2,
-  "days_since_release": 2.96,
-  "pending_count": 354,
-  "percent": 21.2,
-  "published_count": 95,
-  "publisher_percent": 77.3,
+  "days_since_release": 2.98,
+  "pending_count": 352,
+  "percent": 21.6,
+  "published_count": 97,
+  "publisher_percent": 77.4,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
