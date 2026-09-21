@@ -1079,7 +1079,7 @@
    "t": "2026-09-21T01:00:00Z"
   }
  ],
- "generated": "2026-09-21T04:18:39Z",
+ "generated": "2026-09-21T05:18:45Z",
  "history": [
   {
    "count": 1,
@@ -1411,7 +1411,7 @@
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T04:18:39Z",
+ "last_checked": "2026-09-21T05:18:45Z",
  "pending": [
   {
    "code": "ABB",
@@ -7306,7 +7306,7 @@
   "catalog_count": 78,
   "catalog_lag": 0,
   "catalog_percent": 17.4,
-  "days_since_release": 2.6,
+  "days_since_release": 2.64,
   "pending_count": 371,
   "percent": 17.4,
   "published_count": 78,
