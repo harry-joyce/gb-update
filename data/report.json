@@ -349,19 +349,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 5,
+  "last_checked_count": 9,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 4,
   "size": 40,
-  "unlisted_total": 5
+  "unlisted_total": 9
  },
  "counts": {
   "api_times": 23,
-  "awaiting_catalogue": 5,
+  "awaiting_catalogue": 9,
   "catalogued": 86,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 67,
+  "file_times": 71,
   "observed_times": 0,
   "sign_languages": 21
  },
@@ -1238,13 +1238,41 @@
      "in_catalog": false,
      "name": "Indonesian",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-21T12:32:19Z",
+     "code": "EWN",
+     "in_catalog": false,
+     "name": "Ewondo",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-21T12:32:39Z",
+     "code": "LJ",
+     "in_catalog": false,
+     "name": "Lenje",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-21T12:42:23Z",
+     "code": "Q",
+     "in_catalog": false,
+     "name": "Hebrew",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-21T12:43:15Z",
+     "code": "P",
+     "in_catalog": false,
+     "name": "Polish",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 91,
+   "count_after": 95,
    "t": "2026-09-21T12:00:00Z"
   }
  ],
- "generated": "2026-09-21T12:21:51Z",
+ "generated": "2026-09-21T12:59:10Z",
  "history": [
   {
    "count": 1,
@@ -1609,6 +1637,22 @@
   {
    "count": 91,
    "t": "2026-09-21T12:10:51Z"
+  },
+  {
+   "count": 92,
+   "t": "2026-09-21T12:32:19Z"
+  },
+  {
+   "count": 93,
+   "t": "2026-09-21T12:32:39Z"
+  },
+  {
+   "count": 94,
+   "t": "2026-09-21T12:42:23Z"
+  },
+  {
+   "count": 95,
+   "t": "2026-09-21T12:43:15Z"
   }
  ],
  "integrity": {
@@ -1622,13 +1666,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 91,
+  "files_count": 95,
   "last_full_verification": "2026-09-21T09:16:03Z",
   "listing_count": 86,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T12:21:51Z",
+ "last_checked": "2026-09-21T12:59:10Z",
  "pending": [
   {
    "code": "ABB",
@@ -2315,15 +2359,6 @@
    "vernacular": "የኢትዮጵያ ምልክት ቋንቋ"
   },
   {
-   "code": "EWN",
-   "direction": "ltr",
-   "locale": "ewo",
-   "name": "Ewondo",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ewondo"
-  },
-  {
    "code": "FGN",
    "direction": "ltr",
    "locale": "fan",
@@ -2520,15 +2555,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Hawai’i Pidgin"
-  },
-  {
-   "code": "Q",
-   "direction": "rtl",
-   "locale": "he",
-   "name": "Hebrew",
-   "script": "HEBREW",
-   "sign": false,
-   "vernacular": "עברית"
   },
   {
    "code": "HR",
@@ -3114,15 +3140,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Baledha"
-  },
-  {
-   "code": "LJ",
-   "direction": "ltr",
-   "locale": "leh",
-   "name": "Lenje",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Cilenje"
   },
   {
    "code": "LHK",
@@ -3879,15 +3896,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Pidgin (West Africa)"
-  },
-  {
-   "code": "P",
-   "direction": "ltr",
-   "locale": "pl",
-   "name": "Polish",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "polski"
   },
   {
    "code": "PDF",
@@ -7823,6 +7831,136 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=IN",
    "vernacular": "Indonesia"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "EWN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T12:32:19Z",
+   "files_at": "2026-09-21T12:32:19Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T12:32:19Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T12:59:10Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ewo",
+   "name": "Ewondo",
+   "published_at": "2026-09-21T12:32:19Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T12:32:19Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Evegele",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=EWN",
+   "vernacular": "Ewondo"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LJ",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T12:32:39Z",
+   "files_at": "2026-09-21T12:32:39Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T12:32:39Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T12:59:10Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "leh",
+   "name": "Lenje",
+   "published_at": "2026-09-21T12:32:39Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T12:32:39Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Lipooti Namba 6 Yamu 2026 Kuswa ku Likoto Litanjilila",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LJ",
+   "vernacular": "Cilenje"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "Q",
+   "direction": "rtl",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T12:42:23Z",
+   "files_at": "2026-09-21T12:42:23Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T12:42:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T12:59:10Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "he",
+   "name": "Hebrew",
+   "published_at": "2026-09-21T12:42:23Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T12:42:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "HEBREW",
+   "sign": false,
+   "title": "עדכון מס׳ 6 מטעם הגוף המנהל 2026‏",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=Q",
+   "vernacular": "עברית"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "P",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T12:43:15Z",
+   "files_at": "2026-09-21T12:43:15Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T12:43:15Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T12:59:10Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "pl",
+   "name": "Polish",
+   "published_at": "2026-09-21T12:43:15Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T12:43:15Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Film",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=P",
+   "vernacular": "polski"
   }
  ],
  "removed": [],
@@ -7832,17 +7970,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
-  "added_24h": 33,
-  "added_4h": 7,
+  "added_1h": 5,
+  "added_24h": 37,
+  "added_4h": 9,
   "catalog_count": 86,
-  "catalog_lag": 5,
+  "catalog_lag": 9,
   "catalog_percent": 19.2,
-  "days_since_release": 2.93,
-  "pending_count": 358,
-  "percent": 20.3,
-  "published_count": 91,
-  "publisher_percent": 76.0,
+  "days_since_release": 2.96,
+  "pending_count": 354,
+  "percent": 21.2,
+  "published_count": 95,
+  "publisher_percent": 77.3,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
