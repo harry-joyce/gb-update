@@ -394,22 +394,50 @@
   {
    "count": 98,
    "t": "2026-09-21T13:29:30Z"
+  },
+  {
+   "count": 99,
+   "t": "2026-09-21T14:26:35Z"
+  },
+  {
+   "count": 100,
+   "t": "2026-09-21T14:36:54Z"
+  },
+  {
+   "count": 101,
+   "t": "2026-09-21T14:53:35Z"
+  },
+  {
+   "count": 102,
+   "t": "2026-09-21T15:05:14Z"
+  },
+  {
+   "count": 103,
+   "t": "2026-09-21T16:02:40Z"
+  },
+  {
+   "count": 104,
+   "t": "2026-09-21T16:21:52Z"
+  },
+  {
+   "count": 105,
+   "t": "2026-09-21T17:14:50Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 6,
+  "last_checked_count": 1,
   "newly_catalogued": [],
-  "offset": 5,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 6
+  "unlisted_total": 1
  },
  "counts": {
-  "api_times": 24,
-  "awaiting_catalogue": 6,
-  "catalogued": 98,
+  "api_times": 25,
+  "awaiting_catalogue": 1,
+  "catalogued": 105,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 79,
+  "file_times": 80,
   "observed_times": 0,
   "sign_languages": 21
  },
@@ -1351,21 +1379,21 @@
     {
      "at": "2026-09-21T14:26:23Z",
      "code": "NKN",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kyangonde",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-21T14:36:24Z",
      "code": "KD",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kikaonde",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-21T14:53:23Z",
      "code": "DM",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Sidama",
      "source": "file_estimated"
     }
@@ -1378,7 +1406,7 @@
     {
      "at": "2026-09-21T15:05:06Z",
      "code": "CPI",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Chopi",
      "source": "file_estimated"
     }
@@ -1391,23 +1419,43 @@
     {
      "at": "2026-09-21T16:02:33Z",
      "code": "OI",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Odia",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-21T16:21:45Z",
      "code": "LHK",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Lhukonzo",
      "source": "file_estimated"
     }
    ],
    "count_after": 104,
    "t": "2026-09-21T16:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-21T17:14:50Z",
+     "code": "TI",
+     "in_catalog": true,
+     "name": "Tigrinya",
+     "source": "api"
+    },
+    {
+     "at": "2026-09-21T17:29:26Z",
+     "code": "SW",
+     "in_catalog": false,
+     "name": "Swahili",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 106,
+   "t": "2026-09-21T17:00:00Z"
   }
  ],
- "generated": "2026-09-21T16:41:14Z",
+ "generated": "2026-09-21T17:41:19Z",
  "history": [
   {
    "count": 1,
@@ -1824,6 +1872,14 @@
   {
    "count": 104,
    "t": "2026-09-21T16:21:45Z"
+  },
+  {
+   "count": 105,
+   "t": "2026-09-21T17:14:50Z"
+  },
+  {
+   "count": 106,
+   "t": "2026-09-21T17:29:26Z"
   }
  ],
  "integrity": {
@@ -1837,13 +1893,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 104,
+  "files_count": 106,
   "last_full_verification": "2026-09-21T09:16:03Z",
-  "listing_count": 98,
+  "listing_count": 105,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T16:41:14Z",
+ "last_checked": "2026-09-21T17:41:19Z",
  "pending": [
   {
    "code": "ABB",
@@ -4429,15 +4485,6 @@
    "vernacular": "Sranantongo"
   },
   {
-   "code": "SW",
-   "direction": "ltr",
-   "locale": "sw",
-   "name": "Swahili",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kiswahili"
-  },
-  {
    "code": "ZS",
    "direction": "ltr",
    "locale": "swc",
@@ -4607,15 +4654,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ticuna"
-  },
-  {
-   "code": "TI",
-   "direction": "ltr",
-   "locale": "ti",
-   "name": "Tigrinya",
-   "script": "ETHIOPIC",
-   "sign": false,
-   "vernacular": "ትግርኛ"
   },
   {
    "code": "TV",
@@ -8151,12 +8189,12 @@
    "vernacular": "Shona"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T14:26:35Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T14:26:35Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T17:41:19Z",
    "code": "NKN",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8169,9 +8207,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T14:26:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T14:29:17Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "nyy-x-nkn",
    "name": "Kyangonde",
    "published_at": "2026-09-21T14:26:23Z",
@@ -8184,12 +8222,12 @@
    "vernacular": "Kyangonde"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T14:36:54Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T14:36:54Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T17:41:19Z",
    "code": "KD",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8202,9 +8240,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T14:36:24Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T14:37:35Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "kqn",
    "name": "Kikaonde",
    "published_at": "2026-09-21T14:36:24Z",
@@ -8217,12 +8255,12 @@
    "vernacular": "Kikaonde"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T14:53:35Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T14:53:35Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T17:41:19Z",
    "code": "DM",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8235,9 +8273,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T14:53:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T14:59:19Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "sid",
    "name": "Sidama",
    "published_at": "2026-09-21T14:53:23Z",
@@ -8250,12 +8288,12 @@
    "vernacular": "Sidaamu Afoo"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T15:05:14Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T15:05:14Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T17:41:19Z",
    "code": "CPI",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8268,9 +8306,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T15:05:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T15:29:23Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "cce",
    "name": "Chopi",
    "published_at": "2026-09-21T15:05:06Z",
@@ -8283,12 +8321,12 @@
    "vernacular": "Txitxopi"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T16:02:40Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T16:02:40Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T17:41:19Z",
    "code": "OI",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8300,9 +8338,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T16:02:33Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T16:41:14Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "or",
    "name": "Odia",
    "published_at": "2026-09-21T16:02:33Z",
@@ -8315,12 +8353,12 @@
    "vernacular": "ଓଡ଼ିଆ"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T16:21:52Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T16:21:52Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T17:41:19Z",
    "code": "LHK",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8333,9 +8371,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T16:21:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T16:41:14Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "koo",
    "name": "Lhukonzo",
    "published_at": "2026-09-21T16:21:45Z",
@@ -8346,6 +8384,72 @@
    "title": "Evideyo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LHK",
    "vernacular": "Lhukonzo"
+  },
+  {
+   "api_published_at": "2026-09-21T17:14:50Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-21T17:14:50Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T17:41:19Z",
+   "code": "TI",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T17:14:43Z",
+   "files_at": "2026-09-21T17:14:50Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-21T17:41:19Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "ti",
+   "name": "Tigrinya",
+   "published_at": "2026-09-21T17:14:50Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ETHIOPIC",
+   "sign": false,
+   "title": "እዋናዊ ሓበሬታ ኣመሓዳሪ ኣካል 2026—ቍ. 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TI",
+   "vernacular": "ትግርኛ"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SW",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T17:29:26Z",
+   "files_at": "2026-09-21T17:29:26Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T17:29:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T17:41:19Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "sw",
+   "name": "Swahili",
+   "published_at": "2026-09-21T17:29:26Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T17:29:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SW",
+   "vernacular": "Kiswahili"
   }
  ],
  "removed": [],
@@ -8356,16 +8460,16 @@
  },
  "stats": {
   "added_1h": 2,
-  "added_24h": 38,
-  "added_4h": 11,
-  "catalog_count": 98,
-  "catalog_lag": 6,
-  "catalog_percent": 21.8,
-  "days_since_release": 3.11,
-  "pending_count": 345,
-  "percent": 23.2,
-  "published_count": 104,
-  "publisher_percent": 78.0,
+  "added_24h": 39,
+  "added_4h": 8,
+  "catalog_count": 105,
+  "catalog_lag": 1,
+  "catalog_percent": 23.4,
+  "days_since_release": 3.15,
+  "pending_count": 343,
+  "percent": 23.6,
+  "published_count": 106,
+  "publisher_percent": 78.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
