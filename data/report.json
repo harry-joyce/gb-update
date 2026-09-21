@@ -314,19 +314,30 @@
   {
    "count": 78,
    "t": "2026-09-21T01:55:00Z"
+  },
+  {
+   "count": 79,
+   "t": "2026-09-21T06:41:02Z"
+  },
+  {
+   "count": 80,
+   "t": "2026-09-21T06:52:16Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
-  "newly_catalogued": [],
+  "last_checked_count": 2,
+  "newly_catalogued": [
+   "CHC",
+   "MP"
+  ],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 2
  },
  "counts": {
-  "api_times": 22,
-  "awaiting_catalogue": 1,
-  "catalogued": 78,
+  "api_times": 23,
+  "awaiting_catalogue": 0,
+  "catalogued": 80,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 56,
@@ -1083,16 +1094,23 @@
     {
      "at": "2026-09-21T06:40:55Z",
      "code": "MP",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Tok Pisin",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-21T06:52:16Z",
+     "code": "CHC",
+     "in_catalog": true,
+     "name": "Chinese Cantonese (Traditional)",
+     "source": "api"
     }
    ],
-   "count_after": 79,
+   "count_after": 80,
    "t": "2026-09-21T06:00:00Z"
   }
  ],
- "generated": "2026-09-21T06:48:51Z",
+ "generated": "2026-09-21T07:15:38Z",
  "history": [
   {
    "count": 1,
@@ -1409,6 +1427,10 @@
   {
    "count": 79,
    "t": "2026-09-21T06:40:55Z"
+  },
+  {
+   "count": 80,
+   "t": "2026-09-21T06:52:16Z"
   }
  ],
  "integrity": {
@@ -1422,13 +1444,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 79,
+  "files_count": 80,
   "last_full_verification": "2026-09-20T08:47:48Z",
   "listing_count": 78,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T06:48:51Z",
+ "last_checked": "2026-09-21T07:15:38Z",
  "pending": [
   {
    "code": "ABB",
@@ -1879,15 +1901,6 @@
    "script": "CHINESE",
    "sign": false,
    "vernacular": "中文简体（广东话）"
-  },
-  {
-   "code": "CHC",
-   "direction": "ltr",
-   "locale": "yue-hant",
-   "name": "Chinese Cantonese (Traditional)",
-   "script": "CHINESE",
-   "sign": false,
-   "vernacular": "中文繁體（廣東話）"
   },
   {
    "code": "CSL",
@@ -7301,12 +7314,12 @@
    "vernacular": "Hmoob Dawb"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T06:41:02Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T06:41:02Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T07:15:38Z",
    "code": "MP",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7319,7 +7332,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T06:40:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T06:48:51Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "tpi",
@@ -7332,6 +7345,38 @@
    "title": "Vidio",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MP",
    "vernacular": "Tok Pisin"
+  },
+  {
+   "api_published_at": "2026-09-21T06:52:16Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-21T06:52:16Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T07:15:38Z",
+   "code": "CHC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T06:52:03Z",
+   "files_at": "2026-09-21T06:52:16Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-21T07:15:38Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "yue-hant",
+   "name": "Chinese Cantonese (Traditional)",
+   "published_at": "2026-09-21T06:52:16Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "CHINESE",
+   "sign": false,
+   "title": "2026來自中央長老團的報導（六）",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CHC",
+   "vernacular": "中文繁體（廣東話）"
   }
  ],
  "removed": [],
@@ -7341,17 +7386,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
+  "added_1h": 2,
   "added_24h": 31,
-  "added_4h": 1,
-  "catalog_count": 78,
-  "catalog_lag": 1,
-  "catalog_percent": 17.4,
-  "days_since_release": 2.7,
-  "pending_count": 370,
-  "percent": 17.6,
-  "published_count": 79,
-  "publisher_percent": 74.3,
+  "added_4h": 2,
+  "catalog_count": 80,
+  "catalog_lag": 0,
+  "catalog_percent": 17.8,
+  "days_since_release": 2.72,
+  "pending_count": 369,
+  "percent": 17.8,
+  "published_count": 80,
+  "publisher_percent": 74.4,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
