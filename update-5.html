@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Language availability tracker — 2026 Governing Body Update #6</title>
+<title>Language availability archive — 2026 Governing Body Update #5</title>
 <script>
   // Applied before first paint so neither the theme nor the menu width flashes.
   try {
@@ -18,17 +18,17 @@
     else if (r === "open") { document.documentElement.className += " rail-open"; }
   } catch (e) {}
 </script>
-<meta name="description" content="Tracks how many languages the 2026 Governing Body Update #6 can be watched in on jw.org, how many the media library has catalogued, and how both have grown over time." />
+<meta name="description" content="A reconstruction of how the 2026 Governing Body Update #5 rolled out across 449 languages, recovered from jw.org after the fact." />
 <meta name="color-scheme" content="light dark" />
 <link rel="stylesheet" href="assets/styles.css" />
 </head>
-<body>
+<body data-report="data/report-1112024059.json">
 <div class="wrap">
 
   <header class="masthead">
     <div>
-      <p class="eyebrow">Language availability tracker</p>
-      <h1 id="update-title">2026 Governing Body Update #6</h1>
+      <p class="eyebrow">Language availability archive</p>
+      <h1 id="update-title">2026 Governing Body Update #5</h1>
       <p class="sub" id="update-meta"></p>
     </div>
     <div class="theme-switch" role="group" aria-label="Colour theme">
@@ -44,7 +44,7 @@
 
     <section class="card" aria-labelledby="hero-heading">
       <div class="hero">
-        <h2 id="hero-heading" class="eyebrow" style="margin-bottom:12px">Languages available now</h2>
+        <h2 id="hero-heading" class="eyebrow" style="margin-bottom:12px">Languages reached</h2>
         <div class="hero-figure">
           <span class="hero-value" id="hero-value">—</span>
           <span class="hero-of" id="hero-of"></span>
@@ -60,23 +60,8 @@
 
     <section class="card" aria-labelledby="chart-heading">
       <div class="card-head">
-        <h2 class="card-title" id="chart-heading">Languages available over time</h2>
-        <p class="card-note" id="chart-note"></p>
-        <div class="chart-controls">
-          <div class="seg" role="group" aria-label="Vertical scale">
-            <span class="seg-label">Scale</span>
-            <button type="button" data-chart-y="fit" aria-pressed="true">Fit to data</button>
-            <button type="button" data-chart-y="target" aria-pressed="false">Full target</button>
-          </div>
-          <div class="seg" role="group" aria-label="Time range">
-            <span class="seg-label">Range</span>
-            <button type="button" data-chart-range="6h" aria-pressed="false">6h</button>
-            <button type="button" data-chart-range="24h" aria-pressed="false">24h</button>
-            <button type="button" data-chart-range="3d" aria-pressed="false">3d</button>
-            <button type="button" data-chart-range="7d" aria-pressed="false">7d</button>
-            <button type="button" data-chart-range="all" aria-pressed="true">All</button>
-          </div>
-        </div>
+        <h2 class="card-title" id="chart-heading">Languages prepared over time</h2>
+        <ul class="chart-dates" id="chart-dates" hidden></ul>
       </div>
       <div class="chart-body">
         <svg class="chart-svg" id="chart" role="img" aria-labelledby="chart-heading chart-desc">
@@ -88,10 +73,10 @@
 
     <div class="tabs" role="tablist" aria-label="Report views">
       <button class="tab" role="tab" id="tab-published" aria-controls="panel-published" aria-selected="true">
-        Available <span class="badge" id="count-published"></span>
+        Languages <span class="badge" id="count-published"></span>
       </button>
       <button class="tab" role="tab" id="tab-pending" aria-controls="panel-pending" aria-selected="false">
-        Still pending <span class="badge" id="count-pending"></span>
+        Never received <span class="badge" id="count-pending"></span>
       </button>
       <button class="tab" role="tab" id="tab-activity" aria-controls="panel-activity" aria-selected="false">
         Activity <span class="badge" id="count-activity"></span>
@@ -100,7 +85,7 @@
 
     <section class="panel" role="tabpanel" id="panel-published" aria-labelledby="tab-published">
       <div class="controls">
-        <input class="search" id="search-published" type="search" placeholder="Search language, code, or title…" aria-label="Search available languages" />
+        <input class="search" id="search-published" type="search" placeholder="Search language, code, or title…" aria-label="Search languages" />
         <span class="result-count" id="result-published"></span>
       </div>
       <div class="table-scroll">
@@ -109,7 +94,7 @@
             <tr>
               <th class="sortable" data-sort="name" scope="col">Language <span class="arrow">↑</span></th>
               <th scope="col">Code</th>
-              <th class="sortable" data-sort="published_at" scope="col">Published <span class="arrow">↑</span></th>
+              <th class="sortable" data-sort="published_at" scope="col">Prepared <span class="arrow">↑</span></th>
               <th scope="col">Title in that language</th>
             </tr>
           </thead>
@@ -138,7 +123,7 @@
           </thead>
           <tbody></tbody>
         </table>
-        <p class="empty" id="empty-pending" hidden>Nothing pending — every language from the baseline is available.</p>
+        <p class="empty" id="empty-pending" hidden>Every language from the baseline received this update.</p>
       </div>
     </section>
 

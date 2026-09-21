@@ -4,3 +4,7 @@ __pycache__/
 # Publisher counts are confidential and must never enter the repository.
 data/weights.json
 *.xlsx
+
+# Per-language read cache for scripts/archive_doc.py: pure upstream data,
+# re-fetchable, and large. Not worth versioning.
+data/.archive-cache-*.json

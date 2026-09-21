@@ -115,7 +115,10 @@
 
   function plural(n, one, many) { return n + " " + (n === 1 ? one : many); }
 
-  function text(el, value) { el.textContent = value; }
+  /* Pages may omit elements they have no use for -- an archive has no chart
+     note and no vertical-scale switch -- so a missing target is a no-op
+     rather than a crash. */
+  function text(el, value) { if (el) { el.textContent = value; } }
 
   function esc(value) {
     return String(value == null ? "" : value)
@@ -123,8 +126,110 @@
       .replace(/"/g, "&quot;");
   }
 
+  /* ---- update rail ----------------------------------------------------- */
+  /* Every page this site publishes, newest first. This list is the single
+     place to add an entry when a new update starts being tracked or a finished
+     one is archived: both pages build the rail from it, so neither HTML file
+     carries a copy of the menu that could drift out of step with the other. */
+  var UPDATES = [
+    { file: "index.html", badge: "#6", short: "Update #6", note: "Tracking now" },
+    { file: "update-5.html", badge: "#5", short: "Update #5", note: "Archive" }
+  ];
+
+  /* The page being served. A directory URL is index.html -- which is how
+     GitHub Pages serves the site root at /gb-update/ -- so this cannot simply
+     take the last path segment or the root would match nothing. */
+  function currentFile() {
+    var path = location.pathname;
+    if (!path || path.charAt(path.length - 1) === "/") { return "index.html"; }
+    return path.slice(path.lastIndexOf("/") + 1);
+  }
+
+  (function initRail() {
+    var here = currentFile();
+    var root = document.documentElement;
+    var NARROW = "(max-width: 860px)";
+
+    /* The rail has no single source of truth for "is it open": an explicit
+       class wins, and with neither the stylesheet decides from the viewport.
+       So ask the same question CSS is answering rather than keeping a flag
+       that could disagree with what is on screen. */
+    function isCollapsed() {
+      if (root.classList.contains("rail-collapsed")) { return true; }
+      if (root.classList.contains("rail-open")) { return false; }
+      return window.matchMedia(NARROW).matches;
+    }
+
+    var nav = document.createElement("nav");
+    nav.className = "rail";
+    nav.setAttribute("aria-label", "Governing Body Updates");
+
+    var toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = "rail-toggle";
+    toggle.setAttribute("aria-expanded", String(!isCollapsed()));
+    toggle.setAttribute("aria-controls", "rail-list");
+    toggle.innerHTML =
+      '<span class="rail-bars" aria-hidden="true"></span>' +
+      '<span class="rail-toggle-text">Updates</span>';
+
+    var list = document.createElement("ul");
+    list.className = "rail-list";
+    list.id = "rail-list";
+    list.innerHTML = UPDATES.map(function (u) {
+      var active = u.file === here;
+      return '<li><a href="' + esc(u.file) + '"' +
+        (active ? ' aria-current="page"' : "") +
+        /* The title carries the full name for the collapsed strip, where only
+           the badge is showing. */
+        ' title="' + esc(u.short + " \u2014 " + u.note) + '">' +
+        '<span class="rail-badge" aria-hidden="true">' + esc(u.badge) + '</span>' +
+        '<span class="rail-text">' +
+        '<span class="rail-short">' + esc(u.short) + '</span>' +
+        '<span class="rail-note">' + esc(u.note) + '</span>' +
+        '</span></a></li>';
+    }).join("");
+
+    /* Only ever visible on a narrow screen, where the rail overlays the page
+       rather than displacing it -- tapping off it should close it. */
+    var backdrop = document.createElement("div");
+    backdrop.className = "rail-backdrop";
+    backdrop.addEventListener("click", function () { setCollapsed(true); });
+
+    /* Sets exactly one explicit class, so the choice survives a resize across
+       the breakpoint instead of being taken back by the media query. */
+    function setCollapsed(next) {
+      root.classList.toggle("rail-collapsed", next);
+      root.classList.toggle("rail-open", !next);
+      toggle.setAttribute("aria-expanded", String(!next));
+      try { localStorage.setItem("rail", next ? "collapsed" : "open"); } catch (e) {}
+    }
+
+    toggle.addEventListener("click", function () { setCollapsed(!isCollapsed()); });
+
+    /* Before any choice is made the default flips at the breakpoint, so the
+       button's state has to follow it or a screen reader would be told the
+       menu is open while it is a strip. */
+    var mq = window.matchMedia(NARROW);
+    var onNarrowChange = function () {
+      toggle.setAttribute("aria-expanded", String(!isCollapsed()));
+    };
+    if (mq.addEventListener) { mq.addEventListener("change", onNarrowChange); }
+    else if (mq.addListener) { mq.addListener(onNarrowChange); }
+
+    nav.appendChild(toggle);
+    nav.appendChild(list);
+    document.body.appendChild(nav);
+    document.body.appendChild(backdrop);
+  })();
+
   /* ---- load ----------------------------------------------------------- */
-  fetch("data/report.json", { cache: "no-store" })
+  /* Which report to draw. The live tracker's page says nothing and gets
+     data/report.json; an archive page names its own file on <body>, so one
+     renderer serves both without a second copy of it. */
+  var SOURCE = document.body.getAttribute("data-report") || "data/report.json";
+
+  fetch(SOURCE, { cache: "no-store" })
     .then(function (r) {
       if (!r.ok) { throw new Error("HTTP " + r.status); }
       return r.json();
@@ -134,7 +239,7 @@
       var box = $("error");
       box.hidden = false;
       box.textContent =
-        "Could not load data/report.json (" + err.message + "). " +
+        "Could not load " + SOURCE + " (" + err.message + "). " +
         "If this site was just published, the first tracking run may not have completed yet.";
     });
 
@@ -146,26 +251,37 @@
     var s = report.stats || {};
     var upd = report.update || {};
     var base = report.baseline || {};
+    /* An archive is a reconstruction of a finished rollout rather than a live
+       recording of one in progress, so several lines of copy here would be
+       wrong for it ("day 54 of the rollout", "new in the last hour"). Rather
+       than grow a second set of hardcoded strings, the archive supplies its
+       own wording in the report and this renderer prefers it where present.
+       With no archive block every branch below behaves exactly as before. */
+    var arc = report.archive || {};
 
     document.title = "Language availability — " + (upd.label || "Governing Body Update");
     text($("update-title"), upd.label || "Governing Body Update");
 
     var meta = [];
-    if (upd.release) { meta.push("Released " + fmtUTC(upd.release, true)); }
-    if (s.days_since_release != null) {
-      meta.push("day " + Math.floor(s.days_since_release + 1) + " of the rollout");
+    if (arc.meta && arc.meta.length) {
+      meta = arc.meta.slice();
+    } else {
+      if (upd.release) { meta.push("Released " + fmtUTC(upd.release, true)); }
+      if (s.days_since_release != null) {
+        meta.push("day " + Math.floor(s.days_since_release + 1) + " of the rollout");
+      }
+      if (upd.duration) { meta.push(upd.duration); }
     }
-    if (upd.duration) { meta.push(upd.duration); }
     $("update-meta").innerHTML = meta.map(esc).join('<span class="dot">•</span>');
 
     /* hero */
     text($("hero-value"), String(s.published_count == null ? "—" : s.published_count));
     if (s.target) {
-      text($("hero-of"), "of about " + s.target + " expected");
+      text($("hero-of"), arc.hero_of || ("of about " + s.target + " expected"));
       text($("hero-pct"), (s.percent == null ? "" : s.percent + "%"));
       var pct = Math.max(0, Math.min(100, s.percent || 0));
       $("meter-fill").style.width = Math.max(pct, pct > 0 ? 0.4 : 0) + "%";
-      $("meter-caption").innerHTML =
+      $("meter-caption").innerHTML = arc.hero_caption ? esc(arc.hero_caption) :
         plural(s.pending_count || 0, "language", "languages") + " still to come, against the " +
         esc(base.count) + " languages " +
         (base.url
@@ -181,18 +297,25 @@
 
     /* stat tiles */
     function delta(n) { return n == null ? "\u2014" : "+" + n; }
-    var tiles = [
-      ["New in the last hour", delta(s.added_1h)],
-      ["New in the last 4 hours", delta(s.added_4h)],
-      ["New in the last 24 hours", delta(s.added_24h)]
-    ];
-    if (s.pending_count != null) {
-      tiles.push(["Still pending", String(s.pending_count)]);
-    }
-    if (s.publisher_percent != null) {
-      // Weighted by how many publishers read each language, so this runs well
-      // ahead of the language count: the largest languages publish first.
-      tiles.push(["Percentage of publishers reached", s.publisher_percent + "%"]);
+    var tiles;
+    if (arc.tiles && arc.tiles.length) {
+      /* "New in the last hour" says nothing about a rollout that finished
+         weeks ago, so an archive names its own tiles. */
+      tiles = arc.tiles.map(function (t) { return [t.label, t.value]; });
+    } else {
+      tiles = [
+        ["New in the last hour", delta(s.added_1h)],
+        ["New in the last 4 hours", delta(s.added_4h)],
+        ["New in the last 24 hours", delta(s.added_24h)]
+      ];
+      if (s.pending_count != null) {
+        tiles.push(["Still pending", String(s.pending_count)]);
+      }
+      if (s.publisher_percent != null) {
+        // Weighted by how many publishers read each language, so this runs well
+        // ahead of the language count: the largest languages publish first.
+        tiles.push(["Percentage of publishers reached", s.publisher_percent + "%"]);
+      }
     }
     $("tiles").innerHTML = tiles.map(function (t) {
       return '<div class="tile"><p class="tile-label">' + esc(t[0]) +
@@ -201,6 +324,7 @@
 
     /* chart */
     var noteBits = [
+      arc.chart_note ||
       "Cumulative count of languages, plotted on each language's own publish time."
     ];
     if (base.count) {
@@ -208,6 +332,20 @@
         (base.short || "the previous update") + " reached.");
     }
     text($("chart-note"), noteBits.join(" "));
+
+    /* The archive pins the chart to its full span, so it has no range control
+       and states its two bracketing moments as text instead. Same source as
+       the dotted rules on the chart, so the two cannot disagree. */
+    var dates = $("chart-dates");
+    if (dates) {
+      var stamps = (arc.markers || []).filter(function (m) { return m && m.t; });
+      dates.innerHTML = stamps.map(function (m) {
+        return '<li><span class="chart-date-label">' + esc(m.label) + "</span>" +
+          '<span class="chart-date-value">' + esc(fmtUTC(m.t, true)) + "</span></li>";
+      }).join("");
+      dates.hidden = !stamps.length;
+    }
+
     drawChart(report);
 
     /* tables */
@@ -215,20 +353,20 @@
     text($("count-pending"), String((report.pending || []).length));
     text($("count-activity"), String((report.events || []).length));
 
-    $("pending-note").innerHTML =
+    $("pending-note").innerHTML = arc.pending_note ? esc(arc.pending_note) :
       "Languages that received " + esc(base.short || "the previous update") +
       " but do not yet have " + esc(upd.short || "this update") + ".";
 
     renderIntegrity(report);
 
-    $("published-legend").innerHTML = [
+    $("published-legend").innerHTML = (arc.legend && arc.legend.length ? arc.legend : [
       "\u00a7 \u2014 approximate: the time comes from the video file itself, " +
         "not from jw.org.",
       "\u2020 \u2014 approximate: the time is the media API\u2019s firstPublished, " +
         "which can run earlier than public availability.",
       "\u2021 \u2014 approximate: the time is this tracker\u2019s own first " +
         "sighting of the language."
-    ].join("<br>");
+    ]).map(esc).join("<br>");
 
     renderPublished();
     renderPending();
@@ -241,7 +379,7 @@
       (src.files_api
         ? ' via <a href="' + esc(src.files_api) + '" rel="noopener">its media service</a>'
         : "");
-    $("footer-method").innerHTML =
+    $("footer-method").innerHTML = arc.method_note ? arc.method_note :
       "The count comes from jw.org\u2019s own media service, which reports every " +
       "language a video is available to watch or download in \u2014 the same list the " +
       "language selector under the video offers. Each language brings its own publish " +
@@ -254,7 +392,7 @@
       ((report.integrity || {}).last_full_verification
         ? " Last verified " + fmtUTC(report.integrity.last_full_verification) + "."
         : "");
-    $("footer-checked").textContent =
+    $("footer-checked").textContent = arc.checked_note ? arc.checked_note :
       "Last recorded check " + fmtUTC(report.last_checked) +
       " (" + relative(report.last_checked) + "). Checks run every 30 minutes, but the " +
       "report is only rewritten when the language list changes or the record is over " +
@@ -266,6 +404,17 @@
      nothing for a confirmed time, dagger for anything derived from the API,
      double dagger when only the tracker's own sighting was available. */
   function provenanceMark(source, note) {
+    if (source === "record") {
+      /* Archive pages only. The time is when jw.org created the language's
+         record, which is the most reliable value recoverable after the fact
+         but is an ingestion time, not the moment it became watchable. */
+      return '<abbr class="ts-mark" title="' +
+        esc(note || "The second jw.org created this language’s media record, " +
+          "recovered from the record’s own identifier. That is when the " +
+          "vernacular version was taken in, which on a scheduled release runs " +
+          "ahead of when it became watchable") +
+        '">¶</abbr>';
+    }
     if (source === "file_estimated") {
       return '<abbr class="ts-mark" title="' +
         esc(note || "Estimated from pub-media\u2019s file timestamps, which record the " +
@@ -300,6 +449,15 @@
     var box = $("integrity");
     var info = report.integrity || {};
     var items = [];
+
+    /* An archive's caveats are about how the times were recovered rather than
+       about a check that just failed, and they are written by the script that
+       recovered them, which knows the actual counts. They lead, because on a
+       reconstruction the provenance is the first thing a reader needs. */
+    var arc = report.archive || {};
+    if (arc.notices && arc.notices.length) {
+      items = items.concat(arc.notices);
+    }
 
     if (info.pub_media_unavailable) {
       items.push(
@@ -357,6 +515,10 @@
       : "<ul>" + items.map(function (i) { return "<li>" + i + "</li>"; }).join("") + "</ul>";
   }
 
+  /* Keyed by report, so the live page and an archive remember their own view
+     instead of overwriting each other's. */
+  var VIEW_KEY = "chartView:" + SOURCE;
+
   /* ---- chart ---------------------------------------------------------- */
   var RANGES = { "6h": 6 * 36e5, "24h": 24 * 36e5, "3d": 3 * 864e5, "7d": 7 * 864e5 };
 
@@ -404,6 +566,22 @@
     return best;
   }
 
+  /* Moments worth marking on the time axis, oldest first. `markers` is the
+     general form; `release_marker` is the single-marker shape and is still
+     honoured. Times that don't parse are dropped rather than drawn at the
+     epoch. */
+  function markerList(report) {
+    var arc = report.archive || {};
+    var raw = arc.markers || (arc.release_marker ? [arc.release_marker] : []);
+    return raw.map(function (m) {
+      return { t: new Date(m.t).getTime(), label: m.label || "" };
+    }).filter(function (m) {
+      return !isNaN(m.t);
+    }).sort(function (a, b) {
+      return a.t - b.t;
+    });
+  }
+
   function drawChart(report) {
     var svg = $("chart");
     var target = (report.baseline || {}).count || null;
@@ -414,14 +592,36 @@
     while (svg.lastChild && svg.lastChild.id !== "chart-desc") { svg.removeChild(svg.lastChild); }
     var desc = $("chart-desc");
 
-    var lastChecked = new Date(report.last_checked).getTime();
+    /* A live report extends its series to the last check, so a quiet stretch
+       reads as flat rather than missing. An archive's "last check" is the day
+       it was built, which can be months after the final language -- extending
+       to it would append a long dead flat run and squash the rollout itself
+       into the left edge. So an archive ends at its last real point. */
+    var isArchive = !!(report.archive || {}).is_archive;
+    var lastChecked = isArchive ? NaN : new Date(report.last_checked).getTime();
     var points = seriesFrom(report.history, lastChecked);
     if (!points.length) { desc.textContent = "No history recorded yet."; return; }
 
     /* ---- time window ---- */
+    var markers = markerList(report);
     var tEnd = points[points.length - 1].t;
     var span = RANGES[state.chart.range];
-    var tStart = span ? Math.max(points[0].t, tEnd - span) : points[0].t;
+    var tStart;
+    if (span) {
+      /* A narrowed range means what it says, so markers outside it just don't
+         draw. */
+      tStart = Math.max(points[0].t, tEnd - span);
+    } else {
+      /* Showing everything. A marker can predate the first language --
+         translation materials go out before any vernacular comes back -- so
+         the domain has to stretch to reach it or the marker falls off the
+         chart. A little padding past it keeps its rule off the axis. */
+      tStart = points[0].t;
+      for (var mi = 0; mi < markers.length; mi++) {
+        if (markers[mi].t < tStart) { tStart = markers[mi].t; }
+      }
+      if (tStart < points[0].t) { tStart -= (tEnd - tStart) * 0.035; }
+    }
     if (tEnd - tStart < 36e5) { tStart = tEnd - 36e5; }
     var fromStart = tStart <= points[0].t;
 
@@ -470,19 +670,52 @@
       }).textContent = Math.round(v);
     }
 
-    /* x ticks */
-    var ticks = xTicks(tStart, tEnd);
+    /* x ticks. xTicks spaces them in time, but labels collide in pixels: at
+       some spans the last interior tick lands a few pixels short of the final
+       one and the two dates overprint. Pruning is done here because only the
+       renderer knows the scale. */
+    var ticks = pruneTicks(xTicks(tStart, tEnd), x);
     ticks.forEach(function (tick, idx) {
       add("text", {
         class: "axis-text", x: x(tick.t), y: H - pad.b + 18,
         "text-anchor": idx === 0 ? "start" : idx === ticks.length - 1 ? "end" : "middle"
-      }).textContent = (idx === 0 && fromStart) ? "release" : tick.label;
+        /* On a live report the series starts at the release, so naming the
+           first tick "release" is accurate. On an archive it starts at the
+           first vernacular taken in, days earlier, so the release gets its own
+           marker instead and this tick keeps its date. */
+      }).textContent = (idx === 0 && fromStart && !isArchive) ? "release" : tick.label;
     });
     if (ticks.length && ticks[0].sub) {
       add("text", {
         class: "axis-note", x: pad.l, y: H - pad.b + 31
       }).textContent = ticks[0].sub;
     }
+
+    /* Dotted vertical rules for the moments that bracket the rollout: when
+       translation materials went out, and when the video published. They carry
+       the meaning of the curve's shape -- without them the flat run on the
+       left reads as nothing happening, when in fact it is the wait between
+       materials going out and the first vernacular coming back, and the near-
+       vertical jump reads as a sudden burst of publishing rather than a roster
+       that was already in hand going live at once.
+
+       Labels are staggered in alternating rows because two markers a few days
+       apart sit close enough on a month-long axis for their text to collide. */
+    markers.forEach(function (m, i) {
+      if (m.t < tStart || m.t > tEnd) { return; }
+      var mx = x(m.t);
+      add("line", {
+        class: "release-line", x1: mx, x2: mx, y1: pad.t, y2: H - pad.b
+      });
+      /* Anchor the label inward when it would otherwise overflow the plot. */
+      var nearRight = mx > W - pad.r - 92;
+      add("text", {
+        class: "release-text",
+        x: mx + (nearRight ? -7 : 7),
+        y: pad.t + 11 + (i % 2) * 14,
+        "text-anchor": nearRight ? "end" : "start"
+      }).textContent = m.label;
+    });
 
     /* target reference line, only when it falls inside the visible scale */
     if (target && target >= yMin && target <= yMax) {
@@ -494,7 +727,7 @@
       }).textContent = target;
       add("text", {
         class: "axis-text", x: W - pad.r + 7, y: y(target) + 18
-      }).textContent = "expected";
+      }).textContent = (report.archive || {}).target_label || "expected";
     }
 
     var d = stepPath(visible, x, y);
@@ -508,19 +741,36 @@
 
     var last = visible[visible.length - 1];
     add("circle", { class: "end-dot", cx: x(last.t), cy: y(last.count), r: 4.5 });
+    /* The running total and the target label share the right-hand gutter, so a
+       series that finishes on or near its target prints one over the other --
+       which is exactly what a completed rollout does. Lift the total clear of
+       the target block when they collide. */
+    var endY = y(last.count) + 4;
+    if (target && target >= yMin && target <= yMax && Math.abs(endY - (y(target) + 4)) < 16) {
+      endY = Math.max(y(target) - 11, pad.t + 4);
+    }
     add("text", {
-      class: "end-label", x: x(last.t) + 10, y: y(last.count) + 4
+      class: "end-label", x: x(last.t) + 10, y: endY
     }).textContent = last.count;
 
     desc.textContent =
       "Line chart of cumulative languages" +
       (fromStart
-        ? " from release on " + fmtUTC(report.update.release || report.history[0].t, true)
+        ? (isArchive
+            ? " from " + fmtUTC(report.history[0].t, true)
+            : " from release on " +
+              fmtUTC(report.update.release || report.history[0].t, true))
         : " over the last " + state.chart.range) +
-      ", reaching " + last.count + " by " + fmtUTC(report.last_checked) +
+      ", reaching " + last.count + " by " +
+      fmtUTC(isArchive ? points[points.length - 1].t : report.last_checked) +
       ". Vertical axis " + yMin + " to " + yMax +
       (target && target >= yMin && target <= yMax
-        ? ", with an expected total of " + target + "." : ".");
+        ? ", with an expected total of " + target + "." : ".") +
+      markers.filter(function (m) {
+        return m.t >= tStart && m.t <= tEnd;
+      }).map(function (m) {
+        return " " + m.label + " is marked at " + fmtUTC(m.t, true) + ".";
+      }).join("");
 
     /* hover layer */
     var cross = add("line", { class: "crosshair", y1: pad.t, y2: H - pad.b, x1: 0, x2: 0, opacity: 0 });
@@ -577,6 +827,25 @@
 
   /* Tick granularity follows the window: hours for a short view, days for a
      long one, so a 6-hour range doesn't collapse onto a single date label. */
+  /* Keep the first and last ticks, since they anchor the axis, and drop any
+     interior tick that would crowd a kept neighbour. The gap allows for the
+     anchoring: an interior label is centred on its tick and the final one ends
+     on it, so the worst case needs half of one label plus all of the other --
+     about 62px for a "22 Aug" at this font size. */
+  function pruneTicks(ticks, x) {
+    if (ticks.length < 3) { return ticks; }
+    var MIN_GAP = 62, lastT = ticks[ticks.length - 1].t;
+    var kept = [ticks[0]];
+    for (var i = 1; i < ticks.length - 1; i++) {
+      if (x(ticks[i].t) - x(kept[kept.length - 1].t) >= MIN_GAP &&
+          x(lastT) - x(ticks[i].t) >= MIN_GAP) {
+        kept.push(ticks[i]);
+      }
+    }
+    kept.push(ticks[ticks.length - 1]);
+    return kept;
+  }
+
   function xTicks(t0, t1) {
     var HOUR = 36e5, DAY = 864e5, span = t1 - t0, out = [];
     if (span <= DAY * 1.5) {
@@ -800,12 +1069,24 @@
   /* ---- chart view options --------------------------------------------- */
   (function initChartOptions() {
     try {
-      var saved = JSON.parse(localStorage.getItem("chartView") || "null");
+      var saved = JSON.parse(localStorage.getItem(VIEW_KEY) || "null");
       if (saved && saved.y && saved.range) {
         if (["fit", "target"].indexOf(saved.y) !== -1) { state.chart.y = saved.y; }
         if (saved.range === "all" || RANGES[saved.range]) { state.chart.range = saved.range; }
       }
     } catch (e) {}
+
+    /* Not every page offers every control: the archive drops the vertical
+       scale and offers a narrower set of ranges. Since the view is remembered,
+       a restored value with no button here would be unreachable -- and a "last
+       6 hours" window on a rollout that finished in August would draw an empty
+       chart with no way out. So discard any choice this page cannot change. */
+    if (!document.querySelector('[data-chart-y="' + state.chart.y + '"]')) {
+      state.chart.y = "fit";
+    }
+    if (!document.querySelector('[data-chart-range="' + state.chart.range + '"]')) {
+      state.chart.range = "all";
+    }
 
     function sync() {
       var all = document.querySelectorAll("[data-chart-y],[data-chart-range]");
@@ -822,7 +1103,7 @@
       var el = ev.currentTarget;
       if (el.dataset.chartY) { state.chart.y = el.dataset.chartY; }
       else { state.chart.range = el.dataset.chartRange; }
-      try { localStorage.setItem("chartView", JSON.stringify(state.chart)); } catch (e) {}
+      try { localStorage.setItem(VIEW_KEY, JSON.stringify(state.chart)); } catch (e) {}
       sync();
       if (state.report) { drawChart(state.report); }
     }

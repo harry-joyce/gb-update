@@ -203,12 +203,41 @@ rather than deleted, and are restored with their original timestamps if they
 come back. Languages live in the catalogue but missing from its listing are
 recorded in `integrity.listing_lag` and noted on the site.
 
-### Why Update #5 has no rollout curve
+### Update #5's rollout curve, recovered after the fact
 
 The media API reports a single bulk `firstPublished` for every language of a
-finished item — all 449 of Update #5's languages report
-`2026-07-31T13:24:54`. Only its final total is meaningful, so it appears as a
-target line rather than a comparison curve.
+finished item — 297 of Update #5's 449 languages report an identical
+`2026-07-31T13:24:54`. pub-media is no better: re-encoding moves
+`modifiedDatetime`, and 113 of those 449 languages have been re-transcoded,
+French three times, so its files claim 6 August when it actually went out on
+30 July.
+
+Neither source can reconstruct a finished rollout, but a third one can. Every
+mediator record carries a `guid` that is a **MongoDB ObjectId**, and an
+ObjectId's first four bytes are the second the record was created:
+
+```python
+datetime.fromtimestamp(int(guid[:8], 16), timezone.utc)
+```
+
+No rewrite touches it. Where `firstPublished` is *not* the bulk value it is
+genuine, and the guid matches it to the second; where a language's files have
+never been replaced the guid sits 10–32 seconds before the first file write,
+which is the right order — the record is created, then its files are written.
+Checked against Update #6, which the tracker watched live, no guid postdates
+the tracker's own first sighting.
+
+What the guid is **not** is a public-availability time. Records are created as
+each vernacular is taken in, and on a scheduled release that runs days ahead of
+publication — 11 of Update #5's languages were ingested before English, one of
+them 12 hours before. So `scripts/archive_doc.py` does not claim the series is
+"languages watchable" and does not clamp it to the release. It plots
+preparation times as what they are and draws the publication moment as a dotted
+marker, which is what makes the real shape legible: 297 languages were ready
+and waiting when the video published, and the remaining 152 trickled in over
+the next three weeks.
+
+See [Archiving a finished update](#archiving-a-finished-update).
 
 ### Per-language links
 
@@ -320,15 +349,18 @@ already published in the annual report.
 | Path | Purpose |
 |---|---|
 | `index.html`, `assets/` | The site. Static, dependency-free, reads `data/report.json`. |
+| `update-5.html` | The Update #5 archive. Same renderer, reads `data/report-1112024059.json` via `<body data-report>`. |
 | `scripts/track.py` | The half-hourly check of both signals. Writes `data/report.json`. |
 | `scripts/jw.py` | Shared pub-media and media-catalogue fetching and parsing. |
 | `scripts/verify_times.py` | Daily: re-reads every timestamp from both APIs and reports drift. Never overwrites. |
 | `scripts/build_baseline.py` | One-off: snapshots the baseline update and the language index. |
+| `scripts/archive_doc.py` | One-off per finished update: reconstructs its rollout from record identifiers. Writes `data/report-<docid>.json`. |
 | `scripts/build_weights.py` | One-off per spreadsheet revision: turns publisher counts into `data/weights.json`. |
 | `config.json` | Which video is tracked, its release time, and the baseline. |
 | `data/overrides.json` | Confirmed publish times. Hand-edited. |
 | `data/report.json` | Current state **and** accumulated history — the site's only data source. |
 | `data/baseline.json` | The 449 languages Update #5 reached. |
+| `data/report-<docid>.json` | A finished update's archive. Built once, never polled. |
 | `data/languages.json` | Cached MEPS language metadata. |
 | `data/weights.json` | Publisher counts per language. **Confidential, gitignored**, optional. |
 
@@ -415,6 +447,7 @@ Two consequences worth knowing:
 ```sh
 python3 scripts/track.py          # check the API and update data/report.json
 python3 scripts/build_baseline.py # re-snapshot the baseline + language index
+python3 scripts/archive_doc.py --help  # rebuild a finished update's archive
 python3 -m http.server 8000       # then open http://localhost:8000
 ```
 
@@ -427,3 +460,88 @@ Edit `config.json` — point `tracked` at the new video's `docid` and `release`
 time, and `baseline` at the previous update — then run
 `python3 scripts/build_baseline.py`, clear `data/overrides.json`, and delete
 `data/report.json` so history restarts cleanly.
+
+## Archiving a finished update
+
+An update that finished before the tracker existed can still get a page.
+`scripts/archive_doc.py` reconstructs one from the mediator's record
+identifiers — see [Update #5's rollout curve, recovered after the
+fact](#update-5s-rollout-curve-recovered-after-the-fact) for why that is the
+only source that survives on a completed item.
+
+```sh
+python3 scripts/archive_doc.py \
+  --docid 1112024059 --baseline-docid 1112024061 \
+  --label "2026 Governing Body Update #5" --short "Update #5" \
+  --baseline-label "2026 Governing Body Update #4" --baseline-short "Update #4" \
+  --release 2026-07-31T13:24:54Z
+```
+
+`--release` is the **scheduled jw.org publication moment**. It is drawn as a
+dotted marker on the chart and is never used to clamp a time, because on a
+scheduled release the languages were prepared before it, not published at it.
+Omit it and the marker simply doesn't appear.
+
+Note the docids are not chronological: Update #4 is `1112024061`, *higher* than
+both #5 (`1112024059`) and #6 (`1112024060`). Read them off the category
+listing rather than guessing:
+
+```sh
+curl -s 'https://b.jw-cdn.org/apis/mediator/v1/categories/E/StudioNewsReports?detailed=1' \
+  | python3 -m json.tool | grep -E 'languageAgnosticNaturalKey|"title"'
+```
+
+The run makes about 450 requests, so it caches every per-language read in
+`data/.archive-cache-<docid>.json` (gitignored — it is pure upstream data and
+re-fetchable). Reruns after a wording change cost nothing.
+
+### What an archive page does differently
+
+The archive writes an `archive` block into its report, and `assets/app.js`
+prefers that block's wording wherever it is present. With no `archive` block —
+which is the live tracker's case — every branch behaves exactly as before, so
+`index.html` is unaffected by any of this.
+
+| Live page | Archive page |
+|---|---|
+| `data/report.json` | `data/report-<docid>.json`, named on `<body data-report>` |
+| "day 2 of the rollout" | "rollout complete in 25.3 days" |
+| "New in the last hour / 4 hours / 24 hours" | "Ready when it published / Arrived after publication / Days to the last language" |
+| Series starts at the release; first x tick reads "release" | Series starts at the first vernacular taken in, days earlier; the release is a dotted marker |
+| Series extends to the last check | Series ends at the last real point |
+| `†` catalogue time, `§` file estimate, `‡` first sighting | `¶` record-creation time |
+| Two signals, files ahead of catalogue | One series — both signals finished complete and now resolve from the same record |
+
+The provenance notices at the foot of an archive page are written by the script
+that built it, so they quote the actual counts: how many `firstPublished` values
+were bulk-rewritten, how many languages were re-transcoded, and how many were
+ready before publication.
+
+### Adding another archive
+
+1. Find the docid and the previous update's docid from the category listing.
+2. Run `archive_doc.py` with both, plus the publication moment.
+3. Copy `update-5.html`, change the `<title>`, the `<h1>`, and the
+   `data-report` attribute on `<body>`.
+4. Add it to the `UPDATES` list at the top of the update-rail section in
+   `assets/app.js`. That list is the only place the menu is defined — both
+   pages build their rail from it, so a new entry appears on all of them at
+   once and no HTML file carries a copy that could drift.
+
+No workflow changes: a finished update does not change, so nothing polls it.
+
+### The update rail
+
+The fixed menu on the left is built by `assets/app.js` from `UPDATES` and marks
+the current page by matching the served filename, treating a directory URL as
+`index.html` — which is how GitHub Pages serves the site root at `/gb-update/`.
+
+It has three states, and the **stylesheet owns the default on purpose**:
+`.rail-collapsed` and `.rail-open` go on `<html>` only once the reader has
+actually chosen, and with neither class the width comes from a media query —
+expanded on a wide screen, collapsed on a narrow one, where the rail overlays
+the page instead of displacing it. An earlier version measured
+`window.innerWidth` in the `<head>` script to pick that default and always read
+`0`, because no layout has happened that early, so every page loaded collapsed.
+A media query cannot be wrong about the viewport; only an explicit choice is
+applied from script.

@@ -275,6 +275,15 @@ h1 {
   stroke-dasharray: 5 4;
 }
 .target-text { fill: var(--text-secondary); font-size: 11px; font-weight: 550; }
+/* Publication marker on archive charts. Dotted rather than dashed so it reads
+   as a different kind of statement from the horizontal target line: that one
+   is a count to reach, this one is a moment in time. */
+.release-line {
+  stroke: var(--text-muted);
+  stroke-width: 1;
+  stroke-dasharray: 2 3;
+}
+.release-text { fill: var(--text-secondary); font-size: 11px; font-weight: 550; }
 .end-label {
   fill: var(--text-primary);
   font-size: 12px;
@@ -655,3 +664,209 @@ footer p { margin: 0 0 6px; }
   fill: var(--text-muted);
   font-size: 10.5px;
 }
+
+/* ---- update rail ------------------------------------------------------- */
+/* A fixed left rail listing every update the site publishes, collapsing to a
+   badge strip. Its markup is built in app.js from one list, so neither page
+   carries a copy of the menu.
+
+   Three states, and the CSS owns the default deliberately: `.rail-collapsed`
+   and `.rail-open` are set only when the reader has actually chosen, and with
+   neither the width comes from the media query below -- expanded on a wide
+   screen, collapsed on a narrow one. An earlier version measured
+   window.innerWidth from a <head> script to pick that default and always got
+   0, because no layout has happened that early, so every page loaded
+   collapsed. A media query cannot be wrong about the viewport. */
+:root {
+  --rail-w: 212px;
+  --rail-text: block;
+  --rail-just: flex-start;
+  --rail-pad: 6px;
+}
+html.rail-collapsed {
+  --rail-w: 56px;
+  --rail-text: none;
+  --rail-just: center;
+  --rail-pad: 0px;
+}
+
+.rail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 20;
+  width: var(--rail-w);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px 12px;
+  background: var(--surface-1);
+  border-right: 1px solid var(--border);
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: width 0.18s ease;
+}
+
+body { padding-left: var(--rail-w); transition: padding-left 0.18s ease; }
+
+.rail-toggle {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: var(--rail-just);
+  gap: 11px;
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  padding: 7px var(--rail-pad);
+  color: var(--text-muted);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.rail-toggle:hover { background: var(--surface-2); color: var(--text-primary); }
+.rail-toggle:focus-visible { outline: 2px solid var(--series-1); outline-offset: 1px; }
+
+/* Three bars from one element, so the rail needs no icon asset. */
+.rail-bars {
+  flex: none;
+  position: relative;
+  width: 16px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+}
+.rail-bars::before,
+.rail-bars::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+}
+.rail-bars::before { top: -5px; }
+.rail-bars::after { top: 5px; }
+
+.rail-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rail-list a {
+  display: flex;
+  align-items: center;
+  justify-content: var(--rail-just);
+  gap: 11px;
+  padding: 7px var(--rail-pad);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+.rail-list a:hover { background: var(--surface-2); color: var(--text-primary); }
+.rail-list a:focus-visible { outline: 2px solid var(--series-1); outline-offset: 1px; }
+.rail-list a[aria-current="page"] {
+  background: var(--surface-2);
+  color: var(--text-primary);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+
+.rail-badge {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 11.5px;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+.rail-list a[aria-current="page"] .rail-badge {
+  background: var(--series-1);
+  border-color: var(--series-1);
+  color: #fff;
+}
+
+.rail-text { min-width: 0; display: var(--rail-text); }
+.rail-toggle-text { display: var(--rail-text); }
+.rail-short {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.rail-note {
+  display: block;
+  font-size: 11.5px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.rail-backdrop { display: none; }
+
+/* Narrow screens: collapsed unless explicitly opened, and when open the rail
+   overlays the page rather than displacing it -- so the content keeps its
+   width and only the strip is permanently spent. */
+@media (max-width: 860px) {
+  html:not(.rail-open) {
+    --rail-w: 56px;
+    --rail-text: none;
+    --rail-just: center;
+    --rail-pad: 0px;
+  }
+  body { padding-left: 56px; }
+  html.rail-open .rail { box-shadow: var(--shadow); }
+  html.rail-open .rail-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 19;
+    background: rgba(0, 0, 0, 0.32);
+  }
+}
+
+/* ---- chart date lines -------------------------------------------------- */
+/* Stands in for the range control on an archive chart, whose span is fixed.
+   Each line is prefixed with a dotted rule echoing the vertical markers on the
+   chart itself, so the text and the plot read as the same statement. */
+.chart-dates {
+  list-style: none;
+  margin: 14px 0 2px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chart-dates li {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.chart-dates li::before {
+  content: "";
+  flex: none;
+  width: 15px;
+  border-top: 1px dotted var(--text-muted);
+  transform: translateY(-3px);
+}
+
+.chart-date-label { color: var(--text-secondary); }
+.chart-date-value { font-variant-numeric: tabular-nums; }
