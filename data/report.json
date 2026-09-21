@@ -325,19 +325,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 4,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 4
  },
  "counts": {
   "api_times": 23,
-  "awaiting_catalogue": 3,
+  "awaiting_catalogue": 4,
   "catalogued": 80,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 59,
+  "file_times": 60,
   "observed_times": 0,
   "sign_languages": 18
  },
@@ -1140,13 +1140,20 @@
      "in_catalog": false,
      "name": "Korean",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-21T08:33:42Z",
+     "code": "MR",
+     "in_catalog": false,
+     "name": "Marathi",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 83,
+   "count_after": 84,
    "t": "2026-09-21T08:00:00Z"
   }
  ],
- "generated": "2026-09-21T08:19:01Z",
+ "generated": "2026-09-21T08:49:03Z",
  "history": [
   {
    "count": 1,
@@ -1479,6 +1486,10 @@
   {
    "count": 83,
    "t": "2026-09-21T08:03:06Z"
+  },
+  {
+   "count": 84,
+   "t": "2026-09-21T08:33:42Z"
   }
  ],
  "integrity": {
@@ -1492,13 +1503,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 83,
+  "files_count": 84,
   "last_full_verification": "2026-09-20T08:47:48Z",
   "listing_count": 80,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T08:19:01Z",
+ "last_checked": "2026-09-21T08:49:03Z",
  "pending": [
   {
    "code": "ABB",
@@ -3299,15 +3310,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "mapudungun"
-  },
-  {
-   "code": "MR",
-   "direction": "ltr",
-   "locale": "mr",
-   "name": "Marathi",
-   "script": "DEVANAGARI",
-   "sign": false,
-   "vernacular": "मराठी"
   },
   {
    "code": "MTC",
@@ -7503,6 +7505,39 @@
    "title": "2026 중앙장로회 보고 제6보",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KO",
    "vernacular": "한국어"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MR",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T08:33:42Z",
+   "files_at": "2026-09-21T08:33:42Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T08:33:42Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T08:49:03Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "mr",
+   "name": "Marathi",
+   "published_at": "2026-09-21T08:33:42Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T08:33:42Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "DEVANAGARI",
+   "sign": false,
+   "title": "व्हिडिओ",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MR",
+   "vernacular": "मराठी"
   }
  ],
  "removed": [],
@@ -7513,15 +7548,15 @@
  },
  "stats": {
   "added_1h": 2,
-  "added_24h": 34,
-  "added_4h": 5,
+  "added_24h": 32,
+  "added_4h": 6,
   "catalog_count": 80,
-  "catalog_lag": 3,
+  "catalog_lag": 4,
   "catalog_percent": 17.8,
-  "days_since_release": 2.76,
-  "pending_count": 366,
-  "percent": 18.5,
-  "published_count": 83,
+  "days_since_release": 2.78,
+  "pending_count": 365,
+  "percent": 18.7,
+  "published_count": 84,
   "publisher_percent": 75.5,
   "publisher_percent_ceiling": 99.2,
   "target": 449
