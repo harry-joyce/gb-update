@@ -306,19 +306,23 @@
   {
    "count": 76,
    "t": "2026-09-20T22:54:45Z"
+  },
+  {
+   "count": 77,
+   "t": "2026-09-20T23:33:02Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 22,
-  "awaiting_catalogue": 1,
-  "catalogued": 76,
+  "awaiting_catalogue": 0,
+  "catalogued": 77,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 54,
@@ -1049,7 +1053,7 @@
     {
      "at": "2026-09-20T23:32:49Z",
      "code": "JML",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Jamaican Sign Language",
      "source": "file_estimated"
     }
@@ -1058,7 +1062,7 @@
    "t": "2026-09-20T23:00:00Z"
   }
  ],
- "generated": "2026-09-21T00:48:21Z",
+ "generated": "2026-09-21T01:18:23Z",
  "history": [
   {
    "count": 1,
@@ -1382,11 +1386,11 @@
   "file_drift_count": 4,
   "files_count": 77,
   "last_full_verification": "2026-09-20T08:47:48Z",
-  "listing_count": 76,
+  "listing_count": 77,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T00:48:21Z",
+ "last_checked": "2026-09-21T01:18:23Z",
  "pending": [
   {
    "code": "ABB",
@@ -7211,12 +7215,12 @@
    "vernacular": "lengua de señas boliviana"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-20T23:33:02Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-20T23:33:02Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T01:18:23Z",
    "code": "JML",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7229,9 +7233,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-20T23:32:49Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-20T23:34:47Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "jls",
    "name": "Jamaican Sign Language",
    "published_at": "2026-09-20T23:32:49Z",
@@ -7254,10 +7258,10 @@
   "added_1h": 0,
   "added_24h": 30,
   "added_4h": 3,
-  "catalog_count": 76,
-  "catalog_lag": 1,
-  "catalog_percent": 16.9,
-  "days_since_release": 2.45,
+  "catalog_count": 77,
+  "catalog_lag": 0,
+  "catalog_percent": 17.1,
+  "days_since_release": 2.47,
   "pending_count": 372,
   "percent": 17.1,
   "published_count": 77,
