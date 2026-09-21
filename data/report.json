@@ -397,19 +397,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
+  "last_checked_count": 6,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 5,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 6
  },
  "counts": {
   "api_times": 24,
-  "awaiting_catalogue": 4,
+  "awaiting_catalogue": 6,
   "catalogued": 98,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 77,
+  "file_times": 79,
   "observed_times": 0,
   "sign_languages": 21
  },
@@ -1385,9 +1385,29 @@
    ],
    "count_after": 102,
    "t": "2026-09-21T15:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-21T16:02:33Z",
+     "code": "OI",
+     "in_catalog": false,
+     "name": "Odia",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-21T16:21:45Z",
+     "code": "LHK",
+     "in_catalog": false,
+     "name": "Lhukonzo",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 104,
+   "t": "2026-09-21T16:00:00Z"
   }
  ],
- "generated": "2026-09-21T15:29:23Z",
+ "generated": "2026-09-21T16:41:14Z",
  "history": [
   {
    "count": 1,
@@ -1796,6 +1816,14 @@
   {
    "count": 102,
    "t": "2026-09-21T15:05:06Z"
+  },
+  {
+   "count": 103,
+   "t": "2026-09-21T16:02:33Z"
+  },
+  {
+   "count": 104,
+   "t": "2026-09-21T16:21:45Z"
   }
  ],
  "integrity": {
@@ -1809,13 +1837,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 102,
+  "files_count": 104,
   "last_full_verification": "2026-09-21T09:16:03Z",
   "listing_count": 98,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T15:29:23Z",
+ "last_checked": "2026-09-21T16:41:14Z",
  "pending": [
   {
    "code": "ABB",
@@ -3240,15 +3268,6 @@
    "vernacular": "Baledha"
   },
   {
-   "code": "LHK",
-   "direction": "ltr",
-   "locale": "koo",
-   "name": "Lhukonzo",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Lhukonzo"
-  },
-  {
    "code": "ELI",
    "direction": "ltr",
    "locale": "lir",
@@ -3886,15 +3905,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Obolo"
-  },
-  {
-   "code": "OI",
-   "direction": "ltr",
-   "locale": "or",
-   "name": "Odia",
-   "script": "ORIYA",
-   "sign": false,
-   "vernacular": "ଓଡ଼ିଆ"
   },
   {
    "code": "OKP",
@@ -8271,6 +8281,71 @@
    "title": "Vhidhiyo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CPI",
    "vernacular": "Txitxopi"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "OI",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T16:02:33Z",
+   "files_at": "2026-09-21T16:02:33Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T16:02:33Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T16:41:14Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "or",
+   "name": "Odia",
+   "published_at": "2026-09-21T16:02:33Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T16:02:33Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ORIYA",
+   "sign": false,
+   "title": "୨୦୨୬ ପ୍ରଶାସନ ଦଳ ତରଫରୁ ଅପଡେଟ୍ ସଂ. ୬",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=OI",
+   "vernacular": "ଓଡ଼ିଆ"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LHK",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T16:21:45Z",
+   "files_at": "2026-09-21T16:21:45Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T16:21:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T16:41:14Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "koo",
+   "name": "Lhukonzo",
+   "published_at": "2026-09-21T16:21:45Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T16:21:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Evideyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LHK",
+   "vernacular": "Lhukonzo"
   }
  ],
  "removed": [],
@@ -8280,16 +8355,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
-  "added_24h": 39,
-  "added_4h": 14,
+  "added_1h": 2,
+  "added_24h": 38,
+  "added_4h": 11,
   "catalog_count": 98,
-  "catalog_lag": 4,
+  "catalog_lag": 6,
   "catalog_percent": 21.8,
-  "days_since_release": 3.06,
-  "pending_count": 347,
-  "percent": 22.7,
-  "published_count": 102,
+  "days_since_release": 3.11,
+  "pending_count": 345,
+  "percent": 23.2,
+  "published_count": 104,
   "publisher_percent": 78.0,
   "publisher_percent_ceiling": 99.2,
   "target": 449
