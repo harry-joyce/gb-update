@@ -397,32 +397,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 12,
-  "newly_catalogued": [
-   "AL",
-   "AUS",
-   "CA",
-   "EWN",
-   "FA",
-   "HWP",
-   "IN",
-   "INS",
-   "KZ",
-   "LJ",
-   "P",
-   "Q"
-  ],
-  "offset": 4,
+  "last_checked_count": 1,
+  "newly_catalogued": [],
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 12
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 24,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 98,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 73,
+  "file_times": 74,
   "observed_times": 0,
   "sign_languages": 21
  },
@@ -1358,9 +1345,22 @@
    ],
    "count_after": 98,
    "t": "2026-09-21T13:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-21T14:26:23Z",
+     "code": "NKN",
+     "in_catalog": false,
+     "name": "Kyangonde",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 99,
+   "t": "2026-09-21T14:00:00Z"
   }
  ],
- "generated": "2026-09-21T13:59:14Z",
+ "generated": "2026-09-21T14:29:17Z",
  "history": [
   {
    "count": 1,
@@ -1753,6 +1753,10 @@
   {
    "count": 98,
    "t": "2026-09-21T13:29:30Z"
+  },
+  {
+   "count": 99,
+   "t": "2026-09-21T14:26:23Z"
   }
  ],
  "integrity": {
@@ -1766,13 +1770,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 98,
+  "files_count": 99,
   "last_full_verification": "2026-09-21T09:16:03Z",
-  "listing_count": 86,
+  "listing_count": 98,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T13:59:14Z",
+ "last_checked": "2026-09-21T14:29:17Z",
  "pending": [
   {
    "code": "ABB",
@@ -3159,15 +3163,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Oshikwanyama"
-  },
-  {
-   "code": "NKN",
-   "direction": "ltr",
-   "locale": "nyy-x-nkn",
-   "name": "Kyangonde",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kyangonde"
   },
   {
    "code": "LMB",
@@ -7503,7 +7498,7 @@
    "first_observed": "2026-09-21T10:49:14Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "asf",
    "name": "Australian Sign Language",
    "published_at": "2026-09-21T05:13:31Z",
@@ -7794,7 +7789,7 @@
    "first_observed": "2026-09-21T12:21:51Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "sq",
    "name": "Albanian",
    "published_at": "2026-09-21T11:20:51Z",
@@ -7827,7 +7822,7 @@
    "first_observed": "2026-09-21T12:21:51Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ky",
    "name": "Kirghiz",
    "published_at": "2026-09-21T11:30:59Z",
@@ -7860,7 +7855,7 @@
    "first_observed": "2026-09-21T12:21:51Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ins",
    "name": "Indian Sign Language",
    "published_at": "2026-09-21T11:54:30Z",
@@ -7893,7 +7888,7 @@
    "first_observed": "2026-09-21T12:21:51Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "id",
    "name": "Indonesian",
    "published_at": "2026-09-21T12:10:51Z",
@@ -7926,7 +7921,7 @@
    "first_observed": "2026-09-21T12:59:10Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ewo",
    "name": "Ewondo",
    "published_at": "2026-09-21T12:32:19Z",
@@ -7958,7 +7953,7 @@
    "first_observed": "2026-09-21T12:59:10Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "leh",
    "name": "Lenje",
    "published_at": "2026-09-21T12:32:39Z",
@@ -7990,7 +7985,7 @@
    "first_observed": "2026-09-21T12:59:10Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "he",
    "name": "Hebrew",
    "published_at": "2026-09-21T12:42:23Z",
@@ -8023,7 +8018,7 @@
    "first_observed": "2026-09-21T12:59:10Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "pl",
    "name": "Polish",
    "published_at": "2026-09-21T12:43:15Z",
@@ -8056,7 +8051,7 @@
    "first_observed": "2026-09-21T13:29:12Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "hwc",
    "name": "Hawai’i Pidgin",
    "published_at": "2026-09-21T13:00:17Z",
@@ -8089,7 +8084,7 @@
    "first_observed": "2026-09-21T13:29:12Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "fat",
    "name": "Fante",
    "published_at": "2026-09-21T13:28:57Z",
@@ -8121,7 +8116,7 @@
    "first_observed": "2026-09-21T13:59:14Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "sn",
    "name": "Shona",
    "published_at": "2026-09-21T13:29:30Z",
@@ -8132,6 +8127,39 @@
    "title": "Mashoko Abva kuDare Rinotungamirira Nhamba 6 2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CA",
    "vernacular": "Shona"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NKN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T14:26:23Z",
+   "files_at": "2026-09-21T14:26:23Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T14:26:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T14:29:17Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nyy-x-nkn",
+   "name": "Kyangonde",
+   "published_at": "2026-09-21T14:26:23Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T14:26:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NKN",
+   "vernacular": "Kyangonde"
   }
  ],
  "removed": [],
@@ -8141,16 +8169,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
+  "added_1h": 2,
   "added_24h": 37,
   "added_4h": 12,
   "catalog_count": 98,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 21.8,
-  "days_since_release": 3.0,
-  "pending_count": 351,
-  "percent": 21.8,
-  "published_count": 98,
+  "days_since_release": 3.02,
+  "pending_count": 350,
+  "percent": 22.0,
+  "published_count": 99,
   "publisher_percent": 77.9,
   "publisher_percent_ceiling": 99.2,
   "target": 449
