@@ -325,21 +325,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 5,
+  "last_checked_count": 6,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 5,
   "size": 40,
-  "unlisted_total": 5
+  "unlisted_total": 6
  },
  "counts": {
   "api_times": 23,
-  "awaiting_catalogue": 5,
+  "awaiting_catalogue": 6,
   "catalogued": 80,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 61,
+  "file_times": 62,
   "observed_times": 0,
-  "sign_languages": 18
+  "sign_languages": 19
  },
  "events": [
   {
@@ -1158,9 +1158,22 @@
    ],
    "count_after": 85,
    "t": "2026-09-21T08:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-21T10:15:09Z",
+     "code": "TSL",
+     "in_catalog": false,
+     "name": "Taiwanese Sign Language",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 86,
+   "t": "2026-09-21T10:00:00Z"
   }
  ],
- "generated": "2026-09-21T09:19:06Z",
+ "generated": "2026-09-21T10:19:12Z",
  "history": [
   {
    "count": 1,
@@ -1501,6 +1514,10 @@
   {
    "count": 85,
    "t": "2026-09-21T08:58:26Z"
+  },
+  {
+   "count": 86,
+   "t": "2026-09-21T10:15:09Z"
   }
  ],
  "integrity": {
@@ -1514,13 +1531,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 85,
+  "files_count": 86,
   "last_full_verification": "2026-09-21T09:16:03Z",
   "listing_count": 80,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T09:19:06Z",
+ "last_checked": "2026-09-21T10:19:12Z",
  "pending": [
   {
    "code": "ABB",
@@ -4338,15 +4355,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Tahiti"
-  },
-  {
-   "code": "TSL",
-   "direction": "ltr",
-   "locale": "tss",
-   "name": "Taiwanese Sign Language",
-   "script": "CHINESE",
-   "sign": true,
-   "vernacular": "台灣手語"
   },
   {
    "code": "TJ",
@@ -7572,6 +7580,38 @@
    "title": "2026来自中央长老团的报导（六）",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CNS",
    "vernacular": "中文简体（广东话）"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TSL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T10:15:09Z",
+   "files_at": "2026-09-21T10:15:09Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T10:15:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T10:19:12Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tss",
+   "name": "Taiwanese Sign Language",
+   "published_at": "2026-09-21T10:15:09Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T10:15:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CHINESE",
+   "sign": true,
+   "title": "2026來自中央長老團的報導（六）",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TSL",
+   "vernacular": "台灣手語"
   }
  ],
  "removed": [],
@@ -7581,16 +7621,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 32,
+  "added_1h": 1,
+  "added_24h": 29,
   "added_4h": 7,
   "catalog_count": 80,
-  "catalog_lag": 5,
+  "catalog_lag": 6,
   "catalog_percent": 17.8,
-  "days_since_release": 2.8,
-  "pending_count": 364,
-  "percent": 18.9,
-  "published_count": 85,
+  "days_since_release": 2.85,
+  "pending_count": 363,
+  "percent": 19.2,
+  "published_count": 86,
   "publisher_percent": 75.5,
   "publisher_percent_ceiling": 99.2,
   "target": 449
