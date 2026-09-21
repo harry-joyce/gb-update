@@ -346,19 +346,80 @@
   {
    "count": 86,
    "t": "2026-09-21T10:15:19Z"
+  },
+  {
+   "count": 87,
+   "t": "2026-09-21T10:47:17Z"
+  },
+  {
+   "count": 88,
+   "t": "2026-09-21T11:21:03Z"
+  },
+  {
+   "count": 89,
+   "t": "2026-09-21T11:31:10Z"
+  },
+  {
+   "count": 90,
+   "t": "2026-09-21T11:54:43Z"
+  },
+  {
+   "count": 91,
+   "t": "2026-09-21T12:11:01Z"
+  },
+  {
+   "count": 92,
+   "t": "2026-09-21T12:32:29Z"
+  },
+  {
+   "count": 93,
+   "t": "2026-09-21T12:32:46Z"
+  },
+  {
+   "count": 94,
+   "t": "2026-09-21T12:42:35Z"
+  },
+  {
+   "count": 95,
+   "t": "2026-09-21T12:44:28Z"
+  },
+  {
+   "count": 96,
+   "t": "2026-09-21T13:00:30Z"
+  },
+  {
+   "count": 97,
+   "t": "2026-09-21T13:29:12Z"
+  },
+  {
+   "count": 98,
+   "t": "2026-09-21T13:29:30Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 11,
-  "newly_catalogued": [],
-  "offset": 0,
+  "last_checked_count": 12,
+  "newly_catalogued": [
+   "AL",
+   "AUS",
+   "CA",
+   "EWN",
+   "FA",
+   "HWP",
+   "IN",
+   "INS",
+   "KZ",
+   "LJ",
+   "P",
+   "Q"
+  ],
+  "offset": 4,
   "size": 40,
-  "unlisted_total": 11
+  "unlisted_total": 12
  },
  "counts": {
-  "api_times": 23,
-  "awaiting_catalogue": 11,
-  "catalogued": 86,
+  "api_times": 24,
+  "awaiting_catalogue": 0,
+  "catalogued": 98,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 73,
@@ -1115,7 +1176,7 @@
     {
      "at": "2026-09-21T05:13:31Z",
      "code": "AUS",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Australian Sign Language",
      "source": "file_estimated"
     },
@@ -1208,21 +1269,21 @@
     {
      "at": "2026-09-21T11:20:51Z",
      "code": "AL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Albanian",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-21T11:30:59Z",
      "code": "KZ",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kirghiz",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-21T11:54:30Z",
      "code": "INS",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Indian Sign Language",
      "source": "file_estimated"
     }
@@ -1235,35 +1296,35 @@
     {
      "at": "2026-09-21T12:10:51Z",
      "code": "IN",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Indonesian",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-21T12:32:19Z",
      "code": "EWN",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Ewondo",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-21T12:32:39Z",
      "code": "LJ",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Lenje",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-21T12:42:23Z",
      "code": "Q",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Hebrew",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-21T12:43:15Z",
      "code": "P",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Polish",
      "source": "file_estimated"
     }
@@ -1276,23 +1337,30 @@
     {
      "at": "2026-09-21T13:00:17Z",
      "code": "HWP",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Hawai’i Pidgin",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-21T13:28:57Z",
      "code": "FA",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Fante",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-21T13:29:30Z",
+     "code": "CA",
+     "in_catalog": true,
+     "name": "Shona",
+     "source": "api"
     }
    ],
-   "count_after": 97,
+   "count_after": 98,
    "t": "2026-09-21T13:00:00Z"
   }
  ],
- "generated": "2026-09-21T13:29:12Z",
+ "generated": "2026-09-21T13:59:14Z",
  "history": [
   {
    "count": 1,
@@ -1681,6 +1749,10 @@
   {
    "count": 97,
    "t": "2026-09-21T13:28:57Z"
+  },
+  {
+   "count": 98,
+   "t": "2026-09-21T13:29:30Z"
   }
  ],
  "integrity": {
@@ -1694,13 +1766,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 97,
+  "files_count": 98,
   "last_full_verification": "2026-09-21T09:16:03Z",
   "listing_count": 86,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T13:29:12Z",
+ "last_checked": "2026-09-21T13:59:14Z",
  "pending": [
   {
    "code": "ABB",
@@ -4248,15 +4320,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kreol Seselwa"
-  },
-  {
-   "code": "CA",
-   "direction": "ltr",
-   "locale": "sn",
-   "name": "Shona",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Shona"
   },
   {
    "code": "DM",
@@ -7420,12 +7483,12 @@
    "vernacular": "Hmoob Dawb"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T10:47:17Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T10:47:17Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T13:59:14Z",
    "code": "AUS",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7438,7 +7501,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T05:13:31Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T10:49:14Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "asf",
@@ -7711,12 +7774,12 @@
    "vernacular": "台灣手語"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T11:21:03Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T11:21:03Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T13:59:14Z",
    "code": "AL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7729,7 +7792,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T11:20:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T12:21:51Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "sq",
@@ -7744,12 +7807,12 @@
    "vernacular": "shqip"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T11:31:10Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T11:31:10Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T13:59:14Z",
    "code": "KZ",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7762,7 +7825,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T11:30:59Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T12:21:51Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "ky",
@@ -7777,12 +7840,12 @@
    "vernacular": "кыргыз"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T11:54:43Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T11:54:43Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T13:59:14Z",
    "code": "INS",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7795,7 +7858,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T11:54:30Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T12:21:51Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "ins",
@@ -7810,12 +7873,12 @@
    "vernacular": "Indian Sign Language"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T12:11:01Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T12:11:01Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T13:59:14Z",
    "code": "IN",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7828,7 +7891,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T12:10:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T12:21:51Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "id",
@@ -7843,12 +7906,12 @@
    "vernacular": "Indonesia"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T12:32:29Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T12:32:29Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T13:59:14Z",
    "code": "EWN",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7861,7 +7924,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T12:32:19Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T12:59:10Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "ewo",
@@ -7876,12 +7939,12 @@
    "vernacular": "Ewondo"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T12:32:46Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T12:32:46Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T13:59:14Z",
    "code": "LJ",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7893,7 +7956,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T12:32:39Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T12:59:10Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "leh",
@@ -7908,12 +7971,12 @@
    "vernacular": "Cilenje"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T12:42:35Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T12:42:35Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T13:59:14Z",
    "code": "Q",
    "direction": "rtl",
    "discovered_by": "pub-media",
@@ -7925,7 +7988,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T12:42:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T12:59:10Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "he",
@@ -7940,12 +8003,12 @@
    "vernacular": "עברית"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T12:44:28Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T12:44:28Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T13:59:14Z",
    "code": "P",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7958,7 +8021,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T12:43:15Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T12:59:10Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "pl",
@@ -7973,12 +8036,12 @@
    "vernacular": "polski"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T13:00:30Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T13:00:30Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T13:59:14Z",
    "code": "HWP",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -7991,7 +8054,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T13:00:17Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T13:29:12Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "hwc",
@@ -8006,12 +8069,12 @@
    "vernacular": "Hawai’i Pidgin"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-21T13:29:12Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-21T13:29:12Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T13:59:14Z",
    "code": "FA",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8024,7 +8087,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T13:28:57Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-21T13:29:12Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "fat",
@@ -8037,6 +8100,38 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=FA",
    "vernacular": "Mfantse"
+  },
+  {
+   "api_published_at": "2026-09-21T13:29:30Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-21T13:29:30Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-21T13:59:14Z",
+   "code": "CA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T12:39:08Z",
+   "files_at": "2026-09-21T13:29:30Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-21T13:59:14Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "sn",
+   "name": "Shona",
+   "published_at": "2026-09-21T13:29:30Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Mashoko Abva kuDare Rinotungamirira Nhamba 6 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CA",
+   "vernacular": "Shona"
   }
  ],
  "removed": [],
@@ -8046,17 +8141,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 6,
-  "added_24h": 38,
-  "added_4h": 11,
-  "catalog_count": 86,
-  "catalog_lag": 11,
-  "catalog_percent": 19.2,
-  "days_since_release": 2.98,
-  "pending_count": 352,
-  "percent": 21.6,
-  "published_count": 97,
-  "publisher_percent": 77.4,
+  "added_1h": 3,
+  "added_24h": 37,
+  "added_4h": 12,
+  "catalog_count": 98,
+  "catalog_lag": 0,
+  "catalog_percent": 21.8,
+  "days_since_release": 3.0,
+  "pending_count": 351,
+  "percent": 21.8,
+  "published_count": 98,
+  "publisher_percent": 77.9,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
