@@ -349,21 +349,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 5,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 5
  },
  "counts": {
   "api_times": 23,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 5,
   "catalogued": 86,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 63,
+  "file_times": 67,
   "observed_times": 0,
-  "sign_languages": 20
+  "sign_languages": 21
  },
  "events": [
   {
@@ -1202,9 +1202,49 @@
    ],
    "count_after": 87,
    "t": "2026-09-21T10:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-21T11:20:51Z",
+     "code": "AL",
+     "in_catalog": false,
+     "name": "Albanian",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-21T11:30:59Z",
+     "code": "KZ",
+     "in_catalog": false,
+     "name": "Kirghiz",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-21T11:54:30Z",
+     "code": "INS",
+     "in_catalog": false,
+     "name": "Indian Sign Language",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 90,
+   "t": "2026-09-21T11:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-21T12:10:51Z",
+     "code": "IN",
+     "in_catalog": false,
+     "name": "Indonesian",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 91,
+   "t": "2026-09-21T12:00:00Z"
   }
  ],
- "generated": "2026-09-21T10:49:14Z",
+ "generated": "2026-09-21T12:21:51Z",
  "history": [
   {
    "count": 1,
@@ -1553,6 +1593,22 @@
   {
    "count": 87,
    "t": "2026-09-21T10:15:09Z"
+  },
+  {
+   "count": 88,
+   "t": "2026-09-21T11:20:51Z"
+  },
+  {
+   "count": 89,
+   "t": "2026-09-21T11:30:59Z"
+  },
+  {
+   "count": 90,
+   "t": "2026-09-21T11:54:30Z"
+  },
+  {
+   "count": 91,
+   "t": "2026-09-21T12:10:51Z"
   }
  ],
  "integrity": {
@@ -1566,13 +1622,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 87,
+  "files_count": 91,
   "last_full_verification": "2026-09-21T09:16:03Z",
   "listing_count": 86,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T10:49:14Z",
+ "last_checked": "2026-09-21T12:21:51Z",
  "pending": [
   {
    "code": "ABB",
@@ -1636,15 +1692,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Akha"
-  },
-  {
-   "code": "AL",
-   "direction": "ltr",
-   "locale": "sq",
-   "name": "Albanian",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "shqip"
   },
   {
    "code": "ALU",
@@ -2628,24 +2675,6 @@
    "vernacular": "Iloko"
   },
   {
-   "code": "INS",
-   "direction": "ltr",
-   "locale": "ins",
-   "name": "Indian Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Indian Sign Language"
-  },
-  {
-   "code": "IN",
-   "direction": "ltr",
-   "locale": "id",
-   "name": "Indonesian",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Indonesia"
-  },
-  {
    "code": "INI",
    "direction": "ltr",
    "locale": "inl",
@@ -2896,15 +2925,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kipende"
-  },
-  {
-   "code": "KZ",
-   "direction": "ltr",
-   "locale": "ky",
-   "name": "Kirghiz",
-   "script": "CYRILLIC",
-   "sign": false,
-   "vernacular": "кыргыз"
   },
   {
    "code": "GB",
@@ -7671,6 +7691,138 @@
    "title": "2026來自中央長老團的報導（六）",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TSL",
    "vernacular": "台灣手語"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "AL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T11:20:51Z",
+   "files_at": "2026-09-21T11:20:51Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T11:20:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T12:21:51Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "sq",
+   "name": "Albanian",
+   "published_at": "2026-09-21T11:20:51Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T11:20:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AL",
+   "vernacular": "shqip"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KZ",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T11:30:59Z",
+   "files_at": "2026-09-21T11:30:59Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T11:30:59Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T12:21:51Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ky",
+   "name": "Kirghiz",
+   "published_at": "2026-09-21T11:30:59Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T11:30:59Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CYRILLIC",
+   "sign": false,
+   "title": "Видео",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KZ",
+   "vernacular": "кыргыз"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "INS",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T11:54:30Z",
+   "files_at": "2026-09-21T11:54:30Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T11:54:30Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T12:21:51Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ins",
+   "name": "Indian Sign Language",
+   "published_at": "2026-09-21T11:54:30Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T11:54:30Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=INS",
+   "vernacular": "Indian Sign Language"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "IN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T12:10:51Z",
+   "files_at": "2026-09-21T12:10:51Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T12:10:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T12:21:51Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "id",
+   "name": "Indonesian",
+   "published_at": "2026-09-21T12:10:51Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T12:10:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=IN",
+   "vernacular": "Indonesia"
   }
  ],
  "removed": [],
@@ -7680,17 +7832,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 30,
-  "added_4h": 6,
+  "added_1h": 3,
+  "added_24h": 33,
+  "added_4h": 7,
   "catalog_count": 86,
-  "catalog_lag": 1,
+  "catalog_lag": 5,
   "catalog_percent": 19.2,
-  "days_since_release": 2.87,
-  "pending_count": 362,
-  "percent": 19.4,
-  "published_count": 87,
-  "publisher_percent": 75.5,
+  "days_since_release": 2.93,
+  "pending_count": 358,
+  "percent": 20.3,
+  "published_count": 91,
+  "publisher_percent": 76.0,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
