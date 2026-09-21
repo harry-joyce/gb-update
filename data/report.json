@@ -325,19 +325,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 23,
-  "awaiting_catalogue": 2,
+  "awaiting_catalogue": 3,
   "catalogued": 80,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 58,
+  "file_times": 59,
   "observed_times": 0,
   "sign_languages": 18
  },
@@ -1131,9 +1131,22 @@
    ],
    "count_after": 82,
    "t": "2026-09-21T07:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-21T08:03:06Z",
+     "code": "KO",
+     "in_catalog": false,
+     "name": "Korean",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 83,
+   "t": "2026-09-21T08:00:00Z"
   }
  ],
- "generated": "2026-09-21T07:48:58Z",
+ "generated": "2026-09-21T08:19:01Z",
  "history": [
   {
    "count": 1,
@@ -1462,6 +1475,10 @@
   {
    "count": 82,
    "t": "2026-09-21T07:39:18Z"
+  },
+  {
+   "count": 83,
+   "t": "2026-09-21T08:03:06Z"
   }
  ],
  "integrity": {
@@ -1475,13 +1492,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 4,
-  "files_count": 82,
+  "files_count": 83,
   "last_full_verification": "2026-09-20T08:47:48Z",
   "listing_count": 80,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-21T07:48:58Z",
+ "last_checked": "2026-09-21T08:19:01Z",
  "pending": [
   {
    "code": "ABB",
@@ -2904,15 +2921,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Konkani (Romi)"
-  },
-  {
-   "code": "KO",
-   "direction": "ltr",
-   "locale": "ko",
-   "name": "Korean",
-   "script": "KOREAN",
-   "sign": false,
-   "vernacular": "한국어"
   },
   {
    "code": "KSL",
@@ -7463,6 +7471,38 @@
    "title": "2026 Maca Ka Hnyipixe Qaathene La Lapa Ne Xomi Meköt #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LF",
    "vernacular": "Drehu"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KO",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T08:03:06Z",
+   "files_at": "2026-09-21T08:03:06Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T08:03:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-21T08:19:01Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ko",
+   "name": "Korean",
+   "published_at": "2026-09-21T08:03:06Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T08:03:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "KOREAN",
+   "sign": false,
+   "title": "2026 중앙장로회 보고 제6보",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KO",
+   "vernacular": "한국어"
   }
  ],
  "removed": [],
@@ -7473,16 +7513,16 @@
  },
  "stats": {
   "added_1h": 2,
-  "added_24h": 33,
-  "added_4h": 4,
+  "added_24h": 34,
+  "added_4h": 5,
   "catalog_count": 80,
-  "catalog_lag": 2,
+  "catalog_lag": 3,
   "catalog_percent": 17.8,
-  "days_since_release": 2.74,
-  "pending_count": 367,
-  "percent": 18.3,
-  "published_count": 82,
-  "publisher_percent": 74.4,
+  "days_since_release": 2.76,
+  "pending_count": 366,
+  "percent": 18.5,
+  "published_count": 83,
+  "publisher_percent": 75.5,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
