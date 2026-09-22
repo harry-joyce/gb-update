@@ -457,24 +457,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
-  "newly_catalogued": [
-   "CSL",
-   "CT",
-   "TTP",
-   "VT"
-  ],
+  "last_checked_count": 2,
+  "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 2
  },
  "counts": {
   "api_times": 25,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 2,
   "catalogued": 113,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 87,
+  "file_times": 89,
   "observed_times": 0,
   "sign_languages": 23
  },
@@ -1565,13 +1560,33 @@
      "in_catalog": true,
      "name": "Chitonga (Malawi)",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T07:40:14Z",
+     "code": "LL",
+     "in_catalog": false,
+     "name": "Lele",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 113,
+   "count_after": 114,
    "t": "2026-09-22T07:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-22T08:08:52Z",
+     "code": "CE",
+     "in_catalog": false,
+     "name": "Mauritian Creole",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 115,
+   "t": "2026-09-22T08:00:00Z"
   }
  ],
- "generated": "2026-09-22T07:42:36Z",
+ "generated": "2026-09-22T08:13:13Z",
  "history": [
   {
    "count": 1,
@@ -2024,6 +2039,14 @@
   {
    "count": 113,
    "t": "2026-09-22T07:05:21Z"
+  },
+  {
+   "count": 114,
+   "t": "2026-09-22T07:40:14Z"
+  },
+  {
+   "count": 115,
+   "t": "2026-09-22T08:08:52Z"
   }
  ],
  "integrity": {
@@ -2037,13 +2060,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 113,
+  "files_count": 115,
   "last_full_verification": "2026-09-21T09:16:03Z",
-  "listing_count": 109,
+  "listing_count": 113,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T07:42:36Z",
+ "last_checked": "2026-09-22T08:13:13Z",
  "pending": [
   {
    "code": "ABB",
@@ -3423,15 +3446,6 @@
    "vernacular": "latviešu"
   },
   {
-   "code": "LL",
-   "direction": "ltr",
-   "locale": "lln",
-   "name": "Lele",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Lele"
-  },
-  {
    "code": "LND",
    "direction": "ltr",
    "locale": "led",
@@ -3700,15 +3714,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Mashi"
-  },
-  {
-   "code": "CE",
-   "direction": "ltr",
-   "locale": "mfe",
-   "name": "Mauritian Creole",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kreol Morisien"
   },
   {
    "code": "MAY",
@@ -8650,7 +8655,7 @@
    "first_observed": "2026-09-22T06:12:26Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "tdt",
    "name": "Tetun Dili",
    "published_at": "2026-09-22T00:40:23Z",
@@ -8683,7 +8688,7 @@
    "first_observed": "2026-09-22T06:42:29Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "vi",
    "name": "Vietnamese",
    "published_at": "2026-09-22T06:15:30Z",
@@ -8715,7 +8720,7 @@
    "first_observed": "2026-09-22T07:12:31Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "csl",
    "name": "Chinese Sign Language",
    "published_at": "2026-09-22T06:56:08Z",
@@ -8748,7 +8753,7 @@
    "first_observed": "2026-09-22T07:12:31Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "tog",
    "name": "Chitonga (Malawi)",
    "published_at": "2026-09-22T07:05:21Z",
@@ -8759,6 +8764,72 @@
    "title": "Vidiyo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CT",
    "vernacular": "Chitonga (Malawi)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T07:40:14Z",
+   "files_at": "2026-09-22T07:40:14Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T07:40:14Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T08:13:13Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "lln",
+   "name": "Lele",
+   "published_at": "2026-09-22T07:40:14Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T07:40:14Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LL",
+   "vernacular": "Lele"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CE",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T08:08:52Z",
+   "files_at": "2026-09-22T08:08:52Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T08:08:52Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T08:13:13Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "mfe",
+   "name": "Mauritian Creole",
+   "published_at": "2026-09-22T08:08:52Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T08:08:52Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CE",
+   "vernacular": "Kreol Morisien"
   }
  ],
  "removed": [],
@@ -8769,15 +8840,15 @@
  },
  "stats": {
   "added_1h": 2,
-  "added_24h": 30,
-  "added_4h": 3,
+  "added_24h": 31,
+  "added_4h": 5,
   "catalog_count": 113,
-  "catalog_lag": 0,
+  "catalog_lag": 2,
   "catalog_percent": 25.2,
-  "days_since_release": 3.74,
-  "pending_count": 336,
-  "percent": 25.2,
-  "published_count": 113,
+  "days_since_release": 3.76,
+  "pending_count": 334,
+  "percent": 25.6,
+  "published_count": 115,
   "publisher_percent": 78.8,
   "publisher_percent_ceiling": 99.2,
   "target": 449
