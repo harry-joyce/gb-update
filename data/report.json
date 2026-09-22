@@ -509,21 +509,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 12,
+  "last_checked_count": 19,
   "newly_catalogued": [],
-  "offset": 9,
+  "offset": 11,
   "size": 40,
-  "unlisted_total": 12
+  "unlisted_total": 19
  },
  "counts": {
   "api_times": 26,
-  "awaiting_catalogue": 12,
+  "awaiting_catalogue": 19,
   "catalogued": 126,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 111,
+  "file_times": 118,
   "observed_times": 0,
-  "sign_languages": 28
+  "sign_languages": 29
  },
  "events": [
   {
@@ -1823,13 +1823,68 @@
      "in_catalog": false,
      "name": "Luganda",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T13:39:11Z",
+     "code": "RT",
+     "in_catalog": false,
+     "name": "Rutoro",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T13:41:06Z",
+     "code": "RMV",
+     "in_catalog": false,
+     "name": "Romany (Vlax, Russia)",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T13:48:38Z",
+     "code": "BMB",
+     "in_catalog": false,
+     "name": "Bembe",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T13:50:18Z",
+     "code": "LSA",
+     "in_catalog": false,
+     "name": "Argentinean Sign Language",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T13:57:11Z",
+     "code": "REA",
+     "in_catalog": false,
+     "name": "Armenian",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 138,
+   "count_after": 143,
    "t": "2026-09-22T13:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-22T14:14:43Z",
+     "code": "ZN",
+     "in_catalog": false,
+     "name": "Zande",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T14:22:35Z",
+     "code": "MG",
+     "in_catalog": false,
+     "name": "Malagasy",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 145,
+   "t": "2026-09-22T14:00:00Z"
   }
  ],
- "generated": "2026-09-22T13:29:26Z",
+ "generated": "2026-09-22T14:29:21Z",
  "history": [
   {
    "count": 1,
@@ -2382,6 +2437,34 @@
   {
    "count": 138,
    "t": "2026-09-22T13:24:58Z"
+  },
+  {
+   "count": 139,
+   "t": "2026-09-22T13:39:11Z"
+  },
+  {
+   "count": 140,
+   "t": "2026-09-22T13:41:06Z"
+  },
+  {
+   "count": 141,
+   "t": "2026-09-22T13:48:38Z"
+  },
+  {
+   "count": 142,
+   "t": "2026-09-22T13:50:18Z"
+  },
+  {
+   "count": 143,
+   "t": "2026-09-22T13:57:11Z"
+  },
+  {
+   "count": 144,
+   "t": "2026-09-22T14:14:43Z"
+  },
+  {
+   "count": 145,
+   "t": "2026-09-22T14:22:35Z"
   }
  ],
  "integrity": {
@@ -2395,13 +2478,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 138,
+  "files_count": 145,
   "last_full_verification": "2026-09-22T08:47:09Z",
   "listing_count": 126,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T13:29:26Z",
+ "last_checked": "2026-09-22T14:29:21Z",
  "pending": [
   {
    "code": "ABB",
@@ -2510,24 +2593,6 @@
    "script": "ARABIC",
    "sign": false,
    "vernacular": "العربية (اللهجة السودانية)"
-  },
-  {
-   "code": "LSA",
-   "direction": "ltr",
-   "locale": "aed",
-   "name": "Argentinean Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "lengua de señas argentina"
-  },
-  {
-   "code": "REA",
-   "direction": "ltr",
-   "locale": "hy",
-   "name": "Armenian",
-   "script": "ARMENIAN",
-   "sign": false,
-   "vernacular": "Հայերեն"
   },
   {
    "code": "AHK",
@@ -2663,15 +2728,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Bileez Kriol"
-  },
-  {
-   "code": "BMB",
-   "direction": "ltr",
-   "locale": "bmb",
-   "name": "Bembe",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kibembe"
   },
   {
    "code": "BI",
@@ -3826,15 +3882,6 @@
    "vernacular": "Shimakonde"
   },
   {
-   "code": "MG",
-   "direction": "ltr",
-   "locale": "mg",
-   "name": "Malagasy",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Malagasy"
-  },
-  {
    "code": "MSL",
    "direction": "ltr",
    "locale": "sgn-mw",
@@ -4465,15 +4512,6 @@
    "vernacular": "Ρομανί (Νότια Ελλάδα)"
   },
   {
-   "code": "RMV",
-   "direction": "ltr",
-   "locale": "rmy-x-rmv",
-   "name": "Romany (Vlax, Russia)",
-   "script": "CYRILLIC",
-   "sign": false,
-   "vernacular": "романи (влахитско, Россия)"
-  },
-  {
    "code": "RN",
    "direction": "ltr",
    "locale": "rng",
@@ -4499,15 +4537,6 @@
    "script": "CYRILLIC",
    "sign": true,
    "vernacular": "русский жестовый"
-  },
-  {
-   "code": "RT",
-   "direction": "ltr",
-   "locale": "ttj",
-   "name": "Rutoro",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Rutoro"
   },
   {
    "code": "RWS",
@@ -5183,15 +5212,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Zambian Sign Language"
-  },
-  {
-   "code": "ZN",
-   "direction": "ltr",
-   "locale": "zne",
-   "name": "Zande",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Zande"
   },
   {
    "code": "ZPI",
@@ -9708,6 +9728,233 @@
    "title": "Vidiyo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LU",
    "vernacular": "Luganda"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "RT",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T13:39:11Z",
+   "files_at": "2026-09-22T13:39:11Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:39:11Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T14:29:21Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ttj",
+   "name": "Rutoro",
+   "published_at": "2026-09-22T13:39:11Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:39:11Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=RT",
+   "vernacular": "Rutoro"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "RMV",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T13:41:06Z",
+   "files_at": "2026-09-22T13:41:06Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:41:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T14:29:21Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "rmy-x-rmv",
+   "name": "Romany (Vlax, Russia)",
+   "published_at": "2026-09-22T13:41:06Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:41:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CYRILLIC",
+   "sign": false,
+   "title": "Обращения лэ Руководящёнэ советостар № 6 (2026 бэрш)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=RMV",
+   "vernacular": "романи (влахитско, Россия)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "BMB",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T13:48:38Z",
+   "files_at": "2026-09-22T13:48:38Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:48:38Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T14:29:21Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "bmb",
+   "name": "Bembe",
+   "published_at": "2026-09-22T13:48:38Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:48:38Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Lapolo ya 6 ya Iwé Lélé Mùlombola ya 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BMB",
+   "vernacular": "Kibembe"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LSA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T13:50:18Z",
+   "files_at": "2026-09-22T13:50:18Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:50:18Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T14:29:21Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "aed",
+   "name": "Argentinean Sign Language",
+   "published_at": "2026-09-22T13:50:18Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:50:18Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 | Informe 6 del Cuerpo Gobernante",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LSA",
+   "vernacular": "lengua de señas argentina"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "REA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T13:57:11Z",
+   "files_at": "2026-09-22T13:57:11Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:57:11Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T14:29:21Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "hy",
+   "name": "Armenian",
+   "published_at": "2026-09-22T13:57:11Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:57:11Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ARMENIAN",
+   "sign": false,
+   "title": "2026 Կառավարիչ մարմնի ուղերձ № 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=REA",
+   "vernacular": "Հայերեն"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "ZN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T14:14:43Z",
+   "files_at": "2026-09-22T14:14:43Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T14:14:43Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T14:29:21Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "zne",
+   "name": "Zande",
+   "published_at": "2026-09-22T14:14:43Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T14:14:43Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidio",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ZN",
+   "vernacular": "Zande"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T14:22:35Z",
+   "files_at": "2026-09-22T14:22:35Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T14:22:35Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T14:29:21Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "mg",
+   "name": "Malagasy",
+   "published_at": "2026-09-22T14:22:35Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T14:22:35Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MG",
+   "vernacular": "Malagasy"
   }
  ],
  "removed": [],
@@ -9718,16 +9965,16 @@
  },
  "stats": {
   "added_1h": 7,
-  "added_24h": 41,
-  "added_4h": 18,
+  "added_24h": 46,
+  "added_4h": 21,
   "catalog_count": 126,
-  "catalog_lag": 12,
+  "catalog_lag": 19,
   "catalog_percent": 28.1,
-  "days_since_release": 3.98,
-  "pending_count": 311,
-  "percent": 30.7,
-  "published_count": 138,
-  "publisher_percent": 83.0,
+  "days_since_release": 4.02,
+  "pending_count": 304,
+  "percent": 32.3,
+  "published_count": 145,
+  "publisher_percent": 83.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
