@@ -509,19 +509,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 9,
+  "last_checked_count": 12,
   "newly_catalogued": [],
-  "offset": 5,
+  "offset": 9,
   "size": 40,
-  "unlisted_total": 9
+  "unlisted_total": 12
  },
  "counts": {
   "api_times": 26,
-  "awaiting_catalogue": 9,
+  "awaiting_catalogue": 12,
   "catalogued": 126,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 108,
+  "file_times": 111,
   "observed_times": 0,
   "sign_languages": 28
  },
@@ -1800,9 +1800,36 @@
    ],
    "count_after": 135,
    "t": "2026-09-22T12:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-22T13:04:28Z",
+     "code": "U",
+     "in_catalog": false,
+     "name": "Russian",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T13:20:12Z",
+     "code": "KKL",
+     "in_catalog": false,
+     "name": "Kokola",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T13:24:58Z",
+     "code": "LU",
+     "in_catalog": false,
+     "name": "Luganda",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 138,
+   "t": "2026-09-22T13:00:00Z"
   }
  ],
- "generated": "2026-09-22T12:59:12Z",
+ "generated": "2026-09-22T13:29:26Z",
  "history": [
   {
    "count": 1,
@@ -2343,6 +2370,18 @@
   {
    "count": 135,
    "t": "2026-09-22T12:56:29Z"
+  },
+  {
+   "count": 136,
+   "t": "2026-09-22T13:04:28Z"
+  },
+  {
+   "count": 137,
+   "t": "2026-09-22T13:20:12Z"
+  },
+  {
+   "count": 138,
+   "t": "2026-09-22T13:24:58Z"
   }
  ],
  "integrity": {
@@ -2356,13 +2395,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 135,
+  "files_count": 138,
   "last_full_verification": "2026-09-22T08:47:09Z",
   "listing_count": 126,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T12:59:12Z",
+ "last_checked": "2026-09-22T13:29:26Z",
  "pending": [
   {
    "code": "ABB",
@@ -3553,15 +3592,6 @@
    "vernacular": "Kituba"
   },
   {
-   "code": "KKL",
-   "direction": "ltr",
-   "locale": "kzn",
-   "name": "Kokola",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kokola"
-  },
-  {
    "code": "MK",
    "direction": "ltr",
    "locale": "kg",
@@ -3704,15 +3734,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Plautdietsch"
-  },
-  {
-   "code": "LU",
-   "direction": "ltr",
-   "locale": "lg",
-   "name": "Luganda",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Luganda"
   },
   {
    "code": "LG",
@@ -4469,15 +4490,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Rumanyo"
-  },
-  {
-   "code": "U",
-   "direction": "ltr",
-   "locale": "ru",
-   "name": "Russian",
-   "script": "CYRILLIC",
-   "sign": false,
-   "vernacular": "русский"
   },
   {
    "code": "RSL",
@@ -9598,6 +9610,104 @@
    "title": "Vidio",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=PA",
    "vernacular": "Papiamentu (Kòrsou)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "U",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T13:04:28Z",
+   "files_at": "2026-09-22T13:04:28Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:04:28Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T13:29:26Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ru",
+   "name": "Russian",
+   "published_at": "2026-09-22T13:04:28Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:04:28Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CYRILLIC",
+   "sign": false,
+   "title": "Обращение Руководящего совета № 6 (2026 год)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=U",
+   "vernacular": "русский"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KKL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T13:20:12Z",
+   "files_at": "2026-09-22T13:20:12Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:20:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T13:29:26Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "kzn",
+   "name": "Kokola",
+   "published_at": "2026-09-22T13:20:12Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:20:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KKL",
+   "vernacular": "Kokola"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LU",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T13:24:58Z",
+   "files_at": "2026-09-22T13:24:58Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:24:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T13:29:26Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "lg",
+   "name": "Luganda",
+   "published_at": "2026-09-22T13:24:58Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:24:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LU",
+   "vernacular": "Luganda"
   }
  ],
  "removed": [],
@@ -9607,17 +9717,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 4,
-  "added_24h": 40,
-  "added_4h": 17,
+  "added_1h": 7,
+  "added_24h": 41,
+  "added_4h": 18,
   "catalog_count": 126,
-  "catalog_lag": 9,
+  "catalog_lag": 12,
   "catalog_percent": 28.1,
-  "days_since_release": 3.96,
-  "pending_count": 314,
-  "percent": 30.1,
-  "published_count": 135,
-  "publisher_percent": 80.0,
+  "days_since_release": 3.98,
+  "pending_count": 311,
+  "percent": 30.7,
+  "published_count": 138,
+  "publisher_percent": 83.0,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
