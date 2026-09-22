@@ -457,19 +457,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 7,
+  "last_checked_count": 11,
   "newly_catalogued": [],
-  "offset": 5,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 7
+  "unlisted_total": 11
  },
  "counts": {
   "api_times": 25,
-  "awaiting_catalogue": 7,
+  "awaiting_catalogue": 11,
   "catalogued": 113,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 94,
+  "file_times": 98,
   "observed_times": 0,
   "sign_languages": 25
  },
@@ -1469,6 +1469,13 @@
   {
    "added": [
     {
+     "at": "2026-09-21T17:07:56Z",
+     "code": "KI",
+     "in_catalog": false,
+     "name": "Kisi",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-21T17:14:50Z",
      "code": "TI",
      "in_catalog": true,
@@ -1483,7 +1490,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 106,
+   "count_after": 107,
    "t": "2026-09-21T17:00:00Z"
   },
   {
@@ -1503,7 +1510,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 108,
+   "count_after": 109,
    "t": "2026-09-21T18:00:00Z"
   },
   {
@@ -1516,7 +1523,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 109,
+   "count_after": 110,
    "t": "2026-09-21T21:00:00Z"
   },
   {
@@ -1529,7 +1536,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 110,
+   "count_after": 111,
    "t": "2026-09-22T00:00:00Z"
   },
   {
@@ -1549,7 +1556,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 112,
+   "count_after": 113,
    "t": "2026-09-22T06:00:00Z"
   },
   {
@@ -1569,7 +1576,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 114,
+   "count_after": 115,
    "t": "2026-09-22T07:00:00Z"
   },
   {
@@ -1603,7 +1610,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 118,
+   "count_after": 119,
    "t": "2026-09-22T08:00:00Z"
   },
   {
@@ -1623,11 +1630,38 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 120,
+   "count_after": 121,
    "t": "2026-09-22T09:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-22T10:14:06Z",
+     "code": "KU",
+     "in_catalog": false,
+     "name": "Kiluba",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T10:17:06Z",
+     "code": "AZ",
+     "in_catalog": false,
+     "name": "Kazakh",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T10:27:28Z",
+     "code": "SI",
+     "in_catalog": false,
+     "name": "Thai",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 124,
+   "t": "2026-09-22T10:00:00Z"
   }
  ],
- "generated": "2026-09-22T09:57:54Z",
+ "generated": "2026-09-22T10:27:59Z",
  "history": [
   {
    "count": 1,
@@ -2047,67 +2081,83 @@
   },
   {
    "count": 105,
-   "t": "2026-09-21T17:14:50Z"
+   "t": "2026-09-21T17:07:56Z"
   },
   {
    "count": 106,
-   "t": "2026-09-21T17:29:26Z"
+   "t": "2026-09-21T17:14:50Z"
   },
   {
    "count": 107,
-   "t": "2026-09-21T18:32:21Z"
+   "t": "2026-09-21T17:29:26Z"
   },
   {
    "count": 108,
-   "t": "2026-09-21T18:57:14Z"
+   "t": "2026-09-21T18:32:21Z"
   },
   {
    "count": 109,
-   "t": "2026-09-21T21:54:54Z"
+   "t": "2026-09-21T18:57:14Z"
   },
   {
    "count": 110,
-   "t": "2026-09-22T00:40:23Z"
+   "t": "2026-09-21T21:54:54Z"
   },
   {
    "count": 111,
-   "t": "2026-09-22T06:15:30Z"
+   "t": "2026-09-22T00:40:23Z"
   },
   {
    "count": 112,
-   "t": "2026-09-22T06:56:08Z"
+   "t": "2026-09-22T06:15:30Z"
   },
   {
    "count": 113,
-   "t": "2026-09-22T07:05:21Z"
+   "t": "2026-09-22T06:56:08Z"
   },
   {
    "count": 114,
-   "t": "2026-09-22T07:40:14Z"
+   "t": "2026-09-22T07:05:21Z"
   },
   {
    "count": 115,
-   "t": "2026-09-22T08:08:52Z"
+   "t": "2026-09-22T07:40:14Z"
   },
   {
    "count": 116,
-   "t": "2026-09-22T08:35:13Z"
+   "t": "2026-09-22T08:08:52Z"
   },
   {
    "count": 117,
-   "t": "2026-09-22T08:36:09Z"
+   "t": "2026-09-22T08:35:13Z"
   },
   {
    "count": 118,
-   "t": "2026-09-22T08:59:25Z"
+   "t": "2026-09-22T08:36:09Z"
   },
   {
    "count": 119,
-   "t": "2026-09-22T09:26:51Z"
+   "t": "2026-09-22T08:59:25Z"
   },
   {
    "count": 120,
+   "t": "2026-09-22T09:26:51Z"
+  },
+  {
+   "count": 121,
    "t": "2026-09-22T09:48:06Z"
+  },
+  {
+   "count": 122,
+   "t": "2026-09-22T10:14:06Z"
+  },
+  {
+   "count": 123,
+   "t": "2026-09-22T10:17:06Z"
+  },
+  {
+   "count": 124,
+   "t": "2026-09-22T10:27:28Z"
   }
  ],
  "integrity": {
@@ -2121,13 +2171,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 120,
+  "files_count": 124,
   "last_full_verification": "2026-09-22T08:47:09Z",
   "listing_count": 113,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T09:57:54Z",
+ "last_checked": "2026-09-22T10:27:59Z",
  "pending": [
   {
    "code": "ABB",
@@ -3210,15 +3260,6 @@
    "vernacular": "ကညီ(စှီၤ)ကျိာ်"
   },
   {
-   "code": "AZ",
-   "direction": "ltr",
-   "locale": "kk",
-   "name": "Kazakh",
-   "script": "CYRILLIC",
-   "sign": false,
-   "vernacular": "қазақ"
-  },
-  {
    "code": "AZA",
    "direction": "rtl",
    "locale": "kk-arab",
@@ -3273,15 +3314,6 @@
    "vernacular": "Gĩkũyũ"
   },
   {
-   "code": "KU",
-   "direction": "ltr",
-   "locale": "lu",
-   "name": "Kiluba",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kiluba"
-  },
-  {
    "code": "KIM",
    "direction": "ltr",
    "locale": "kmb",
@@ -3334,15 +3366,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ikirundi"
-  },
-  {
-   "code": "KI",
-   "direction": "ltr",
-   "locale": "kss",
-   "name": "Kisi",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kisiei"
   },
   {
    "code": "KSN",
@@ -4738,15 +4761,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ciutee"
-  },
-  {
-   "code": "SI",
-   "direction": "ltr",
-   "locale": "th",
-   "name": "Thai",
-   "script": "THAI",
-   "sign": false,
-   "vernacular": "ไทย"
   },
   {
    "code": "SIL",
@@ -8488,6 +8502,38 @@
    "vernacular": "Lhukonzo"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KI",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-21T17:07:56Z",
+   "files_at": "2026-09-21T17:07:56Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T17:07:56Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T10:27:59Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "kss",
+   "name": "Kisi",
+   "published_at": "2026-09-21T17:07:56Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-21T17:07:56Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Kona Ŋɔmpum Dialii Kuumbaŋ Choo Ve le 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KI",
+   "vernacular": "Kisiei"
+  },
+  {
    "api_published_at": "2026-09-21T17:14:50Z",
    "beyond_baseline": false,
    "catalog_at": "2026-09-21T17:14:50Z",
@@ -9009,6 +9055,104 @@
    "title": "2026 Blɔ Tsɔɔmi Ajla Toli Amaniɛ Bɔmi #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=DG",
    "vernacular": "Dangme"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KU",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T10:14:06Z",
+   "files_at": "2026-09-22T10:14:06Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T10:14:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T10:27:59Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "lu",
+   "name": "Kiluba",
+   "published_at": "2026-09-22T10:14:06Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T10:14:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Mapya 6 Atamba ku Kitango Kyendeji mu 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KU",
+   "vernacular": "Kiluba"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "AZ",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T10:17:06Z",
+   "files_at": "2026-09-22T10:17:06Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T10:17:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T10:27:59Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "kk",
+   "name": "Kazakh",
+   "published_at": "2026-09-22T10:17:06Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T10:17:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CYRILLIC",
+   "sign": false,
+   "title": "Видео",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AZ",
+   "vernacular": "қазақ"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SI",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T10:27:28Z",
+   "files_at": "2026-09-22T10:27:28Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T10:27:28Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T10:27:59Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "th",
+   "name": "Thai",
+   "published_at": "2026-09-22T10:27:28Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T10:27:28Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "THAI",
+   "sign": false,
+   "title": "วีดีโอ",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SI",
+   "vernacular": "ไทย"
   }
  ],
  "removed": [],
@@ -9018,17 +9162,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
-  "added_24h": 34,
-  "added_4h": 10,
+  "added_1h": 4,
+  "added_24h": 37,
+  "added_4h": 12,
   "catalog_count": 113,
-  "catalog_lag": 7,
+  "catalog_lag": 11,
   "catalog_percent": 25.2,
-  "days_since_release": 3.83,
-  "pending_count": 329,
-  "percent": 26.7,
-  "published_count": 120,
-  "publisher_percent": 78.9,
+  "days_since_release": 3.85,
+  "pending_count": 325,
+  "percent": 27.6,
+  "published_count": 124,
+  "publisher_percent": 79.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
