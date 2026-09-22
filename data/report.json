@@ -585,19 +585,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 6,
+  "last_checked_count": 10,
   "newly_catalogued": [],
   "offset": 4,
   "size": 40,
-  "unlisted_total": 6
+  "unlisted_total": 10
  },
  "counts": {
   "api_times": 26,
-  "awaiting_catalogue": 6,
+  "awaiting_catalogue": 10,
   "catalogued": 145,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 124,
+  "file_times": 128,
   "observed_times": 0,
   "sign_languages": 30
  },
@@ -2002,13 +2002,47 @@
      "in_catalog": false,
      "name": "Kinyarwanda",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T15:30:38Z",
+     "code": "NEN",
+     "in_catalog": false,
+     "name": "Nsenga (Zambia)",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T15:35:23Z",
+     "code": "LMB",
+     "in_catalog": false,
+     "name": "Lambya",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T15:51:14Z",
+     "code": "GN",
+     "in_catalog": false,
+     "name": "Gokana",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 151,
+   "count_after": 154,
    "t": "2026-09-22T15:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-22T16:00:57Z",
+     "code": "CK",
+     "in_catalog": false,
+     "name": "Chokwe",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 155,
+   "t": "2026-09-22T16:00:00Z"
   }
  ],
- "generated": "2026-09-22T15:29:26Z",
+ "generated": "2026-09-22T16:03:08Z",
  "history": [
   {
    "count": 1,
@@ -2613,6 +2647,22 @@
   {
    "count": 151,
    "t": "2026-09-22T15:10:35Z"
+  },
+  {
+   "count": 152,
+   "t": "2026-09-22T15:30:38Z"
+  },
+  {
+   "count": 153,
+   "t": "2026-09-22T15:35:23Z"
+  },
+  {
+   "count": 154,
+   "t": "2026-09-22T15:51:14Z"
+  },
+  {
+   "count": 155,
+   "t": "2026-09-22T16:00:57Z"
   }
  ],
  "integrity": {
@@ -2626,13 +2676,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 151,
+  "files_count": 155,
   "last_full_verification": "2026-09-22T08:47:09Z",
   "listing_count": 145,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T15:29:26Z",
+ "last_checked": "2026-09-22T16:03:08Z",
  "pending": [
   {
    "code": "ABB",
@@ -3013,15 +3063,6 @@
    "vernacular": "Chiyao"
   },
   {
-   "code": "CK",
-   "direction": "ltr",
-   "locale": "cjk",
-   "name": "Chokwe",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Chokwe"
-  },
-  {
    "code": "CHL",
    "direction": "ltr",
    "locale": "ctu",
@@ -3281,15 +3322,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Gitonga"
-  },
-  {
-   "code": "GN",
-   "direction": "ltr",
-   "locale": "gkn",
-   "name": "Gokana",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Gokana"
   },
   {
    "code": "GSL",
@@ -3821,15 +3853,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Oshikwanyama"
-  },
-  {
-   "code": "LMB",
-   "direction": "ltr",
-   "locale": "lai",
-   "name": "Lambya",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Chilambya"
   },
   {
    "code": "LN",
@@ -4397,15 +4420,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Nkoya"
-  },
-  {
-   "code": "NEN",
-   "direction": "ltr",
-   "locale": "nse",
-   "name": "Nsenga (Zambia)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Cinsenga"
   },
   {
    "code": "NK",
@@ -10243,6 +10257,138 @@
    "title": "Videwo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=YW",
    "vernacular": "Ikinyarwanda"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NEN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T15:30:38Z",
+   "files_at": "2026-09-22T15:30:38Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T15:30:38Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T16:03:08Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nse",
+   "name": "Nsenga (Zambia)",
+   "published_at": "2026-09-22T15:30:38Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T15:30:38Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NEN",
+   "vernacular": "Cinsenga"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LMB",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T15:35:23Z",
+   "files_at": "2026-09-22T15:35:23Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T15:35:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T16:03:08Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "lai",
+   "name": "Lambya",
+   "published_at": "2026-09-22T15:35:23Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T15:35:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Ividiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LMB",
+   "vernacular": "Chilambya"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "GN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T15:51:14Z",
+   "files_at": "2026-09-22T15:51:14Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T15:51:14Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T16:03:08Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "gkn",
+   "name": "Gokana",
+   "published_at": "2026-09-22T15:51:14Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T15:51:14Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vídiò",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GN",
+   "vernacular": "Gokana"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CK",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T16:00:57Z",
+   "files_at": "2026-09-22T16:00:57Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T16:00:57Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T16:03:08Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "cjk",
+   "name": "Chokwe",
+   "published_at": "2026-09-22T16:00:57Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T16:00:57Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Yinema",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CK",
+   "vernacular": "Chokwe"
   }
  ],
  "removed": [],
@@ -10252,17 +10398,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 5,
-  "added_24h": 49,
-  "added_4h": 22,
+  "added_1h": 8,
+  "added_24h": 52,
+  "added_4h": 23,
   "catalog_count": 145,
-  "catalog_lag": 6,
+  "catalog_lag": 10,
   "catalog_percent": 32.3,
-  "days_since_release": 4.06,
-  "pending_count": 298,
-  "percent": 33.6,
-  "published_count": 151,
-  "publisher_percent": 85.8,
+  "days_since_release": 4.09,
+  "pending_count": 294,
+  "percent": 34.5,
+  "published_count": 155,
+  "publisher_percent": 85.9,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
