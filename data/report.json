@@ -457,21 +457,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 5,
+  "last_checked_count": 7,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 5,
   "size": 40,
-  "unlisted_total": 5
+  "unlisted_total": 7
  },
  "counts": {
   "api_times": 25,
-  "awaiting_catalogue": 5,
+  "awaiting_catalogue": 7,
   "catalogued": 113,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 92,
+  "file_times": 94,
   "observed_times": 0,
-  "sign_languages": 24
+  "sign_languages": 25
  },
  "events": [
   {
@@ -1605,9 +1605,29 @@
    ],
    "count_after": 118,
    "t": "2026-09-22T08:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-22T09:26:51Z",
+     "code": "KSL",
+     "in_catalog": false,
+     "name": "Korean Sign Language",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T09:48:06Z",
+     "code": "DG",
+     "in_catalog": false,
+     "name": "Dangme",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 120,
+   "t": "2026-09-22T09:00:00Z"
   }
  ],
- "generated": "2026-09-22T09:12:45Z",
+ "generated": "2026-09-22T09:57:54Z",
  "history": [
   {
    "count": 1,
@@ -2080,6 +2100,14 @@
   {
    "count": 118,
    "t": "2026-09-22T08:59:25Z"
+  },
+  {
+   "count": 119,
+   "t": "2026-09-22T09:26:51Z"
+  },
+  {
+   "count": 120,
+   "t": "2026-09-22T09:48:06Z"
   }
  ],
  "integrity": {
@@ -2093,13 +2121,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 118,
+  "files_count": 120,
   "last_full_verification": "2026-09-22T08:47:09Z",
   "listing_count": 113,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T09:12:45Z",
+ "last_checked": "2026-09-22T09:57:54Z",
  "pending": [
   {
    "code": "ABB",
@@ -2631,15 +2659,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Damara"
-  },
-  {
-   "code": "DG",
-   "direction": "ltr",
-   "locale": "ada",
-   "name": "Dangme",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Dangme"
   },
   {
    "code": "DI",
@@ -3369,15 +3388,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Konkani (Romi)"
-  },
-  {
-   "code": "KSL",
-   "direction": "ltr",
-   "locale": "kvk",
-   "name": "Korean Sign Language",
-   "script": "KOREAN",
-   "sign": true,
-   "vernacular": "한국 수어"
   },
   {
    "code": "KP",
@@ -8935,6 +8945,70 @@
    "title": "វីដេអូ",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CB",
    "vernacular": "ខ្មែរ"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KSL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T09:26:51Z",
+   "files_at": "2026-09-22T09:26:51Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T09:26:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T09:57:54Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "kvk",
+   "name": "Korean Sign Language",
+   "published_at": "2026-09-22T09:26:51Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T09:26:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "KOREAN",
+   "sign": true,
+   "title": "2026 중앙장로회 보고 제6보",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KSL",
+   "vernacular": "한국 수어"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "DG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T09:48:06Z",
+   "files_at": "2026-09-22T09:48:06Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T09:48:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T09:57:54Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ada",
+   "name": "Dangme",
+   "published_at": "2026-09-22T09:48:06Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T09:48:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Blɔ Tsɔɔmi Ajla Toli Amaniɛ Bɔmi #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=DG",
+   "vernacular": "Dangme"
   }
  ],
  "removed": [],
@@ -8945,16 +9019,16 @@
  },
  "stats": {
   "added_1h": 3,
-  "added_24h": 32,
-  "added_4h": 8,
+  "added_24h": 34,
+  "added_4h": 10,
   "catalog_count": 113,
-  "catalog_lag": 5,
+  "catalog_lag": 7,
   "catalog_percent": 25.2,
-  "days_since_release": 3.8,
-  "pending_count": 331,
-  "percent": 26.3,
-  "published_count": 118,
-  "publisher_percent": 78.8,
+  "days_since_release": 3.83,
+  "pending_count": 329,
+  "percent": 26.7,
+  "published_count": 120,
+  "publisher_percent": 78.9,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
