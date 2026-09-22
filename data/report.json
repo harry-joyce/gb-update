@@ -585,21 +585,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 10,
+  "last_checked_count": 16,
   "newly_catalogued": [],
-  "offset": 4,
+  "offset": 12,
   "size": 40,
-  "unlisted_total": 10
+  "unlisted_total": 16
  },
  "counts": {
   "api_times": 26,
-  "awaiting_catalogue": 10,
+  "awaiting_catalogue": 16,
   "catalogued": 145,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 128,
+  "file_times": 134,
   "observed_times": 0,
-  "sign_languages": 30
+  "sign_languages": 31
  },
  "events": [
   {
@@ -2031,18 +2031,66 @@
   {
    "added": [
     {
+     "at": "2026-09-22T16:00:22Z",
+     "code": "RSL",
+     "in_catalog": false,
+     "name": "Russian Sign Language",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-22T16:00:57Z",
      "code": "CK",
      "in_catalog": false,
      "name": "Chokwe",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T16:07:09Z",
+     "code": "AK",
+     "in_catalog": false,
+     "name": "Batak (Karo)",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T16:39:02Z",
+     "code": "YA",
+     "in_catalog": false,
+     "name": "Chiyao",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T16:52:51Z",
+     "code": "FF",
+     "in_catalog": false,
+     "name": "Frafra",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T16:55:13Z",
+     "code": "UB",
+     "in_catalog": false,
+     "name": "Umbundu",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 155,
+   "count_after": 160,
    "t": "2026-09-22T16:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-22T17:00:29Z",
+     "code": "TCN",
+     "in_catalog": false,
+     "name": "Ticuna",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 161,
+   "t": "2026-09-22T17:00:00Z"
   }
  ],
- "generated": "2026-09-22T16:03:08Z",
+ "generated": "2026-09-22T17:19:35Z",
  "history": [
   {
    "count": 1,
@@ -2662,7 +2710,31 @@
   },
   {
    "count": 155,
+   "t": "2026-09-22T16:00:22Z"
+  },
+  {
+   "count": 156,
    "t": "2026-09-22T16:00:57Z"
+  },
+  {
+   "count": 157,
+   "t": "2026-09-22T16:07:09Z"
+  },
+  {
+   "count": 158,
+   "t": "2026-09-22T16:39:02Z"
+  },
+  {
+   "count": 159,
+   "t": "2026-09-22T16:52:51Z"
+  },
+  {
+   "count": 160,
+   "t": "2026-09-22T16:55:13Z"
+  },
+  {
+   "count": 161,
+   "t": "2026-09-22T17:00:29Z"
   }
  ],
  "integrity": {
@@ -2676,13 +2748,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 155,
+  "files_count": 161,
   "last_full_verification": "2026-09-22T08:47:09Z",
   "listing_count": 145,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T16:03:08Z",
+ "last_checked": "2026-09-22T17:19:35Z",
  "pending": [
   {
    "code": "ABB",
@@ -2874,15 +2946,6 @@
    "vernacular": "Ɓǎsɔ́ɔ̀ (Ɖàbíɖà)"
   },
   {
-   "code": "AK",
-   "direction": "ltr",
-   "locale": "btx",
-   "name": "Batak (Karo)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Batak (Karo)"
-  },
-  {
    "code": "BT",
    "direction": "ltr",
    "locale": "bbc",
@@ -3052,15 +3115,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Chitonga (Zimbabwe)"
-  },
-  {
-   "code": "YA",
-   "direction": "ltr",
-   "locale": "yao",
-   "name": "Chiyao",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Chiyao"
   },
   {
    "code": "CHL",
@@ -3268,15 +3322,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Fɔngbe"
-  },
-  {
-   "code": "FF",
-   "direction": "ltr",
-   "locale": "gur",
-   "name": "Frafra",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Farefare"
   },
   {
    "code": "GRF",
@@ -4656,15 +4701,6 @@
    "vernacular": "Rumanyo"
   },
   {
-   "code": "RSL",
-   "direction": "ltr",
-   "locale": "rsl",
-   "name": "Russian Sign Language",
-   "script": "CYRILLIC",
-   "sign": true,
-   "vernacular": "русский жестовый"
-  },
-  {
    "code": "RCR",
    "direction": "ltr",
    "locale": "rcf",
@@ -5016,15 +5052,6 @@
    "vernacular": "ภาษามือไทย"
   },
   {
-   "code": "TCN",
-   "direction": "ltr",
-   "locale": "tca",
-   "name": "Ticuna",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ticuna"
-  },
-  {
    "code": "TV",
    "direction": "ltr",
    "locale": "tiv",
@@ -5158,15 +5185,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Ugandan Sign Language"
-  },
-  {
-   "code": "UB",
-   "direction": "ltr",
-   "locale": "umb",
-   "name": "Umbundu",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Umbundu"
   },
   {
    "code": "UR",
@@ -10364,6 +10382,38 @@
    "catalog_at_note": null,
    "catalog_at_source": null,
    "catalog_observed": null,
+   "code": "RSL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T16:00:22Z",
+   "files_at": "2026-09-22T16:00:22Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T16:00:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T17:19:35Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "rsl",
+   "name": "Russian Sign Language",
+   "published_at": "2026-09-22T16:00:22Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T16:00:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CYRILLIC",
+   "sign": true,
+   "title": "Обращение Руководящего совета № 6 (2026 год)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=RSL",
+   "vernacular": "русский жестовый"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
    "code": "CK",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -10389,6 +10439,170 @@
    "title": "Yinema",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CK",
    "vernacular": "Chokwe"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "AK",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T16:07:09Z",
+   "files_at": "2026-09-22T16:07:09Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T16:07:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T17:19:35Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "btx",
+   "name": "Batak (Karo)",
+   "published_at": "2026-09-22T16:07:09Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T16:07:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AK",
+   "vernacular": "Batak (Karo)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "YA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T16:39:02Z",
+   "files_at": "2026-09-22T16:39:02Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T16:39:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T17:19:35Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "yao",
+   "name": "Chiyao",
+   "published_at": "2026-09-22T16:39:02Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T16:39:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Fidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=YA",
+   "vernacular": "Chiyao"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "FF",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T16:52:51Z",
+   "files_at": "2026-09-22T16:52:51Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T16:52:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T17:19:35Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "gur",
+   "name": "Frafra",
+   "published_at": "2026-09-22T16:52:51Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T16:52:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Tigere Zuo Bisegadoma Lasebaarɛ #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=FF",
+   "vernacular": "Farefare"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "UB",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T16:55:13Z",
+   "files_at": "2026-09-22T16:55:13Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T16:55:13Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T17:19:35Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "umb",
+   "name": "Umbundu",
+   "published_at": "2026-09-22T16:55:13Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T16:55:13Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vídeo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=UB",
+   "vernacular": "Umbundu"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TCN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T17:00:29Z",
+   "files_at": "2026-09-22T17:00:29Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T17:00:29Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T17:19:35Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tca",
+   "name": "Ticuna",
+   "published_at": "2026-09-22T17:00:29Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T17:00:29Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vídeo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TCN",
+   "vernacular": "Ticuna"
   }
  ],
  "removed": [],
@@ -10398,17 +10612,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 8,
-  "added_24h": 52,
-  "added_4h": 23,
+  "added_1h": 4,
+  "added_24h": 55,
+  "added_4h": 24,
   "catalog_count": 145,
-  "catalog_lag": 10,
+  "catalog_lag": 16,
   "catalog_percent": 32.3,
-  "days_since_release": 4.09,
-  "pending_count": 294,
-  "percent": 34.5,
-  "published_count": 155,
-  "publisher_percent": 85.9,
+  "days_since_release": 4.14,
+  "pending_count": 288,
+  "percent": 35.9,
+  "published_count": 161,
+  "publisher_percent": 86.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
