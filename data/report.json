@@ -441,21 +441,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 4,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 4
  },
  "counts": {
   "api_times": 25,
-  "awaiting_catalogue": 2,
+  "awaiting_catalogue": 4,
   "catalogued": 109,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 85,
+  "file_times": 87,
   "observed_times": 0,
-  "sign_languages": 22
+  "sign_languages": 23
  },
  "events": [
   {
@@ -1524,13 +1524,33 @@
      "in_catalog": false,
      "name": "Vietnamese",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T06:56:08Z",
+     "code": "CSL",
+     "in_catalog": false,
+     "name": "Chinese Sign Language",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 111,
+   "count_after": 112,
    "t": "2026-09-22T06:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-22T07:05:21Z",
+     "code": "CT",
+     "in_catalog": false,
+     "name": "Chitonga (Malawi)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 113,
+   "t": "2026-09-22T07:00:00Z"
   }
  ],
- "generated": "2026-09-22T06:42:29Z",
+ "generated": "2026-09-22T07:12:31Z",
  "history": [
   {
    "count": 1,
@@ -1975,6 +1995,14 @@
   {
    "count": 111,
    "t": "2026-09-22T06:15:30Z"
+  },
+  {
+   "count": 112,
+   "t": "2026-09-22T06:56:08Z"
+  },
+  {
+   "count": 113,
+   "t": "2026-09-22T07:05:21Z"
   }
  ],
  "integrity": {
@@ -1988,13 +2016,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 111,
+  "files_count": 113,
   "last_full_verification": "2026-09-21T09:16:03Z",
   "listing_count": 109,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T06:42:29Z",
+ "last_checked": "2026-09-22T07:12:31Z",
  "pending": [
   {
    "code": "ABB",
@@ -2420,15 +2448,6 @@
    "vernacular": "Chin (Hakha)"
   },
   {
-   "code": "CSL",
-   "direction": "ltr",
-   "locale": "csl",
-   "name": "Chinese Sign Language",
-   "script": "CHINESE",
-   "sign": true,
-   "vernacular": "中国手语"
-  },
-  {
    "code": "CG",
    "direction": "ltr",
    "locale": "toi",
@@ -2436,15 +2455,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Chitonga"
-  },
-  {
-   "code": "CT",
-   "direction": "ltr",
-   "locale": "tog",
-   "name": "Chitonga (Malawi)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Chitonga (Malawi)"
   },
   {
    "code": "CGW",
@@ -8663,6 +8673,71 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=VT",
    "vernacular": "Việt"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CSL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T06:56:08Z",
+   "files_at": "2026-09-22T06:56:08Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T06:56:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T07:12:31Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "csl",
+   "name": "Chinese Sign Language",
+   "published_at": "2026-09-22T06:56:08Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T06:56:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CHINESE",
+   "sign": true,
+   "title": "2026来自中央长老团的报导（六）",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CSL",
+   "vernacular": "中国手语"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CT",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T07:05:21Z",
+   "files_at": "2026-09-22T07:05:21Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T07:05:21Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T07:12:31Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tog",
+   "name": "Chitonga (Malawi)",
+   "published_at": "2026-09-22T07:05:21Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T07:05:21Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CT",
+   "vernacular": "Chitonga (Malawi)"
   }
  ],
  "removed": [],
@@ -8672,17 +8747,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 30,
-  "added_4h": 1,
+  "added_1h": 3,
+  "added_24h": 31,
+  "added_4h": 3,
   "catalog_count": 109,
-  "catalog_lag": 2,
+  "catalog_lag": 4,
   "catalog_percent": 24.3,
-  "days_since_release": 3.7,
-  "pending_count": 338,
-  "percent": 24.7,
-  "published_count": 111,
-  "publisher_percent": 78.7,
+  "days_since_release": 3.72,
+  "pending_count": 336,
+  "percent": 25.2,
+  "published_count": 113,
+  "publisher_percent": 78.8,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
