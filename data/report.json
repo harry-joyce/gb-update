@@ -438,19 +438,40 @@
   {
    "count": 109,
    "t": "2026-09-21T22:40:08Z"
+  },
+  {
+   "count": 110,
+   "t": "2026-09-22T05:58:35Z"
+  },
+  {
+   "count": 111,
+   "t": "2026-09-22T06:15:35Z"
+  },
+  {
+   "count": 112,
+   "t": "2026-09-22T06:56:18Z"
+  },
+  {
+   "count": 113,
+   "t": "2026-09-22T07:05:29Z"
   }
  ],
  "catalog_probe": {
   "last_checked_count": 4,
-  "newly_catalogued": [],
+  "newly_catalogued": [
+   "CSL",
+   "CT",
+   "TTP",
+   "VT"
+  ],
   "offset": 0,
   "size": 40,
   "unlisted_total": 4
  },
  "counts": {
   "api_times": 25,
-  "awaiting_catalogue": 4,
-  "catalogued": 109,
+  "awaiting_catalogue": 0,
+  "catalogued": 113,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 87,
@@ -1508,7 +1529,7 @@
     {
      "at": "2026-09-22T00:40:23Z",
      "code": "TTP",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Tetun Dili",
      "source": "file_estimated"
     }
@@ -1521,14 +1542,14 @@
     {
      "at": "2026-09-22T06:15:30Z",
      "code": "VT",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Vietnamese",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-22T06:56:08Z",
      "code": "CSL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Chinese Sign Language",
      "source": "file_estimated"
     }
@@ -1541,7 +1562,7 @@
     {
      "at": "2026-09-22T07:05:21Z",
      "code": "CT",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Chitonga (Malawi)",
      "source": "file_estimated"
     }
@@ -1550,7 +1571,7 @@
    "t": "2026-09-22T07:00:00Z"
   }
  ],
- "generated": "2026-09-22T07:12:31Z",
+ "generated": "2026-09-22T07:42:36Z",
  "history": [
   {
    "count": 1,
@@ -2022,7 +2043,7 @@
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T07:12:31Z",
+ "last_checked": "2026-09-22T07:42:36Z",
  "pending": [
   {
    "code": "ABB",
@@ -8610,12 +8631,12 @@
    "vernacular": "lengua de señas colombiana"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T05:58:35Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T05:58:35Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T07:42:36Z",
    "code": "TTP",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8627,7 +8648,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T00:40:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T06:12:26Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "tdt",
@@ -8642,12 +8663,12 @@
    "vernacular": "Tetun Dili"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T06:15:35Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T06:15:35Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T07:42:36Z",
    "code": "VT",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8660,7 +8681,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T06:15:30Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T06:42:29Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "vi",
@@ -8675,12 +8696,12 @@
    "vernacular": "Việt"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T06:56:18Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T06:56:18Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T07:42:36Z",
    "code": "CSL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8692,7 +8713,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T06:56:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T07:12:31Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "csl",
@@ -8707,12 +8728,12 @@
    "vernacular": "中国手语"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T07:05:29Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T07:05:29Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T07:42:36Z",
    "code": "CT",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8725,7 +8746,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T07:05:21Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T07:12:31Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "tog",
@@ -8747,13 +8768,13 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
-  "added_24h": 31,
+  "added_1h": 2,
+  "added_24h": 30,
   "added_4h": 3,
-  "catalog_count": 109,
-  "catalog_lag": 4,
-  "catalog_percent": 24.3,
-  "days_since_release": 3.72,
+  "catalog_count": 113,
+  "catalog_lag": 0,
+  "catalog_percent": 25.2,
+  "days_since_release": 3.74,
   "pending_count": 336,
   "percent": 25.2,
   "published_count": 113,
