@@ -457,19 +457,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 11,
+  "last_checked_count": 12,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 5,
   "size": 40,
-  "unlisted_total": 11
+  "unlisted_total": 12
  },
  "counts": {
   "api_times": 25,
-  "awaiting_catalogue": 11,
+  "awaiting_catalogue": 12,
   "catalogued": 113,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 98,
+  "file_times": 99,
   "observed_times": 0,
   "sign_languages": 25
  },
@@ -1655,13 +1655,20 @@
      "in_catalog": false,
      "name": "Thai",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T10:44:16Z",
+     "code": "MGL",
+     "in_catalog": false,
+     "name": "Mingrelian",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 124,
+   "count_after": 125,
    "t": "2026-09-22T10:00:00Z"
   }
  ],
- "generated": "2026-09-22T10:27:59Z",
+ "generated": "2026-09-22T10:58:00Z",
  "history": [
   {
    "count": 1,
@@ -2158,6 +2165,10 @@
   {
    "count": 124,
    "t": "2026-09-22T10:27:28Z"
+  },
+  {
+   "count": 125,
+   "t": "2026-09-22T10:44:16Z"
   }
  ],
  "integrity": {
@@ -2171,13 +2182,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 124,
+  "files_count": 125,
   "last_full_verification": "2026-09-22T08:47:09Z",
   "listing_count": 113,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T10:27:59Z",
+ "last_checked": "2026-09-22T10:58:00Z",
  "pending": [
   {
    "code": "ABB",
@@ -3807,15 +3818,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "lengua de señas mexicana"
-  },
-  {
-   "code": "MGL",
-   "direction": "ltr",
-   "locale": "xmf",
-   "name": "Mingrelian",
-   "script": "GEORGIAN",
-   "sign": false,
-   "vernacular": "მარგალური"
   },
   {
    "code": "MIS",
@@ -9153,6 +9155,39 @@
    "title": "วีดีโอ",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SI",
    "vernacular": "ไทย"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MGL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T10:44:16Z",
+   "files_at": "2026-09-22T10:44:16Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T10:44:16Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T10:58:00Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "xmf",
+   "name": "Mingrelian",
+   "published_at": "2026-09-22T10:44:16Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T10:44:16Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "GEORGIAN",
+   "sign": false,
+   "title": "ვიდეო",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MGL",
+   "vernacular": "მარგალური"
   }
  ],
  "removed": [],
@@ -9163,15 +9198,15 @@
  },
  "stats": {
   "added_1h": 4,
-  "added_24h": 37,
+  "added_24h": 38,
   "added_4h": 12,
   "catalog_count": 113,
-  "catalog_lag": 11,
+  "catalog_lag": 12,
   "catalog_percent": 25.2,
-  "days_since_release": 3.85,
-  "pending_count": 325,
-  "percent": 27.6,
-  "published_count": 124,
+  "days_since_release": 3.87,
+  "pending_count": 324,
+  "percent": 27.8,
+  "published_count": 125,
   "publisher_percent": 79.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
