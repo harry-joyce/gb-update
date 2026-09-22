@@ -509,21 +509,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
+  "last_checked_count": 9,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 5,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 9
  },
  "counts": {
   "api_times": 26,
-  "awaiting_catalogue": 4,
+  "awaiting_catalogue": 9,
   "catalogued": 126,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 103,
+  "file_times": 108,
   "observed_times": 0,
-  "sign_languages": 26
+  "sign_languages": 28
  },
  "events": [
   {
@@ -1736,6 +1736,13 @@
      "source": "file_estimated"
     },
     {
+     "at": "2026-09-22T11:24:23Z",
+     "code": "LGP",
+     "in_catalog": false,
+     "name": "Portuguese Sign Language",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-22T11:34:43Z",
      "code": "PDF",
      "in_catalog": false,
@@ -1757,11 +1764,45 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 130,
+   "count_after": 131,
    "t": "2026-09-22T11:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-22T12:29:41Z",
+     "code": "M",
+     "in_catalog": false,
+     "name": "Romanian",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T12:51:20Z",
+     "code": "PSL",
+     "in_catalog": false,
+     "name": "Panamanian Sign Language",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T12:55:04Z",
+     "code": "KR",
+     "in_catalog": false,
+     "name": "Karen (S'gaw)",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T12:56:29Z",
+     "code": "PA",
+     "in_catalog": false,
+     "name": "Papiamento (Curaçao)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 135,
+   "t": "2026-09-22T12:00:00Z"
   }
  ],
- "generated": "2026-09-22T12:29:11Z",
+ "generated": "2026-09-22T12:59:12Z",
  "history": [
   {
    "count": 1,
@@ -2273,15 +2314,35 @@
   },
   {
    "count": 128,
-   "t": "2026-09-22T11:34:43Z"
+   "t": "2026-09-22T11:24:23Z"
   },
   {
    "count": 129,
-   "t": "2026-09-22T11:51:42Z"
+   "t": "2026-09-22T11:34:43Z"
   },
   {
    "count": 130,
+   "t": "2026-09-22T11:51:42Z"
+  },
+  {
+   "count": 131,
    "t": "2026-09-22T11:55:30Z"
+  },
+  {
+   "count": 132,
+   "t": "2026-09-22T12:29:41Z"
+  },
+  {
+   "count": 133,
+   "t": "2026-09-22T12:51:20Z"
+  },
+  {
+   "count": 134,
+   "t": "2026-09-22T12:55:04Z"
+  },
+  {
+   "count": 135,
+   "t": "2026-09-22T12:56:29Z"
   }
  ],
  "integrity": {
@@ -2295,13 +2356,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 130,
+  "files_count": 135,
   "last_full_verification": "2026-09-22T08:47:09Z",
   "listing_count": 126,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T12:29:11Z",
+ "last_checked": "2026-09-22T12:59:12Z",
  "pending": [
   {
    "code": "ABB",
@@ -3366,15 +3427,6 @@
    "vernacular": "Ciin-kanyok"
   },
   {
-   "code": "KR",
-   "direction": "ltr",
-   "locale": "ksw",
-   "name": "Karen (S'gaw)",
-   "script": "MYANMAR",
-   "sign": false,
-   "vernacular": "ကညီ(စှီၤ)ကျိာ်"
-  },
-  {
    "code": "AZA",
    "direction": "rtl",
    "locale": "kk-arab",
@@ -4239,15 +4291,6 @@
    "vernacular": "Ñañu"
   },
   {
-   "code": "PSL",
-   "direction": "ltr",
-   "locale": "lsp",
-   "name": "Panamanian Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "lengua de señas panameñas"
-  },
-  {
    "code": "PN",
    "direction": "ltr",
    "locale": "pag",
@@ -4255,15 +4298,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Pangasinan"
-  },
-  {
-   "code": "PA",
-   "direction": "ltr",
-   "locale": "pap",
-   "name": "Papiamento (Curaçao)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Papiamentu (Kòrsou)"
   },
   {
    "code": "PR",
@@ -4318,15 +4352,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Português (Angola)"
-  },
-  {
-   "code": "LGP",
-   "direction": "ltr",
-   "locale": "psr",
-   "name": "Portuguese Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Língua Gestual Portuguesa"
   },
   {
    "code": "LSQ",
@@ -4390,15 +4415,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "quiché"
-  },
-  {
-   "code": "M",
-   "direction": "ltr",
-   "locale": "ro",
-   "name": "Romanian",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Română"
   },
   {
    "code": "LMG",
@@ -9330,6 +9346,38 @@
    "catalog_at_note": null,
    "catalog_at_source": null,
    "catalog_observed": null,
+   "code": "LGP",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T11:24:23Z",
+   "files_at": "2026-09-22T11:24:23Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T11:24:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T12:59:12Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "psr",
+   "name": "Portuguese Sign Language",
+   "published_at": "2026-09-22T11:24:23Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T11:24:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Atualização do Corpo Governante N.º 6 de 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LGP",
+   "vernacular": "Língua Gestual Portuguesa"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
    "code": "PDF",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -9420,6 +9468,136 @@
    "title": "Vhidiyo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CGM",
    "vernacular": "xiChangana (Moçambique)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "M",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T12:29:41Z",
+   "files_at": "2026-09-22T12:29:41Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T12:29:41Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T12:59:12Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ro",
+   "name": "Romanian",
+   "published_at": "2026-09-22T12:29:41Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T12:29:41Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Raportul nr. 6 din partea Corpului de Guvernare – 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=M",
+   "vernacular": "Română"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "PSL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T12:51:20Z",
+   "files_at": "2026-09-22T12:51:20Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T12:51:20Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T12:59:12Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "lsp",
+   "name": "Panamanian Sign Language",
+   "published_at": "2026-09-22T12:51:20Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T12:51:20Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 | Informe 6 del Cuerpo Gobernante",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=PSL",
+   "vernacular": "lengua de señas panameñas"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KR",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T12:55:04Z",
+   "files_at": "2026-09-22T12:55:04Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T12:55:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T12:59:12Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ksw",
+   "name": "Karen (S'gaw)",
+   "published_at": "2026-09-22T12:55:04Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T12:55:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "MYANMAR",
+   "sign": false,
+   "title": "တၢ်ဂီၤမူ",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KR",
+   "vernacular": "ကညီ(စှီၤ)ကျိာ်"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "PA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T12:56:29Z",
+   "files_at": "2026-09-22T12:56:29Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T12:56:29Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T12:59:12Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "pap",
+   "name": "Papiamento (Curaçao)",
+   "published_at": "2026-09-22T12:56:29Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T12:56:29Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidio",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=PA",
+   "vernacular": "Papiamentu (Kòrsou)"
   }
  ],
  "removed": [],
@@ -9429,17 +9607,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
-  "added_24h": 39,
-  "added_4h": 14,
+  "added_1h": 4,
+  "added_24h": 40,
+  "added_4h": 17,
   "catalog_count": 126,
-  "catalog_lag": 4,
+  "catalog_lag": 9,
   "catalog_percent": 28.1,
-  "days_since_release": 3.94,
-  "pending_count": 319,
-  "percent": 29.0,
-  "published_count": 130,
-  "publisher_percent": 79.3,
+  "days_since_release": 3.96,
+  "pending_count": 314,
+  "percent": 30.1,
+  "published_count": 135,
+  "publisher_percent": 80.0,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
