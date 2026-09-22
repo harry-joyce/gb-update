@@ -441,19 +441,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 25,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 109,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 83,
+  "file_times": 84,
   "observed_times": 0,
   "sign_languages": 22
  },
@@ -1502,9 +1502,22 @@
    ],
    "count_after": 109,
    "t": "2026-09-21T21:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-22T00:40:23Z",
+     "code": "TTP",
+     "in_catalog": false,
+     "name": "Tetun Dili",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 110,
+   "t": "2026-09-22T00:00:00Z"
   }
  ],
- "generated": "2026-09-22T05:12:23Z",
+ "generated": "2026-09-22T06:12:26Z",
  "history": [
   {
    "count": 1,
@@ -1941,6 +1954,10 @@
   {
    "count": 109,
    "t": "2026-09-21T21:54:54Z"
+  },
+  {
+   "count": 110,
+   "t": "2026-09-22T00:40:23Z"
   }
  ],
  "integrity": {
@@ -1954,13 +1971,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 109,
+  "files_count": 110,
   "last_full_verification": "2026-09-21T09:16:03Z",
   "listing_count": 109,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T05:12:23Z",
+ "last_checked": "2026-09-22T06:12:26Z",
  "pending": [
   {
    "code": "ABB",
@@ -4643,15 +4660,6 @@
    "script": "CYRILLIC",
    "sign": false,
    "vernacular": "татар"
-  },
-  {
-   "code": "TTP",
-   "direction": "ltr",
-   "locale": "tdt",
-   "name": "Tetun Dili",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Tetun Dili"
   },
   {
    "code": "TEW",
@@ -8582,6 +8590,38 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LSC",
    "vernacular": "lengua de señas colombiana"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TTP",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T00:40:23Z",
+   "files_at": "2026-09-22T00:40:23Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T00:40:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T06:12:26Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tdt",
+   "name": "Tetun Dili",
+   "published_at": "2026-09-22T00:40:23Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T00:40:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Notísias husi Grupu Administradór #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TTP",
+   "vernacular": "Tetun Dili"
   }
  ],
  "removed": [],
@@ -8592,15 +8632,15 @@
  },
  "stats": {
   "added_1h": 0,
-  "added_24h": 31,
+  "added_24h": 30,
   "added_4h": 0,
   "catalog_count": 109,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 24.3,
-  "days_since_release": 3.63,
-  "pending_count": 340,
-  "percent": 24.3,
-  "published_count": 109,
+  "days_since_release": 3.68,
+  "pending_count": 339,
+  "percent": 24.5,
+  "published_count": 110,
   "publisher_percent": 78.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
