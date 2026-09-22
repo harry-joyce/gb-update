@@ -646,19 +646,45 @@
   {
    "count": 161,
    "t": "2026-09-22T17:01:40Z"
+  },
+  {
+   "count": 162,
+   "t": "2026-09-22T18:51:40Z"
+  },
+  {
+   "count": 163,
+   "t": "2026-09-22T19:36:33Z"
+  },
+  {
+   "count": 164,
+   "t": "2026-09-22T20:18:31Z"
+  },
+  {
+   "count": 165,
+   "t": "2026-09-22T21:21:04Z"
+  },
+  {
+   "count": 166,
+   "t": "2026-09-22T21:57:20Z"
   }
  ],
  "catalog_probe": {
   "last_checked_count": 5,
-  "newly_catalogued": [],
+  "newly_catalogued": [
+   "EMB",
+   "LSS",
+   "SPE",
+   "WY",
+   "ZS"
+  ],
   "offset": 1,
   "size": 40,
   "unlisted_total": 5
  },
  "counts": {
   "api_times": 26,
-  "awaiting_catalogue": 5,
-  "catalogued": 161,
+  "awaiting_catalogue": 0,
+  "catalogued": 166,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 139,
@@ -2158,7 +2184,7 @@
     {
      "at": "2026-09-22T18:21:18Z",
      "code": "SPE",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Peruvian Sign Language",
      "source": "file_estimated"
     }
@@ -2171,7 +2197,7 @@
     {
      "at": "2026-09-22T19:36:24Z",
      "code": "LSS",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Salvadoran Sign Language",
      "source": "file_estimated"
     }
@@ -2184,7 +2210,7 @@
     {
      "at": "2026-09-22T20:18:21Z",
      "code": "ZS",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Swahili (Congo)",
      "source": "file_estimated"
     }
@@ -2197,14 +2223,14 @@
     {
      "at": "2026-09-22T21:20:53Z",
      "code": "EMB",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Emberá (Catío)",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-22T21:57:09Z",
      "code": "WY",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Wayuunaiki",
      "source": "file_estimated"
     }
@@ -2213,7 +2239,7 @@
    "t": "2026-09-22T21:00:00Z"
   }
  ],
- "generated": "2026-09-22T22:11:26Z",
+ "generated": "2026-09-22T22:41:29Z",
  "history": [
   {
    "count": 1,
@@ -2897,7 +2923,7 @@
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T22:11:26Z",
+ "last_checked": "2026-09-22T22:41:29Z",
  "pending": [
   {
    "code": "ABB",
@@ -10703,12 +10729,12 @@
    "vernacular": "Ticuna"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T18:51:40Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T18:51:40Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T22:41:29Z",
    "code": "SPE",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -10720,7 +10746,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T18:21:18Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T19:41:14Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "prl",
@@ -10735,12 +10761,12 @@
    "vernacular": "lengua de señas peruana"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T19:36:33Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T19:36:33Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T22:41:29Z",
    "code": "LSS",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -10752,7 +10778,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T19:36:24Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T19:41:14Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "esn",
@@ -10767,12 +10793,12 @@
    "vernacular": "lengua de señas salvadoreña"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T20:18:31Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T20:18:31Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T22:41:29Z",
    "code": "ZS",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -10784,7 +10810,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T20:18:21Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T20:29:55Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "swc",
@@ -10799,12 +10825,12 @@
    "vernacular": "Kiswahili (Congo)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T21:21:04Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T21:21:04Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T22:41:29Z",
    "code": "EMB",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -10816,7 +10842,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T21:20:53Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T21:41:25Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "cto",
@@ -10831,12 +10857,12 @@
    "vernacular": "embera katio"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T21:57:20Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T21:57:20Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T22:41:29Z",
    "code": "WY",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -10849,7 +10875,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T21:57:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T22:11:26Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "guc",
@@ -10871,13 +10897,13 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
+  "added_1h": 1,
   "added_24h": 56,
-  "added_4h": 5,
-  "catalog_count": 161,
-  "catalog_lag": 5,
-  "catalog_percent": 35.9,
-  "days_since_release": 4.34,
+  "added_4h": 4,
+  "catalog_count": 166,
+  "catalog_lag": 0,
+  "catalog_percent": 37.0,
+  "days_since_release": 4.36,
   "pending_count": 283,
   "percent": 37.0,
   "published_count": 166,
