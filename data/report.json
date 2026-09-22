@@ -454,22 +454,74 @@
   {
    "count": 113,
    "t": "2026-09-22T07:05:29Z"
+  },
+  {
+   "count": 114,
+   "t": "2026-09-22T07:43:53Z"
+  },
+  {
+   "count": 115,
+   "t": "2026-09-22T08:12:06Z"
+  },
+  {
+   "count": 116,
+   "t": "2026-09-22T08:35:25Z"
+  },
+  {
+   "count": 117,
+   "t": "2026-09-22T08:36:18Z"
+  },
+  {
+   "count": 118,
+   "t": "2026-09-22T08:59:40Z"
+  },
+  {
+   "count": 119,
+   "t": "2026-09-22T09:27:07Z"
+  },
+  {
+   "count": 120,
+   "t": "2026-09-22T09:48:14Z"
+  },
+  {
+   "count": 121,
+   "t": "2026-09-22T10:08:33Z"
+  },
+  {
+   "count": 122,
+   "t": "2026-09-22T10:14:16Z"
+  },
+  {
+   "count": 123,
+   "t": "2026-09-22T10:17:16Z"
+  },
+  {
+   "count": 124,
+   "t": "2026-09-22T10:27:41Z"
+  },
+  {
+   "count": 125,
+   "t": "2026-09-22T10:44:25Z"
+  },
+  {
+   "count": 126,
+   "t": "2026-09-22T11:05:02Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 12,
+  "last_checked_count": 1,
   "newly_catalogued": [],
-  "offset": 5,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 12
+  "unlisted_total": 1
  },
  "counts": {
-  "api_times": 25,
-  "awaiting_catalogue": 12,
-  "catalogued": 113,
+  "api_times": 26,
+  "awaiting_catalogue": 1,
+  "catalogued": 126,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 99,
+  "file_times": 100,
   "observed_times": 0,
   "sign_languages": 25
  },
@@ -1471,7 +1523,7 @@
     {
      "at": "2026-09-21T17:07:56Z",
      "code": "KI",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kisi",
      "source": "file_estimated"
     },
@@ -1571,7 +1623,7 @@
     {
      "at": "2026-09-22T07:40:14Z",
      "code": "LL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Lele",
      "source": "file_estimated"
     }
@@ -1584,28 +1636,28 @@
     {
      "at": "2026-09-22T08:08:52Z",
      "code": "CE",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Mauritian Creole",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-22T08:35:13Z",
      "code": "NSL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Nepali Sign Language",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-22T08:36:09Z",
      "code": "HK",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Chin (Hakha)",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-22T08:59:25Z",
      "code": "CB",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Cambodian",
      "source": "file_estimated"
     }
@@ -1618,14 +1670,14 @@
     {
      "at": "2026-09-22T09:26:51Z",
      "code": "KSL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Korean Sign Language",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-22T09:48:06Z",
      "code": "DG",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Dangme",
      "source": "file_estimated"
     }
@@ -1638,37 +1690,57 @@
     {
      "at": "2026-09-22T10:14:06Z",
      "code": "KU",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kiluba",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-22T10:17:06Z",
      "code": "AZ",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kazakh",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-22T10:27:28Z",
      "code": "SI",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Thai",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-22T10:44:16Z",
      "code": "MGL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Mingrelian",
      "source": "file_estimated"
     }
    ],
    "count_after": 125,
    "t": "2026-09-22T10:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-22T11:05:02Z",
+     "code": "WL",
+     "in_catalog": true,
+     "name": "Wolaita",
+     "source": "api"
+    },
+    {
+     "at": "2026-09-22T11:23:38Z",
+     "code": "LE",
+     "in_catalog": false,
+     "name": "Lomwe",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 127,
+   "t": "2026-09-22T11:00:00Z"
   }
  ],
- "generated": "2026-09-22T10:58:00Z",
+ "generated": "2026-09-22T11:28:01Z",
  "history": [
   {
    "count": 1,
@@ -2169,6 +2241,14 @@
   {
    "count": 125,
    "t": "2026-09-22T10:44:16Z"
+  },
+  {
+   "count": 126,
+   "t": "2026-09-22T11:05:02Z"
+  },
+  {
+   "count": 127,
+   "t": "2026-09-22T11:23:38Z"
   }
  ],
  "integrity": {
@@ -2182,13 +2262,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 125,
+  "files_count": 127,
   "last_full_verification": "2026-09-22T08:47:09Z",
-  "listing_count": 113,
+  "listing_count": 126,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T10:58:00Z",
+ "last_checked": "2026-09-22T11:28:01Z",
  "pending": [
   {
    "code": "ABB",
@@ -3539,15 +3619,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "lietuvių"
-  },
-  {
-   "code": "LE",
-   "direction": "ltr",
-   "locale": "ngl",
-   "name": "Lomwe",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Elomwe"
   },
   {
    "code": "LWX",
@@ -5015,15 +5086,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Cymraeg"
-  },
-  {
-   "code": "WL",
-   "direction": "ltr",
-   "locale": "wal",
-   "name": "Wolaita",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Wolayttattuwa"
   },
   {
    "code": "WO",
@@ -8504,12 +8566,12 @@
    "vernacular": "Lhukonzo"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T10:08:33Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T10:08:33Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T11:28:01Z",
    "code": "KI",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8521,9 +8583,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-21T17:07:56Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T10:27:59Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "kss",
    "name": "Kisi",
    "published_at": "2026-09-21T17:07:56Z",
@@ -8830,12 +8892,12 @@
    "vernacular": "Chitonga (Malawi)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T07:43:53Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T07:43:53Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T11:28:01Z",
    "code": "LL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8848,9 +8910,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T07:40:14Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T08:13:13Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "lln",
    "name": "Lele",
    "published_at": "2026-09-22T07:40:14Z",
@@ -8863,12 +8925,12 @@
    "vernacular": "Lele"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T08:12:06Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T08:12:06Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T11:28:01Z",
    "code": "CE",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8881,9 +8943,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T08:08:52Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T08:13:13Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "mfe",
    "name": "Mauritian Creole",
    "published_at": "2026-09-22T08:08:52Z",
@@ -8896,12 +8958,12 @@
    "vernacular": "Kreol Morisien"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T08:35:25Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T08:35:25Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T11:28:01Z",
    "code": "NSL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8914,9 +8976,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T08:35:13Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T09:12:45Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "nsp",
    "name": "Nepali Sign Language",
    "published_at": "2026-09-22T08:35:13Z",
@@ -8929,12 +8991,12 @@
    "vernacular": "नेपाली साङ्केतिक भाषा"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T08:36:18Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T08:36:18Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T11:28:01Z",
    "code": "HK",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8947,9 +9009,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T08:36:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T09:12:45Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "cnh",
    "name": "Chin (Hakha)",
    "published_at": "2026-09-22T08:36:09Z",
@@ -8962,12 +9024,12 @@
    "vernacular": "Chin (Hakha)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T08:59:40Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T08:59:40Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T11:28:01Z",
    "code": "CB",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -8980,9 +9042,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T08:59:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T09:12:45Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "km",
    "name": "Cambodian",
    "published_at": "2026-09-22T08:59:25Z",
@@ -8995,12 +9057,12 @@
    "vernacular": "ខ្មែរ"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T09:27:07Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T09:27:07Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T11:28:01Z",
    "code": "KSL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -9012,9 +9074,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T09:26:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T09:57:54Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "kvk",
    "name": "Korean Sign Language",
    "published_at": "2026-09-22T09:26:51Z",
@@ -9027,12 +9089,12 @@
    "vernacular": "한국 수어"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T09:48:14Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T09:48:14Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T11:28:01Z",
    "code": "DG",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -9044,9 +9106,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T09:48:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T09:57:54Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ada",
    "name": "Dangme",
    "published_at": "2026-09-22T09:48:06Z",
@@ -9059,12 +9121,12 @@
    "vernacular": "Dangme"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T10:14:16Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T10:14:16Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T11:28:01Z",
    "code": "KU",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -9076,9 +9138,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T10:14:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T10:27:59Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "lu",
    "name": "Kiluba",
    "published_at": "2026-09-22T10:14:06Z",
@@ -9091,12 +9153,12 @@
    "vernacular": "Kiluba"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T10:17:16Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T10:17:16Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T11:28:01Z",
    "code": "AZ",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -9109,9 +9171,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T10:17:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T10:27:59Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "kk",
    "name": "Kazakh",
    "published_at": "2026-09-22T10:17:06Z",
@@ -9124,12 +9186,12 @@
    "vernacular": "қазақ"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T10:27:41Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T10:27:41Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T11:28:01Z",
    "code": "SI",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -9142,9 +9204,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T10:27:28Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T10:27:59Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "th",
    "name": "Thai",
    "published_at": "2026-09-22T10:27:28Z",
@@ -9157,12 +9219,12 @@
    "vernacular": "ไทย"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T10:44:25Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T10:44:25Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T11:28:01Z",
    "code": "MGL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -9175,9 +9237,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T10:44:16Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T10:58:00Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "xmf",
    "name": "Mingrelian",
    "published_at": "2026-09-22T10:44:16Z",
@@ -9188,6 +9250,72 @@
    "title": "ვიდეო",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MGL",
    "vernacular": "მარგალური"
+  },
+  {
+   "api_published_at": "2026-09-22T11:05:02Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-22T11:05:02Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-22T11:28:01Z",
+   "code": "WL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T11:04:45Z",
+   "files_at": "2026-09-22T11:05:02Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-22T11:28:01Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "wal",
+   "name": "Wolaita",
+   "published_at": "2026-09-22T11:05:02Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Oosuwa Kaalettiya Citaa Irpporttiya Paydo 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=WL",
+   "vernacular": "Wolayttattuwa"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LE",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T11:23:38Z",
+   "files_at": "2026-09-22T11:23:38Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T11:23:38Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T11:28:01Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ngl",
+   "name": "Lomwe",
+   "published_at": "2026-09-22T11:23:38Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T11:23:38Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Eviitiyu",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LE",
+   "vernacular": "Elomwe"
   }
  ],
  "removed": [],
@@ -9197,16 +9325,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 4,
-  "added_24h": 38,
-  "added_4h": 12,
-  "catalog_count": 113,
-  "catalog_lag": 12,
-  "catalog_percent": 25.2,
-  "days_since_release": 3.87,
-  "pending_count": 324,
-  "percent": 27.8,
-  "published_count": 125,
+  "added_1h": 3,
+  "added_24h": 39,
+  "added_4h": 13,
+  "catalog_count": 126,
+  "catalog_lag": 1,
+  "catalog_percent": 28.1,
+  "days_since_release": 3.89,
+  "pending_count": 322,
+  "percent": 28.3,
+  "published_count": 127,
   "publisher_percent": 79.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
