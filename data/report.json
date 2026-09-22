@@ -457,21 +457,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 5,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 5
  },
  "counts": {
   "api_times": 25,
-  "awaiting_catalogue": 2,
+  "awaiting_catalogue": 5,
   "catalogued": 113,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 89,
+  "file_times": 92,
   "observed_times": 0,
-  "sign_languages": 23
+  "sign_languages": 24
  },
  "events": [
   {
@@ -1580,13 +1580,34 @@
      "in_catalog": false,
      "name": "Mauritian Creole",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T08:35:13Z",
+     "code": "NSL",
+     "in_catalog": false,
+     "name": "Nepali Sign Language",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T08:36:09Z",
+     "code": "HK",
+     "in_catalog": false,
+     "name": "Chin (Hakha)",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T08:59:25Z",
+     "code": "CB",
+     "in_catalog": false,
+     "name": "Cambodian",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 115,
+   "count_after": 118,
    "t": "2026-09-22T08:00:00Z"
   }
  ],
- "generated": "2026-09-22T08:47:09Z",
+ "generated": "2026-09-22T09:12:45Z",
  "history": [
   {
    "count": 1,
@@ -2047,13 +2068,23 @@
   {
    "count": 115,
    "t": "2026-09-22T08:08:52Z"
+  },
+  {
+   "count": 116,
+   "t": "2026-09-22T08:35:13Z"
+  },
+  {
+   "count": 117,
+   "t": "2026-09-22T08:36:09Z"
+  },
+  {
+   "count": 118,
+   "t": "2026-09-22T08:59:25Z"
   }
  ],
  "integrity": {
   "api_reset_detected": false,
   "api_reset_detected_at": null,
-  "awaiting_catalogue": 2,
-  "bulk_rewrite_suspected": false,
   "catalogue_unavailable": null,
   "drift_count": 0,
   "drifted": [],
@@ -2062,193 +2093,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "file_drifted": [
-   {
-    "code": "X",
-    "in_use": "2026-09-18T20:53:43Z",
-    "in_use_source": "api",
-    "live": "2026-09-19T16:24:02Z",
-    "name": "German",
-    "pinned": "2026-09-18T20:53:31Z"
-   },
-   {
-    "code": "AN",
-    "in_use": "2026-09-19T00:21:42Z",
-    "in_use_source": "api",
-    "live": "2026-09-21T08:46:41Z",
-    "name": "Catalan",
-    "pinned": "2026-09-19T00:21:27Z"
-   },
-   {
-    "code": "KA",
-    "in_use": "2026-09-19T08:16:53Z",
-    "in_use_source": "api",
-    "live": "2026-09-20T05:17:27Z",
-    "name": "Kannada",
-    "pinned": "2026-09-19T08:16:43Z"
-   },
-   {
-    "code": "SCH",
-    "in_use": "2026-09-19T13:57:24Z",
-    "in_use_source": "api",
-    "live": "2026-09-21T14:00:07Z",
-    "name": "Chilean Sign Language",
-    "pinned": "2026-09-19T13:57:16Z"
-   },
-   {
-    "code": "LSB",
-    "in_use": "2026-09-19T14:03:14Z",
-    "in_use_source": "api",
-    "live": "2026-09-19T19:00:30Z",
-    "name": "Brazilian Sign Language",
-    "pinned": "2026-09-19T12:39:56Z"
-   },
-   {
-    "code": "GU",
-    "in_use": "2026-09-19T15:26:04Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T07:56:58Z",
-    "name": "Gujarati",
-    "pinned": "2026-09-19T15:26:04Z"
-   },
-   {
-    "code": "D",
-    "in_use": "2026-09-19T16:13:26Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T09:15:38Z",
-    "name": "Danish",
-    "pinned": "2026-09-19T16:13:26Z"
-   },
-   {
-    "code": "K",
-    "in_use": "2026-09-19T21:38:49Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T14:09:47Z",
-    "name": "Ukrainian",
-    "pinned": "2026-09-19T21:38:49Z"
-   },
-   {
-    "code": "QII",
-    "in_use": "2026-09-19T23:44:40Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-20T00:31:46Z",
-    "name": "Quichua (Imbabura)",
-    "pinned": "2026-09-19T23:44:40Z"
-   },
-   {
-    "code": "UD",
-    "in_use": "2026-09-20T08:21:02Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T06:31:27Z",
-    "name": "Urdu",
-    "pinned": "2026-09-20T08:21:02Z"
-   },
-   {
-    "code": "G",
-    "in_use": "2026-09-20T09:49:12Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T13:34:10Z",
-    "name": "Greek",
-    "pinned": "2026-09-20T09:49:12Z"
-   },
-   {
-    "code": "V",
-    "in_use": "2026-09-20T09:54:02Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-20T17:41:11Z",
-    "name": "Slovak",
-    "pinned": "2026-09-20T09:54:02Z"
-   },
-   {
-    "code": "FI",
-    "in_use": "2026-09-20T15:31:56Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-20T16:13:58Z",
-    "name": "Finnish",
-    "pinned": "2026-09-20T15:31:56Z"
-   },
-   {
-    "code": "RR",
-    "in_use": "2026-09-20T18:20:09Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T12:02:54Z",
-    "name": "Runyankore",
-    "pinned": "2026-09-20T18:20:09Z"
-   },
-   {
-    "code": "FID",
-    "in_use": "2026-09-20T19:41:14Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T06:06:10Z",
-    "name": "Finnish Sign Language",
-    "pinned": "2026-09-20T19:41:14Z"
-   },
-   {
-    "code": "ASL",
-    "in_use": "2026-09-20T22:44:18Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T10:43:34Z",
-    "name": "American Sign Language",
-    "pinned": "2026-09-20T22:44:18Z"
-   },
-   {
-    "code": "KO",
-    "in_use": "2026-09-21T08:03:06Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T13:52:08Z",
-    "name": "Korean",
-    "pinned": "2026-09-21T08:03:06Z"
-   },
-   {
-    "code": "MR",
-    "in_use": "2026-09-21T08:33:42Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T03:20:51Z",
-    "name": "Marathi",
-    "pinned": "2026-09-21T08:33:42Z"
-   },
-   {
-    "code": "EWN",
-    "in_use": "2026-09-21T12:32:19Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T15:07:22Z",
-    "name": "Ewondo",
-    "pinned": "2026-09-21T12:32:19Z"
-   },
-   {
-    "code": "HWP",
-    "in_use": "2026-09-21T13:00:17Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T19:54:51Z",
-    "name": "Hawai’i Pidgin",
-    "pinned": "2026-09-21T13:00:17Z"
-   },
-   {
-    "code": "DM",
-    "in_use": "2026-09-21T14:53:23Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T05:51:59Z",
-    "name": "Sidama",
-    "pinned": "2026-09-21T14:53:23Z"
-   },
-   {
-    "code": "TI",
-    "in_use": "2026-09-21T17:14:50Z",
-    "in_use_source": "api",
-    "live": "2026-09-22T07:34:36Z",
-    "name": "Tigrinya",
-    "pinned": "2026-09-21T17:14:43Z"
-   }
-  ],
-  "files_count": 115,
+  "files_count": 118,
   "last_full_verification": "2026-09-22T08:47:09Z",
   "listing_count": 113,
   "listing_lag": [],
-  "missing_items": [],
-  "pub_media_unavailable": null,
-  "verified_count": 115
+  "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T08:13:13Z",
+ "last_checked": "2026-09-22T09:12:45Z",
  "pending": [
   {
    "code": "ABB",
@@ -2593,15 +2444,6 @@
    "vernacular": "ˈBhɛtɩgbʋʋ"
   },
   {
-   "code": "CB",
-   "direction": "ltr",
-   "locale": "km",
-   "name": "Cambodian",
-   "script": "CAMBODIAN",
-   "sign": false,
-   "vernacular": "ខ្មែរ"
-  },
-  {
    "code": "CBL",
    "direction": "ltr",
    "locale": "sgn-kh",
@@ -2663,15 +2505,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Chavacano"
-  },
-  {
-   "code": "HK",
-   "direction": "ltr",
-   "locale": "cnh",
-   "name": "Chin (Hakha)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Chin (Hakha)"
   },
   {
    "code": "CG",
@@ -4130,15 +3963,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Oshindonga"
-  },
-  {
-   "code": "NSL",
-   "direction": "ltr",
-   "locale": "nsp",
-   "name": "Nepali Sign Language",
-   "script": "DEVANAGARI",
-   "sign": true,
-   "vernacular": "नेपाली साङ्केतिक भाषा"
   },
   {
    "code": "NG",
@@ -9012,6 +8836,105 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CE",
    "vernacular": "Kreol Morisien"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NSL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T08:35:13Z",
+   "files_at": "2026-09-22T08:35:13Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T08:35:13Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T09:12:45Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nsp",
+   "name": "Nepali Sign Language",
+   "published_at": "2026-09-22T08:35:13Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T08:35:13Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "DEVANAGARI",
+   "sign": true,
+   "title": "भिडियो",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NSL",
+   "vernacular": "नेपाली साङ्केतिक भाषा"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "HK",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T08:36:09Z",
+   "files_at": "2026-09-22T08:36:09Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T08:36:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T09:12:45Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "cnh",
+   "name": "Chin (Hakha)",
+   "published_at": "2026-09-22T08:36:09Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T08:36:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=HK",
+   "vernacular": "Chin (Hakha)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CB",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T08:59:25Z",
+   "files_at": "2026-09-22T08:59:25Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T08:59:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T09:12:45Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "km",
+   "name": "Cambodian",
+   "published_at": "2026-09-22T08:59:25Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T08:59:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CAMBODIAN",
+   "sign": false,
+   "title": "វីដេអូ",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CB",
+   "vernacular": "ខ្មែរ"
   }
  ],
  "removed": [],
@@ -9021,16 +8944,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 31,
-  "added_4h": 5,
+  "added_1h": 3,
+  "added_24h": 32,
+  "added_4h": 8,
   "catalog_count": 113,
-  "catalog_lag": 2,
+  "catalog_lag": 5,
   "catalog_percent": 25.2,
-  "days_since_release": 3.76,
-  "pending_count": 334,
-  "percent": 25.6,
-  "published_count": 115,
+  "days_since_release": 3.8,
+  "pending_count": 331,
+  "percent": 26.3,
+  "published_count": 118,
   "publisher_percent": 78.8,
   "publisher_percent_ceiling": 99.2,
   "target": 449
