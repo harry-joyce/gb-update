@@ -441,19 +441,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 2,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 2
  },
  "counts": {
   "api_times": 25,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 2,
   "catalogued": 109,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 84,
+  "file_times": 85,
   "observed_times": 0,
   "sign_languages": 22
  },
@@ -1515,9 +1515,22 @@
    ],
    "count_after": 110,
    "t": "2026-09-22T00:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-22T06:15:30Z",
+     "code": "VT",
+     "in_catalog": false,
+     "name": "Vietnamese",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 111,
+   "t": "2026-09-22T06:00:00Z"
   }
  ],
- "generated": "2026-09-22T06:12:26Z",
+ "generated": "2026-09-22T06:42:29Z",
  "history": [
   {
    "count": 1,
@@ -1958,6 +1971,10 @@
   {
    "count": 110,
    "t": "2026-09-22T00:40:23Z"
+  },
+  {
+   "count": 111,
+   "t": "2026-09-22T06:15:30Z"
   }
  ],
  "integrity": {
@@ -1971,13 +1988,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 15,
-  "files_count": 110,
+  "files_count": 111,
   "last_full_verification": "2026-09-21T09:16:03Z",
   "listing_count": 109,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T06:12:26Z",
+ "last_checked": "2026-09-22T06:42:29Z",
  "pending": [
   {
    "code": "ABB",
@@ -4885,15 +4902,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Vezo"
-  },
-  {
-   "code": "VT",
-   "direction": "ltr",
-   "locale": "vi",
-   "name": "Vietnamese",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Việt"
   },
   {
    "code": "SLV",
@@ -8622,6 +8630,39 @@
    "title": "2026 Notísias husi Grupu Administradór #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TTP",
    "vernacular": "Tetun Dili"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "VT",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T06:15:30Z",
+   "files_at": "2026-09-22T06:15:30Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T06:15:30Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T06:42:29Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "vi",
+   "name": "Vietnamese",
+   "published_at": "2026-09-22T06:15:30Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T06:15:30Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=VT",
+   "vernacular": "Việt"
   }
  ],
  "removed": [],
@@ -8631,16 +8672,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
+  "added_1h": 1,
   "added_24h": 30,
-  "added_4h": 0,
+  "added_4h": 1,
   "catalog_count": 109,
-  "catalog_lag": 1,
+  "catalog_lag": 2,
   "catalog_percent": 24.3,
-  "days_since_release": 3.68,
-  "pending_count": 339,
-  "percent": 24.5,
-  "published_count": 110,
+  "days_since_release": 3.7,
+  "pending_count": 338,
+  "percent": 24.7,
+  "published_count": 111,
   "publisher_percent": 78.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
