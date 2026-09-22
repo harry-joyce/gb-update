@@ -649,19 +649,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
+  "last_checked_count": 5,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 5
  },
  "counts": {
   "api_times": 26,
-  "awaiting_catalogue": 4,
+  "awaiting_catalogue": 5,
   "catalogued": 161,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 138,
+  "file_times": 139,
   "observed_times": 0,
   "sign_languages": 33
  },
@@ -2200,13 +2200,20 @@
      "in_catalog": false,
      "name": "Emberá (Catío)",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T21:57:09Z",
+     "code": "WY",
+     "in_catalog": false,
+     "name": "Wayuunaiki",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 165,
+   "count_after": 166,
    "t": "2026-09-22T21:00:00Z"
   }
  ],
- "generated": "2026-09-22T21:41:25Z",
+ "generated": "2026-09-22T22:11:26Z",
  "history": [
   {
    "count": 1,
@@ -2867,6 +2874,10 @@
   {
    "count": 165,
    "t": "2026-09-22T21:20:53Z"
+  },
+  {
+   "count": 166,
+   "t": "2026-09-22T21:57:09Z"
   }
  ],
  "integrity": {
@@ -2880,13 +2891,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 165,
+  "files_count": 166,
   "last_full_verification": "2026-09-22T08:47:09Z",
   "listing_count": 161,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T21:41:25Z",
+ "last_checked": "2026-09-22T22:11:26Z",
  "pending": [
   {
    "code": "ABB",
@@ -5353,15 +5364,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Waray-Waray"
-  },
-  {
-   "code": "WY",
-   "direction": "ltr",
-   "locale": "guc",
-   "name": "Wayuunaiki",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Wayuunaiki"
   },
   {
    "code": "W",
@@ -10827,6 +10829,39 @@
    "title": "2026de Bedʼea jarabʉta 6, Zõrãrã Burubiaba",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=EMB",
    "vernacular": "embera katio"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "WY",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T21:57:09Z",
+   "files_at": "2026-09-22T21:57:09Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T21:57:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T22:11:26Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "guc",
+   "name": "Wayuunaiki",
+   "published_at": "2026-09-22T21:57:09Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T21:57:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=WY",
+   "vernacular": "Wayuunaiki"
   }
  ],
  "removed": [],
@@ -10836,16 +10871,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
+  "added_1h": 2,
   "added_24h": 56,
-  "added_4h": 4,
+  "added_4h": 5,
   "catalog_count": 161,
-  "catalog_lag": 4,
+  "catalog_lag": 5,
   "catalog_percent": 35.9,
-  "days_since_release": 4.32,
-  "pending_count": 284,
-  "percent": 36.7,
-  "published_count": 165,
+  "days_since_release": 4.34,
+  "pending_count": 283,
+  "percent": 37.0,
+  "published_count": 166,
   "publisher_percent": 86.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
