@@ -509,19 +509,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 26,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 3,
   "catalogued": 126,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 100,
+  "file_times": 102,
   "observed_times": 0,
   "sign_languages": 25
  },
@@ -1734,13 +1734,27 @@
      "in_catalog": false,
      "name": "Lomwe",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T11:51:42Z",
+     "code": "NSM",
+     "in_catalog": false,
+     "name": "Nsenga (Mozambique)",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-22T11:55:30Z",
+     "code": "CGM",
+     "in_catalog": false,
+     "name": "Changana (Mozambique)",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 127,
+   "count_after": 129,
    "t": "2026-09-22T11:00:00Z"
   }
  ],
- "generated": "2026-09-22T11:28:01Z",
+ "generated": "2026-09-22T11:58:05Z",
  "history": [
   {
    "count": 1,
@@ -2249,6 +2263,14 @@
   {
    "count": 127,
    "t": "2026-09-22T11:23:38Z"
+  },
+  {
+   "count": 128,
+   "t": "2026-09-22T11:51:42Z"
+  },
+  {
+   "count": 129,
+   "t": "2026-09-22T11:55:30Z"
   }
  ],
  "integrity": {
@@ -2262,13 +2284,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 127,
+  "files_count": 129,
   "last_full_verification": "2026-09-22T08:47:09Z",
   "listing_count": 126,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T11:28:01Z",
+ "last_checked": "2026-09-22T11:58:05Z",
  "pending": [
   {
    "code": "ABB",
@@ -2656,15 +2678,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Langue des signes centrafricaine"
-  },
-  {
-   "code": "CGM",
-   "direction": "ltr",
-   "locale": "tso-mz",
-   "name": "Changana (Mozambique)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "xiChangana (Moçambique)"
   },
   {
    "code": "CC",
@@ -4141,15 +4154,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Nkoya"
-  },
-  {
-   "code": "NSM",
-   "direction": "ltr",
-   "locale": "nse-mz",
-   "name": "Nsenga (Mozambique)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Chinsenga (Mozambique)"
   },
   {
    "code": "NEN",
@@ -9316,6 +9320,72 @@
    "title": "Eviitiyu",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LE",
    "vernacular": "Elomwe"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NSM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T11:51:42Z",
+   "files_at": "2026-09-22T11:51:42Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T11:51:42Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T11:58:05Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nse-mz",
+   "name": "Nsenga (Mozambique)",
+   "published_at": "2026-09-22T11:51:42Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T11:51:42Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NSM",
+   "vernacular": "Chinsenga (Mozambique)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CGM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T11:55:30Z",
+   "files_at": "2026-09-22T11:55:30Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T11:55:30Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-22T11:58:05Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tso-mz",
+   "name": "Changana (Mozambique)",
+   "published_at": "2026-09-22T11:55:30Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T11:55:30Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vhidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CGM",
+   "vernacular": "xiChangana (Moçambique)"
   }
  ],
  "removed": [],
@@ -9325,17 +9395,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
+  "added_1h": 4,
   "added_24h": 39,
-  "added_4h": 13,
+  "added_4h": 14,
   "catalog_count": 126,
-  "catalog_lag": 1,
+  "catalog_lag": 3,
   "catalog_percent": 28.1,
-  "days_since_release": 3.89,
-  "pending_count": 322,
-  "percent": 28.3,
-  "published_count": 127,
-  "publisher_percent": 79.1,
+  "days_since_release": 3.92,
+  "pending_count": 320,
+  "percent": 28.7,
+  "published_count": 129,
+  "publisher_percent": 79.3,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
