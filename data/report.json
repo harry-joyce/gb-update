@@ -726,24 +726,135 @@
   {
    "count": 181,
    "t": "2026-09-23T08:48:00Z"
+  },
+  {
+   "count": 182,
+   "t": "2026-09-23T09:00:56Z"
+  },
+  {
+   "count": 183,
+   "t": "2026-09-23T09:11:19Z"
+  },
+  {
+   "count": 184,
+   "t": "2026-09-23T09:13:07Z"
+  },
+  {
+   "count": 185,
+   "t": "2026-09-23T09:27:52Z"
+  },
+  {
+   "count": 186,
+   "t": "2026-09-23T09:33:26Z"
+  },
+  {
+   "count": 187,
+   "t": "2026-09-23T10:05:27Z"
+  },
+  {
+   "count": 188,
+   "t": "2026-09-23T10:11:42Z"
+  },
+  {
+   "count": 189,
+   "t": "2026-09-23T10:29:04Z"
+  },
+  {
+   "count": 190,
+   "t": "2026-09-23T11:03:30Z"
+  },
+  {
+   "count": 191,
+   "t": "2026-09-23T11:15:18Z"
+  },
+  {
+   "count": 192,
+   "t": "2026-09-23T11:32:06Z"
+  },
+  {
+   "count": 193,
+   "t": "2026-09-23T11:32:19Z"
+  },
+  {
+   "count": 194,
+   "t": "2026-09-23T11:37:39Z"
+  },
+  {
+   "count": 195,
+   "t": "2026-09-23T11:37:46Z"
+  },
+  {
+   "count": 196,
+   "t": "2026-09-23T11:45:26Z"
+  },
+  {
+   "count": 197,
+   "t": "2026-09-23T12:07:29Z"
+  },
+  {
+   "count": 198,
+   "t": "2026-09-23T12:07:35Z"
+  },
+  {
+   "count": 199,
+   "t": "2026-09-23T12:11:44Z"
+  },
+  {
+   "count": 200,
+   "t": "2026-09-23T12:17:52Z"
+  },
+  {
+   "count": 201,
+   "t": "2026-09-23T12:22:38Z"
+  },
+  {
+   "count": 202,
+   "t": "2026-09-23T12:23:43Z"
+  },
+  {
+   "count": 203,
+   "t": "2026-09-23T12:24:30Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 19,
-  "newly_catalogued": [],
-  "offset": 14,
+  "last_checked_count": 22,
+  "newly_catalogued": [
+   "BUS",
+   "C",
+   "CML",
+   "DGS",
+   "KIT",
+   "KT",
+   "LI",
+   "LN",
+   "LSE",
+   "MSL",
+   "NC",
+   "NG",
+   "NKY",
+   "PGW",
+   "RU",
+   "SB",
+   "SBO",
+   "SIL",
+   "SK",
+   "ST",
+   "TAT",
+   "TND"
+  ],
+  "offset": 10,
   "size": 40,
-  "unlisted_total": 19
+  "unlisted_total": 22
  },
  "counts": {
-  "api_times": 28,
-  "awaiting_catalogue": 19,
-  "catalogued": 181,
+  "api_times": 31,
+  "awaiting_catalogue": 0,
+  "catalogued": 203,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 171,
   "observed_times": 0,
-  "sign_languages": 38
+  "sign_languages": 40
  },
  "events": [
   {
@@ -2040,7 +2151,7 @@
     {
      "at": "2026-09-22T13:08:55Z",
      "code": "MSL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Malawi Sign Language",
      "source": "file_estimated"
     },
@@ -2109,7 +2220,7 @@
     {
      "at": "2026-09-22T14:09:53Z",
      "code": "DGS",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "German Sign Language",
      "source": "file_estimated"
     },
@@ -2384,7 +2495,7 @@
     {
      "at": "2026-09-23T04:18:34Z",
      "code": "BUS",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Myanmar Sign Language",
      "source": "file_estimated"
     }
@@ -2471,28 +2582,28 @@
     {
      "at": "2026-09-23T09:00:45Z",
      "code": "NKY",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Nkoya",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T09:11:05Z",
      "code": "PGW",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Pidgin (West Africa)",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T09:12:56Z",
      "code": "SIL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Thai Sign Language",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T09:27:43Z",
      "code": "C",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Croatian",
      "source": "file_estimated"
     }
@@ -2505,14 +2616,14 @@
     {
      "at": "2026-09-23T10:05:14Z",
      "code": "LN",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Lango",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T10:11:34Z",
      "code": "NG",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Ngambaye",
      "source": "file_estimated"
     }
@@ -2525,49 +2636,49 @@
     {
      "at": "2026-09-23T11:03:22Z",
      "code": "TND",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Tandroy",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T11:15:05Z",
      "code": "SBO",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Serbian (Roman)",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T11:31:55Z",
      "code": "NC",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Nicobarese",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T11:32:09Z",
      "code": "SB",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Serbian (Cyrillic)",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T11:37:28Z",
      "code": "RU",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kirundi",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T11:37:36Z",
      "code": "ST",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Estonian",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T11:45:19Z",
      "code": "LI",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Lingala",
      "source": "file_estimated"
     }
@@ -2580,30 +2691,51 @@
     {
      "at": "2026-09-23T12:07:15Z",
      "code": "KIT",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kituba",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T12:07:25Z",
      "code": "KT",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Konkani (Roman)",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T12:11:34Z",
      "code": "SK",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Silozi",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T12:22:38Z",
+     "code": "LSE",
+     "in_catalog": true,
+     "name": "Spanish Sign Language",
+     "source": "api"
+    },
+    {
+     "at": "2026-09-23T12:23:43Z",
+     "code": "CML",
+     "in_catalog": true,
+     "name": "Cameroon Sign Language",
+     "source": "api"
+    },
+    {
+     "at": "2026-09-23T12:24:30Z",
+     "code": "TAT",
+     "in_catalog": true,
+     "name": "Tatar",
+     "source": "api"
     }
    ],
-   "count_after": 200,
+   "count_after": 203,
    "t": "2026-09-23T12:00:00Z"
   }
  ],
- "generated": "2026-09-23T12:22:30Z",
+ "generated": "2026-09-23T12:33:44Z",
  "history": [
   {
    "count": 1,
@@ -3404,6 +3536,18 @@
   {
    "count": 200,
    "t": "2026-09-23T12:11:34Z"
+  },
+  {
+   "count": 201,
+   "t": "2026-09-23T12:22:38Z"
+  },
+  {
+   "count": 202,
+   "t": "2026-09-23T12:23:43Z"
+  },
+  {
+   "count": 203,
+   "t": "2026-09-23T12:24:30Z"
   }
  ],
  "integrity": {
@@ -3417,13 +3561,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 200,
+  "files_count": 203,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 181,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T12:22:30Z",
+ "last_checked": "2026-09-23T12:33:44Z",
  "pending": [
   {
    "code": "ABB",
@@ -3703,15 +3847,6 @@
    "script": "CAMBODIAN",
    "sign": true,
    "vernacular": "ភាសាសញ្ញាខ្មែរ"
-  },
-  {
-   "code": "CML",
-   "direction": "ltr",
-   "locale": "sgn-cm",
-   "name": "Cameroon Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Langue des signes camerounaise"
   },
   {
    "code": "CRB",
@@ -5298,15 +5433,6 @@
    "vernacular": "South African Sign Language"
   },
   {
-   "code": "LSE",
-   "direction": "ltr",
-   "locale": "ssp",
-   "name": "Spanish Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "lengua de signos española"
-  },
-  {
    "code": "SWK",
    "direction": "ltr",
    "locale": "swc-x-swk",
@@ -5404,15 +5530,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Purépecha"
-  },
-  {
-   "code": "TAT",
-   "direction": "ltr",
-   "locale": "tt",
-   "name": "Tatar",
-   "script": "CYRILLIC",
-   "sign": false,
-   "vernacular": "татар"
   },
   {
    "code": "TEW",
@@ -10150,12 +10267,12 @@
    "vernacular": "русский"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T10:29:04Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T10:29:04Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "MSL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -10168,7 +10285,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:08:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T10:42:39Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "sgn-mw",
@@ -10442,12 +10559,12 @@
    "vernacular": "Հայերեն"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T09:33:26Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T09:33:26Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "DGS",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -10459,7 +10576,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T14:09:53Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T09:42:33Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "gsg",
@@ -11384,12 +11501,12 @@
    "vernacular": "ўзбекча"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T12:17:52Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T12:17:52Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "BUS",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11402,7 +11519,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T04:18:34Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T12:22:30Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "sgn-mm",
@@ -11677,12 +11794,12 @@
    "vernacular": "Jiwaka Yu"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T09:00:56Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T09:00:56Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "NKY",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11695,7 +11812,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T09:00:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T09:12:33Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "nka",
@@ -11710,12 +11827,12 @@
    "vernacular": "Nkoya"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T09:11:19Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T09:11:19Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "PGW",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11728,7 +11845,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T09:11:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T09:12:33Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "wes-x-pgw",
@@ -11743,12 +11860,12 @@
    "vernacular": "Pidgin (West Africa)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T09:13:07Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T09:13:07Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "SIL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11760,7 +11877,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T09:12:56Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T09:42:33Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "tsq",
@@ -11775,12 +11892,12 @@
    "vernacular": "ภาษามือไทย"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T09:27:52Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T09:27:52Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "C",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11792,7 +11909,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T09:27:43Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T09:42:33Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "hr",
@@ -11807,12 +11924,12 @@
    "vernacular": "hrvatski"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T10:05:27Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T10:05:27Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "LN",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11824,7 +11941,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T10:05:14Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T10:12:37Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "laj",
@@ -11839,12 +11956,12 @@
    "vernacular": "Lango"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T10:11:42Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T10:11:42Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "NG",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11857,7 +11974,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T10:11:34Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T10:12:37Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "sba",
@@ -11872,12 +11989,12 @@
    "vernacular": "Ngambay"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T11:03:30Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T11:03:30Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "TND",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11890,7 +12007,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:03:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T11:12:41Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "tdx",
@@ -11905,12 +12022,12 @@
    "vernacular": "Tandroy"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T11:15:18Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T11:15:18Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "SBO",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11922,7 +12039,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:15:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T11:42:46Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "sr-latn",
@@ -11937,12 +12054,12 @@
    "vernacular": "srpski (latinica)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T11:32:06Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T11:32:06Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "NC",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11955,7 +12072,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:31:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T11:42:46Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "caq",
@@ -11970,12 +12087,12 @@
    "vernacular": "Nicobarese"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T11:32:19Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T11:32:19Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "SB",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11988,7 +12105,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:32:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T11:42:46Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "sr-cyrl",
@@ -12003,12 +12120,12 @@
    "vernacular": "српски (ћирилица)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T11:37:39Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T11:37:39Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "RU",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -12021,7 +12138,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:37:28Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T11:42:46Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "run",
@@ -12036,12 +12153,12 @@
    "vernacular": "Ikirundi"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T11:37:46Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T11:37:46Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "ST",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -12053,7 +12170,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:37:36Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T11:42:46Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "et",
@@ -12068,12 +12185,12 @@
    "vernacular": "eesti"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T11:45:26Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T11:45:26Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "LI",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -12085,7 +12202,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:45:19Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T12:22:30Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "ln",
@@ -12100,12 +12217,12 @@
    "vernacular": "Lingala"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T12:07:29Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T12:07:29Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "KIT",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -12118,7 +12235,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T12:07:15Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T12:22:30Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "ktu-x-kit",
@@ -12133,12 +12250,12 @@
    "vernacular": "Kituba"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T12:07:35Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T12:07:35Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "KT",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -12151,7 +12268,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T12:07:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T12:22:30Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "gom",
@@ -12166,12 +12283,12 @@
    "vernacular": "Konkani (Romi)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T12:11:44Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T12:11:44Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
    "code": "SK",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -12184,7 +12301,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T12:11:34Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T12:22:30Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "loz",
@@ -12197,6 +12314,102 @@
    "title": "Vidio",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SK",
    "vernacular": "Silozi"
+  },
+  {
+   "api_published_at": "2026-09-23T12:22:38Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-23T12:22:38Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
+   "code": "LSE",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T13:25:55Z",
+   "files_at": "2026-09-23T12:22:38Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-23T12:33:44Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ssp",
+   "name": "Spanish Sign Language",
+   "published_at": "2026-09-23T12:22:38Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 | Informe 6 del Cuerpo Gobernante",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LSE",
+   "vernacular": "lengua de signos española"
+  },
+  {
+   "api_published_at": "2026-09-23T12:23:43Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-23T12:23:43Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
+   "code": "CML",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T14:09:50Z",
+   "files_at": "2026-09-23T12:23:43Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-23T12:33:44Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "sgn-cm",
+   "name": "Cameroon Sign Language",
+   "published_at": "2026-09-23T12:23:43Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Point actualité n° 6 du Collège central 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CML",
+   "vernacular": "Langue des signes camerounaise"
+  },
+  {
+   "api_published_at": "2026-09-23T12:24:30Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-23T12:24:30Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T12:33:44Z",
+   "code": "TAT",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T12:24:17Z",
+   "files_at": "2026-09-23T12:24:30Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-23T12:33:44Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tt",
+   "name": "Tatar",
+   "published_at": "2026-09-23T12:24:30Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "CYRILLIC",
+   "sign": false,
+   "title": "Җитәкче советның 6 нчы отчеты (2026 ел)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TAT",
+   "vernacular": "татар"
   }
  ],
  "removed": [],
@@ -12206,16 +12419,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 8,
-  "added_24h": 68,
-  "added_4h": 18,
-  "catalog_count": 181,
-  "catalog_lag": 19,
-  "catalog_percent": 40.3,
-  "days_since_release": 4.93,
-  "pending_count": 249,
-  "percent": 44.5,
-  "published_count": 200,
+  "added_1h": 9,
+  "added_24h": 70,
+  "added_4h": 21,
+  "catalog_count": 203,
+  "catalog_lag": 0,
+  "catalog_percent": 45.2,
+  "days_since_release": 4.94,
+  "pending_count": 246,
+  "percent": 45.2,
+  "published_count": 203,
   "publisher_percent": 89.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
