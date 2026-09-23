@@ -690,22 +690,68 @@
   {
    "count": 172,
    "t": "2026-09-23T03:58:07Z"
+  },
+  {
+   "count": 173,
+   "t": "2026-09-23T05:55:31Z"
+  },
+  {
+   "count": 174,
+   "t": "2026-09-23T06:36:45Z"
+  },
+  {
+   "count": 175,
+   "t": "2026-09-23T06:37:27Z"
+  },
+  {
+   "count": 176,
+   "t": "2026-09-23T08:07:28Z"
+  },
+  {
+   "count": 177,
+   "t": "2026-09-23T08:10:39Z"
+  },
+  {
+   "count": 178,
+   "t": "2026-09-23T08:21:03Z"
+  },
+  {
+   "count": 179,
+   "t": "2026-09-23T08:21:11Z"
+  },
+  {
+   "count": 180,
+   "t": "2026-09-23T08:47:02Z"
+  },
+  {
+   "count": 181,
+   "t": "2026-09-23T08:48:00Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 7,
-  "newly_catalogued": [],
-  "offset": 0,
+  "last_checked_count": 11,
+  "newly_catalogued": [
+   "BL",
+   "BT",
+   "CGW",
+   "HV",
+   "JWK",
+   "TK",
+   "VSL",
+   "VZ",
+   "W"
+  ],
+  "offset": 7,
   "size": 40,
-  "unlisted_total": 7
+  "unlisted_total": 11
  },
  "counts": {
-  "api_times": 26,
-  "awaiting_catalogue": 7,
-  "catalogued": 172,
+  "api_times": 28,
+  "awaiting_catalogue": 2,
+  "catalogued": 181,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 152,
+  "file_times": 154,
   "observed_times": 0,
   "sign_languages": 34
  },
@@ -2018,7 +2064,7 @@
     {
      "at": "2026-09-22T13:29:51Z",
      "code": "VSL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Slovak Sign Language",
      "source": "file_estimated"
     },
@@ -2334,7 +2380,7 @@
     {
      "at": "2026-09-23T05:55:22Z",
      "code": "HV",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Hiligaynon",
      "source": "file_estimated"
     }
@@ -2347,7 +2393,7 @@
     {
      "at": "2026-09-23T06:37:15Z",
      "code": "CGW",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Chitonga (Zimbabwe)",
      "source": "file_estimated"
     }
@@ -2360,37 +2406,71 @@
     {
      "at": "2026-09-23T08:07:21Z",
      "code": "W",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Welsh",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T08:10:27Z",
      "code": "BT",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Batak (Toba)",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T08:20:55Z",
      "code": "TK",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Turkish",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T08:21:04Z",
      "code": "VZ",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Vezo",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T08:47:02Z",
+     "code": "BL",
+     "in_catalog": true,
+     "name": "Bulgarian",
+     "source": "api"
+    },
+    {
+     "at": "2026-09-23T08:48:00Z",
+     "code": "JWK",
+     "in_catalog": true,
+     "name": "Jiwaka",
+     "source": "api"
+    }
+   ],
+   "count_after": 181,
+   "t": "2026-09-23T08:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-23T09:00:45Z",
+     "code": "NKY",
+     "in_catalog": false,
+     "name": "Nkoya",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T09:11:05Z",
+     "code": "PGW",
+     "in_catalog": false,
+     "name": "Pidgin (West Africa)",
      "source": "file_estimated"
     }
    ],
-   "count_after": 179,
-   "t": "2026-09-23T08:00:00Z"
+   "count_after": 183,
+   "t": "2026-09-23T09:00:00Z"
   }
  ],
- "generated": "2026-09-23T08:48:35Z",
+ "generated": "2026-09-23T09:12:33Z",
  "history": [
   {
    "count": 1,
@@ -3107,13 +3187,27 @@
   {
    "count": 179,
    "t": "2026-09-23T08:21:04Z"
+  },
+  {
+   "count": 180,
+   "t": "2026-09-23T08:47:02Z"
+  },
+  {
+   "count": 181,
+   "t": "2026-09-23T08:48:00Z"
+  },
+  {
+   "count": 182,
+   "t": "2026-09-23T09:00:45Z"
+  },
+  {
+   "count": 183,
+   "t": "2026-09-23T09:11:05Z"
   }
  ],
  "integrity": {
   "api_reset_detected": false,
   "api_reset_detected_at": null,
-  "awaiting_catalogue": 7,
-  "bulk_rewrite_suspected": false,
   "catalogue_unavailable": null,
   "drift_count": 0,
   "drifted": [],
@@ -3122,337 +3216,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "file_drifted": [
-   {
-    "code": "X",
-    "in_use": "2026-09-18T20:53:43Z",
-    "in_use_source": "api",
-    "live": "2026-09-19T16:24:02Z",
-    "name": "German",
-    "pinned": "2026-09-18T20:53:31Z"
-   },
-   {
-    "code": "AN",
-    "in_use": "2026-09-19T00:21:42Z",
-    "in_use_source": "api",
-    "live": "2026-09-22T15:52:18Z",
-    "name": "Catalan",
-    "pinned": "2026-09-19T00:21:27Z"
-   },
-   {
-    "code": "S",
-    "in_use": "2026-09-19T07:17:46Z",
-    "in_use_source": "api",
-    "live": "2026-09-23T08:16:38Z",
-    "name": "Spanish",
-    "pinned": "2026-09-19T07:40:49Z"
-   },
-   {
-    "code": "I",
-    "in_use": "2026-09-19T07:39:39Z",
-    "in_use_source": "api",
-    "live": "2026-09-23T08:24:33Z",
-    "name": "Italian",
-    "pinned": "2026-09-19T07:39:28Z"
-   },
-   {
-    "code": "KA",
-    "in_use": "2026-09-19T08:16:53Z",
-    "in_use_source": "api",
-    "live": "2026-09-20T05:17:27Z",
-    "name": "Kannada",
-    "pinned": "2026-09-19T08:16:43Z"
-   },
-   {
-    "code": "SCH",
-    "in_use": "2026-09-19T13:57:24Z",
-    "in_use_source": "api",
-    "live": "2026-09-21T14:00:07Z",
-    "name": "Chilean Sign Language",
-    "pinned": "2026-09-19T13:57:16Z"
-   },
-   {
-    "code": "LSB",
-    "in_use": "2026-09-19T14:03:14Z",
-    "in_use_source": "api",
-    "live": "2026-09-19T19:00:30Z",
-    "name": "Brazilian Sign Language",
-    "pinned": "2026-09-19T12:39:56Z"
-   },
-   {
-    "code": "GU",
-    "in_use": "2026-09-19T15:26:04Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T07:56:58Z",
-    "name": "Gujarati",
-    "pinned": "2026-09-19T15:26:04Z"
-   },
-   {
-    "code": "D",
-    "in_use": "2026-09-19T16:13:26Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T09:15:38Z",
-    "name": "Danish",
-    "pinned": "2026-09-19T16:13:26Z"
-   },
-   {
-    "code": "TB",
-    "in_use": "2026-09-19T17:50:21Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T09:48:06Z",
-    "name": "Chitumbuka",
-    "pinned": "2026-09-19T17:50:21Z"
-   },
-   {
-    "code": "T",
-    "in_use": "2026-09-19T18:19:23Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T17:53:02Z",
-    "name": "Portuguese (Brazil)",
-    "pinned": "2026-09-19T18:19:23Z"
-   },
-   {
-    "code": "F",
-    "in_use": "2026-09-19T20:23:29Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T06:29:27Z",
-    "name": "French",
-    "pinned": "2026-09-19T20:23:29Z"
-   },
-   {
-    "code": "K",
-    "in_use": "2026-09-19T21:38:49Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T14:09:47Z",
-    "name": "Ukrainian",
-    "pinned": "2026-09-19T21:38:49Z"
-   },
-   {
-    "code": "QII",
-    "in_use": "2026-09-19T23:44:40Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-20T00:31:46Z",
-    "name": "Quichua (Imbabura)",
-    "pinned": "2026-09-19T23:44:40Z"
-   },
-   {
-    "code": "J",
-    "in_use": "2026-09-20T03:55:37Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T00:52:19Z",
-    "name": "Japanese",
-    "pinned": "2026-09-20T03:55:37Z"
-   },
-   {
-    "code": "UD",
-    "in_use": "2026-09-20T08:21:02Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T06:31:27Z",
-    "name": "Urdu",
-    "pinned": "2026-09-20T08:21:02Z"
-   },
-   {
-    "code": "CH",
-    "in_use": "2026-09-20T08:44:57Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T07:23:39Z",
-    "name": "Chinese Mandarin (Traditional)",
-    "pinned": "2026-09-20T08:44:57Z"
-   },
-   {
-    "code": "CHS",
-    "in_use": "2026-09-20T08:45:54Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T07:24:05Z",
-    "name": "Chinese Mandarin (Simplified)",
-    "pinned": "2026-09-20T08:45:54Z"
-   },
-   {
-    "code": "G",
-    "in_use": "2026-09-20T09:49:12Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T13:34:10Z",
-    "name": "Greek",
-    "pinned": "2026-09-20T09:49:12Z"
-   },
-   {
-    "code": "V",
-    "in_use": "2026-09-20T09:54:02Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-20T17:41:11Z",
-    "name": "Slovak",
-    "pinned": "2026-09-20T09:54:02Z"
-   },
-   {
-    "code": "FI",
-    "in_use": "2026-09-20T15:31:56Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-20T16:13:58Z",
-    "name": "Finnish",
-    "pinned": "2026-09-20T15:31:56Z"
-   },
-   {
-    "code": "RR",
-    "in_use": "2026-09-20T18:20:09Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T12:02:54Z",
-    "name": "Runyankore",
-    "pinned": "2026-09-20T18:20:09Z"
-   },
-   {
-    "code": "FID",
-    "in_use": "2026-09-20T19:41:14Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T06:06:10Z",
-    "name": "Finnish Sign Language",
-    "pinned": "2026-09-20T19:41:14Z"
-   },
-   {
-    "code": "ASL",
-    "in_use": "2026-09-20T22:44:18Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T10:43:34Z",
-    "name": "American Sign Language",
-    "pinned": "2026-09-20T22:44:18Z"
-   },
-   {
-    "code": "LF",
-    "in_use": "2026-09-21T07:39:18Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T00:12:32Z",
-    "name": "Drehu",
-    "pinned": "2026-09-21T07:39:18Z"
-   },
-   {
-    "code": "KO",
-    "in_use": "2026-09-21T08:03:06Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T13:52:08Z",
-    "name": "Korean",
-    "pinned": "2026-09-21T08:03:06Z"
-   },
-   {
-    "code": "MR",
-    "in_use": "2026-09-21T08:33:42Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T03:20:51Z",
-    "name": "Marathi",
-    "pinned": "2026-09-21T08:33:42Z"
-   },
-   {
-    "code": "IN",
-    "in_use": "2026-09-21T12:10:51Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T04:49:20Z",
-    "name": "Indonesian",
-    "pinned": "2026-09-21T12:10:51Z"
-   },
-   {
-    "code": "EWN",
-    "in_use": "2026-09-21T12:32:19Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T15:07:22Z",
-    "name": "Ewondo",
-    "pinned": "2026-09-21T12:32:19Z"
-   },
-   {
-    "code": "P",
-    "in_use": "2026-09-21T12:43:15Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T13:33:17Z",
-    "name": "Polish",
-    "pinned": "2026-09-21T12:43:15Z"
-   },
-   {
-    "code": "HWP",
-    "in_use": "2026-09-21T13:00:17Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T19:54:51Z",
-    "name": "Hawai’i Pidgin",
-    "pinned": "2026-09-21T13:00:17Z"
-   },
-   {
-    "code": "DM",
-    "in_use": "2026-09-21T14:53:23Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T05:51:59Z",
-    "name": "Sidama",
-    "pinned": "2026-09-21T14:53:23Z"
-   },
-   {
-    "code": "TI",
-    "in_use": "2026-09-21T17:14:50Z",
-    "in_use_source": "api",
-    "live": "2026-09-22T07:34:36Z",
-    "name": "Tigrinya",
-    "pinned": "2026-09-21T17:14:43Z"
-   },
-   {
-    "code": "LSC",
-    "in_use": "2026-09-21T21:54:54Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T14:21:23Z",
-    "name": "Colombian Sign Language",
-    "pinned": "2026-09-21T21:54:54Z"
-   },
-   {
-    "code": "CT",
-    "in_use": "2026-09-22T07:05:21Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T09:14:35Z",
-    "name": "Chitonga (Malawi)",
-    "pinned": "2026-09-22T07:05:21Z"
-   },
-   {
-    "code": "HK",
-    "in_use": "2026-09-22T08:36:09Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T05:17:26Z",
-    "name": "Chin (Hakha)",
-    "pinned": "2026-09-22T08:36:09Z"
-   },
-   {
-    "code": "U",
-    "in_use": "2026-09-22T13:04:28Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T06:07:04Z",
-    "name": "Russian",
-    "pinned": "2026-09-22T13:04:28Z"
-   },
-   {
-    "code": "REA",
-    "in_use": "2026-09-22T13:57:11Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T06:27:33Z",
-    "name": "Armenian",
-    "pinned": "2026-09-22T13:57:11Z"
-   },
-   {
-    "code": "MG",
-    "in_use": "2026-09-22T14:22:35Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T15:37:37Z",
-    "name": "Malagasy",
-    "pinned": "2026-09-22T14:22:35Z"
-   },
-   {
-    "code": "CC",
-    "in_use": "2026-09-23T03:17:36Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T07:02:18Z",
-    "name": "Chavacano",
-    "pinned": "2026-09-23T03:17:36Z"
-   }
-  ],
-  "files_count": 179,
+  "files_count": 183,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 172,
   "listing_lag": [],
-  "missing_items": [],
-  "pub_media_unavailable": null,
-  "verified_count": 179
+  "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T08:42:28Z",
+ "last_checked": "2026-09-23T09:12:33Z",
  "pending": [
   {
    "code": "ABB",
@@ -3705,15 +3475,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "British Sign Language"
-  },
-  {
-   "code": "BL",
-   "direction": "ltr",
-   "locale": "bg",
-   "name": "Bulgarian",
-   "script": "CYRILLIC",
-   "sign": false,
-   "vernacular": "български"
   },
   {
    "code": "BRS",
@@ -4281,15 +4042,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Langue des signes ivoirienne"
-  },
-  {
-   "code": "JWK",
-   "direction": "ltr",
-   "locale": "whg",
-   "name": "Jiwaka",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Jiwaka Yu"
   },
   {
    "code": "JL",
@@ -5084,15 +4836,6 @@
    "vernacular": "Nigerian Sign Language"
   },
   {
-   "code": "NKY",
-   "direction": "ltr",
-   "locale": "nka",
-   "name": "Nkoya",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Nkoya"
-  },
-  {
    "code": "NK",
    "direction": "ltr",
    "locale": "nyk",
@@ -5181,15 +4924,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Chiphimbi"
-  },
-  {
-   "code": "PGW",
-   "direction": "ltr",
-   "locale": "wes-x-pgw",
-   "name": "Pidgin (West Africa)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Pidgin (West Africa)"
   },
   {
    "code": "PQM",
@@ -10434,12 +10168,12 @@
    "vernacular": "Luganda"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T06:36:45Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T06:36:45Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T09:12:33Z",
    "code": "VSL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -10451,7 +10185,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T13:29:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T06:42:14Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "svk",
@@ -11537,12 +11271,12 @@
    "vernacular": "ўзбекча"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T05:55:31Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T05:55:31Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T09:12:33Z",
    "code": "HV",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11555,7 +11289,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T05:55:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T06:12:13Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "hil",
@@ -11570,12 +11304,12 @@
    "vernacular": "Hiligaynon"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T06:37:27Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T06:37:27Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T09:12:33Z",
    "code": "CGW",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11588,7 +11322,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T06:37:15Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T06:42:14Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "toi-zw",
@@ -11603,12 +11337,12 @@
    "vernacular": "Chitonga (Zimbabwe)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T08:07:28Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T08:07:28Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T09:12:33Z",
    "code": "W",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11620,7 +11354,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T08:07:21Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T08:12:24Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "cy",
@@ -11635,12 +11369,12 @@
    "vernacular": "Cymraeg"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T08:10:39Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T08:10:39Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T09:12:33Z",
    "code": "BT",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11652,7 +11386,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T08:10:27Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T08:12:24Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "bbc",
@@ -11667,12 +11401,12 @@
    "vernacular": "Batak (Toba)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T08:21:03Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T08:21:03Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T09:12:33Z",
    "code": "TK",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11684,7 +11418,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T08:20:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T08:42:28Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "tr",
@@ -11699,12 +11433,12 @@
    "vernacular": "Türkçe"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T08:21:11Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T08:21:11Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T09:12:33Z",
    "code": "VZ",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11717,7 +11451,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T08:21:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T08:42:28Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "skg-x-vz",
@@ -11730,6 +11464,137 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=VZ",
    "vernacular": "Vezo"
+  },
+  {
+   "api_published_at": "2026-09-23T08:47:02Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-23T08:47:02Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T09:12:33Z",
+   "code": "BL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T08:46:53Z",
+   "files_at": "2026-09-23T08:47:02Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-23T09:12:33Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "bg",
+   "name": "Bulgarian",
+   "published_at": "2026-09-23T08:47:02Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "CYRILLIC",
+   "sign": false,
+   "title": "Сведения от Ръководното тяло за 2026 г. № 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BL",
+   "vernacular": "български"
+  },
+  {
+   "api_published_at": "2026-09-23T08:48:00Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-23T08:48:00Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T09:12:33Z",
+   "code": "JWK",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T08:47:52Z",
+   "files_at": "2026-09-23T08:48:00Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-23T09:12:33Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "whg",
+   "name": "Jiwaka",
+   "published_at": "2026-09-23T08:48:00Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Gapening Bodi Apdeit #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=JWK",
+   "vernacular": "Jiwaka Yu"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NKY",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T09:00:45Z",
+   "files_at": "2026-09-23T09:00:45Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T09:00:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T09:12:33Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nka",
+   "name": "Nkoya",
+   "published_at": "2026-09-23T09:00:45Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T09:00:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NKY",
+   "vernacular": "Nkoya"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "PGW",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T09:11:05Z",
+   "files_at": "2026-09-23T09:11:05Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T09:11:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T09:12:33Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "wes-x-pgw",
+   "name": "Pidgin (West Africa)",
+   "published_at": "2026-09-23T09:11:05Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T09:11:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=PGW",
+   "vernacular": "Pidgin (West Africa)"
   }
  ],
  "removed": [],
@@ -11739,17 +11604,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 4,
-  "added_24h": 61,
-  "added_4h": 6,
-  "catalog_count": 172,
-  "catalog_lag": 7,
-  "catalog_percent": 38.3,
-  "days_since_release": 4.78,
-  "pending_count": 270,
-  "percent": 39.9,
-  "published_count": 179,
-  "publisher_percent": 87.0,
+  "added_1h": 6,
+  "added_24h": 63,
+  "added_4h": 10,
+  "catalog_count": 181,
+  "catalog_lag": 2,
+  "catalog_percent": 40.3,
+  "days_since_release": 4.8,
+  "pending_count": 266,
+  "percent": 40.8,
+  "published_count": 183,
+  "publisher_percent": 88.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
