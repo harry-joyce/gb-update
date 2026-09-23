@@ -729,19 +729,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 5,
+  "last_checked_count": 7,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 5,
   "size": 40,
-  "unlisted_total": 5
+  "unlisted_total": 7
  },
  "counts": {
   "api_times": 28,
-  "awaiting_catalogue": 5,
+  "awaiting_catalogue": 7,
   "catalogued": 181,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 157,
+  "file_times": 159,
   "observed_times": 0,
   "sign_languages": 36
  },
@@ -2479,9 +2479,29 @@
    ],
    "count_after": 186,
    "t": "2026-09-23T09:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-23T10:05:14Z",
+     "code": "LN",
+     "in_catalog": false,
+     "name": "Lango",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T10:11:34Z",
+     "code": "NG",
+     "in_catalog": false,
+     "name": "Ngambaye",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 188,
+   "t": "2026-09-23T10:00:00Z"
   }
  ],
- "generated": "2026-09-23T09:42:33Z",
+ "generated": "2026-09-23T10:12:37Z",
  "history": [
   {
    "count": 1,
@@ -3226,6 +3246,14 @@
   {
    "count": 186,
    "t": "2026-09-23T09:27:43Z"
+  },
+  {
+   "count": 187,
+   "t": "2026-09-23T10:05:14Z"
+  },
+  {
+   "count": 188,
+   "t": "2026-09-23T10:11:34Z"
   }
  ],
  "integrity": {
@@ -3239,13 +3267,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 186,
+  "files_count": 188,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 181,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T09:42:33Z",
+ "last_checked": "2026-09-23T10:12:37Z",
  "pending": [
   {
    "code": "ABB",
@@ -4292,15 +4320,6 @@
    "vernacular": "Oshikwanyama"
   },
   {
-   "code": "LN",
-   "direction": "ltr",
-   "locale": "laj",
-   "name": "Lango",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Lango"
-  },
-  {
    "code": "LA",
    "direction": "ltr",
    "locale": "lo",
@@ -4776,15 +4795,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Oshindonga"
-  },
-  {
-   "code": "NG",
-   "direction": "ltr",
-   "locale": "sba",
-   "name": "Ngambaye",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ngambay"
   },
   {
    "code": "NGL",
@@ -11687,6 +11697,71 @@
    "title": "Izvještaj Vodećeg tijela za 2026. (br. 6)",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=C",
    "vernacular": "hrvatski"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T10:05:14Z",
+   "files_at": "2026-09-23T10:05:14Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T10:05:14Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T10:12:37Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "laj",
+   "name": "Lango",
+   "published_at": "2026-09-23T10:05:14Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T10:05:14Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Kop Aŋea me 6 ame Oya i Baŋ Okiko Adwoŋ pi Mwaka 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LN",
+   "vernacular": "Lango"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T10:11:34Z",
+   "files_at": "2026-09-23T10:11:34Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T10:11:34Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T10:12:37Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "sba",
+   "name": "Ngambaye",
+   "published_at": "2026-09-23T10:11:34Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T10:11:34Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NG",
+   "vernacular": "Ngambay"
   }
  ],
  "removed": [],
@@ -11696,16 +11771,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 6,
-  "added_24h": 65,
-  "added_4h": 12,
+  "added_1h": 4,
+  "added_24h": 66,
+  "added_4h": 13,
   "catalog_count": 181,
-  "catalog_lag": 5,
+  "catalog_lag": 7,
   "catalog_percent": 40.3,
-  "days_since_release": 4.82,
-  "pending_count": 263,
-  "percent": 41.4,
-  "published_count": 186,
+  "days_since_release": 4.84,
+  "pending_count": 261,
+  "percent": 41.9,
+  "published_count": 188,
   "publisher_percent": 88.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
