@@ -945,32 +945,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 10,
-  "newly_catalogued": [
-   "AHN",
-   "AKN",
-   "AP",
-   "IS",
-   "MHM",
-   "QU",
-   "QUL",
-   "SPL",
-   "TLN",
-   "TN"
-  ],
-  "offset": 2,
+  "last_checked_count": 1,
+  "newly_catalogued": [],
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 10
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 235,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 201,
+  "file_times": 202,
   "observed_times": 0,
-  "sign_languages": 44
+  "sign_languages": 45
  },
  "events": [
   {
@@ -3109,9 +3098,22 @@
    ],
    "count_after": 235,
    "t": "2026-09-23T18:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-23T20:46:25Z",
+     "code": "SHO",
+     "in_catalog": false,
+     "name": "Honduras Sign Language",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 236,
+   "t": "2026-09-23T20:00:00Z"
   }
  ],
- "generated": "2026-09-23T20:27:21Z",
+ "generated": "2026-09-23T20:57:24Z",
  "history": [
   {
    "count": 1,
@@ -4052,6 +4054,10 @@
   {
    "count": 235,
    "t": "2026-09-23T18:56:08Z"
+  },
+  {
+   "count": 236,
+   "t": "2026-09-23T20:46:25Z"
   }
  ],
  "integrity": {
@@ -4065,13 +4071,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 235,
+  "files_count": 236,
   "last_full_verification": "2026-09-23T08:48:35Z",
-  "listing_count": 225,
+  "listing_count": 235,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T20:27:21Z",
+ "last_checked": "2026-09-23T20:57:24Z",
  "pending": [
   {
    "code": "ABB",
@@ -4621,15 +4627,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Hiri Motu"
-  },
-  {
-   "code": "SHO",
-   "direction": "ltr",
-   "locale": "hds",
-   "name": "Honduras Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "lengua de señas hondureña"
   },
   {
    "code": "HDF",
@@ -13364,7 +13361,7 @@
    "first_observed": "2026-09-23T16:34:07Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "aha",
    "name": "Ahanta",
    "published_at": "2026-09-23T16:26:04Z",
@@ -13397,7 +13394,7 @@
    "first_observed": "2026-09-23T17:43:14Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "xmc",
    "name": "Makhuwa-Marrevone",
    "published_at": "2026-09-23T16:36:20Z",
@@ -13430,7 +13427,7 @@
    "first_observed": "2026-09-23T17:43:14Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "tn",
    "name": "Setswana",
    "published_at": "2026-09-23T16:50:59Z",
@@ -13462,7 +13459,7 @@
    "first_observed": "2026-09-23T17:43:14Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "djk",
    "name": "Aukan",
    "published_at": "2026-09-23T16:52:26Z",
@@ -13494,7 +13491,7 @@
    "first_observed": "2026-09-23T17:43:14Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "quz",
    "name": "Quechua (Cuzco)",
    "published_at": "2026-09-23T17:03:51Z",
@@ -13526,7 +13523,7 @@
    "first_observed": "2026-09-23T17:43:14Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "tcf",
    "name": "Tlapanec",
    "published_at": "2026-09-23T17:17:33Z",
@@ -13558,7 +13555,7 @@
    "first_observed": "2026-09-23T18:27:10Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "nso-x-spl",
    "name": "Sepulana",
    "published_at": "2026-09-23T18:11:19Z",
@@ -13591,7 +13588,7 @@
    "first_observed": "2026-09-23T18:57:26Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ay",
    "name": "Aymara",
    "published_at": "2026-09-23T18:39:23Z",
@@ -13623,7 +13620,7 @@
    "first_observed": "2026-09-23T18:57:26Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "qub",
    "name": "Quechua (Huallaga Huánuco)",
    "published_at": "2026-09-23T18:51:01Z",
@@ -13656,7 +13653,7 @@
    "first_observed": "2026-09-23T18:57:26Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "iso",
    "name": "Isoko",
    "published_at": "2026-09-23T18:56:08Z",
@@ -13667,6 +13664,38 @@
    "title": "Ividio",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=IS",
    "vernacular": "Isoko"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SHO",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T20:46:25Z",
+   "files_at": "2026-09-23T20:46:25Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T20:46:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T20:57:24Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "hds",
+   "name": "Honduras Sign Language",
+   "published_at": "2026-09-23T20:46:25Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T20:46:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 | Informe 6 del Cuerpo Gobernante",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SHO",
+   "vernacular": "lengua de señas hondureña"
   }
  ],
  "removed": [],
@@ -13676,16 +13705,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 67,
-  "added_4h": 9,
+  "added_1h": 1,
+  "added_24h": 68,
+  "added_4h": 7,
   "catalog_count": 235,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 52.3,
-  "days_since_release": 5.27,
-  "pending_count": 214,
-  "percent": 52.3,
-  "published_count": 235,
+  "days_since_release": 5.29,
+  "pending_count": 213,
+  "percent": 52.6,
+  "published_count": 236,
   "publisher_percent": 90.5,
   "publisher_percent_ceiling": 99.2,
   "target": 449
