@@ -945,21 +945,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 2,
+  "awaiting_catalogue": 3,
   "catalogued": 235,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 203,
+  "file_times": 204,
   "observed_times": 0,
-  "sign_languages": 45
+  "sign_languages": 46
  },
  "events": [
   {
@@ -2493,6 +2493,13 @@
   {
    "added": [
     {
+     "at": "2026-09-22T19:16:31Z",
+     "code": "LSV",
+     "in_catalog": false,
+     "name": "Venezuelan Sign Language",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-22T19:36:24Z",
      "code": "LSS",
      "in_catalog": true,
@@ -2500,7 +2507,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 167,
+   "count_after": 168,
    "t": "2026-09-22T19:00:00Z"
   },
   {
@@ -2513,7 +2520,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 168,
+   "count_after": 169,
    "t": "2026-09-22T20:00:00Z"
   },
   {
@@ -2533,7 +2540,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 170,
+   "count_after": 171,
    "t": "2026-09-22T21:00:00Z"
   },
   {
@@ -2546,7 +2553,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 171,
+   "count_after": 172,
    "t": "2026-09-22T23:00:00Z"
   },
   {
@@ -2559,7 +2566,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 172,
+   "count_after": 173,
    "t": "2026-09-23T01:00:00Z"
   },
   {
@@ -2572,7 +2579,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 173,
+   "count_after": 174,
    "t": "2026-09-23T02:00:00Z"
   },
   {
@@ -2599,7 +2606,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 176,
+   "count_after": 177,
    "t": "2026-09-23T03:00:00Z"
   },
   {
@@ -2612,7 +2619,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 177,
+   "count_after": 178,
    "t": "2026-09-23T04:00:00Z"
   },
   {
@@ -2625,7 +2632,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 178,
+   "count_after": 179,
    "t": "2026-09-23T05:00:00Z"
   },
   {
@@ -2638,7 +2645,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 179,
+   "count_after": 180,
    "t": "2026-09-23T06:00:00Z"
   },
   {
@@ -2686,7 +2693,7 @@
      "source": "api"
     }
    ],
-   "count_after": 185,
+   "count_after": 186,
    "t": "2026-09-23T08:00:00Z"
   },
   {
@@ -2720,7 +2727,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 189,
+   "count_after": 190,
    "t": "2026-09-23T09:00:00Z"
   },
   {
@@ -2740,7 +2747,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 191,
+   "count_after": 192,
    "t": "2026-09-23T10:00:00Z"
   },
   {
@@ -2795,7 +2802,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 198,
+   "count_after": 199,
    "t": "2026-09-23T11:00:00Z"
   },
   {
@@ -2878,7 +2885,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 209,
+   "count_after": 210,
    "t": "2026-09-23T12:00:00Z"
   },
   {
@@ -2926,7 +2933,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 215,
+   "count_after": 216,
    "t": "2026-09-23T13:00:00Z"
   },
   {
@@ -2967,7 +2974,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 220,
+   "count_after": 221,
    "t": "2026-09-23T14:00:00Z"
   },
   {
@@ -2994,7 +3001,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 223,
+   "count_after": 224,
    "t": "2026-09-23T15:00:00Z"
   },
   {
@@ -3042,7 +3049,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 229,
+   "count_after": 230,
    "t": "2026-09-23T16:00:00Z"
   },
   {
@@ -3062,7 +3069,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 231,
+   "count_after": 232,
    "t": "2026-09-23T17:00:00Z"
   },
   {
@@ -3096,7 +3103,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 235,
+   "count_after": 236,
    "t": "2026-09-23T18:00:00Z"
   },
   {
@@ -3109,7 +3116,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 236,
+   "count_after": 237,
    "t": "2026-09-23T20:00:00Z"
   },
   {
@@ -3122,11 +3129,11 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 237,
+   "count_after": 238,
    "t": "2026-09-23T21:00:00Z"
   }
  ],
- "generated": "2026-09-23T21:27:27Z",
+ "generated": "2026-09-23T22:27:33Z",
  "history": [
   {
    "count": 1,
@@ -3794,286 +3801,290 @@
   },
   {
    "count": 167,
-   "t": "2026-09-22T19:36:24Z"
+   "t": "2026-09-22T19:16:31Z"
   },
   {
    "count": 168,
-   "t": "2026-09-22T20:18:21Z"
+   "t": "2026-09-22T19:36:24Z"
   },
   {
    "count": 169,
-   "t": "2026-09-22T21:20:53Z"
+   "t": "2026-09-22T20:18:21Z"
   },
   {
    "count": 170,
-   "t": "2026-09-22T21:57:09Z"
+   "t": "2026-09-22T21:20:53Z"
   },
   {
    "count": 171,
-   "t": "2026-09-22T23:07:06Z"
+   "t": "2026-09-22T21:57:09Z"
   },
   {
    "count": 172,
-   "t": "2026-09-23T01:38:44Z"
+   "t": "2026-09-22T23:07:06Z"
   },
   {
    "count": 173,
-   "t": "2026-09-23T02:40:00Z"
+   "t": "2026-09-23T01:38:44Z"
   },
   {
    "count": 174,
-   "t": "2026-09-23T03:14:46Z"
+   "t": "2026-09-23T02:40:00Z"
   },
   {
    "count": 175,
-   "t": "2026-09-23T03:17:36Z"
+   "t": "2026-09-23T03:14:46Z"
   },
   {
    "count": 176,
-   "t": "2026-09-23T03:57:55Z"
+   "t": "2026-09-23T03:17:36Z"
   },
   {
    "count": 177,
-   "t": "2026-09-23T04:18:34Z"
+   "t": "2026-09-23T03:57:55Z"
   },
   {
    "count": 178,
-   "t": "2026-09-23T05:55:22Z"
+   "t": "2026-09-23T04:18:34Z"
   },
   {
    "count": 179,
-   "t": "2026-09-23T06:37:15Z"
+   "t": "2026-09-23T05:55:22Z"
   },
   {
    "count": 180,
-   "t": "2026-09-23T08:07:21Z"
+   "t": "2026-09-23T06:37:15Z"
   },
   {
    "count": 181,
-   "t": "2026-09-23T08:10:27Z"
+   "t": "2026-09-23T08:07:21Z"
   },
   {
    "count": 182,
-   "t": "2026-09-23T08:20:55Z"
+   "t": "2026-09-23T08:10:27Z"
   },
   {
    "count": 183,
-   "t": "2026-09-23T08:21:04Z"
+   "t": "2026-09-23T08:20:55Z"
   },
   {
    "count": 184,
-   "t": "2026-09-23T08:47:02Z"
+   "t": "2026-09-23T08:21:04Z"
   },
   {
    "count": 185,
-   "t": "2026-09-23T08:48:00Z"
+   "t": "2026-09-23T08:47:02Z"
   },
   {
    "count": 186,
-   "t": "2026-09-23T09:00:45Z"
+   "t": "2026-09-23T08:48:00Z"
   },
   {
    "count": 187,
-   "t": "2026-09-23T09:11:05Z"
+   "t": "2026-09-23T09:00:45Z"
   },
   {
    "count": 188,
-   "t": "2026-09-23T09:12:56Z"
+   "t": "2026-09-23T09:11:05Z"
   },
   {
    "count": 189,
-   "t": "2026-09-23T09:27:43Z"
+   "t": "2026-09-23T09:12:56Z"
   },
   {
    "count": 190,
-   "t": "2026-09-23T10:05:14Z"
+   "t": "2026-09-23T09:27:43Z"
   },
   {
    "count": 191,
-   "t": "2026-09-23T10:11:34Z"
+   "t": "2026-09-23T10:05:14Z"
   },
   {
    "count": 192,
-   "t": "2026-09-23T11:03:22Z"
+   "t": "2026-09-23T10:11:34Z"
   },
   {
    "count": 193,
-   "t": "2026-09-23T11:15:05Z"
+   "t": "2026-09-23T11:03:22Z"
   },
   {
    "count": 194,
-   "t": "2026-09-23T11:31:55Z"
+   "t": "2026-09-23T11:15:05Z"
   },
   {
    "count": 195,
-   "t": "2026-09-23T11:32:09Z"
+   "t": "2026-09-23T11:31:55Z"
   },
   {
    "count": 196,
-   "t": "2026-09-23T11:37:28Z"
+   "t": "2026-09-23T11:32:09Z"
   },
   {
    "count": 197,
-   "t": "2026-09-23T11:37:36Z"
+   "t": "2026-09-23T11:37:28Z"
   },
   {
    "count": 198,
-   "t": "2026-09-23T11:45:19Z"
+   "t": "2026-09-23T11:37:36Z"
   },
   {
    "count": 199,
-   "t": "2026-09-23T12:07:15Z"
+   "t": "2026-09-23T11:45:19Z"
   },
   {
    "count": 200,
-   "t": "2026-09-23T12:07:25Z"
+   "t": "2026-09-23T12:07:15Z"
   },
   {
    "count": 201,
-   "t": "2026-09-23T12:11:34Z"
+   "t": "2026-09-23T12:07:25Z"
   },
   {
    "count": 202,
-   "t": "2026-09-23T12:22:38Z"
+   "t": "2026-09-23T12:11:34Z"
   },
   {
    "count": 203,
-   "t": "2026-09-23T12:23:43Z"
+   "t": "2026-09-23T12:22:38Z"
   },
   {
    "count": 204,
-   "t": "2026-09-23T12:24:30Z"
+   "t": "2026-09-23T12:23:43Z"
   },
   {
    "count": 205,
-   "t": "2026-09-23T12:38:21Z"
+   "t": "2026-09-23T12:24:30Z"
   },
   {
    "count": 206,
-   "t": "2026-09-23T12:42:23Z"
+   "t": "2026-09-23T12:38:21Z"
   },
   {
    "count": 207,
-   "t": "2026-09-23T12:48:23Z"
+   "t": "2026-09-23T12:42:23Z"
   },
   {
    "count": 208,
-   "t": "2026-09-23T12:50:09Z"
+   "t": "2026-09-23T12:48:23Z"
   },
   {
    "count": 209,
-   "t": "2026-09-23T12:58:41Z"
+   "t": "2026-09-23T12:50:09Z"
   },
   {
    "count": 210,
-   "t": "2026-09-23T13:04:45Z"
+   "t": "2026-09-23T12:58:41Z"
   },
   {
    "count": 211,
-   "t": "2026-09-23T13:08:13Z"
+   "t": "2026-09-23T13:04:45Z"
   },
   {
    "count": 212,
-   "t": "2026-09-23T13:11:02Z"
+   "t": "2026-09-23T13:08:13Z"
   },
   {
    "count": 213,
-   "t": "2026-09-23T13:20:48Z"
+   "t": "2026-09-23T13:11:02Z"
   },
   {
    "count": 214,
-   "t": "2026-09-23T13:32:31Z"
+   "t": "2026-09-23T13:20:48Z"
   },
   {
    "count": 215,
-   "t": "2026-09-23T13:43:05Z"
+   "t": "2026-09-23T13:32:31Z"
   },
   {
    "count": 216,
-   "t": "2026-09-23T14:01:02Z"
+   "t": "2026-09-23T13:43:05Z"
   },
   {
    "count": 217,
-   "t": "2026-09-23T14:20:47Z"
+   "t": "2026-09-23T14:01:02Z"
   },
   {
    "count": 218,
-   "t": "2026-09-23T14:22:15Z"
+   "t": "2026-09-23T14:20:47Z"
   },
   {
    "count": 219,
-   "t": "2026-09-23T14:30:44Z"
+   "t": "2026-09-23T14:22:15Z"
   },
   {
    "count": 220,
-   "t": "2026-09-23T14:58:50Z"
+   "t": "2026-09-23T14:30:44Z"
   },
   {
    "count": 221,
-   "t": "2026-09-23T15:01:47Z"
+   "t": "2026-09-23T14:58:50Z"
   },
   {
    "count": 222,
-   "t": "2026-09-23T15:06:08Z"
+   "t": "2026-09-23T15:01:47Z"
   },
   {
    "count": 223,
-   "t": "2026-09-23T15:08:24Z"
+   "t": "2026-09-23T15:06:08Z"
   },
   {
    "count": 224,
-   "t": "2026-09-23T16:05:34Z"
+   "t": "2026-09-23T15:08:24Z"
   },
   {
    "count": 225,
-   "t": "2026-09-23T16:08:57Z"
+   "t": "2026-09-23T16:05:34Z"
   },
   {
    "count": 226,
-   "t": "2026-09-23T16:26:04Z"
+   "t": "2026-09-23T16:08:57Z"
   },
   {
    "count": 227,
-   "t": "2026-09-23T16:36:20Z"
+   "t": "2026-09-23T16:26:04Z"
   },
   {
    "count": 228,
-   "t": "2026-09-23T16:50:59Z"
+   "t": "2026-09-23T16:36:20Z"
   },
   {
    "count": 229,
-   "t": "2026-09-23T16:52:26Z"
+   "t": "2026-09-23T16:50:59Z"
   },
   {
    "count": 230,
-   "t": "2026-09-23T17:03:51Z"
+   "t": "2026-09-23T16:52:26Z"
   },
   {
    "count": 231,
-   "t": "2026-09-23T17:17:33Z"
+   "t": "2026-09-23T17:03:51Z"
   },
   {
    "count": 232,
-   "t": "2026-09-23T18:11:19Z"
+   "t": "2026-09-23T17:17:33Z"
   },
   {
    "count": 233,
-   "t": "2026-09-23T18:39:23Z"
+   "t": "2026-09-23T18:11:19Z"
   },
   {
    "count": 234,
-   "t": "2026-09-23T18:51:01Z"
+   "t": "2026-09-23T18:39:23Z"
   },
   {
    "count": 235,
-   "t": "2026-09-23T18:56:08Z"
+   "t": "2026-09-23T18:51:01Z"
   },
   {
    "count": 236,
-   "t": "2026-09-23T20:46:25Z"
+   "t": "2026-09-23T18:56:08Z"
   },
   {
    "count": 237,
+   "t": "2026-09-23T20:46:25Z"
+  },
+  {
+   "count": 238,
    "t": "2026-09-23T21:15:27Z"
   }
  ],
@@ -4088,13 +4099,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 237,
+  "files_count": 238,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 235,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T21:27:27Z",
+ "last_checked": "2026-09-23T22:27:33Z",
  "pending": [
   {
    "code": "ABB",
@@ -5904,15 +5915,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Luvenda"
-  },
-  {
-   "code": "LSV",
-   "direction": "ltr",
-   "locale": "vsl",
-   "name": "Venezuelan Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "lengua de señas venezolana"
   },
   {
    "code": "SLV",
@@ -11431,6 +11433,39 @@
    "vernacular": "lengua de señas peruana"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LSV",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T19:16:31Z",
+   "files_at": "2026-09-22T19:16:31Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T19:16:31Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T22:27:33Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "vsl",
+   "name": "Venezuelan Sign Language",
+   "published_at": "2026-09-22T19:16:31Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T19:16:31Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LSV",
+   "vernacular": "lengua de señas venezolana"
+  },
+  {
    "api_published_at": "2026-09-22T19:36:33Z",
    "beyond_baseline": false,
    "catalog_at": "2026-09-22T19:36:33Z",
@@ -13745,16 +13780,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 68,
-  "added_4h": 6,
+  "added_1h": 0,
+  "added_24h": 67,
+  "added_4h": 5,
   "catalog_count": 235,
-  "catalog_lag": 2,
+  "catalog_lag": 3,
   "catalog_percent": 52.3,
-  "days_since_release": 5.31,
-  "pending_count": 212,
-  "percent": 52.8,
-  "published_count": 237,
+  "days_since_release": 5.35,
+  "pending_count": 211,
+  "percent": 53.0,
+  "published_count": 238,
   "publisher_percent": 90.5,
   "publisher_percent_ceiling": 99.2,
   "target": 449
