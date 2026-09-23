@@ -674,22 +674,38 @@
   {
    "count": 168,
    "t": "2026-09-23T01:38:56Z"
+  },
+  {
+   "count": 169,
+   "t": "2026-09-23T02:40:18Z"
+  },
+  {
+   "count": 170,
+   "t": "2026-09-23T03:14:57Z"
+  },
+  {
+   "count": 171,
+   "t": "2026-09-23T03:17:47Z"
+  },
+  {
+   "count": 172,
+   "t": "2026-09-23T03:58:07Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
+  "last_checked_count": 1,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 26,
-  "awaiting_catalogue": 4,
-  "catalogued": 168,
+  "awaiting_catalogue": 1,
+  "catalogued": 172,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 145,
+  "file_times": 146,
   "observed_times": 0,
   "sign_languages": 33
  },
@@ -2271,7 +2287,7 @@
     {
      "at": "2026-09-23T02:40:00Z",
      "code": "IA",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Iban",
      "source": "file_estimated"
     }
@@ -2284,30 +2300,43 @@
     {
      "at": "2026-09-23T03:14:46Z",
      "code": "JA",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Javanese",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T03:17:36Z",
      "code": "CC",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Chavacano",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-23T03:57:55Z",
      "code": "UZ",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Uzbek",
      "source": "file_estimated"
     }
    ],
    "count_after": 172,
    "t": "2026-09-23T03:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-23T05:55:22Z",
+     "code": "HV",
+     "in_catalog": false,
+     "name": "Hiligaynon",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 173,
+   "t": "2026-09-23T05:00:00Z"
   }
  ],
- "generated": "2026-09-23T05:12:41Z",
+ "generated": "2026-09-23T06:12:13Z",
  "history": [
   {
    "count": 1,
@@ -2996,6 +3025,10 @@
   {
    "count": 172,
    "t": "2026-09-23T03:57:55Z"
+  },
+  {
+   "count": 173,
+   "t": "2026-09-23T05:55:22Z"
   }
  ],
  "integrity": {
@@ -3009,13 +3042,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 172,
+  "files_count": 173,
   "last_full_verification": "2026-09-22T08:47:09Z",
-  "listing_count": 168,
+  "listing_count": 172,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T05:12:41Z",
+ "last_checked": "2026-09-23T06:12:13Z",
  "pending": [
   {
    "code": "ABB",
@@ -3700,15 +3733,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Otjiherero"
-  },
-  {
-   "code": "HV",
-   "direction": "ltr",
-   "locale": "hil",
-   "name": "Hiligaynon",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Hiligaynon"
   },
   {
    "code": "MO",
@@ -11003,12 +11027,12 @@
    "vernacular": "Diné Bizaad"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T02:40:18Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T02:40:18Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T06:12:13Z",
    "code": "IA",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11020,9 +11044,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T02:40:00Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T02:41:52Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "iba",
    "name": "Iban",
    "published_at": "2026-09-23T02:40:00Z",
@@ -11035,12 +11059,12 @@
    "vernacular": "Iban"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T03:14:57Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T03:14:57Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T06:12:13Z",
    "code": "JA",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11052,9 +11076,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T03:14:46Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T03:41:59Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "jv",
    "name": "Javanese",
    "published_at": "2026-09-23T03:14:46Z",
@@ -11067,12 +11091,12 @@
    "vernacular": "Jawa"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T03:17:47Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T03:17:47Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T06:12:13Z",
    "code": "CC",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11084,9 +11108,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T03:17:36Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T03:41:59Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "cbk",
    "name": "Chavacano",
    "published_at": "2026-09-23T03:17:36Z",
@@ -11099,12 +11123,12 @@
    "vernacular": "Chavacano"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T03:58:07Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T03:58:07Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T06:12:13Z",
    "code": "UZ",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11116,9 +11140,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T03:57:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T04:12:00Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "uz-cyrl",
    "name": "Uzbek",
    "published_at": "2026-09-23T03:57:55Z",
@@ -11129,6 +11153,39 @@
    "title": "Етакчи кенгашдан янгиликлар — 6 (2026)",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=UZ",
    "vernacular": "ўзбекча"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "HV",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T05:55:22Z",
+   "files_at": "2026-09-23T05:55:22Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T05:55:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T06:12:13Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "hil",
+   "name": "Hiligaynon",
+   "published_at": "2026-09-23T05:55:22Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T05:55:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=HV",
+   "vernacular": "Hiligaynon"
   }
  ],
  "removed": [],
@@ -11138,17 +11195,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 61,
+  "added_1h": 1,
+  "added_24h": 62,
   "added_4h": 5,
-  "catalog_count": 168,
-  "catalog_lag": 4,
-  "catalog_percent": 37.4,
-  "days_since_release": 4.63,
-  "pending_count": 277,
-  "percent": 38.3,
-  "published_count": 172,
-  "publisher_percent": 86.7,
+  "catalog_count": 172,
+  "catalog_lag": 1,
+  "catalog_percent": 38.3,
+  "days_since_release": 4.68,
+  "pending_count": 276,
+  "percent": 38.5,
+  "published_count": 173,
+  "publisher_percent": 86.9,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
