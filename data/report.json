@@ -729,19 +729,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 8,
+  "last_checked_count": 9,
   "newly_catalogued": [],
-  "offset": 5,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 8
+  "unlisted_total": 9
  },
  "counts": {
   "api_times": 28,
-  "awaiting_catalogue": 8,
+  "awaiting_catalogue": 9,
   "catalogued": 181,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 160,
+  "file_times": 161,
   "observed_times": 0,
   "sign_languages": 37
  },
@@ -2506,9 +2506,22 @@
    ],
    "count_after": 189,
    "t": "2026-09-23T10:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-23T11:03:22Z",
+     "code": "TND",
+     "in_catalog": false,
+     "name": "Tandroy",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 190,
+   "t": "2026-09-23T11:00:00Z"
   }
  ],
- "generated": "2026-09-23T10:42:39Z",
+ "generated": "2026-09-23T11:12:41Z",
  "history": [
   {
    "count": 1,
@@ -3265,6 +3278,10 @@
   {
    "count": 189,
    "t": "2026-09-23T10:11:34Z"
+  },
+  {
+   "count": 190,
+   "t": "2026-09-23T11:03:22Z"
   }
  ],
  "integrity": {
@@ -3278,13 +3295,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 189,
+  "files_count": 190,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 181,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T10:42:39Z",
+ "last_checked": "2026-09-23T11:12:41Z",
  "pending": [
   {
    "code": "ABB",
@@ -5328,15 +5345,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Talian"
-  },
-  {
-   "code": "TND",
-   "direction": "ltr",
-   "locale": "tdx",
-   "name": "Tandroy",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Tandroy"
   },
   {
    "code": "TNK",
@@ -11797,6 +11805,39 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NG",
    "vernacular": "Ngambay"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TND",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T11:03:22Z",
+   "files_at": "2026-09-23T11:03:22Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:03:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T11:12:41Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tdx",
+   "name": "Tandroy",
+   "published_at": "2026-09-23T11:03:22Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:03:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TND",
+   "vernacular": "Tandroy"
   }
  ],
  "removed": [],
@@ -11806,16 +11847,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 64,
-  "added_4h": 12,
+  "added_1h": 1,
+  "added_24h": 63,
+  "added_4h": 13,
   "catalog_count": 181,
-  "catalog_lag": 8,
+  "catalog_lag": 9,
   "catalog_percent": 40.3,
-  "days_since_release": 4.86,
-  "pending_count": 260,
-  "percent": 42.1,
-  "published_count": 189,
+  "days_since_release": 4.88,
+  "pending_count": 259,
+  "percent": 42.3,
+  "published_count": 190,
   "publisher_percent": 88.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
