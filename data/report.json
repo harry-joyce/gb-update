@@ -2246,7 +2246,7 @@
    "t": "2026-09-22T23:00:00Z"
   }
  ],
- "generated": "2026-09-22T23:11:32Z",
+ "generated": "2026-09-23T00:11:38Z",
  "history": [
   {
    "count": 1,
@@ -2934,7 +2934,7 @@
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-22T23:11:32Z",
+ "last_checked": "2026-09-23T00:11:38Z",
  "pending": [
   {
    "code": "ABB",
@@ -10932,13 +10932,13 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
+  "added_1h": 0,
   "added_24h": 57,
-  "added_4h": 5,
+  "added_4h": 4,
   "catalog_count": 166,
   "catalog_lag": 1,
   "catalog_percent": 37.0,
-  "days_since_release": 4.38,
+  "days_since_release": 4.42,
   "pending_count": 282,
   "percent": 37.2,
   "published_count": 167,
