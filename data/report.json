@@ -729,19 +729,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 9,
+  "last_checked_count": 14,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 12,
   "size": 40,
-  "unlisted_total": 9
+  "unlisted_total": 14
  },
  "counts": {
   "api_times": 28,
-  "awaiting_catalogue": 9,
+  "awaiting_catalogue": 14,
   "catalogued": 181,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 161,
+  "file_times": 166,
   "observed_times": 0,
   "sign_languages": 37
  },
@@ -2515,13 +2515,48 @@
      "in_catalog": false,
      "name": "Tandroy",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T11:15:05Z",
+     "code": "SBO",
+     "in_catalog": false,
+     "name": "Serbian (Roman)",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T11:31:55Z",
+     "code": "NC",
+     "in_catalog": false,
+     "name": "Nicobarese",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T11:32:09Z",
+     "code": "SB",
+     "in_catalog": false,
+     "name": "Serbian (Cyrillic)",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T11:37:28Z",
+     "code": "RU",
+     "in_catalog": false,
+     "name": "Kirundi",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T11:37:36Z",
+     "code": "ST",
+     "in_catalog": false,
+     "name": "Estonian",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 190,
+   "count_after": 195,
    "t": "2026-09-23T11:00:00Z"
   }
  ],
- "generated": "2026-09-23T11:12:41Z",
+ "generated": "2026-09-23T11:42:46Z",
  "history": [
   {
    "count": 1,
@@ -3282,6 +3317,26 @@
   {
    "count": 190,
    "t": "2026-09-23T11:03:22Z"
+  },
+  {
+   "count": 191,
+   "t": "2026-09-23T11:15:05Z"
+  },
+  {
+   "count": 192,
+   "t": "2026-09-23T11:31:55Z"
+  },
+  {
+   "count": 193,
+   "t": "2026-09-23T11:32:09Z"
+  },
+  {
+   "count": 194,
+   "t": "2026-09-23T11:37:28Z"
+  },
+  {
+   "count": 195,
+   "t": "2026-09-23T11:37:36Z"
   }
  ],
  "integrity": {
@@ -3295,13 +3350,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 190,
+  "files_count": 195,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 181,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T11:12:41Z",
+ "last_checked": "2026-09-23T11:42:46Z",
  "pending": [
   {
    "code": "ABB",
@@ -3761,15 +3816,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Esan"
-  },
-  {
-   "code": "ST",
-   "direction": "ltr",
-   "locale": "et",
-   "name": "Estonian",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "eesti"
   },
   {
    "code": "ESL",
@@ -4256,15 +4302,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kiribati"
-  },
-  {
-   "code": "RU",
-   "direction": "ltr",
-   "locale": "run",
-   "name": "Kirundi",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ikirundi"
   },
   {
    "code": "KSN",
@@ -4852,15 +4889,6 @@
    "vernacular": "lenguaje de señas nicaragüense"
   },
   {
-   "code": "NC",
-   "direction": "ltr",
-   "locale": "caq",
-   "name": "Nicobarese",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Nicobarese"
-  },
-  {
    "code": "NNS",
    "direction": "ltr",
    "locale": "nsi",
@@ -5165,24 +5193,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Sepulana"
-  },
-  {
-   "code": "SB",
-   "direction": "ltr",
-   "locale": "sr-cyrl",
-   "name": "Serbian (Cyrillic)",
-   "script": "CYRILLIC",
-   "sign": false,
-   "vernacular": "српски (ћирилица)"
-  },
-  {
-   "code": "SBO",
-   "direction": "ltr",
-   "locale": "sr-latn",
-   "name": "Serbian (Roman)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "srpski (latinica)"
   },
   {
    "code": "SU",
@@ -11838,6 +11848,169 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TND",
    "vernacular": "Tandroy"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SBO",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T11:15:05Z",
+   "files_at": "2026-09-23T11:15:05Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:15:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T11:42:46Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "sr-latn",
+   "name": "Serbian (Roman)",
+   "published_at": "2026-09-23T11:15:05Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:15:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Izveštaj Vodećeg tela za 2026. (br. 6)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SBO",
+   "vernacular": "srpski (latinica)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T11:31:55Z",
+   "files_at": "2026-09-23T11:31:55Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:31:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T11:42:46Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "caq",
+   "name": "Nicobarese",
+   "published_at": "2026-09-23T11:31:55Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:31:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NC",
+   "vernacular": "Nicobarese"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SB",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T11:32:09Z",
+   "files_at": "2026-09-23T11:32:09Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:32:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T11:42:46Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "sr-cyrl",
+   "name": "Serbian (Cyrillic)",
+   "published_at": "2026-09-23T11:32:09Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:32:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CYRILLIC",
+   "sign": false,
+   "title": "Видео",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SB",
+   "vernacular": "српски (ћирилица)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "RU",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T11:37:28Z",
+   "files_at": "2026-09-23T11:37:28Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:37:28Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T11:42:46Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "run",
+   "name": "Kirundi",
+   "published_at": "2026-09-23T11:37:28Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:37:28Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Ividewo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=RU",
+   "vernacular": "Ikirundi"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "ST",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T11:37:36Z",
+   "files_at": "2026-09-23T11:37:36Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:37:36Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T11:42:46Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "et",
+   "name": "Estonian",
+   "published_at": "2026-09-23T11:37:36Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T11:37:36Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Juhtiva kogu 2026. aasta 6. saade",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ST",
+   "vernacular": "eesti"
   }
  ],
  "removed": [],
@@ -11847,17 +12020,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 63,
-  "added_4h": 13,
+  "added_1h": 6,
+  "added_24h": 65,
+  "added_4h": 18,
   "catalog_count": 181,
-  "catalog_lag": 9,
+  "catalog_lag": 14,
   "catalog_percent": 40.3,
-  "days_since_release": 4.88,
-  "pending_count": 259,
-  "percent": 42.3,
-  "published_count": 190,
-  "publisher_percent": 88.2,
+  "days_since_release": 4.9,
+  "pending_count": 254,
+  "percent": 43.4,
+  "published_count": 195,
+  "publisher_percent": 88.5,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
