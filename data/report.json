@@ -817,21 +817,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 16,
+  "last_checked_count": 18,
   "newly_catalogued": [],
-  "offset": 4,
+  "offset": 8,
   "size": 40,
-  "unlisted_total": 16
+  "unlisted_total": 18
  },
  "counts": {
   "api_times": 31,
-  "awaiting_catalogue": 16,
+  "awaiting_catalogue": 18,
   "catalogued": 203,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 187,
+  "file_times": 189,
   "observed_times": 0,
-  "sign_languages": 41
+  "sign_languages": 43
  },
  "events": [
   {
@@ -2216,6 +2216,13 @@
      "source": "file_estimated"
     },
     {
+     "at": "2026-09-22T14:49:53Z",
+     "code": "BSL",
+     "in_catalog": false,
+     "name": "British Sign Language",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-22T14:55:43Z",
      "code": "SV",
      "in_catalog": true,
@@ -2223,7 +2230,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 150,
+   "count_after": 151,
    "t": "2026-09-22T14:00:00Z"
   },
   {
@@ -2278,7 +2285,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 157,
+   "count_after": 158,
    "t": "2026-09-22T15:00:00Z"
   },
   {
@@ -2326,7 +2333,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 163,
+   "count_after": 164,
    "t": "2026-09-22T16:00:00Z"
   },
   {
@@ -2339,7 +2346,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 164,
+   "count_after": 165,
    "t": "2026-09-22T17:00:00Z"
   },
   {
@@ -2352,7 +2359,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 165,
+   "count_after": 166,
    "t": "2026-09-22T18:00:00Z"
   },
   {
@@ -2365,7 +2372,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 166,
+   "count_after": 167,
    "t": "2026-09-22T19:00:00Z"
   },
   {
@@ -2378,7 +2385,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 167,
+   "count_after": 168,
    "t": "2026-09-22T20:00:00Z"
   },
   {
@@ -2398,7 +2405,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 169,
+   "count_after": 170,
    "t": "2026-09-22T21:00:00Z"
   },
   {
@@ -2411,7 +2418,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 170,
+   "count_after": 171,
    "t": "2026-09-22T23:00:00Z"
   },
   {
@@ -2424,7 +2431,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 171,
+   "count_after": 172,
    "t": "2026-09-23T01:00:00Z"
   },
   {
@@ -2437,7 +2444,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 172,
+   "count_after": 173,
    "t": "2026-09-23T02:00:00Z"
   },
   {
@@ -2464,7 +2471,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 175,
+   "count_after": 176,
    "t": "2026-09-23T03:00:00Z"
   },
   {
@@ -2477,7 +2484,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 176,
+   "count_after": 177,
    "t": "2026-09-23T04:00:00Z"
   },
   {
@@ -2490,7 +2497,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 177,
+   "count_after": 178,
    "t": "2026-09-23T05:00:00Z"
   },
   {
@@ -2503,7 +2510,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 178,
+   "count_after": 179,
    "t": "2026-09-23T06:00:00Z"
   },
   {
@@ -2551,7 +2558,7 @@
      "source": "api"
     }
    ],
-   "count_after": 184,
+   "count_after": 185,
    "t": "2026-09-23T08:00:00Z"
   },
   {
@@ -2585,7 +2592,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 188,
+   "count_after": 189,
    "t": "2026-09-23T09:00:00Z"
   },
   {
@@ -2605,7 +2612,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 190,
+   "count_after": 191,
    "t": "2026-09-23T10:00:00Z"
   },
   {
@@ -2660,7 +2667,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 197,
+   "count_after": 198,
    "t": "2026-09-23T11:00:00Z"
   },
   {
@@ -2743,7 +2750,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 208,
+   "count_after": 209,
    "t": "2026-09-23T12:00:00Z"
   },
   {
@@ -2791,7 +2798,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 214,
+   "count_after": 215,
    "t": "2026-09-23T13:00:00Z"
   },
   {
@@ -2825,7 +2832,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 218,
+   "count_after": 219,
    "t": "2026-09-23T14:00:00Z"
   },
   {
@@ -2836,13 +2843,20 @@
      "in_catalog": false,
      "name": "Hungarian",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T15:06:08Z",
+     "code": "ESL",
+     "in_catalog": false,
+     "name": "Ethiopian Sign Language",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 219,
+   "count_after": 221,
    "t": "2026-09-23T15:00:00Z"
   }
  ],
- "generated": "2026-09-23T15:03:59Z",
+ "generated": "2026-09-23T15:34:02Z",
  "history": [
   {
    "count": 1,
@@ -3442,283 +3456,291 @@
   },
   {
    "count": 150,
-   "t": "2026-09-22T14:55:43Z"
+   "t": "2026-09-22T14:49:53Z"
   },
   {
    "count": 151,
-   "t": "2026-09-22T15:03:50Z"
+   "t": "2026-09-22T14:55:43Z"
   },
   {
    "count": 152,
-   "t": "2026-09-22T15:06:58Z"
+   "t": "2026-09-22T15:03:50Z"
   },
   {
    "count": 153,
-   "t": "2026-09-22T15:07:30Z"
+   "t": "2026-09-22T15:06:58Z"
   },
   {
    "count": 154,
-   "t": "2026-09-22T15:10:35Z"
+   "t": "2026-09-22T15:07:30Z"
   },
   {
    "count": 155,
-   "t": "2026-09-22T15:30:38Z"
+   "t": "2026-09-22T15:10:35Z"
   },
   {
    "count": 156,
-   "t": "2026-09-22T15:35:23Z"
+   "t": "2026-09-22T15:30:38Z"
   },
   {
    "count": 157,
-   "t": "2026-09-22T15:51:14Z"
+   "t": "2026-09-22T15:35:23Z"
   },
   {
    "count": 158,
-   "t": "2026-09-22T16:00:22Z"
+   "t": "2026-09-22T15:51:14Z"
   },
   {
    "count": 159,
-   "t": "2026-09-22T16:00:57Z"
+   "t": "2026-09-22T16:00:22Z"
   },
   {
    "count": 160,
-   "t": "2026-09-22T16:07:09Z"
+   "t": "2026-09-22T16:00:57Z"
   },
   {
    "count": 161,
-   "t": "2026-09-22T16:39:02Z"
+   "t": "2026-09-22T16:07:09Z"
   },
   {
    "count": 162,
-   "t": "2026-09-22T16:52:51Z"
+   "t": "2026-09-22T16:39:02Z"
   },
   {
    "count": 163,
-   "t": "2026-09-22T16:55:13Z"
+   "t": "2026-09-22T16:52:51Z"
   },
   {
    "count": 164,
-   "t": "2026-09-22T17:00:29Z"
+   "t": "2026-09-22T16:55:13Z"
   },
   {
    "count": 165,
-   "t": "2026-09-22T18:21:18Z"
+   "t": "2026-09-22T17:00:29Z"
   },
   {
    "count": 166,
-   "t": "2026-09-22T19:36:24Z"
+   "t": "2026-09-22T18:21:18Z"
   },
   {
    "count": 167,
-   "t": "2026-09-22T20:18:21Z"
+   "t": "2026-09-22T19:36:24Z"
   },
   {
    "count": 168,
-   "t": "2026-09-22T21:20:53Z"
+   "t": "2026-09-22T20:18:21Z"
   },
   {
    "count": 169,
-   "t": "2026-09-22T21:57:09Z"
+   "t": "2026-09-22T21:20:53Z"
   },
   {
    "count": 170,
-   "t": "2026-09-22T23:07:06Z"
+   "t": "2026-09-22T21:57:09Z"
   },
   {
    "count": 171,
-   "t": "2026-09-23T01:38:44Z"
+   "t": "2026-09-22T23:07:06Z"
   },
   {
    "count": 172,
-   "t": "2026-09-23T02:40:00Z"
+   "t": "2026-09-23T01:38:44Z"
   },
   {
    "count": 173,
-   "t": "2026-09-23T03:14:46Z"
+   "t": "2026-09-23T02:40:00Z"
   },
   {
    "count": 174,
-   "t": "2026-09-23T03:17:36Z"
+   "t": "2026-09-23T03:14:46Z"
   },
   {
    "count": 175,
-   "t": "2026-09-23T03:57:55Z"
+   "t": "2026-09-23T03:17:36Z"
   },
   {
    "count": 176,
-   "t": "2026-09-23T04:18:34Z"
+   "t": "2026-09-23T03:57:55Z"
   },
   {
    "count": 177,
-   "t": "2026-09-23T05:55:22Z"
+   "t": "2026-09-23T04:18:34Z"
   },
   {
    "count": 178,
-   "t": "2026-09-23T06:37:15Z"
+   "t": "2026-09-23T05:55:22Z"
   },
   {
    "count": 179,
-   "t": "2026-09-23T08:07:21Z"
+   "t": "2026-09-23T06:37:15Z"
   },
   {
    "count": 180,
-   "t": "2026-09-23T08:10:27Z"
+   "t": "2026-09-23T08:07:21Z"
   },
   {
    "count": 181,
-   "t": "2026-09-23T08:20:55Z"
+   "t": "2026-09-23T08:10:27Z"
   },
   {
    "count": 182,
-   "t": "2026-09-23T08:21:04Z"
+   "t": "2026-09-23T08:20:55Z"
   },
   {
    "count": 183,
-   "t": "2026-09-23T08:47:02Z"
+   "t": "2026-09-23T08:21:04Z"
   },
   {
    "count": 184,
-   "t": "2026-09-23T08:48:00Z"
+   "t": "2026-09-23T08:47:02Z"
   },
   {
    "count": 185,
-   "t": "2026-09-23T09:00:45Z"
+   "t": "2026-09-23T08:48:00Z"
   },
   {
    "count": 186,
-   "t": "2026-09-23T09:11:05Z"
+   "t": "2026-09-23T09:00:45Z"
   },
   {
    "count": 187,
-   "t": "2026-09-23T09:12:56Z"
+   "t": "2026-09-23T09:11:05Z"
   },
   {
    "count": 188,
-   "t": "2026-09-23T09:27:43Z"
+   "t": "2026-09-23T09:12:56Z"
   },
   {
    "count": 189,
-   "t": "2026-09-23T10:05:14Z"
+   "t": "2026-09-23T09:27:43Z"
   },
   {
    "count": 190,
-   "t": "2026-09-23T10:11:34Z"
+   "t": "2026-09-23T10:05:14Z"
   },
   {
    "count": 191,
-   "t": "2026-09-23T11:03:22Z"
+   "t": "2026-09-23T10:11:34Z"
   },
   {
    "count": 192,
-   "t": "2026-09-23T11:15:05Z"
+   "t": "2026-09-23T11:03:22Z"
   },
   {
    "count": 193,
-   "t": "2026-09-23T11:31:55Z"
+   "t": "2026-09-23T11:15:05Z"
   },
   {
    "count": 194,
-   "t": "2026-09-23T11:32:09Z"
+   "t": "2026-09-23T11:31:55Z"
   },
   {
    "count": 195,
-   "t": "2026-09-23T11:37:28Z"
+   "t": "2026-09-23T11:32:09Z"
   },
   {
    "count": 196,
-   "t": "2026-09-23T11:37:36Z"
+   "t": "2026-09-23T11:37:28Z"
   },
   {
    "count": 197,
-   "t": "2026-09-23T11:45:19Z"
+   "t": "2026-09-23T11:37:36Z"
   },
   {
    "count": 198,
-   "t": "2026-09-23T12:07:15Z"
+   "t": "2026-09-23T11:45:19Z"
   },
   {
    "count": 199,
-   "t": "2026-09-23T12:07:25Z"
+   "t": "2026-09-23T12:07:15Z"
   },
   {
    "count": 200,
-   "t": "2026-09-23T12:11:34Z"
+   "t": "2026-09-23T12:07:25Z"
   },
   {
    "count": 201,
-   "t": "2026-09-23T12:22:38Z"
+   "t": "2026-09-23T12:11:34Z"
   },
   {
    "count": 202,
-   "t": "2026-09-23T12:23:43Z"
+   "t": "2026-09-23T12:22:38Z"
   },
   {
    "count": 203,
-   "t": "2026-09-23T12:24:30Z"
+   "t": "2026-09-23T12:23:43Z"
   },
   {
    "count": 204,
-   "t": "2026-09-23T12:38:21Z"
+   "t": "2026-09-23T12:24:30Z"
   },
   {
    "count": 205,
-   "t": "2026-09-23T12:42:23Z"
+   "t": "2026-09-23T12:38:21Z"
   },
   {
    "count": 206,
-   "t": "2026-09-23T12:48:23Z"
+   "t": "2026-09-23T12:42:23Z"
   },
   {
    "count": 207,
-   "t": "2026-09-23T12:50:09Z"
+   "t": "2026-09-23T12:48:23Z"
   },
   {
    "count": 208,
-   "t": "2026-09-23T12:58:41Z"
+   "t": "2026-09-23T12:50:09Z"
   },
   {
    "count": 209,
-   "t": "2026-09-23T13:04:45Z"
+   "t": "2026-09-23T12:58:41Z"
   },
   {
    "count": 210,
-   "t": "2026-09-23T13:08:13Z"
+   "t": "2026-09-23T13:04:45Z"
   },
   {
    "count": 211,
-   "t": "2026-09-23T13:11:02Z"
+   "t": "2026-09-23T13:08:13Z"
   },
   {
    "count": 212,
-   "t": "2026-09-23T13:20:48Z"
+   "t": "2026-09-23T13:11:02Z"
   },
   {
    "count": 213,
-   "t": "2026-09-23T13:32:31Z"
+   "t": "2026-09-23T13:20:48Z"
   },
   {
    "count": 214,
-   "t": "2026-09-23T13:43:05Z"
+   "t": "2026-09-23T13:32:31Z"
   },
   {
    "count": 215,
-   "t": "2026-09-23T14:01:02Z"
+   "t": "2026-09-23T13:43:05Z"
   },
   {
    "count": 216,
-   "t": "2026-09-23T14:20:47Z"
+   "t": "2026-09-23T14:01:02Z"
   },
   {
    "count": 217,
-   "t": "2026-09-23T14:22:15Z"
+   "t": "2026-09-23T14:20:47Z"
   },
   {
    "count": 218,
-   "t": "2026-09-23T14:30:44Z"
+   "t": "2026-09-23T14:22:15Z"
   },
   {
    "count": 219,
+   "t": "2026-09-23T14:30:44Z"
+  },
+  {
+   "count": 220,
    "t": "2026-09-23T15:01:47Z"
+  },
+  {
+   "count": 221,
+   "t": "2026-09-23T15:06:08Z"
   }
  ],
  "integrity": {
@@ -3732,13 +3754,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 219,
+  "files_count": 221,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 203,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T15:03:59Z",
+ "last_checked": "2026-09-23T15:34:02Z",
  "pending": [
   {
    "code": "ABB",
@@ -3975,15 +3997,6 @@
    "vernacular": "Bulu"
   },
   {
-   "code": "BSL",
-   "direction": "ltr",
-   "locale": "bfi",
-   "name": "British Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "British Sign Language"
-  },
-  {
    "code": "BRS",
    "direction": "ltr",
    "locale": "sgn-bi",
@@ -4171,15 +4184,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Esan"
-  },
-  {
-   "code": "ESL",
-   "direction": "ltr",
-   "locale": "eth",
-   "name": "Ethiopian Sign Language",
-   "script": "ETHIOPIC",
-   "sign": true,
-   "vernacular": "የኢትዮጵያ ምልክት ቋንቋ"
   },
   {
    "code": "FGN",
@@ -10684,6 +10688,38 @@
    "vernacular": "Malagasy"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "BSL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T14:49:53Z",
+   "files_at": "2026-09-22T14:49:53Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T14:49:53Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T15:34:02Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "bfi",
+   "name": "British Sign Language",
+   "published_at": "2026-09-22T14:49:53Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T14:49:53Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 Governing Body Update #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BSL",
+   "vernacular": "British Sign Language"
+  },
+  {
    "api_published_at": "2026-09-22T14:55:56Z",
    "beyond_baseline": false,
    "catalog_at": "2026-09-22T14:55:56Z",
@@ -12959,6 +12995,39 @@
    "title": "2026 – Friss hírek a vezetőtestülettől (6. rész)",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=H",
    "vernacular": "magyar"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "ESL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T15:06:08Z",
+   "files_at": "2026-09-23T15:06:08Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T15:06:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T15:34:02Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "eth",
+   "name": "Ethiopian Sign Language",
+   "published_at": "2026-09-23T15:06:08Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T15:06:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ETHIOPIC",
+   "sign": true,
+   "title": "ቪዲዮ",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ESL",
+   "vernacular": "የኢትዮጵያ ምልክት ቋንቋ"
   }
  ],
  "removed": [],
@@ -12968,16 +13037,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 4,
-  "added_24h": 68,
-  "added_4h": 28,
+  "added_1h": 2,
+  "added_24h": 65,
+  "added_4h": 26,
   "catalog_count": 203,
-  "catalog_lag": 16,
+  "catalog_lag": 18,
   "catalog_percent": 45.2,
-  "days_since_release": 5.04,
-  "pending_count": 230,
-  "percent": 48.8,
-  "published_count": 219,
+  "days_since_release": 5.07,
+  "pending_count": 228,
+  "percent": 49.2,
+  "published_count": 221,
   "publisher_percent": 90.3,
   "publisher_percent_ceiling": 99.2,
   "target": 449
