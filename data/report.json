@@ -693,19 +693,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 5,
   "newly_catalogued": [],
   "offset": 2,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 5
  },
  "counts": {
   "api_times": 26,
-  "awaiting_catalogue": 3,
+  "awaiting_catalogue": 5,
   "catalogued": 172,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 148,
+  "file_times": 150,
   "observed_times": 0,
   "sign_languages": 34
  },
@@ -2354,9 +2354,29 @@
    ],
    "count_after": 175,
    "t": "2026-09-23T06:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-23T08:07:21Z",
+     "code": "W",
+     "in_catalog": false,
+     "name": "Welsh",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T08:10:27Z",
+     "code": "BT",
+     "in_catalog": false,
+     "name": "Batak (Toba)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 177,
+   "t": "2026-09-23T08:00:00Z"
   }
  ],
- "generated": "2026-09-23T07:42:21Z",
+ "generated": "2026-09-23T08:12:24Z",
  "history": [
   {
    "count": 1,
@@ -3057,6 +3077,14 @@
   {
    "count": 175,
    "t": "2026-09-23T06:37:15Z"
+  },
+  {
+   "count": 176,
+   "t": "2026-09-23T08:07:21Z"
+  },
+  {
+   "count": 177,
+   "t": "2026-09-23T08:10:27Z"
   }
  ],
  "integrity": {
@@ -3070,13 +3098,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 175,
+  "files_count": 177,
   "last_full_verification": "2026-09-22T08:47:09Z",
   "listing_count": 172,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T07:42:21Z",
+ "last_checked": "2026-09-23T08:12:24Z",
  "pending": [
   {
    "code": "ABB",
@@ -3266,15 +3294,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ɓǎsɔ́ɔ̀ (Ɖàbíɖà)"
-  },
-  {
-   "code": "BT",
-   "direction": "ltr",
-   "locale": "bbc",
-   "name": "Batak (Toba)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Batak (Toba)"
   },
   {
    "code": "SBF",
@@ -5471,15 +5490,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Waray-Waray"
-  },
-  {
-   "code": "W",
-   "direction": "ltr",
-   "locale": "cy",
-   "name": "Welsh",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Cymraeg"
   },
   {
    "code": "WO",
@@ -11261,6 +11271,70 @@
    "title": "Ividiyo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CGW",
    "vernacular": "Chitonga (Zimbabwe)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "W",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T08:07:21Z",
+   "files_at": "2026-09-23T08:07:21Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T08:07:21Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T08:12:24Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "cy",
+   "name": "Welsh",
+   "published_at": "2026-09-23T08:07:21Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T08:07:21Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Diweddariad #6 2026 gan y Corff Llywodraethol",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=W",
+   "vernacular": "Cymraeg"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "BT",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T08:10:27Z",
+   "files_at": "2026-09-23T08:10:27Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T08:10:27Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T08:12:24Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "bbc",
+   "name": "Batak (Toba)",
+   "published_at": "2026-09-23T08:10:27Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T08:10:27Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Laporan na Terbaru sian Punguan na Mangaradoti Taon 2026 (Bagian 6)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BT",
+   "vernacular": "Batak (Toba)"
   }
  ],
  "removed": [],
@@ -11270,16 +11344,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 60,
-  "added_4h": 3,
+  "added_1h": 2,
+  "added_24h": 61,
+  "added_4h": 4,
   "catalog_count": 172,
-  "catalog_lag": 3,
+  "catalog_lag": 5,
   "catalog_percent": 38.3,
-  "days_since_release": 4.74,
-  "pending_count": 274,
-  "percent": 39.0,
-  "published_count": 175,
+  "days_since_release": 4.76,
+  "pending_count": 272,
+  "percent": 39.4,
+  "published_count": 177,
   "publisher_percent": 86.9,
   "publisher_percent_ceiling": 99.2,
   "target": 449
