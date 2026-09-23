@@ -677,19 +677,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 4,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 4
  },
  "counts": {
   "api_times": 26,
-  "awaiting_catalogue": 3,
+  "awaiting_catalogue": 4,
   "catalogued": 168,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 144,
+  "file_times": 145,
   "observed_times": 0,
   "sign_languages": 33
  },
@@ -2294,13 +2294,20 @@
      "in_catalog": false,
      "name": "Chavacano",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T03:57:55Z",
+     "code": "UZ",
+     "in_catalog": false,
+     "name": "Uzbek",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 171,
+   "count_after": 172,
    "t": "2026-09-23T03:00:00Z"
   }
  ],
- "generated": "2026-09-23T03:41:59Z",
+ "generated": "2026-09-23T04:12:00Z",
  "history": [
   {
    "count": 1,
@@ -2985,6 +2992,10 @@
   {
    "count": 171,
    "t": "2026-09-23T03:17:36Z"
+  },
+  {
+   "count": 172,
+   "t": "2026-09-23T03:57:55Z"
   }
  ],
  "integrity": {
@@ -2998,13 +3009,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 171,
+  "files_count": 172,
   "last_full_verification": "2026-09-22T08:47:09Z",
   "listing_count": 168,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T03:41:59Z",
+ "last_checked": "2026-09-23T04:12:00Z",
  "pending": [
   {
    "code": "ABB",
@@ -5372,15 +5383,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Urhobo"
-  },
-  {
-   "code": "UZ",
-   "direction": "ltr",
-   "locale": "uz-cyrl",
-   "name": "Uzbek",
-   "script": "CYRILLIC",
-   "sign": false,
-   "vernacular": "ўзбекча"
   },
   {
    "code": "VE",
@@ -11095,6 +11097,38 @@
    "title": "2026 Update del Cuerpo Gobernante #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CC",
    "vernacular": "Chavacano"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "UZ",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T03:57:55Z",
+   "files_at": "2026-09-23T03:57:55Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T03:57:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T04:12:00Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "uz-cyrl",
+   "name": "Uzbek",
+   "published_at": "2026-09-23T03:57:55Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T03:57:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CYRILLIC",
+   "sign": false,
+   "title": "Етакчи кенгашдан янгиликлар — 6 (2026)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=UZ",
+   "vernacular": "ўзбекча"
   }
  ],
  "removed": [],
@@ -11104,16 +11138,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 60,
-  "added_4h": 4,
+  "added_1h": 3,
+  "added_24h": 61,
+  "added_4h": 5,
   "catalog_count": 168,
-  "catalog_lag": 3,
+  "catalog_lag": 4,
   "catalog_percent": 37.4,
-  "days_since_release": 4.57,
-  "pending_count": 278,
-  "percent": 38.1,
-  "published_count": 171,
+  "days_since_release": 4.59,
+  "pending_count": 277,
+  "percent": 38.3,
+  "published_count": 172,
   "publisher_percent": 86.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
