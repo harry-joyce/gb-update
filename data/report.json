@@ -817,19 +817,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 11,
+  "last_checked_count": 14,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 12,
   "size": 40,
-  "unlisted_total": 11
+  "unlisted_total": 14
  },
  "counts": {
   "api_times": 31,
-  "awaiting_catalogue": 11,
+  "awaiting_catalogue": 14,
   "catalogued": 203,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 182,
+  "file_times": 185,
   "observed_times": 0,
   "sign_languages": 40
  },
@@ -2763,6 +2763,13 @@
      "source": "file_estimated"
     },
     {
+     "at": "2026-09-23T13:11:02Z",
+     "code": "NBZ",
+     "in_catalog": false,
+     "name": "Ndebele (Zimbabwe)",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-23T13:20:48Z",
      "code": "LV",
      "in_catalog": false,
@@ -2784,7 +2791,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 213,
+   "count_after": 214,
    "t": "2026-09-23T13:00:00Z"
   },
   {
@@ -2795,13 +2802,27 @@
      "in_catalog": false,
      "name": "Bambara",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T14:20:47Z",
+     "code": "HA",
+     "in_catalog": false,
+     "name": "Hausa",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T14:22:15Z",
+     "code": "TNK",
+     "in_catalog": false,
+     "name": "Tankarana",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 214,
+   "count_after": 217,
    "t": "2026-09-23T14:00:00Z"
   }
  ],
- "generated": "2026-09-23T14:04:09Z",
+ "generated": "2026-09-23T14:33:55Z",
  "history": [
   {
    "count": 1,
@@ -3645,19 +3666,31 @@
   },
   {
    "count": 211,
-   "t": "2026-09-23T13:20:48Z"
+   "t": "2026-09-23T13:11:02Z"
   },
   {
    "count": 212,
-   "t": "2026-09-23T13:32:31Z"
+   "t": "2026-09-23T13:20:48Z"
   },
   {
    "count": 213,
-   "t": "2026-09-23T13:43:05Z"
+   "t": "2026-09-23T13:32:31Z"
   },
   {
    "count": 214,
+   "t": "2026-09-23T13:43:05Z"
+  },
+  {
+   "count": 215,
    "t": "2026-09-23T14:01:02Z"
+  },
+  {
+   "count": 216,
+   "t": "2026-09-23T14:20:47Z"
+  },
+  {
+   "count": 217,
+   "t": "2026-09-23T14:22:15Z"
   }
  ],
  "integrity": {
@@ -3671,13 +3704,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 214,
+  "files_count": 217,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 203,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T14:04:09Z",
+ "last_checked": "2026-09-23T14:33:55Z",
  "pending": [
   {
    "code": "ABB",
@@ -4254,15 +4287,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Gungbe"
-  },
-  {
-   "code": "HA",
-   "direction": "ltr",
-   "locale": "ha",
-   "name": "Hausa",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Hausa"
   },
   {
    "code": "HVU",
@@ -5057,15 +5081,6 @@
    "vernacular": "IsiNdebele"
   },
   {
-   "code": "NBZ",
-   "direction": "ltr",
-   "locale": "nd",
-   "name": "Ndebele (Zimbabwe)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ndebele (Zimbabwe)"
-  },
-  {
    "code": "OD",
    "direction": "ltr",
    "locale": "ng",
@@ -5514,15 +5529,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Talian"
-  },
-  {
-   "code": "TNK",
-   "direction": "ltr",
-   "locale": "xmv",
-   "name": "Tankarana",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Tankarana"
   },
   {
    "code": "TZL",
@@ -12656,6 +12662,39 @@
    "catalog_at_note": null,
    "catalog_at_source": null,
    "catalog_observed": null,
+   "code": "NBZ",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T13:11:02Z",
+   "files_at": "2026-09-23T13:11:02Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T13:11:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T14:33:55Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nd",
+   "name": "Ndebele (Zimbabwe)",
+   "published_at": "2026-09-23T13:11:02Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T13:11:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Ividiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NBZ",
+   "vernacular": "Ndebele (Zimbabwe)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
    "code": "LV",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -12780,6 +12819,72 @@
    "title": "Wideyo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AR",
    "vernacular": "Bamanankan"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "HA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T14:20:47Z",
+   "files_at": "2026-09-23T14:20:47Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T14:20:47Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T14:33:55Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ha",
+   "name": "Hausa",
+   "published_at": "2026-09-23T14:20:47Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T14:20:47Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Bidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=HA",
+   "vernacular": "Hausa"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TNK",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T14:22:15Z",
+   "files_at": "2026-09-23T14:22:15Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T14:22:15Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T14:33:55Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "xmv",
+   "name": "Tankarana",
+   "published_at": "2026-09-23T14:22:15Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T14:22:15Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TNK",
+   "vernacular": "Tankarana"
   }
  ],
  "removed": [],
@@ -12789,16 +12894,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 6,
+  "added_1h": 4,
   "added_24h": 68,
-  "added_4h": 26,
+  "added_4h": 27,
   "catalog_count": 203,
-  "catalog_lag": 11,
+  "catalog_lag": 14,
   "catalog_percent": 45.2,
-  "days_since_release": 5.0,
-  "pending_count": 235,
-  "percent": 47.7,
-  "published_count": 214,
+  "days_since_release": 5.02,
+  "pending_count": 232,
+  "percent": 48.3,
+  "published_count": 217,
   "publisher_percent": 89.9,
   "publisher_percent_ceiling": 99.2,
   "target": 449
