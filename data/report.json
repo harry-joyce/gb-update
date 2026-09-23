@@ -817,21 +817,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 14,
+  "last_checked_count": 16,
   "newly_catalogued": [],
-  "offset": 12,
+  "offset": 4,
   "size": 40,
-  "unlisted_total": 14
+  "unlisted_total": 16
  },
  "counts": {
   "api_times": 31,
-  "awaiting_catalogue": 14,
+  "awaiting_catalogue": 16,
   "catalogued": 203,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 185,
+  "file_times": 187,
   "observed_times": 0,
-  "sign_languages": 40
+  "sign_languages": 41
  },
  "events": [
   {
@@ -2816,13 +2816,33 @@
      "in_catalog": false,
      "name": "Tankarana",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T14:30:44Z",
+     "code": "LMG",
+     "in_catalog": false,
+     "name": "Romanian Sign Language",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 217,
+   "count_after": 218,
    "t": "2026-09-23T14:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-23T15:01:47Z",
+     "code": "H",
+     "in_catalog": false,
+     "name": "Hungarian",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 219,
+   "t": "2026-09-23T15:00:00Z"
   }
  ],
- "generated": "2026-09-23T14:33:55Z",
+ "generated": "2026-09-23T15:03:59Z",
  "history": [
   {
    "count": 1,
@@ -3691,6 +3711,14 @@
   {
    "count": 217,
    "t": "2026-09-23T14:22:15Z"
+  },
+  {
+   "count": 218,
+   "t": "2026-09-23T14:30:44Z"
+  },
+  {
+   "count": 219,
+   "t": "2026-09-23T15:01:47Z"
   }
  ],
  "integrity": {
@@ -3704,13 +3732,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 217,
+  "files_count": 219,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 203,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T14:33:55Z",
+ "last_checked": "2026-09-23T15:03:59Z",
  "pending": [
   {
    "code": "ABB",
@@ -4323,15 +4351,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "lengua de señas hondureña"
-  },
-  {
-   "code": "H",
-   "direction": "ltr",
-   "locale": "hu",
-   "name": "Hungarian",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "magyar"
   },
   {
    "code": "HDF",
@@ -5295,15 +5314,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "quiché"
-  },
-  {
-   "code": "LMG",
-   "direction": "ltr",
-   "locale": "rms",
-   "name": "Romanian Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Limba semnelor române"
   },
   {
    "code": "RMG",
@@ -12885,6 +12895,70 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TNK",
    "vernacular": "Tankarana"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LMG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T14:30:44Z",
+   "files_at": "2026-09-23T14:30:44Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T14:30:44Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T15:03:59Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "rms",
+   "name": "Romanian Sign Language",
+   "published_at": "2026-09-23T14:30:44Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T14:30:44Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Raportul nr. 6 din partea Corpului de Guvernare – 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LMG",
+   "vernacular": "Limba semnelor române"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "H",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T15:01:47Z",
+   "files_at": "2026-09-23T15:01:47Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T15:01:47Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T15:03:59Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "hu",
+   "name": "Hungarian",
+   "published_at": "2026-09-23T15:01:47Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T15:01:47Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 – Friss hírek a vezetőtestülettől (6. rész)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=H",
+   "vernacular": "magyar"
   }
  ],
  "removed": [],
@@ -12896,15 +12970,15 @@
  "stats": {
   "added_1h": 4,
   "added_24h": 68,
-  "added_4h": 27,
+  "added_4h": 28,
   "catalog_count": 203,
-  "catalog_lag": 14,
+  "catalog_lag": 16,
   "catalog_percent": 45.2,
-  "days_since_release": 5.02,
-  "pending_count": 232,
-  "percent": 48.3,
-  "published_count": 217,
-  "publisher_percent": 89.9,
+  "days_since_release": 5.04,
+  "pending_count": 230,
+  "percent": 48.8,
+  "published_count": 219,
+  "publisher_percent": 90.3,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
