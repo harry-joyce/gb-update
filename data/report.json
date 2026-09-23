@@ -945,19 +945,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 2,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 2
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 2,
   "catalogued": 235,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 202,
+  "file_times": 203,
   "observed_times": 0,
   "sign_languages": 45
  },
@@ -3111,9 +3111,22 @@
    ],
    "count_after": 236,
    "t": "2026-09-23T20:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-23T21:15:27Z",
+     "code": "TCR",
+     "in_catalog": false,
+     "name": "Bissau Guinean Creole",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 237,
+   "t": "2026-09-23T21:00:00Z"
   }
  ],
- "generated": "2026-09-23T20:57:24Z",
+ "generated": "2026-09-23T21:27:27Z",
  "history": [
   {
    "count": 1,
@@ -4058,6 +4071,10 @@
   {
    "count": 236,
    "t": "2026-09-23T20:46:25Z"
+  },
+  {
+   "count": 237,
+   "t": "2026-09-23T21:15:27Z"
   }
  ],
  "integrity": {
@@ -4071,13 +4088,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 236,
+  "files_count": 237,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 235,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T20:57:24Z",
+ "last_checked": "2026-09-23T21:27:27Z",
  "pending": [
   {
    "code": "ABB",
@@ -4258,15 +4275,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Bislama"
-  },
-  {
-   "code": "TCR",
-   "direction": "ltr",
-   "locale": "pov",
-   "name": "Bissau Guinean Creole",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kriol di Gine-Bisau"
   },
   {
    "code": "BO",
@@ -13696,6 +13704,38 @@
    "title": "2026 | Informe 6 del Cuerpo Gobernante",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SHO",
    "vernacular": "lengua de señas hondureña"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TCR",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T21:15:27Z",
+   "files_at": "2026-09-23T21:15:27Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T21:15:27Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T21:27:27Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "pov",
+   "name": "Bissau Guinean Creole",
+   "published_at": "2026-09-23T21:15:27Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T21:15:27Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Atualizason ku Fasidu pa Korpu Guvernanti na 2026 — N.° 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TCR",
+   "vernacular": "Kriol di Gine-Bisau"
   }
  ],
  "removed": [],
@@ -13705,16 +13745,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
+  "added_1h": 2,
   "added_24h": 68,
-  "added_4h": 7,
+  "added_4h": 6,
   "catalog_count": 235,
-  "catalog_lag": 1,
+  "catalog_lag": 2,
   "catalog_percent": 52.3,
-  "days_since_release": 5.29,
-  "pending_count": 213,
-  "percent": 52.6,
-  "published_count": 236,
+  "days_since_release": 5.31,
+  "pending_count": 212,
+  "percent": 52.8,
+  "published_count": 237,
   "publisher_percent": 90.5,
   "publisher_percent_ceiling": 99.2,
   "target": 449
