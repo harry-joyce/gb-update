@@ -950,22 +950,25 @@
   {
    "count": 237,
    "t": "2026-09-23T21:15:42Z"
+  },
+  {
+   "count": 238,
+   "t": "2026-09-23T22:18:33Z"
   }
  ],
  "catalog_probe": {
   "last_checked_count": 3,
   "newly_catalogued": [
-   "SHO",
-   "TCR"
+   "LSV"
   ],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
   "unlisted_total": 3
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 1,
-  "catalogued": 237,
+  "awaiting_catalogue": 0,
+  "catalogued": 238,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 204,
@@ -2506,7 +2509,7 @@
     {
      "at": "2026-09-22T19:16:31Z",
      "code": "LSV",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Venezuelan Sign Language",
      "source": "file_estimated"
     },
@@ -3144,7 +3147,7 @@
    "t": "2026-09-23T21:00:00Z"
   }
  ],
- "generated": "2026-09-23T23:57:39Z",
+ "generated": "2026-09-23T23:59:58Z",
  "history": [
   {
    "count": 1,
@@ -4113,10 +4116,13 @@
   "files_count": 238,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 235,
-  "listing_lag": [],
+  "listing_lag": [
+   "SHO",
+   "TCR"
+  ],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T23:57:39Z",
+ "last_checked": "2026-09-23T23:59:58Z",
  "pending": [
   {
    "code": "ABB",
@@ -11444,12 +11450,12 @@
    "vernacular": "lengua de señas peruana"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T22:18:33Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T22:18:33Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T23:59:58Z",
    "code": "LSV",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -11462,7 +11468,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T19:16:31Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T22:27:33Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "vsl",
@@ -13794,9 +13800,9 @@
   "added_1h": 0,
   "added_24h": 66,
   "added_4h": 2,
-  "catalog_count": 237,
-  "catalog_lag": 1,
-  "catalog_percent": 52.8,
+  "catalog_count": 238,
+  "catalog_lag": 0,
+  "catalog_percent": 53.0,
   "days_since_release": 5.42,
   "pending_count": 211,
   "percent": 53.0,
