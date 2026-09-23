@@ -666,22 +666,30 @@
   {
    "count": 166,
    "t": "2026-09-22T21:57:20Z"
+  },
+  {
+   "count": 167,
+   "t": "2026-09-22T23:07:17Z"
+  },
+  {
+   "count": 168,
+   "t": "2026-09-23T01:38:56Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 26,
-  "awaiting_catalogue": 2,
-  "catalogued": 166,
+  "awaiting_catalogue": 1,
+  "catalogued": 168,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 141,
+  "file_times": 142,
   "observed_times": 0,
   "sign_languages": 33
  },
@@ -2237,7 +2245,7 @@
     {
      "at": "2026-09-22T23:07:06Z",
      "code": "NHH",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Nahuatl (Huasteca)",
      "source": "file_estimated"
     }
@@ -2250,16 +2258,29 @@
     {
      "at": "2026-09-23T01:38:44Z",
      "code": "NV",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Navajo",
      "source": "file_estimated"
     }
    ],
    "count_after": 168,
    "t": "2026-09-23T01:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-23T02:40:00Z",
+     "code": "IA",
+     "in_catalog": false,
+     "name": "Iban",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 169,
+   "t": "2026-09-23T02:00:00Z"
   }
  ],
- "generated": "2026-09-23T01:41:45Z",
+ "generated": "2026-09-23T02:41:52Z",
  "history": [
   {
    "count": 1,
@@ -2932,6 +2953,10 @@
   {
    "count": 168,
    "t": "2026-09-23T01:38:44Z"
+  },
+  {
+   "count": 169,
+   "t": "2026-09-23T02:40:00Z"
   }
  ],
  "integrity": {
@@ -2945,13 +2970,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 168,
+  "files_count": 169,
   "last_full_verification": "2026-09-22T08:47:09Z",
-  "listing_count": 166,
+  "listing_count": 168,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T01:41:45Z",
+ "last_checked": "2026-09-23T02:41:52Z",
  "pending": [
   {
    "code": "ABB",
@@ -3699,15 +3724,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Hunsrik"
-  },
-  {
-   "code": "IA",
-   "direction": "ltr",
-   "locale": "iba",
-   "name": "Iban",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Iban"
   },
   {
    "code": "IG",
@@ -10909,12 +10925,12 @@
    "vernacular": "Wayuunaiki"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-22T23:07:17Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-22T23:07:17Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T02:41:52Z",
    "code": "NHH",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -10927,9 +10943,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T23:07:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-22T23:11:32Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "nch",
    "name": "Nahuatl (Huasteca)",
    "published_at": "2026-09-22T23:07:06Z",
@@ -10942,12 +10958,12 @@
    "vernacular": "náhuatl de la huasteca"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T01:38:56Z",
    "beyond_baseline": true,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T01:38:56Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T02:41:52Z",
    "code": "NV",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -10960,9 +10976,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T01:38:44Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T01:41:45Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "nv",
    "name": "Navajo",
    "published_at": "2026-09-23T01:38:44Z",
@@ -10973,6 +10989,38 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NV",
    "vernacular": "Diné Bizaad"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "IA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T02:40:00Z",
+   "files_at": "2026-09-23T02:40:00Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T02:40:00Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T02:41:52Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "iba",
+   "name": "Iban",
+   "published_at": "2026-09-23T02:40:00Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T02:40:00Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Berita ti Pemadu Baru ari Raban ti Ngiring 2026 #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=IA",
+   "vernacular": "Iban"
   }
  ],
  "removed": [],
@@ -10983,15 +11031,15 @@
  },
  "stats": {
   "added_1h": 1,
-  "added_24h": 57,
+  "added_24h": 58,
   "added_4h": 3,
-  "catalog_count": 166,
-  "catalog_lag": 2,
-  "catalog_percent": 37.0,
-  "days_since_release": 4.49,
-  "pending_count": 281,
-  "percent": 37.4,
-  "published_count": 168,
+  "catalog_count": 168,
+  "catalog_lag": 1,
+  "catalog_percent": 37.4,
+  "days_since_release": 4.53,
+  "pending_count": 280,
+  "percent": 37.6,
+  "published_count": 169,
   "publisher_percent": 86.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
