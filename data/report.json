@@ -905,19 +905,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 6,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 4,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 6
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 6,
   "catalogued": 225,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 192,
+  "file_times": 197,
   "observed_times": 0,
   "sign_languages": 44
  },
@@ -2979,13 +2979,54 @@
      "in_catalog": false,
      "name": "Ahanta",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T16:36:20Z",
+     "code": "MHM",
+     "in_catalog": false,
+     "name": "Makhuwa-Marrevone",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T16:50:59Z",
+     "code": "TN",
+     "in_catalog": false,
+     "name": "Setswana",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T16:52:26Z",
+     "code": "AKN",
+     "in_catalog": false,
+     "name": "Aukan",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 226,
+   "count_after": 229,
    "t": "2026-09-23T16:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-23T17:03:51Z",
+     "code": "QU",
+     "in_catalog": false,
+     "name": "Quechua (Cuzco)",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T17:17:33Z",
+     "code": "TLN",
+     "in_catalog": false,
+     "name": "Tlapanec",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 231,
+   "t": "2026-09-23T17:00:00Z"
   }
  ],
- "generated": "2026-09-23T16:34:07Z",
+ "generated": "2026-09-23T17:43:14Z",
  "history": [
   {
    "count": 1,
@@ -3890,6 +3931,26 @@
   {
    "count": 226,
    "t": "2026-09-23T16:26:04Z"
+  },
+  {
+   "count": 227,
+   "t": "2026-09-23T16:36:20Z"
+  },
+  {
+   "count": 228,
+   "t": "2026-09-23T16:50:59Z"
+  },
+  {
+   "count": 229,
+   "t": "2026-09-23T16:52:26Z"
+  },
+  {
+   "count": 230,
+   "t": "2026-09-23T17:03:51Z"
+  },
+  {
+   "count": 231,
+   "t": "2026-09-23T17:17:33Z"
   }
  ],
  "integrity": {
@@ -3903,13 +3964,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 226,
+  "files_count": 231,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 225,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T16:34:07Z",
+ "last_checked": "2026-09-23T17:43:14Z",
  "pending": [
   {
    "code": "ABB",
@@ -4009,15 +4070,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ateso"
-  },
-  {
-   "code": "AKN",
-   "direction": "ltr",
-   "locale": "djk",
-   "name": "Aukan",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Okanisitongo"
   },
   {
    "code": "AP",
@@ -4893,15 +4945,6 @@
    "vernacular": "Tenin’ny Tanana Malagasy"
   },
   {
-   "code": "MHM",
-   "direction": "ltr",
-   "locale": "xmc",
-   "name": "Makhuwa-Marrevone",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Makhuwa-Marrevone"
-  },
-  {
    "code": "MWM",
    "direction": "ltr",
    "locale": "mgh",
@@ -5406,15 +5449,6 @@
    "vernacular": "Quechua (Bolivia)"
   },
   {
-   "code": "QU",
-   "direction": "ltr",
-   "locale": "quz",
-   "name": "Quechua (Cuzco)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "quechua (Cusco)"
-  },
-  {
    "code": "QUL",
    "direction": "ltr",
    "locale": "qub",
@@ -5539,15 +5573,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Sesotho (South Africa)"
-  },
-  {
-   "code": "TN",
-   "direction": "ltr",
-   "locale": "tn",
-   "name": "Setswana",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Setswana"
   },
   {
    "code": "SP",
@@ -5692,15 +5717,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Tiv"
-  },
-  {
-   "code": "TLN",
-   "direction": "ltr",
-   "locale": "tcf",
-   "name": "Tlapanec",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "me̱ʼpha̱a̱"
   },
   {
    "code": "TJO",
@@ -13294,6 +13310,168 @@
    "title": "2026 Ɔhʋanɩhilelɛ Okuwu Nɩ Bɛ Amanɩyɛwɔlɛ #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AHN",
    "vernacular": "Aɣɩnda"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MHM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T16:36:20Z",
+   "files_at": "2026-09-23T16:36:20Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T16:36:20Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T17:43:14Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "xmc",
+   "name": "Makhuwa-Marrevone",
+   "published_at": "2026-09-23T16:36:20Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T16:36:20Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MHM",
+   "vernacular": "Makhuwa-Marrevone"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T16:50:59Z",
+   "files_at": "2026-09-23T16:50:59Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T16:50:59Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T17:43:14Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tn",
+   "name": "Setswana",
+   "published_at": "2026-09-23T16:50:59Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T16:50:59Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Bidio",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TN",
+   "vernacular": "Setswana"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "AKN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T16:52:26Z",
+   "files_at": "2026-09-23T16:52:26Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T16:52:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T17:43:14Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "djk",
+   "name": "Aukan",
+   "published_at": "2026-09-23T16:52:26Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T16:52:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Update no 6 fu Den baala di e tii a wooko",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AKN",
+   "vernacular": "Okanisitongo"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "QU",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T17:03:51Z",
+   "files_at": "2026-09-23T17:03:51Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T17:03:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T17:43:14Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "quz",
+   "name": "Quechua (Cuzco)",
+   "published_at": "2026-09-23T17:03:51Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T17:03:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 watapi Umalliq T'aqaq soqta kaq willakuynin",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=QU",
+   "vernacular": "quechua (Cusco)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TLN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T17:17:33Z",
+   "files_at": "2026-09-23T17:17:33Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T17:17:33Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T17:43:14Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tcf",
+   "name": "Tlapanec",
+   "published_at": "2026-09-23T17:17:33Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T17:17:33Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Rí itháán nuxi̱' rí naríyá' Cuerpo Gobernante tsigu' 2026, número 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TLN",
+   "vernacular": "me̱ʼpha̱a̱"
   }
  ],
  "removed": [],
@@ -13303,17 +13481,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
-  "added_24h": 65,
-  "added_4h": 22,
+  "added_1h": 4,
+  "added_24h": 66,
+  "added_4h": 16,
   "catalog_count": 225,
-  "catalog_lag": 1,
+  "catalog_lag": 6,
   "catalog_percent": 50.1,
-  "days_since_release": 5.11,
-  "pending_count": 223,
-  "percent": 50.3,
-  "published_count": 226,
-  "publisher_percent": 90.4,
+  "days_since_release": 5.16,
+  "pending_count": 218,
+  "percent": 51.4,
+  "published_count": 231,
+  "publisher_percent": 90.5,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
