@@ -817,19 +817,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 9,
+  "last_checked_count": 11,
   "newly_catalogued": [],
-  "offset": 4,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 9
+  "unlisted_total": 11
  },
  "counts": {
   "api_times": 31,
-  "awaiting_catalogue": 9,
+  "awaiting_catalogue": 11,
   "catalogued": 203,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 180,
+  "file_times": 182,
   "observed_times": 0,
   "sign_languages": 40
  },
@@ -2775,13 +2775,33 @@
      "in_catalog": false,
      "name": "Kabuverdianu",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T13:43:05Z",
+     "code": "PHM",
+     "in_catalog": false,
+     "name": "Phimbi",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 212,
+   "count_after": 213,
    "t": "2026-09-23T13:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-23T14:01:02Z",
+     "code": "AR",
+     "in_catalog": false,
+     "name": "Bambara",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 214,
+   "t": "2026-09-23T14:00:00Z"
   }
  ],
- "generated": "2026-09-23T13:33:52Z",
+ "generated": "2026-09-23T14:04:09Z",
  "history": [
   {
    "count": 1,
@@ -3630,6 +3650,14 @@
   {
    "count": 212,
    "t": "2026-09-23T13:32:31Z"
+  },
+  {
+   "count": 213,
+   "t": "2026-09-23T13:43:05Z"
+  },
+  {
+   "count": 214,
+   "t": "2026-09-23T14:01:02Z"
   }
  ],
  "integrity": {
@@ -3643,13 +3671,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 212,
+  "files_count": 214,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 203,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T13:33:52Z",
+ "last_checked": "2026-09-23T14:04:09Z",
  "pending": [
   {
    "code": "ABB",
@@ -3785,15 +3813,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Azərbaycan"
-  },
-  {
-   "code": "AR",
-   "direction": "ltr",
-   "locale": "bm",
-   "name": "Bambara",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Bamanankan"
   },
   {
    "code": "BNM",
@@ -5180,15 +5199,6 @@
    "script": "ARABIC",
    "sign": false,
    "vernacular": "فارسی"
-  },
-  {
-   "code": "PHM",
-   "direction": "ltr",
-   "locale": "phm",
-   "name": "Phimbi",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Chiphimbi"
   },
   {
    "code": "PQM",
@@ -12704,6 +12714,72 @@
    "title": "Vídeo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KBV",
    "vernacular": "Kabuverdianu"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "PHM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T13:43:05Z",
+   "files_at": "2026-09-23T13:43:05Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T13:43:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T14:04:09Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "phm",
+   "name": "Phimbi",
+   "published_at": "2026-09-23T13:43:05Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T13:43:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=PHM",
+   "vernacular": "Chiphimbi"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "AR",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T14:01:02Z",
+   "files_at": "2026-09-23T14:01:02Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T14:01:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T14:04:09Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "bm",
+   "name": "Bambara",
+   "published_at": "2026-09-23T14:01:02Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T14:01:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Wideyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AR",
+   "vernacular": "Bamanankan"
   }
  ],
  "removed": [],
@@ -12713,16 +12789,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 9,
-  "added_24h": 71,
-  "added_4h": 24,
+  "added_1h": 6,
+  "added_24h": 68,
+  "added_4h": 26,
   "catalog_count": 203,
-  "catalog_lag": 9,
+  "catalog_lag": 11,
   "catalog_percent": 45.2,
-  "days_since_release": 4.98,
-  "pending_count": 237,
-  "percent": 47.2,
-  "published_count": 212,
+  "days_since_release": 5.0,
+  "pending_count": 235,
+  "percent": 47.7,
+  "published_count": 214,
   "publisher_percent": 89.9,
   "publisher_percent_ceiling": 99.2,
   "target": 449
