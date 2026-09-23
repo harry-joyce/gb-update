@@ -693,19 +693,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 5,
+  "last_checked_count": 7,
   "newly_catalogued": [],
-  "offset": 2,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 5
+  "unlisted_total": 7
  },
  "counts": {
   "api_times": 26,
-  "awaiting_catalogue": 5,
+  "awaiting_catalogue": 7,
   "catalogued": 172,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 150,
+  "file_times": 152,
   "observed_times": 0,
   "sign_languages": 34
  },
@@ -2370,13 +2370,27 @@
      "in_catalog": false,
      "name": "Batak (Toba)",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T08:20:55Z",
+     "code": "TK",
+     "in_catalog": false,
+     "name": "Turkish",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T08:21:04Z",
+     "code": "VZ",
+     "in_catalog": false,
+     "name": "Vezo",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 177,
+   "count_after": 179,
    "t": "2026-09-23T08:00:00Z"
   }
  ],
- "generated": "2026-09-23T08:12:24Z",
+ "generated": "2026-09-23T08:42:28Z",
  "history": [
   {
    "count": 1,
@@ -3085,6 +3099,14 @@
   {
    "count": 177,
    "t": "2026-09-23T08:10:27Z"
+  },
+  {
+   "count": 178,
+   "t": "2026-09-23T08:20:55Z"
+  },
+  {
+   "count": 179,
+   "t": "2026-09-23T08:21:04Z"
   }
  ],
  "integrity": {
@@ -3098,13 +3120,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 22,
-  "files_count": 177,
+  "files_count": 179,
   "last_full_verification": "2026-09-22T08:47:09Z",
   "listing_count": 172,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T08:12:24Z",
+ "last_checked": "2026-09-23T08:42:28Z",
  "pending": [
   {
    "code": "ABB",
@@ -5375,15 +5397,6 @@
    "vernacular": "Xitsonga"
   },
   {
-   "code": "TK",
-   "direction": "ltr",
-   "locale": "tr",
-   "name": "Turkish",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Türkçe"
-  },
-  {
    "code": "TMR",
    "direction": "ltr",
    "locale": "tk",
@@ -5454,15 +5467,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "lengua de señas venezolana"
-  },
-  {
-   "code": "VZ",
-   "direction": "ltr",
-   "locale": "skg-x-vz",
-   "name": "Vezo",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Vezo"
   },
   {
    "code": "SLV",
@@ -11335,6 +11339,71 @@
    "title": "Laporan na Terbaru sian Punguan na Mangaradoti Taon 2026 (Bagian 6)",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BT",
    "vernacular": "Batak (Toba)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TK",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T08:20:55Z",
+   "files_at": "2026-09-23T08:20:55Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T08:20:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T08:42:28Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tr",
+   "name": "Turkish",
+   "published_at": "2026-09-23T08:20:55Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T08:20:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Yönetim Kurulu - 2026 Durum Raporu 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TK",
+   "vernacular": "Türkçe"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "VZ",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T08:21:04Z",
+   "files_at": "2026-09-23T08:21:04Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T08:21:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T08:42:28Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "skg-x-vz",
+   "name": "Vezo",
+   "published_at": "2026-09-23T08:21:04Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T08:21:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=VZ",
+   "vernacular": "Vezo"
   }
  ],
  "removed": [],
@@ -11344,17 +11413,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
+  "added_1h": 4,
   "added_24h": 61,
-  "added_4h": 4,
+  "added_4h": 6,
   "catalog_count": 172,
-  "catalog_lag": 5,
+  "catalog_lag": 7,
   "catalog_percent": 38.3,
-  "days_since_release": 4.76,
-  "pending_count": 272,
-  "percent": 39.4,
-  "published_count": 177,
-  "publisher_percent": 86.9,
+  "days_since_release": 4.78,
+  "pending_count": 270,
+  "percent": 39.9,
+  "published_count": 179,
+  "publisher_percent": 87.0,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
