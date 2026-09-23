@@ -729,31 +729,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 11,
-  "newly_catalogued": [
-   "BL",
-   "BT",
-   "CGW",
-   "HV",
-   "JWK",
-   "TK",
-   "VSL",
-   "VZ",
-   "W"
-  ],
-  "offset": 7,
+  "last_checked_count": 5,
+  "newly_catalogued": [],
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 11
+  "unlisted_total": 5
  },
  "counts": {
   "api_times": 28,
-  "awaiting_catalogue": 2,
+  "awaiting_catalogue": 5,
   "catalogued": 181,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 154,
+  "file_times": 157,
   "observed_times": 0,
-  "sign_languages": 34
+  "sign_languages": 36
  },
  "events": [
   {
@@ -2110,6 +2100,13 @@
   {
    "added": [
     {
+     "at": "2026-09-22T14:09:53Z",
+     "code": "DGS",
+     "in_catalog": false,
+     "name": "German Sign Language",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-22T14:14:43Z",
      "code": "ZN",
      "in_catalog": true,
@@ -2131,7 +2128,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 148,
+   "count_after": 149,
    "t": "2026-09-22T14:00:00Z"
   },
   {
@@ -2186,7 +2183,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 155,
+   "count_after": 156,
    "t": "2026-09-22T15:00:00Z"
   },
   {
@@ -2234,7 +2231,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 161,
+   "count_after": 162,
    "t": "2026-09-22T16:00:00Z"
   },
   {
@@ -2247,7 +2244,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 162,
+   "count_after": 163,
    "t": "2026-09-22T17:00:00Z"
   },
   {
@@ -2260,7 +2257,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 163,
+   "count_after": 164,
    "t": "2026-09-22T18:00:00Z"
   },
   {
@@ -2273,7 +2270,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 164,
+   "count_after": 165,
    "t": "2026-09-22T19:00:00Z"
   },
   {
@@ -2286,7 +2283,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 165,
+   "count_after": 166,
    "t": "2026-09-22T20:00:00Z"
   },
   {
@@ -2306,7 +2303,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 167,
+   "count_after": 168,
    "t": "2026-09-22T21:00:00Z"
   },
   {
@@ -2319,7 +2316,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 168,
+   "count_after": 169,
    "t": "2026-09-22T23:00:00Z"
   },
   {
@@ -2332,7 +2329,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 169,
+   "count_after": 170,
    "t": "2026-09-23T01:00:00Z"
   },
   {
@@ -2345,7 +2342,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 170,
+   "count_after": 171,
    "t": "2026-09-23T02:00:00Z"
   },
   {
@@ -2372,7 +2369,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 173,
+   "count_after": 174,
    "t": "2026-09-23T03:00:00Z"
   },
   {
@@ -2385,7 +2382,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 174,
+   "count_after": 175,
    "t": "2026-09-23T05:00:00Z"
   },
   {
@@ -2398,7 +2395,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 175,
+   "count_after": 176,
    "t": "2026-09-23T06:00:00Z"
   },
   {
@@ -2446,7 +2443,7 @@
      "source": "api"
     }
    ],
-   "count_after": 181,
+   "count_after": 182,
    "t": "2026-09-23T08:00:00Z"
   },
   {
@@ -2464,13 +2461,27 @@
      "in_catalog": false,
      "name": "Pidgin (West Africa)",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T09:12:56Z",
+     "code": "SIL",
+     "in_catalog": false,
+     "name": "Thai Sign Language",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T09:27:43Z",
+     "code": "C",
+     "in_catalog": false,
+     "name": "Croatian",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 183,
+   "count_after": 186,
    "t": "2026-09-23T09:00:00Z"
   }
  ],
- "generated": "2026-09-23T09:12:33Z",
+ "generated": "2026-09-23T09:42:33Z",
  "history": [
   {
    "count": 1,
@@ -3054,155 +3065,167 @@
   },
   {
    "count": 146,
-   "t": "2026-09-22T14:14:43Z"
+   "t": "2026-09-22T14:09:53Z"
   },
   {
    "count": 147,
-   "t": "2026-09-22T14:22:35Z"
+   "t": "2026-09-22T14:14:43Z"
   },
   {
    "count": 148,
-   "t": "2026-09-22T14:55:43Z"
+   "t": "2026-09-22T14:22:35Z"
   },
   {
    "count": 149,
-   "t": "2026-09-22T15:03:50Z"
+   "t": "2026-09-22T14:55:43Z"
   },
   {
    "count": 150,
-   "t": "2026-09-22T15:06:58Z"
+   "t": "2026-09-22T15:03:50Z"
   },
   {
    "count": 151,
-   "t": "2026-09-22T15:07:30Z"
+   "t": "2026-09-22T15:06:58Z"
   },
   {
    "count": 152,
-   "t": "2026-09-22T15:10:35Z"
+   "t": "2026-09-22T15:07:30Z"
   },
   {
    "count": 153,
-   "t": "2026-09-22T15:30:38Z"
+   "t": "2026-09-22T15:10:35Z"
   },
   {
    "count": 154,
-   "t": "2026-09-22T15:35:23Z"
+   "t": "2026-09-22T15:30:38Z"
   },
   {
    "count": 155,
-   "t": "2026-09-22T15:51:14Z"
+   "t": "2026-09-22T15:35:23Z"
   },
   {
    "count": 156,
-   "t": "2026-09-22T16:00:22Z"
+   "t": "2026-09-22T15:51:14Z"
   },
   {
    "count": 157,
-   "t": "2026-09-22T16:00:57Z"
+   "t": "2026-09-22T16:00:22Z"
   },
   {
    "count": 158,
-   "t": "2026-09-22T16:07:09Z"
+   "t": "2026-09-22T16:00:57Z"
   },
   {
    "count": 159,
-   "t": "2026-09-22T16:39:02Z"
+   "t": "2026-09-22T16:07:09Z"
   },
   {
    "count": 160,
-   "t": "2026-09-22T16:52:51Z"
+   "t": "2026-09-22T16:39:02Z"
   },
   {
    "count": 161,
-   "t": "2026-09-22T16:55:13Z"
+   "t": "2026-09-22T16:52:51Z"
   },
   {
    "count": 162,
-   "t": "2026-09-22T17:00:29Z"
+   "t": "2026-09-22T16:55:13Z"
   },
   {
    "count": 163,
-   "t": "2026-09-22T18:21:18Z"
+   "t": "2026-09-22T17:00:29Z"
   },
   {
    "count": 164,
-   "t": "2026-09-22T19:36:24Z"
+   "t": "2026-09-22T18:21:18Z"
   },
   {
    "count": 165,
-   "t": "2026-09-22T20:18:21Z"
+   "t": "2026-09-22T19:36:24Z"
   },
   {
    "count": 166,
-   "t": "2026-09-22T21:20:53Z"
+   "t": "2026-09-22T20:18:21Z"
   },
   {
    "count": 167,
-   "t": "2026-09-22T21:57:09Z"
+   "t": "2026-09-22T21:20:53Z"
   },
   {
    "count": 168,
-   "t": "2026-09-22T23:07:06Z"
+   "t": "2026-09-22T21:57:09Z"
   },
   {
    "count": 169,
-   "t": "2026-09-23T01:38:44Z"
+   "t": "2026-09-22T23:07:06Z"
   },
   {
    "count": 170,
-   "t": "2026-09-23T02:40:00Z"
+   "t": "2026-09-23T01:38:44Z"
   },
   {
    "count": 171,
-   "t": "2026-09-23T03:14:46Z"
+   "t": "2026-09-23T02:40:00Z"
   },
   {
    "count": 172,
-   "t": "2026-09-23T03:17:36Z"
+   "t": "2026-09-23T03:14:46Z"
   },
   {
    "count": 173,
-   "t": "2026-09-23T03:57:55Z"
+   "t": "2026-09-23T03:17:36Z"
   },
   {
    "count": 174,
-   "t": "2026-09-23T05:55:22Z"
+   "t": "2026-09-23T03:57:55Z"
   },
   {
    "count": 175,
-   "t": "2026-09-23T06:37:15Z"
+   "t": "2026-09-23T05:55:22Z"
   },
   {
    "count": 176,
-   "t": "2026-09-23T08:07:21Z"
+   "t": "2026-09-23T06:37:15Z"
   },
   {
    "count": 177,
-   "t": "2026-09-23T08:10:27Z"
+   "t": "2026-09-23T08:07:21Z"
   },
   {
    "count": 178,
-   "t": "2026-09-23T08:20:55Z"
+   "t": "2026-09-23T08:10:27Z"
   },
   {
    "count": 179,
-   "t": "2026-09-23T08:21:04Z"
+   "t": "2026-09-23T08:20:55Z"
   },
   {
    "count": 180,
-   "t": "2026-09-23T08:47:02Z"
+   "t": "2026-09-23T08:21:04Z"
   },
   {
    "count": 181,
-   "t": "2026-09-23T08:48:00Z"
+   "t": "2026-09-23T08:47:02Z"
   },
   {
    "count": 182,
-   "t": "2026-09-23T09:00:45Z"
+   "t": "2026-09-23T08:48:00Z"
   },
   {
    "count": 183,
+   "t": "2026-09-23T09:00:45Z"
+  },
+  {
+   "count": 184,
    "t": "2026-09-23T09:11:05Z"
+  },
+  {
+   "count": 185,
+   "t": "2026-09-23T09:12:56Z"
+  },
+  {
+   "count": 186,
+   "t": "2026-09-23T09:27:43Z"
   }
  ],
  "integrity": {
@@ -3216,13 +3239,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 183,
+  "files_count": 186,
   "last_full_verification": "2026-09-23T08:48:35Z",
-  "listing_count": 172,
+  "listing_count": 181,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T09:12:33Z",
+ "last_checked": "2026-09-23T09:42:33Z",
  "pending": [
   {
    "code": "ABB",
@@ -3603,15 +3626,6 @@
    "vernacular": "lengua de señas costarricense"
   },
   {
-   "code": "C",
-   "direction": "ltr",
-   "locale": "hr",
-   "name": "Croatian",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "hrvatski"
-  },
-  {
    "code": "DGA",
    "direction": "ltr",
    "locale": "dga",
@@ -3763,15 +3777,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Gbaya"
-  },
-  {
-   "code": "DGS",
-   "direction": "ltr",
-   "locale": "gsg",
-   "name": "German Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Deutsche Gebärdensprache"
   },
   {
    "code": "GHS",
@@ -5365,15 +5370,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ciutee"
-  },
-  {
-   "code": "SIL",
-   "direction": "ltr",
-   "locale": "tsq",
-   "name": "Thai Sign Language",
-   "script": "THAI",
-   "sign": true,
-   "vernacular": "ภาษามือไทย"
   },
   {
    "code": "TV",
@@ -10187,7 +10183,7 @@
    "first_observed": "2026-09-23T06:42:14Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "svk",
    "name": "Slovak Sign Language",
    "published_at": "2026-09-22T13:29:51Z",
@@ -10359,6 +10355,38 @@
    "title": "2026 Կառավարիչ մարմնի ուղերձ № 6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=REA",
    "vernacular": "Հայերեն"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "DGS",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-22T14:09:53Z",
+   "files_at": "2026-09-22T14:09:53Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-22T14:09:53Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T09:42:33Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "gsg",
+   "name": "German Sign Language",
+   "published_at": "2026-09-22T14:09:53Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-22T14:09:53Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Aktueller Lagebericht der Leitenden Körperschaft, Nr. 6 (2026)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=DGS",
+   "vernacular": "Deutsche Gebärdensprache"
   },
   {
    "api_published_at": "2026-09-22T14:14:53Z",
@@ -11291,7 +11319,7 @@
    "first_observed": "2026-09-23T06:12:13Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "hil",
    "name": "Hiligaynon",
    "published_at": "2026-09-23T05:55:22Z",
@@ -11324,7 +11352,7 @@
    "first_observed": "2026-09-23T06:42:14Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "toi-zw",
    "name": "Chitonga (Zimbabwe)",
    "published_at": "2026-09-23T06:37:15Z",
@@ -11356,7 +11384,7 @@
    "first_observed": "2026-09-23T08:12:24Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "cy",
    "name": "Welsh",
    "published_at": "2026-09-23T08:07:21Z",
@@ -11388,7 +11416,7 @@
    "first_observed": "2026-09-23T08:12:24Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "bbc",
    "name": "Batak (Toba)",
    "published_at": "2026-09-23T08:10:27Z",
@@ -11420,7 +11448,7 @@
    "first_observed": "2026-09-23T08:42:28Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "tr",
    "name": "Turkish",
    "published_at": "2026-09-23T08:20:55Z",
@@ -11453,7 +11481,7 @@
    "first_observed": "2026-09-23T08:42:28Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "skg-x-vz",
    "name": "Vezo",
    "published_at": "2026-09-23T08:21:04Z",
@@ -11485,7 +11513,7 @@
    "first_observed": "2026-09-23T09:12:33Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "bg",
    "name": "Bulgarian",
    "published_at": "2026-09-23T08:47:02Z",
@@ -11518,7 +11546,7 @@
    "first_observed": "2026-09-23T09:12:33Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "whg",
    "name": "Jiwaka",
    "published_at": "2026-09-23T08:48:00Z",
@@ -11595,6 +11623,70 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=PGW",
    "vernacular": "Pidgin (West Africa)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SIL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T09:12:56Z",
+   "files_at": "2026-09-23T09:12:56Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T09:12:56Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T09:42:33Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tsq",
+   "name": "Thai Sign Language",
+   "published_at": "2026-09-23T09:12:56Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T09:12:56Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "THAI",
+   "sign": true,
+   "title": "2026 Governing Body Update #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SIL",
+   "vernacular": "ภาษามือไทย"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "C",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T09:27:43Z",
+   "files_at": "2026-09-23T09:27:43Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T09:27:43Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T09:42:33Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "hr",
+   "name": "Croatian",
+   "published_at": "2026-09-23T09:27:43Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T09:27:43Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Izvještaj Vodećeg tijela za 2026. (br. 6)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=C",
+   "vernacular": "hrvatski"
   }
  ],
  "removed": [],
@@ -11605,16 +11697,16 @@
  },
  "stats": {
   "added_1h": 6,
-  "added_24h": 63,
-  "added_4h": 10,
+  "added_24h": 65,
+  "added_4h": 12,
   "catalog_count": 181,
-  "catalog_lag": 2,
+  "catalog_lag": 5,
   "catalog_percent": 40.3,
-  "days_since_release": 4.8,
-  "pending_count": 266,
-  "percent": 40.8,
-  "published_count": 183,
-  "publisher_percent": 88.1,
+  "days_since_release": 4.82,
+  "pending_count": 263,
+  "percent": 41.4,
+  "published_count": 186,
+  "publisher_percent": 88.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
