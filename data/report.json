@@ -942,19 +942,30 @@
   {
    "count": 235,
    "t": "2026-09-23T18:56:20Z"
+  },
+  {
+   "count": 236,
+   "t": "2026-09-23T20:46:36Z"
+  },
+  {
+   "count": 237,
+   "t": "2026-09-23T21:15:42Z"
   }
  ],
  "catalog_probe": {
   "last_checked_count": 3,
-  "newly_catalogued": [],
-  "offset": 2,
+  "newly_catalogued": [
+   "SHO",
+   "TCR"
+  ],
+  "offset": 0,
   "size": 40,
   "unlisted_total": 3
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 3,
-  "catalogued": 235,
+  "awaiting_catalogue": 1,
+  "catalogued": 237,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 204,
@@ -3111,7 +3122,7 @@
     {
      "at": "2026-09-23T20:46:25Z",
      "code": "SHO",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Honduras Sign Language",
      "source": "file_estimated"
     }
@@ -3124,7 +3135,7 @@
     {
      "at": "2026-09-23T21:15:27Z",
      "code": "TCR",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Bissau Guinean Creole",
      "source": "file_estimated"
     }
@@ -3133,7 +3144,7 @@
    "t": "2026-09-23T21:00:00Z"
   }
  ],
- "generated": "2026-09-23T23:27:38Z",
+ "generated": "2026-09-23T23:57:39Z",
  "history": [
   {
    "count": 1,
@@ -4105,7 +4116,7 @@
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T23:27:38Z",
+ "last_checked": "2026-09-23T23:57:39Z",
  "pending": [
   {
    "code": "ABB",
@@ -13709,12 +13720,12 @@
    "vernacular": "Isoko"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T20:46:36Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T20:46:36Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T23:57:39Z",
    "code": "SHO",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -13726,7 +13737,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T20:46:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T20:57:24Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "hds",
@@ -13741,12 +13752,12 @@
    "vernacular": "lengua de señas hondureña"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-23T21:15:42Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-23T21:15:42Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-23T23:57:39Z",
    "code": "TCR",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -13758,7 +13769,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T21:15:27Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-23T21:27:27Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "pov",
@@ -13783,10 +13794,10 @@
   "added_1h": 0,
   "added_24h": 66,
   "added_4h": 2,
-  "catalog_count": 235,
-  "catalog_lag": 3,
-  "catalog_percent": 52.3,
-  "days_since_release": 5.39,
+  "catalog_count": 237,
+  "catalog_lag": 1,
+  "catalog_percent": 52.8,
+  "days_since_release": 5.42,
   "pending_count": 211,
   "percent": 53.0,
   "published_count": 238,
