@@ -817,19 +817,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
+  "last_checked_count": 9,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 4,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 9
  },
  "counts": {
   "api_times": 31,
-  "awaiting_catalogue": 4,
+  "awaiting_catalogue": 9,
   "catalogued": 203,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 175,
+  "file_times": 180,
   "observed_times": 0,
   "sign_languages": 40
  },
@@ -2734,13 +2734,54 @@
      "in_catalog": false,
      "name": "Romany (Romania)",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T12:58:41Z",
+     "code": "SC",
+     "in_catalog": false,
+     "name": "Seychelles Creole",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 207,
+   "count_after": 208,
    "t": "2026-09-23T12:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-23T13:04:45Z",
+     "code": "DMR",
+     "in_catalog": false,
+     "name": "Damara",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T13:08:13Z",
+     "code": "LUC",
+     "in_catalog": false,
+     "name": "Saint Lucian Creole",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T13:20:48Z",
+     "code": "LV",
+     "in_catalog": false,
+     "name": "Luvale",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T13:32:31Z",
+     "code": "KBV",
+     "in_catalog": false,
+     "name": "Kabuverdianu",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 212,
+   "t": "2026-09-23T13:00:00Z"
   }
  ],
- "generated": "2026-09-23T13:03:48Z",
+ "generated": "2026-09-23T13:33:52Z",
  "history": [
   {
    "count": 1,
@@ -3569,6 +3610,26 @@
   {
    "count": 207,
    "t": "2026-09-23T12:50:09Z"
+  },
+  {
+   "count": 208,
+   "t": "2026-09-23T12:58:41Z"
+  },
+  {
+   "count": 209,
+   "t": "2026-09-23T13:04:45Z"
+  },
+  {
+   "count": 210,
+   "t": "2026-09-23T13:08:13Z"
+  },
+  {
+   "count": 211,
+   "t": "2026-09-23T13:20:48Z"
+  },
+  {
+   "count": 212,
+   "t": "2026-09-23T13:32:31Z"
   }
  ],
  "integrity": {
@@ -3582,13 +3643,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 207,
+  "files_count": 212,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 203,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T13:03:48Z",
+ "last_checked": "2026-09-23T13:33:52Z",
  "pending": [
   {
    "code": "ABB",
@@ -3967,15 +4028,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Dagaare"
-  },
-  {
-   "code": "DMR",
-   "direction": "ltr",
-   "locale": "naq-x-dmr",
-   "name": "Damara",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Damara"
   },
   {
    "code": "DI",
@@ -4392,15 +4444,6 @@
    "vernacular": "Kabɩyɛ"
   },
   {
-   "code": "KBV",
-   "direction": "ltr",
-   "locale": "kea",
-   "name": "Kabuverdianu",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kabuverdianu"
-  },
-  {
    "code": "KL",
    "direction": "ltr",
    "locale": "kck-x-kl",
@@ -4651,15 +4694,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Dholuo"
-  },
-  {
-   "code": "LV",
-   "direction": "ltr",
-   "locale": "lue",
-   "name": "Luvale",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Luvale"
   },
   {
    "code": "MAC",
@@ -5274,15 +5308,6 @@
    "vernacular": "Kréol Rénioné"
   },
   {
-   "code": "LUC",
-   "direction": "ltr",
-   "locale": "acf",
-   "name": "Saint Lucian Creole",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kwéyòl (Patwa)"
-  },
-  {
    "code": "SM",
    "direction": "ltr",
    "locale": "sm",
@@ -5371,15 +5396,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Setswana"
-  },
-  {
-   "code": "SC",
-   "direction": "ltr",
-   "locale": "crs",
-   "name": "Seychelles Creole",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kreol Seselwa"
   },
   {
    "code": "SP",
@@ -12526,6 +12542,168 @@
    "title": "Raporto nr. 6 catar o Corpo de Guvernare – 2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=RMR",
    "vernacular": "Rromani (România)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T12:58:41Z",
+   "files_at": "2026-09-23T12:58:41Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T12:58:41Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T13:33:52Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "crs",
+   "name": "Seychelles Creole",
+   "published_at": "2026-09-23T12:58:41Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T12:58:41Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Update Konsey Direkter #6 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SC",
+   "vernacular": "Kreol Seselwa"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "DMR",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T13:04:45Z",
+   "files_at": "2026-09-23T13:04:45Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T13:04:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T13:33:52Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "naq-x-dmr",
+   "name": "Damara",
+   "published_at": "2026-09-23T13:04:45Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T13:04:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 ǂGaeǂguira soros ǀasa ǂhôan #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=DMR",
+   "vernacular": "Damara"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LUC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T13:08:13Z",
+   "files_at": "2026-09-23T13:08:13Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T13:08:13Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T13:33:52Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "acf",
+   "name": "Saint Lucian Creole",
+   "published_at": "2026-09-23T13:08:13Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T13:08:13Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Wapò #6 Hòd Pwensipal Konmité-a",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LUC",
+   "vernacular": "Kwéyòl (Patwa)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LV",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T13:20:48Z",
+   "files_at": "2026-09-23T13:20:48Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T13:20:48Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T13:33:52Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "lue",
+   "name": "Luvale",
+   "published_at": "2026-09-23T13:20:48Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T13:20:48Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vindiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LV",
+   "vernacular": "Luvale"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KBV",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T13:32:31Z",
+   "files_at": "2026-09-23T13:32:31Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T13:32:31Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T13:33:52Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "kea",
+   "name": "Kabuverdianu",
+   "published_at": "2026-09-23T13:32:31Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T13:32:31Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vídeo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KBV",
+   "vernacular": "Kabuverdianu"
   }
  ],
  "removed": [],
@@ -12535,17 +12713,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 10,
+  "added_1h": 9,
   "added_24h": 71,
-  "added_4h": 22,
+  "added_4h": 24,
   "catalog_count": 203,
-  "catalog_lag": 4,
+  "catalog_lag": 9,
   "catalog_percent": 45.2,
-  "days_since_release": 4.96,
-  "pending_count": 242,
-  "percent": 46.1,
-  "published_count": 207,
-  "publisher_percent": 89.8,
+  "days_since_release": 4.98,
+  "pending_count": 237,
+  "percent": 47.2,
+  "published_count": 212,
+  "publisher_percent": 89.9,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
