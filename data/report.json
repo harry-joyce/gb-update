@@ -905,19 +905,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 6,
+  "last_checked_count": 7,
   "newly_catalogued": [],
-  "offset": 4,
+  "offset": 2,
   "size": 40,
-  "unlisted_total": 6
+  "unlisted_total": 7
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 6,
+  "awaiting_catalogue": 7,
   "catalogued": 225,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 197,
+  "file_times": 198,
   "observed_times": 0,
   "sign_languages": 44
  },
@@ -3024,9 +3024,22 @@
    ],
    "count_after": 231,
    "t": "2026-09-23T17:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-23T18:11:19Z",
+     "code": "SPL",
+     "in_catalog": false,
+     "name": "Sepulana",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 232,
+   "t": "2026-09-23T18:00:00Z"
   }
  ],
- "generated": "2026-09-23T17:43:14Z",
+ "generated": "2026-09-23T18:27:10Z",
  "history": [
   {
    "count": 1,
@@ -3951,6 +3964,10 @@
   {
    "count": 231,
    "t": "2026-09-23T17:17:33Z"
+  },
+  {
+   "count": 232,
+   "t": "2026-09-23T18:11:19Z"
   }
  ],
  "integrity": {
@@ -3964,13 +3981,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 231,
+  "files_count": 232,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 225,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T17:43:14Z",
+ "last_checked": "2026-09-23T18:27:10Z",
  "pending": [
   {
    "code": "ABB",
@@ -5546,15 +5563,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Sepedi"
-  },
-  {
-   "code": "SPL",
-   "direction": "ltr",
-   "locale": "nso-x-spl",
-   "name": "Sepulana",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Sepulana"
   },
   {
    "code": "SU",
@@ -13472,6 +13480,38 @@
    "title": "Rí itháán nuxi̱' rí naríyá' Cuerpo Gobernante tsigu' 2026, número 6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TLN",
    "vernacular": "me̱ʼpha̱a̱"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SPL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T18:11:19Z",
+   "files_at": "2026-09-23T18:11:19Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T18:11:19Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T18:27:10Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nso-x-spl",
+   "name": "Sepulana",
+   "published_at": "2026-09-23T18:11:19Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T18:11:19Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Tsa 2026 Tsa Nyuwane Tsa Mogoba wa go Lawola #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SPL",
+   "vernacular": "Sepulana"
   }
  ],
  "removed": [],
@@ -13481,16 +13521,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 4,
+  "added_1h": 1,
   "added_24h": 66,
-  "added_4h": 16,
+  "added_4h": 14,
   "catalog_count": 225,
-  "catalog_lag": 6,
+  "catalog_lag": 7,
   "catalog_percent": 50.1,
-  "days_since_release": 5.16,
-  "pending_count": 218,
-  "percent": 51.4,
-  "published_count": 231,
+  "days_since_release": 5.19,
+  "pending_count": 217,
+  "percent": 51.7,
+  "published_count": 232,
   "publisher_percent": 90.5,
   "publisher_percent_ceiling": 99.2,
   "target": 449
