@@ -817,21 +817,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 18,
+  "last_checked_count": 20,
   "newly_catalogued": [],
   "offset": 8,
   "size": 40,
-  "unlisted_total": 18
+  "unlisted_total": 20
  },
  "counts": {
   "api_times": 31,
-  "awaiting_catalogue": 18,
+  "awaiting_catalogue": 20,
   "catalogued": 203,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 189,
+  "file_times": 191,
   "observed_times": 0,
-  "sign_languages": 43
+  "sign_languages": 44
  },
  "events": [
   {
@@ -2830,9 +2830,16 @@
      "in_catalog": false,
      "name": "Romanian Sign Language",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T14:58:50Z",
+     "code": "USL",
+     "in_catalog": false,
+     "name": "Ugandan Sign Language",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 219,
+   "count_after": 220,
    "t": "2026-09-23T14:00:00Z"
   },
   {
@@ -2850,13 +2857,20 @@
      "in_catalog": false,
      "name": "Ethiopian Sign Language",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-23T15:08:24Z",
+     "code": "KRI",
+     "in_catalog": false,
+     "name": "Krio",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 221,
+   "count_after": 223,
    "t": "2026-09-23T15:00:00Z"
   }
  ],
- "generated": "2026-09-23T15:34:02Z",
+ "generated": "2026-09-23T16:04:03Z",
  "history": [
   {
    "count": 1,
@@ -3736,11 +3750,19 @@
   },
   {
    "count": 220,
-   "t": "2026-09-23T15:01:47Z"
+   "t": "2026-09-23T14:58:50Z"
   },
   {
    "count": 221,
+   "t": "2026-09-23T15:01:47Z"
+  },
+  {
+   "count": 222,
    "t": "2026-09-23T15:06:08Z"
+  },
+  {
+   "count": 223,
+   "t": "2026-09-23T15:08:24Z"
   }
  ],
  "integrity": {
@@ -3754,13 +3776,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 221,
+  "files_count": 223,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 203,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T15:34:02Z",
+ "last_checked": "2026-09-23T16:04:03Z",
  "pending": [
   {
    "code": "ABB",
@@ -4643,15 +4665,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kpelle"
-  },
-  {
-   "code": "KRI",
-   "direction": "ltr",
-   "locale": "kri",
-   "name": "Krio",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Krio"
   },
   {
    "code": "KHN",
@@ -5687,15 +5700,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "tsotsil"
-  },
-  {
-   "code": "USL",
-   "direction": "ltr",
-   "locale": "ugn",
-   "name": "Ugandan Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Ugandan Sign Language"
   },
   {
    "code": "UR",
@@ -12971,6 +12975,38 @@
    "catalog_at_note": null,
    "catalog_at_source": null,
    "catalog_observed": null,
+   "code": "USL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T14:58:50Z",
+   "files_at": "2026-09-23T14:58:50Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T14:58:50Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T16:04:03Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ugn",
+   "name": "Ugandan Sign Language",
+   "published_at": "2026-09-23T14:58:50Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T14:58:50Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 Governing Body Update #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=USL",
+   "vernacular": "Ugandan Sign Language"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
    "code": "H",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -13028,6 +13064,38 @@
    "title": "ቪዲዮ",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ESL",
    "vernacular": "የኢትዮጵያ ምልክት ቋንቋ"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KRI",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T15:08:24Z",
+   "files_at": "2026-09-23T15:08:24Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T15:08:24Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-23T16:04:03Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "kri",
+   "name": "Krio",
+   "published_at": "2026-09-23T15:08:24Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T15:08:24Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Gɔvnin Bɔdi Ɔpdet #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KRI",
+   "vernacular": "Krio"
   }
  ],
  "removed": [],
@@ -13038,15 +13106,15 @@
  },
  "stats": {
   "added_1h": 2,
-  "added_24h": 65,
-  "added_4h": 26,
+  "added_24h": 63,
+  "added_4h": 25,
   "catalog_count": 203,
-  "catalog_lag": 18,
+  "catalog_lag": 20,
   "catalog_percent": 45.2,
-  "days_since_release": 5.07,
-  "pending_count": 228,
-  "percent": 49.2,
-  "published_count": 221,
+  "days_since_release": 5.09,
+  "pending_count": 226,
+  "percent": 49.7,
+  "published_count": 223,
   "publisher_percent": 90.3,
   "publisher_percent_ceiling": 99.2,
   "target": 449
