@@ -1101,19 +1101,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 14,
+  "last_checked_count": 15,
   "newly_catalogued": [],
-  "offset": 2,
+  "offset": 12,
   "size": 40,
-  "unlisted_total": 14
+  "unlisted_total": 15
  },
  "counts": {
   "api_times": 35,
-  "awaiting_catalogue": 13,
+  "awaiting_catalogue": 14,
   "catalogued": 274,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 251,
+  "file_times": 252,
   "observed_times": 0,
   "sign_languages": 56
  },
@@ -3716,13 +3716,20 @@
      "in_catalog": false,
      "name": "Yoruba",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T15:34:25Z",
+     "code": "YCB",
+     "in_catalog": false,
+     "name": "Yacouba",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 287,
+   "count_after": 288,
    "t": "2026-09-24T15:00:00Z"
   }
  ],
- "generated": "2026-09-24T15:23:01Z",
+ "generated": "2026-09-24T15:53:06Z",
  "history": [
   {
    "count": 1,
@@ -4871,6 +4878,10 @@
   {
    "count": 287,
    "t": "2026-09-24T15:17:16Z"
+  },
+  {
+   "count": 288,
+   "t": "2026-09-24T15:34:25Z"
   }
  ],
  "integrity": {
@@ -4884,7 +4895,7 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "files_count": 287,
+  "files_count": 288,
   "last_full_verification": "2026-09-24T08:43:27Z",
   "listing_count": 273,
   "listing_lag": [
@@ -4892,7 +4903,7 @@
   ],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T15:23:01Z",
+ "last_checked": "2026-09-24T15:53:06Z",
  "pending": [
   {
    "code": "ABB",
@@ -6324,15 +6335,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "IsiXhosa"
-  },
-  {
-   "code": "YCB",
-   "direction": "ltr",
-   "locale": "daf",
-   "name": "Yacouba",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Yaoba"
   },
   {
    "code": "YKM",
@@ -15722,6 +15724,39 @@
    "title": "Fídíò",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=YR",
    "vernacular": "Yorùbá"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "YCB",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T15:34:25Z",
+   "files_at": "2026-09-24T15:34:25Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T15:34:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T15:53:06Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "daf",
+   "name": "Yacouba",
+   "published_at": "2026-09-24T15:34:25Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T15:34:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=YCB",
+   "vernacular": "Yaoba"
   }
  ],
  "removed": [],
@@ -15731,16 +15766,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 8,
-  "added_24h": 61,
-  "added_4h": 22,
+  "added_1h": 4,
+  "added_24h": 62,
+  "added_4h": 19,
   "catalog_count": 274,
-  "catalog_lag": 13,
+  "catalog_lag": 14,
   "catalog_percent": 61.0,
-  "days_since_release": 6.06,
-  "pending_count": 162,
-  "percent": 63.9,
-  "published_count": 287,
+  "days_since_release": 6.08,
+  "pending_count": 161,
+  "percent": 64.1,
+  "published_count": 288,
   "publisher_percent": 92.4,
   "publisher_percent_ceiling": 99.2,
   "target": 449
