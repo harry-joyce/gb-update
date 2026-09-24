@@ -969,19 +969,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 2,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 2
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 2,
   "catalogued": 241,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 208,
+  "file_times": 209,
   "observed_times": 0,
   "sign_languages": 47
  },
@@ -3201,9 +3201,22 @@
    ],
    "count_after": 242,
    "t": "2026-09-24T04:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-24T06:16:52Z",
+     "code": "MWL",
+     "in_catalog": false,
+     "name": "Mambwe-Lungu",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 243,
+   "t": "2026-09-24T06:00:00Z"
   }
  ],
- "generated": "2026-09-24T05:58:12Z",
+ "generated": "2026-09-24T06:28:49Z",
  "history": [
   {
    "count": 1,
@@ -4172,6 +4185,10 @@
   {
    "count": 242,
    "t": "2026-09-24T04:30:27Z"
+  },
+  {
+   "count": 243,
+   "t": "2026-09-24T06:16:52Z"
   }
  ],
  "integrity": {
@@ -4185,13 +4202,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 242,
+  "files_count": 243,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 241,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T05:58:12Z",
+ "last_checked": "2026-09-24T06:28:49Z",
  "pending": [
   {
    "code": "ABB",
@@ -5173,15 +5190,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "mam"
-  },
-  {
-   "code": "MWL",
-   "direction": "ltr",
-   "locale": "mgr",
-   "name": "Mambwe-Lungu",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Cimambwe-Lungu"
   },
   {
    "code": "MNJ",
@@ -13959,6 +13967,39 @@
    "title": "Ibidion",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=IE",
    "vernacular": "Ateso"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MWL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T06:16:52Z",
+   "files_at": "2026-09-24T06:16:52Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T06:16:52Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T06:28:49Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "mgr",
+   "name": "Mambwe-Lungu",
+   "published_at": "2026-09-24T06:16:52Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T06:16:52Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MWL",
+   "vernacular": "Cimambwe-Lungu"
   }
  ],
  "removed": [],
@@ -13968,17 +14009,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 63,
-  "added_4h": 2,
+  "added_1h": 1,
+  "added_24h": 64,
+  "added_4h": 3,
   "catalog_count": 241,
-  "catalog_lag": 1,
+  "catalog_lag": 2,
   "catalog_percent": 53.7,
-  "days_since_release": 5.67,
-  "pending_count": 207,
-  "percent": 53.9,
-  "published_count": 242,
-  "publisher_percent": 90.6,
+  "days_since_release": 5.69,
+  "pending_count": 206,
+  "percent": 54.1,
+  "published_count": 243,
+  "publisher_percent": 90.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
