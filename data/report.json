@@ -957,21 +957,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
-  "newly_catalogued": [
-   "LSV"
-  ],
+  "last_checked_count": 4,
+  "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 4
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 238,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 204,
+  "file_times": 205,
   "observed_times": 0,
   "sign_languages": 46
  },
@@ -3145,9 +3143,22 @@
    ],
    "count_after": 238,
    "t": "2026-09-23T21:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-24T00:22:54Z",
+     "code": "MAY",
+     "in_catalog": false,
+     "name": "Maya",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 239,
+   "t": "2026-09-24T00:00:00Z"
   }
  ],
- "generated": "2026-09-23T23:59:58Z",
+ "generated": "2026-09-24T00:27:42Z",
  "history": [
   {
    "count": 1,
@@ -4100,6 +4111,10 @@
   {
    "count": 238,
    "t": "2026-09-23T21:15:27Z"
+  },
+  {
+   "count": 239,
+   "t": "2026-09-24T00:22:54Z"
   }
  ],
  "integrity": {
@@ -4113,16 +4128,17 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 238,
+  "files_count": 239,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 235,
   "listing_lag": [
+   "LSV",
    "SHO",
    "TCR"
   ],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-23T23:59:58Z",
+ "last_checked": "2026-09-24T00:27:42Z",
  "pending": [
   {
    "code": "ABB",
@@ -5185,15 +5201,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Mashi"
-  },
-  {
-   "code": "MAY",
-   "direction": "ltr",
-   "locale": "yua",
-   "name": "Maya",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "maaya"
   },
   {
    "code": "MBD",
@@ -13788,6 +13795,38 @@
    "title": "Atualizason ku Fasidu pa Korpu Guvernanti na 2026 — N.° 6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TCR",
    "vernacular": "Kriol di Gine-Bisau"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MAY",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T00:22:54Z",
+   "files_at": "2026-09-24T00:22:54Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T00:22:54Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T00:27:42Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "yua",
+   "name": "Maya",
+   "published_at": "2026-09-24T00:22:54Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T00:22:54Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 | Jaats 6: U informe le Cuerpo Gobernanteoʼ",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MAY",
+   "vernacular": "maaya"
   }
  ],
  "removed": [],
@@ -13797,17 +13836,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 66,
-  "added_4h": 2,
+  "added_1h": 1,
+  "added_24h": 67,
+  "added_4h": 3,
   "catalog_count": 238,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 53.0,
-  "days_since_release": 5.42,
-  "pending_count": 211,
-  "percent": 53.0,
-  "published_count": 238,
-  "publisher_percent": 90.5,
+  "days_since_release": 5.44,
+  "pending_count": 210,
+  "percent": 53.2,
+  "published_count": 239,
+  "publisher_percent": 90.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
