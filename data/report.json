@@ -957,19 +957,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 2,
+  "awaiting_catalogue": 3,
   "catalogued": 238,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 206,
+  "file_times": 207,
   "observed_times": 0,
   "sign_languages": 47
  },
@@ -3163,9 +3163,22 @@
    ],
    "count_after": 240,
    "t": "2026-09-24T00:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-24T02:34:46Z",
+     "code": "CHW",
+     "in_catalog": false,
+     "name": "Min Nan (Taiwan)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 241,
+   "t": "2026-09-24T02:00:00Z"
   }
  ],
- "generated": "2026-09-24T01:57:52Z",
+ "generated": "2026-09-24T02:57:55Z",
  "history": [
   {
    "count": 1,
@@ -4126,6 +4139,10 @@
   {
    "count": 240,
    "t": "2026-09-24T00:22:54Z"
+  },
+  {
+   "count": 241,
+   "t": "2026-09-24T02:34:46Z"
   }
  ],
  "integrity": {
@@ -4139,13 +4156,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 240,
+  "files_count": 241,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 238,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T01:57:52Z",
+ "last_checked": "2026-09-24T02:57:55Z",
  "pending": [
   {
    "code": "ABB",
@@ -13857,6 +13874,38 @@
    "title": "2026 | Jaats 6: U informe le Cuerpo Gobernanteoʼ",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MAY",
    "vernacular": "maaya"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": true,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CHW",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T02:34:46Z",
+   "files_at": "2026-09-24T02:34:46Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T02:34:46Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T02:57:55Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nan-x-chw",
+   "name": "Min Nan (Taiwan)",
+   "published_at": "2026-09-24T02:34:46Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T02:34:46Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CHINESE",
+   "sign": false,
+   "title": "2026來自中央長老團的報導（六）",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CHW",
+   "vernacular": "閩南語（台灣）"
   }
  ],
  "removed": [],
@@ -13866,16 +13915,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
+  "added_1h": 1,
   "added_24h": 67,
-  "added_4h": 1,
+  "added_4h": 2,
   "catalog_count": 238,
-  "catalog_lag": 2,
+  "catalog_lag": 3,
   "catalog_percent": 53.0,
-  "days_since_release": 5.5,
-  "pending_count": 209,
-  "percent": 53.5,
-  "published_count": 240,
+  "days_since_release": 5.54,
+  "pending_count": 208,
+  "percent": 53.7,
+  "published_count": 241,
   "publisher_percent": 90.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
