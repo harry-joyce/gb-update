@@ -1101,19 +1101,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 6,
+  "last_checked_count": 11,
   "newly_catalogued": [],
-  "offset": 4,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 6
+  "unlisted_total": 11
  },
  "counts": {
   "api_times": 35,
-  "awaiting_catalogue": 5,
+  "awaiting_catalogue": 10,
   "catalogued": 274,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 243,
+  "file_times": 248,
   "observed_times": 0,
   "sign_languages": 55
  },
@@ -3654,13 +3654,48 @@
      "in_catalog": false,
      "name": "Gun",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T14:26:17Z",
+     "code": "GL",
+     "in_catalog": false,
+     "name": "Greenlandic",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T14:28:29Z",
+     "code": "GTN",
+     "in_catalog": false,
+     "name": "Gitonga",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T14:35:03Z",
+     "code": "MTC",
+     "in_catalog": false,
+     "name": "Martiniquan Creole",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T14:36:05Z",
+     "code": "KG",
+     "in_catalog": false,
+     "name": "Kikongo",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T14:44:01Z",
+     "code": "FO",
+     "in_catalog": false,
+     "name": "Fon",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 279,
+   "count_after": 284,
    "t": "2026-09-24T14:00:00Z"
   }
  ],
- "generated": "2026-09-24T14:22:55Z",
+ "generated": "2026-09-24T14:53:00Z",
  "history": [
   {
    "count": 1,
@@ -4777,6 +4812,26 @@
   {
    "count": 279,
    "t": "2026-09-24T14:13:28Z"
+  },
+  {
+   "count": 280,
+   "t": "2026-09-24T14:26:17Z"
+  },
+  {
+   "count": 281,
+   "t": "2026-09-24T14:28:29Z"
+  },
+  {
+   "count": 282,
+   "t": "2026-09-24T14:35:03Z"
+  },
+  {
+   "count": 283,
+   "t": "2026-09-24T14:36:05Z"
+  },
+  {
+   "count": 284,
+   "t": "2026-09-24T14:44:01Z"
   }
  ],
  "integrity": {
@@ -4790,7 +4845,7 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "files_count": 279,
+  "files_count": 284,
   "last_full_verification": "2026-09-24T08:43:27Z",
   "listing_count": 273,
   "listing_lag": [
@@ -4798,7 +4853,7 @@
   ],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T14:22:55Z",
+ "last_checked": "2026-09-24T14:53:00Z",
  "pending": [
   {
    "code": "ABB",
@@ -5125,15 +5180,6 @@
    "vernacular": "Filipino Sign Language"
   },
   {
-   "code": "FO",
-   "direction": "ltr",
-   "locale": "fon",
-   "name": "Fon",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Fɔngbe"
-  },
-  {
    "code": "GRF",
    "direction": "ltr",
    "locale": "cab",
@@ -5152,15 +5198,6 @@
    "vernacular": "Gbaya"
   },
   {
-   "code": "GTN",
-   "direction": "ltr",
-   "locale": "toh",
-   "name": "Gitonga",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Gitonga"
-  },
-  {
    "code": "GSL",
    "direction": "ltr",
    "locale": "gss",
@@ -5168,15 +5205,6 @@
    "script": "GREEK",
    "sign": true,
    "vernacular": "Ελληνική Νοηματική Γλώσσα"
-  },
-  {
-   "code": "GL",
-   "direction": "ltr",
-   "locale": "kl",
-   "name": "Greenlandic",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kalaallisut"
   },
   {
    "code": "GCR",
@@ -5393,15 +5421,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Khana"
-  },
-  {
-   "code": "KG",
-   "direction": "ltr",
-   "locale": "kwy",
-   "name": "Kikongo",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kikongo"
   },
   {
    "code": "KGL",
@@ -5636,15 +5655,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "mapudungun"
-  },
-  {
-   "code": "MTC",
-   "direction": "ltr",
-   "locale": "gcf-x-mtc",
-   "name": "Martiniquan Creole",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kréyol Matinik"
   },
   {
    "code": "MSH",
@@ -15438,6 +15448,170 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=EG",
    "vernacular": "Gungbe"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "GL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T14:26:17Z",
+   "files_at": "2026-09-24T14:26:17Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T14:26:17Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T14:53:00Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "kl",
+   "name": "Greenlandic",
+   "published_at": "2026-09-24T14:26:17Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T14:26:17Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Siulersuisoqatigiinnit nalunaarusiaq nr. 6, 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GL",
+   "vernacular": "Kalaallisut"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "GTN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T14:28:29Z",
+   "files_at": "2026-09-24T14:28:29Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T14:28:29Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T14:53:00Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "toh",
+   "name": "Gitonga",
+   "published_at": "2026-09-24T14:28:29Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T14:28:29Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vhidhiyu",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GTN",
+   "vernacular": "Gitonga"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MTC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T14:35:03Z",
+   "files_at": "2026-09-24T14:35:03Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T14:35:03Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T14:53:00Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "gcf-x-mtc",
+   "name": "Martiniquan Creole",
+   "published_at": "2026-09-24T14:35:03Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T14:35:03Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidéwo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MTC",
+   "vernacular": "Kréyol Matinik"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T14:36:05Z",
+   "files_at": "2026-09-24T14:36:05Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T14:36:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T14:53:00Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "kwy",
+   "name": "Kikongo",
+   "published_at": "2026-09-24T14:36:05Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T14:36:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KG",
+   "vernacular": "Kikongo"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "FO",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T14:44:01Z",
+   "files_at": "2026-09-24T14:44:01Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T14:44:01Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T14:53:00Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "fon",
+   "name": "Fon",
+   "published_at": "2026-09-24T14:44:01Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T14:44:01Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=FO",
+   "vernacular": "Fɔngbe"
   }
  ],
  "removed": [],
@@ -15447,17 +15621,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 5,
-  "added_24h": 58,
-  "added_4h": 14,
+  "added_1h": 6,
+  "added_24h": 62,
+  "added_4h": 19,
   "catalog_count": 274,
-  "catalog_lag": 5,
+  "catalog_lag": 10,
   "catalog_percent": 61.0,
-  "days_since_release": 6.02,
-  "pending_count": 170,
-  "percent": 62.1,
-  "published_count": 279,
-  "publisher_percent": 91.8,
+  "days_since_release": 6.04,
+  "pending_count": 165,
+  "percent": 63.3,
+  "published_count": 284,
+  "publisher_percent": 91.9,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
