@@ -957,11 +957,11 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
+  "last_checked_count": 1,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 33,
@@ -3158,7 +3158,7 @@
    "t": "2026-09-24T00:00:00Z"
   }
  ],
- "generated": "2026-09-24T00:27:42Z",
+ "generated": "2026-09-24T00:57:46Z",
  "history": [
   {
    "count": 1,
@@ -4130,15 +4130,11 @@
   "file_drift_count": 40,
   "files_count": 239,
   "last_full_verification": "2026-09-23T08:48:35Z",
-  "listing_count": 235,
-  "listing_lag": [
-   "LSV",
-   "SHO",
-   "TCR"
-  ],
+  "listing_count": 238,
+  "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T00:27:42Z",
+ "last_checked": "2026-09-24T00:57:46Z",
  "pending": [
   {
    "code": "ABB",
@@ -11477,7 +11473,7 @@
    "first_observed": "2026-09-23T22:27:33Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "vsl",
    "name": "Venezuelan Sign Language",
    "published_at": "2026-09-22T19:16:31Z",
@@ -13752,7 +13748,7 @@
    "first_observed": "2026-09-23T20:57:24Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "hds",
    "name": "Honduras Sign Language",
    "published_at": "2026-09-23T20:46:25Z",
@@ -13784,7 +13780,7 @@
    "first_observed": "2026-09-23T21:27:27Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "pov",
    "name": "Bissau Guinean Creole",
    "published_at": "2026-09-23T21:15:27Z",
@@ -13838,11 +13834,11 @@
  "stats": {
   "added_1h": 1,
   "added_24h": 67,
-  "added_4h": 3,
+  "added_4h": 2,
   "catalog_count": 238,
   "catalog_lag": 1,
   "catalog_percent": 53.0,
-  "days_since_release": 5.44,
+  "days_since_release": 5.46,
   "pending_count": 210,
   "percent": 53.2,
   "published_count": 239,
