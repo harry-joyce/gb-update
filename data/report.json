@@ -1101,21 +1101,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 12,
+  "last_checked_count": 14,
   "newly_catalogued": [],
-  "offset": 4,
+  "offset": 2,
   "size": 40,
-  "unlisted_total": 12
+  "unlisted_total": 14
  },
  "counts": {
   "api_times": 35,
-  "awaiting_catalogue": 11,
+  "awaiting_catalogue": 13,
   "catalogued": 274,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 249,
+  "file_times": 251,
   "observed_times": 0,
-  "sign_languages": 55
+  "sign_languages": 56
  },
  "events": [
   {
@@ -3702,13 +3702,27 @@
      "in_catalog": false,
      "name": "Kikongo ya Leta",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T15:10:05Z",
+     "code": "TZL",
+     "in_catalog": false,
+     "name": "Tanzanian Sign Language",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T15:17:16Z",
+     "code": "YR",
+     "in_catalog": false,
+     "name": "Yoruba",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 285,
+   "count_after": 287,
    "t": "2026-09-24T15:00:00Z"
   }
  ],
- "generated": "2026-09-24T15:12:20Z",
+ "generated": "2026-09-24T15:23:01Z",
  "history": [
   {
    "count": 1,
@@ -4849,6 +4863,14 @@
   {
    "count": 285,
    "t": "2026-09-24T15:07:40Z"
+  },
+  {
+   "count": 286,
+   "t": "2026-09-24T15:10:05Z"
+  },
+  {
+   "count": 287,
+   "t": "2026-09-24T15:17:16Z"
   }
  ],
  "integrity": {
@@ -4862,7 +4884,7 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "files_count": 285,
+  "files_count": 287,
   "last_full_verification": "2026-09-24T08:43:27Z",
   "listing_count": 273,
   "listing_lag": [
@@ -4870,7 +4892,7 @@
   ],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T15:12:20Z",
+ "last_checked": "2026-09-24T15:23:01Z",
  "pending": [
   {
    "code": "ABB",
@@ -6133,15 +6155,6 @@
    "vernacular": "Talian"
   },
   {
-   "code": "TZL",
-   "direction": "ltr",
-   "locale": "tza",
-   "name": "Tanzanian Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Lugha ya Alama ya Tanzania"
-  },
-  {
    "code": "TRS",
    "direction": "ltr",
    "locale": "tsz",
@@ -6338,15 +6351,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Yombe"
-  },
-  {
-   "code": "YR",
-   "direction": "ltr",
-   "locale": "yo",
-   "name": "Yoruba",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Yorùbá"
   },
   {
    "code": "ZAS",
@@ -15652,6 +15656,72 @@
    "title": "Lapolo ya Kimvuka ya Ntuadisi No 6 ya 2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KGL",
    "vernacular": "Kikongo ya leta"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TZL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T15:10:05Z",
+   "files_at": "2026-09-24T15:10:05Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T15:10:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T15:23:01Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tza",
+   "name": "Tanzanian Sign Language",
+   "published_at": "2026-09-24T15:10:05Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T15:10:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TZL",
+   "vernacular": "Lugha ya Alama ya Tanzania"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "YR",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T15:17:16Z",
+   "files_at": "2026-09-24T15:17:16Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T15:17:16Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T15:23:01Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "yo",
+   "name": "Yoruba",
+   "published_at": "2026-09-24T15:17:16Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T15:17:16Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Fídíò",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=YR",
+   "vernacular": "Yorùbá"
   }
  ],
  "removed": [],
@@ -15661,17 +15731,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 7,
-  "added_24h": 59,
-  "added_4h": 20,
+  "added_1h": 8,
+  "added_24h": 61,
+  "added_4h": 22,
   "catalog_count": 274,
-  "catalog_lag": 11,
+  "catalog_lag": 13,
   "catalog_percent": 61.0,
-  "days_since_release": 6.05,
-  "pending_count": 164,
-  "percent": 63.5,
-  "published_count": 285,
-  "publisher_percent": 91.9,
+  "days_since_release": 6.06,
+  "pending_count": 162,
+  "percent": 63.9,
+  "published_count": 287,
+  "publisher_percent": 92.4,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
