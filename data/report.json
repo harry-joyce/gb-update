@@ -977,19 +977,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 13,
+  "last_checked_count": 17,
   "newly_catalogued": [],
-  "offset": 7,
+  "offset": 13,
   "size": 40,
-  "unlisted_total": 13
+  "unlisted_total": 17
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 13,
+  "awaiting_catalogue": 17,
   "catalogued": 243,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 222,
+  "file_times": 226,
   "observed_times": 0,
   "sign_languages": 50
  },
@@ -3331,9 +3331,43 @@
    ],
    "count_after": 256,
    "t": "2026-09-24T08:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-24T09:01:25Z",
+     "code": "TJ",
+     "in_catalog": false,
+     "name": "Tajiki",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T09:09:41Z",
+     "code": "NK",
+     "in_catalog": false,
+     "name": "Nyaneka",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T09:10:54Z",
+     "code": "TV",
+     "in_catalog": false,
+     "name": "Tiv",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T09:23:23Z",
+     "code": "RMG",
+     "in_catalog": false,
+     "name": "Romany (Southern Greece)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 260,
+   "t": "2026-09-24T09:00:00Z"
   }
  ],
- "generated": "2026-09-24T08:58:30Z",
+ "generated": "2026-09-24T09:28:31Z",
  "history": [
   {
    "count": 1,
@@ -4358,6 +4392,22 @@
   {
    "count": 256,
    "t": "2026-09-24T08:40:08Z"
+  },
+  {
+   "count": 257,
+   "t": "2026-09-24T09:01:25Z"
+  },
+  {
+   "count": 258,
+   "t": "2026-09-24T09:09:41Z"
+  },
+  {
+   "count": 259,
+   "t": "2026-09-24T09:10:54Z"
+  },
+  {
+   "count": 260,
+   "t": "2026-09-24T09:23:23Z"
   }
  ],
  "integrity": {
@@ -4371,13 +4421,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "files_count": 256,
+  "files_count": 260,
   "last_full_verification": "2026-09-24T08:43:27Z",
   "listing_count": 243,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T08:58:30Z",
+ "last_checked": "2026-09-24T09:28:31Z",
  "pending": [
   {
    "code": "ABB",
@@ -5568,15 +5618,6 @@
    "vernacular": "Nigerian Sign Language"
   },
   {
-   "code": "NK",
-   "direction": "ltr",
-   "locale": "nyk",
-   "name": "Nyaneka",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Nyaneka"
-  },
-  {
    "code": "NZ",
    "direction": "ltr",
    "locale": "nzi",
@@ -5692,15 +5733,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "quiché"
-  },
-  {
-   "code": "RMG",
-   "direction": "ltr",
-   "locale": "rmn-x-rmg",
-   "name": "Romany (Southern Greece)",
-   "script": "GREEK",
-   "sign": false,
-   "vernacular": "Ρομανί (Νότια Ελλάδα)"
   },
   {
    "code": "RNY",
@@ -5874,15 +5906,6 @@
    "vernacular": "Tahiti"
   },
   {
-   "code": "TJ",
-   "direction": "ltr",
-   "locale": "tg",
-   "name": "Tajiki",
-   "script": "CYRILLIC",
-   "sign": false,
-   "vernacular": "тоҷикӣ"
-  },
-  {
    "code": "TAL",
    "direction": "ltr",
    "locale": "vec",
@@ -5917,15 +5940,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ciutee"
-  },
-  {
-   "code": "TV",
-   "direction": "ltr",
-   "locale": "tiv",
-   "name": "Tiv",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Tiv"
   },
   {
    "code": "TJO",
@@ -14476,6 +14490,136 @@
    "title": "Vhidhiyo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NDA",
    "vernacular": "Cindau"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TJ",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T09:01:25Z",
+   "files_at": "2026-09-24T09:01:25Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T09:01:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T09:28:31Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tg",
+   "name": "Tajiki",
+   "published_at": "2026-09-24T09:01:25Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T09:01:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CYRILLIC",
+   "sign": false,
+   "title": "Муроҷиати Ҳайати роҳбарӣ № 6 (2026)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TJ",
+   "vernacular": "тоҷикӣ"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NK",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T09:09:41Z",
+   "files_at": "2026-09-24T09:09:41Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T09:09:41Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T09:28:31Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nyk",
+   "name": "Nyaneka",
+   "published_at": "2026-09-24T09:09:41Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T09:09:41Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "O Vidiu",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NK",
+   "vernacular": "Nyaneka"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TV",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T09:10:54Z",
+   "files_at": "2026-09-24T09:10:54Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T09:10:54Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T09:28:31Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tiv",
+   "name": "Tiv",
+   "published_at": "2026-09-24T09:10:54Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T09:10:54Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidio",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TV",
+   "vernacular": "Tiv"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "RMG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T09:23:23Z",
+   "files_at": "2026-09-24T09:23:23Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T09:23:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T09:28:31Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "rmn-x-rmg",
+   "name": "Romany (Southern Greece)",
+   "published_at": "2026-09-24T09:23:23Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T09:23:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "GREEK",
+   "sign": false,
+   "title": "Αμπέρι Κατά Κυβερνών Σώμας #6 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=RMG",
+   "vernacular": "Ρομανί (Νότια Ελλάδα)"
   }
  ],
  "removed": [],
@@ -14485,16 +14629,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 5,
-  "added_24h": 69,
-  "added_4h": 11,
+  "added_1h": 6,
+  "added_24h": 68,
+  "added_4h": 15,
   "catalog_count": 243,
-  "catalog_lag": 13,
+  "catalog_lag": 17,
   "catalog_percent": 54.1,
-  "days_since_release": 5.79,
-  "pending_count": 193,
-  "percent": 57.0,
-  "published_count": 256,
+  "days_since_release": 5.81,
+  "pending_count": 189,
+  "percent": 57.9,
+  "published_count": 260,
   "publisher_percent": 90.9,
   "publisher_percent_ceiling": 99.2,
   "target": 449
