@@ -1209,19 +1209,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 46,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 301,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 254,
+  "file_times": 255,
   "observed_times": 0,
   "sign_languages": 56
  },
@@ -3944,9 +3944,22 @@
    ],
    "count_after": 301,
    "t": "2026-09-24T20:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-24T22:33:01Z",
+     "code": "TOT",
+     "in_catalog": false,
+     "name": "Totonac",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 302,
+   "t": "2026-09-24T22:00:00Z"
   }
  ],
- "generated": "2026-09-24T22:15:07Z",
+ "generated": "2026-09-24T22:45:07Z",
  "history": [
   {
    "count": 1,
@@ -5151,6 +5164,10 @@
   {
    "count": 301,
    "t": "2026-09-24T20:29:19Z"
+  },
+  {
+   "count": 302,
+   "t": "2026-09-24T22:33:01Z"
   }
  ],
  "integrity": {
@@ -5164,13 +5181,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "files_count": 301,
+  "files_count": 302,
   "last_full_verification": "2026-09-24T08:43:27Z",
   "listing_count": 301,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T22:15:07Z",
+ "last_checked": "2026-09-24T22:45:07Z",
  "pending": [
   {
    "code": "ABB",
@@ -6377,15 +6394,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Faka-Tonga"
-  },
-  {
-   "code": "TOT",
-   "direction": "ltr",
-   "locale": "top",
-   "name": "Totonac",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "totonaco"
   },
   {
    "code": "SH",
@@ -16336,6 +16344,39 @@
    "title": "2026 | Informe 6 yuʼun te Cuerpo Gobernante",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TZE",
    "vernacular": "tseltal"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TOT",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T22:33:01Z",
+   "files_at": "2026-09-24T22:33:01Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T22:33:01Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T22:45:07Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "top",
+   "name": "Totonac",
+   "published_at": "2026-09-24T22:33:01Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T22:33:01Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TOT",
+   "vernacular": "totonaco"
   }
  ],
  "removed": [],
@@ -16345,17 +16386,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 59,
-  "added_4h": 6,
+  "added_1h": 1,
+  "added_24h": 60,
+  "added_4h": 7,
   "catalog_count": 301,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 67.0,
-  "days_since_release": 6.34,
-  "pending_count": 148,
-  "percent": 67.0,
-  "published_count": 301,
-  "publisher_percent": 92.6,
+  "days_since_release": 6.36,
+  "pending_count": 147,
+  "percent": 67.3,
+  "published_count": 302,
+  "publisher_percent": 92.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
