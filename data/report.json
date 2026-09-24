@@ -977,19 +977,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 10,
+  "last_checked_count": 13,
   "newly_catalogued": [],
-  "offset": 6,
+  "offset": 7,
   "size": 40,
-  "unlisted_total": 10
+  "unlisted_total": 13
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 10,
+  "awaiting_catalogue": 13,
   "catalogued": 243,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 219,
+  "file_times": 222,
   "observed_times": 0,
   "sign_languages": 50
  },
@@ -3306,13 +3306,34 @@
      "in_catalog": false,
      "name": "Persian",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T08:28:27Z",
+     "code": "MAC",
+     "in_catalog": false,
+     "name": "Macua",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T08:30:49Z",
+     "code": "L",
+     "in_catalog": false,
+     "name": "Lithuanian",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T08:40:08Z",
+     "code": "NDA",
+     "in_catalog": false,
+     "name": "Ndau",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 253,
+   "count_after": 256,
    "t": "2026-09-24T08:00:00Z"
   }
  ],
- "generated": "2026-09-24T08:43:27Z",
+ "generated": "2026-09-24T08:58:30Z",
  "history": [
   {
    "count": 1,
@@ -4325,13 +4346,23 @@
   {
    "count": 253,
    "t": "2026-09-24T08:13:31Z"
+  },
+  {
+   "count": 254,
+   "t": "2026-09-24T08:28:27Z"
+  },
+  {
+   "count": 255,
+   "t": "2026-09-24T08:30:49Z"
+  },
+  {
+   "count": 256,
+   "t": "2026-09-24T08:40:08Z"
   }
  ],
  "integrity": {
   "api_reset_detected": false,
   "api_reset_detected_at": null,
-  "awaiting_catalogue": 10,
-  "bulk_rewrite_suspected": false,
   "catalogue_unavailable": null,
   "drift_count": 0,
   "drifted": [],
@@ -4340,441 +4371,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "file_drifted": [
-   {
-    "code": "X",
-    "in_use": "2026-09-18T20:53:43Z",
-    "in_use_source": "api",
-    "live": "2026-09-19T16:24:02Z",
-    "name": "German",
-    "pinned": "2026-09-18T20:53:31Z"
-   },
-   {
-    "code": "AN",
-    "in_use": "2026-09-19T00:21:42Z",
-    "in_use_source": "api",
-    "live": "2026-09-22T15:52:18Z",
-    "name": "Catalan",
-    "pinned": "2026-09-19T00:21:27Z"
-   },
-   {
-    "code": "S",
-    "in_use": "2026-09-19T07:17:46Z",
-    "in_use_source": "api",
-    "live": "2026-09-23T08:16:38Z",
-    "name": "Spanish",
-    "pinned": "2026-09-19T07:40:49Z"
-   },
-   {
-    "code": "I",
-    "in_use": "2026-09-19T07:39:39Z",
-    "in_use_source": "api",
-    "live": "2026-09-23T08:24:33Z",
-    "name": "Italian",
-    "pinned": "2026-09-19T07:39:28Z"
-   },
-   {
-    "code": "KA",
-    "in_use": "2026-09-19T08:16:53Z",
-    "in_use_source": "api",
-    "live": "2026-09-20T05:17:27Z",
-    "name": "Kannada",
-    "pinned": "2026-09-19T08:16:43Z"
-   },
-   {
-    "code": "BU",
-    "in_use": "2026-09-19T10:06:39Z",
-    "in_use_source": "api",
-    "live": "2026-09-24T02:41:15Z",
-    "name": "Myanmar",
-    "pinned": "2026-09-19T10:06:30Z"
-   },
-   {
-    "code": "SCH",
-    "in_use": "2026-09-19T13:57:24Z",
-    "in_use_source": "api",
-    "live": "2026-09-21T14:00:07Z",
-    "name": "Chilean Sign Language",
-    "pinned": "2026-09-19T13:57:16Z"
-   },
-   {
-    "code": "LSB",
-    "in_use": "2026-09-19T14:03:14Z",
-    "in_use_source": "api",
-    "live": "2026-09-19T19:00:30Z",
-    "name": "Brazilian Sign Language",
-    "pinned": "2026-09-19T12:39:56Z"
-   },
-   {
-    "code": "GU",
-    "in_use": "2026-09-19T15:26:04Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T07:56:58Z",
-    "name": "Gujarati",
-    "pinned": "2026-09-19T15:26:04Z"
-   },
-   {
-    "code": "D",
-    "in_use": "2026-09-19T16:13:26Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T09:15:38Z",
-    "name": "Danish",
-    "pinned": "2026-09-19T16:13:26Z"
-   },
-   {
-    "code": "TB",
-    "in_use": "2026-09-19T17:50:21Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T09:48:06Z",
-    "name": "Chitumbuka",
-    "pinned": "2026-09-19T17:50:21Z"
-   },
-   {
-    "code": "T",
-    "in_use": "2026-09-19T18:19:23Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T17:53:02Z",
-    "name": "Portuguese (Brazil)",
-    "pinned": "2026-09-19T18:19:23Z"
-   },
-   {
-    "code": "F",
-    "in_use": "2026-09-19T20:23:29Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T09:56:33Z",
-    "name": "French",
-    "pinned": "2026-09-19T20:23:29Z"
-   },
-   {
-    "code": "K",
-    "in_use": "2026-09-19T21:38:49Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T14:31:11Z",
-    "name": "Ukrainian",
-    "pinned": "2026-09-19T21:38:49Z"
-   },
-   {
-    "code": "TPO",
-    "in_use": "2026-09-19T22:03:22Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T17:11:46Z",
-    "name": "Portuguese (Portugal)",
-    "pinned": "2026-09-19T22:03:22Z"
-   },
-   {
-    "code": "QII",
-    "in_use": "2026-09-19T23:44:40Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-20T00:31:46Z",
-    "name": "Quichua (Imbabura)",
-    "pinned": "2026-09-19T23:44:40Z"
-   },
-   {
-    "code": "J",
-    "in_use": "2026-09-20T03:55:37Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T00:52:19Z",
-    "name": "Japanese",
-    "pinned": "2026-09-20T03:55:37Z"
-   },
-   {
-    "code": "UD",
-    "in_use": "2026-09-20T08:21:02Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T06:31:27Z",
-    "name": "Urdu",
-    "pinned": "2026-09-20T08:21:02Z"
-   },
-   {
-    "code": "CH",
-    "in_use": "2026-09-20T08:44:57Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T07:23:39Z",
-    "name": "Chinese Mandarin (Traditional)",
-    "pinned": "2026-09-20T08:44:57Z"
-   },
-   {
-    "code": "CHS",
-    "in_use": "2026-09-20T08:45:54Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T07:24:05Z",
-    "name": "Chinese Mandarin (Simplified)",
-    "pinned": "2026-09-20T08:45:54Z"
-   },
-   {
-    "code": "G",
-    "in_use": "2026-09-20T09:49:12Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T13:34:10Z",
-    "name": "Greek",
-    "pinned": "2026-09-20T09:49:12Z"
-   },
-   {
-    "code": "V",
-    "in_use": "2026-09-20T09:54:02Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-20T17:41:11Z",
-    "name": "Slovak",
-    "pinned": "2026-09-20T09:54:02Z"
-   },
-   {
-    "code": "HZJ",
-    "in_use": "2026-09-20T11:50:06Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T16:29:02Z",
-    "name": "Croatian Sign Language",
-    "pinned": "2026-09-20T11:50:06Z"
-   },
-   {
-    "code": "FI",
-    "in_use": "2026-09-20T15:31:56Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-24T08:10:38Z",
-    "name": "Finnish",
-    "pinned": "2026-09-20T15:31:56Z"
-   },
-   {
-    "code": "RR",
-    "in_use": "2026-09-20T18:20:09Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T12:02:54Z",
-    "name": "Runyankore",
-    "pinned": "2026-09-20T18:20:09Z"
-   },
-   {
-    "code": "FID",
-    "in_use": "2026-09-20T19:41:14Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T06:06:10Z",
-    "name": "Finnish Sign Language",
-    "pinned": "2026-09-20T19:41:14Z"
-   },
-   {
-    "code": "ASL",
-    "in_use": "2026-09-20T22:44:18Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T10:43:34Z",
-    "name": "American Sign Language",
-    "pinned": "2026-09-20T22:44:18Z"
-   },
-   {
-    "code": "CHC",
-    "in_use": "2026-09-21T06:52:16Z",
-    "in_use_source": "api",
-    "live": "2026-09-24T01:03:51Z",
-    "name": "Chinese Cantonese (Traditional)",
-    "pinned": "2026-09-21T06:52:03Z"
-   },
-   {
-    "code": "LF",
-    "in_use": "2026-09-21T07:39:18Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T00:12:32Z",
-    "name": "Drehu",
-    "pinned": "2026-09-21T07:39:18Z"
-   },
-   {
-    "code": "KO",
-    "in_use": "2026-09-21T08:03:06Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T13:52:08Z",
-    "name": "Korean",
-    "pinned": "2026-09-21T08:03:06Z"
-   },
-   {
-    "code": "MR",
-    "in_use": "2026-09-21T08:33:42Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T03:20:51Z",
-    "name": "Marathi",
-    "pinned": "2026-09-21T08:33:42Z"
-   },
-   {
-    "code": "CNS",
-    "in_use": "2026-09-21T08:58:26Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-24T01:03:59Z",
-    "name": "Chinese Cantonese (Simplified)",
-    "pinned": "2026-09-21T08:58:26Z"
-   },
-   {
-    "code": "IN",
-    "in_use": "2026-09-21T12:10:51Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T04:49:20Z",
-    "name": "Indonesian",
-    "pinned": "2026-09-21T12:10:51Z"
-   },
-   {
-    "code": "EWN",
-    "in_use": "2026-09-21T12:32:19Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T15:07:22Z",
-    "name": "Ewondo",
-    "pinned": "2026-09-21T12:32:19Z"
-   },
-   {
-    "code": "P",
-    "in_use": "2026-09-21T12:43:15Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T13:33:17Z",
-    "name": "Polish",
-    "pinned": "2026-09-21T12:43:15Z"
-   },
-   {
-    "code": "HWP",
-    "in_use": "2026-09-21T13:00:17Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-21T19:54:51Z",
-    "name": "Hawai’i Pidgin",
-    "pinned": "2026-09-21T13:00:17Z"
-   },
-   {
-    "code": "DM",
-    "in_use": "2026-09-21T14:53:23Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T05:51:59Z",
-    "name": "Sidama",
-    "pinned": "2026-09-21T14:53:23Z"
-   },
-   {
-    "code": "TI",
-    "in_use": "2026-09-21T17:14:50Z",
-    "in_use_source": "api",
-    "live": "2026-09-22T07:34:36Z",
-    "name": "Tigrinya",
-    "pinned": "2026-09-21T17:14:43Z"
-   },
-   {
-    "code": "LSC",
-    "in_use": "2026-09-21T21:54:54Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T13:59:10Z",
-    "name": "Colombian Sign Language",
-    "pinned": "2026-09-21T21:54:54Z"
-   },
-   {
-    "code": "CT",
-    "in_use": "2026-09-22T07:05:21Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T09:14:35Z",
-    "name": "Chitonga (Malawi)",
-    "pinned": "2026-09-22T07:05:21Z"
-   },
-   {
-    "code": "HK",
-    "in_use": "2026-09-22T08:36:09Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T05:17:26Z",
-    "name": "Chin (Hakha)",
-    "pinned": "2026-09-22T08:36:09Z"
-   },
-   {
-    "code": "KU",
-    "in_use": "2026-09-22T10:14:06Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T15:37:41Z",
-    "name": "Kiluba",
-    "pinned": "2026-09-22T10:14:06Z"
-   },
-   {
-    "code": "U",
-    "in_use": "2026-09-22T13:04:28Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T06:07:04Z",
-    "name": "Russian",
-    "pinned": "2026-09-22T13:04:28Z"
-   },
-   {
-    "code": "REA",
-    "in_use": "2026-09-22T13:57:11Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T06:27:33Z",
-    "name": "Armenian",
-    "pinned": "2026-09-22T13:57:11Z"
-   },
-   {
-    "code": "MG",
-    "in_use": "2026-09-22T14:22:35Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-22T15:37:37Z",
-    "name": "Malagasy",
-    "pinned": "2026-09-22T14:22:35Z"
-   },
-   {
-    "code": "YA",
-    "in_use": "2026-09-22T16:39:02Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T12:35:24Z",
-    "name": "Chiyao",
-    "pinned": "2026-09-22T16:39:02Z"
-   },
-   {
-    "code": "ZS",
-    "in_use": "2026-09-22T20:18:21Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T13:02:36Z",
-    "name": "Swahili (Congo)",
-    "pinned": "2026-09-22T20:18:21Z"
-   },
-   {
-    "code": "CC",
-    "in_use": "2026-09-23T03:17:36Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T07:02:18Z",
-    "name": "Chavacano",
-    "pinned": "2026-09-23T03:17:36Z"
-   },
-   {
-    "code": "SIL",
-    "in_use": "2026-09-23T09:12:56Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T09:49:25Z",
-    "name": "Thai Sign Language",
-    "pinned": "2026-09-23T09:12:56Z"
-   },
-   {
-    "code": "KIT",
-    "in_use": "2026-09-23T12:07:15Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T14:10:15Z",
-    "name": "Kituba",
-    "pinned": "2026-09-23T12:07:15Z"
-   },
-   {
-    "code": "CML",
-    "in_use": "2026-09-23T12:23:43Z",
-    "in_use_source": "api",
-    "live": "2026-09-23T13:52:28Z",
-    "name": "Cameroon Sign Language",
-    "pinned": "2026-09-22T14:09:50Z"
-   },
-   {
-    "code": "QUL",
-    "in_use": "2026-09-23T18:51:01Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-23T19:07:45Z",
-    "name": "Quechua (Huallaga Huánuco)",
-    "pinned": "2026-09-23T18:51:01Z"
-   },
-   {
-    "code": "CHW",
-    "in_use": "2026-09-24T02:34:46Z",
-    "in_use_source": "file_estimated",
-    "live": "2026-09-24T08:22:48Z",
-    "name": "Min Nan (Taiwan)",
-    "pinned": "2026-09-24T02:34:46Z"
-   }
-  ],
-  "files_count": 253,
+  "files_count": 256,
   "last_full_verification": "2026-09-24T08:43:27Z",
   "listing_count": 243,
   "listing_lag": [],
-  "missing_items": [],
-  "pub_media_unavailable": null,
-  "verified_count": 253
+  "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T08:28:24Z",
+ "last_checked": "2026-09-24T08:58:30Z",
  "pending": [
   {
    "code": "ABB",
@@ -5596,15 +5199,6 @@
    "vernacular": "Liberian English"
   },
   {
-   "code": "L",
-   "direction": "ltr",
-   "locale": "lt",
-   "name": "Lithuanian",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "lietuvių"
-  },
-  {
    "code": "LWX",
    "direction": "ltr",
    "locale": "pdt",
@@ -5639,15 +5233,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Dholuo"
-  },
-  {
-   "code": "MAC",
-   "direction": "ltr",
-   "locale": "vmw",
-   "name": "Macua",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Emakhuwa"
   },
   {
    "code": "TTM",
@@ -5909,15 +5494,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "náhuatl de Veracruz"
-  },
-  {
-   "code": "NDA",
-   "direction": "ltr",
-   "locale": "ndc",
-   "name": "Ndau",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Cindau"
   },
   {
    "code": "NDW",
@@ -14802,6 +14378,104 @@
    "title": "۲۰۲۶‏:‏‏ گزارشی از هیئت اداره‌کننده—شمارهٔ ۶‏",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=PR",
    "vernacular": "فارسی"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MAC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T08:28:27Z",
+   "files_at": "2026-09-24T08:28:27Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T08:28:27Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T08:58:30Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "vmw",
+   "name": "Macua",
+   "published_at": "2026-09-24T08:28:27Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T08:28:27Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Iviidiyu",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MAC",
+   "vernacular": "Emakhuwa"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "L",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T08:30:49Z",
+   "files_at": "2026-09-24T08:30:49Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T08:30:49Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T08:58:30Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "lt",
+   "name": "Lithuanian",
+   "published_at": "2026-09-24T08:30:49Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T08:30:49Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 m. Vadovaujančiosios tarybos pranešimas Nr. 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=L",
+   "vernacular": "lietuvių"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NDA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T08:40:08Z",
+   "files_at": "2026-09-24T08:40:08Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T08:40:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T08:58:30Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ndc",
+   "name": "Ndau",
+   "published_at": "2026-09-24T08:40:08Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T08:40:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vhidhiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NDA",
+   "vernacular": "Cindau"
   }
  ],
  "removed": [],
@@ -14812,16 +14486,16 @@
  },
  "stats": {
   "added_1h": 5,
-  "added_24h": 68,
-  "added_4h": 9,
+  "added_24h": 69,
+  "added_4h": 11,
   "catalog_count": 243,
-  "catalog_lag": 10,
+  "catalog_lag": 13,
   "catalog_percent": 54.1,
-  "days_since_release": 5.77,
-  "pending_count": 196,
-  "percent": 56.3,
-  "published_count": 253,
-  "publisher_percent": 90.8,
+  "days_since_release": 5.79,
+  "pending_count": 193,
+  "percent": 57.0,
+  "published_count": 256,
+  "publisher_percent": 90.9,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
