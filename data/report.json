@@ -957,21 +957,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 2,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 2
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 2,
   "catalogued": 238,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 205,
+  "file_times": 206,
   "observed_times": 0,
-  "sign_languages": 46
+  "sign_languages": 47
  },
  "events": [
   {
@@ -2718,6 +2718,13 @@
      "source": "file_estimated"
     },
     {
+     "at": "2026-09-23T09:02:56Z",
+     "code": "INI",
+     "in_catalog": false,
+     "name": "Indonesian Sign Language",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-23T09:11:05Z",
      "code": "PGW",
      "in_catalog": true,
@@ -2739,7 +2746,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 190,
+   "count_after": 191,
    "t": "2026-09-23T09:00:00Z"
   },
   {
@@ -2759,7 +2766,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 192,
+   "count_after": 193,
    "t": "2026-09-23T10:00:00Z"
   },
   {
@@ -2814,7 +2821,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 199,
+   "count_after": 200,
    "t": "2026-09-23T11:00:00Z"
   },
   {
@@ -2897,7 +2904,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 210,
+   "count_after": 211,
    "t": "2026-09-23T12:00:00Z"
   },
   {
@@ -2945,7 +2952,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 216,
+   "count_after": 217,
    "t": "2026-09-23T13:00:00Z"
   },
   {
@@ -2986,7 +2993,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 221,
+   "count_after": 222,
    "t": "2026-09-23T14:00:00Z"
   },
   {
@@ -3013,7 +3020,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 224,
+   "count_after": 225,
    "t": "2026-09-23T15:00:00Z"
   },
   {
@@ -3061,7 +3068,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 230,
+   "count_after": 231,
    "t": "2026-09-23T16:00:00Z"
   },
   {
@@ -3081,7 +3088,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 232,
+   "count_after": 233,
    "t": "2026-09-23T17:00:00Z"
   },
   {
@@ -3115,7 +3122,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 236,
+   "count_after": 237,
    "t": "2026-09-23T18:00:00Z"
   },
   {
@@ -3128,7 +3135,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 237,
+   "count_after": 238,
    "t": "2026-09-23T20:00:00Z"
   },
   {
@@ -3141,7 +3148,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 238,
+   "count_after": 239,
    "t": "2026-09-23T21:00:00Z"
   },
   {
@@ -3154,11 +3161,11 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 239,
+   "count_after": 240,
    "t": "2026-09-24T00:00:00Z"
   }
  ],
- "generated": "2026-09-24T00:57:46Z",
+ "generated": "2026-09-24T01:57:52Z",
  "history": [
   {
    "count": 1,
@@ -3910,210 +3917,214 @@
   },
   {
    "count": 188,
-   "t": "2026-09-23T09:11:05Z"
+   "t": "2026-09-23T09:02:56Z"
   },
   {
    "count": 189,
-   "t": "2026-09-23T09:12:56Z"
+   "t": "2026-09-23T09:11:05Z"
   },
   {
    "count": 190,
-   "t": "2026-09-23T09:27:43Z"
+   "t": "2026-09-23T09:12:56Z"
   },
   {
    "count": 191,
-   "t": "2026-09-23T10:05:14Z"
+   "t": "2026-09-23T09:27:43Z"
   },
   {
    "count": 192,
-   "t": "2026-09-23T10:11:34Z"
+   "t": "2026-09-23T10:05:14Z"
   },
   {
    "count": 193,
-   "t": "2026-09-23T11:03:22Z"
+   "t": "2026-09-23T10:11:34Z"
   },
   {
    "count": 194,
-   "t": "2026-09-23T11:15:05Z"
+   "t": "2026-09-23T11:03:22Z"
   },
   {
    "count": 195,
-   "t": "2026-09-23T11:31:55Z"
+   "t": "2026-09-23T11:15:05Z"
   },
   {
    "count": 196,
-   "t": "2026-09-23T11:32:09Z"
+   "t": "2026-09-23T11:31:55Z"
   },
   {
    "count": 197,
-   "t": "2026-09-23T11:37:28Z"
+   "t": "2026-09-23T11:32:09Z"
   },
   {
    "count": 198,
-   "t": "2026-09-23T11:37:36Z"
+   "t": "2026-09-23T11:37:28Z"
   },
   {
    "count": 199,
-   "t": "2026-09-23T11:45:19Z"
+   "t": "2026-09-23T11:37:36Z"
   },
   {
    "count": 200,
-   "t": "2026-09-23T12:07:15Z"
+   "t": "2026-09-23T11:45:19Z"
   },
   {
    "count": 201,
-   "t": "2026-09-23T12:07:25Z"
+   "t": "2026-09-23T12:07:15Z"
   },
   {
    "count": 202,
-   "t": "2026-09-23T12:11:34Z"
+   "t": "2026-09-23T12:07:25Z"
   },
   {
    "count": 203,
-   "t": "2026-09-23T12:22:38Z"
+   "t": "2026-09-23T12:11:34Z"
   },
   {
    "count": 204,
-   "t": "2026-09-23T12:23:43Z"
+   "t": "2026-09-23T12:22:38Z"
   },
   {
    "count": 205,
-   "t": "2026-09-23T12:24:30Z"
+   "t": "2026-09-23T12:23:43Z"
   },
   {
    "count": 206,
-   "t": "2026-09-23T12:38:21Z"
+   "t": "2026-09-23T12:24:30Z"
   },
   {
    "count": 207,
-   "t": "2026-09-23T12:42:23Z"
+   "t": "2026-09-23T12:38:21Z"
   },
   {
    "count": 208,
-   "t": "2026-09-23T12:48:23Z"
+   "t": "2026-09-23T12:42:23Z"
   },
   {
    "count": 209,
-   "t": "2026-09-23T12:50:09Z"
+   "t": "2026-09-23T12:48:23Z"
   },
   {
    "count": 210,
-   "t": "2026-09-23T12:58:41Z"
+   "t": "2026-09-23T12:50:09Z"
   },
   {
    "count": 211,
-   "t": "2026-09-23T13:04:45Z"
+   "t": "2026-09-23T12:58:41Z"
   },
   {
    "count": 212,
-   "t": "2026-09-23T13:08:13Z"
+   "t": "2026-09-23T13:04:45Z"
   },
   {
    "count": 213,
-   "t": "2026-09-23T13:11:02Z"
+   "t": "2026-09-23T13:08:13Z"
   },
   {
    "count": 214,
-   "t": "2026-09-23T13:20:48Z"
+   "t": "2026-09-23T13:11:02Z"
   },
   {
    "count": 215,
-   "t": "2026-09-23T13:32:31Z"
+   "t": "2026-09-23T13:20:48Z"
   },
   {
    "count": 216,
-   "t": "2026-09-23T13:43:05Z"
+   "t": "2026-09-23T13:32:31Z"
   },
   {
    "count": 217,
-   "t": "2026-09-23T14:01:02Z"
+   "t": "2026-09-23T13:43:05Z"
   },
   {
    "count": 218,
-   "t": "2026-09-23T14:20:47Z"
+   "t": "2026-09-23T14:01:02Z"
   },
   {
    "count": 219,
-   "t": "2026-09-23T14:22:15Z"
+   "t": "2026-09-23T14:20:47Z"
   },
   {
    "count": 220,
-   "t": "2026-09-23T14:30:44Z"
+   "t": "2026-09-23T14:22:15Z"
   },
   {
    "count": 221,
-   "t": "2026-09-23T14:58:50Z"
+   "t": "2026-09-23T14:30:44Z"
   },
   {
    "count": 222,
-   "t": "2026-09-23T15:01:47Z"
+   "t": "2026-09-23T14:58:50Z"
   },
   {
    "count": 223,
-   "t": "2026-09-23T15:06:08Z"
+   "t": "2026-09-23T15:01:47Z"
   },
   {
    "count": 224,
-   "t": "2026-09-23T15:08:24Z"
+   "t": "2026-09-23T15:06:08Z"
   },
   {
    "count": 225,
-   "t": "2026-09-23T16:05:34Z"
+   "t": "2026-09-23T15:08:24Z"
   },
   {
    "count": 226,
-   "t": "2026-09-23T16:08:57Z"
+   "t": "2026-09-23T16:05:34Z"
   },
   {
    "count": 227,
-   "t": "2026-09-23T16:26:04Z"
+   "t": "2026-09-23T16:08:57Z"
   },
   {
    "count": 228,
-   "t": "2026-09-23T16:36:20Z"
+   "t": "2026-09-23T16:26:04Z"
   },
   {
    "count": 229,
-   "t": "2026-09-23T16:50:59Z"
+   "t": "2026-09-23T16:36:20Z"
   },
   {
    "count": 230,
-   "t": "2026-09-23T16:52:26Z"
+   "t": "2026-09-23T16:50:59Z"
   },
   {
    "count": 231,
-   "t": "2026-09-23T17:03:51Z"
+   "t": "2026-09-23T16:52:26Z"
   },
   {
    "count": 232,
-   "t": "2026-09-23T17:17:33Z"
+   "t": "2026-09-23T17:03:51Z"
   },
   {
    "count": 233,
-   "t": "2026-09-23T18:11:19Z"
+   "t": "2026-09-23T17:17:33Z"
   },
   {
    "count": 234,
-   "t": "2026-09-23T18:39:23Z"
+   "t": "2026-09-23T18:11:19Z"
   },
   {
    "count": 235,
-   "t": "2026-09-23T18:51:01Z"
+   "t": "2026-09-23T18:39:23Z"
   },
   {
    "count": 236,
-   "t": "2026-09-23T18:56:08Z"
+   "t": "2026-09-23T18:51:01Z"
   },
   {
    "count": 237,
-   "t": "2026-09-23T20:46:25Z"
+   "t": "2026-09-23T18:56:08Z"
   },
   {
    "count": 238,
-   "t": "2026-09-23T21:15:27Z"
+   "t": "2026-09-23T20:46:25Z"
   },
   {
    "count": 239,
+   "t": "2026-09-23T21:15:27Z"
+  },
+  {
+   "count": 240,
    "t": "2026-09-24T00:22:54Z"
   }
  ],
@@ -4128,13 +4139,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 239,
+  "files_count": 240,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 238,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T00:57:46Z",
+ "last_checked": "2026-09-24T01:57:52Z",
  "pending": [
   {
    "code": "ABB",
@@ -4765,15 +4776,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Iloko"
-  },
-  {
-   "code": "INI",
-   "direction": "ltr",
-   "locale": "inl",
-   "name": "Indonesian Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Bahasa Isyarat Indonesia"
   },
   {
    "code": "CRE",
@@ -12135,6 +12137,38 @@
    "vernacular": "Nkoya"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "INI",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T09:02:56Z",
+   "files_at": "2026-09-23T09:02:56Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T09:02:56Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T01:57:52Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "inl",
+   "name": "Indonesian Sign Language",
+   "published_at": "2026-09-23T09:02:56Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T09:02:56Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Laporan Badan Pimpinan 2026 (Bagian 6)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=INI",
+   "vernacular": "Bahasa Isyarat Indonesia"
+  },
+  {
    "api_published_at": "2026-09-23T09:11:19Z",
    "beyond_baseline": false,
    "catalog_at": "2026-09-23T09:11:19Z",
@@ -13832,16 +13866,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
+  "added_1h": 0,
   "added_24h": 67,
-  "added_4h": 2,
+  "added_4h": 1,
   "catalog_count": 238,
-  "catalog_lag": 1,
+  "catalog_lag": 2,
   "catalog_percent": 53.0,
-  "days_since_release": 5.46,
-  "pending_count": 210,
-  "percent": 53.2,
-  "published_count": 239,
+  "days_since_release": 5.5,
+  "pending_count": 209,
+  "percent": 53.5,
+  "published_count": 240,
   "publisher_percent": 90.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
