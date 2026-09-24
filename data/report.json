@@ -1045,19 +1045,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 7,
+  "last_checked_count": 9,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 4,
   "size": 40,
-  "unlisted_total": 7
+  "unlisted_total": 9
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 7,
+  "awaiting_catalogue": 9,
   "catalogued": 260,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 233,
+  "file_times": 235,
   "observed_times": 0,
   "sign_languages": 52
  },
@@ -3494,9 +3494,29 @@
    ],
    "count_after": 267,
    "t": "2026-09-24T11:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-24T12:26:12Z",
+     "code": "AF",
+     "in_catalog": false,
+     "name": "Afrikaans",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T12:45:55Z",
+     "code": "AC",
+     "in_catalog": false,
+     "name": "Acholi",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 269,
+   "t": "2026-09-24T12:00:00Z"
   }
  ],
- "generated": "2026-09-24T12:22:45Z",
+ "generated": "2026-09-24T12:52:48Z",
  "history": [
   {
    "count": 1,
@@ -4565,6 +4585,14 @@
   {
    "count": 267,
    "t": "2026-09-24T11:54:15Z"
+  },
+  {
+   "count": 268,
+   "t": "2026-09-24T12:26:12Z"
+  },
+  {
+   "count": 269,
+   "t": "2026-09-24T12:45:55Z"
   }
  ],
  "integrity": {
@@ -4578,13 +4606,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "files_count": 267,
+  "files_count": 269,
   "last_full_verification": "2026-09-24T08:43:27Z",
   "listing_count": 260,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T12:22:45Z",
+ "last_checked": "2026-09-24T12:52:48Z",
  "pending": [
   {
    "code": "ABB",
@@ -4603,24 +4631,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Abua"
-  },
-  {
-   "code": "AC",
-   "direction": "ltr",
-   "locale": "ach",
-   "name": "Acholi",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Acholi"
-  },
-  {
-   "code": "AF",
-   "direction": "ltr",
-   "locale": "af",
-   "name": "Afrikaans",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Afrikaans"
   },
   {
    "code": "AJG",
@@ -14941,6 +14951,71 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NI",
    "vernacular": "Nias"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "AF",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T12:26:12Z",
+   "files_at": "2026-09-24T12:26:12Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T12:26:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T12:52:48Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "af",
+   "name": "Afrikaans",
+   "published_at": "2026-09-24T12:26:12Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T12:26:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Jongste nuus van die Bestuursliggaam vir 2026 – Nr. 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AF",
+   "vernacular": "Afrikaans"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "AC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T12:45:55Z",
+   "files_at": "2026-09-24T12:45:55Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T12:45:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T12:52:48Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ach",
+   "name": "Acholi",
+   "published_at": "2026-09-24T12:45:55Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T12:45:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidio",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AC",
+   "vernacular": "Acholi"
   }
  ],
  "removed": [],
@@ -14950,17 +15025,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 4,
-  "added_24h": 62,
-  "added_4h": 13,
+  "added_1h": 3,
+  "added_24h": 58,
+  "added_4h": 11,
   "catalog_count": 260,
-  "catalog_lag": 7,
+  "catalog_lag": 9,
   "catalog_percent": 57.9,
-  "days_since_release": 5.93,
-  "pending_count": 182,
-  "percent": 59.5,
-  "published_count": 267,
-  "publisher_percent": 91.1,
+  "days_since_release": 5.95,
+  "pending_count": 180,
+  "percent": 59.9,
+  "published_count": 269,
+  "publisher_percent": 91.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
