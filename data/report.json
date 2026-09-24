@@ -1045,21 +1045,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 9,
+  "last_checked_count": 12,
   "newly_catalogued": [],
-  "offset": 4,
+  "offset": 8,
   "size": 40,
-  "unlisted_total": 9
+  "unlisted_total": 12
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 9,
+  "awaiting_catalogue": 12,
   "catalogued": 260,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 235,
+  "file_times": 238,
   "observed_times": 0,
-  "sign_languages": 52
+  "sign_languages": 54
  },
  "events": [
   {
@@ -3236,6 +3236,19 @@
   {
    "added": [
     {
+     "at": "2026-09-23T19:56:56Z",
+     "code": "BRS",
+     "in_catalog": false,
+     "name": "Burundi Sign Language",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 240,
+   "t": "2026-09-23T19:00:00Z"
+  },
+  {
+   "added": [
+    {
      "at": "2026-09-23T20:46:25Z",
      "code": "SHO",
      "in_catalog": true,
@@ -3243,7 +3256,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 240,
+   "count_after": 241,
    "t": "2026-09-23T20:00:00Z"
   },
   {
@@ -3256,7 +3269,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 241,
+   "count_after": 242,
    "t": "2026-09-23T21:00:00Z"
   },
   {
@@ -3269,7 +3282,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 242,
+   "count_after": 243,
    "t": "2026-09-24T00:00:00Z"
   },
   {
@@ -3289,7 +3302,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 244,
+   "count_after": 245,
    "t": "2026-09-24T02:00:00Z"
   },
   {
@@ -3309,7 +3322,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 246,
+   "count_after": 247,
    "t": "2026-09-24T04:00:00Z"
   },
   {
@@ -3322,7 +3335,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 247,
+   "count_after": 248,
    "t": "2026-09-24T06:00:00Z"
   },
   {
@@ -3363,7 +3376,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 252,
+   "count_after": 253,
    "t": "2026-09-24T07:00:00Z"
   },
   {
@@ -3411,7 +3424,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 258,
+   "count_after": 259,
    "t": "2026-09-24T08:00:00Z"
   },
   {
@@ -3445,7 +3458,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 262,
+   "count_after": 263,
    "t": "2026-09-24T09:00:00Z"
   },
   {
@@ -3458,7 +3471,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 263,
+   "count_after": 264,
    "t": "2026-09-24T10:00:00Z"
   },
   {
@@ -3492,7 +3505,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 267,
+   "count_after": 268,
    "t": "2026-09-24T11:00:00Z"
   },
   {
@@ -3512,11 +3525,31 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 269,
+   "count_after": 270,
    "t": "2026-09-24T12:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-24T13:10:19Z",
+     "code": "SLM",
+     "in_catalog": false,
+     "name": "Mozambican Sign Language",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T13:13:16Z",
+     "code": "NBL",
+     "in_catalog": false,
+     "name": "Ndebele",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 272,
+   "t": "2026-09-24T13:00:00Z"
   }
  ],
- "generated": "2026-09-24T12:52:48Z",
+ "generated": "2026-09-24T13:22:52Z",
  "history": [
   {
    "count": 1,
@@ -4476,123 +4509,135 @@
   },
   {
    "count": 240,
-   "t": "2026-09-23T20:46:25Z"
+   "t": "2026-09-23T19:56:56Z"
   },
   {
    "count": 241,
-   "t": "2026-09-23T21:15:27Z"
+   "t": "2026-09-23T20:46:25Z"
   },
   {
    "count": 242,
-   "t": "2026-09-24T00:22:54Z"
+   "t": "2026-09-23T21:15:27Z"
   },
   {
    "count": 243,
-   "t": "2026-09-24T02:34:46Z"
+   "t": "2026-09-24T00:22:54Z"
   },
   {
    "count": 244,
-   "t": "2026-09-24T02:47:04Z"
+   "t": "2026-09-24T02:34:46Z"
   },
   {
    "count": 245,
-   "t": "2026-09-24T04:18:26Z"
+   "t": "2026-09-24T02:47:04Z"
   },
   {
    "count": 246,
-   "t": "2026-09-24T04:30:27Z"
+   "t": "2026-09-24T04:18:26Z"
   },
   {
    "count": 247,
-   "t": "2026-09-24T06:16:52Z"
+   "t": "2026-09-24T04:30:27Z"
   },
   {
    "count": 248,
-   "t": "2026-09-24T07:19:32Z"
+   "t": "2026-09-24T06:16:52Z"
   },
   {
    "count": 249,
-   "t": "2026-09-24T07:23:32Z"
+   "t": "2026-09-24T07:19:32Z"
   },
   {
    "count": 250,
-   "t": "2026-09-24T07:46:53Z"
+   "t": "2026-09-24T07:23:32Z"
   },
   {
    "count": 251,
-   "t": "2026-09-24T07:51:34Z"
+   "t": "2026-09-24T07:46:53Z"
   },
   {
    "count": 252,
-   "t": "2026-09-24T07:54:40Z"
+   "t": "2026-09-24T07:51:34Z"
   },
   {
    "count": 253,
-   "t": "2026-09-24T08:02:28Z"
+   "t": "2026-09-24T07:54:40Z"
   },
   {
    "count": 254,
-   "t": "2026-09-24T08:13:31Z"
+   "t": "2026-09-24T08:02:28Z"
   },
   {
    "count": 255,
-   "t": "2026-09-24T08:28:27Z"
+   "t": "2026-09-24T08:13:31Z"
   },
   {
    "count": 256,
-   "t": "2026-09-24T08:30:49Z"
+   "t": "2026-09-24T08:28:27Z"
   },
   {
    "count": 257,
-   "t": "2026-09-24T08:40:08Z"
+   "t": "2026-09-24T08:30:49Z"
   },
   {
    "count": 258,
-   "t": "2026-09-24T08:47:24Z"
+   "t": "2026-09-24T08:40:08Z"
   },
   {
    "count": 259,
-   "t": "2026-09-24T09:01:25Z"
+   "t": "2026-09-24T08:47:24Z"
   },
   {
    "count": 260,
-   "t": "2026-09-24T09:09:41Z"
+   "t": "2026-09-24T09:01:25Z"
   },
   {
    "count": 261,
-   "t": "2026-09-24T09:10:54Z"
+   "t": "2026-09-24T09:09:41Z"
   },
   {
    "count": 262,
-   "t": "2026-09-24T09:23:23Z"
+   "t": "2026-09-24T09:10:54Z"
   },
   {
    "count": 263,
-   "t": "2026-09-24T10:07:46Z"
+   "t": "2026-09-24T09:23:23Z"
   },
   {
    "count": 264,
-   "t": "2026-09-24T11:33:46Z"
+   "t": "2026-09-24T10:07:46Z"
   },
   {
    "count": 265,
-   "t": "2026-09-24T11:39:47Z"
+   "t": "2026-09-24T11:33:46Z"
   },
   {
    "count": 266,
-   "t": "2026-09-24T11:50:19Z"
+   "t": "2026-09-24T11:39:47Z"
   },
   {
    "count": 267,
-   "t": "2026-09-24T11:54:15Z"
+   "t": "2026-09-24T11:50:19Z"
   },
   {
    "count": 268,
-   "t": "2026-09-24T12:26:12Z"
+   "t": "2026-09-24T11:54:15Z"
   },
   {
    "count": 269,
+   "t": "2026-09-24T12:26:12Z"
+  },
+  {
+   "count": 270,
    "t": "2026-09-24T12:45:55Z"
+  },
+  {
+   "count": 271,
+   "t": "2026-09-24T13:10:19Z"
+  },
+  {
+   "count": 272,
+   "t": "2026-09-24T13:13:16Z"
   }
  ],
  "integrity": {
@@ -4606,13 +4651,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "files_count": 269,
+  "files_count": 272,
   "last_full_verification": "2026-09-24T08:43:27Z",
   "listing_count": 260,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T12:52:48Z",
+ "last_checked": "2026-09-24T13:22:52Z",
  "pending": [
   {
    "code": "ABB",
@@ -4748,15 +4793,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Bulu"
-  },
-  {
-   "code": "BRS",
-   "direction": "ltr",
-   "locale": "sgn-bi",
-   "name": "Burundi Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Langue des signes burundaise"
   },
   {
    "code": "ET",
@@ -5623,15 +5659,6 @@
    "vernacular": "Moussey"
   },
   {
-   "code": "SLM",
-   "direction": "ltr",
-   "locale": "mzy",
-   "name": "Mozambican Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Língua de Sinais Moçambicana"
-  },
-  {
    "code": "NHC",
    "direction": "ltr",
    "locale": "ncx",
@@ -5675,15 +5702,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ndau (Western)"
-  },
-  {
-   "code": "NBL",
-   "direction": "ltr",
-   "locale": "nr",
-   "name": "Ndebele",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "IsiNdebele"
   },
   {
    "code": "OD",
@@ -14042,6 +14060,39 @@
    "vernacular": "Isoko"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "BRS",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-23T19:56:56Z",
+   "files_at": "2026-09-23T19:56:56Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-23T19:56:56Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T13:22:52Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "sgn-bi",
+   "name": "Burundi Sign Language",
+   "published_at": "2026-09-23T19:56:56Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-23T19:56:56Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Vidéo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BRS",
+   "vernacular": "Langue des signes burundaise"
+  },
+  {
    "api_published_at": "2026-09-23T20:46:36Z",
    "beyond_baseline": false,
    "catalog_at": "2026-09-23T20:46:36Z",
@@ -15016,6 +15067,72 @@
    "title": "Vidio",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AC",
    "vernacular": "Acholi"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SLM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T13:10:19Z",
+   "files_at": "2026-09-24T13:10:19Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T13:10:19Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T13:22:52Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "mzy",
+   "name": "Mozambican Sign Language",
+   "published_at": "2026-09-24T13:10:19Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T13:10:19Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Vídeo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SLM",
+   "vernacular": "Língua de Sinais Moçambicana"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NBL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T13:13:16Z",
+   "files_at": "2026-09-24T13:13:16Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T13:13:16Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T13:22:52Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nr",
+   "name": "Ndebele",
+   "published_at": "2026-09-24T13:13:16Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T13:13:16Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Ividiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NBL",
+   "vernacular": "IsiNdebele"
   }
  ],
  "removed": [],
@@ -15025,16 +15142,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
-  "added_24h": 58,
-  "added_4h": 11,
+  "added_1h": 4,
+  "added_24h": 56,
+  "added_4h": 10,
   "catalog_count": 260,
-  "catalog_lag": 9,
+  "catalog_lag": 12,
   "catalog_percent": 57.9,
-  "days_since_release": 5.95,
-  "pending_count": 180,
-  "percent": 59.9,
-  "published_count": 269,
+  "days_since_release": 5.97,
+  "pending_count": 177,
+  "percent": 60.6,
+  "published_count": 272,
   "publisher_percent": 91.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
