@@ -1182,19 +1182,43 @@
   {
    "count": 295,
    "t": "2026-09-24T16:54:50Z"
+  },
+  {
+   "count": 296,
+   "t": "2026-09-24T19:05:46Z"
+  },
+  {
+   "count": 297,
+   "t": "2026-09-24T19:12:06Z"
+  },
+  {
+   "count": 298,
+   "t": "2026-09-24T19:16:53Z"
+  },
+  {
+   "count": 299,
+   "t": "2026-09-24T19:17:26Z"
+  },
+  {
+   "count": 300,
+   "t": "2026-09-24T19:32:30Z"
+  },
+  {
+   "count": 301,
+   "t": "2026-09-24T20:29:19Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 0
  },
  "counts": {
-  "api_times": 42,
-  "awaiting_catalogue": 2,
-  "catalogued": 295,
+  "api_times": 46,
+  "awaiting_catalogue": 0,
+  "catalogued": 301,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 254,
@@ -3872,23 +3896,57 @@
     {
      "at": "2026-09-24T19:05:36Z",
      "code": "QUA",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Quechua (Ayacucho)",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-24T19:11:51Z",
      "code": "MIS",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Miskito",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T19:16:53Z",
+     "code": "QC",
+     "in_catalog": true,
+     "name": "Quiche",
+     "source": "api"
+    },
+    {
+     "at": "2026-09-24T19:17:26Z",
+     "code": "SHU",
+     "in_catalog": true,
+     "name": "Shuar",
+     "source": "api"
+    },
+    {
+     "at": "2026-09-24T19:32:30Z",
+     "code": "DGA",
+     "in_catalog": true,
+     "name": "Dagaare",
+     "source": "api"
     }
    ],
-   "count_after": 297,
+   "count_after": 300,
    "t": "2026-09-24T19:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-24T20:29:19Z",
+     "code": "TZE",
+     "in_catalog": true,
+     "name": "Tzeltal",
+     "source": "api"
+    }
+   ],
+   "count_after": 301,
+   "t": "2026-09-24T20:00:00Z"
   }
  ],
- "generated": "2026-09-24T19:15:16Z",
+ "generated": "2026-09-24T21:07:07Z",
  "history": [
   {
    "count": 1,
@@ -5077,6 +5135,22 @@
   {
    "count": 297,
    "t": "2026-09-24T19:11:51Z"
+  },
+  {
+   "count": 298,
+   "t": "2026-09-24T19:16:53Z"
+  },
+  {
+   "count": 299,
+   "t": "2026-09-24T19:17:26Z"
+  },
+  {
+   "count": 300,
+   "t": "2026-09-24T19:32:30Z"
+  },
+  {
+   "count": 301,
+   "t": "2026-09-24T20:29:19Z"
   }
  ],
  "integrity": {
@@ -5090,13 +5164,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "files_count": 297,
+  "files_count": 301,
   "last_full_verification": "2026-09-24T08:43:27Z",
-  "listing_count": 295,
+  "listing_count": 301,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T19:15:16Z",
+ "last_checked": "2026-09-24T21:07:07Z",
  "pending": [
   {
    "code": "ABB",
@@ -5322,15 +5396,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "lengua de señas costarricense"
-  },
-  {
-   "code": "DGA",
-   "direction": "ltr",
-   "locale": "dga",
-   "name": "Dagaare",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Dagaare"
   },
   {
    "code": "DI",
@@ -6107,15 +6172,6 @@
    "vernacular": "Quechua (Ancash)"
   },
   {
-   "code": "QC",
-   "direction": "ltr",
-   "locale": "quc",
-   "name": "Quiche",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "quiché"
-  },
-  {
    "code": "RNY",
    "direction": "ltr",
    "locale": "diu",
@@ -6375,15 +6431,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Tuvalu"
-  },
-  {
-   "code": "TZE",
-   "direction": "ltr",
-   "locale": "tzh",
-   "name": "Tzeltal",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "tseltal"
   },
   {
    "code": "UR",
@@ -16098,12 +16145,12 @@
    "vernacular": "Okpe"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-24T19:05:46Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-24T19:05:46Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-24T21:07:07Z",
    "code": "QUA",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -16115,9 +16162,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T19:05:36Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-24T19:15:16Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "quy",
    "name": "Quechua (Ayacucho)",
    "published_at": "2026-09-24T19:05:36Z",
@@ -16130,12 +16177,12 @@
    "vernacular": "Quechua (Ayacucho)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-24T19:12:06Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-24T19:12:06Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-24T21:07:07Z",
    "code": "MIS",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -16147,9 +16194,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T19:11:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-24T19:15:16Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "miq",
    "name": "Miskito",
    "published_at": "2026-09-24T19:11:51Z",
@@ -16160,6 +16207,135 @@
    "title": "2026 Tâ Bri Daknika wina diara raya #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MIS",
    "vernacular": "miskitu"
+  },
+  {
+   "api_published_at": "2026-09-24T19:16:53Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-24T19:16:53Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-24T21:07:07Z",
+   "code": "QC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T19:16:42Z",
+   "files_at": "2026-09-24T19:16:53Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-24T21:07:07Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "quc",
+   "name": "Quiche",
+   "published_at": "2026-09-24T19:16:53Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 | Informe 6 re ri Jupuq Ajkʼamal bʼe cho ronojel uwach Ulew",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=QC",
+   "vernacular": "quiché"
+  },
+  {
+   "api_published_at": "2026-09-24T19:17:26Z",
+   "beyond_baseline": true,
+   "catalog_at": "2026-09-24T19:17:26Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-24T21:07:07Z",
+   "code": "SHU",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T14:39:05Z",
+   "files_at": "2026-09-24T19:17:26Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-24T21:07:07Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "jiv",
+   "name": "Shuar",
+   "published_at": "2026-09-24T19:17:26Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Testigos de Jehová takatrin irunturar chichamprin ainia chichaman etserainiamu #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SHU",
+   "vernacular": "shuar"
+  },
+  {
+   "api_published_at": "2026-09-24T19:32:30Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-24T19:32:30Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-24T21:07:07Z",
+   "code": "DGA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T19:32:16Z",
+   "files_at": "2026-09-24T19:32:30Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-24T21:07:07Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "dga",
+   "name": "Dagaare",
+   "published_at": "2026-09-24T19:32:30Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Lantaa Zukaareba Duoro 4 Soba",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=DGA",
+   "vernacular": "Dagaare"
+  },
+  {
+   "api_published_at": "2026-09-24T20:29:19Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-24T20:29:19Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-24T21:07:07Z",
+   "code": "TZE",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T20:29:04Z",
+   "files_at": "2026-09-24T20:29:19Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-24T21:07:07Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "tzh",
+   "name": "Tzeltal",
+   "published_at": "2026-09-24T20:29:19Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 | Informe 6 yuʼun te Cuerpo Gobernante",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TZE",
+   "vernacular": "tseltal"
   }
  ],
  "removed": [],
@@ -16169,16 +16345,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 58,
-  "added_4h": 11,
-  "catalog_count": 295,
-  "catalog_lag": 2,
-  "catalog_percent": 65.7,
-  "days_since_release": 6.22,
-  "pending_count": 152,
-  "percent": 66.1,
-  "published_count": 297,
+  "added_1h": 1,
+  "added_24h": 60,
+  "added_4h": 6,
+  "catalog_count": 301,
+  "catalog_lag": 0,
+  "catalog_percent": 67.0,
+  "days_since_release": 6.3,
+  "pending_count": 148,
+  "percent": 67.0,
+  "published_count": 301,
   "publisher_percent": 92.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
