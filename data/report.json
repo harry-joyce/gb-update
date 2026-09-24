@@ -1101,21 +1101,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
-  "newly_catalogued": [
-   "LSQ"
-  ],
-  "offset": 0,
+  "last_checked_count": 6,
+  "newly_catalogued": [],
+  "offset": 4,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 6
  },
  "counts": {
   "api_times": 35,
-  "awaiting_catalogue": 3,
+  "awaiting_catalogue": 5,
   "catalogued": 274,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 241,
+  "file_times": 243,
   "observed_times": 0,
   "sign_languages": 55
  },
@@ -3413,6 +3411,13 @@
      "source": "file_estimated"
     },
     {
+     "at": "2026-09-24T07:34:33Z",
+     "code": "CIN",
+     "in_catalog": false,
+     "name": "Cinyanja",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-24T07:46:53Z",
      "code": "TPR",
      "in_catalog": true,
@@ -3434,7 +3439,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 253,
+   "count_after": 254,
    "t": "2026-09-24T07:00:00Z"
   },
   {
@@ -3482,7 +3487,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 259,
+   "count_after": 260,
    "t": "2026-09-24T08:00:00Z"
   },
   {
@@ -3516,7 +3521,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 263,
+   "count_after": 264,
    "t": "2026-09-24T09:00:00Z"
   },
   {
@@ -3529,7 +3534,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 264,
+   "count_after": 265,
    "t": "2026-09-24T10:00:00Z"
   },
   {
@@ -3570,7 +3575,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 269,
+   "count_after": 270,
    "t": "2026-09-24T11:00:00Z"
   },
   {
@@ -3590,7 +3595,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 271,
+   "count_after": 272,
    "t": "2026-09-24T12:00:00Z"
   },
   {
@@ -3638,11 +3643,24 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 277,
+   "count_after": 278,
    "t": "2026-09-24T13:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-24T14:13:28Z",
+     "code": "EG",
+     "in_catalog": false,
+     "name": "Gun",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 279,
+   "t": "2026-09-24T14:00:00Z"
   }
  ],
- "generated": "2026-09-24T13:52:54Z",
+ "generated": "2026-09-24T14:22:55Z",
  "history": [
   {
    "count": 1,
@@ -4646,111 +4664,119 @@
   },
   {
    "count": 251,
-   "t": "2026-09-24T07:46:53Z"
+   "t": "2026-09-24T07:34:33Z"
   },
   {
    "count": 252,
-   "t": "2026-09-24T07:51:34Z"
+   "t": "2026-09-24T07:46:53Z"
   },
   {
    "count": 253,
-   "t": "2026-09-24T07:54:40Z"
+   "t": "2026-09-24T07:51:34Z"
   },
   {
    "count": 254,
-   "t": "2026-09-24T08:02:28Z"
+   "t": "2026-09-24T07:54:40Z"
   },
   {
    "count": 255,
-   "t": "2026-09-24T08:13:31Z"
+   "t": "2026-09-24T08:02:28Z"
   },
   {
    "count": 256,
-   "t": "2026-09-24T08:28:27Z"
+   "t": "2026-09-24T08:13:31Z"
   },
   {
    "count": 257,
-   "t": "2026-09-24T08:30:49Z"
+   "t": "2026-09-24T08:28:27Z"
   },
   {
    "count": 258,
-   "t": "2026-09-24T08:40:08Z"
+   "t": "2026-09-24T08:30:49Z"
   },
   {
    "count": 259,
-   "t": "2026-09-24T08:47:24Z"
+   "t": "2026-09-24T08:40:08Z"
   },
   {
    "count": 260,
-   "t": "2026-09-24T09:01:25Z"
+   "t": "2026-09-24T08:47:24Z"
   },
   {
    "count": 261,
-   "t": "2026-09-24T09:09:41Z"
+   "t": "2026-09-24T09:01:25Z"
   },
   {
    "count": 262,
-   "t": "2026-09-24T09:10:54Z"
+   "t": "2026-09-24T09:09:41Z"
   },
   {
    "count": 263,
-   "t": "2026-09-24T09:23:23Z"
+   "t": "2026-09-24T09:10:54Z"
   },
   {
    "count": 264,
-   "t": "2026-09-24T10:07:46Z"
+   "t": "2026-09-24T09:23:23Z"
   },
   {
    "count": 265,
-   "t": "2026-09-24T11:30:25Z"
+   "t": "2026-09-24T10:07:46Z"
   },
   {
    "count": 266,
-   "t": "2026-09-24T11:33:46Z"
+   "t": "2026-09-24T11:30:25Z"
   },
   {
    "count": 267,
-   "t": "2026-09-24T11:39:47Z"
+   "t": "2026-09-24T11:33:46Z"
   },
   {
    "count": 268,
-   "t": "2026-09-24T11:50:19Z"
+   "t": "2026-09-24T11:39:47Z"
   },
   {
    "count": 269,
-   "t": "2026-09-24T11:54:15Z"
+   "t": "2026-09-24T11:50:19Z"
   },
   {
    "count": 270,
-   "t": "2026-09-24T12:26:12Z"
+   "t": "2026-09-24T11:54:15Z"
   },
   {
    "count": 271,
-   "t": "2026-09-24T12:45:55Z"
+   "t": "2026-09-24T12:26:12Z"
   },
   {
    "count": 272,
-   "t": "2026-09-24T13:10:19Z"
+   "t": "2026-09-24T12:45:55Z"
   },
   {
    "count": 273,
-   "t": "2026-09-24T13:13:16Z"
+   "t": "2026-09-24T13:10:19Z"
   },
   {
    "count": 274,
-   "t": "2026-09-24T13:30:29Z"
+   "t": "2026-09-24T13:13:16Z"
   },
   {
    "count": 275,
-   "t": "2026-09-24T13:35:39Z"
+   "t": "2026-09-24T13:30:29Z"
   },
   {
    "count": 276,
-   "t": "2026-09-24T13:36:51Z"
+   "t": "2026-09-24T13:35:39Z"
   },
   {
    "count": 277,
+   "t": "2026-09-24T13:36:51Z"
+  },
+  {
+   "count": 278,
    "t": "2026-09-24T13:48:49Z"
+  },
+  {
+   "count": 279,
+   "t": "2026-09-24T14:13:28Z"
   }
  ],
  "integrity": {
@@ -4764,13 +4790,15 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "files_count": 277,
+  "files_count": 279,
   "last_full_verification": "2026-09-24T08:43:27Z",
   "listing_count": 273,
-  "listing_lag": [],
+  "listing_lag": [
+   "LSQ"
+  ],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T13:52:54Z",
+ "last_checked": "2026-09-24T14:22:55Z",
  "pending": [
   {
    "code": "ABB",
@@ -4969,15 +4997,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Etxuwabo"
-  },
-  {
-   "code": "CIN",
-   "direction": "ltr",
-   "locale": "nya",
-   "name": "Cinyanja",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Cinyanja"
   },
   {
    "code": "CGS",
@@ -5194,15 +5213,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kréyòl gwiyanè"
-  },
-  {
-   "code": "EG",
-   "direction": "ltr",
-   "locale": "guw",
-   "name": "Gun",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Gungbe"
   },
   {
    "code": "HVU",
@@ -14485,6 +14495,39 @@
    "vernacular": "Língua angolana de sinais"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CIN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T07:34:33Z",
+   "files_at": "2026-09-24T07:34:33Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T07:34:33Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T14:22:55Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nya",
+   "name": "Cinyanja",
+   "published_at": "2026-09-24T07:34:33Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T07:34:33Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CIN",
+   "vernacular": "Cinyanja"
+  },
+  {
    "api_published_at": "2026-09-24T07:47:03Z",
    "beyond_baseline": false,
    "catalog_at": "2026-09-24T07:47:03Z",
@@ -15362,6 +15405,39 @@
    "title": "Erapoto lyoMbungagendesi #6 lyo-2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=WG",
    "vernacular": "Rukwangali"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "EG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T14:13:28Z",
+   "files_at": "2026-09-24T14:13:28Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T14:13:28Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T14:22:55Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "guw",
+   "name": "Gun",
+   "published_at": "2026-09-24T14:13:28Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T14:13:28Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=EG",
+   "vernacular": "Gungbe"
   }
  ],
  "removed": [],
@@ -15371,17 +15447,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 6,
-  "added_24h": 59,
+  "added_1h": 5,
+  "added_24h": 58,
   "added_4h": 14,
   "catalog_count": 274,
-  "catalog_lag": 3,
+  "catalog_lag": 5,
   "catalog_percent": 61.0,
-  "days_since_release": 6.0,
-  "pending_count": 172,
-  "percent": 61.7,
-  "published_count": 277,
-  "publisher_percent": 91.2,
+  "days_since_release": 6.02,
+  "pending_count": 170,
+  "percent": 62.1,
+  "published_count": 279,
+  "publisher_percent": 91.8,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
