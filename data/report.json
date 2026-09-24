@@ -977,21 +977,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 7,
+  "last_checked_count": 10,
   "newly_catalogued": [],
   "offset": 6,
   "size": 40,
-  "unlisted_total": 7
+  "unlisted_total": 10
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 7,
+  "awaiting_catalogue": 10,
   "catalogued": 243,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 216,
+  "file_times": 219,
   "observed_times": 0,
-  "sign_languages": 49
+  "sign_languages": 50
  },
  "events": [
   {
@@ -3220,6 +3220,13 @@
   {
    "added": [
     {
+     "at": "2026-09-24T04:18:26Z",
+     "code": "LSM",
+     "in_catalog": false,
+     "name": "Mexican Sign Language",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-24T04:30:27Z",
      "code": "IE",
      "in_catalog": true,
@@ -3227,7 +3234,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 244,
+   "count_after": 245,
    "t": "2026-09-24T04:00:00Z"
   },
   {
@@ -3240,7 +3247,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 245,
+   "count_after": 246,
    "t": "2026-09-24T06:00:00Z"
   },
   {
@@ -3281,11 +3288,31 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 250,
+   "count_after": 251,
    "t": "2026-09-24T07:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-24T08:02:28Z",
+     "code": "LA",
+     "in_catalog": false,
+     "name": "Laotian",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T08:13:31Z",
+     "code": "PR",
+     "in_catalog": false,
+     "name": "Persian",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 253,
+   "t": "2026-09-24T08:00:00Z"
   }
  ],
- "generated": "2026-09-24T07:58:29Z",
+ "generated": "2026-09-24T08:28:24Z",
  "history": [
   {
    "count": 1,
@@ -4261,31 +4288,43 @@
   },
   {
    "count": 244,
-   "t": "2026-09-24T04:30:27Z"
+   "t": "2026-09-24T04:18:26Z"
   },
   {
    "count": 245,
-   "t": "2026-09-24T06:16:52Z"
+   "t": "2026-09-24T04:30:27Z"
   },
   {
    "count": 246,
-   "t": "2026-09-24T07:19:32Z"
+   "t": "2026-09-24T06:16:52Z"
   },
   {
    "count": 247,
-   "t": "2026-09-24T07:23:32Z"
+   "t": "2026-09-24T07:19:32Z"
   },
   {
    "count": 248,
-   "t": "2026-09-24T07:46:53Z"
+   "t": "2026-09-24T07:23:32Z"
   },
   {
    "count": 249,
-   "t": "2026-09-24T07:51:34Z"
+   "t": "2026-09-24T07:46:53Z"
   },
   {
    "count": 250,
+   "t": "2026-09-24T07:51:34Z"
+  },
+  {
+   "count": 251,
    "t": "2026-09-24T07:54:40Z"
+  },
+  {
+   "count": 252,
+   "t": "2026-09-24T08:02:28Z"
+  },
+  {
+   "count": 253,
+   "t": "2026-09-24T08:13:31Z"
   }
  ],
  "integrity": {
@@ -4299,13 +4338,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 250,
+  "files_count": 253,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 243,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T07:58:29Z",
+ "last_checked": "2026-09-24T08:28:24Z",
  "pending": [
   {
    "code": "ABB",
@@ -5100,15 +5139,6 @@
    "vernacular": "Oshikwanyama"
   },
   {
-   "code": "LA",
-   "direction": "ltr",
-   "locale": "lo",
-   "name": "Laotian",
-   "script": "LAOTIAN",
-   "sign": false,
-   "vernacular": "ລາວ"
-  },
-  {
    "code": "LT",
    "direction": "ltr",
    "locale": "lv",
@@ -5332,15 +5362,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kĩmĩĩrũ"
-  },
-  {
-   "code": "LSM",
-   "direction": "ltr",
-   "locale": "mfs",
-   "name": "Mexican Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "lengua de señas mexicana"
   },
   {
    "code": "MIS",
@@ -5611,15 +5632,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Pangasinan"
-  },
-  {
-   "code": "PR",
-   "direction": "rtl",
-   "locale": "fa",
-   "name": "Persian",
-   "script": "ARABIC",
-   "sign": false,
-   "vernacular": "فارسی"
   },
   {
    "code": "PQM",
@@ -14034,6 +14046,39 @@
    "vernacular": "Melayu"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LSM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T04:18:26Z",
+   "files_at": "2026-09-24T04:18:26Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T04:18:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T08:28:24Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "mfs",
+   "name": "Mexican Sign Language",
+   "published_at": "2026-09-24T04:18:26Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T04:18:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LSM",
+   "vernacular": "lengua de señas mexicana"
+  },
+  {
    "api_published_at": "2026-09-24T04:30:35Z",
    "beyond_baseline": false,
    "catalog_at": "2026-09-24T04:30:35Z",
@@ -14262,6 +14307,71 @@
    "title": "Vídeo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TNG",
    "vernacular": "Português (Angola)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T08:02:28Z",
+   "files_at": "2026-09-24T08:02:28Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T08:02:28Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T08:28:24Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "lo",
+   "name": "Laotian",
+   "published_at": "2026-09-24T08:02:28Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T08:02:28Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "LAOTIAN",
+   "sign": false,
+   "title": "ວິດີໂອ",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LA",
+   "vernacular": "ລາວ"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "PR",
+   "direction": "rtl",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T08:13:31Z",
+   "files_at": "2026-09-24T08:13:31Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T08:13:31Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T08:28:24Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "fa",
+   "name": "Persian",
+   "published_at": "2026-09-24T08:13:31Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T08:13:31Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ARABIC",
+   "sign": false,
+   "title": "۲۰۲۶‏:‏‏ گزارشی از هیئت اداره‌کننده—شمارهٔ ۶‏",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=PR",
+   "vernacular": "فارسی"
   }
  ],
  "removed": [],
@@ -14272,16 +14382,16 @@
  },
  "stats": {
   "added_1h": 5,
-  "added_24h": 69,
-  "added_4h": 7,
+  "added_24h": 68,
+  "added_4h": 9,
   "catalog_count": 243,
-  "catalog_lag": 7,
+  "catalog_lag": 10,
   "catalog_percent": 54.1,
-  "days_since_release": 5.75,
-  "pending_count": 199,
-  "percent": 55.7,
-  "published_count": 250,
-  "publisher_percent": 90.7,
+  "days_since_release": 5.77,
+  "pending_count": 196,
+  "percent": 56.3,
+  "published_count": 253,
+  "publisher_percent": 90.8,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
