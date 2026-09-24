@@ -977,21 +977,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 3,
   "catalogued": 243,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 209,
+  "file_times": 212,
   "observed_times": 0,
-  "sign_languages": 47
+  "sign_languages": 48
  },
  "events": [
   {
@@ -3192,9 +3192,16 @@
      "in_catalog": true,
      "name": "Min Nan (Taiwan)",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T02:47:04Z",
+     "code": "ML",
+     "in_catalog": false,
+     "name": "Malay",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 241,
+   "count_after": 242,
    "t": "2026-09-24T02:00:00Z"
   },
   {
@@ -3207,7 +3214,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 242,
+   "count_after": 243,
    "t": "2026-09-24T04:00:00Z"
   },
   {
@@ -3220,11 +3227,31 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 243,
+   "count_after": 244,
    "t": "2026-09-24T06:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-24T07:19:32Z",
+     "code": "SM",
+     "in_catalog": false,
+     "name": "Samoan",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-24T07:23:32Z",
+     "code": "LAS",
+     "in_catalog": false,
+     "name": "Angolan Sign Language",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 246,
+   "t": "2026-09-24T07:00:00Z"
   }
  ],
- "generated": "2026-09-24T06:58:17Z",
+ "generated": "2026-09-24T07:28:20Z",
  "history": [
   {
    "count": 1,
@@ -4192,11 +4219,23 @@
   },
   {
    "count": 242,
-   "t": "2026-09-24T04:30:27Z"
+   "t": "2026-09-24T02:47:04Z"
   },
   {
    "count": 243,
+   "t": "2026-09-24T04:30:27Z"
+  },
+  {
+   "count": 244,
    "t": "2026-09-24T06:16:52Z"
+  },
+  {
+   "count": 245,
+   "t": "2026-09-24T07:19:32Z"
+  },
+  {
+   "count": 246,
+   "t": "2026-09-24T07:23:32Z"
   }
  ],
  "integrity": {
@@ -4210,13 +4249,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 40,
-  "files_count": 243,
+  "files_count": 246,
   "last_full_verification": "2026-09-23T08:48:35Z",
   "listing_count": 243,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T06:58:17Z",
+ "last_checked": "2026-09-24T07:28:20Z",
  "pending": [
   {
    "code": "ABB",
@@ -4280,15 +4319,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Alur"
-  },
-  {
-   "code": "LAS",
-   "direction": "ltr",
-   "locale": "sgn-ao",
-   "name": "Angolan Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Língua angolana de sinais"
   },
   {
    "code": "ASN",
@@ -5164,15 +5194,6 @@
    "vernacular": "Shimakonde"
   },
   {
-   "code": "ML",
-   "direction": "ltr",
-   "locale": "ms",
-   "name": "Malay",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Melayu"
-  },
-  {
    "code": "BIM",
    "direction": "ltr",
    "locale": "xml",
@@ -5657,15 +5678,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kréol Rénioné"
-  },
-  {
-   "code": "SM",
-   "direction": "ltr",
-   "locale": "sm",
-   "name": "Samoan",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Faa-Samoa"
   },
   {
    "code": "SG",
@@ -13944,6 +13956,38 @@
    "vernacular": "閩南語（台灣）"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "ML",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T02:47:04Z",
+   "files_at": "2026-09-24T02:47:04Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T02:47:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T07:28:20Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ms",
+   "name": "Malay",
+   "published_at": "2026-09-24T02:47:04Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T02:47:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Berita Terkini Badan Pimpinan 2026 #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ML",
+   "vernacular": "Melayu"
+  },
+  {
    "api_published_at": "2026-09-24T04:30:35Z",
    "beyond_baseline": false,
    "catalog_at": "2026-09-24T04:30:35Z",
@@ -14008,6 +14052,71 @@
    "title": "Vidyo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MWL",
    "vernacular": "Cimambwe-Lungu"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T07:19:32Z",
+   "files_at": "2026-09-24T07:19:32Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T07:19:32Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T07:28:20Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "sm",
+   "name": "Samoan",
+   "published_at": "2026-09-24T07:19:32Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T07:19:32Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Lipoti Mai i le Vaega Pule 2026 #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SM",
+   "vernacular": "Faa-Samoa"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LAS",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T07:23:32Z",
+   "files_at": "2026-09-24T07:23:32Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T07:23:32Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-24T07:28:20Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "sgn-ao",
+   "name": "Angolan Sign Language",
+   "published_at": "2026-09-24T07:23:32Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T07:23:32Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Vídeo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LAS",
+   "vernacular": "Língua angolana de sinais"
   }
  ],
  "removed": [],
@@ -14017,16 +14126,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 63,
-  "added_4h": 2,
+  "added_1h": 2,
+  "added_24h": 66,
+  "added_4h": 4,
   "catalog_count": 243,
-  "catalog_lag": 0,
+  "catalog_lag": 3,
   "catalog_percent": 54.1,
-  "days_since_release": 5.71,
-  "pending_count": 206,
-  "percent": 54.1,
-  "published_count": 243,
+  "days_since_release": 5.73,
+  "pending_count": 203,
+  "percent": 54.8,
+  "published_count": 246,
   "publisher_percent": 90.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
