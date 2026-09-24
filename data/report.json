@@ -966,19 +966,27 @@
   {
    "count": 241,
    "t": "2026-09-24T02:34:57Z"
+  },
+  {
+   "count": 242,
+   "t": "2026-09-24T04:30:35Z"
+  },
+  {
+   "count": 243,
+   "t": "2026-09-24T06:17:01Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 33,
-  "awaiting_catalogue": 2,
-  "catalogued": 241,
+  "awaiting_catalogue": 0,
+  "catalogued": 243,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 209,
@@ -3194,7 +3202,7 @@
     {
      "at": "2026-09-24T04:30:27Z",
      "code": "IE",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Ateso",
      "source": "file_estimated"
     }
@@ -3207,7 +3215,7 @@
     {
      "at": "2026-09-24T06:16:52Z",
      "code": "MWL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Mambwe-Lungu",
      "source": "file_estimated"
     }
@@ -3216,7 +3224,7 @@
    "t": "2026-09-24T06:00:00Z"
   }
  ],
- "generated": "2026-09-24T06:28:49Z",
+ "generated": "2026-09-24T06:58:17Z",
  "history": [
   {
    "count": 1,
@@ -4204,11 +4212,11 @@
   "file_drift_count": 40,
   "files_count": 243,
   "last_full_verification": "2026-09-23T08:48:35Z",
-  "listing_count": 241,
+  "listing_count": 243,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T06:28:49Z",
+ "last_checked": "2026-09-24T06:58:17Z",
  "pending": [
   {
    "code": "ABB",
@@ -13936,12 +13944,12 @@
    "vernacular": "閩南語（台灣）"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-24T04:30:35Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-24T04:30:35Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-24T06:58:17Z",
    "code": "IE",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -13954,9 +13962,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T04:30:27Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-24T04:58:07Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "teo",
    "name": "Ateso",
    "published_at": "2026-09-24T04:30:27Z",
@@ -13969,12 +13977,12 @@
    "vernacular": "Ateso"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-24T06:17:01Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-24T06:17:01Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-24T06:58:17Z",
    "code": "MWL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -13987,9 +13995,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T06:16:52Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-24T06:28:49Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "mgr",
    "name": "Mambwe-Lungu",
    "published_at": "2026-09-24T06:16:52Z",
@@ -14010,12 +14018,12 @@
  },
  "stats": {
   "added_1h": 1,
-  "added_24h": 64,
-  "added_4h": 3,
-  "catalog_count": 241,
-  "catalog_lag": 2,
-  "catalog_percent": 53.7,
-  "days_since_release": 5.69,
+  "added_24h": 63,
+  "added_4h": 2,
+  "catalog_count": 243,
+  "catalog_lag": 0,
+  "catalog_percent": 54.1,
+  "days_since_release": 5.71,
   "pending_count": 206,
   "percent": 54.1,
   "published_count": 243,
