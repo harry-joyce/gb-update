@@ -1301,19 +1301,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 12,
+  "last_checked_count": 13,
   "newly_catalogued": [],
-  "offset": 7,
+  "offset": 8,
   "size": 40,
-  "unlisted_total": 12
+  "unlisted_total": 13
  },
  "counts": {
   "api_times": 48,
-  "awaiting_catalogue": 12,
+  "awaiting_catalogue": 13,
   "catalogued": 324,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 287,
+  "file_times": 288,
   "observed_times": 0,
   "sign_languages": 59
  },
@@ -4365,9 +4365,22 @@
    ],
    "count_after": 336,
    "t": "2026-09-25T13:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-25T14:02:49Z",
+     "code": "ZU",
+     "in_catalog": false,
+     "name": "Zulu",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 337,
+   "t": "2026-09-25T14:00:00Z"
   }
  ],
- "generated": "2026-09-25T13:46:31Z",
+ "generated": "2026-09-25T14:16:35Z",
  "history": [
   {
    "count": 1,
@@ -5712,6 +5725,10 @@
   {
    "count": 336,
    "t": "2026-09-25T13:33:11Z"
+  },
+  {
+   "count": 337,
+   "t": "2026-09-25T14:02:49Z"
   }
  ],
  "integrity": {
@@ -5725,13 +5742,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 336,
+  "files_count": 337,
   "last_full_verification": "2026-09-25T09:03:47Z",
   "listing_count": 324,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T13:46:31Z",
+ "last_checked": "2026-09-25T14:16:35Z",
  "pending": [
   {
    "code": "ABB",
@@ -6785,15 +6802,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "diidxazá"
-  },
-  {
-   "code": "ZU",
-   "direction": "ltr",
-   "locale": "zu",
-   "name": "Zulu",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "IsiZulu"
   }
  ],
  "published": [
@@ -17730,6 +17738,38 @@
    "title": "Vidéo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SG",
    "vernacular": "Sango"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "ZU",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T14:02:49Z",
+   "files_at": "2026-09-25T14:02:49Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T14:02:49Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T14:16:35Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "zu",
+   "name": "Zulu",
+   "published_at": "2026-09-25T14:02:49Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T14:02:49Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Umbiko WeNdikimba Ebusayo Ka-2026 #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ZU",
+   "vernacular": "IsiZulu"
   }
  ],
  "removed": [],
@@ -17740,16 +17780,16 @@
  },
  "stats": {
   "added_1h": 2,
-  "added_24h": 57,
-  "added_4h": 14,
+  "added_24h": 55,
+  "added_4h": 13,
   "catalog_count": 324,
-  "catalog_lag": 12,
+  "catalog_lag": 13,
   "catalog_percent": 72.2,
-  "days_since_release": 6.99,
-  "pending_count": 113,
-  "percent": 74.8,
-  "published_count": 336,
-  "publisher_percent": 96.2,
+  "days_since_release": 7.01,
+  "pending_count": 112,
+  "percent": 75.1,
+  "published_count": 337,
+  "publisher_percent": 96.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
