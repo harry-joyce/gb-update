@@ -1301,19 +1301,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 7,
+  "last_checked_count": 9,
   "newly_catalogued": [],
-  "offset": 3,
+  "offset": 7,
   "size": 40,
-  "unlisted_total": 7
+  "unlisted_total": 9
  },
  "counts": {
   "api_times": 48,
-  "awaiting_catalogue": 7,
+  "awaiting_catalogue": 9,
   "catalogued": 324,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 282,
+  "file_times": 284,
   "observed_times": 0,
   "sign_languages": 59
  },
@@ -4320,13 +4320,27 @@
      "in_catalog": false,
      "name": "Maltese",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T12:31:20Z",
+     "code": "SEN",
+     "in_catalog": false,
+     "name": "Sena",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T12:34:50Z",
+     "code": "LT",
+     "in_catalog": false,
+     "name": "Latvian",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 331,
+   "count_after": 333,
    "t": "2026-09-25T12:00:00Z"
   }
  ],
- "generated": "2026-09-25T12:16:21Z",
+ "generated": "2026-09-25T12:46:25Z",
  "history": [
   {
    "count": 1,
@@ -5651,6 +5665,14 @@
   {
    "count": 331,
    "t": "2026-09-25T12:03:42Z"
+  },
+  {
+   "count": 332,
+   "t": "2026-09-25T12:31:20Z"
+  },
+  {
+   "count": 333,
+   "t": "2026-09-25T12:34:50Z"
   }
  ],
  "integrity": {
@@ -5664,13 +5686,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 331,
+  "files_count": 333,
   "last_full_verification": "2026-09-25T09:03:47Z",
   "listing_count": 324,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T12:16:21Z",
+ "last_checked": "2026-09-25T12:46:25Z",
  "pending": [
   {
    "code": "ABB",
@@ -6204,15 +6226,6 @@
    "vernacular": "Oshikwanyama"
   },
   {
-   "code": "LT",
-   "direction": "ltr",
-   "locale": "lv",
-   "name": "Latvian",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "latviešu"
-  },
-  {
    "code": "LWX",
    "direction": "ltr",
    "locale": "pdt",
@@ -6553,15 +6566,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Sar"
-  },
-  {
-   "code": "SEN",
-   "direction": "ltr",
-   "locale": "seh",
-   "name": "Sena",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Cisena"
   },
   {
    "code": "SU",
@@ -17551,6 +17555,71 @@
    "title": "Is-6 Rapport tal-2026 mill-Ġemgħa li Tiggverna",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MT",
    "vernacular": "Malti"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SEN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T12:31:20Z",
+   "files_at": "2026-09-25T12:31:20Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T12:31:20Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T12:46:25Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "seh",
+   "name": "Sena",
+   "published_at": "2026-09-25T12:31:20Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T12:31:20Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidhyu",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SEN",
+   "vernacular": "Cisena"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LT",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T12:34:50Z",
+   "files_at": "2026-09-25T12:34:50Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T12:34:50Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T12:46:25Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "lv",
+   "name": "Latvian",
+   "published_at": "2026-09-25T12:34:50Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T12:34:50Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026. gada Vadošās padomes ziņojums nr. 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LT",
+   "vernacular": "latviešu"
   }
  ],
  "removed": [],
@@ -17562,15 +17631,15 @@
  "stats": {
   "added_1h": 4,
   "added_24h": 59,
-  "added_4h": 16,
+  "added_4h": 18,
   "catalog_count": 324,
-  "catalog_lag": 7,
+  "catalog_lag": 9,
   "catalog_percent": 72.2,
-  "days_since_release": 6.93,
-  "pending_count": 118,
-  "percent": 73.7,
-  "published_count": 331,
-  "publisher_percent": 96.1,
+  "days_since_release": 6.95,
+  "pending_count": 116,
+  "percent": 74.2,
+  "published_count": 333,
+  "publisher_percent": 96.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
