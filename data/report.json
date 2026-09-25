@@ -1301,19 +1301,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 5,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 5
  },
  "counts": {
   "api_times": 48,
-  "awaiting_catalogue": 3,
+  "awaiting_catalogue": 5,
   "catalogued": 324,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 278,
+  "file_times": 280,
   "observed_times": 0,
   "sign_languages": 59
  },
@@ -4286,13 +4286,27 @@
      "in_catalog": false,
      "name": "Khana",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T11:22:30Z",
+     "code": "BI",
+     "in_catalog": false,
+     "name": "Bicol",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T11:41:20Z",
+     "code": "OSS",
+     "in_catalog": false,
+     "name": "Ossetian",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 327,
+   "count_after": 329,
    "t": "2026-09-25T11:00:00Z"
   }
  ],
- "generated": "2026-09-25T11:16:18Z",
+ "generated": "2026-09-25T11:46:19Z",
  "history": [
   {
    "count": 1,
@@ -5601,6 +5615,14 @@
   {
    "count": 327,
    "t": "2026-09-25T11:10:02Z"
+  },
+  {
+   "count": 328,
+   "t": "2026-09-25T11:22:30Z"
+  },
+  {
+   "count": 329,
+   "t": "2026-09-25T11:41:20Z"
   }
  ],
  "integrity": {
@@ -5614,13 +5636,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 327,
+  "files_count": 329,
   "last_full_verification": "2026-09-25T09:03:47Z",
   "listing_count": 324,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T11:16:18Z",
+ "last_checked": "2026-09-25T11:46:19Z",
  "pending": [
   {
    "code": "ABB",
@@ -5720,15 +5742,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Bileez Kriol"
-  },
-  {
-   "code": "BI",
-   "direction": "ltr",
-   "locale": "bcl",
-   "name": "Bicol",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Bicol"
   },
   {
    "code": "BO",
@@ -6458,15 +6471,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Obolo"
-  },
-  {
-   "code": "OSS",
-   "direction": "ltr",
-   "locale": "os",
-   "name": "Ossetian",
-   "script": "CYRILLIC",
-   "sign": false,
-   "vernacular": "ирон"
   },
   {
    "code": "OTM",
@@ -17408,6 +17412,70 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=OG",
    "vernacular": "Khana"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "BI",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T11:22:30Z",
+   "files_at": "2026-09-25T11:22:30Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T11:22:30Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T11:46:19Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "bcl",
+   "name": "Bicol",
+   "published_at": "2026-09-25T11:22:30Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T11:22:30Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Update kan Namamahalang Grupo #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BI",
+   "vernacular": "Bicol"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "OSS",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T11:41:20Z",
+   "files_at": "2026-09-25T11:41:20Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T11:41:20Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T11:46:19Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "os",
+   "name": "Ossetian",
+   "published_at": "2026-09-25T11:41:20Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T11:41:20Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CYRILLIC",
+   "sign": false,
+   "title": "Ног хабӕрттӕ Разамонӕг советӕй №6 (2026 аз)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=OSS",
+   "vernacular": "ирон"
   }
  ],
  "removed": [],
@@ -17417,17 +17485,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 4,
-  "added_24h": 60,
-  "added_4h": 12,
+  "added_1h": 5,
+  "added_24h": 59,
+  "added_4h": 14,
   "catalog_count": 324,
-  "catalog_lag": 3,
+  "catalog_lag": 5,
   "catalog_percent": 72.2,
-  "days_since_release": 6.89,
-  "pending_count": 122,
-  "percent": 72.8,
-  "published_count": 327,
-  "publisher_percent": 96.0,
+  "days_since_release": 6.91,
+  "pending_count": 120,
+  "percent": 73.3,
+  "published_count": 329,
+  "publisher_percent": 96.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
