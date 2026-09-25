@@ -1234,19 +1234,39 @@
   {
    "count": 308,
    "t": "2026-09-25T03:51:55Z"
+  },
+  {
+   "count": 309,
+   "t": "2026-09-25T04:09:13Z"
+  },
+  {
+   "count": 310,
+   "t": "2026-09-25T05:19:08Z"
+  },
+  {
+   "count": 311,
+   "t": "2026-09-25T05:43:00Z"
+  },
+  {
+   "count": 312,
+   "t": "2026-09-25T06:17:38Z"
+  },
+  {
+   "count": 313,
+   "t": "2026-09-25T06:47:39Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 5,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 5
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 47,
-  "awaiting_catalogue": 5,
-  "catalogued": 308,
+  "awaiting_catalogue": 0,
+  "catalogued": 313,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 265,
@@ -4057,7 +4077,7 @@
     {
      "at": "2026-09-25T04:09:04Z",
      "code": "MO",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Hiri Motu",
      "source": "file_estimated"
     }
@@ -4070,14 +4090,14 @@
     {
      "at": "2026-09-25T05:18:59Z",
      "code": "TMR",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Turkmen",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-25T05:42:50Z",
      "code": "TG",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Tagalog",
      "source": "file_estimated"
     }
@@ -4090,14 +4110,14 @@
     {
      "at": "2026-09-25T06:17:28Z",
      "code": "LO",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Luo",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-25T06:47:30Z",
      "code": "UU",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Meru",
      "source": "file_estimated"
     }
@@ -4106,7 +4126,7 @@
    "t": "2026-09-25T06:00:00Z"
   }
  ],
- "generated": "2026-09-25T07:15:53Z",
+ "generated": "2026-09-25T07:45:56Z",
  "history": [
   {
    "count": 1,
@@ -5374,11 +5394,11 @@
   "file_drift_count": 53,
   "files_count": 313,
   "last_full_verification": "2026-09-24T08:43:27Z",
-  "listing_count": 308,
+  "listing_count": 313,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T07:15:53Z",
+ "last_checked": "2026-09-25T07:45:56Z",
  "pending": [
   {
    "code": "ABB",
@@ -16664,12 +16684,12 @@
    "vernacular": "tojol-abʼal"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-25T04:09:13Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-25T04:09:13Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T07:45:56Z",
    "code": "MO",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -16682,9 +16702,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T04:09:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-25T04:15:38Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ho",
    "name": "Hiri Motu",
    "published_at": "2026-09-25T04:09:04Z",
@@ -16697,12 +16717,12 @@
    "vernacular": "Hiri Motu"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-25T05:19:08Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-25T05:19:08Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T07:45:56Z",
    "code": "TMR",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -16715,9 +16735,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T05:18:59Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-25T05:45:46Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "tk",
    "name": "Turkmen",
    "published_at": "2026-09-25T05:18:59Z",
@@ -16730,12 +16750,12 @@
    "vernacular": "türkmen"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-25T05:43:00Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-25T05:43:00Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T07:45:56Z",
    "code": "TG",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -16748,9 +16768,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T05:42:50Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-25T05:45:46Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "tl",
    "name": "Tagalog",
    "published_at": "2026-09-25T05:42:50Z",
@@ -16763,12 +16783,12 @@
    "vernacular": "Tagalog"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-25T06:17:38Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-25T06:17:38Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T07:45:56Z",
    "code": "LO",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -16781,9 +16801,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T06:17:28Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-25T06:45:51Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "luo",
    "name": "Luo",
    "published_at": "2026-09-25T06:17:28Z",
@@ -16796,12 +16816,12 @@
    "vernacular": "Dholuo"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-25T06:47:39Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-25T06:47:39Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T07:45:56Z",
    "code": "UU",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -16814,9 +16834,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T06:47:30Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-25T07:15:53Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "mer",
    "name": "Meru",
    "published_at": "2026-09-25T06:47:30Z",
@@ -16836,13 +16856,13 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 65,
-  "added_4h": 7,
-  "catalog_count": 308,
-  "catalog_lag": 5,
-  "catalog_percent": 68.6,
-  "days_since_release": 6.72,
+  "added_1h": 1,
+  "added_24h": 62,
+  "added_4h": 6,
+  "catalog_count": 313,
+  "catalog_lag": 0,
+  "catalog_percent": 69.7,
+  "days_since_release": 6.74,
   "pending_count": 136,
   "percent": 69.7,
   "published_count": 313,
