@@ -1206,19 +1206,27 @@
   {
    "count": 301,
    "t": "2026-09-24T20:29:19Z"
+  },
+  {
+   "count": 302,
+   "t": "2026-09-24T22:33:12Z"
+  },
+  {
+   "count": 303,
+   "t": "2026-09-24T23:27:36Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 46,
-  "awaiting_catalogue": 2,
-  "catalogued": 301,
+  "awaiting_catalogue": 0,
+  "catalogued": 303,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 256,
@@ -3950,7 +3958,7 @@
     {
      "at": "2026-09-24T22:33:01Z",
      "code": "TOT",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Totonac",
      "source": "file_estimated"
     }
@@ -3963,7 +3971,7 @@
     {
      "at": "2026-09-24T23:27:23Z",
      "code": "NHT",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Nahuatl (Northern Puebla)",
      "source": "file_estimated"
     }
@@ -3972,7 +3980,7 @@
    "t": "2026-09-24T23:00:00Z"
   }
  ],
- "generated": "2026-09-24T23:45:14Z",
+ "generated": "2026-09-25T00:45:17Z",
  "history": [
   {
    "count": 1,
@@ -5200,11 +5208,11 @@
   "file_drift_count": 53,
   "files_count": 303,
   "last_full_verification": "2026-09-24T08:43:27Z",
-  "listing_count": 301,
+  "listing_count": 303,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-24T23:45:14Z",
+ "last_checked": "2026-09-25T00:45:17Z",
  "pending": [
   {
    "code": "ABB",
@@ -16354,12 +16362,12 @@
    "vernacular": "tseltal"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-24T22:33:12Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-24T22:33:12Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T00:45:17Z",
    "code": "TOT",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -16372,9 +16380,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T22:33:01Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-24T22:45:07Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "top",
    "name": "Totonac",
    "published_at": "2026-09-24T22:33:01Z",
@@ -16387,12 +16395,12 @@
    "vernacular": "totonaco"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-24T23:27:36Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-24T23:27:36Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T00:45:17Z",
    "code": "NHT",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -16404,9 +16412,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T23:27:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-24T23:45:14Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ncj",
    "name": "Nahuatl (Northern Puebla)",
    "published_at": "2026-09-24T23:27:23Z",
@@ -16426,13 +16434,13 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 61,
-  "added_4h": 3,
-  "catalog_count": 301,
-  "catalog_lag": 2,
-  "catalog_percent": 67.0,
-  "days_since_release": 6.41,
+  "added_1h": 0,
+  "added_24h": 60,
+  "added_4h": 2,
+  "catalog_count": 303,
+  "catalog_lag": 0,
+  "catalog_percent": 67.5,
+  "days_since_release": 6.45,
   "pending_count": 146,
   "percent": 67.5,
   "published_count": 303,
