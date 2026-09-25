@@ -1237,19 +1237,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
+  "last_checked_count": 5,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 5
  },
  "counts": {
   "api_times": 47,
-  "awaiting_catalogue": 4,
+  "awaiting_catalogue": 5,
   "catalogued": 308,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 264,
+  "file_times": 265,
   "observed_times": 0,
   "sign_languages": 57
  },
@@ -4093,13 +4093,20 @@
      "in_catalog": false,
      "name": "Luo",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T06:47:30Z",
+     "code": "UU",
+     "in_catalog": false,
+     "name": "Meru",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 312,
+   "count_after": 313,
    "t": "2026-09-25T06:00:00Z"
   }
  ],
- "generated": "2026-09-25T06:45:51Z",
+ "generated": "2026-09-25T07:15:53Z",
  "history": [
   {
    "count": 1,
@@ -5348,6 +5355,10 @@
   {
    "count": 312,
    "t": "2026-09-25T06:17:28Z"
+  },
+  {
+   "count": 313,
+   "t": "2026-09-25T06:47:30Z"
   }
  ],
  "integrity": {
@@ -5361,13 +5372,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "files_count": 312,
+  "files_count": 313,
   "last_full_verification": "2026-09-24T08:43:27Z",
   "listing_count": 308,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T06:45:51Z",
+ "last_checked": "2026-09-25T07:15:53Z",
  "pending": [
   {
    "code": "ABB",
@@ -6133,15 +6144,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Melanesian Sign Language"
-  },
-  {
-   "code": "UU",
-   "direction": "ltr",
-   "locale": "mer",
-   "name": "Meru",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kĩmĩĩrũ"
   },
   {
    "code": "MX",
@@ -16792,6 +16794,39 @@
    "title": "Vidio",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LO",
    "vernacular": "Dholuo"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "UU",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T06:47:30Z",
+   "files_at": "2026-09-25T06:47:30Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T06:47:30Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T07:15:53Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "mer",
+   "name": "Meru",
+   "published_at": "2026-09-25T06:47:30Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T06:47:30Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidio",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=UU",
+   "vernacular": "Kĩmĩĩrũ"
   }
  ],
  "removed": [],
@@ -16801,16 +16836,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 64,
-  "added_4h": 6,
+  "added_1h": 2,
+  "added_24h": 65,
+  "added_4h": 7,
   "catalog_count": 308,
-  "catalog_lag": 4,
+  "catalog_lag": 5,
   "catalog_percent": 68.6,
-  "days_since_release": 6.7,
-  "pending_count": 137,
-  "percent": 69.5,
-  "published_count": 312,
+  "days_since_release": 6.72,
+  "pending_count": 136,
+  "percent": 69.7,
+  "published_count": 313,
   "publisher_percent": 94.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
