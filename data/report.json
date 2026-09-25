@@ -1237,19 +1237,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 47,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 3,
   "catalogued": 308,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 261,
+  "file_times": 263,
   "observed_times": 0,
   "sign_languages": 57
  },
@@ -4064,9 +4064,29 @@
    ],
    "count_after": 309,
    "t": "2026-09-25T04:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-25T05:18:59Z",
+     "code": "TMR",
+     "in_catalog": false,
+     "name": "Turkmen",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T05:42:50Z",
+     "code": "TG",
+     "in_catalog": false,
+     "name": "Tagalog",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 311,
+   "t": "2026-09-25T05:00:00Z"
   }
  ],
- "generated": "2026-09-25T05:15:44Z",
+ "generated": "2026-09-25T05:45:46Z",
  "history": [
   {
    "count": 1,
@@ -5303,6 +5323,14 @@
   {
    "count": 309,
    "t": "2026-09-25T04:09:04Z"
+  },
+  {
+   "count": 310,
+   "t": "2026-09-25T05:18:59Z"
+  },
+  {
+   "count": 311,
+   "t": "2026-09-25T05:42:50Z"
   }
  ],
  "integrity": {
@@ -5316,13 +5344,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "files_count": 309,
+  "files_count": 311,
   "last_full_verification": "2026-09-24T08:43:27Z",
   "listing_count": 308,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T05:15:44Z",
+ "last_checked": "2026-09-25T05:45:46Z",
  "pending": [
   {
    "code": "ABB",
@@ -6423,15 +6451,6 @@
    "vernacular": "Taabwa"
   },
   {
-   "code": "TG",
-   "direction": "ltr",
-   "locale": "tl",
-   "name": "Tagalog",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Tagalog"
-  },
-  {
    "code": "TH",
    "direction": "ltr",
    "locale": "ty",
@@ -6493,15 +6512,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Xitsonga"
-  },
-  {
-   "code": "TMR",
-   "direction": "ltr",
-   "locale": "tk",
-   "name": "Turkmen",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "türkmen"
   },
   {
    "code": "VL",
@@ -16675,6 +16685,72 @@
    "title": "Vidio",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MO",
    "vernacular": "Hiri Motu"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TMR",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T05:18:59Z",
+   "files_at": "2026-09-25T05:18:59Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T05:18:59Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T05:45:46Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tk",
+   "name": "Turkmen",
+   "published_at": "2026-09-25T05:18:59Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T05:18:59Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Wideo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TMR",
+   "vernacular": "türkmen"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T05:42:50Z",
+   "files_at": "2026-09-25T05:42:50Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T05:42:50Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T05:45:46Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "tl",
+   "name": "Tagalog",
+   "published_at": "2026-09-25T05:42:50Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T05:42:50Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TG",
+   "vernacular": "Tagalog"
   }
  ],
  "removed": [],
@@ -16684,17 +16760,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 62,
-  "added_4h": 4,
+  "added_1h": 2,
+  "added_24h": 64,
+  "added_4h": 5,
   "catalog_count": 308,
-  "catalog_lag": 1,
+  "catalog_lag": 3,
   "catalog_percent": 68.6,
-  "days_since_release": 6.64,
-  "pending_count": 140,
-  "percent": 68.8,
-  "published_count": 309,
-  "publisher_percent": 92.7,
+  "days_since_release": 6.66,
+  "pending_count": 138,
+  "percent": 69.3,
+  "published_count": 311,
+  "publisher_percent": 94.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
