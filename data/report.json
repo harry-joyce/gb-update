@@ -1217,19 +1217,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 2,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 2
  },
  "counts": {
   "api_times": 46,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 2,
   "catalogued": 303,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 257,
+  "file_times": 258,
   "observed_times": 0,
   "sign_languages": 56
  },
@@ -3991,9 +3991,22 @@
    ],
    "count_after": 304,
    "t": "2026-09-25T00:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-25T01:43:12Z",
+     "code": "TO",
+     "in_catalog": false,
+     "name": "Tongan",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 305,
+   "t": "2026-09-25T01:00:00Z"
   }
  ],
- "generated": "2026-09-25T00:54:38Z",
+ "generated": "2026-09-25T01:45:59Z",
  "history": [
   {
    "count": 1,
@@ -5210,6 +5223,10 @@
   {
    "count": 304,
    "t": "2026-09-25T00:49:56Z"
+  },
+  {
+   "count": 305,
+   "t": "2026-09-25T01:43:12Z"
   }
  ],
  "integrity": {
@@ -5223,13 +5240,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "files_count": 304,
+  "files_count": 305,
   "last_full_verification": "2026-09-24T08:43:27Z",
   "listing_count": 303,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T00:54:38Z",
+ "last_checked": "2026-09-25T01:45:59Z",
  "pending": [
   {
    "code": "ABB",
@@ -6409,15 +6426,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "tojol-abʼal"
-  },
-  {
-   "code": "TO",
-   "direction": "ltr",
-   "locale": "to",
-   "name": "Tongan",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Faka-Tonga"
   },
   {
    "code": "SH",
@@ -16466,6 +16474,38 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LM",
    "vernacular": "Bislama"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TO",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T01:43:12Z",
+   "files_at": "2026-09-25T01:43:12Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T01:43:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T01:45:59Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "to",
+   "name": "Tongan",
+   "published_at": "2026-09-25T01:43:12Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T01:43:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Līpooti ʻa e Kulupu Pulé Fika 6, 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TO",
+   "vernacular": "Faka-Tonga"
   }
  ],
  "removed": [],
@@ -16475,16 +16515,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 61,
-  "added_4h": 3,
+  "added_1h": 2,
+  "added_24h": 62,
+  "added_4h": 4,
   "catalog_count": 303,
-  "catalog_lag": 1,
+  "catalog_lag": 2,
   "catalog_percent": 67.5,
-  "days_since_release": 6.45,
-  "pending_count": 145,
-  "percent": 67.7,
-  "published_count": 304,
+  "days_since_release": 6.49,
+  "pending_count": 144,
+  "percent": 67.9,
+  "published_count": 305,
   "publisher_percent": 92.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
