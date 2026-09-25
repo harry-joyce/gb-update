@@ -1401,19 +1401,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
+  "last_checked_count": 5,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 5
  },
  "counts": {
   "api_times": 48,
-  "awaiting_catalogue": 4,
+  "awaiting_catalogue": 5,
   "catalogued": 349,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 304,
+  "file_times": 305,
   "observed_times": 0,
   "sign_languages": 60
  },
@@ -4614,9 +4614,22 @@
    ],
    "count_after": 353,
    "t": "2026-09-25T19:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-25T22:12:24Z",
+     "code": "NHG",
+     "in_catalog": false,
+     "name": "Nahuatl (Guerrero)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 354,
+   "t": "2026-09-25T22:00:00Z"
   }
  ],
- "generated": "2026-09-25T21:47:15Z",
+ "generated": "2026-09-25T22:17:17Z",
  "history": [
   {
    "count": 1,
@@ -6029,6 +6042,10 @@
   {
    "count": 353,
    "t": "2026-09-25T19:38:04Z"
+  },
+  {
+   "count": 354,
+   "t": "2026-09-25T22:12:24Z"
   }
  ],
  "integrity": {
@@ -6042,13 +6059,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 353,
+  "files_count": 354,
   "last_full_verification": "2026-09-25T09:03:47Z",
   "listing_count": 349,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T21:47:15Z",
+ "last_checked": "2026-09-25T22:17:17Z",
  "pending": [
   {
    "code": "ABB",
@@ -6670,15 +6687,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Motu"
-  },
-  {
-   "code": "NHG",
-   "direction": "ltr",
-   "locale": "ngu",
-   "name": "Nahuatl (Guerrero)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "náhuatl de guerrero"
   },
   {
    "code": "NHV",
@@ -18457,6 +18465,38 @@
    "title": "2026 Nyɔ-Dyúa-Nì-Nyɔ̀ Ɓèɔ̀ Bɔ̃̀-Dyi-Po-Po #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BA",
    "vernacular": "Ɓǎsɔ́ɔ̀ (Ɖàbíɖà)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NHG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T22:12:24Z",
+   "files_at": "2026-09-25T22:12:24Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T22:12:24Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T22:17:17Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ngu",
+   "name": "Nahuatl (Guerrero)",
+   "published_at": "2026-09-25T22:12:24Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T22:12:24Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 | Grupo akin Tlayekana kijtoua tlen panotika #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NHG",
+   "vernacular": "náhuatl de guerrero"
   }
  ],
  "removed": [],
@@ -18466,16 +18506,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 48,
+  "added_1h": 1,
+  "added_24h": 49,
   "added_4h": 4,
   "catalog_count": 349,
-  "catalog_lag": 4,
+  "catalog_lag": 5,
   "catalog_percent": 77.7,
-  "days_since_release": 7.32,
-  "pending_count": 96,
-  "percent": 78.6,
-  "published_count": 353,
+  "days_since_release": 7.35,
+  "pending_count": 95,
+  "percent": 78.8,
+  "published_count": 354,
   "publisher_percent": 96.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
