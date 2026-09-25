@@ -1301,31 +1301,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 11,
-  "newly_catalogued": [
-   "AJG",
-   "CBL",
-   "CG",
-   "FSL",
-   "SA",
-   "SE",
-   "SSA",
-   "TEW",
-   "VE",
-   "VI",
-   "YMB"
-  ],
-  "offset": 7,
+  "last_checked_count": 3,
+  "newly_catalogued": [],
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 11
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 48,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 3,
   "catalogued": 324,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 275,
+  "file_times": 278,
   "observed_times": 0,
   "sign_languages": 59
  },
@@ -4271,13 +4259,40 @@
      "in_catalog": true,
      "name": "Sesotho (South Africa)",
      "source": "api"
+    },
+    {
+     "at": "2026-09-25T10:57:47Z",
+     "code": "CV",
+     "in_catalog": false,
+     "name": "Cebuano",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 324,
+   "count_after": 325,
    "t": "2026-09-25T10:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-25T11:00:47Z",
+     "code": "IB",
+     "in_catalog": false,
+     "name": "Igbo",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T11:10:02Z",
+     "code": "OG",
+     "in_catalog": false,
+     "name": "Khana",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 327,
+   "t": "2026-09-25T11:00:00Z"
   }
  ],
- "generated": "2026-09-25T10:46:14Z",
+ "generated": "2026-09-25T11:16:18Z",
  "history": [
   {
    "count": 1,
@@ -5574,6 +5589,18 @@
   {
    "count": 324,
    "t": "2026-09-25T10:36:10Z"
+  },
+  {
+   "count": 325,
+   "t": "2026-09-25T10:57:47Z"
+  },
+  {
+   "count": 326,
+   "t": "2026-09-25T11:00:47Z"
+  },
+  {
+   "count": 327,
+   "t": "2026-09-25T11:10:02Z"
   }
  ],
  "integrity": {
@@ -5587,13 +5614,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 324,
+  "files_count": 327,
   "last_full_verification": "2026-09-25T09:03:47Z",
-  "listing_count": 313,
+  "listing_count": 324,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T10:46:14Z",
+ "last_checked": "2026-09-25T11:16:18Z",
  "pending": [
   {
    "code": "ABB",
@@ -5729,15 +5756,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kariʼnia"
-  },
-  {
-   "code": "CV",
-   "direction": "ltr",
-   "locale": "ceb",
-   "name": "Cebuano",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Cebuano"
   },
   {
    "code": "CHL",
@@ -6001,15 +6019,6 @@
    "vernacular": "Igala"
   },
   {
-   "code": "IB",
-   "direction": "ltr",
-   "locale": "ig",
-   "name": "Igbo",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Igbo"
-  },
-  {
    "code": "IGE",
    "direction": "ltr",
    "locale": "ige",
@@ -6089,15 +6098,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "q’eqchi’"
-  },
-  {
-   "code": "OG",
-   "direction": "ltr",
-   "locale": "ogo",
-   "name": "Khana",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Khana"
   },
   {
    "code": "KIN",
@@ -14824,7 +14824,7 @@
    "first_observed": "2026-09-25T08:46:03Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "psp",
    "name": "Filipino Sign Language",
    "published_at": "2026-09-24T05:50:53Z",
@@ -15898,7 +15898,7 @@
    "first_observed": "2026-09-25T09:46:08Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ve",
    "name": "Venda",
    "published_at": "2026-09-24T13:59:44Z",
@@ -17037,7 +17037,7 @@
    "first_observed": "2026-09-25T09:46:08Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "tyv",
    "name": "Tuvinian",
    "published_at": "2026-09-25T09:17:28Z",
@@ -17070,7 +17070,7 @@
    "first_observed": "2026-09-25T09:46:08Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "sgn-kh",
    "name": "Cambodian Sign Language",
    "published_at": "2026-09-25T09:25:47Z",
@@ -17102,7 +17102,7 @@
    "first_observed": "2026-09-25T09:46:08Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "yom-x-ymb",
    "name": "Yombe",
    "published_at": "2026-09-25T09:29:53Z",
@@ -17135,7 +17135,7 @@
    "first_observed": "2026-09-25T09:46:08Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "twx",
    "name": "Tewe",
    "published_at": "2026-09-25T09:31:59Z",
@@ -17168,7 +17168,7 @@
    "first_observed": "2026-09-25T09:46:08Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ajg",
    "name": "Aja",
    "published_at": "2026-09-25T09:32:51Z",
@@ -17200,7 +17200,7 @@
    "first_observed": "2026-09-25T09:46:08Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "war",
    "name": "Waray-Waray",
    "published_at": "2026-09-25T09:39:31Z",
@@ -17233,7 +17233,7 @@
    "first_observed": "2026-09-25T10:16:10Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "toi",
    "name": "Chitonga",
    "published_at": "2026-09-25T10:02:00Z",
@@ -17266,7 +17266,7 @@
    "first_observed": "2026-09-25T10:16:10Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "nso",
    "name": "Sepedi",
    "published_at": "2026-09-25T10:02:35Z",
@@ -17299,7 +17299,7 @@
    "first_observed": "2026-09-25T10:46:14Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "st-za",
    "name": "Sesotho (South Africa)",
    "published_at": "2026-09-25T10:36:10Z",
@@ -17310,6 +17310,104 @@
    "title": "Tlaleho ya Botshelela ya 2026 ya Sehlopha se Busang",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SSA",
    "vernacular": "Sesotho (South Africa)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CV",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T10:57:47Z",
+   "files_at": "2026-09-25T10:57:47Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T10:57:47Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T11:16:18Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ceb",
+   "name": "Cebuano",
+   "published_at": "2026-09-25T10:57:47Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T10:57:47Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 nga Update sa Nagamandong Lawas Num. 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CV",
+   "vernacular": "Cebuano"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "IB",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T11:00:47Z",
+   "files_at": "2026-09-25T11:00:47Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T11:00:47Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T11:16:18Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ig",
+   "name": "Igbo",
+   "published_at": "2026-09-25T11:00:47Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T11:00:47Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidio",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=IB",
+   "vernacular": "Igbo"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "OG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T11:10:02Z",
+   "files_at": "2026-09-25T11:10:02Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T11:10:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T11:16:18Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ogo",
+   "name": "Khana",
+   "published_at": "2026-09-25T11:10:02Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T11:10:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=OG",
+   "vernacular": "Khana"
   }
  ],
  "removed": [],
@@ -17319,17 +17417,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
-  "added_24h": 57,
-  "added_4h": 10,
+  "added_1h": 4,
+  "added_24h": 60,
+  "added_4h": 12,
   "catalog_count": 324,
-  "catalog_lag": 0,
+  "catalog_lag": 3,
   "catalog_percent": 72.2,
-  "days_since_release": 6.87,
-  "pending_count": 125,
-  "percent": 72.2,
-  "published_count": 324,
-  "publisher_percent": 94.5,
+  "days_since_release": 6.89,
+  "pending_count": 122,
+  "percent": 72.8,
+  "published_count": 327,
+  "publisher_percent": 96.0,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
