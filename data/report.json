@@ -1237,19 +1237,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 4,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 4
  },
  "counts": {
   "api_times": 47,
-  "awaiting_catalogue": 3,
+  "awaiting_catalogue": 4,
   "catalogued": 308,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 263,
+  "file_times": 264,
   "observed_times": 0,
   "sign_languages": 57
  },
@@ -4084,9 +4084,22 @@
    ],
    "count_after": 311,
    "t": "2026-09-25T05:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-25T06:17:28Z",
+     "code": "LO",
+     "in_catalog": false,
+     "name": "Luo",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 312,
+   "t": "2026-09-25T06:00:00Z"
   }
  ],
- "generated": "2026-09-25T05:45:46Z",
+ "generated": "2026-09-25T06:45:51Z",
  "history": [
   {
    "count": 1,
@@ -5331,6 +5344,10 @@
   {
    "count": 311,
    "t": "2026-09-25T05:42:50Z"
+  },
+  {
+   "count": 312,
+   "t": "2026-09-25T06:17:28Z"
   }
  ],
  "integrity": {
@@ -5344,13 +5361,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "files_count": 311,
+  "files_count": 312,
   "last_full_verification": "2026-09-24T08:43:27Z",
   "listing_count": 308,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T05:45:46Z",
+ "last_checked": "2026-09-25T06:45:51Z",
  "pending": [
   {
    "code": "ABB",
@@ -5999,15 +6016,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Lunda"
-  },
-  {
-   "code": "LO",
-   "direction": "ltr",
-   "locale": "luo",
-   "name": "Luo",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Dholuo"
   },
   {
    "code": "TTM",
@@ -16751,6 +16759,39 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TG",
    "vernacular": "Tagalog"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LO",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T06:17:28Z",
+   "files_at": "2026-09-25T06:17:28Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T06:17:28Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T06:45:51Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "luo",
+   "name": "Luo",
+   "published_at": "2026-09-25T06:17:28Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T06:17:28Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidio",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LO",
+   "vernacular": "Dholuo"
   }
  ],
  "removed": [],
@@ -16760,16 +16801,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
+  "added_1h": 1,
   "added_24h": 64,
-  "added_4h": 5,
+  "added_4h": 6,
   "catalog_count": 308,
-  "catalog_lag": 3,
+  "catalog_lag": 4,
   "catalog_percent": 68.6,
-  "days_since_release": 6.66,
-  "pending_count": 138,
-  "percent": 69.3,
-  "published_count": 311,
+  "days_since_release": 6.7,
+  "pending_count": 137,
+  "percent": 69.5,
+  "published_count": 312,
   "publisher_percent": 94.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
