@@ -1214,22 +1214,42 @@
   {
    "count": 303,
    "t": "2026-09-24T23:27:36Z"
+  },
+  {
+   "count": 304,
+   "t": "2026-09-25T00:50:07Z"
+  },
+  {
+   "count": 305,
+   "t": "2026-09-25T01:43:23Z"
+  },
+  {
+   "count": 306,
+   "t": "2026-09-25T03:24:43Z"
+  },
+  {
+   "count": 307,
+   "t": "2026-09-25T03:37:10Z"
+  },
+  {
+   "count": 308,
+   "t": "2026-09-25T03:51:55Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 1
  },
  "counts": {
-  "api_times": 46,
-  "awaiting_catalogue": 4,
-  "catalogued": 303,
+  "api_times": 47,
+  "awaiting_catalogue": 1,
+  "catalogued": 308,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 260,
+  "file_times": 261,
   "observed_times": 0,
   "sign_languages": 57
  },
@@ -3639,7 +3659,7 @@
     {
      "at": "2026-09-24T09:27:42Z",
      "code": "BIM",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Malaysian Sign Language",
      "source": "file_estimated"
     }
@@ -3991,7 +4011,7 @@
     {
      "at": "2026-09-25T00:49:56Z",
      "code": "LM",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Bislama",
      "source": "file_estimated"
     }
@@ -4004,7 +4024,7 @@
     {
      "at": "2026-09-25T01:43:12Z",
      "code": "TO",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Tongan",
      "source": "file_estimated"
     }
@@ -4017,16 +4037,36 @@
     {
      "at": "2026-09-25T03:24:30Z",
      "code": "SP",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Solomon Islands Pidgin",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T03:51:55Z",
+     "code": "TJO",
+     "in_catalog": true,
+     "name": "Tojolabal",
+     "source": "api"
+    }
+   ],
+   "count_after": 308,
+   "t": "2026-09-25T03:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-25T04:09:04Z",
+     "code": "MO",
+     "in_catalog": false,
+     "name": "Hiri Motu",
      "source": "file_estimated"
     }
    ],
-   "count_after": 307,
-   "t": "2026-09-25T03:00:00Z"
+   "count_after": 309,
+   "t": "2026-09-25T04:00:00Z"
   }
  ],
- "generated": "2026-09-25T03:45:34Z",
+ "generated": "2026-09-25T04:15:38Z",
  "history": [
   {
    "count": 1,
@@ -5255,6 +5295,14 @@
   {
    "count": 307,
    "t": "2026-09-25T03:24:30Z"
+  },
+  {
+   "count": 308,
+   "t": "2026-09-25T03:51:55Z"
+  },
+  {
+   "count": 309,
+   "t": "2026-09-25T04:09:04Z"
   }
  ],
  "integrity": {
@@ -5268,13 +5316,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "files_count": 307,
+  "files_count": 309,
   "last_full_verification": "2026-09-24T08:43:27Z",
-  "listing_count": 303,
+  "listing_count": 308,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T03:45:34Z",
+ "last_checked": "2026-09-25T04:15:38Z",
  "pending": [
   {
    "code": "ABB",
@@ -5662,15 +5710,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Otjiherero"
-  },
-  {
-   "code": "MO",
-   "direction": "ltr",
-   "locale": "ho",
-   "name": "Hiri Motu",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Hiri Motu"
   },
   {
    "code": "HDF",
@@ -6427,15 +6466,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ciutee"
-  },
-  {
-   "code": "TJO",
-   "direction": "ltr",
-   "locale": "toj",
-   "name": "Tojolabal",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "tojol-abʼal"
   },
   {
    "code": "SH",
@@ -15185,12 +15215,12 @@
    "vernacular": "Ρομανί (Νότια Ελλάδα)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-25T03:37:10Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-25T03:37:10Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T04:15:38Z",
    "code": "BIM",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -15202,9 +15232,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T09:27:42Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-25T03:45:34Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "xml",
    "name": "Malaysian Sign Language",
    "published_at": "2026-09-24T09:27:42Z",
@@ -16485,12 +16515,12 @@
    "vernacular": "náhuatl del norte de Puebla"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-25T00:50:07Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-25T00:50:07Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T04:15:38Z",
    "code": "LM",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -16503,9 +16533,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T00:49:56Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-25T00:54:38Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "bi",
    "name": "Bislama",
    "published_at": "2026-09-25T00:49:56Z",
@@ -16518,12 +16548,12 @@
    "vernacular": "Bislama"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-25T01:43:23Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-25T01:43:23Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T04:15:38Z",
    "code": "TO",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -16535,9 +16565,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T01:43:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-25T01:45:59Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "to",
    "name": "Tongan",
    "published_at": "2026-09-25T01:43:12Z",
@@ -16550,12 +16580,12 @@
    "vernacular": "Faka-Tonga"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-25T03:24:43Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-25T03:24:43Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T04:15:38Z",
    "code": "SP",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -16567,9 +16597,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T03:24:30Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-25T03:45:34Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "pis",
    "name": "Solomon Islands Pidgin",
    "published_at": "2026-09-25T03:24:30Z",
@@ -16580,6 +16610,71 @@
    "title": "2026 Governing Body Update #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SP",
    "vernacular": "Solomon Islands Pidgin"
+  },
+  {
+   "api_published_at": "2026-09-25T03:51:55Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-25T03:51:55Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T04:15:38Z",
+   "code": "TJO",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T03:51:42Z",
+   "files_at": "2026-09-25T03:51:55Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-25T04:15:38Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "toj",
+   "name": "Tojolabal",
+   "published_at": "2026-09-25T03:51:55Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 | Imporme 6 bʼa Tsome Tojwanum",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TJO",
+   "vernacular": "tojol-abʼal"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MO",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T04:09:04Z",
+   "files_at": "2026-09-25T04:09:04Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T04:09:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T04:15:38Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ho",
+   "name": "Hiri Motu",
+   "published_at": "2026-09-25T04:09:04Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T04:09:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidio",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MO",
+   "vernacular": "Hiri Motu"
   }
  ],
  "removed": [],
@@ -16589,16 +16684,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 62,
-  "added_4h": 3,
-  "catalog_count": 303,
-  "catalog_lag": 4,
-  "catalog_percent": 67.5,
-  "days_since_release": 6.57,
-  "pending_count": 142,
-  "percent": 68.4,
-  "published_count": 307,
+  "added_1h": 3,
+  "added_24h": 64,
+  "added_4h": 5,
+  "catalog_count": 308,
+  "catalog_lag": 1,
+  "catalog_percent": 68.6,
+  "days_since_release": 6.59,
+  "pending_count": 140,
+  "percent": 68.8,
+  "published_count": 309,
   "publisher_percent": 92.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
