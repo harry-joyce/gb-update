@@ -1257,21 +1257,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 47,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 313,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 265,
+  "file_times": 266,
   "observed_times": 0,
-  "sign_languages": 57
+  "sign_languages": 58
  },
  "events": [
   {
@@ -3540,6 +3540,19 @@
   {
    "added": [
     {
+     "at": "2026-09-24T05:50:53Z",
+     "code": "FSL",
+     "in_catalog": false,
+     "name": "Filipino Sign Language",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 248,
+   "t": "2026-09-24T05:00:00Z"
+  },
+  {
+   "added": [
+    {
      "at": "2026-09-24T06:16:52Z",
      "code": "MWL",
      "in_catalog": true,
@@ -3547,7 +3560,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 248,
+   "count_after": 249,
    "t": "2026-09-24T06:00:00Z"
   },
   {
@@ -3595,7 +3608,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 254,
+   "count_after": 255,
    "t": "2026-09-24T07:00:00Z"
   },
   {
@@ -3643,7 +3656,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 260,
+   "count_after": 261,
    "t": "2026-09-24T08:00:00Z"
   },
   {
@@ -3684,7 +3697,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 265,
+   "count_after": 266,
    "t": "2026-09-24T09:00:00Z"
   },
   {
@@ -3697,7 +3710,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 266,
+   "count_after": 267,
    "t": "2026-09-24T10:00:00Z"
   },
   {
@@ -3738,7 +3751,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 271,
+   "count_after": 272,
    "t": "2026-09-24T11:00:00Z"
   },
   {
@@ -3758,7 +3771,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 273,
+   "count_after": 274,
    "t": "2026-09-24T12:00:00Z"
   },
   {
@@ -3806,7 +3819,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 279,
+   "count_after": 280,
    "t": "2026-09-24T13:00:00Z"
   },
   {
@@ -3854,7 +3867,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 285,
+   "count_after": 286,
    "t": "2026-09-24T14:00:00Z"
   },
   {
@@ -3888,7 +3901,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 289,
+   "count_after": 290,
    "t": "2026-09-24T15:00:00Z"
   },
   {
@@ -3943,7 +3956,7 @@
      "source": "api"
     }
    ],
-   "count_after": 296,
+   "count_after": 297,
    "t": "2026-09-24T16:00:00Z"
   },
   {
@@ -3984,7 +3997,7 @@
      "source": "api"
     }
    ],
-   "count_after": 301,
+   "count_after": 302,
    "t": "2026-09-24T19:00:00Z"
   },
   {
@@ -3997,7 +4010,7 @@
      "source": "api"
     }
    ],
-   "count_after": 302,
+   "count_after": 303,
    "t": "2026-09-24T20:00:00Z"
   },
   {
@@ -4010,7 +4023,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 303,
+   "count_after": 304,
    "t": "2026-09-24T22:00:00Z"
   },
   {
@@ -4023,7 +4036,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 304,
+   "count_after": 305,
    "t": "2026-09-24T23:00:00Z"
   },
   {
@@ -4036,7 +4049,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 305,
+   "count_after": 306,
    "t": "2026-09-25T00:00:00Z"
   },
   {
@@ -4049,7 +4062,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 306,
+   "count_after": 307,
    "t": "2026-09-25T01:00:00Z"
   },
   {
@@ -4069,7 +4082,7 @@
      "source": "api"
     }
    ],
-   "count_after": 308,
+   "count_after": 309,
    "t": "2026-09-25T03:00:00Z"
   },
   {
@@ -4082,7 +4095,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 309,
+   "count_after": 310,
    "t": "2026-09-25T04:00:00Z"
   },
   {
@@ -4102,7 +4115,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 311,
+   "count_after": 312,
    "t": "2026-09-25T05:00:00Z"
   },
   {
@@ -4122,11 +4135,11 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 313,
+   "count_after": 314,
    "t": "2026-09-25T06:00:00Z"
   }
  ],
- "generated": "2026-09-25T07:45:56Z",
+ "generated": "2026-09-25T08:46:03Z",
  "history": [
   {
    "count": 1,
@@ -5118,266 +5131,270 @@
   },
   {
    "count": 248,
-   "t": "2026-09-24T06:16:52Z"
+   "t": "2026-09-24T05:50:53Z"
   },
   {
    "count": 249,
-   "t": "2026-09-24T07:19:32Z"
+   "t": "2026-09-24T06:16:52Z"
   },
   {
    "count": 250,
-   "t": "2026-09-24T07:23:32Z"
+   "t": "2026-09-24T07:19:32Z"
   },
   {
    "count": 251,
-   "t": "2026-09-24T07:34:33Z"
+   "t": "2026-09-24T07:23:32Z"
   },
   {
    "count": 252,
-   "t": "2026-09-24T07:46:53Z"
+   "t": "2026-09-24T07:34:33Z"
   },
   {
    "count": 253,
-   "t": "2026-09-24T07:51:34Z"
+   "t": "2026-09-24T07:46:53Z"
   },
   {
    "count": 254,
-   "t": "2026-09-24T07:54:40Z"
+   "t": "2026-09-24T07:51:34Z"
   },
   {
    "count": 255,
-   "t": "2026-09-24T08:02:28Z"
+   "t": "2026-09-24T07:54:40Z"
   },
   {
    "count": 256,
-   "t": "2026-09-24T08:13:31Z"
+   "t": "2026-09-24T08:02:28Z"
   },
   {
    "count": 257,
-   "t": "2026-09-24T08:28:27Z"
+   "t": "2026-09-24T08:13:31Z"
   },
   {
    "count": 258,
-   "t": "2026-09-24T08:30:49Z"
+   "t": "2026-09-24T08:28:27Z"
   },
   {
    "count": 259,
-   "t": "2026-09-24T08:40:08Z"
+   "t": "2026-09-24T08:30:49Z"
   },
   {
    "count": 260,
-   "t": "2026-09-24T08:47:24Z"
+   "t": "2026-09-24T08:40:08Z"
   },
   {
    "count": 261,
-   "t": "2026-09-24T09:01:25Z"
+   "t": "2026-09-24T08:47:24Z"
   },
   {
    "count": 262,
-   "t": "2026-09-24T09:09:41Z"
+   "t": "2026-09-24T09:01:25Z"
   },
   {
    "count": 263,
-   "t": "2026-09-24T09:10:54Z"
+   "t": "2026-09-24T09:09:41Z"
   },
   {
    "count": 264,
-   "t": "2026-09-24T09:23:23Z"
+   "t": "2026-09-24T09:10:54Z"
   },
   {
    "count": 265,
-   "t": "2026-09-24T09:27:42Z"
+   "t": "2026-09-24T09:23:23Z"
   },
   {
    "count": 266,
-   "t": "2026-09-24T10:07:46Z"
+   "t": "2026-09-24T09:27:42Z"
   },
   {
    "count": 267,
-   "t": "2026-09-24T11:30:25Z"
+   "t": "2026-09-24T10:07:46Z"
   },
   {
    "count": 268,
-   "t": "2026-09-24T11:33:46Z"
+   "t": "2026-09-24T11:30:25Z"
   },
   {
    "count": 269,
-   "t": "2026-09-24T11:39:47Z"
+   "t": "2026-09-24T11:33:46Z"
   },
   {
    "count": 270,
-   "t": "2026-09-24T11:50:19Z"
+   "t": "2026-09-24T11:39:47Z"
   },
   {
    "count": 271,
-   "t": "2026-09-24T11:54:15Z"
+   "t": "2026-09-24T11:50:19Z"
   },
   {
    "count": 272,
-   "t": "2026-09-24T12:26:12Z"
+   "t": "2026-09-24T11:54:15Z"
   },
   {
    "count": 273,
-   "t": "2026-09-24T12:45:55Z"
+   "t": "2026-09-24T12:26:12Z"
   },
   {
    "count": 274,
-   "t": "2026-09-24T13:10:19Z"
+   "t": "2026-09-24T12:45:55Z"
   },
   {
    "count": 275,
-   "t": "2026-09-24T13:13:16Z"
+   "t": "2026-09-24T13:10:19Z"
   },
   {
    "count": 276,
-   "t": "2026-09-24T13:30:29Z"
+   "t": "2026-09-24T13:13:16Z"
   },
   {
    "count": 277,
-   "t": "2026-09-24T13:35:39Z"
+   "t": "2026-09-24T13:30:29Z"
   },
   {
    "count": 278,
-   "t": "2026-09-24T13:36:51Z"
+   "t": "2026-09-24T13:35:39Z"
   },
   {
    "count": 279,
-   "t": "2026-09-24T13:48:49Z"
+   "t": "2026-09-24T13:36:51Z"
   },
   {
    "count": 280,
-   "t": "2026-09-24T14:13:28Z"
+   "t": "2026-09-24T13:48:49Z"
   },
   {
    "count": 281,
-   "t": "2026-09-24T14:26:17Z"
+   "t": "2026-09-24T14:13:28Z"
   },
   {
    "count": 282,
-   "t": "2026-09-24T14:28:29Z"
+   "t": "2026-09-24T14:26:17Z"
   },
   {
    "count": 283,
-   "t": "2026-09-24T14:35:03Z"
+   "t": "2026-09-24T14:28:29Z"
   },
   {
    "count": 284,
-   "t": "2026-09-24T14:36:05Z"
+   "t": "2026-09-24T14:35:03Z"
   },
   {
    "count": 285,
-   "t": "2026-09-24T14:44:01Z"
+   "t": "2026-09-24T14:36:05Z"
   },
   {
    "count": 286,
-   "t": "2026-09-24T15:07:40Z"
+   "t": "2026-09-24T14:44:01Z"
   },
   {
    "count": 287,
-   "t": "2026-09-24T15:10:05Z"
+   "t": "2026-09-24T15:07:40Z"
   },
   {
    "count": 288,
-   "t": "2026-09-24T15:17:16Z"
+   "t": "2026-09-24T15:10:05Z"
   },
   {
    "count": 289,
-   "t": "2026-09-24T15:34:25Z"
+   "t": "2026-09-24T15:17:16Z"
   },
   {
    "count": 290,
-   "t": "2026-09-24T16:04:10Z"
+   "t": "2026-09-24T15:34:25Z"
   },
   {
    "count": 291,
-   "t": "2026-09-24T16:20:20Z"
+   "t": "2026-09-24T16:04:10Z"
   },
   {
    "count": 292,
-   "t": "2026-09-24T16:25:34Z"
+   "t": "2026-09-24T16:20:20Z"
   },
   {
    "count": 293,
-   "t": "2026-09-24T16:35:47Z"
+   "t": "2026-09-24T16:25:34Z"
   },
   {
    "count": 294,
-   "t": "2026-09-24T16:40:07Z"
+   "t": "2026-09-24T16:35:47Z"
   },
   {
    "count": 295,
-   "t": "2026-09-24T16:47:51Z"
+   "t": "2026-09-24T16:40:07Z"
   },
   {
    "count": 296,
-   "t": "2026-09-24T16:54:50Z"
+   "t": "2026-09-24T16:47:51Z"
   },
   {
    "count": 297,
-   "t": "2026-09-24T19:05:36Z"
+   "t": "2026-09-24T16:54:50Z"
   },
   {
    "count": 298,
-   "t": "2026-09-24T19:11:51Z"
+   "t": "2026-09-24T19:05:36Z"
   },
   {
    "count": 299,
-   "t": "2026-09-24T19:16:53Z"
+   "t": "2026-09-24T19:11:51Z"
   },
   {
    "count": 300,
-   "t": "2026-09-24T19:17:26Z"
+   "t": "2026-09-24T19:16:53Z"
   },
   {
    "count": 301,
-   "t": "2026-09-24T19:32:30Z"
+   "t": "2026-09-24T19:17:26Z"
   },
   {
    "count": 302,
-   "t": "2026-09-24T20:29:19Z"
+   "t": "2026-09-24T19:32:30Z"
   },
   {
    "count": 303,
-   "t": "2026-09-24T22:33:01Z"
+   "t": "2026-09-24T20:29:19Z"
   },
   {
    "count": 304,
-   "t": "2026-09-24T23:27:23Z"
+   "t": "2026-09-24T22:33:01Z"
   },
   {
    "count": 305,
-   "t": "2026-09-25T00:49:56Z"
+   "t": "2026-09-24T23:27:23Z"
   },
   {
    "count": 306,
-   "t": "2026-09-25T01:43:12Z"
+   "t": "2026-09-25T00:49:56Z"
   },
   {
    "count": 307,
-   "t": "2026-09-25T03:24:30Z"
+   "t": "2026-09-25T01:43:12Z"
   },
   {
    "count": 308,
-   "t": "2026-09-25T03:51:55Z"
+   "t": "2026-09-25T03:24:30Z"
   },
   {
    "count": 309,
-   "t": "2026-09-25T04:09:04Z"
+   "t": "2026-09-25T03:51:55Z"
   },
   {
    "count": 310,
-   "t": "2026-09-25T05:18:59Z"
+   "t": "2026-09-25T04:09:04Z"
   },
   {
    "count": 311,
-   "t": "2026-09-25T05:42:50Z"
+   "t": "2026-09-25T05:18:59Z"
   },
   {
    "count": 312,
-   "t": "2026-09-25T06:17:28Z"
+   "t": "2026-09-25T05:42:50Z"
   },
   {
    "count": 313,
+   "t": "2026-09-25T06:17:28Z"
+  },
+  {
+   "count": 314,
    "t": "2026-09-25T06:47:30Z"
   }
  ],
@@ -5392,13 +5409,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 53,
-  "files_count": 313,
+  "files_count": 314,
   "last_full_verification": "2026-09-24T08:43:27Z",
   "listing_count": 313,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T07:45:56Z",
+ "last_checked": "2026-09-25T08:46:03Z",
  "pending": [
   {
    "code": "ABB",
@@ -5696,15 +5713,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "vakaViti"
-  },
-  {
-   "code": "FSL",
-   "direction": "ltr",
-   "locale": "psp",
-   "name": "Filipino Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Filipino Sign Language"
   },
   {
    "code": "GRF",
@@ -14700,6 +14708,38 @@
    "vernacular": "Ateso"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "FSL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T05:50:53Z",
+   "files_at": "2026-09-24T05:50:53Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T05:50:53Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T08:46:03Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "psp",
+   "name": "Filipino Sign Language",
+   "published_at": "2026-09-24T05:50:53Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T05:50:53Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 Governing Body Update #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=FSL",
+   "vernacular": "Filipino Sign Language"
+  },
+  {
    "api_published_at": "2026-09-24T06:17:01Z",
    "beyond_baseline": false,
    "catalog_at": "2026-09-24T06:17:01Z",
@@ -16856,16 +16896,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 62,
-  "added_4h": 6,
+  "added_1h": 0,
+  "added_24h": 54,
+  "added_4h": 4,
   "catalog_count": 313,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 69.7,
-  "days_since_release": 6.74,
-  "pending_count": 136,
-  "percent": 69.7,
-  "published_count": 313,
+  "days_since_release": 6.78,
+  "pending_count": 135,
+  "percent": 69.9,
+  "published_count": 314,
   "publisher_percent": 94.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
