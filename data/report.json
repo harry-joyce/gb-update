@@ -1301,19 +1301,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 6,
+  "last_checked_count": 7,
   "newly_catalogued": [],
-  "offset": 5,
+  "offset": 3,
   "size": 40,
-  "unlisted_total": 6
+  "unlisted_total": 7
  },
  "counts": {
   "api_times": 48,
-  "awaiting_catalogue": 6,
+  "awaiting_catalogue": 7,
   "catalogued": 324,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 281,
+  "file_times": 282,
   "observed_times": 0,
   "sign_languages": 59
  },
@@ -4311,9 +4311,22 @@
    ],
    "count_after": 330,
    "t": "2026-09-25T11:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-25T12:03:42Z",
+     "code": "MT",
+     "in_catalog": false,
+     "name": "Maltese",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 331,
+   "t": "2026-09-25T12:00:00Z"
   }
  ],
- "generated": "2026-09-25T11:56:56Z",
+ "generated": "2026-09-25T12:16:21Z",
  "history": [
   {
    "count": 1,
@@ -5634,6 +5647,10 @@
   {
    "count": 330,
    "t": "2026-09-25T11:53:16Z"
+  },
+  {
+   "count": 331,
+   "t": "2026-09-25T12:03:42Z"
   }
  ],
  "integrity": {
@@ -5647,13 +5664,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 330,
+  "files_count": 331,
   "last_full_verification": "2026-09-25T09:03:47Z",
   "listing_count": 324,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T11:56:56Z",
+ "last_checked": "2026-09-25T12:16:21Z",
  "pending": [
   {
    "code": "ABB",
@@ -6257,15 +6274,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Shimakonde"
-  },
-  {
-   "code": "MT",
-   "direction": "ltr",
-   "locale": "mt",
-   "name": "Maltese",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Malti"
   },
   {
    "code": "MZ",
@@ -17511,6 +17519,38 @@
    "title": "Vidio",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=IJ",
    "vernacular": "Ijaw"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MT",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T12:03:42Z",
+   "files_at": "2026-09-25T12:03:42Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T12:03:42Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T12:16:21Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "mt",
+   "name": "Maltese",
+   "published_at": "2026-09-25T12:03:42Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T12:03:42Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Is-6 Rapport tal-2026 mill-Ġemgħa li Tiggverna",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MT",
+   "vernacular": "Malti"
   }
  ],
  "removed": [],
@@ -17520,16 +17560,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 6,
-  "added_24h": 58,
-  "added_4h": 15,
+  "added_1h": 4,
+  "added_24h": 59,
+  "added_4h": 16,
   "catalog_count": 324,
-  "catalog_lag": 6,
+  "catalog_lag": 7,
   "catalog_percent": 72.2,
-  "days_since_release": 6.91,
-  "pending_count": 119,
-  "percent": 73.5,
-  "published_count": 330,
+  "days_since_release": 6.93,
+  "pending_count": 118,
+  "percent": 73.7,
+  "published_count": 331,
   "publisher_percent": 96.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
