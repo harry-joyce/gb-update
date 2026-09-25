@@ -1257,19 +1257,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 8,
+  "last_checked_count": 10,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 8
+  "unlisted_total": 10
  },
  "counts": {
   "api_times": 47,
-  "awaiting_catalogue": 8,
+  "awaiting_catalogue": 10,
   "catalogued": 313,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 273,
+  "file_times": 275,
   "observed_times": 0,
   "sign_languages": 59
  },
@@ -4192,9 +4192,29 @@
    ],
    "count_after": 321,
    "t": "2026-09-25T09:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-25T10:02:00Z",
+     "code": "CG",
+     "in_catalog": false,
+     "name": "Chitonga",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T10:02:35Z",
+     "code": "SE",
+     "in_catalog": false,
+     "name": "Sepedi",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 323,
+   "t": "2026-09-25T10:00:00Z"
   }
  ],
- "generated": "2026-09-25T09:46:08Z",
+ "generated": "2026-09-25T10:16:10Z",
  "history": [
   {
    "count": 1,
@@ -5479,6 +5499,14 @@
   {
    "count": 321,
    "t": "2026-09-25T09:39:31Z"
+  },
+  {
+   "count": 322,
+   "t": "2026-09-25T10:02:00Z"
+  },
+  {
+   "count": 323,
+   "t": "2026-09-25T10:02:35Z"
   }
  ],
  "integrity": {
@@ -5492,13 +5520,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 321,
+  "files_count": 323,
   "last_full_verification": "2026-09-25T09:03:47Z",
   "listing_count": 313,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T09:46:08Z",
+ "last_checked": "2026-09-25T10:16:10Z",
  "pending": [
   {
    "code": "ABB",
@@ -5643,15 +5671,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Cebuano"
-  },
-  {
-   "code": "CG",
-   "direction": "ltr",
-   "locale": "toi",
-   "name": "Chitonga",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Chitonga"
   },
   {
    "code": "CHL",
@@ -6462,15 +6481,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Cisena"
-  },
-  {
-   "code": "SE",
-   "direction": "ltr",
-   "locale": "nso",
-   "name": "Sepedi",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Sepedi"
   },
   {
    "code": "SU",
@@ -17143,6 +17153,72 @@
    "title": "2026 nga Update Tikang ha Nagmamando nga Lawas #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SA",
    "vernacular": "Waray-Waray"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T10:02:00Z",
+   "files_at": "2026-09-25T10:02:00Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T10:02:00Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T10:16:10Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "toi",
+   "name": "Chitonga",
+   "published_at": "2026-09-25T10:02:00Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T10:02:00Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CG",
+   "vernacular": "Chitonga"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SE",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T10:02:35Z",
+   "files_at": "2026-09-25T10:02:35Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T10:02:35Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T10:16:10Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nso",
+   "name": "Sepedi",
+   "published_at": "2026-09-25T10:02:35Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T10:02:35Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Bidio",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SE",
+   "vernacular": "Sepedi"
   }
  ],
  "removed": [],
@@ -17152,17 +17228,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 6,
-  "added_24h": 55,
-  "added_4h": 8,
+  "added_1h": 8,
+  "added_24h": 56,
+  "added_4h": 10,
   "catalog_count": 313,
-  "catalog_lag": 8,
+  "catalog_lag": 10,
   "catalog_percent": 69.7,
-  "days_since_release": 6.82,
-  "pending_count": 128,
-  "percent": 71.5,
-  "published_count": 321,
-  "publisher_percent": 94.3,
+  "days_since_release": 6.84,
+  "pending_count": 126,
+  "percent": 71.9,
+  "published_count": 323,
+  "publisher_percent": 94.4,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
