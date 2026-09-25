@@ -1353,19 +1353,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 6,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 5,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 6
  },
  "counts": {
   "api_times": 48,
-  "awaiting_catalogue": 3,
+  "awaiting_catalogue": 6,
   "catalogued": 337,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 291,
+  "file_times": 294,
   "observed_times": 0,
   "sign_languages": 59
  },
@@ -4451,9 +4451,36 @@
    ],
    "count_after": 340,
    "t": "2026-09-25T14:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-25T15:13:06Z",
+     "code": "NHC",
+     "in_catalog": false,
+     "name": "Nahuatl (Central)",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T15:37:16Z",
+     "code": "MZ",
+     "in_catalog": false,
+     "name": "Mam",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T15:42:24Z",
+     "code": "SGO",
+     "in_catalog": false,
+     "name": "Songo",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 343,
+   "t": "2026-09-25T15:00:00Z"
   }
  ],
- "generated": "2026-09-25T15:16:40Z",
+ "generated": "2026-09-25T15:46:43Z",
  "history": [
   {
    "count": 1,
@@ -5814,6 +5841,18 @@
   {
    "count": 340,
    "t": "2026-09-25T14:54:13Z"
+  },
+  {
+   "count": 341,
+   "t": "2026-09-25T15:13:06Z"
+  },
+  {
+   "count": 342,
+   "t": "2026-09-25T15:37:16Z"
+  },
+  {
+   "count": 343,
+   "t": "2026-09-25T15:42:24Z"
   }
  ],
  "integrity": {
@@ -5827,13 +5866,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 340,
+  "files_count": 343,
   "last_full_verification": "2026-09-25T09:03:47Z",
   "listing_count": 337,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T15:16:40Z",
+ "last_checked": "2026-09-25T15:46:43Z",
  "pending": [
   {
    "code": "ABB",
@@ -6412,15 +6451,6 @@
    "vernacular": "Shimakonde"
   },
   {
-   "code": "MZ",
-   "direction": "ltr",
-   "locale": "mam",
-   "name": "Mam",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "mam"
-  },
-  {
    "code": "MNJ",
    "direction": "ltr",
    "locale": "mzv",
@@ -6527,15 +6557,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Motu"
-  },
-  {
-   "code": "NHC",
-   "direction": "ltr",
-   "locale": "ncx",
-   "name": "Nahuatl (Central)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "náhuatl del centro"
   },
   {
    "code": "NHG",
@@ -6662,15 +6683,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Sar"
-  },
-  {
-   "code": "SGO",
-   "direction": "ltr",
-   "locale": "nsx",
-   "name": "Songo",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Songo"
   },
   {
    "code": "SGM",
@@ -17927,6 +17939,104 @@
    "title": "Vidiyo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=RNY",
    "vernacular": "Rumanyo"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NHC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T15:13:06Z",
+   "files_at": "2026-09-25T15:13:06Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T15:13:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T15:46:43Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ncx",
+   "name": "Nahuatl (Central)",
+   "published_at": "2026-09-25T15:13:06Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T15:13:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NHC",
+   "vernacular": "náhuatl del centro"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MZ",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T15:37:16Z",
+   "files_at": "2026-09-25T15:37:16Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T15:37:16Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T15:46:43Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "mam",
+   "name": "Mam",
+   "published_at": "2026-09-25T15:37:16Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T15:37:16Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 | Tqanil 6 tuʼn Kʼloj Xjal Qʼil Twitz Aqʼuntl",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MZ",
+   "vernacular": "mam"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SGO",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T15:42:24Z",
+   "files_at": "2026-09-25T15:42:24Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T15:42:24Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T15:46:43Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nsx",
+   "name": "Songo",
+   "published_at": "2026-09-25T15:42:24Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T15:42:24Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SGO",
+   "vernacular": "Songo"
   }
  ],
  "removed": [],
@@ -17936,16 +18046,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
-  "added_24h": 50,
-  "added_4h": 12,
+  "added_1h": 5,
+  "added_24h": 51,
+  "added_4h": 13,
   "catalog_count": 337,
-  "catalog_lag": 3,
+  "catalog_lag": 6,
   "catalog_percent": 75.1,
-  "days_since_release": 7.05,
-  "pending_count": 109,
-  "percent": 75.7,
-  "published_count": 340,
+  "days_since_release": 7.07,
+  "pending_count": 106,
+  "percent": 76.4,
+  "published_count": 343,
   "publisher_percent": 96.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
