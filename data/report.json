@@ -1301,19 +1301,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 5,
+  "last_checked_count": 6,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 5,
   "size": 40,
-  "unlisted_total": 5
+  "unlisted_total": 6
  },
  "counts": {
   "api_times": 48,
-  "awaiting_catalogue": 5,
+  "awaiting_catalogue": 6,
   "catalogued": 324,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 280,
+  "file_times": 281,
   "observed_times": 0,
   "sign_languages": 59
  },
@@ -4300,13 +4300,20 @@
      "in_catalog": false,
      "name": "Ossetian",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T11:53:16Z",
+     "code": "IJ",
+     "in_catalog": false,
+     "name": "Ijaw",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 329,
+   "count_after": 330,
    "t": "2026-09-25T11:00:00Z"
   }
  ],
- "generated": "2026-09-25T11:46:19Z",
+ "generated": "2026-09-25T11:56:56Z",
  "history": [
   {
    "count": 1,
@@ -5623,6 +5630,10 @@
   {
    "count": 329,
    "t": "2026-09-25T11:41:20Z"
+  },
+  {
+   "count": 330,
+   "t": "2026-09-25T11:53:16Z"
   }
  ],
  "integrity": {
@@ -5636,13 +5647,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 329,
+  "files_count": 330,
   "last_full_verification": "2026-09-25T09:03:47Z",
   "listing_count": 324,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T11:46:19Z",
+ "last_checked": "2026-09-25T11:56:56Z",
  "pending": [
   {
    "code": "ABB",
@@ -6039,15 +6050,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Igede"
-  },
-  {
-   "code": "IJ",
-   "direction": "ltr",
-   "locale": "ijc",
-   "name": "Ijaw",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ijaw"
   },
   {
    "code": "IL",
@@ -17476,6 +17478,39 @@
    "title": "Ног хабӕрттӕ Разамонӕг советӕй №6 (2026 аз)",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=OSS",
    "vernacular": "ирон"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "IJ",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T11:53:16Z",
+   "files_at": "2026-09-25T11:53:16Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T11:53:16Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T11:56:56Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ijc",
+   "name": "Ijaw",
+   "published_at": "2026-09-25T11:53:16Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T11:53:16Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidio",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=IJ",
+   "vernacular": "Ijaw"
   }
  ],
  "removed": [],
@@ -17485,16 +17520,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 5,
-  "added_24h": 59,
-  "added_4h": 14,
+  "added_1h": 6,
+  "added_24h": 58,
+  "added_4h": 15,
   "catalog_count": 324,
-  "catalog_lag": 5,
+  "catalog_lag": 6,
   "catalog_percent": 72.2,
   "days_since_release": 6.91,
-  "pending_count": 120,
-  "percent": 73.3,
-  "published_count": 329,
+  "pending_count": 119,
+  "percent": 73.5,
+  "published_count": 330,
   "publisher_percent": 96.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
