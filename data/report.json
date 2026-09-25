@@ -1398,19 +1398,43 @@
   {
    "count": 349,
    "t": "2026-09-25T17:52:12Z"
+  },
+  {
+   "count": 350,
+   "t": "2026-09-25T19:13:28Z"
+  },
+  {
+   "count": 351,
+   "t": "2026-09-25T19:31:33Z"
+  },
+  {
+   "count": 352,
+   "t": "2026-09-25T19:38:17Z"
+  },
+  {
+   "count": 353,
+   "t": "2026-09-25T20:37:26Z"
+  },
+  {
+   "count": 354,
+   "t": "2026-09-25T22:12:35Z"
+  },
+  {
+   "count": 355,
+   "t": "2026-09-25T22:21:24Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 5,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 5
+  "unlisted_total": 0
  },
  "counts": {
-  "api_times": 48,
-  "awaiting_catalogue": 5,
-  "catalogued": 349,
+  "api_times": 49,
+  "awaiting_catalogue": 0,
+  "catalogued": 355,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 305,
@@ -4573,7 +4597,7 @@
     {
      "at": "2026-09-25T17:24:46Z",
      "code": "LSN",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Nicaraguan Sign Language",
      "source": "file_estimated"
     },
@@ -4593,21 +4617,21 @@
     {
      "at": "2026-09-25T19:13:15Z",
      "code": "UR",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Urhobo",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-25T19:31:25Z",
      "code": "IBI",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Ibinda",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-25T19:38:04Z",
      "code": "BA",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Bassa (Liberia)",
      "source": "file_estimated"
     }
@@ -4620,16 +4644,23 @@
     {
      "at": "2026-09-25T22:12:24Z",
      "code": "NHG",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Nahuatl (Guerrero)",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T22:21:24Z",
+     "code": "ZPI",
+     "in_catalog": true,
+     "name": "Zapotec (Isthmus)",
+     "source": "api"
     }
    ],
-   "count_after": 354,
+   "count_after": 355,
    "t": "2026-09-25T22:00:00Z"
   }
  ],
- "generated": "2026-09-25T22:17:17Z",
+ "generated": "2026-09-25T22:47:22Z",
  "history": [
   {
    "count": 1,
@@ -6046,6 +6077,10 @@
   {
    "count": 354,
    "t": "2026-09-25T22:12:24Z"
+  },
+  {
+   "count": 355,
+   "t": "2026-09-25T22:21:24Z"
   }
  ],
  "integrity": {
@@ -6059,13 +6094,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 354,
+  "files_count": 355,
   "last_full_verification": "2026-09-25T09:03:47Z",
-  "listing_count": 349,
+  "listing_count": 355,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T22:17:17Z",
+ "last_checked": "2026-09-25T22:47:22Z",
  "pending": [
   {
    "code": "ABB",
@@ -6966,15 +7001,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Zambian Sign Language"
-  },
-  {
-   "code": "ZPI",
-   "direction": "ltr",
-   "locale": "zai",
-   "name": "Zapotec (Isthmus)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "diidxazá"
   }
  ],
  "published": [
@@ -18304,12 +18330,12 @@
    "vernacular": "Plautdietsch"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-25T20:37:26Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-25T20:37:26Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T22:47:22Z",
    "code": "LSN",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -18321,9 +18347,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T17:24:46Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-25T20:45:59Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ncs",
    "name": "Nicaraguan Sign Language",
    "published_at": "2026-09-25T17:24:46Z",
@@ -18369,12 +18395,12 @@
    "vernacular": "Ebira"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-25T19:13:28Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-25T19:13:28Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T22:47:22Z",
    "code": "UR",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -18387,9 +18413,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T19:13:15Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-25T19:17:04Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "urh",
    "name": "Urhobo",
    "published_at": "2026-09-25T19:13:15Z",
@@ -18402,12 +18428,12 @@
    "vernacular": "Urhobo"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-25T19:31:33Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-25T19:31:33Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T22:47:22Z",
    "code": "IBI",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -18420,9 +18446,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T19:31:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-25T19:47:05Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "yom-x-ibi",
    "name": "Ibinda",
    "published_at": "2026-09-25T19:31:25Z",
@@ -18435,12 +18461,12 @@
    "vernacular": "Ibinda"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-25T19:38:17Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-25T19:38:17Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T22:47:22Z",
    "code": "BA",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -18452,9 +18478,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T19:38:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-25T19:47:05Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "bsq",
    "name": "Bassa (Liberia)",
    "published_at": "2026-09-25T19:38:04Z",
@@ -18467,12 +18493,12 @@
    "vernacular": "Ɓǎsɔ́ɔ̀ (Ɖàbíɖà)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-25T22:12:35Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-25T22:12:35Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T22:47:22Z",
    "code": "NHG",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -18484,9 +18510,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T22:12:24Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-25T22:17:17Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ngu",
    "name": "Nahuatl (Guerrero)",
    "published_at": "2026-09-25T22:12:24Z",
@@ -18497,6 +18523,39 @@
    "title": "2026 | Grupo akin Tlayekana kijtoua tlen panotika #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NHG",
    "vernacular": "náhuatl de guerrero"
+  },
+  {
+   "api_published_at": "2026-09-25T22:21:24Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-25T22:21:24Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-25T22:47:22Z",
+   "code": "ZPI",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T22:21:13Z",
+   "files_at": "2026-09-25T22:21:24Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-25T22:47:22Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "zai",
+   "name": "Zapotec (Isthmus)",
+   "published_at": "2026-09-25T22:21:24Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 | Informe xhoopa' stiʼ Grupu ni Zániru",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ZPI",
+   "vernacular": "diidxazá"
   }
  ],
  "removed": [],
@@ -18506,17 +18565,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
+  "added_1h": 2,
   "added_24h": 49,
-  "added_4h": 4,
-  "catalog_count": 349,
-  "catalog_lag": 5,
-  "catalog_percent": 77.7,
-  "days_since_release": 7.35,
-  "pending_count": 95,
-  "percent": 78.8,
-  "published_count": 354,
-  "publisher_percent": 96.7,
+  "added_4h": 5,
+  "catalog_count": 355,
+  "catalog_lag": 0,
+  "catalog_percent": 79.1,
+  "days_since_release": 7.37,
+  "pending_count": 94,
+  "percent": 79.1,
+  "published_count": 355,
+  "publisher_percent": 96.8,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
