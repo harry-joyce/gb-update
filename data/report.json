@@ -1353,19 +1353,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 6,
+  "last_checked_count": 8,
   "newly_catalogued": [],
   "offset": 5,
   "size": 40,
-  "unlisted_total": 6
+  "unlisted_total": 8
  },
  "counts": {
   "api_times": 48,
-  "awaiting_catalogue": 6,
+  "awaiting_catalogue": 8,
   "catalogued": 337,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 294,
+  "file_times": 296,
   "observed_times": 0,
   "sign_languages": 59
  },
@@ -4478,9 +4478,29 @@
    ],
    "count_after": 343,
    "t": "2026-09-25T15:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-25T16:02:42Z",
+     "code": "MNO",
+     "in_catalog": false,
+     "name": "Mano",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T16:10:34Z",
+     "code": "HVU",
+     "in_catalog": false,
+     "name": "Havu",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 345,
+   "t": "2026-09-25T16:00:00Z"
   }
  ],
- "generated": "2026-09-25T15:46:43Z",
+ "generated": "2026-09-25T16:16:46Z",
  "history": [
   {
    "count": 1,
@@ -5853,6 +5873,14 @@
   {
    "count": 343,
    "t": "2026-09-25T15:42:24Z"
+  },
+  {
+   "count": 344,
+   "t": "2026-09-25T16:02:42Z"
+  },
+  {
+   "count": 345,
+   "t": "2026-09-25T16:10:34Z"
   }
  ],
  "integrity": {
@@ -5866,13 +5894,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 343,
+  "files_count": 345,
   "last_full_verification": "2026-09-25T09:03:47Z",
   "listing_count": 337,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T15:46:43Z",
+ "last_checked": "2026-09-25T16:16:46Z",
  "pending": [
   {
    "code": "ABB",
@@ -6172,15 +6200,6 @@
    "vernacular": "Kréyòl gwiyanè"
   },
   {
-   "code": "HVU",
-   "direction": "ltr",
-   "locale": "hav",
-   "name": "Havu",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ekihavu"
-  },
-  {
    "code": "HR",
    "direction": "ltr",
    "locale": "hz",
@@ -6458,15 +6477,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Mandja"
-  },
-  {
-   "code": "MNO",
-   "direction": "ltr",
-   "locale": "mev",
-   "name": "Mano",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Maa"
   },
   {
    "code": "MYW",
@@ -18037,6 +18047,70 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SGO",
    "vernacular": "Songo"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MNO",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T16:02:42Z",
+   "files_at": "2026-09-25T16:02:42Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T16:02:42Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T16:16:46Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "mev",
+   "name": "Mano",
+   "published_at": "2026-09-25T16:02:42Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T16:02:42Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Mia Diedievɔ Kpo Ɓeĩa Wa Wɔ̃laũ Dɛɛ #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MNO",
+   "vernacular": "Maa"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "HVU",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T16:10:34Z",
+   "files_at": "2026-09-25T16:10:34Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T16:10:34Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T16:16:46Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "hav",
+   "name": "Havu",
+   "published_at": "2026-09-25T16:10:34Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T16:10:34Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Baraza Lirhambwire—Raporo ya 6 ya 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=HVU",
+   "vernacular": "Ekihavu"
   }
  ],
  "removed": [],
@@ -18046,16 +18120,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 5,
-  "added_24h": 51,
+  "added_1h": 4,
+  "added_24h": 52,
   "added_4h": 13,
   "catalog_count": 337,
-  "catalog_lag": 6,
+  "catalog_lag": 8,
   "catalog_percent": 75.1,
-  "days_since_release": 7.07,
-  "pending_count": 106,
-  "percent": 76.4,
-  "published_count": 343,
+  "days_since_release": 7.1,
+  "pending_count": 104,
+  "percent": 76.8,
+  "published_count": 345,
   "publisher_percent": 96.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
