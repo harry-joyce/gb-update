@@ -1401,19 +1401,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 48,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 3,
   "catalogued": 349,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 301,
+  "file_times": 303,
   "observed_times": 0,
   "sign_languages": 59
  },
@@ -4589,13 +4589,27 @@
      "in_catalog": false,
      "name": "Urhobo",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T19:31:25Z",
+     "code": "IBI",
+     "in_catalog": false,
+     "name": "Ibinda",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T19:38:04Z",
+     "code": "BA",
+     "in_catalog": false,
+     "name": "Bassa (Liberia)",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 350,
+   "count_after": 352,
    "t": "2026-09-25T19:00:00Z"
   }
  ],
- "generated": "2026-09-25T19:17:04Z",
+ "generated": "2026-09-25T19:47:05Z",
  "history": [
   {
    "count": 1,
@@ -5996,6 +6010,14 @@
   {
    "count": 350,
    "t": "2026-09-25T19:13:15Z"
+  },
+  {
+   "count": 351,
+   "t": "2026-09-25T19:31:25Z"
+  },
+  {
+   "count": 352,
+   "t": "2026-09-25T19:38:04Z"
   }
  ],
  "integrity": {
@@ -6009,13 +6031,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 350,
+  "files_count": 352,
   "last_full_verification": "2026-09-25T09:03:47Z",
   "listing_count": 349,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T19:17:04Z",
+ "last_checked": "2026-09-25T19:47:05Z",
  "pending": [
   {
    "code": "ABB",
@@ -6088,15 +6110,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Basaa (Kamerun)"
-  },
-  {
-   "code": "BA",
-   "direction": "ltr",
-   "locale": "bsq",
-   "name": "Bassa (Liberia)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ɓǎsɔ́ɔ̀ (Ɖàbíɖà)"
   },
   {
    "code": "SBF",
@@ -6340,15 +6353,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ibanag"
-  },
-  {
-   "code": "IBI",
-   "direction": "ltr",
-   "locale": "yom-x-ibi",
-   "name": "Ibinda",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ibinda"
   },
   {
    "code": "ID",
@@ -18354,6 +18358,71 @@
    "title": "Ividio",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=UR",
    "vernacular": "Urhobo"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "IBI",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T19:31:25Z",
+   "files_at": "2026-09-25T19:31:25Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T19:31:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T19:47:05Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "yom-x-ibi",
+   "name": "Ibinda",
+   "published_at": "2026-09-25T19:31:25Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T19:31:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=IBI",
+   "vernacular": "Ibinda"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "BA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T19:38:04Z",
+   "files_at": "2026-09-25T19:38:04Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T19:38:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T19:47:05Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "bsq",
+   "name": "Bassa (Liberia)",
+   "published_at": "2026-09-25T19:38:04Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T19:38:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Nyɔ-Dyúa-Nì-Nyɔ̀ Ɓèɔ̀ Bɔ̃̀-Dyi-Po-Po #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BA",
+   "vernacular": "Ɓǎsɔ́ɔ̀ (Ɖàbíɖà)"
   }
  ],
  "removed": [],
@@ -18363,16 +18432,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
+  "added_1h": 3,
   "added_24h": 48,
   "added_4h": 9,
   "catalog_count": 349,
-  "catalog_lag": 1,
+  "catalog_lag": 3,
   "catalog_percent": 77.7,
-  "days_since_release": 7.22,
-  "pending_count": 99,
-  "percent": 78.0,
-  "published_count": 350,
+  "days_since_release": 7.24,
+  "pending_count": 97,
+  "percent": 78.4,
+  "published_count": 352,
   "publisher_percent": 96.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
