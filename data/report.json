@@ -1301,19 +1301,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 11,
+  "last_checked_count": 12,
   "newly_catalogued": [],
-  "offset": 3,
+  "offset": 7,
   "size": 40,
-  "unlisted_total": 11
+  "unlisted_total": 12
  },
  "counts": {
   "api_times": 48,
-  "awaiting_catalogue": 11,
+  "awaiting_catalogue": 12,
   "catalogued": 324,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 286,
+  "file_times": 287,
   "observed_times": 0,
   "sign_languages": 59
  },
@@ -4354,13 +4354,20 @@
      "in_catalog": false,
      "name": "Edo",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T13:33:11Z",
+     "code": "SG",
+     "in_catalog": false,
+     "name": "Sango",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 335,
+   "count_after": 336,
    "t": "2026-09-25T13:00:00Z"
   }
  ],
- "generated": "2026-09-25T13:17:05Z",
+ "generated": "2026-09-25T13:46:31Z",
  "history": [
   {
    "count": 1,
@@ -5701,6 +5708,10 @@
   {
    "count": 335,
    "t": "2026-09-25T13:11:03Z"
+  },
+  {
+   "count": 336,
+   "t": "2026-09-25T13:33:11Z"
   }
  ],
  "integrity": {
@@ -5714,13 +5725,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 335,
+  "files_count": 336,
   "last_full_verification": "2026-09-25T09:03:47Z",
   "listing_count": 324,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T13:17:05Z",
+ "last_checked": "2026-09-25T13:46:31Z",
  "pending": [
   {
    "code": "ABB",
@@ -6558,15 +6569,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kréol Rénioné"
-  },
-  {
-   "code": "SG",
-   "direction": "ltr",
-   "locale": "sg",
-   "name": "Sango",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Sango"
   },
   {
    "code": "SAR",
@@ -17695,6 +17697,39 @@
    "title": "Vidio",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ED",
    "vernacular": "Edo"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T13:33:11Z",
+   "files_at": "2026-09-25T13:33:11Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T13:33:11Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T13:46:31Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "sg",
+   "name": "Sango",
+   "published_at": "2026-09-25T13:33:11Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T13:33:11Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidéo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SG",
+   "vernacular": "Sango"
   }
  ],
  "removed": [],
@@ -17704,16 +17739,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
-  "added_24h": 59,
-  "added_4h": 19,
+  "added_1h": 2,
+  "added_24h": 57,
+  "added_4h": 14,
   "catalog_count": 324,
-  "catalog_lag": 11,
+  "catalog_lag": 12,
   "catalog_percent": 72.2,
-  "days_since_release": 6.97,
-  "pending_count": 114,
-  "percent": 74.6,
-  "published_count": 335,
+  "days_since_release": 6.99,
+  "pending_count": 113,
+  "percent": 74.8,
+  "published_count": 336,
   "publisher_percent": 96.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
