@@ -1353,33 +1353,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 14,
-  "newly_catalogued": [
-   "BI",
-   "CV",
-   "ED",
-   "GCR",
-   "IB",
-   "IJ",
-   "LT",
-   "MT",
-   "OG",
-   "OSS",
-   "SEN",
-   "SG",
-   "ZU"
-  ],
-  "offset": 6,
+  "last_checked_count": 3,
+  "newly_catalogued": [],
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 14
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 48,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 3,
   "catalogued": 337,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 289,
+  "file_times": 291,
   "observed_times": 0,
   "sign_languages": 59
  },
@@ -4447,13 +4433,27 @@
      "in_catalog": false,
      "name": "Sesotho (Lesotho)",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T14:53:54Z",
+     "code": "NGL",
+     "in_catalog": false,
+     "name": "Ngangela",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T14:54:13Z",
+     "code": "RNY",
+     "in_catalog": false,
+     "name": "Rumanyo",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 338,
+   "count_after": 340,
    "t": "2026-09-25T14:00:00Z"
   }
  ],
- "generated": "2026-09-25T14:46:37Z",
+ "generated": "2026-09-25T15:16:40Z",
  "history": [
   {
    "count": 1,
@@ -5806,6 +5806,14 @@
   {
    "count": 338,
    "t": "2026-09-25T14:40:36Z"
+  },
+  {
+   "count": 339,
+   "t": "2026-09-25T14:53:54Z"
+  },
+  {
+   "count": 340,
+   "t": "2026-09-25T14:54:13Z"
   }
  ],
  "integrity": {
@@ -5819,13 +5827,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 338,
+  "files_count": 340,
   "last_full_verification": "2026-09-25T09:03:47Z",
-  "listing_count": 324,
+  "listing_count": 337,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T14:46:37Z",
+ "last_checked": "2026-09-25T15:16:40Z",
  "pending": [
   {
    "code": "ABB",
@@ -6566,15 +6574,6 @@
    "vernacular": "Oshindonga"
   },
   {
-   "code": "NGL",
-   "direction": "ltr",
-   "locale": "nba",
-   "name": "Ngangela",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ngangela"
-  },
-  {
    "code": "NGN",
    "direction": "ltr",
    "locale": "ngb",
@@ -6645,15 +6644,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Quechua (Ancash)"
-  },
-  {
-   "code": "RNY",
-   "direction": "ltr",
-   "locale": "diu",
-   "name": "Rumanyo",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Rumanyo"
   },
   {
    "code": "RCR",
@@ -16200,7 +16190,7 @@
    "first_observed": "2026-09-25T13:17:05Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "gcf",
    "name": "Guadeloupean Creole",
    "published_at": "2026-09-24T14:36:32Z",
@@ -17469,7 +17459,7 @@
    "first_observed": "2026-09-25T11:16:18Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ceb",
    "name": "Cebuano",
    "published_at": "2026-09-25T10:57:47Z",
@@ -17502,7 +17492,7 @@
    "first_observed": "2026-09-25T11:16:18Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ig",
    "name": "Igbo",
    "published_at": "2026-09-25T11:00:47Z",
@@ -17535,7 +17525,7 @@
    "first_observed": "2026-09-25T11:16:18Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ogo",
    "name": "Khana",
    "published_at": "2026-09-25T11:10:02Z",
@@ -17567,7 +17557,7 @@
    "first_observed": "2026-09-25T11:46:19Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "bcl",
    "name": "Bicol",
    "published_at": "2026-09-25T11:22:30Z",
@@ -17599,7 +17589,7 @@
    "first_observed": "2026-09-25T11:46:19Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "os",
    "name": "Ossetian",
    "published_at": "2026-09-25T11:41:20Z",
@@ -17632,7 +17622,7 @@
    "first_observed": "2026-09-25T11:56:56Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ijc",
    "name": "Ijaw",
    "published_at": "2026-09-25T11:53:16Z",
@@ -17664,7 +17654,7 @@
    "first_observed": "2026-09-25T12:16:21Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "mt",
    "name": "Maltese",
    "published_at": "2026-09-25T12:03:42Z",
@@ -17697,7 +17687,7 @@
    "first_observed": "2026-09-25T12:46:25Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "seh",
    "name": "Sena",
    "published_at": "2026-09-25T12:31:20Z",
@@ -17729,7 +17719,7 @@
    "first_observed": "2026-09-25T12:46:25Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "lv",
    "name": "Latvian",
    "published_at": "2026-09-25T12:34:50Z",
@@ -17762,7 +17752,7 @@
    "first_observed": "2026-09-25T13:17:05Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "bin",
    "name": "Edo",
    "published_at": "2026-09-25T13:11:03Z",
@@ -17795,7 +17785,7 @@
    "first_observed": "2026-09-25T13:46:31Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "sg",
    "name": "Sango",
    "published_at": "2026-09-25T13:33:11Z",
@@ -17827,7 +17817,7 @@
    "first_observed": "2026-09-25T14:16:35Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "zu",
    "name": "Zulu",
    "published_at": "2026-09-25T14:02:49Z",
@@ -17871,6 +17861,72 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SU",
    "vernacular": "Sesotho (Lesotho)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NGL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T14:53:54Z",
+   "files_at": "2026-09-25T14:53:54Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T14:53:54Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T15:16:40Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nba",
+   "name": "Ngangela",
+   "published_at": "2026-09-25T14:53:54Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T14:53:54Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NGL",
+   "vernacular": "Ngangela"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "RNY",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T14:54:13Z",
+   "files_at": "2026-09-25T14:54:13Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T14:54:13Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T15:16:40Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "diu",
+   "name": "Rumanyo",
+   "published_at": "2026-09-25T14:54:13Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T14:54:13Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=RNY",
+   "vernacular": "Rumanyo"
   }
  ],
  "removed": [],
@@ -17880,16 +17936,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
+  "added_1h": 3,
   "added_24h": 50,
-  "added_4h": 13,
+  "added_4h": 12,
   "catalog_count": 337,
-  "catalog_lag": 1,
+  "catalog_lag": 3,
   "catalog_percent": 75.1,
-  "days_since_release": 7.03,
-  "pending_count": 111,
-  "percent": 75.3,
-  "published_count": 338,
+  "days_since_release": 7.05,
+  "pending_count": 109,
+  "percent": 75.7,
+  "published_count": 340,
   "publisher_percent": 96.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
