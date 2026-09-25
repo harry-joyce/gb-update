@@ -1353,19 +1353,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 8,
+  "last_checked_count": 11,
   "newly_catalogued": [],
-  "offset": 5,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 8
+  "unlisted_total": 11
  },
  "counts": {
   "api_times": 48,
-  "awaiting_catalogue": 8,
+  "awaiting_catalogue": 11,
   "catalogued": 337,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 296,
+  "file_times": 299,
   "observed_times": 0,
   "sign_languages": 59
  },
@@ -4494,13 +4494,40 @@
      "in_catalog": false,
      "name": "Havu",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T16:50:58Z",
+     "code": "KP",
+     "in_catalog": false,
+     "name": "Kpelle",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-25T16:51:05Z",
+     "code": "GUR",
+     "in_catalog": false,
+     "name": "Guéré",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 345,
+   "count_after": 347,
    "t": "2026-09-25T16:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-25T17:03:40Z",
+     "code": "LWX",
+     "in_catalog": false,
+     "name": "Low German",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 348,
+   "t": "2026-09-25T17:00:00Z"
   }
  ],
- "generated": "2026-09-25T16:16:46Z",
+ "generated": "2026-09-25T17:16:53Z",
  "history": [
   {
    "count": 1,
@@ -5881,6 +5908,18 @@
   {
    "count": 345,
    "t": "2026-09-25T16:10:34Z"
+  },
+  {
+   "count": 346,
+   "t": "2026-09-25T16:50:58Z"
+  },
+  {
+   "count": 347,
+   "t": "2026-09-25T16:51:05Z"
+  },
+  {
+   "count": 348,
+   "t": "2026-09-25T17:03:40Z"
   }
  ],
  "integrity": {
@@ -5894,13 +5933,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 345,
+  "files_count": 348,
   "last_full_verification": "2026-09-25T09:03:47Z",
   "listing_count": 337,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T16:16:46Z",
+ "last_checked": "2026-09-25T17:16:53Z",
  "pending": [
   {
    "code": "ABB",
@@ -6380,15 +6419,6 @@
    "vernacular": "Kikongo (Rép. dém. du congo)"
   },
   {
-   "code": "KP",
-   "direction": "ltr",
-   "locale": "xpe",
-   "name": "Kpelle",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kpelle"
-  },
-  {
    "code": "KHN",
    "direction": "ltr",
    "locale": "sbs",
@@ -6405,15 +6435,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Oshikwanyama"
-  },
-  {
-   "code": "LWX",
-   "direction": "ltr",
-   "locale": "pdt",
-   "name": "Low German",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Plautdietsch"
   },
   {
    "code": "LG",
@@ -18111,6 +18132,104 @@
    "title": "Baraza Lirhambwire—Raporo ya 6 ya 2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=HVU",
    "vernacular": "Ekihavu"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KP",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T16:50:58Z",
+   "files_at": "2026-09-25T16:50:58Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T16:50:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T17:16:53Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "xpe",
+   "name": "Kpelle",
+   "published_at": "2026-09-25T16:50:58Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T16:50:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Gbɔŋ-gie-mai Teniŋ-tɔɔ-ɓelai Di 2026 Lopoi 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KP",
+   "vernacular": "Kpelle"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": true,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "GUR",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T16:51:05Z",
+   "files_at": "2026-09-25T16:51:05Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T16:51:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T17:16:53Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "gxx",
+   "name": "Guéré",
+   "published_at": "2026-09-25T16:51:05Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T16:51:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GUR",
+   "vernacular": "wɛ"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LWX",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T17:03:40Z",
+   "files_at": "2026-09-25T17:03:40Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T17:03:40Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T17:16:53Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "pdt",
+   "name": "Low German",
+   "published_at": "2026-09-25T17:03:40Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T17:03:40Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LWX",
+   "vernacular": "Plautdietsch"
   }
  ],
  "removed": [],
@@ -18120,17 +18239,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 4,
-  "added_24h": 52,
+  "added_1h": 3,
+  "added_24h": 49,
   "added_4h": 13,
   "catalog_count": 337,
-  "catalog_lag": 8,
+  "catalog_lag": 11,
   "catalog_percent": 75.1,
-  "days_since_release": 7.1,
-  "pending_count": 104,
-  "percent": 76.8,
-  "published_count": 345,
-  "publisher_percent": 96.6,
+  "days_since_release": 7.14,
+  "pending_count": 101,
+  "percent": 77.5,
+  "published_count": 348,
+  "publisher_percent": 96.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
