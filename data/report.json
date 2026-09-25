@@ -1301,19 +1301,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 9,
+  "last_checked_count": 11,
   "newly_catalogued": [],
-  "offset": 7,
+  "offset": 3,
   "size": 40,
-  "unlisted_total": 9
+  "unlisted_total": 11
  },
  "counts": {
   "api_times": 48,
-  "awaiting_catalogue": 9,
+  "awaiting_catalogue": 11,
   "catalogued": 324,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 284,
+  "file_times": 286,
   "observed_times": 0,
   "sign_languages": 59
  },
@@ -3911,6 +3911,13 @@
      "source": "file_estimated"
     },
     {
+     "at": "2026-09-24T14:36:32Z",
+     "code": "GCR",
+     "in_catalog": false,
+     "name": "Guadeloupean Creole",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-24T14:44:01Z",
      "code": "FO",
      "in_catalog": true,
@@ -3918,7 +3925,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 287,
+   "count_after": 288,
    "t": "2026-09-24T14:00:00Z"
   },
   {
@@ -3952,7 +3959,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 291,
+   "count_after": 292,
    "t": "2026-09-24T15:00:00Z"
   },
   {
@@ -4007,7 +4014,7 @@
      "source": "api"
     }
    ],
-   "count_after": 298,
+   "count_after": 299,
    "t": "2026-09-24T16:00:00Z"
   },
   {
@@ -4048,7 +4055,7 @@
      "source": "api"
     }
    ],
-   "count_after": 303,
+   "count_after": 304,
    "t": "2026-09-24T19:00:00Z"
   },
   {
@@ -4061,7 +4068,7 @@
      "source": "api"
     }
    ],
-   "count_after": 304,
+   "count_after": 305,
    "t": "2026-09-24T20:00:00Z"
   },
   {
@@ -4074,7 +4081,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 305,
+   "count_after": 306,
    "t": "2026-09-24T22:00:00Z"
   },
   {
@@ -4087,7 +4094,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 306,
+   "count_after": 307,
    "t": "2026-09-24T23:00:00Z"
   },
   {
@@ -4100,7 +4107,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 307,
+   "count_after": 308,
    "t": "2026-09-25T00:00:00Z"
   },
   {
@@ -4113,7 +4120,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 308,
+   "count_after": 309,
    "t": "2026-09-25T01:00:00Z"
   },
   {
@@ -4133,7 +4140,7 @@
      "source": "api"
     }
    ],
-   "count_after": 310,
+   "count_after": 311,
    "t": "2026-09-25T03:00:00Z"
   },
   {
@@ -4146,7 +4153,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 311,
+   "count_after": 312,
    "t": "2026-09-25T04:00:00Z"
   },
   {
@@ -4166,7 +4173,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 313,
+   "count_after": 314,
    "t": "2026-09-25T05:00:00Z"
   },
   {
@@ -4186,7 +4193,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 315,
+   "count_after": 316,
    "t": "2026-09-25T06:00:00Z"
   },
   {
@@ -4234,7 +4241,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 321,
+   "count_after": 322,
    "t": "2026-09-25T09:00:00Z"
   },
   {
@@ -4268,7 +4275,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 325,
+   "count_after": 326,
    "t": "2026-09-25T10:00:00Z"
   },
   {
@@ -4309,7 +4316,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 330,
+   "count_after": 331,
    "t": "2026-09-25T11:00:00Z"
   },
   {
@@ -4336,11 +4343,24 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 333,
+   "count_after": 334,
    "t": "2026-09-25T12:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-25T13:11:03Z",
+     "code": "ED",
+     "in_catalog": false,
+     "name": "Edo",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 335,
+   "t": "2026-09-25T13:00:00Z"
   }
  ],
- "generated": "2026-09-25T12:46:25Z",
+ "generated": "2026-09-25T13:17:05Z",
  "history": [
   {
    "count": 1,
@@ -5488,191 +5508,199 @@
   },
   {
    "count": 287,
-   "t": "2026-09-24T14:44:01Z"
+   "t": "2026-09-24T14:36:32Z"
   },
   {
    "count": 288,
-   "t": "2026-09-24T15:07:40Z"
+   "t": "2026-09-24T14:44:01Z"
   },
   {
    "count": 289,
-   "t": "2026-09-24T15:10:05Z"
+   "t": "2026-09-24T15:07:40Z"
   },
   {
    "count": 290,
-   "t": "2026-09-24T15:17:16Z"
+   "t": "2026-09-24T15:10:05Z"
   },
   {
    "count": 291,
-   "t": "2026-09-24T15:34:25Z"
+   "t": "2026-09-24T15:17:16Z"
   },
   {
    "count": 292,
-   "t": "2026-09-24T16:04:10Z"
+   "t": "2026-09-24T15:34:25Z"
   },
   {
    "count": 293,
-   "t": "2026-09-24T16:20:20Z"
+   "t": "2026-09-24T16:04:10Z"
   },
   {
    "count": 294,
-   "t": "2026-09-24T16:25:34Z"
+   "t": "2026-09-24T16:20:20Z"
   },
   {
    "count": 295,
-   "t": "2026-09-24T16:35:47Z"
+   "t": "2026-09-24T16:25:34Z"
   },
   {
    "count": 296,
-   "t": "2026-09-24T16:40:07Z"
+   "t": "2026-09-24T16:35:47Z"
   },
   {
    "count": 297,
-   "t": "2026-09-24T16:47:51Z"
+   "t": "2026-09-24T16:40:07Z"
   },
   {
    "count": 298,
-   "t": "2026-09-24T16:54:50Z"
+   "t": "2026-09-24T16:47:51Z"
   },
   {
    "count": 299,
-   "t": "2026-09-24T19:05:36Z"
+   "t": "2026-09-24T16:54:50Z"
   },
   {
    "count": 300,
-   "t": "2026-09-24T19:11:51Z"
+   "t": "2026-09-24T19:05:36Z"
   },
   {
    "count": 301,
-   "t": "2026-09-24T19:16:53Z"
+   "t": "2026-09-24T19:11:51Z"
   },
   {
    "count": 302,
-   "t": "2026-09-24T19:17:26Z"
+   "t": "2026-09-24T19:16:53Z"
   },
   {
    "count": 303,
-   "t": "2026-09-24T19:32:30Z"
+   "t": "2026-09-24T19:17:26Z"
   },
   {
    "count": 304,
-   "t": "2026-09-24T20:29:19Z"
+   "t": "2026-09-24T19:32:30Z"
   },
   {
    "count": 305,
-   "t": "2026-09-24T22:33:01Z"
+   "t": "2026-09-24T20:29:19Z"
   },
   {
    "count": 306,
-   "t": "2026-09-24T23:27:23Z"
+   "t": "2026-09-24T22:33:01Z"
   },
   {
    "count": 307,
-   "t": "2026-09-25T00:49:56Z"
+   "t": "2026-09-24T23:27:23Z"
   },
   {
    "count": 308,
-   "t": "2026-09-25T01:43:12Z"
+   "t": "2026-09-25T00:49:56Z"
   },
   {
    "count": 309,
-   "t": "2026-09-25T03:24:30Z"
+   "t": "2026-09-25T01:43:12Z"
   },
   {
    "count": 310,
-   "t": "2026-09-25T03:51:55Z"
+   "t": "2026-09-25T03:24:30Z"
   },
   {
    "count": 311,
-   "t": "2026-09-25T04:09:04Z"
+   "t": "2026-09-25T03:51:55Z"
   },
   {
    "count": 312,
-   "t": "2026-09-25T05:18:59Z"
+   "t": "2026-09-25T04:09:04Z"
   },
   {
    "count": 313,
-   "t": "2026-09-25T05:42:50Z"
+   "t": "2026-09-25T05:18:59Z"
   },
   {
    "count": 314,
-   "t": "2026-09-25T06:17:28Z"
+   "t": "2026-09-25T05:42:50Z"
   },
   {
    "count": 315,
-   "t": "2026-09-25T06:47:30Z"
+   "t": "2026-09-25T06:17:28Z"
   },
   {
    "count": 316,
-   "t": "2026-09-25T09:17:28Z"
+   "t": "2026-09-25T06:47:30Z"
   },
   {
    "count": 317,
-   "t": "2026-09-25T09:25:47Z"
+   "t": "2026-09-25T09:17:28Z"
   },
   {
    "count": 318,
-   "t": "2026-09-25T09:29:53Z"
+   "t": "2026-09-25T09:25:47Z"
   },
   {
    "count": 319,
-   "t": "2026-09-25T09:31:59Z"
+   "t": "2026-09-25T09:29:53Z"
   },
   {
    "count": 320,
-   "t": "2026-09-25T09:32:51Z"
+   "t": "2026-09-25T09:31:59Z"
   },
   {
    "count": 321,
-   "t": "2026-09-25T09:39:31Z"
+   "t": "2026-09-25T09:32:51Z"
   },
   {
    "count": 322,
-   "t": "2026-09-25T10:02:00Z"
+   "t": "2026-09-25T09:39:31Z"
   },
   {
    "count": 323,
-   "t": "2026-09-25T10:02:35Z"
+   "t": "2026-09-25T10:02:00Z"
   },
   {
    "count": 324,
-   "t": "2026-09-25T10:36:10Z"
+   "t": "2026-09-25T10:02:35Z"
   },
   {
    "count": 325,
-   "t": "2026-09-25T10:57:47Z"
+   "t": "2026-09-25T10:36:10Z"
   },
   {
    "count": 326,
-   "t": "2026-09-25T11:00:47Z"
+   "t": "2026-09-25T10:57:47Z"
   },
   {
    "count": 327,
-   "t": "2026-09-25T11:10:02Z"
+   "t": "2026-09-25T11:00:47Z"
   },
   {
    "count": 328,
-   "t": "2026-09-25T11:22:30Z"
+   "t": "2026-09-25T11:10:02Z"
   },
   {
    "count": 329,
-   "t": "2026-09-25T11:41:20Z"
+   "t": "2026-09-25T11:22:30Z"
   },
   {
    "count": 330,
-   "t": "2026-09-25T11:53:16Z"
+   "t": "2026-09-25T11:41:20Z"
   },
   {
    "count": 331,
-   "t": "2026-09-25T12:03:42Z"
+   "t": "2026-09-25T11:53:16Z"
   },
   {
    "count": 332,
-   "t": "2026-09-25T12:31:20Z"
+   "t": "2026-09-25T12:03:42Z"
   },
   {
    "count": 333,
+   "t": "2026-09-25T12:31:20Z"
+  },
+  {
+   "count": 334,
    "t": "2026-09-25T12:34:50Z"
+  },
+  {
+   "count": 335,
+   "t": "2026-09-25T13:11:03Z"
   }
  ],
  "integrity": {
@@ -5686,13 +5714,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 333,
+  "files_count": 335,
   "last_full_verification": "2026-09-25T09:03:47Z",
   "listing_count": 324,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T12:46:25Z",
+ "last_checked": "2026-09-25T13:17:05Z",
  "pending": [
   {
    "code": "ABB",
@@ -5893,15 +5921,6 @@
    "vernacular": "Ebira"
   },
   {
-   "code": "ED",
-   "direction": "ltr",
-   "locale": "bin",
-   "name": "Edo",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Edo"
-  },
-  {
    "code": "EF",
    "direction": "ltr",
    "locale": "efi",
@@ -5972,15 +5991,6 @@
    "script": "GREEK",
    "sign": true,
    "vernacular": "Ελληνική Νοηματική Γλώσσα"
-  },
-  {
-   "code": "GCR",
-   "direction": "ltr",
-   "locale": "gcf",
-   "name": "Guadeloupean Creole",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kréyòl Gwadloup"
   },
   {
    "code": "LSG",
@@ -16093,6 +16103,38 @@
    "vernacular": "Kikongo"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "GCR",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T14:36:32Z",
+   "files_at": "2026-09-24T14:36:32Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T14:36:32Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T13:17:05Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "gcf",
+   "name": "Guadeloupean Creole",
+   "published_at": "2026-09-24T14:36:32Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T14:36:32Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Komité santral la ka ban-nou nouvèl n°6 (2026)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GCR",
+   "vernacular": "Kréyòl Gwadloup"
+  },
+  {
    "api_published_at": "2026-09-24T14:44:14Z",
    "beyond_baseline": false,
    "catalog_at": "2026-09-24T14:44:14Z",
@@ -17620,6 +17662,39 @@
    "title": "2026. gada Vadošās padomes ziņojums nr. 6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LT",
    "vernacular": "latviešu"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "ED",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T13:11:03Z",
+   "files_at": "2026-09-25T13:11:03Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T13:11:03Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T13:17:05Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "bin",
+   "name": "Edo",
+   "published_at": "2026-09-25T13:11:03Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T13:11:03Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidio",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ED",
+   "vernacular": "Edo"
   }
  ],
  "removed": [],
@@ -17629,16 +17704,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 4,
+  "added_1h": 3,
   "added_24h": 59,
-  "added_4h": 18,
+  "added_4h": 19,
   "catalog_count": 324,
-  "catalog_lag": 9,
+  "catalog_lag": 11,
   "catalog_percent": 72.2,
-  "days_since_release": 6.95,
-  "pending_count": 116,
-  "percent": 74.2,
-  "published_count": 333,
+  "days_since_release": 6.97,
+  "pending_count": 114,
+  "percent": 74.6,
+  "published_count": 335,
   "publisher_percent": 96.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
