@@ -1401,21 +1401,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 4,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 4
  },
  "counts": {
   "api_times": 48,
-  "awaiting_catalogue": 3,
+  "awaiting_catalogue": 4,
   "catalogued": 349,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 303,
+  "file_times": 304,
   "observed_times": 0,
-  "sign_languages": 59
+  "sign_languages": 60
  },
  "events": [
   {
@@ -4571,6 +4571,13 @@
      "source": "file_estimated"
     },
     {
+     "at": "2026-09-25T17:24:46Z",
+     "code": "LSN",
+     "in_catalog": false,
+     "name": "Nicaraguan Sign Language",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-25T17:52:02Z",
      "code": "EBA",
      "in_catalog": true,
@@ -4578,7 +4585,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 349,
+   "count_after": 350,
    "t": "2026-09-25T17:00:00Z"
   },
   {
@@ -4605,11 +4612,11 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 352,
+   "count_after": 353,
    "t": "2026-09-25T19:00:00Z"
   }
  ],
- "generated": "2026-09-25T19:47:05Z",
+ "generated": "2026-09-25T20:45:59Z",
  "history": [
   {
    "count": 1,
@@ -6005,18 +6012,22 @@
   },
   {
    "count": 349,
-   "t": "2026-09-25T17:52:02Z"
+   "t": "2026-09-25T17:24:46Z"
   },
   {
    "count": 350,
-   "t": "2026-09-25T19:13:15Z"
+   "t": "2026-09-25T17:52:02Z"
   },
   {
    "count": 351,
-   "t": "2026-09-25T19:31:25Z"
+   "t": "2026-09-25T19:13:15Z"
   },
   {
    "count": 352,
+   "t": "2026-09-25T19:31:25Z"
+  },
+  {
+   "count": 353,
    "t": "2026-09-25T19:38:04Z"
   }
  ],
@@ -6031,13 +6042,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 352,
+  "files_count": 353,
   "last_full_verification": "2026-09-25T09:03:47Z",
   "listing_count": 349,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-25T19:47:05Z",
+ "last_checked": "2026-09-25T20:45:59Z",
  "pending": [
   {
    "code": "ABB",
@@ -6704,15 +6715,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ngbandi (ya Nɔrdi)"
-  },
-  {
-   "code": "LSN",
-   "direction": "ltr",
-   "locale": "ncs",
-   "name": "Nicaraguan Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "lenguaje de señas nicaragüense"
   },
   {
    "code": "NNS",
@@ -18294,6 +18296,38 @@
    "vernacular": "Plautdietsch"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LSN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T17:24:46Z",
+   "files_at": "2026-09-25T17:24:46Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T17:24:46Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-25T20:45:59Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ncs",
+   "name": "Nicaraguan Sign Language",
+   "published_at": "2026-09-25T17:24:46Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T17:24:46Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 | Informe 6 del Cuerpo Gobernante",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LSN",
+   "vernacular": "lenguaje de señas nicaragüense"
+  },
+  {
    "api_published_at": "2026-09-25T17:52:12Z",
    "beyond_baseline": false,
    "catalog_at": "2026-09-25T17:52:12Z",
@@ -18432,16 +18466,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
+  "added_1h": 0,
   "added_24h": 48,
-  "added_4h": 9,
+  "added_4h": 8,
   "catalog_count": 349,
-  "catalog_lag": 3,
+  "catalog_lag": 4,
   "catalog_percent": 77.7,
-  "days_since_release": 7.24,
-  "pending_count": 97,
-  "percent": 78.4,
-  "published_count": 352,
+  "days_since_release": 7.28,
+  "pending_count": 96,
+  "percent": 78.6,
+  "published_count": 353,
   "publisher_percent": 96.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
