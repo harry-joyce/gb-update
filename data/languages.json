@@ -1,6 +1,6 @@
 {
- "count": 1160,
- "fetched": "2026-09-19T08:32:21Z",
+ "count": 1161,
+ "fetched": "2026-09-26T08:48:06Z",
  "languages": {
   "A": {
    "direction": "rtl",
@@ -256,7 +256,7 @@
    "name": "Batak (Karo)",
    "script": "ROMAN",
    "sign": false,
-   "vernacular": "Batak (Karo)"
+   "vernacular": "Batak Karo"
   },
   "AKA": {
    "direction": "ltr",
@@ -1016,7 +1016,7 @@
    "name": "Batak (Toba)",
    "script": "ROMAN",
    "sign": false,
-   "vernacular": "Batak (Toba)"
+   "vernacular": "Batak Toba"
   },
   "BTA": {
    "direction": "ltr",
@@ -2009,6 +2009,14 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Emberá dóbida"
+  },
+  "EN": {
+   "direction": "ltr",
+   "locale": "bez",
+   "name": "Bena",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Bena"
   },
   "ENG": {
    "direction": "ltr",

@@ -1422,19 +1422,23 @@
   {
    "count": 355,
    "t": "2026-09-25T22:21:24Z"
+  },
+  {
+   "count": 356,
+   "t": "2026-09-26T08:10:03Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 1,
-  "catalogued": 355,
+  "awaiting_catalogue": 0,
+  "catalogued": 356,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 306,
@@ -4664,7 +4668,7 @@
     {
      "at": "2026-09-26T08:06:08Z",
      "code": "ABB",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Abbey",
      "source": "file_estimated"
     }
@@ -4673,7 +4677,7 @@
    "t": "2026-09-26T08:00:00Z"
   }
  ],
- "generated": "2026-09-26T08:18:03Z",
+ "generated": "2026-09-26T08:48:06Z",
  "history": [
   {
    "count": 1,
@@ -6113,11 +6117,11 @@
   "file_drift_count": 62,
   "files_count": 356,
   "last_full_verification": "2026-09-25T09:03:47Z",
-  "listing_count": 355,
+  "listing_count": 356,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-26T08:18:03Z",
+ "last_checked": "2026-09-26T08:48:06Z",
  "pending": [
   {
    "code": "AU",
@@ -12253,7 +12257,7 @@
    "sign": false,
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AK",
-   "vernacular": "Batak (Karo)"
+   "vernacular": "Batak Karo"
   },
   {
    "api_published_at": "2026-09-22T16:40:33Z",
@@ -12967,7 +12971,7 @@
    "sign": false,
    "title": "Laporan na Terbaru sian Punguan na Mangaradoti Taon 2026 (Bagian 6)",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BT",
-   "vernacular": "Batak (Toba)"
+   "vernacular": "Batak Toba"
   },
   {
    "api_published_at": "2026-09-23T08:21:03Z",
@@ -18566,12 +18570,12 @@
    "vernacular": "diidxazá"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-26T08:10:03Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-26T08:10:03Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-26T08:48:06Z",
    "code": "ABB",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -18584,9 +18588,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-26T08:06:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-26T08:18:03Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "aba",
    "name": "Abbey",
    "published_at": "2026-09-26T08:06:08Z",
@@ -18609,10 +18613,10 @@
   "added_1h": 1,
   "added_24h": 40,
   "added_4h": 1,
-  "catalog_count": 355,
-  "catalog_lag": 1,
-  "catalog_percent": 79.1,
-  "days_since_release": 7.76,
+  "catalog_count": 356,
+  "catalog_lag": 0,
+  "catalog_percent": 79.3,
+  "days_since_release": 7.78,
   "pending_count": 93,
   "percent": 79.3,
   "published_count": 356,
