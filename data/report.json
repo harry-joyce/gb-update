@@ -1425,19 +1425,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 355,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 305,
+  "file_times": 306,
   "observed_times": 0,
   "sign_languages": 60
  },
@@ -4658,9 +4658,22 @@
    ],
    "count_after": 355,
    "t": "2026-09-25T22:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-26T08:06:08Z",
+     "code": "ABB",
+     "in_catalog": false,
+     "name": "Abbey",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 356,
+   "t": "2026-09-26T08:00:00Z"
   }
  ],
- "generated": "2026-09-26T07:48:02Z",
+ "generated": "2026-09-26T08:18:03Z",
  "history": [
   {
    "count": 1,
@@ -6081,6 +6094,10 @@
   {
    "count": 355,
    "t": "2026-09-25T22:21:24Z"
+  },
+  {
+   "count": 356,
+   "t": "2026-09-26T08:06:08Z"
   }
  ],
  "integrity": {
@@ -6094,23 +6111,14 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 62,
-  "files_count": 355,
+  "files_count": 356,
   "last_full_verification": "2026-09-25T09:03:47Z",
   "listing_count": 355,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-26T07:48:02Z",
+ "last_checked": "2026-09-26T08:18:03Z",
  "pending": [
-  {
-   "code": "ABB",
-   "direction": "ltr",
-   "locale": "aba",
-   "name": "Abbey",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Abɛ"
-  },
   {
    "code": "AU",
    "direction": "ltr",
@@ -18556,6 +18564,39 @@
    "title": "2026 | Informe xhoopa' stiʼ Grupu ni Zániru",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ZPI",
    "vernacular": "diidxazá"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "ABB",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-26T08:06:08Z",
+   "files_at": "2026-09-26T08:06:08Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-26T08:06:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-26T08:18:03Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "aba",
+   "name": "Abbey",
+   "published_at": "2026-09-26T08:06:08Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-26T08:06:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ABB",
+   "vernacular": "Abɛ"
   }
  ],
  "removed": [],
@@ -18565,16 +18606,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 39,
-  "added_4h": 0,
+  "added_1h": 1,
+  "added_24h": 40,
+  "added_4h": 1,
   "catalog_count": 355,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 79.1,
-  "days_since_release": 7.74,
-  "pending_count": 94,
-  "percent": 79.1,
-  "published_count": 355,
+  "days_since_release": 7.76,
+  "pending_count": 93,
+  "percent": 79.3,
+  "published_count": 356,
   "publisher_percent": 96.8,
   "publisher_percent_ceiling": 99.2,
   "target": 449
