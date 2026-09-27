@@ -1426,19 +1426,23 @@
   {
    "count": 356,
    "t": "2026-09-26T08:10:03Z"
+  },
+  {
+   "count": 357,
+   "t": "2026-09-27T14:46:00Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 1,
-  "catalogued": 356,
+  "awaiting_catalogue": 0,
+  "catalogued": 357,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 307,
@@ -4681,7 +4685,7 @@
     {
      "at": "2026-09-27T14:45:34Z",
      "code": "CO",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Chuabo",
      "source": "file_estimated"
     }
@@ -4690,7 +4694,7 @@
    "t": "2026-09-27T14:00:00Z"
   }
  ],
- "generated": "2026-09-27T14:50:35Z",
+ "generated": "2026-09-27T15:50:45Z",
  "history": [
   {
    "count": 1,
@@ -6134,11 +6138,11 @@
   "file_drift_count": 65,
   "files_count": 357,
   "last_full_verification": "2026-09-27T09:29:49Z",
-  "listing_count": 356,
+  "listing_count": 357,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-27T14:50:35Z",
+ "last_checked": "2026-09-27T15:50:45Z",
  "pending": [
   {
    "code": "AU",
@@ -18611,12 +18615,12 @@
    "vernacular": "Abɛ"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-27T14:46:00Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-27T14:46:00Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-27T15:50:45Z",
    "code": "CO",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -18629,9 +18633,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-27T14:45:34Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-27T14:50:35Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "chw",
    "name": "Chuabo",
    "published_at": "2026-09-27T14:45:34Z",
@@ -18651,13 +18655,13 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
+  "added_1h": 0,
   "added_24h": 1,
   "added_4h": 1,
-  "catalog_count": 356,
-  "catalog_lag": 1,
-  "catalog_percent": 79.3,
-  "days_since_release": 9.04,
+  "catalog_count": 357,
+  "catalog_lag": 0,
+  "catalog_percent": 79.5,
+  "days_since_release": 9.08,
   "pending_count": 92,
   "percent": 79.5,
   "published_count": 357,
