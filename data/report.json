@@ -1461,19 +1461,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 5,
+  "last_checked_count": 6,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 5,
   "size": 40,
-  "unlisted_total": 5
+  "unlisted_total": 6
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 5,
+  "awaiting_catalogue": 6,
   "catalogued": 364,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 319,
+  "file_times": 320,
   "observed_times": 0,
   "sign_languages": 63
  },
@@ -4830,13 +4830,20 @@
      "in_catalog": false,
      "name": "Wolof",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-28T13:41:05Z",
+     "code": "OD",
+     "in_catalog": false,
+     "name": "Ndonga",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 369,
+   "count_after": 370,
    "t": "2026-09-28T13:00:00Z"
   }
  ],
- "generated": "2026-09-28T13:31:16Z",
+ "generated": "2026-09-28T14:01:24Z",
  "history": [
   {
    "count": 1,
@@ -6313,6 +6320,10 @@
   {
    "count": 369,
    "t": "2026-09-28T13:28:12Z"
+  },
+  {
+   "count": 370,
+   "t": "2026-09-28T13:41:05Z"
   }
  ],
  "integrity": {
@@ -6326,13 +6337,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 67,
-  "files_count": 369,
+  "files_count": 370,
   "last_full_verification": "2026-09-28T10:07:46Z",
   "listing_count": 364,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-28T13:31:16Z",
+ "last_checked": "2026-09-28T14:01:24Z",
  "pending": [
   {
    "code": "AU",
@@ -6900,15 +6911,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ndau (Western)"
-  },
-  {
-   "code": "OD",
-   "direction": "ltr",
-   "locale": "ng",
-   "name": "Ndonga",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Oshindonga"
   },
   {
    "code": "NGN",
@@ -19128,6 +19130,38 @@
    "title": "Ay yégle yu jóge ci Jataay biy dogal ci atum 2026 No 6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=WO",
    "vernacular": "Wolof"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "OD",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-28T13:41:05Z",
+   "files_at": "2026-09-28T13:41:05Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T13:41:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-28T14:01:24Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ng",
+   "name": "Ndonga",
+   "published_at": "2026-09-28T13:41:05Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-28T13:41:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Omatseyitho okuza kOlutuwiliki gomo 2026, okavido oka-6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=OD",
+   "vernacular": "Oshindonga"
   }
  ],
  "removed": [],
@@ -19137,16 +19171,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 11,
-  "added_4h": 7,
+  "added_1h": 3,
+  "added_24h": 12,
+  "added_4h": 6,
   "catalog_count": 364,
-  "catalog_lag": 5,
+  "catalog_lag": 6,
   "catalog_percent": 81.1,
-  "days_since_release": 9.98,
-  "pending_count": 80,
-  "percent": 82.2,
-  "published_count": 369,
+  "days_since_release": 10.0,
+  "pending_count": 79,
+  "percent": 82.4,
+  "published_count": 370,
   "publisher_percent": 97.0,
   "publisher_percent_ceiling": 99.2,
   "target": 449
