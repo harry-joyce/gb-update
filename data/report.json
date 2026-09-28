@@ -1486,19 +1486,31 @@
   {
    "count": 371,
    "t": "2026-09-28T14:04:56Z"
+  },
+  {
+   "count": 372,
+   "t": "2026-09-28T16:00:30Z"
+  },
+  {
+   "count": 373,
+   "t": "2026-09-28T16:08:51Z"
+  },
+  {
+   "count": 374,
+   "t": "2026-09-28T16:23:47Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 3,
-  "catalogued": 371,
+  "awaiting_catalogue": 0,
+  "catalogued": 374,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 324,
@@ -4888,21 +4900,21 @@
     {
      "at": "2026-09-28T16:00:21Z",
      "code": "IT",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Itsekiri",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-28T16:08:41Z",
      "code": "GRZ",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Guerze",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-28T16:23:37Z",
      "code": "JL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Jula",
      "source": "file_estimated"
     }
@@ -4911,7 +4923,7 @@
    "t": "2026-09-28T16:00:00Z"
   }
  ],
- "generated": "2026-09-28T16:31:33Z",
+ "generated": "2026-09-28T17:31:52Z",
  "history": [
   {
    "count": 1,
@@ -6423,11 +6435,11 @@
   "file_drift_count": 67,
   "files_count": 374,
   "last_full_verification": "2026-09-28T10:07:46Z",
-  "listing_count": 371,
+  "listing_count": 374,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-28T16:31:33Z",
+ "last_checked": "2026-09-28T17:31:52Z",
  "pending": [
   {
    "code": "AU",
@@ -19244,12 +19256,12 @@
    "vernacular": "Kisongye"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-28T16:00:30Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-28T16:00:30Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-28T17:31:52Z",
    "code": "IT",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19262,9 +19274,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T16:00:21Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-28T16:01:30Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "its",
    "name": "Itsekiri",
    "published_at": "2026-09-28T16:00:21Z",
@@ -19277,12 +19289,12 @@
    "vernacular": "Itsekiri"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-28T16:08:51Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-28T16:08:51Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-28T17:31:52Z",
    "code": "GRZ",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19295,9 +19307,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T16:08:41Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-28T16:31:33Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "gkp",
    "name": "Guerze",
    "published_at": "2026-09-28T16:08:41Z",
@@ -19310,12 +19322,12 @@
    "vernacular": "Kpɛlɛɛwoo"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-28T16:23:47Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-28T16:23:47Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-28T17:31:52Z",
    "code": "JL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19328,9 +19340,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T16:23:37Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-28T16:31:33Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "dyu",
    "name": "Jula",
    "published_at": "2026-09-28T16:23:37Z",
@@ -19350,13 +19362,13 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
+  "added_1h": 0,
   "added_24h": 15,
-  "added_4h": 7,
-  "catalog_count": 371,
-  "catalog_lag": 3,
-  "catalog_percent": 82.6,
-  "days_since_release": 10.11,
+  "added_4h": 5,
+  "catalog_count": 374,
+  "catalog_lag": 0,
+  "catalog_percent": 83.3,
+  "days_since_release": 10.15,
   "pending_count": 75,
   "percent": 83.3,
   "published_count": 374,
