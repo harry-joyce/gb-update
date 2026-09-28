@@ -1461,21 +1461,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 2,
+  "awaiting_catalogue": 3,
   "catalogued": 364,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 316,
+  "file_times": 317,
   "observed_times": 0,
-  "sign_languages": 62
+  "sign_languages": 63
  },
  "events": [
   {
@@ -4791,6 +4791,13 @@
   {
    "added": [
     {
+     "at": "2026-09-28T11:04:08Z",
+     "code": "SAS",
+     "in_catalog": false,
+     "name": "South African Sign Language",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-28T11:18:31Z",
      "code": "XO",
      "in_catalog": false,
@@ -4805,11 +4812,11 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 366,
+   "count_after": 367,
    "t": "2026-09-28T11:00:00Z"
   }
  ],
- "generated": "2026-09-28T12:01:09Z",
+ "generated": "2026-09-28T12:31:19Z",
  "history": [
   {
    "count": 1,
@@ -6269,10 +6276,14 @@
   },
   {
    "count": 365,
-   "t": "2026-09-28T11:18:31Z"
+   "t": "2026-09-28T11:04:08Z"
   },
   {
    "count": 366,
+   "t": "2026-09-28T11:18:31Z"
+  },
+  {
+   "count": 367,
    "t": "2026-09-28T11:34:17Z"
   }
  ],
@@ -6287,13 +6298,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 67,
-  "files_count": 366,
+  "files_count": 367,
   "last_full_verification": "2026-09-28T10:07:46Z",
   "listing_count": 364,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-28T12:01:09Z",
+ "last_checked": "2026-09-28T12:31:19Z",
  "pending": [
   {
    "code": "AU",
@@ -6960,15 +6971,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Losongomino"
-  },
-  {
-   "code": "SAS",
-   "direction": "ltr",
-   "locale": "sfs",
-   "name": "South African Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "South African Sign Language"
   },
   {
    "code": "SWK",
@@ -18962,6 +18964,38 @@
    "catalog_at_note": null,
    "catalog_at_source": null,
    "catalog_observed": null,
+   "code": "SAS",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-28T11:04:08Z",
+   "files_at": "2026-09-28T11:04:08Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T11:04:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-28T12:31:19Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "sfs",
+   "name": "South African Sign Language",
+   "published_at": "2026-09-28T11:04:08Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-28T11:04:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 Governing Body Update #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SAS",
+   "vernacular": "South African Sign Language"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
    "code": "XO",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19028,16 +19062,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 8,
-  "added_4h": 6,
+  "added_1h": 1,
+  "added_24h": 9,
+  "added_4h": 7,
   "catalog_count": 364,
-  "catalog_lag": 2,
+  "catalog_lag": 3,
   "catalog_percent": 81.1,
-  "days_since_release": 9.92,
-  "pending_count": 83,
-  "percent": 81.5,
-  "published_count": 366,
+  "days_since_release": 9.94,
+  "pending_count": 82,
+  "percent": 81.7,
+  "published_count": 367,
   "publisher_percent": 97.0,
   "publisher_percent_ceiling": 99.2,
   "target": 449
