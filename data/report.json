@@ -1501,21 +1501,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 374,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 324,
+  "file_times": 325,
   "observed_times": 0,
-  "sign_languages": 63
+  "sign_languages": 64
  },
  "events": [
   {
@@ -4921,9 +4921,22 @@
    ],
    "count_after": 374,
    "t": "2026-09-28T16:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-28T22:48:26Z",
+     "code": "LSG",
+     "in_catalog": false,
+     "name": "Guatemalan Sign Language",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 375,
+   "t": "2026-09-28T22:00:00Z"
   }
  ],
- "generated": "2026-09-28T22:32:19Z",
+ "generated": "2026-09-28T23:02:23Z",
  "history": [
   {
    "count": 1,
@@ -6420,6 +6433,10 @@
   {
    "count": 374,
    "t": "2026-09-28T16:23:37Z"
+  },
+  {
+   "count": 375,
+   "t": "2026-09-28T22:48:26Z"
   }
  ],
  "integrity": {
@@ -6433,13 +6450,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 67,
-  "files_count": 374,
+  "files_count": 375,
   "last_full_verification": "2026-09-28T10:07:46Z",
   "listing_count": 374,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-28T22:32:19Z",
+ "last_checked": "2026-09-28T23:02:23Z",
  "pending": [
   {
    "code": "AU",
@@ -6647,15 +6664,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Gbaya"
-  },
-  {
-   "code": "LSG",
-   "direction": "ltr",
-   "locale": "gsm",
-   "name": "Guatemalan Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "lengua de señas de Guatemala"
   },
   {
    "code": "GNC",
@@ -19353,6 +19361,38 @@
    "title": "Videwo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=JL",
    "vernacular": "Jula"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LSG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-28T22:48:26Z",
+   "files_at": "2026-09-28T22:48:26Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T22:48:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-28T23:02:23Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "gsm",
+   "name": "Guatemalan Sign Language",
+   "published_at": "2026-09-28T22:48:26Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-28T22:48:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 | Informe 6 del Cuerpo Gobernante",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LSG",
+   "vernacular": "lengua de señas de Guatemala"
   }
  ],
  "removed": [],
@@ -19362,16 +19402,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 15,
-  "added_4h": 0,
+  "added_1h": 1,
+  "added_24h": 16,
+  "added_4h": 1,
   "catalog_count": 374,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 83.3,
-  "days_since_release": 10.36,
-  "pending_count": 75,
-  "percent": 83.3,
-  "published_count": 374,
+  "days_since_release": 10.38,
+  "pending_count": 74,
+  "percent": 83.5,
+  "published_count": 375,
   "publisher_percent": 97.0,
   "publisher_percent_ceiling": 99.2,
   "target": 449
