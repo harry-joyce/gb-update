@@ -4923,7 +4923,7 @@
    "t": "2026-09-28T16:00:00Z"
   }
  ],
- "generated": "2026-09-28T17:31:52Z",
+ "generated": "2026-09-28T18:31:57Z",
  "history": [
   {
    "count": 1,
@@ -6439,7 +6439,7 @@
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-28T17:31:52Z",
+ "last_checked": "2026-09-28T18:31:57Z",
  "pending": [
   {
    "code": "AU",
@@ -19364,11 +19364,11 @@
  "stats": {
   "added_1h": 0,
   "added_24h": 15,
-  "added_4h": 5,
+  "added_4h": 3,
   "catalog_count": 374,
   "catalog_lag": 0,
   "catalog_percent": 83.3,
-  "days_since_release": 10.15,
+  "days_since_release": 10.19,
   "pending_count": 75,
   "percent": 83.3,
   "published_count": 374,
