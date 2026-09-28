@@ -1433,19 +1433,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 357,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 307,
+  "file_times": 308,
   "observed_times": 0,
   "sign_languages": 60
  },
@@ -4692,9 +4692,22 @@
    ],
    "count_after": 357,
    "t": "2026-09-27T14:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-28T07:08:10Z",
+     "code": "ASN",
+     "in_catalog": false,
+     "name": "Arabic (Sudanese)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 358,
+   "t": "2026-09-28T07:00:00Z"
   }
  ],
- "generated": "2026-09-28T06:51:56Z",
+ "generated": "2026-09-28T07:22:00Z",
  "history": [
   {
    "count": 1,
@@ -6123,6 +6136,10 @@
   {
    "count": 357,
    "t": "2026-09-27T14:45:34Z"
+  },
+  {
+   "count": 358,
+   "t": "2026-09-28T07:08:10Z"
   }
  ],
  "integrity": {
@@ -6136,13 +6153,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 65,
-  "files_count": 357,
+  "files_count": 358,
   "last_full_verification": "2026-09-27T09:29:49Z",
   "listing_count": 357,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-28T06:51:56Z",
+ "last_checked": "2026-09-28T07:22:00Z",
  "pending": [
   {
    "code": "AU",
@@ -6161,15 +6178,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Alur"
-  },
-  {
-   "code": "ASN",
-   "direction": "rtl",
-   "locale": "apd",
-   "name": "Arabic (Sudanese)",
-   "script": "ARABIC",
-   "sign": false,
-   "vernacular": "العربية (اللهجة السودانية)"
   },
   {
    "code": "AHK",
@@ -18646,6 +18654,39 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CO",
    "vernacular": "Etxuwabo"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "ASN",
+   "direction": "rtl",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-28T07:08:10Z",
+   "files_at": "2026-09-28T07:08:10Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T07:08:10Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-28T07:22:00Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "apd",
+   "name": "Arabic (Sudanese)",
+   "published_at": "2026-09-28T07:08:10Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-28T07:08:10Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ARABIC",
+   "sign": false,
+   "title": "فيلم فيديو",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ASN",
+   "vernacular": "العربية (اللهجة السودانية)"
   }
  ],
  "removed": [],
@@ -18655,16 +18696,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 1,
-  "added_4h": 0,
+  "added_1h": 1,
+  "added_24h": 2,
+  "added_4h": 1,
   "catalog_count": 357,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 79.5,
-  "days_since_release": 9.7,
-  "pending_count": 92,
-  "percent": 79.5,
-  "published_count": 357,
+  "days_since_release": 9.72,
+  "pending_count": 91,
+  "percent": 79.7,
+  "published_count": 358,
   "publisher_percent": 96.8,
   "publisher_percent_ceiling": 99.2,
   "target": 449
