@@ -1437,21 +1437,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 6,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 5,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 6
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 3,
+  "awaiting_catalogue": 6,
   "catalogued": 358,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 311,
+  "file_times": 314,
   "observed_times": 0,
-  "sign_languages": 61
+  "sign_languages": 62
  },
  "events": [
   {
@@ -4342,6 +4342,13 @@
   {
    "added": [
     {
+     "at": "2026-09-25T09:14:11Z",
+     "code": "NNS",
+     "in_catalog": false,
+     "name": "Nigerian Sign Language",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-25T09:17:28Z",
      "code": "VI",
      "in_catalog": true,
@@ -4384,7 +4391,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 323,
+   "count_after": 324,
    "t": "2026-09-25T09:00:00Z"
   },
   {
@@ -4418,7 +4425,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 327,
+   "count_after": 328,
    "t": "2026-09-25T10:00:00Z"
   },
   {
@@ -4459,7 +4466,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 332,
+   "count_after": 333,
    "t": "2026-09-25T11:00:00Z"
   },
   {
@@ -4486,7 +4493,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 335,
+   "count_after": 336,
    "t": "2026-09-25T12:00:00Z"
   },
   {
@@ -4506,7 +4513,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 337,
+   "count_after": 338,
    "t": "2026-09-25T13:00:00Z"
   },
   {
@@ -4540,7 +4547,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 341,
+   "count_after": 342,
    "t": "2026-09-25T14:00:00Z"
   },
   {
@@ -4567,7 +4574,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 344,
+   "count_after": 345,
    "t": "2026-09-25T15:00:00Z"
   },
   {
@@ -4601,7 +4608,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 348,
+   "count_after": 349,
    "t": "2026-09-25T16:00:00Z"
   },
   {
@@ -4628,7 +4635,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 351,
+   "count_after": 352,
    "t": "2026-09-25T17:00:00Z"
   },
   {
@@ -4655,7 +4662,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 354,
+   "count_after": 355,
    "t": "2026-09-25T19:00:00Z"
   },
   {
@@ -4675,7 +4682,7 @@
      "source": "api"
     }
    ],
-   "count_after": 356,
+   "count_after": 357,
    "t": "2026-09-25T22:00:00Z"
   },
   {
@@ -4688,7 +4695,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 357,
+   "count_after": 358,
    "t": "2026-09-26T08:00:00Z"
   },
   {
@@ -4701,7 +4708,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 358,
+   "count_after": 359,
    "t": "2026-09-27T14:00:00Z"
   },
   {
@@ -4714,7 +4721,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 359,
+   "count_after": 360,
    "t": "2026-09-28T07:00:00Z"
   },
   {
@@ -4727,7 +4734,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 360,
+   "count_after": 361,
    "t": "2026-09-28T08:00:00Z"
   },
   {
@@ -4738,13 +4745,27 @@
      "in_catalog": false,
      "name": "Tsonga",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-28T09:40:12Z",
+     "code": "KAB",
+     "in_catalog": false,
+     "name": "Kabiye",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-28T09:44:17Z",
+     "code": "FGN",
+     "in_catalog": false,
+     "name": "Fang",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 361,
+   "count_after": 364,
    "t": "2026-09-28T09:00:00Z"
   }
  ],
- "generated": "2026-09-28T09:22:11Z",
+ "generated": "2026-09-28T09:52:14Z",
  "history": [
   {
    "count": 1,
@@ -6016,179 +6037,191 @@
   },
   {
    "count": 318,
-   "t": "2026-09-25T09:17:28Z"
+   "t": "2026-09-25T09:14:11Z"
   },
   {
    "count": 319,
-   "t": "2026-09-25T09:25:47Z"
+   "t": "2026-09-25T09:17:28Z"
   },
   {
    "count": 320,
-   "t": "2026-09-25T09:29:53Z"
+   "t": "2026-09-25T09:25:47Z"
   },
   {
    "count": 321,
-   "t": "2026-09-25T09:31:59Z"
+   "t": "2026-09-25T09:29:53Z"
   },
   {
    "count": 322,
-   "t": "2026-09-25T09:32:51Z"
+   "t": "2026-09-25T09:31:59Z"
   },
   {
    "count": 323,
-   "t": "2026-09-25T09:39:31Z"
+   "t": "2026-09-25T09:32:51Z"
   },
   {
    "count": 324,
-   "t": "2026-09-25T10:02:00Z"
+   "t": "2026-09-25T09:39:31Z"
   },
   {
    "count": 325,
-   "t": "2026-09-25T10:02:35Z"
+   "t": "2026-09-25T10:02:00Z"
   },
   {
    "count": 326,
-   "t": "2026-09-25T10:36:10Z"
+   "t": "2026-09-25T10:02:35Z"
   },
   {
    "count": 327,
-   "t": "2026-09-25T10:57:47Z"
+   "t": "2026-09-25T10:36:10Z"
   },
   {
    "count": 328,
-   "t": "2026-09-25T11:00:47Z"
+   "t": "2026-09-25T10:57:47Z"
   },
   {
    "count": 329,
-   "t": "2026-09-25T11:10:02Z"
+   "t": "2026-09-25T11:00:47Z"
   },
   {
    "count": 330,
-   "t": "2026-09-25T11:22:30Z"
+   "t": "2026-09-25T11:10:02Z"
   },
   {
    "count": 331,
-   "t": "2026-09-25T11:41:20Z"
+   "t": "2026-09-25T11:22:30Z"
   },
   {
    "count": 332,
-   "t": "2026-09-25T11:53:16Z"
+   "t": "2026-09-25T11:41:20Z"
   },
   {
    "count": 333,
-   "t": "2026-09-25T12:03:42Z"
+   "t": "2026-09-25T11:53:16Z"
   },
   {
    "count": 334,
-   "t": "2026-09-25T12:31:20Z"
+   "t": "2026-09-25T12:03:42Z"
   },
   {
    "count": 335,
-   "t": "2026-09-25T12:34:50Z"
+   "t": "2026-09-25T12:31:20Z"
   },
   {
    "count": 336,
-   "t": "2026-09-25T13:11:03Z"
+   "t": "2026-09-25T12:34:50Z"
   },
   {
    "count": 337,
-   "t": "2026-09-25T13:33:11Z"
+   "t": "2026-09-25T13:11:03Z"
   },
   {
    "count": 338,
-   "t": "2026-09-25T14:02:49Z"
+   "t": "2026-09-25T13:33:11Z"
   },
   {
    "count": 339,
-   "t": "2026-09-25T14:40:36Z"
+   "t": "2026-09-25T14:02:49Z"
   },
   {
    "count": 340,
-   "t": "2026-09-25T14:53:54Z"
+   "t": "2026-09-25T14:40:36Z"
   },
   {
    "count": 341,
-   "t": "2026-09-25T14:54:13Z"
+   "t": "2026-09-25T14:53:54Z"
   },
   {
    "count": 342,
-   "t": "2026-09-25T15:13:06Z"
+   "t": "2026-09-25T14:54:13Z"
   },
   {
    "count": 343,
-   "t": "2026-09-25T15:37:16Z"
+   "t": "2026-09-25T15:13:06Z"
   },
   {
    "count": 344,
-   "t": "2026-09-25T15:42:24Z"
+   "t": "2026-09-25T15:37:16Z"
   },
   {
    "count": 345,
-   "t": "2026-09-25T16:02:42Z"
+   "t": "2026-09-25T15:42:24Z"
   },
   {
    "count": 346,
-   "t": "2026-09-25T16:10:34Z"
+   "t": "2026-09-25T16:02:42Z"
   },
   {
    "count": 347,
-   "t": "2026-09-25T16:50:58Z"
+   "t": "2026-09-25T16:10:34Z"
   },
   {
    "count": 348,
-   "t": "2026-09-25T16:51:05Z"
+   "t": "2026-09-25T16:50:58Z"
   },
   {
    "count": 349,
-   "t": "2026-09-25T17:03:40Z"
+   "t": "2026-09-25T16:51:05Z"
   },
   {
    "count": 350,
-   "t": "2026-09-25T17:24:46Z"
+   "t": "2026-09-25T17:03:40Z"
   },
   {
    "count": 351,
-   "t": "2026-09-25T17:52:02Z"
+   "t": "2026-09-25T17:24:46Z"
   },
   {
    "count": 352,
-   "t": "2026-09-25T19:13:15Z"
+   "t": "2026-09-25T17:52:02Z"
   },
   {
    "count": 353,
-   "t": "2026-09-25T19:31:25Z"
+   "t": "2026-09-25T19:13:15Z"
   },
   {
    "count": 354,
-   "t": "2026-09-25T19:38:04Z"
+   "t": "2026-09-25T19:31:25Z"
   },
   {
    "count": 355,
-   "t": "2026-09-25T22:12:24Z"
+   "t": "2026-09-25T19:38:04Z"
   },
   {
    "count": 356,
-   "t": "2026-09-25T22:21:24Z"
+   "t": "2026-09-25T22:12:24Z"
   },
   {
    "count": 357,
-   "t": "2026-09-26T08:06:08Z"
+   "t": "2026-09-25T22:21:24Z"
   },
   {
    "count": 358,
-   "t": "2026-09-27T14:45:34Z"
+   "t": "2026-09-26T08:06:08Z"
   },
   {
    "count": 359,
-   "t": "2026-09-28T07:08:10Z"
+   "t": "2026-09-27T14:45:34Z"
   },
   {
    "count": 360,
-   "t": "2026-09-28T08:56:39Z"
+   "t": "2026-09-28T07:08:10Z"
   },
   {
    "count": 361,
+   "t": "2026-09-28T08:56:39Z"
+  },
+  {
+   "count": 362,
    "t": "2026-09-28T09:06:08Z"
+  },
+  {
+   "count": 363,
+   "t": "2026-09-28T09:40:12Z"
+  },
+  {
+   "count": 364,
+   "t": "2026-09-28T09:44:17Z"
   }
  ],
  "integrity": {
@@ -6202,13 +6235,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 65,
-  "files_count": 361,
+  "files_count": 364,
   "last_full_verification": "2026-09-27T09:29:49Z",
   "listing_count": 358,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-28T09:22:11Z",
+ "last_checked": "2026-09-28T09:52:14Z",
  "pending": [
   {
    "code": "AU",
@@ -6391,15 +6424,6 @@
    "vernacular": "Esan"
   },
   {
-   "code": "FGN",
-   "direction": "ltr",
-   "locale": "fan",
-   "name": "Fang",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Fang"
-  },
-  {
    "code": "FN",
    "direction": "ltr",
    "locale": "fj",
@@ -6551,15 +6575,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Jula"
-  },
-  {
-   "code": "KAB",
-   "direction": "ltr",
-   "locale": "kbp",
-   "name": "Kabiye",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kabɩyɛ"
   },
   {
    "code": "KYK",
@@ -6821,15 +6836,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ngbandi (ya Nɔrdi)"
-  },
-  {
-   "code": "NNS",
-   "direction": "ltr",
-   "locale": "nsi",
-   "name": "Nigerian Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Nigerian Sign Language"
   },
   {
    "code": "OBL",
@@ -17373,6 +17379,39 @@
    "vernacular": "Kĩmĩĩrũ"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NNS",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-25T09:14:11Z",
+   "files_at": "2026-09-25T09:14:11Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T09:14:11Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-28T09:52:14Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "nsi",
+   "name": "Nigerian Sign Language",
+   "published_at": "2026-09-25T09:14:11Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-25T09:14:11Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NNS",
+   "vernacular": "Nigerian Sign Language"
+  },
+  {
    "api_published_at": "2026-09-25T09:17:37Z",
    "beyond_baseline": true,
    "catalog_at": "2026-09-25T09:17:37Z",
@@ -18806,6 +18845,72 @@
    "title": "Xiviko Xa Huvo Leyi Fumaka Xa 2026 #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TS",
    "vernacular": "Xitsonga"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KAB",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-28T09:40:12Z",
+   "files_at": "2026-09-28T09:40:12Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T09:40:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-28T09:52:14Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "kbp",
+   "name": "Kabiye",
+   "published_at": "2026-09-28T09:40:12Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-28T09:40:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KAB",
+   "vernacular": "Kabɩyɛ"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "FGN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-28T09:44:17Z",
+   "files_at": "2026-09-28T09:44:17Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T09:44:17Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-28T09:52:14Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "fan",
+   "name": "Fang",
+   "published_at": "2026-09-28T09:44:17Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-28T09:44:17Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Éngengeng",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=FGN",
+   "vernacular": "Fang"
   }
  ],
  "removed": [],
@@ -18815,17 +18920,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 4,
-  "added_4h": 3,
+  "added_1h": 4,
+  "added_24h": 6,
+  "added_4h": 5,
   "catalog_count": 358,
-  "catalog_lag": 3,
+  "catalog_lag": 6,
   "catalog_percent": 79.7,
-  "days_since_release": 9.81,
-  "pending_count": 88,
-  "percent": 80.4,
-  "published_count": 361,
-  "publisher_percent": 96.8,
+  "days_since_release": 9.83,
+  "pending_count": 85,
+  "percent": 81.1,
+  "published_count": 364,
+  "publisher_percent": 96.9,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
