@@ -1461,19 +1461,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 6,
+  "last_checked_count": 7,
   "newly_catalogued": [],
-  "offset": 5,
+  "offset": 3,
   "size": 40,
-  "unlisted_total": 6
+  "unlisted_total": 7
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 6,
+  "awaiting_catalogue": 7,
   "catalogued": 364,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 320,
+  "file_times": 321,
   "observed_times": 0,
   "sign_languages": 63
  },
@@ -4841,9 +4841,22 @@
    ],
    "count_after": 370,
    "t": "2026-09-28T13:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-28T14:04:48Z",
+     "code": "KSN",
+     "in_catalog": false,
+     "name": "Kisonge",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 371,
+   "t": "2026-09-28T14:00:00Z"
   }
  ],
- "generated": "2026-09-28T14:01:24Z",
+ "generated": "2026-09-28T14:31:23Z",
  "history": [
   {
    "count": 1,
@@ -6324,6 +6337,10 @@
   {
    "count": 370,
    "t": "2026-09-28T13:41:05Z"
+  },
+  {
+   "count": 371,
+   "t": "2026-09-28T14:04:48Z"
   }
  ],
  "integrity": {
@@ -6337,13 +6354,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 67,
-  "files_count": 370,
+  "files_count": 371,
   "last_full_verification": "2026-09-28T10:07:46Z",
   "listing_count": 364,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-28T14:01:24Z",
+ "last_checked": "2026-09-28T14:31:23Z",
  "pending": [
   {
    "code": "AU",
@@ -6722,15 +6739,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kiribati"
-  },
-  {
-   "code": "KSN",
-   "direction": "ltr",
-   "locale": "sop",
-   "name": "Kisonge",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kisongye"
   },
   {
    "code": "MK",
@@ -19162,6 +19170,38 @@
    "title": "Omatseyitho okuza kOlutuwiliki gomo 2026, okavido oka-6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=OD",
    "vernacular": "Oshindonga"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KSN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-28T14:04:48Z",
+   "files_at": "2026-09-28T14:04:48Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T14:04:48Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-28T14:31:23Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "sop",
+   "name": "Kisonge",
+   "published_at": "2026-09-28T14:04:48Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-28T14:04:48Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Mianda ipia ayifiki kui Kasaka ka Bakunkushi Bakulu No. 6 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KSN",
+   "vernacular": "Kisongye"
   }
  ],
  "removed": [],
@@ -19171,16 +19211,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 3,
-  "added_24h": 12,
-  "added_4h": 6,
+  "added_1h": 2,
+  "added_24h": 13,
+  "added_4h": 7,
   "catalog_count": 364,
-  "catalog_lag": 6,
+  "catalog_lag": 7,
   "catalog_percent": 81.1,
-  "days_since_release": 10.0,
-  "pending_count": 79,
-  "percent": 82.4,
-  "published_count": 370,
+  "days_since_release": 10.02,
+  "pending_count": 78,
+  "percent": 82.6,
+  "published_count": 371,
   "publisher_percent": 97.0,
   "publisher_percent_ceiling": 99.2,
   "target": 449
