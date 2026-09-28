@@ -1437,21 +1437,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 358,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 308,
+  "file_times": 309,
   "observed_times": 0,
-  "sign_languages": 60
+  "sign_languages": 61
  },
  "events": [
   {
@@ -3896,6 +3896,13 @@
   {
    "added": [
     {
+     "at": "2026-09-24T11:29:39Z",
+     "code": "GSL",
+     "in_catalog": false,
+     "name": "Greek Sign Language",
+     "source": "file_estimated"
+    },
+    {
      "at": "2026-09-24T11:30:25Z",
      "code": "AZA",
      "in_catalog": true,
@@ -3931,7 +3938,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 272,
+   "count_after": 273,
    "t": "2026-09-24T11:00:00Z"
   },
   {
@@ -3951,7 +3958,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 274,
+   "count_after": 275,
    "t": "2026-09-24T12:00:00Z"
   },
   {
@@ -4006,7 +4013,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 281,
+   "count_after": 282,
    "t": "2026-09-24T13:00:00Z"
   },
   {
@@ -4061,7 +4068,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 288,
+   "count_after": 289,
    "t": "2026-09-24T14:00:00Z"
   },
   {
@@ -4095,7 +4102,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 292,
+   "count_after": 293,
    "t": "2026-09-24T15:00:00Z"
   },
   {
@@ -4150,7 +4157,7 @@
      "source": "api"
     }
    ],
-   "count_after": 299,
+   "count_after": 300,
    "t": "2026-09-24T16:00:00Z"
   },
   {
@@ -4191,7 +4198,7 @@
      "source": "api"
     }
    ],
-   "count_after": 304,
+   "count_after": 305,
    "t": "2026-09-24T19:00:00Z"
   },
   {
@@ -4204,7 +4211,7 @@
      "source": "api"
     }
    ],
-   "count_after": 305,
+   "count_after": 306,
    "t": "2026-09-24T20:00:00Z"
   },
   {
@@ -4217,7 +4224,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 306,
+   "count_after": 307,
    "t": "2026-09-24T22:00:00Z"
   },
   {
@@ -4230,7 +4237,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 307,
+   "count_after": 308,
    "t": "2026-09-24T23:00:00Z"
   },
   {
@@ -4243,7 +4250,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 308,
+   "count_after": 309,
    "t": "2026-09-25T00:00:00Z"
   },
   {
@@ -4256,7 +4263,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 309,
+   "count_after": 310,
    "t": "2026-09-25T01:00:00Z"
   },
   {
@@ -4276,7 +4283,7 @@
      "source": "api"
     }
    ],
-   "count_after": 311,
+   "count_after": 312,
    "t": "2026-09-25T03:00:00Z"
   },
   {
@@ -4289,7 +4296,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 312,
+   "count_after": 313,
    "t": "2026-09-25T04:00:00Z"
   },
   {
@@ -4309,7 +4316,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 314,
+   "count_after": 315,
    "t": "2026-09-25T05:00:00Z"
   },
   {
@@ -4329,7 +4336,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 316,
+   "count_after": 317,
    "t": "2026-09-25T06:00:00Z"
   },
   {
@@ -4377,7 +4384,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 322,
+   "count_after": 323,
    "t": "2026-09-25T09:00:00Z"
   },
   {
@@ -4411,7 +4418,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 326,
+   "count_after": 327,
    "t": "2026-09-25T10:00:00Z"
   },
   {
@@ -4452,7 +4459,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 331,
+   "count_after": 332,
    "t": "2026-09-25T11:00:00Z"
   },
   {
@@ -4479,7 +4486,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 334,
+   "count_after": 335,
    "t": "2026-09-25T12:00:00Z"
   },
   {
@@ -4499,7 +4506,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 336,
+   "count_after": 337,
    "t": "2026-09-25T13:00:00Z"
   },
   {
@@ -4533,7 +4540,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 340,
+   "count_after": 341,
    "t": "2026-09-25T14:00:00Z"
   },
   {
@@ -4560,7 +4567,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 343,
+   "count_after": 344,
    "t": "2026-09-25T15:00:00Z"
   },
   {
@@ -4594,7 +4601,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 347,
+   "count_after": 348,
    "t": "2026-09-25T16:00:00Z"
   },
   {
@@ -4621,7 +4628,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 350,
+   "count_after": 351,
    "t": "2026-09-25T17:00:00Z"
   },
   {
@@ -4648,7 +4655,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 353,
+   "count_after": 354,
    "t": "2026-09-25T19:00:00Z"
   },
   {
@@ -4668,7 +4675,7 @@
      "source": "api"
     }
    ],
-   "count_after": 355,
+   "count_after": 356,
    "t": "2026-09-25T22:00:00Z"
   },
   {
@@ -4681,7 +4688,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 356,
+   "count_after": 357,
    "t": "2026-09-26T08:00:00Z"
   },
   {
@@ -4694,7 +4701,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 357,
+   "count_after": 358,
    "t": "2026-09-27T14:00:00Z"
   },
   {
@@ -4707,11 +4714,11 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 358,
+   "count_after": 359,
    "t": "2026-09-28T07:00:00Z"
   }
  ],
- "generated": "2026-09-28T07:52:02Z",
+ "generated": "2026-09-28T08:52:07Z",
  "history": [
   {
    "count": 1,
@@ -5783,366 +5790,370 @@
   },
   {
    "count": 268,
-   "t": "2026-09-24T11:30:25Z"
+   "t": "2026-09-24T11:29:39Z"
   },
   {
    "count": 269,
-   "t": "2026-09-24T11:33:46Z"
+   "t": "2026-09-24T11:30:25Z"
   },
   {
    "count": 270,
-   "t": "2026-09-24T11:39:47Z"
+   "t": "2026-09-24T11:33:46Z"
   },
   {
    "count": 271,
-   "t": "2026-09-24T11:50:19Z"
+   "t": "2026-09-24T11:39:47Z"
   },
   {
    "count": 272,
-   "t": "2026-09-24T11:54:15Z"
+   "t": "2026-09-24T11:50:19Z"
   },
   {
    "count": 273,
-   "t": "2026-09-24T12:26:12Z"
+   "t": "2026-09-24T11:54:15Z"
   },
   {
    "count": 274,
-   "t": "2026-09-24T12:45:55Z"
+   "t": "2026-09-24T12:26:12Z"
   },
   {
    "count": 275,
-   "t": "2026-09-24T13:10:19Z"
+   "t": "2026-09-24T12:45:55Z"
   },
   {
    "count": 276,
-   "t": "2026-09-24T13:13:16Z"
+   "t": "2026-09-24T13:10:19Z"
   },
   {
    "count": 277,
-   "t": "2026-09-24T13:30:29Z"
+   "t": "2026-09-24T13:13:16Z"
   },
   {
    "count": 278,
-   "t": "2026-09-24T13:35:39Z"
+   "t": "2026-09-24T13:30:29Z"
   },
   {
    "count": 279,
-   "t": "2026-09-24T13:36:51Z"
+   "t": "2026-09-24T13:35:39Z"
   },
   {
    "count": 280,
-   "t": "2026-09-24T13:48:49Z"
+   "t": "2026-09-24T13:36:51Z"
   },
   {
    "count": 281,
-   "t": "2026-09-24T13:59:44Z"
+   "t": "2026-09-24T13:48:49Z"
   },
   {
    "count": 282,
-   "t": "2026-09-24T14:13:28Z"
+   "t": "2026-09-24T13:59:44Z"
   },
   {
    "count": 283,
-   "t": "2026-09-24T14:26:17Z"
+   "t": "2026-09-24T14:13:28Z"
   },
   {
    "count": 284,
-   "t": "2026-09-24T14:28:29Z"
+   "t": "2026-09-24T14:26:17Z"
   },
   {
    "count": 285,
-   "t": "2026-09-24T14:35:03Z"
+   "t": "2026-09-24T14:28:29Z"
   },
   {
    "count": 286,
-   "t": "2026-09-24T14:36:05Z"
+   "t": "2026-09-24T14:35:03Z"
   },
   {
    "count": 287,
-   "t": "2026-09-24T14:36:32Z"
+   "t": "2026-09-24T14:36:05Z"
   },
   {
    "count": 288,
-   "t": "2026-09-24T14:44:01Z"
+   "t": "2026-09-24T14:36:32Z"
   },
   {
    "count": 289,
-   "t": "2026-09-24T15:07:40Z"
+   "t": "2026-09-24T14:44:01Z"
   },
   {
    "count": 290,
-   "t": "2026-09-24T15:10:05Z"
+   "t": "2026-09-24T15:07:40Z"
   },
   {
    "count": 291,
-   "t": "2026-09-24T15:17:16Z"
+   "t": "2026-09-24T15:10:05Z"
   },
   {
    "count": 292,
-   "t": "2026-09-24T15:34:25Z"
+   "t": "2026-09-24T15:17:16Z"
   },
   {
    "count": 293,
-   "t": "2026-09-24T16:04:10Z"
+   "t": "2026-09-24T15:34:25Z"
   },
   {
    "count": 294,
-   "t": "2026-09-24T16:20:20Z"
+   "t": "2026-09-24T16:04:10Z"
   },
   {
    "count": 295,
-   "t": "2026-09-24T16:25:34Z"
+   "t": "2026-09-24T16:20:20Z"
   },
   {
    "count": 296,
-   "t": "2026-09-24T16:35:47Z"
+   "t": "2026-09-24T16:25:34Z"
   },
   {
    "count": 297,
-   "t": "2026-09-24T16:40:07Z"
+   "t": "2026-09-24T16:35:47Z"
   },
   {
    "count": 298,
-   "t": "2026-09-24T16:47:51Z"
+   "t": "2026-09-24T16:40:07Z"
   },
   {
    "count": 299,
-   "t": "2026-09-24T16:54:50Z"
+   "t": "2026-09-24T16:47:51Z"
   },
   {
    "count": 300,
-   "t": "2026-09-24T19:05:36Z"
+   "t": "2026-09-24T16:54:50Z"
   },
   {
    "count": 301,
-   "t": "2026-09-24T19:11:51Z"
+   "t": "2026-09-24T19:05:36Z"
   },
   {
    "count": 302,
-   "t": "2026-09-24T19:16:53Z"
+   "t": "2026-09-24T19:11:51Z"
   },
   {
    "count": 303,
-   "t": "2026-09-24T19:17:26Z"
+   "t": "2026-09-24T19:16:53Z"
   },
   {
    "count": 304,
-   "t": "2026-09-24T19:32:30Z"
+   "t": "2026-09-24T19:17:26Z"
   },
   {
    "count": 305,
-   "t": "2026-09-24T20:29:19Z"
+   "t": "2026-09-24T19:32:30Z"
   },
   {
    "count": 306,
-   "t": "2026-09-24T22:33:01Z"
+   "t": "2026-09-24T20:29:19Z"
   },
   {
    "count": 307,
-   "t": "2026-09-24T23:27:23Z"
+   "t": "2026-09-24T22:33:01Z"
   },
   {
    "count": 308,
-   "t": "2026-09-25T00:49:56Z"
+   "t": "2026-09-24T23:27:23Z"
   },
   {
    "count": 309,
-   "t": "2026-09-25T01:43:12Z"
+   "t": "2026-09-25T00:49:56Z"
   },
   {
    "count": 310,
-   "t": "2026-09-25T03:24:30Z"
+   "t": "2026-09-25T01:43:12Z"
   },
   {
    "count": 311,
-   "t": "2026-09-25T03:51:55Z"
+   "t": "2026-09-25T03:24:30Z"
   },
   {
    "count": 312,
-   "t": "2026-09-25T04:09:04Z"
+   "t": "2026-09-25T03:51:55Z"
   },
   {
    "count": 313,
-   "t": "2026-09-25T05:18:59Z"
+   "t": "2026-09-25T04:09:04Z"
   },
   {
    "count": 314,
-   "t": "2026-09-25T05:42:50Z"
+   "t": "2026-09-25T05:18:59Z"
   },
   {
    "count": 315,
-   "t": "2026-09-25T06:17:28Z"
+   "t": "2026-09-25T05:42:50Z"
   },
   {
    "count": 316,
-   "t": "2026-09-25T06:47:30Z"
+   "t": "2026-09-25T06:17:28Z"
   },
   {
    "count": 317,
-   "t": "2026-09-25T09:17:28Z"
+   "t": "2026-09-25T06:47:30Z"
   },
   {
    "count": 318,
-   "t": "2026-09-25T09:25:47Z"
+   "t": "2026-09-25T09:17:28Z"
   },
   {
    "count": 319,
-   "t": "2026-09-25T09:29:53Z"
+   "t": "2026-09-25T09:25:47Z"
   },
   {
    "count": 320,
-   "t": "2026-09-25T09:31:59Z"
+   "t": "2026-09-25T09:29:53Z"
   },
   {
    "count": 321,
-   "t": "2026-09-25T09:32:51Z"
+   "t": "2026-09-25T09:31:59Z"
   },
   {
    "count": 322,
-   "t": "2026-09-25T09:39:31Z"
+   "t": "2026-09-25T09:32:51Z"
   },
   {
    "count": 323,
-   "t": "2026-09-25T10:02:00Z"
+   "t": "2026-09-25T09:39:31Z"
   },
   {
    "count": 324,
-   "t": "2026-09-25T10:02:35Z"
+   "t": "2026-09-25T10:02:00Z"
   },
   {
    "count": 325,
-   "t": "2026-09-25T10:36:10Z"
+   "t": "2026-09-25T10:02:35Z"
   },
   {
    "count": 326,
-   "t": "2026-09-25T10:57:47Z"
+   "t": "2026-09-25T10:36:10Z"
   },
   {
    "count": 327,
-   "t": "2026-09-25T11:00:47Z"
+   "t": "2026-09-25T10:57:47Z"
   },
   {
    "count": 328,
-   "t": "2026-09-25T11:10:02Z"
+   "t": "2026-09-25T11:00:47Z"
   },
   {
    "count": 329,
-   "t": "2026-09-25T11:22:30Z"
+   "t": "2026-09-25T11:10:02Z"
   },
   {
    "count": 330,
-   "t": "2026-09-25T11:41:20Z"
+   "t": "2026-09-25T11:22:30Z"
   },
   {
    "count": 331,
-   "t": "2026-09-25T11:53:16Z"
+   "t": "2026-09-25T11:41:20Z"
   },
   {
    "count": 332,
-   "t": "2026-09-25T12:03:42Z"
+   "t": "2026-09-25T11:53:16Z"
   },
   {
    "count": 333,
-   "t": "2026-09-25T12:31:20Z"
+   "t": "2026-09-25T12:03:42Z"
   },
   {
    "count": 334,
-   "t": "2026-09-25T12:34:50Z"
+   "t": "2026-09-25T12:31:20Z"
   },
   {
    "count": 335,
-   "t": "2026-09-25T13:11:03Z"
+   "t": "2026-09-25T12:34:50Z"
   },
   {
    "count": 336,
-   "t": "2026-09-25T13:33:11Z"
+   "t": "2026-09-25T13:11:03Z"
   },
   {
    "count": 337,
-   "t": "2026-09-25T14:02:49Z"
+   "t": "2026-09-25T13:33:11Z"
   },
   {
    "count": 338,
-   "t": "2026-09-25T14:40:36Z"
+   "t": "2026-09-25T14:02:49Z"
   },
   {
    "count": 339,
-   "t": "2026-09-25T14:53:54Z"
+   "t": "2026-09-25T14:40:36Z"
   },
   {
    "count": 340,
-   "t": "2026-09-25T14:54:13Z"
+   "t": "2026-09-25T14:53:54Z"
   },
   {
    "count": 341,
-   "t": "2026-09-25T15:13:06Z"
+   "t": "2026-09-25T14:54:13Z"
   },
   {
    "count": 342,
-   "t": "2026-09-25T15:37:16Z"
+   "t": "2026-09-25T15:13:06Z"
   },
   {
    "count": 343,
-   "t": "2026-09-25T15:42:24Z"
+   "t": "2026-09-25T15:37:16Z"
   },
   {
    "count": 344,
-   "t": "2026-09-25T16:02:42Z"
+   "t": "2026-09-25T15:42:24Z"
   },
   {
    "count": 345,
-   "t": "2026-09-25T16:10:34Z"
+   "t": "2026-09-25T16:02:42Z"
   },
   {
    "count": 346,
-   "t": "2026-09-25T16:50:58Z"
+   "t": "2026-09-25T16:10:34Z"
   },
   {
    "count": 347,
-   "t": "2026-09-25T16:51:05Z"
+   "t": "2026-09-25T16:50:58Z"
   },
   {
    "count": 348,
-   "t": "2026-09-25T17:03:40Z"
+   "t": "2026-09-25T16:51:05Z"
   },
   {
    "count": 349,
-   "t": "2026-09-25T17:24:46Z"
+   "t": "2026-09-25T17:03:40Z"
   },
   {
    "count": 350,
-   "t": "2026-09-25T17:52:02Z"
+   "t": "2026-09-25T17:24:46Z"
   },
   {
    "count": 351,
-   "t": "2026-09-25T19:13:15Z"
+   "t": "2026-09-25T17:52:02Z"
   },
   {
    "count": 352,
-   "t": "2026-09-25T19:31:25Z"
+   "t": "2026-09-25T19:13:15Z"
   },
   {
    "count": 353,
-   "t": "2026-09-25T19:38:04Z"
+   "t": "2026-09-25T19:31:25Z"
   },
   {
    "count": 354,
-   "t": "2026-09-25T22:12:24Z"
+   "t": "2026-09-25T19:38:04Z"
   },
   {
    "count": 355,
-   "t": "2026-09-25T22:21:24Z"
+   "t": "2026-09-25T22:12:24Z"
   },
   {
    "count": 356,
-   "t": "2026-09-26T08:06:08Z"
+   "t": "2026-09-25T22:21:24Z"
   },
   {
    "count": 357,
-   "t": "2026-09-27T14:45:34Z"
+   "t": "2026-09-26T08:06:08Z"
   },
   {
    "count": 358,
+   "t": "2026-09-27T14:45:34Z"
+  },
+  {
+   "count": 359,
    "t": "2026-09-28T07:08:10Z"
   }
  ],
@@ -6157,13 +6168,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 65,
-  "files_count": 358,
+  "files_count": 359,
   "last_full_verification": "2026-09-27T09:29:49Z",
   "listing_count": 358,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-28T07:52:02Z",
+ "last_checked": "2026-09-28T08:52:07Z",
  "pending": [
   {
    "code": "AU",
@@ -6380,15 +6391,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Gbaya"
-  },
-  {
-   "code": "GSL",
-   "direction": "ltr",
-   "locale": "gss",
-   "name": "Greek Sign Language",
-   "script": "GREEK",
-   "sign": true,
-   "vernacular": "Ελληνική Νοηματική Γλώσσα"
   },
   {
    "code": "LSG",
@@ -15730,6 +15732,38 @@
    "vernacular": "Langue des signes centrafricaine"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "GSL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-24T11:29:39Z",
+   "files_at": "2026-09-24T11:29:39Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-24T11:29:39Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-28T08:52:07Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "gss",
+   "name": "Greek Sign Language",
+   "published_at": "2026-09-24T11:29:39Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-24T11:29:39Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "GREEK",
+   "sign": true,
+   "title": "Ενημέρωση από το Κυβερνών Σώμα 2026 #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GSL",
+   "vernacular": "Ελληνική Νοηματική Γλώσσα"
+  },
+  {
    "api_published_at": "2026-09-24T13:46:06Z",
    "beyond_baseline": false,
    "catalog_at": "2026-09-24T13:46:06Z",
@@ -18700,16 +18734,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
+  "added_1h": 0,
   "added_24h": 2,
   "added_4h": 1,
   "catalog_count": 358,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 79.7,
-  "days_since_release": 9.74,
-  "pending_count": 91,
-  "percent": 79.7,
-  "published_count": 358,
+  "days_since_release": 9.79,
+  "pending_count": 90,
+  "percent": 80.0,
+  "published_count": 359,
   "publisher_percent": 96.8,
   "publisher_percent_ceiling": 99.2,
   "target": 449
