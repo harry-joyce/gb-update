@@ -1458,19 +1458,47 @@
   {
    "count": 364,
    "t": "2026-09-28T09:44:25Z"
+  },
+  {
+   "count": 365,
+   "t": "2026-09-28T11:18:40Z"
+  },
+  {
+   "count": 366,
+   "t": "2026-09-28T11:34:28Z"
+  },
+  {
+   "count": 367,
+   "t": "2026-09-28T12:20:56Z"
+  },
+  {
+   "count": 368,
+   "t": "2026-09-28T13:28:08Z"
+  },
+  {
+   "count": 369,
+   "t": "2026-09-28T13:28:21Z"
+  },
+  {
+   "count": 370,
+   "t": "2026-09-28T13:41:16Z"
+  },
+  {
+   "count": 371,
+   "t": "2026-09-28T14:04:56Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 7,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 3,
   "size": 40,
-  "unlisted_total": 7
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 7,
-  "catalogued": 364,
+  "awaiting_catalogue": 0,
+  "catalogued": 371,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 321,
@@ -4793,21 +4821,21 @@
     {
      "at": "2026-09-28T11:04:08Z",
      "code": "SAS",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "South African Sign Language",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-28T11:18:31Z",
      "code": "XO",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Xhosa",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-28T11:34:17Z",
      "code": "OM",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Loma",
      "source": "file_estimated"
     }
@@ -4820,21 +4848,21 @@
     {
      "at": "2026-09-28T13:27:55Z",
      "code": "MBD",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Mbunda",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-28T13:28:12Z",
      "code": "WO",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Wolof",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-28T13:41:05Z",
      "code": "OD",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Ndonga",
      "source": "file_estimated"
     }
@@ -4847,7 +4875,7 @@
     {
      "at": "2026-09-28T14:04:48Z",
      "code": "KSN",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kisonge",
      "source": "file_estimated"
     }
@@ -4856,7 +4884,7 @@
    "t": "2026-09-28T14:00:00Z"
   }
  ],
- "generated": "2026-09-28T14:31:23Z",
+ "generated": "2026-09-28T15:01:27Z",
  "history": [
   {
    "count": 1,
@@ -6356,11 +6384,11 @@
   "file_drift_count": 67,
   "files_count": 371,
   "last_full_verification": "2026-09-28T10:07:46Z",
-  "listing_count": 364,
+  "listing_count": 371,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-28T14:31:23Z",
+ "last_checked": "2026-09-28T15:01:27Z",
  "pending": [
   {
    "code": "AU",
@@ -18978,12 +19006,12 @@
    "vernacular": "Fang"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-28T12:20:56Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-28T12:20:56Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-28T15:01:27Z",
    "code": "SAS",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -18995,9 +19023,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T11:04:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-28T12:31:19Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "sfs",
    "name": "South African Sign Language",
    "published_at": "2026-09-28T11:04:08Z",
@@ -19010,12 +19038,12 @@
    "vernacular": "South African Sign Language"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-28T11:18:40Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-28T11:18:40Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-28T15:01:27Z",
    "code": "XO",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19028,9 +19056,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T11:18:31Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-28T12:01:09Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "xh",
    "name": "Xhosa",
    "published_at": "2026-09-28T11:18:31Z",
@@ -19043,12 +19071,12 @@
    "vernacular": "IsiXhosa"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-28T11:34:28Z",
    "beyond_baseline": true,
-   "catalog_at": null,
+   "catalog_at": "2026-09-28T11:34:28Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-28T15:01:27Z",
    "code": "OM",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19060,9 +19088,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T11:34:17Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-28T12:01:09Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "lom",
    "name": "Loma",
    "published_at": "2026-09-28T11:34:17Z",
@@ -19075,12 +19103,12 @@
    "vernacular": "Lɔɔma"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-28T13:28:08Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-28T13:28:08Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-28T15:01:27Z",
    "code": "MBD",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19093,9 +19121,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T13:27:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-28T13:31:16Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "mck",
    "name": "Mbunda",
    "published_at": "2026-09-28T13:27:55Z",
@@ -19108,12 +19136,12 @@
    "vernacular": "Mbunda"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-28T13:28:21Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-28T13:28:21Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-28T15:01:27Z",
    "code": "WO",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19125,9 +19153,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T13:28:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-28T13:31:16Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "wo",
    "name": "Wolof",
    "published_at": "2026-09-28T13:28:12Z",
@@ -19140,12 +19168,12 @@
    "vernacular": "Wolof"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-28T13:41:16Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-28T13:41:16Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-28T15:01:27Z",
    "code": "OD",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19157,9 +19185,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T13:41:05Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-28T14:01:24Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ng",
    "name": "Ndonga",
    "published_at": "2026-09-28T13:41:05Z",
@@ -19172,12 +19200,12 @@
    "vernacular": "Oshindonga"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-28T14:04:56Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-28T14:04:56Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-28T15:01:27Z",
    "code": "KSN",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19189,9 +19217,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T14:04:48Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-28T14:31:23Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "sop",
    "name": "Kisonge",
    "published_at": "2026-09-28T14:04:48Z",
@@ -19211,13 +19239,13 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 13,
+  "added_1h": 1,
+  "added_24h": 12,
   "added_4h": 7,
-  "catalog_count": 364,
-  "catalog_lag": 7,
-  "catalog_percent": 81.1,
-  "days_since_release": 10.02,
+  "catalog_count": 371,
+  "catalog_lag": 0,
+  "catalog_percent": 82.6,
+  "days_since_release": 10.04,
   "pending_count": 78,
   "percent": 82.6,
   "published_count": 371,
