@@ -1437,19 +1437,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 3,
   "catalogued": 358,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 309,
+  "file_times": 311,
   "observed_times": 0,
   "sign_languages": 61
  },
@@ -4716,9 +4716,35 @@
    ],
    "count_after": 359,
    "t": "2026-09-28T07:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-28T08:56:39Z",
+     "code": "KY",
+     "in_catalog": false,
+     "name": "Kwanyama",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 360,
+   "t": "2026-09-28T08:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-28T09:06:08Z",
+     "code": "TS",
+     "in_catalog": false,
+     "name": "Tsonga",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 361,
+   "t": "2026-09-28T09:00:00Z"
   }
  ],
- "generated": "2026-09-28T08:52:07Z",
+ "generated": "2026-09-28T09:22:11Z",
  "history": [
   {
    "count": 1,
@@ -6155,6 +6181,14 @@
   {
    "count": 359,
    "t": "2026-09-28T07:08:10Z"
+  },
+  {
+   "count": 360,
+   "t": "2026-09-28T08:56:39Z"
+  },
+  {
+   "count": 361,
+   "t": "2026-09-28T09:06:08Z"
   }
  ],
  "integrity": {
@@ -6168,13 +6202,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 65,
-  "files_count": 359,
+  "files_count": 361,
   "last_full_verification": "2026-09-27T09:29:49Z",
   "listing_count": 358,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-28T08:52:07Z",
+ "last_checked": "2026-09-28T09:22:11Z",
  "pending": [
   {
    "code": "AU",
@@ -6600,15 +6634,6 @@
    "vernacular": "Kuhane (Subiya)"
   },
   {
-   "code": "KY",
-   "direction": "ltr",
-   "locale": "kj",
-   "name": "Kwanyama",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Oshikwanyama"
-  },
-  {
    "code": "LG",
    "direction": "ltr",
    "locale": "lgg",
@@ -6967,15 +6992,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "ciTshwa"
-  },
-  {
-   "code": "TS",
-   "direction": "ltr",
-   "locale": "ts",
-   "name": "Tsonga",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Xitsonga"
   },
   {
    "code": "VL",
@@ -18725,6 +18741,71 @@
    "title": "فيلم فيديو",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ASN",
    "vernacular": "العربية (اللهجة السودانية)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KY",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-28T08:56:39Z",
+   "files_at": "2026-09-28T08:56:39Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T08:56:39Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-28T09:22:11Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "kj",
+   "name": "Kwanyama",
+   "published_at": "2026-09-28T08:56:39Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-28T08:56:39Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Okavideo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KY",
+   "vernacular": "Oshikwanyama"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "TS",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-28T09:06:08Z",
+   "files_at": "2026-09-28T09:06:08Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T09:06:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-28T09:22:11Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ts",
+   "name": "Tsonga",
+   "published_at": "2026-09-28T09:06:08Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-28T09:06:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Xiviko Xa Huvo Leyi Fumaka Xa 2026 #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TS",
+   "vernacular": "Xitsonga"
   }
  ],
  "removed": [],
@@ -18734,16 +18815,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 2,
-  "added_4h": 1,
+  "added_1h": 2,
+  "added_24h": 4,
+  "added_4h": 3,
   "catalog_count": 358,
-  "catalog_lag": 1,
+  "catalog_lag": 3,
   "catalog_percent": 79.7,
-  "days_since_release": 9.79,
-  "pending_count": 90,
-  "percent": 80.0,
-  "published_count": 359,
+  "days_since_release": 9.81,
+  "pending_count": 88,
+  "percent": 80.4,
+  "published_count": 361,
   "publisher_percent": 96.8,
   "publisher_percent_ceiling": 99.2,
   "target": 449
