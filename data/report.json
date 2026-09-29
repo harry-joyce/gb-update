@@ -1546,6 +1546,14 @@
   {
    "count": 386,
    "t": "2026-09-29T15:33:50Z"
+  },
+  {
+   "count": 387,
+   "t": "2026-09-29T15:37:03Z"
+  },
+  {
+   "count": 388,
+   "t": "2026-09-29T18:01:08Z"
   }
  ],
  "catalog_probe": {
@@ -1558,10 +1566,10 @@
  "counts": {
   "api_times": 49,
   "awaiting_catalogue": 2,
-  "catalogued": 386,
+  "catalogued": 388,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 338,
+  "file_times": 340,
   "observed_times": 0,
   "sign_languages": 65
  },
@@ -5125,7 +5133,7 @@
     {
      "at": "2026-09-29T15:36:55Z",
      "code": "YKM",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Yakoma",
      "source": "file_estimated"
     }
@@ -5138,16 +5146,42 @@
     {
      "at": "2026-09-29T18:00:58Z",
      "code": "NGB",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Ngabere",
      "source": "file_estimated"
     }
    ],
    "count_after": 388,
    "t": "2026-09-29T18:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-29T20:31:06Z",
+     "code": "ZPL",
+     "in_catalog": false,
+     "name": "Zapotec (Lachiguiri)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 389,
+   "t": "2026-09-29T20:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-29T21:25:58Z",
+     "code": "FN",
+     "in_catalog": false,
+     "name": "Fijian",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 390,
+   "t": "2026-09-29T21:00:00Z"
   }
  ],
- "generated": "2026-09-29T18:40:26Z",
+ "generated": "2026-09-29T22:40:38Z",
  "history": [
   {
    "count": 1,
@@ -6700,6 +6734,14 @@
   {
    "count": 388,
    "t": "2026-09-29T18:00:58Z"
+  },
+  {
+   "count": 389,
+   "t": "2026-09-29T20:31:06Z"
+  },
+  {
+   "count": 390,
+   "t": "2026-09-29T21:25:58Z"
   }
  ],
  "integrity": {
@@ -6713,13 +6755,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 73,
-  "files_count": 388,
+  "files_count": 390,
   "last_full_verification": "2026-09-29T10:06:04Z",
-  "listing_count": 386,
+  "listing_count": 388,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-29T18:40:26Z",
+ "last_checked": "2026-09-29T22:40:38Z",
  "pending": [
   {
    "code": "AU",
@@ -6891,15 +6933,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Esan"
-  },
-  {
-   "code": "FN",
-   "direction": "ltr",
-   "locale": "fj",
-   "name": "Fijian",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "vakaViti"
   },
   {
    "code": "GRF",
@@ -19908,12 +19941,12 @@
    "vernacular": "Kikongo (Rép. dém. du congo)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-29T15:37:03Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-29T15:37:03Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-29T22:40:38Z",
    "code": "YKM",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19925,9 +19958,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T15:36:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-29T18:40:26Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "yky",
    "name": "Yakoma",
    "published_at": "2026-09-29T15:36:55Z",
@@ -19940,12 +19973,12 @@
    "vernacular": "Yakoma"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-29T18:01:08Z",
    "beyond_baseline": true,
-   "catalog_at": null,
+   "catalog_at": "2026-09-29T18:01:08Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-29T22:40:38Z",
    "code": "NGB",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19957,9 +19990,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T18:00:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-29T18:40:26Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "gym",
    "name": "Ngabere",
    "published_at": "2026-09-29T18:00:58Z",
@@ -19970,6 +20003,71 @@
    "title": "2026 | Nitre Braibe Konkrekasion Jökrä Ngübabitikä tä kukwe mike gare #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NGB",
    "vernacular": "ngäbere"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": true,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "ZPL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-29T20:31:06Z",
+   "files_at": "2026-09-29T20:31:06Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T20:31:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-29T22:40:38Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "zpa",
+   "name": "Zapotec (Lachiguiri)",
+   "published_at": "2026-09-29T20:31:06Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-29T20:31:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ZPL",
+   "vernacular": "diitza"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "FN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-29T21:25:58Z",
+   "files_at": "2026-09-29T21:25:58Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T21:25:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-29T22:40:38Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "fj",
+   "name": "Fijian",
+   "published_at": "2026-09-29T21:25:58Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-29T21:25:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "iKaono ni iRogo Mai na iLawalawa Dauvakatulewa 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=FN",
+   "vernacular": "vakaViti"
   }
  ],
  "removed": [],
@@ -19979,17 +20077,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 13,
-  "added_4h": 3,
-  "catalog_count": 386,
+  "added_1h": 0,
+  "added_24h": 15,
+  "added_4h": 2,
+  "catalog_count": 388,
   "catalog_lag": 2,
-  "catalog_percent": 86.0,
-  "days_since_release": 11.19,
-  "pending_count": 61,
-  "percent": 86.4,
-  "published_count": 388,
-  "publisher_percent": 97.7,
+  "catalog_percent": 86.4,
+  "days_since_release": 11.36,
+  "pending_count": 59,
+  "percent": 86.9,
+  "published_count": 390,
+  "publisher_percent": 97.8,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
