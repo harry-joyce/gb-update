@@ -1529,19 +1529,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 2,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 2
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 2,
   "catalogued": 381,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 331,
+  "file_times": 333,
   "observed_times": 0,
   "sign_languages": 64
  },
@@ -5005,6 +5005,19 @@
   {
    "added": [
     {
+     "at": "2026-09-29T07:53:41Z",
+     "code": "SH",
+     "in_catalog": false,
+     "name": "Tshiluba",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 379,
+   "t": "2026-09-29T07:00:00Z"
+  },
+  {
+   "added": [
+    {
      "at": "2026-09-29T09:54:10Z",
      "code": "GBA",
      "in_catalog": true,
@@ -5012,7 +5025,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 379,
+   "count_after": 380,
    "t": "2026-09-29T09:00:00Z"
   },
   {
@@ -5025,7 +5038,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 380,
+   "count_after": 381,
    "t": "2026-09-29T10:00:00Z"
   },
   {
@@ -5038,11 +5051,24 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 381,
+   "count_after": 382,
    "t": "2026-09-29T11:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-29T12:35:51Z",
+     "code": "NDW",
+     "in_catalog": false,
+     "name": "Ndau (Western)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 383,
+   "t": "2026-09-29T12:00:00Z"
   }
  ],
- "generated": "2026-09-29T12:03:32Z",
+ "generated": "2026-09-29T13:01:20Z",
  "history": [
   {
    "count": 1,
@@ -6558,15 +6584,23 @@
   },
   {
    "count": 379,
-   "t": "2026-09-29T09:54:10Z"
+   "t": "2026-09-29T07:53:41Z"
   },
   {
    "count": 380,
-   "t": "2026-09-29T10:58:42Z"
+   "t": "2026-09-29T09:54:10Z"
   },
   {
    "count": 381,
+   "t": "2026-09-29T10:58:42Z"
+  },
+  {
+   "count": 382,
    "t": "2026-09-29T11:15:53Z"
+  },
+  {
+   "count": 383,
+   "t": "2026-09-29T12:35:51Z"
   }
  ],
  "integrity": {
@@ -6580,13 +6614,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 73,
-  "files_count": 381,
+  "files_count": 383,
   "last_full_verification": "2026-09-29T10:06:04Z",
   "listing_count": 381,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-29T12:03:32Z",
+ "last_checked": "2026-09-29T13:01:20Z",
  "pending": [
   {
    "code": "AU",
@@ -7075,15 +7109,6 @@
    "vernacular": "náhuatl de Veracruz"
   },
   {
-   "code": "NDW",
-   "direction": "ltr",
-   "locale": "ndc-x-ndw",
-   "name": "Ndau (Western)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ndau (Western)"
-  },
-  {
    "code": "NGN",
    "direction": "ltr",
    "locale": "ngb",
@@ -7208,15 +7233,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Purépecha"
-  },
-  {
-   "code": "SH",
-   "direction": "ltr",
-   "locale": "lua",
-   "name": "Tshiluba",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Tshiluba"
   },
   {
    "code": "AW",
@@ -19567,6 +19583,38 @@
    "vernacular": "Faka'uvea"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SH",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-29T07:53:41Z",
+   "files_at": "2026-09-29T07:53:41Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T07:53:41Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-29T13:01:20Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "lua",
+   "name": "Tshiluba",
+   "published_at": "2026-09-29T07:53:41Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-29T07:53:41Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Mapiamapia a kudi Kasumbu kaludiki a mu 2026 No. 6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SH",
+   "vernacular": "Tshiluba"
+  },
+  {
    "api_published_at": "2026-09-29T09:54:21Z",
    "beyond_baseline": false,
    "catalog_at": "2026-09-29T09:54:21Z",
@@ -19664,6 +19712,38 @@
    "title": "Vidéo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BO",
    "vernacular": "Bulu"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NDW",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-29T12:35:51Z",
+   "files_at": "2026-09-29T12:35:51Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T12:35:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-29T13:01:20Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ndc-x-ndw",
+   "name": "Ndau (Western)",
+   "published_at": "2026-09-29T12:35:51Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-29T12:35:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Masoko Mapsa O Dare Rinotungamirira 2026 #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NDW",
+   "vernacular": "Ndau (Western)"
   }
  ],
  "removed": [],
@@ -19674,16 +19754,16 @@
  },
  "stats": {
   "added_1h": 1,
-  "added_24h": 13,
-  "added_4h": 3,
+  "added_24h": 15,
+  "added_4h": 4,
   "catalog_count": 381,
-  "catalog_lag": 0,
+  "catalog_lag": 2,
   "catalog_percent": 84.9,
-  "days_since_release": 10.92,
-  "pending_count": 68,
-  "percent": 84.9,
-  "published_count": 381,
-  "publisher_percent": 97.1,
+  "days_since_release": 10.96,
+  "pending_count": 66,
+  "percent": 85.3,
+  "published_count": 383,
+  "publisher_percent": 97.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
