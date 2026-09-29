@@ -1526,22 +1526,42 @@
   {
    "count": 381,
    "t": "2026-09-29T11:16:02Z"
+  },
+  {
+   "count": 382,
+   "t": "2026-09-29T12:35:59Z"
+  },
+  {
+   "count": 383,
+   "t": "2026-09-29T13:01:12Z"
+  },
+  {
+   "count": 384,
+   "t": "2026-09-29T13:38:01Z"
+  },
+  {
+   "count": 385,
+   "t": "2026-09-29T14:28:54Z"
+  },
+  {
+   "count": 386,
+   "t": "2026-09-29T15:33:50Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 5,
+  "last_checked_count": 2,
   "newly_catalogued": [],
-  "offset": 2,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 5
+  "unlisted_total": 2
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 5,
-  "catalogued": 381,
+  "awaiting_catalogue": 2,
+  "catalogued": 386,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 336,
+  "file_times": 338,
   "observed_times": 0,
   "sign_languages": 65
  },
@@ -5007,7 +5027,7 @@
     {
      "at": "2026-09-29T07:53:41Z",
      "code": "SH",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Tshiluba",
      "source": "file_estimated"
     }
@@ -5059,7 +5079,7 @@
     {
      "at": "2026-09-29T12:35:51Z",
      "code": "NDW",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Ndau (Western)",
      "source": "file_estimated"
     }
@@ -5072,7 +5092,7 @@
     {
      "at": "2026-09-29T13:37:48Z",
      "code": "OBL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Obolo",
      "source": "file_estimated"
     }
@@ -5085,7 +5105,7 @@
     {
      "at": "2026-09-29T14:28:45Z",
      "code": "TTM",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Madagascar Sign Language",
      "source": "file_estimated"
     }
@@ -5098,16 +5118,36 @@
     {
      "at": "2026-09-29T15:33:15Z",
      "code": "MK",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kongo",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-29T15:36:55Z",
+     "code": "YKM",
+     "in_catalog": false,
+     "name": "Yakoma",
      "source": "file_estimated"
     }
    ],
-   "count_after": 386,
+   "count_after": 387,
    "t": "2026-09-29T15:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-29T18:00:58Z",
+     "code": "NGB",
+     "in_catalog": false,
+     "name": "Ngabere",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 388,
+   "t": "2026-09-29T18:00:00Z"
   }
  ],
- "generated": "2026-09-29T15:33:53Z",
+ "generated": "2026-09-29T18:40:26Z",
  "history": [
   {
    "count": 1,
@@ -6652,6 +6692,14 @@
   {
    "count": 386,
    "t": "2026-09-29T15:33:15Z"
+  },
+  {
+   "count": 387,
+   "t": "2026-09-29T15:36:55Z"
+  },
+  {
+   "count": 388,
+   "t": "2026-09-29T18:00:58Z"
   }
  ],
  "integrity": {
@@ -6665,13 +6713,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 73,
-  "files_count": 386,
+  "files_count": 388,
   "last_full_verification": "2026-09-29T10:06:04Z",
-  "listing_count": 381,
+  "listing_count": 386,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-29T15:33:53Z",
+ "last_checked": "2026-09-29T18:40:26Z",
  "pending": [
   {
    "code": "AU",
@@ -7284,15 +7332,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Việt Nam (Ngôn ngữ ký hiệu)"
-  },
-  {
-   "code": "YKM",
-   "direction": "ltr",
-   "locale": "yky",
-   "name": "Yakoma",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Yakoma"
   },
   {
    "code": "ZAS",
@@ -19607,12 +19646,12 @@
    "vernacular": "Faka'uvea"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-29T13:01:12Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-29T13:01:12Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-29T18:40:26Z",
    "code": "SH",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19624,9 +19663,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T07:53:41Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-29T13:01:20Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "lua",
    "name": "Tshiluba",
    "published_at": "2026-09-29T07:53:41Z",
@@ -19738,12 +19777,12 @@
    "vernacular": "Bulu"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-29T12:35:59Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-29T12:35:59Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-29T18:40:26Z",
    "code": "NDW",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19755,9 +19794,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T12:35:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-29T13:01:20Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ndc-x-ndw",
    "name": "Ndau (Western)",
    "published_at": "2026-09-29T12:35:51Z",
@@ -19770,12 +19809,12 @@
    "vernacular": "Ndau (Western)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-29T13:38:01Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-29T13:38:01Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-29T18:40:26Z",
    "code": "OBL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19788,9 +19827,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T13:37:48Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-29T14:03:44Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ann",
    "name": "Obolo",
    "published_at": "2026-09-29T13:37:48Z",
@@ -19803,12 +19842,12 @@
    "vernacular": "Obolo"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-29T14:28:54Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-29T14:28:54Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-29T18:40:26Z",
    "code": "TTM",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19821,9 +19860,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T14:28:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-29T14:33:46Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "mzc",
    "name": "Madagascar Sign Language",
    "published_at": "2026-09-29T14:28:45Z",
@@ -19836,12 +19875,12 @@
    "vernacular": "Tenin’ny Tanana Malagasy"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-29T15:33:50Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-29T15:33:50Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-29T18:40:26Z",
    "code": "MK",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19854,9 +19893,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T15:33:15Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-29T15:33:53Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "kg",
    "name": "Kongo",
    "published_at": "2026-09-29T15:33:15Z",
@@ -19867,6 +19906,70 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MK",
    "vernacular": "Kikongo (Rép. dém. du congo)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "YKM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-29T15:36:55Z",
+   "files_at": "2026-09-29T15:36:55Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T15:36:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-29T18:40:26Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "yky",
+   "name": "Yakoma",
+   "published_at": "2026-09-29T15:36:55Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-29T15:36:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Fini sango n°6 ti ngu 2026 me alo kâ Bebungbi",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=YKM",
+   "vernacular": "Yakoma"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": true,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "NGB",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-29T18:00:58Z",
+   "files_at": "2026-09-29T18:00:58Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T18:00:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-29T18:40:26Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "gym",
+   "name": "Ngabere",
+   "published_at": "2026-09-29T18:00:58Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-29T18:00:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 | Nitre Braibe Konkrekasion Jökrä Ngübabitikä tä kukwe mike gare #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NGB",
+   "vernacular": "ngäbere"
   }
  ],
  "removed": [],
@@ -19877,15 +19980,15 @@
  },
  "stats": {
   "added_1h": 1,
-  "added_24h": 14,
-  "added_4h": 4,
-  "catalog_count": 381,
-  "catalog_lag": 5,
-  "catalog_percent": 84.9,
-  "days_since_release": 11.07,
-  "pending_count": 63,
-  "percent": 86.0,
-  "published_count": 386,
+  "added_24h": 13,
+  "added_4h": 3,
+  "catalog_count": 386,
+  "catalog_lag": 2,
+  "catalog_percent": 86.0,
+  "days_since_release": 11.19,
+  "pending_count": 61,
+  "percent": 86.4,
+  "published_count": 388,
   "publisher_percent": 97.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
