@@ -1517,19 +1517,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 378,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 328,
+  "file_times": 329,
   "observed_times": 0,
   "sign_languages": 64
  },
@@ -4989,9 +4989,22 @@
    ],
    "count_after": 378,
    "t": "2026-09-29T06:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-29T09:54:10Z",
+     "code": "GBA",
+     "in_catalog": false,
+     "name": "Gbaya",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 379,
+   "t": "2026-09-29T09:00:00Z"
   }
  ],
- "generated": "2026-09-29T09:03:14Z",
+ "generated": "2026-09-29T10:03:18Z",
  "history": [
   {
    "count": 1,
@@ -6504,6 +6517,10 @@
   {
    "count": 378,
    "t": "2026-09-29T06:23:56Z"
+  },
+  {
+   "count": 379,
+   "t": "2026-09-29T09:54:10Z"
   }
  ],
  "integrity": {
@@ -6517,13 +6534,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 67,
-  "files_count": 378,
+  "files_count": 379,
   "last_full_verification": "2026-09-28T10:07:46Z",
   "listing_count": 378,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-29T09:03:14Z",
+ "last_checked": "2026-09-29T10:03:18Z",
  "pending": [
   {
    "code": "AU",
@@ -6722,15 +6739,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Garifuna"
-  },
-  {
-   "code": "GBA",
-   "direction": "ltr",
-   "locale": "gba",
-   "name": "Gbaya",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Gbaya"
   },
   {
    "code": "GNC",
@@ -19529,6 +19537,39 @@
    "title": "Talalogo 6 ʼo Te Kolesi Pule 2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=WA",
    "vernacular": "Faka'uvea"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "GBA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-29T09:54:10Z",
+   "files_at": "2026-09-29T09:54:10Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T09:54:10Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-29T10:03:18Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "gba",
+   "name": "Gbaya",
+   "published_at": "2026-09-29T09:54:10Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-29T09:54:10Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidéo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GBA",
+   "vernacular": "Gbaya"
   }
  ],
  "removed": [],
@@ -19538,16 +19579,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 16,
-  "added_4h": 1,
+  "added_1h": 1,
+  "added_24h": 14,
+  "added_4h": 2,
   "catalog_count": 378,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 84.2,
-  "days_since_release": 10.79,
-  "pending_count": 71,
-  "percent": 84.2,
-  "published_count": 378,
+  "days_since_release": 10.84,
+  "pending_count": 70,
+  "percent": 84.4,
+  "published_count": 379,
   "publisher_percent": 97.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
