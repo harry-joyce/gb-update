@@ -1505,19 +1505,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 375,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 325,
+  "file_times": 326,
   "observed_times": 0,
   "sign_languages": 64
  },
@@ -4938,9 +4938,22 @@
    ],
    "count_after": 375,
    "t": "2026-09-28T22:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-29T02:29:11Z",
+     "code": "MXT",
+     "in_catalog": false,
+     "name": "Mixtec (Tlaxiaco)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 376,
+   "t": "2026-09-29T02:00:00Z"
   }
  ],
- "generated": "2026-09-29T01:32:33Z",
+ "generated": "2026-09-29T02:32:39Z",
  "history": [
   {
    "count": 1,
@@ -6441,6 +6454,10 @@
   {
    "count": 375,
    "t": "2026-09-28T22:48:26Z"
+  },
+  {
+   "count": 376,
+   "t": "2026-09-29T02:29:11Z"
   }
  ],
  "integrity": {
@@ -6454,13 +6471,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 67,
-  "files_count": 375,
+  "files_count": 376,
   "last_full_verification": "2026-09-28T10:07:46Z",
   "listing_count": 375,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-29T01:32:33Z",
+ "last_checked": "2026-09-29T02:32:39Z",
  "pending": [
   {
    "code": "AU",
@@ -6947,15 +6964,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Tu̱ʼun ndaʼví"
-  },
-  {
-   "code": "MXT",
-   "direction": "ltr",
-   "locale": "meh",
-   "name": "Mixtec (Tlaxiaco)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "saʼan savi"
   },
   {
    "code": "MTU",
@@ -19397,6 +19405,38 @@
    "title": "2026 | Informe 6 del Cuerpo Gobernante",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LSG",
    "vernacular": "lengua de señas de Guatemala"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MXT",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-29T02:29:11Z",
+   "files_at": "2026-09-29T02:29:11Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T02:29:11Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-29T02:32:39Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "meh",
+   "name": "Mixtec (Tlaxiaco)",
+   "published_at": "2026-09-29T02:29:11Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-29T02:29:11Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Tu'un 6 Cuerpo Gobernante kuiya 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MXT",
+   "vernacular": "saʼan savi"
   }
  ],
  "removed": [],
@@ -19406,16 +19446,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 16,
-  "added_4h": 1,
+  "added_1h": 1,
+  "added_24h": 17,
+  "added_4h": 2,
   "catalog_count": 375,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 83.5,
-  "days_since_release": 10.48,
-  "pending_count": 74,
-  "percent": 83.5,
-  "published_count": 375,
+  "days_since_release": 10.52,
+  "pending_count": 73,
+  "percent": 83.7,
+  "published_count": 376,
   "publisher_percent": 97.0,
   "publisher_percent_ceiling": 99.2,
   "target": 449
