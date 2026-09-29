@@ -1514,19 +1514,31 @@
   {
    "count": 378,
    "t": "2026-09-29T06:24:10Z"
+  },
+  {
+   "count": 379,
+   "t": "2026-09-29T09:54:21Z"
+  },
+  {
+   "count": 380,
+   "t": "2026-09-29T10:59:14Z"
+  },
+  {
+   "count": 381,
+   "t": "2026-09-29T11:16:02Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 3,
-  "catalogued": 378,
+  "awaiting_catalogue": 0,
+  "catalogued": 381,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 331,
@@ -4995,7 +5007,7 @@
     {
      "at": "2026-09-29T09:54:10Z",
      "code": "GBA",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Gbaya",
      "source": "file_estimated"
     }
@@ -5008,7 +5020,7 @@
     {
      "at": "2026-09-29T10:58:42Z",
      "code": "RCR",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Réunion Creole",
      "source": "file_estimated"
     }
@@ -5021,7 +5033,7 @@
     {
      "at": "2026-09-29T11:15:53Z",
      "code": "BO",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Boulou",
      "source": "file_estimated"
     }
@@ -5030,7 +5042,7 @@
    "t": "2026-09-29T11:00:00Z"
   }
  ],
- "generated": "2026-09-29T11:33:29Z",
+ "generated": "2026-09-29T12:03:32Z",
  "history": [
   {
    "count": 1,
@@ -6570,11 +6582,11 @@
   "file_drift_count": 73,
   "files_count": 381,
   "last_full_verification": "2026-09-29T10:06:04Z",
-  "listing_count": 378,
+  "listing_count": 381,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-29T11:33:29Z",
+ "last_checked": "2026-09-29T12:03:32Z",
  "pending": [
   {
    "code": "AU",
@@ -19555,12 +19567,12 @@
    "vernacular": "Faka'uvea"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-29T09:54:21Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-29T09:54:21Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-29T12:03:32Z",
    "code": "GBA",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19573,9 +19585,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T09:54:10Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-29T10:03:18Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "gba",
    "name": "Gbaya",
    "published_at": "2026-09-29T09:54:10Z",
@@ -19588,12 +19600,12 @@
    "vernacular": "Gbaya"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-29T10:59:14Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-29T10:59:14Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-29T12:03:32Z",
    "code": "RCR",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19606,9 +19618,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T10:58:42Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-29T11:03:23Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "rcf",
    "name": "Réunion Creole",
    "published_at": "2026-09-29T10:58:42Z",
@@ -19621,12 +19633,12 @@
    "vernacular": "Kréol Rénioné"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-29T11:16:02Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-29T11:16:02Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-29T12:03:32Z",
    "code": "BO",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19639,9 +19651,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T11:15:53Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-29T11:33:29Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "bum",
    "name": "Boulou",
    "published_at": "2026-09-29T11:15:53Z",
@@ -19661,13 +19673,13 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 14,
+  "added_1h": 1,
+  "added_24h": 13,
   "added_4h": 3,
-  "catalog_count": 378,
-  "catalog_lag": 3,
-  "catalog_percent": 84.2,
-  "days_since_release": 10.9,
+  "catalog_count": 381,
+  "catalog_lag": 0,
+  "catalog_percent": 84.9,
+  "days_since_release": 10.92,
   "pending_count": 68,
   "percent": 84.9,
   "published_count": 381,
