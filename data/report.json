@@ -1529,19 +1529,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
+  "last_checked_count": 5,
   "newly_catalogued": [],
   "offset": 2,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 5
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 4,
+  "awaiting_catalogue": 5,
   "catalogued": 381,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 335,
+  "file_times": 336,
   "observed_times": 0,
   "sign_languages": 65
  },
@@ -5092,9 +5092,22 @@
    ],
    "count_after": 385,
    "t": "2026-09-29T14:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-29T15:33:15Z",
+     "code": "MK",
+     "in_catalog": false,
+     "name": "Kongo",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 386,
+   "t": "2026-09-29T15:00:00Z"
   }
  ],
- "generated": "2026-09-29T14:33:46Z",
+ "generated": "2026-09-29T15:33:53Z",
  "history": [
   {
    "count": 1,
@@ -6635,6 +6648,10 @@
   {
    "count": 385,
    "t": "2026-09-29T14:28:45Z"
+  },
+  {
+   "count": 386,
+   "t": "2026-09-29T15:33:15Z"
   }
  ],
  "integrity": {
@@ -6648,13 +6665,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 73,
-  "files_count": 385,
+  "files_count": 386,
   "last_full_verification": "2026-09-29T10:06:04Z",
   "listing_count": 381,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-29T14:33:46Z",
+ "last_checked": "2026-09-29T15:33:53Z",
  "pending": [
   {
    "code": "AU",
@@ -6979,15 +6996,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kiribati"
-  },
-  {
-   "code": "MK",
-   "direction": "ltr",
-   "locale": "kg",
-   "name": "Kongo",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kikongo (Rép. dém. du congo)"
   },
   {
    "code": "KHN",
@@ -19826,6 +19834,39 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TTM",
    "vernacular": "Tenin’ny Tanana Malagasy"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MK",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-29T15:33:15Z",
+   "files_at": "2026-09-29T15:33:15Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T15:33:15Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-29T15:33:53Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "kg",
+   "name": "Kongo",
+   "published_at": "2026-09-29T15:33:15Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-29T15:33:15Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MK",
+   "vernacular": "Kikongo (Rép. dém. du congo)"
   }
  ],
  "removed": [],
@@ -19835,17 +19876,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 13,
-  "added_4h": 5,
+  "added_1h": 1,
+  "added_24h": 14,
+  "added_4h": 4,
   "catalog_count": 381,
-  "catalog_lag": 4,
+  "catalog_lag": 5,
   "catalog_percent": 84.9,
-  "days_since_release": 11.02,
-  "pending_count": 64,
-  "percent": 85.7,
-  "published_count": 385,
-  "publisher_percent": 97.6,
+  "days_since_release": 11.07,
+  "pending_count": 63,
+  "percent": 86.0,
+  "published_count": 386,
+  "publisher_percent": 97.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
