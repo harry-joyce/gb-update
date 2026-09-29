@@ -1517,13 +1517,11 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
-  "newly_catalogued": [
-   "WA"
-  ],
+  "last_checked_count": 0,
+  "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 49,
@@ -4993,7 +4991,7 @@
    "t": "2026-09-29T06:00:00Z"
   }
  ],
- "generated": "2026-09-29T08:03:08Z",
+ "generated": "2026-09-29T09:03:14Z",
  "history": [
   {
    "count": 1,
@@ -6521,11 +6519,11 @@
   "file_drift_count": 67,
   "files_count": 378,
   "last_full_verification": "2026-09-28T10:07:46Z",
-  "listing_count": 377,
+  "listing_count": 378,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-29T08:03:08Z",
+ "last_checked": "2026-09-29T09:03:14Z",
  "pending": [
   {
    "code": "AU",
@@ -19520,7 +19518,7 @@
    "first_observed": "2026-09-29T06:32:59Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "wls",
    "name": "Wallisian",
    "published_at": "2026-09-29T06:23:56Z",
@@ -19541,12 +19539,12 @@
  },
  "stats": {
   "added_1h": 0,
-  "added_24h": 17,
+  "added_24h": 16,
   "added_4h": 1,
   "catalog_count": 378,
   "catalog_lag": 0,
   "catalog_percent": 84.2,
-  "days_since_release": 10.75,
+  "days_since_release": 10.79,
   "pending_count": 71,
   "percent": 84.2,
   "published_count": 378,
