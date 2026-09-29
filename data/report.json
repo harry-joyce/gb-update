@@ -1498,19 +1498,23 @@
   {
    "count": 374,
    "t": "2026-09-28T16:23:47Z"
+  },
+  {
+   "count": 375,
+   "t": "2026-09-28T22:48:35Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 1,
-  "catalogued": 374,
+  "awaiting_catalogue": 0,
+  "catalogued": 375,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 325,
@@ -4927,7 +4931,7 @@
     {
      "at": "2026-09-28T22:48:26Z",
      "code": "LSG",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Guatemalan Sign Language",
      "source": "file_estimated"
     }
@@ -4936,7 +4940,7 @@
    "t": "2026-09-28T22:00:00Z"
   }
  ],
- "generated": "2026-09-29T01:02:32Z",
+ "generated": "2026-09-29T01:32:33Z",
  "history": [
   {
    "count": 1,
@@ -6452,11 +6456,11 @@
   "file_drift_count": 67,
   "files_count": 375,
   "last_full_verification": "2026-09-28T10:07:46Z",
-  "listing_count": 374,
+  "listing_count": 375,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-29T01:02:32Z",
+ "last_checked": "2026-09-29T01:32:33Z",
  "pending": [
   {
    "code": "AU",
@@ -19363,12 +19367,12 @@
    "vernacular": "Jula"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-28T22:48:35Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-28T22:48:35Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-29T01:32:33Z",
    "code": "LSG",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -19380,9 +19384,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-28T22:48:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-28T23:02:23Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "gsm",
    "name": "Guatemalan Sign Language",
    "published_at": "2026-09-28T22:48:26Z",
@@ -19405,10 +19409,10 @@
   "added_1h": 0,
   "added_24h": 16,
   "added_4h": 1,
-  "catalog_count": 374,
-  "catalog_lag": 1,
-  "catalog_percent": 83.3,
-  "days_since_release": 10.46,
+  "catalog_count": 375,
+  "catalog_lag": 0,
+  "catalog_percent": 83.5,
+  "days_since_release": 10.48,
   "pending_count": 74,
   "percent": 83.5,
   "published_count": 375,
