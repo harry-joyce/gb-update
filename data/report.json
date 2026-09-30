@@ -1614,6 +1614,14 @@
   {
    "count": 403,
    "t": "2026-09-30T17:06:45Z"
+  },
+  {
+   "count": 404,
+   "t": "2026-09-30T19:38:56Z"
+  },
+  {
+   "count": 405,
+   "t": "2026-09-30T20:40:45Z"
   }
  ],
  "catalog_probe": {
@@ -1624,9 +1632,9 @@
   "unlisted_total": 0
  },
  "counts": {
-  "api_times": 52,
+  "api_times": 54,
   "awaiting_catalogue": 0,
-  "catalogued": 403,
+  "catalogued": 405,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 350,
@@ -5384,9 +5392,35 @@
    ],
    "count_after": 403,
    "t": "2026-09-30T17:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-30T19:38:56Z",
+     "code": "EMP",
+     "in_catalog": true,
+     "name": "Emberá (Northern)",
+     "source": "api"
+    }
+   ],
+   "count_after": 404,
+   "t": "2026-09-30T19:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-30T20:40:45Z",
+     "code": "TRS",
+     "in_catalog": true,
+     "name": "Tarascan",
+     "source": "api"
+    }
+   ],
+   "count_after": 405,
+   "t": "2026-09-30T20:00:00Z"
   }
  ],
- "generated": "2026-09-30T19:29:19Z",
+ "generated": "2026-09-30T23:13:25Z",
  "history": [
   {
    "count": 1,
@@ -6999,6 +7033,14 @@
   {
    "count": 403,
    "t": "2026-09-30T17:06:45Z"
+  },
+  {
+   "count": 404,
+   "t": "2026-09-30T19:38:56Z"
+  },
+  {
+   "count": 405,
+   "t": "2026-09-30T20:40:45Z"
   }
  ],
  "integrity": {
@@ -7012,13 +7054,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 74,
-  "files_count": 403,
+  "files_count": 405,
   "last_full_verification": "2026-09-30T09:58:32Z",
-  "listing_count": 403,
+  "listing_count": 405,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-30T19:29:19Z",
+ "last_checked": "2026-09-30T23:13:25Z",
  "pending": [
   {
    "code": "AU",
@@ -7478,15 +7520,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Talian"
-  },
-  {
-   "code": "TRS",
-   "direction": "ltr",
-   "locale": "tsz",
-   "name": "Tarascan",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Purépecha"
   },
   {
    "code": "AW",
@@ -20634,6 +20667,71 @@
    "title": "Jeupawaiwan Marøp Metrap Pera Pøntrapelai wammørøsraik 6 2026wai",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GBM",
    "vernacular": "Namtrik"
+  },
+  {
+   "api_published_at": "2026-09-30T19:38:56Z",
+   "beyond_baseline": true,
+   "catalog_at": "2026-09-30T19:38:56Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-30T23:13:25Z",
+   "code": "EMP",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-30T19:38:44Z",
+   "files_at": "2026-09-30T19:38:56Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-30T23:13:25Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "emp",
+   "name": "Emberá (Northern)",
+   "published_at": "2026-09-30T19:38:56Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Beɗea 6 Djabarã Bororãnebema",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=EMP",
+   "vernacular": "Emberá dóbida"
+  },
+  {
+   "api_published_at": "2026-09-30T20:40:45Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-30T20:40:45Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-30T23:13:25Z",
+   "code": "TRS",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-09-30T20:40:37Z",
+   "files_at": "2026-09-30T20:40:45Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-30T23:13:25Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "tsz",
+   "name": "Tarascan",
+   "published_at": "2026-09-30T20:40:45Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 | Aianhperakua 6, Grupueri enga Orhejtsïkuajka iámindu kúnguarhikuechani",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TRS",
+   "vernacular": "Purépecha"
   }
  ],
  "removed": [],
@@ -20645,14 +20743,14 @@
  "stats": {
   "added_1h": 0,
   "added_24h": 12,
-  "added_4h": 3,
-  "catalog_count": 403,
+  "added_4h": 2,
+  "catalog_count": 405,
   "catalog_lag": 0,
-  "catalog_percent": 89.8,
-  "days_since_release": 12.23,
-  "pending_count": 46,
-  "percent": 89.8,
-  "published_count": 403,
+  "catalog_percent": 90.2,
+  "days_since_release": 12.38,
+  "pending_count": 44,
+  "percent": 90.2,
+  "published_count": 405,
   "publisher_percent": 98.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
