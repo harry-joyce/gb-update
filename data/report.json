@@ -1574,19 +1574,40 @@
   {
    "count": 393,
    "t": "2026-09-30T08:28:01Z"
+  },
+  {
+   "count": 394,
+   "t": "2026-09-30T10:02:08Z"
+  },
+  {
+   "count": 395,
+   "t": "2026-09-30T10:08:59Z"
+  },
+  {
+   "count": 396,
+   "t": "2026-09-30T11:46:26Z"
+  },
+  {
+   "count": 397,
+   "t": "2026-09-30T12:19:05Z"
   }
  ],
  "catalog_probe": {
   "last_checked_count": 4,
-  "newly_catalogued": [],
+  "newly_catalogued": [
+   "KIN",
+   "MPD",
+   "MYW",
+   "SBF"
+  ],
   "offset": 1,
   "size": 40,
   "unlisted_total": 4
  },
  "counts": {
   "api_times": 51,
-  "awaiting_catalogue": 4,
-  "catalogued": 393,
+  "awaiting_catalogue": 0,
+  "catalogued": 397,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 345,
@@ -4553,7 +4574,7 @@
     {
      "at": "2026-09-25T10:15:58Z",
      "code": "KIN",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kinande",
      "source": "file_estimated"
     },
@@ -4594,7 +4615,7 @@
     {
      "at": "2026-09-25T11:14:59Z",
      "code": "SBF",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Belgian French Sign Language",
      "source": "file_estimated"
     },
@@ -5258,7 +5279,7 @@
     {
      "at": "2026-09-30T10:07:59Z",
      "code": "MYW",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Manyawa",
      "source": "file_estimated"
     }
@@ -5271,7 +5292,7 @@
     {
      "at": "2026-09-30T12:18:52Z",
      "code": "MPD",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Mapudungun",
      "source": "file_estimated"
     }
@@ -5280,7 +5301,7 @@
    "t": "2026-09-30T12:00:00Z"
   }
  ],
- "generated": "2026-09-30T12:43:21Z",
+ "generated": "2026-09-30T13:13:23Z",
  "history": [
   {
    "count": 1,
@@ -6888,7 +6909,7 @@
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-30T12:43:21Z",
+ "last_checked": "2026-09-30T13:13:23Z",
  "pending": [
   {
    "code": "AU",
@@ -18050,12 +18071,12 @@
    "vernacular": "Sepedi"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-30T10:02:08Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-30T10:02:08Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-30T13:13:23Z",
    "code": "KIN",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -18067,7 +18088,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T10:15:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-30T10:42:54Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "nnb",
@@ -18213,12 +18234,12 @@
    "vernacular": "Khana"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-30T11:46:26Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-30T11:46:26Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-30T13:13:23Z",
    "code": "SBF",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -18230,7 +18251,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-25T11:14:59Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-30T12:13:17Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "sfb",
@@ -20294,12 +20315,12 @@
    "vernacular": "Swahili (Katanga)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-30T10:08:59Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-30T10:08:59Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-30T13:13:23Z",
    "code": "MYW",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -20312,7 +20333,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-30T10:07:59Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-30T10:42:54Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "mny",
@@ -20327,12 +20348,12 @@
    "vernacular": "Emanyawa"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-30T12:19:05Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-30T12:19:05Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-30T13:13:23Z",
    "code": "MPD",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -20344,7 +20365,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-30T12:18:52Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-30T12:43:21Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "arn",
@@ -20369,10 +20390,10 @@
   "added_1h": 1,
   "added_24h": 12,
   "added_4h": 2,
-  "catalog_count": 393,
-  "catalog_lag": 4,
-  "catalog_percent": 87.5,
-  "days_since_release": 11.95,
+  "catalog_count": 397,
+  "catalog_lag": 0,
+  "catalog_percent": 88.4,
+  "days_since_release": 11.97,
   "pending_count": 52,
   "percent": 88.4,
   "published_count": 397,
