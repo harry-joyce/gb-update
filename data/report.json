@@ -1562,22 +1562,26 @@
   {
    "count": 390,
    "t": "2026-09-29T21:26:11Z"
+  },
+  {
+   "count": 391,
+   "t": "2026-09-30T03:20:25Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
-  "api_times": 49,
-  "awaiting_catalogue": 0,
-  "catalogued": 390,
+  "api_times": 50,
+  "awaiting_catalogue": 1,
+  "catalogued": 391,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 340,
+  "file_times": 341,
   "observed_times": 0,
   "sign_languages": 65
  },
@@ -5187,9 +5191,35 @@
    ],
    "count_after": 390,
    "t": "2026-09-29T21:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-30T03:20:25Z",
+     "code": "IL",
+     "in_catalog": true,
+     "name": "Iloko",
+     "source": "api"
+    }
+   ],
+   "count_after": 391,
+   "t": "2026-09-30T03:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-30T06:57:22Z",
+     "code": "KYK",
+     "in_catalog": false,
+     "name": "Kanyok",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 392,
+   "t": "2026-09-30T06:00:00Z"
   }
  ],
- "generated": "2026-09-30T01:38:20Z",
+ "generated": "2026-09-30T07:31:31Z",
  "history": [
   {
    "count": 1,
@@ -6750,6 +6780,14 @@
   {
    "count": 390,
    "t": "2026-09-29T21:25:58Z"
+  },
+  {
+   "count": 391,
+   "t": "2026-09-30T03:20:25Z"
+  },
+  {
+   "count": 392,
+   "t": "2026-09-30T06:57:22Z"
   }
  ],
  "integrity": {
@@ -6763,13 +6801,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 73,
-  "files_count": 390,
+  "files_count": 392,
   "last_full_verification": "2026-09-29T10:06:04Z",
-  "listing_count": 390,
+  "listing_count": 391,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-30T01:38:20Z",
+ "last_checked": "2026-09-30T07:31:31Z",
  "pending": [
   {
    "code": "AU",
@@ -7024,15 +7062,6 @@
    "vernacular": "Igede"
   },
   {
-   "code": "IL",
-   "direction": "ltr",
-   "locale": "ilo",
-   "name": "Iloko",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Iloko"
-  },
-  {
    "code": "CRE",
    "direction": "ltr",
    "locale": "icr",
@@ -7040,15 +7069,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "San Andrés Creole"
-  },
-  {
-   "code": "KYK",
-   "direction": "ltr",
-   "locale": "kny",
-   "name": "Kanyok",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ciin-kanyok"
   },
   {
    "code": "GK",
@@ -20076,6 +20096,70 @@
    "title": "iKaono ni iRogo Mai na iLawalawa Dauvakatulewa 2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=FN",
    "vernacular": "vakaViti"
+  },
+  {
+   "api_published_at": "2026-09-30T03:20:25Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-09-30T03:20:25Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-30T07:31:31Z",
+   "code": "IL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-30T03:20:16Z",
+   "files_at": "2026-09-30T03:20:25Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-30T07:31:31Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "ilo",
+   "name": "Iloko",
+   "published_at": "2026-09-30T03:20:25Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Update Manipud iti Bagi a Manarawidwid #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=IL",
+   "vernacular": "Iloko"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KYK",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-30T06:57:22Z",
+   "files_at": "2026-09-30T06:57:22Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-30T06:57:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-30T07:31:31Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "kny",
+   "name": "Kanyok",
+   "published_at": "2026-09-30T06:57:22Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-30T06:57:22Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Mahyaamahy ma kudy Kasumbw Kaludik 2026 No6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KYK",
+   "vernacular": "Ciin-kanyok"
   }
  ],
  "removed": [],
@@ -20085,17 +20169,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
+  "added_1h": 1,
   "added_24h": 14,
-  "added_4h": 0,
-  "catalog_count": 390,
-  "catalog_lag": 0,
-  "catalog_percent": 86.9,
-  "days_since_release": 11.48,
-  "pending_count": 59,
-  "percent": 86.9,
-  "published_count": 390,
-  "publisher_percent": 97.8,
+  "added_4h": 1,
+  "catalog_count": 391,
+  "catalog_lag": 1,
+  "catalog_percent": 87.1,
+  "days_since_release": 11.73,
+  "pending_count": 57,
+  "percent": 87.3,
+  "published_count": 392,
+  "publisher_percent": 98.3,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
