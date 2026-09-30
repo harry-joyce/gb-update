@@ -1554,19 +1554,27 @@
   {
    "count": 388,
    "t": "2026-09-29T18:01:08Z"
+  },
+  {
+   "count": 389,
+   "t": "2026-09-29T20:31:18Z"
+  },
+  {
+   "count": 390,
+   "t": "2026-09-29T21:26:11Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 49,
-  "awaiting_catalogue": 2,
-  "catalogued": 388,
+  "awaiting_catalogue": 0,
+  "catalogued": 390,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 340,
@@ -5159,7 +5167,7 @@
     {
      "at": "2026-09-29T20:31:06Z",
      "code": "ZPL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Zapotec (Lachiguiri)",
      "source": "file_estimated"
     }
@@ -5172,7 +5180,7 @@
     {
      "at": "2026-09-29T21:25:58Z",
      "code": "FN",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Fijian",
      "source": "file_estimated"
     }
@@ -5181,7 +5189,7 @@
    "t": "2026-09-29T21:00:00Z"
   }
  ],
- "generated": "2026-09-29T22:40:38Z",
+ "generated": "2026-09-30T01:38:20Z",
  "history": [
   {
    "count": 1,
@@ -6757,11 +6765,11 @@
   "file_drift_count": 73,
   "files_count": 390,
   "last_full_verification": "2026-09-29T10:06:04Z",
-  "listing_count": 388,
+  "listing_count": 390,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-29T22:40:38Z",
+ "last_checked": "2026-09-30T01:38:20Z",
  "pending": [
   {
    "code": "AU",
@@ -20005,12 +20013,12 @@
    "vernacular": "ngäbere"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-29T20:31:18Z",
    "beyond_baseline": true,
-   "catalog_at": null,
+   "catalog_at": "2026-09-29T20:31:18Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-30T01:38:20Z",
    "code": "ZPL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -20023,9 +20031,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T20:31:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-29T22:40:38Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "zpa",
    "name": "Zapotec (Lachiguiri)",
    "published_at": "2026-09-29T20:31:06Z",
@@ -20038,12 +20046,12 @@
    "vernacular": "diitza"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-29T21:26:11Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-29T21:26:11Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-30T01:38:20Z",
    "code": "FN",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -20055,9 +20063,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T21:25:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-29T22:40:38Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "fj",
    "name": "Fijian",
    "published_at": "2026-09-29T21:25:58Z",
@@ -20078,12 +20086,12 @@
  },
  "stats": {
   "added_1h": 0,
-  "added_24h": 15,
-  "added_4h": 2,
-  "catalog_count": 388,
-  "catalog_lag": 2,
-  "catalog_percent": 86.4,
-  "days_since_release": 11.36,
+  "added_24h": 14,
+  "added_4h": 0,
+  "catalog_count": 390,
+  "catalog_lag": 0,
+  "catalog_percent": 86.9,
+  "days_since_release": 11.48,
   "pending_count": 59,
   "percent": 86.9,
   "published_count": 390,
