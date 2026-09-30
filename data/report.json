@@ -1593,19 +1593,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
+  "last_checked_count": 2,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 2
  },
  "counts": {
   "api_times": 51,
-  "awaiting_catalogue": 1,
+  "awaiting_catalogue": 2,
   "catalogued": 397,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 346,
+  "file_times": 347,
   "observed_times": 0,
   "sign_languages": 66
  },
@@ -5303,13 +5303,20 @@
      "in_catalog": false,
      "name": "Mandja",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-30T14:50:04Z",
+     "code": "KIP",
+     "in_catalog": false,
+     "name": "Kipende",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 398,
+   "count_after": 399,
    "t": "2026-09-30T14:00:00Z"
   }
  ],
- "generated": "2026-09-30T14:43:34Z",
+ "generated": "2026-09-30T15:13:38Z",
  "history": [
   {
    "count": 1,
@@ -6902,6 +6909,10 @@
   {
    "count": 398,
    "t": "2026-09-30T14:18:55Z"
+  },
+  {
+   "count": 399,
+   "t": "2026-09-30T14:50:04Z"
   }
  ],
  "integrity": {
@@ -6915,13 +6926,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 74,
-  "files_count": 398,
+  "files_count": 399,
   "last_full_verification": "2026-09-30T09:58:32Z",
   "listing_count": 397,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-30T14:43:34Z",
+ "last_checked": "2026-09-30T15:13:38Z",
  "pending": [
   {
    "code": "AU",
@@ -7183,15 +7194,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "q’eqchi’"
-  },
-  {
-   "code": "KIP",
-   "direction": "ltr",
-   "locale": "pem",
-   "name": "Kipende",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kipende"
   },
   {
    "code": "GB",
@@ -20413,6 +20415,38 @@
    "title": "Mbe vidéo n° 6 nema zuwin ɗa Bebungbi 2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MNJ",
    "vernacular": "Mandja"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "KIP",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-30T14:50:04Z",
+   "files_at": "2026-09-30T14:50:04Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-30T14:50:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-30T15:13:38Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "pem",
+   "name": "Kipende",
+   "published_at": "2026-09-30T14:50:04Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-30T14:50:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Mbimbi jia Hunji dia Akulu Atuameji No. 6 Givo 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KIP",
+   "vernacular": "Kipende"
   }
  ],
  "removed": [],
@@ -20422,17 +20456,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 11,
-  "added_4h": 2,
+  "added_1h": 2,
+  "added_24h": 12,
+  "added_4h": 3,
   "catalog_count": 397,
-  "catalog_lag": 1,
+  "catalog_lag": 2,
   "catalog_percent": 88.4,
-  "days_since_release": 12.03,
-  "pending_count": 51,
-  "percent": 88.6,
-  "published_count": 398,
-  "publisher_percent": 98.5,
+  "days_since_release": 12.05,
+  "pending_count": 50,
+  "percent": 88.9,
+  "published_count": 399,
+  "publisher_percent": 98.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
