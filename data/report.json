@@ -1593,19 +1593,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
+  "last_checked_count": 5,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 5
  },
  "counts": {
   "api_times": 51,
-  "awaiting_catalogue": 4,
+  "awaiting_catalogue": 5,
   "catalogued": 397,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 349,
+  "file_times": 350,
   "observed_times": 0,
   "sign_languages": 67
  },
@@ -5336,13 +5336,20 @@
      "in_catalog": false,
      "name": "Mashi",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-09-30T15:45:57Z",
+     "code": "CHL",
+     "in_catalog": false,
+     "name": "Chol",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 401,
+   "count_after": 402,
    "t": "2026-09-30T15:00:00Z"
   }
  ],
- "generated": "2026-09-30T15:43:38Z",
+ "generated": "2026-09-30T16:52:45Z",
  "history": [
   {
    "count": 1,
@@ -6947,6 +6954,10 @@
   {
    "count": 401,
    "t": "2026-09-30T15:29:49Z"
+  },
+  {
+   "count": 402,
+   "t": "2026-09-30T15:45:57Z"
   }
  ],
  "integrity": {
@@ -6960,13 +6971,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 74,
-  "files_count": 401,
+  "files_count": 402,
   "last_full_verification": "2026-09-30T09:58:32Z",
   "listing_count": 397,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-30T15:43:38Z",
+ "last_checked": "2026-09-30T16:52:45Z",
  "pending": [
   {
    "code": "AU",
@@ -7048,15 +7059,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kariʼnia"
-  },
-  {
-   "code": "CHL",
-   "direction": "ltr",
-   "locale": "ctu",
-   "name": "Chol",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "ch'ol"
   },
   {
    "code": "CGS",
@@ -20527,6 +20529,38 @@
    "title": "Eraporo ya 6 y'Embaraza Eri Yalongoza (2026)",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MSH",
    "vernacular": "Mashi"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CHL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-30T15:45:57Z",
+   "files_at": "2026-09-30T15:45:57Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-30T15:45:57Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-30T16:52:45Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ctu",
+   "name": "Chol",
+   "published_at": "2026-09-30T15:45:57Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-30T15:45:57Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Informe 6 chaʼan jiñi Junmojt muʼ bʌ i pʌsob bij (2026)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CHL",
+   "vernacular": "ch'ol"
   }
  ],
  "removed": [],
@@ -20536,16 +20570,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
+  "added_1h": 0,
   "added_24h": 12,
   "added_4h": 4,
   "catalog_count": 397,
-  "catalog_lag": 4,
+  "catalog_lag": 5,
   "catalog_percent": 88.4,
-  "days_since_release": 12.07,
-  "pending_count": 48,
-  "percent": 89.3,
-  "published_count": 401,
+  "days_since_release": 12.12,
+  "pending_count": 47,
+  "percent": 89.5,
+  "published_count": 402,
   "publisher_percent": 98.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
