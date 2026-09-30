@@ -1590,19 +1590,43 @@
   {
    "count": 397,
    "t": "2026-09-30T12:19:05Z"
+  },
+  {
+   "count": 398,
+   "t": "2026-09-30T14:19:06Z"
+  },
+  {
+   "count": 399,
+   "t": "2026-09-30T14:50:13Z"
+  },
+  {
+   "count": 400,
+   "t": "2026-09-30T15:30:00Z"
+  },
+  {
+   "count": 401,
+   "t": "2026-09-30T15:35:49Z"
+  },
+  {
+   "count": 402,
+   "t": "2026-09-30T15:46:11Z"
+  },
+  {
+   "count": 403,
+   "t": "2026-09-30T17:06:45Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 5,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 5
+  "unlisted_total": 0
  },
  "counts": {
-  "api_times": 51,
-  "awaiting_catalogue": 5,
-  "catalogued": 397,
+  "api_times": 52,
+  "awaiting_catalogue": 0,
+  "catalogued": 403,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 350,
@@ -5196,7 +5220,7 @@
     {
      "at": "2026-09-29T16:42:09Z",
      "code": "SCR",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Costa Rican Sign Language",
      "source": "file_estimated"
     }
@@ -5313,14 +5337,14 @@
     {
      "at": "2026-09-30T14:18:55Z",
      "code": "MNJ",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Mandja",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-30T14:50:04Z",
      "code": "KIP",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kipende",
      "source": "file_estimated"
     }
@@ -5333,23 +5357,36 @@
     {
      "at": "2026-09-30T15:29:49Z",
      "code": "MSH",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Mashi",
      "source": "file_estimated"
     },
     {
      "at": "2026-09-30T15:45:57Z",
      "code": "CHL",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Chol",
      "source": "file_estimated"
     }
    ],
    "count_after": 402,
    "t": "2026-09-30T15:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-30T17:06:45Z",
+     "code": "GBM",
+     "in_catalog": true,
+     "name": "Guambiano",
+     "source": "api"
+    }
+   ],
+   "count_after": 403,
+   "t": "2026-09-30T17:00:00Z"
   }
  ],
- "generated": "2026-09-30T16:52:45Z",
+ "generated": "2026-09-30T19:29:19Z",
  "history": [
   {
    "count": 1,
@@ -6958,6 +6995,10 @@
   {
    "count": 402,
    "t": "2026-09-30T15:45:57Z"
+  },
+  {
+   "count": 403,
+   "t": "2026-09-30T17:06:45Z"
   }
  ],
  "integrity": {
@@ -6971,13 +7012,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 74,
-  "files_count": 402,
+  "files_count": 403,
   "last_full_verification": "2026-09-30T09:58:32Z",
-  "listing_count": 397,
+  "listing_count": 403,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-30T16:52:45Z",
+ "last_checked": "2026-09-30T19:29:19Z",
  "pending": [
   {
    "code": "AU",
@@ -20145,12 +20186,12 @@
    "vernacular": "Yakoma"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-30T15:35:49Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-30T15:35:49Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-30T19:29:19Z",
    "code": "SCR",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -20162,9 +20203,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T16:42:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-30T15:43:38Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "csr",
    "name": "Costa Rican Sign Language",
    "published_at": "2026-09-29T16:42:09Z",
@@ -20435,12 +20476,12 @@
    "vernacular": "mapudungun"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-30T14:19:06Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-30T14:19:06Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-30T19:29:19Z",
    "code": "MNJ",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -20452,9 +20493,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-30T14:18:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-30T14:43:34Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "mzv",
    "name": "Mandja",
    "published_at": "2026-09-30T14:18:55Z",
@@ -20467,12 +20508,12 @@
    "vernacular": "Mandja"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-30T14:50:13Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-30T14:50:13Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-30T19:29:19Z",
    "code": "KIP",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -20484,9 +20525,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-30T14:50:04Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-30T15:13:38Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "pem",
    "name": "Kipende",
    "published_at": "2026-09-30T14:50:04Z",
@@ -20499,12 +20540,12 @@
    "vernacular": "Kipende"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-30T15:30:00Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-30T15:30:00Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-30T19:29:19Z",
    "code": "MSH",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -20516,9 +20557,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-30T15:29:49Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-30T15:43:38Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "shr",
    "name": "Mashi",
    "published_at": "2026-09-30T15:29:49Z",
@@ -20531,12 +20572,12 @@
    "vernacular": "Mashi"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-09-30T15:46:11Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-09-30T15:46:11Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-30T19:29:19Z",
    "code": "CHL",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -20548,9 +20589,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-30T15:45:57Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-09-30T16:52:45Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ctu",
    "name": "Chol",
    "published_at": "2026-09-30T15:45:57Z",
@@ -20561,6 +20602,38 @@
    "title": "Informe 6 chaʼan jiñi Junmojt muʼ bʌ i pʌsob bij (2026)",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CHL",
    "vernacular": "ch'ol"
+  },
+  {
+   "api_published_at": "2026-09-30T17:06:45Z",
+   "beyond_baseline": true,
+   "catalog_at": "2026-09-30T17:06:45Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-09-30T19:29:19Z",
+   "code": "GBM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-30T17:06:19Z",
+   "files_at": "2026-09-30T17:06:45Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-09-30T19:29:19Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "gum",
+   "name": "Guambiano",
+   "published_at": "2026-09-30T17:06:45Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Jeupawaiwan Marøp Metrap Pera Pøntrapelai wammørøsraik 6 2026wai",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GBM",
+   "vernacular": "Namtrik"
   }
  ],
  "removed": [],
@@ -20572,14 +20645,14 @@
  "stats": {
   "added_1h": 0,
   "added_24h": 12,
-  "added_4h": 4,
-  "catalog_count": 397,
-  "catalog_lag": 5,
-  "catalog_percent": 88.4,
-  "days_since_release": 12.12,
-  "pending_count": 47,
-  "percent": 89.5,
-  "published_count": 402,
+  "added_4h": 3,
+  "catalog_count": 403,
+  "catalog_lag": 0,
+  "catalog_percent": 89.8,
+  "days_since_release": 12.23,
+  "pending_count": 46,
+  "percent": 89.8,
+  "published_count": 403,
   "publisher_percent": 98.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
