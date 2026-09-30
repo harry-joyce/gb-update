@@ -1593,21 +1593,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 4,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 4
  },
  "counts": {
   "api_times": 51,
-  "awaiting_catalogue": 2,
+  "awaiting_catalogue": 4,
   "catalogued": 397,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 347,
+  "file_times": 349,
   "observed_times": 0,
-  "sign_languages": 66
+  "sign_languages": 67
  },
  "events": [
   {
@@ -5194,6 +5194,19 @@
   {
    "added": [
     {
+     "at": "2026-09-29T16:42:09Z",
+     "code": "SCR",
+     "in_catalog": false,
+     "name": "Costa Rican Sign Language",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 390,
+   "t": "2026-09-29T16:00:00Z"
+  },
+  {
+   "added": [
+    {
      "at": "2026-09-29T18:00:58Z",
      "code": "NGB",
      "in_catalog": true,
@@ -5201,7 +5214,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 390,
+   "count_after": 391,
    "t": "2026-09-29T18:00:00Z"
   },
   {
@@ -5214,7 +5227,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 391,
+   "count_after": 392,
    "t": "2026-09-29T20:00:00Z"
   },
   {
@@ -5227,7 +5240,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 392,
+   "count_after": 393,
    "t": "2026-09-29T21:00:00Z"
   },
   {
@@ -5240,7 +5253,7 @@
      "source": "api"
     }
    ],
-   "count_after": 393,
+   "count_after": 394,
    "t": "2026-09-30T03:00:00Z"
   },
   {
@@ -5253,7 +5266,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 394,
+   "count_after": 395,
    "t": "2026-09-30T06:00:00Z"
   },
   {
@@ -5266,7 +5279,7 @@
      "source": "api"
     }
    ],
-   "count_after": 395,
+   "count_after": 396,
    "t": "2026-09-30T08:00:00Z"
   },
   {
@@ -5279,7 +5292,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 396,
+   "count_after": 397,
    "t": "2026-09-30T10:00:00Z"
   },
   {
@@ -5292,7 +5305,7 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 397,
+   "count_after": 398,
    "t": "2026-09-30T12:00:00Z"
   },
   {
@@ -5312,11 +5325,24 @@
      "source": "file_estimated"
     }
    ],
-   "count_after": 399,
+   "count_after": 400,
    "t": "2026-09-30T14:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-09-30T15:29:49Z",
+     "code": "MSH",
+     "in_catalog": false,
+     "name": "Mashi",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 401,
+   "t": "2026-09-30T15:00:00Z"
   }
  ],
- "generated": "2026-09-30T15:13:38Z",
+ "generated": "2026-09-30T15:43:38Z",
  "history": [
   {
    "count": 1,
@@ -6876,43 +6902,51 @@
   },
   {
    "count": 390,
-   "t": "2026-09-29T18:00:58Z"
+   "t": "2026-09-29T16:42:09Z"
   },
   {
    "count": 391,
-   "t": "2026-09-29T20:31:06Z"
+   "t": "2026-09-29T18:00:58Z"
   },
   {
    "count": 392,
-   "t": "2026-09-29T21:25:58Z"
+   "t": "2026-09-29T20:31:06Z"
   },
   {
    "count": 393,
-   "t": "2026-09-30T03:20:25Z"
+   "t": "2026-09-29T21:25:58Z"
   },
   {
    "count": 394,
-   "t": "2026-09-30T06:57:22Z"
+   "t": "2026-09-30T03:20:25Z"
   },
   {
    "count": 395,
-   "t": "2026-09-30T08:28:01Z"
+   "t": "2026-09-30T06:57:22Z"
   },
   {
    "count": 396,
-   "t": "2026-09-30T10:07:59Z"
+   "t": "2026-09-30T08:28:01Z"
   },
   {
    "count": 397,
-   "t": "2026-09-30T12:18:52Z"
+   "t": "2026-09-30T10:07:59Z"
   },
   {
    "count": 398,
-   "t": "2026-09-30T14:18:55Z"
+   "t": "2026-09-30T12:18:52Z"
   },
   {
    "count": 399,
+   "t": "2026-09-30T14:18:55Z"
+  },
+  {
+   "count": 400,
    "t": "2026-09-30T14:50:04Z"
+  },
+  {
+   "count": 401,
+   "t": "2026-09-30T15:29:49Z"
   }
  ],
  "integrity": {
@@ -6926,13 +6960,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 74,
-  "files_count": 399,
+  "files_count": 401,
   "last_full_verification": "2026-09-30T09:58:32Z",
   "listing_count": 397,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-30T15:13:38Z",
+ "last_checked": "2026-09-30T15:43:38Z",
  "pending": [
   {
    "code": "AU",
@@ -7041,15 +7075,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kuki Airani"
-  },
-  {
-   "code": "SCR",
-   "direction": "ltr",
-   "locale": "csr",
-   "name": "Costa Rican Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "lengua de señas costarricense"
   },
   {
    "code": "DI",
@@ -7257,15 +7282,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Shimakonde"
-  },
-  {
-   "code": "MSH",
-   "direction": "ltr",
-   "locale": "shr",
-   "name": "Mashi",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Mashi"
   },
   {
    "code": "MNS",
@@ -20127,6 +20143,38 @@
    "vernacular": "Yakoma"
   },
   {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SCR",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-29T16:42:09Z",
+   "files_at": "2026-09-29T16:42:09Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-29T16:42:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-30T15:43:38Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "csr",
+   "name": "Costa Rican Sign Language",
+   "published_at": "2026-09-29T16:42:09Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-29T16:42:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 | Informe 6 del Cuerpo Gobernante",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SCR",
+   "vernacular": "lengua de señas costarricense"
+  },
+  {
    "api_published_at": "2026-09-29T18:01:08Z",
    "beyond_baseline": true,
    "catalog_at": "2026-09-29T18:01:08Z",
@@ -20447,6 +20495,38 @@
    "title": "Mbimbi jia Hunji dia Akulu Atuameji No. 6 Givo 2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=KIP",
    "vernacular": "Kipende"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MSH",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-30T15:29:49Z",
+   "files_at": "2026-09-30T15:29:49Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-09-30T15:29:49Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-09-30T15:43:38Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "shr",
+   "name": "Mashi",
+   "published_at": "2026-09-30T15:29:49Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-09-30T15:29:49Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Eraporo ya 6 y'Embaraza Eri Yalongoza (2026)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MSH",
+   "vernacular": "Mashi"
   }
  ],
  "removed": [],
@@ -20458,14 +20538,14 @@
  "stats": {
   "added_1h": 2,
   "added_24h": 12,
-  "added_4h": 3,
+  "added_4h": 4,
   "catalog_count": 397,
-  "catalog_lag": 2,
+  "catalog_lag": 4,
   "catalog_percent": 88.4,
-  "days_since_release": 12.05,
-  "pending_count": 50,
-  "percent": 88.9,
-  "published_count": 399,
+  "days_since_release": 12.07,
+  "pending_count": 48,
+  "percent": 89.3,
+  "published_count": 401,
   "publisher_percent": 98.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
