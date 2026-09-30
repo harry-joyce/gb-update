@@ -1593,16 +1593,11 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
-  "newly_catalogued": [
-   "KIN",
-   "MPD",
-   "MYW",
-   "SBF"
-  ],
+  "last_checked_count": 0,
+  "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 51,
@@ -5301,7 +5296,7 @@
    "t": "2026-09-30T12:00:00Z"
   }
  ],
- "generated": "2026-09-30T13:13:23Z",
+ "generated": "2026-09-30T14:13:29Z",
  "history": [
   {
    "count": 1,
@@ -6905,11 +6900,11 @@
   "file_drift_count": 74,
   "files_count": 397,
   "last_full_verification": "2026-09-30T09:58:32Z",
-  "listing_count": 393,
+  "listing_count": 397,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-09-30T13:13:23Z",
+ "last_checked": "2026-09-30T14:13:29Z",
  "pending": [
   {
    "code": "AU",
@@ -18090,7 +18085,7 @@
    "first_observed": "2026-09-30T10:42:54Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "nnb",
    "name": "Kinande",
    "published_at": "2026-09-25T10:15:58Z",
@@ -18253,7 +18248,7 @@
    "first_observed": "2026-09-30T12:13:17Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "sfb",
    "name": "Belgian French Sign Language",
    "published_at": "2026-09-25T11:14:59Z",
@@ -20335,7 +20330,7 @@
    "first_observed": "2026-09-30T10:42:54Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "mny",
    "name": "Manyawa",
    "published_at": "2026-09-30T10:07:59Z",
@@ -20367,7 +20362,7 @@
    "first_observed": "2026-09-30T12:43:21Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "arn",
    "name": "Mapudungun",
    "published_at": "2026-09-30T12:18:52Z",
@@ -20387,13 +20382,13 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 12,
-  "added_4h": 2,
+  "added_1h": 0,
+  "added_24h": 11,
+  "added_4h": 1,
   "catalog_count": 397,
   "catalog_lag": 0,
   "catalog_percent": 88.4,
-  "days_since_release": 11.97,
+  "days_since_release": 12.01,
   "pending_count": 52,
   "percent": 88.4,
   "published_count": 397,
