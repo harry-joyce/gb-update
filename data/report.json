@@ -1657,19 +1657,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 2,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 3
  },
  "counts": {
   "api_times": 57,
-  "awaiting_catalogue": 2,
+  "awaiting_catalogue": 3,
   "catalogued": 413,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 357,
+  "file_times": 358,
   "observed_times": 0,
   "sign_languages": 68
  },
@@ -5556,9 +5556,22 @@
    ],
    "count_after": 415,
    "t": "2026-10-01T12:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-01T14:35:47Z",
+     "code": "MXG",
+     "in_catalog": false,
+     "name": "Mixtec (Guerrero)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 416,
+   "t": "2026-10-01T14:00:00Z"
   }
  ],
- "generated": "2026-10-01T13:37:23Z",
+ "generated": "2026-10-01T14:37:32Z",
  "history": [
   {
    "count": 1,
@@ -7219,6 +7232,10 @@
   {
    "count": 415,
    "t": "2026-10-01T12:20:23Z"
+  },
+  {
+   "count": 416,
+   "t": "2026-10-01T14:35:47Z"
   }
  ],
  "integrity": {
@@ -7232,13 +7249,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 78,
-  "files_count": 415,
+  "files_count": 416,
   "last_full_verification": "2026-10-01T10:25:21Z",
   "listing_count": 413,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-01T13:37:23Z",
+ "last_checked": "2026-10-01T14:37:32Z",
  "pending": [
   {
    "code": "AU",
@@ -7518,15 +7535,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "ayuk"
-  },
-  {
-   "code": "MXG",
-   "direction": "ltr",
-   "locale": "mxv",
-   "name": "Mixtec (Guerrero)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "tu’un sâví"
   },
   {
    "code": "MXO",
@@ -21153,6 +21161,38 @@
    "title": "Vidiyo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LD",
    "vernacular": "Lunda"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MXG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-01T14:35:47Z",
+   "files_at": "2026-10-01T14:35:47Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-01T14:35:47Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-01T14:37:32Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "mxv",
+   "name": "Mixtec (Guerrero)",
+   "published_at": "2026-10-01T14:35:47Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-01T14:35:47Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Informe na̱ Cuerpo Gobernante 2026 (informe 6)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MXG",
+   "vernacular": "tu’un sâví"
   }
  ],
  "removed": [],
@@ -21162,16 +21202,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
+  "added_1h": 1,
   "added_24h": 16,
   "added_4h": 3,
   "catalog_count": 413,
-  "catalog_lag": 2,
+  "catalog_lag": 3,
   "catalog_percent": 92.0,
-  "days_since_release": 12.98,
-  "pending_count": 34,
-  "percent": 92.4,
-  "published_count": 415,
+  "days_since_release": 13.03,
+  "pending_count": 33,
+  "percent": 92.7,
+  "published_count": 416,
   "publisher_percent": 98.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
