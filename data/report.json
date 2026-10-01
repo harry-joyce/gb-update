@@ -5558,7 +5558,7 @@
    "t": "2026-10-01T12:00:00Z"
   }
  ],
- "generated": "2026-10-01T12:37:18Z",
+ "generated": "2026-10-01T13:37:23Z",
  "history": [
   {
    "count": 1,
@@ -7238,7 +7238,7 @@
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-01T12:37:18Z",
+ "last_checked": "2026-10-01T13:37:23Z",
  "pending": [
   {
    "code": "AU",
@@ -21162,13 +21162,13 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
+  "added_1h": 0,
   "added_24h": 16,
-  "added_4h": 6,
+  "added_4h": 3,
   "catalog_count": 413,
   "catalog_lag": 2,
   "catalog_percent": 92.0,
-  "days_since_release": 12.94,
+  "days_since_release": 12.98,
   "pending_count": 34,
   "percent": 92.4,
   "published_count": 415,
