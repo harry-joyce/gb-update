@@ -1634,19 +1634,39 @@
   {
    "count": 408,
    "t": "2026-10-01T07:35:26Z"
+  },
+  {
+   "count": 409,
+   "t": "2026-10-01T08:39:26Z"
+  },
+  {
+   "count": 410,
+   "t": "2026-10-01T08:40:23Z"
+  },
+  {
+   "count": 411,
+   "t": "2026-10-01T08:43:20Z"
+  },
+  {
+   "count": 412,
+   "t": "2026-10-01T09:29:24Z"
+  },
+  {
+   "count": 413,
+   "t": "2026-10-01T09:55:24Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 5,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 5
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 57,
-  "awaiting_catalogue": 5,
-  "catalogued": 408,
+  "awaiting_catalogue": 0,
+  "catalogued": 413,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 355,
@@ -5318,7 +5338,7 @@
     {
      "at": "2026-09-30T07:23:51Z",
      "code": "TBW",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Taabwa",
      "source": "file_estimated"
     }
@@ -5482,21 +5502,21 @@
     {
      "at": "2026-10-01T08:39:17Z",
      "code": "SAR",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Sar",
      "source": "file_estimated"
     },
     {
      "at": "2026-10-01T08:40:12Z",
      "code": "IG",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Ibanag",
      "source": "file_estimated"
     },
     {
      "at": "2026-10-01T08:43:08Z",
      "code": "BAK",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Bashkir",
      "source": "file_estimated"
     }
@@ -5509,7 +5529,7 @@
     {
      "at": "2026-10-01T09:55:12Z",
      "code": "IH",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Esan",
      "source": "file_estimated"
     }
@@ -5518,7 +5538,7 @@
    "t": "2026-10-01T09:00:00Z"
   }
  ],
- "generated": "2026-10-01T11:37:46Z",
+ "generated": "2026-10-01T12:07:15Z",
  "history": [
   {
    "count": 1,
@@ -7186,11 +7206,11 @@
   "file_drift_count": 78,
   "files_count": 413,
   "last_full_verification": "2026-10-01T10:25:21Z",
-  "listing_count": 408,
+  "listing_count": 413,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-01T11:37:46Z",
+ "last_checked": "2026-10-01T12:07:15Z",
  "pending": [
   {
    "code": "AU",
@@ -20470,12 +20490,12 @@
    "vernacular": "Ciin-kanyok"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-01T09:29:24Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-01T09:29:24Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-01T12:07:15Z",
    "code": "TBW",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -20487,9 +20507,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-09-30T07:23:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-01T10:37:04Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "tap",
    "name": "Taabwa",
    "published_at": "2026-09-30T07:23:51Z",
@@ -20920,12 +20940,12 @@
    "vernacular": "magyar jelnyelv"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-01T08:39:26Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-01T08:39:26Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-01T12:07:15Z",
    "code": "SAR",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -20938,9 +20958,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-01T08:39:17Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-01T09:02:42Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "mwm",
    "name": "Sar",
    "published_at": "2026-10-01T08:39:17Z",
@@ -20953,12 +20973,12 @@
    "vernacular": "Sar"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-01T08:40:23Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-01T08:40:23Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-01T12:07:15Z",
    "code": "IG",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -20970,9 +20990,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-01T08:40:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-01T09:02:42Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ibg",
    "name": "Ibanag",
    "published_at": "2026-10-01T08:40:12Z",
@@ -20985,12 +21005,12 @@
    "vernacular": "Ibanag"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-01T08:43:20Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-01T08:43:20Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-01T12:07:15Z",
    "code": "BAK",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -21002,9 +21022,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-01T08:43:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-01T09:02:42Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ba",
    "name": "Bashkir",
    "published_at": "2026-10-01T08:43:08Z",
@@ -21017,12 +21037,12 @@
    "vernacular": "башҡорт"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-01T09:55:24Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-01T09:55:24Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-01T12:07:15Z",
    "code": "IH",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -21035,9 +21055,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-01T09:55:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-01T10:37:04Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ish",
    "name": "Esan",
    "published_at": "2026-10-01T09:55:12Z",
@@ -21060,10 +21080,10 @@
   "added_1h": 0,
   "added_24h": 15,
   "added_4h": 4,
-  "catalog_count": 408,
-  "catalog_lag": 5,
-  "catalog_percent": 90.9,
-  "days_since_release": 12.9,
+  "catalog_count": 413,
+  "catalog_lag": 0,
+  "catalog_percent": 92.0,
+  "days_since_release": 12.92,
   "pending_count": 36,
   "percent": 92.0,
   "published_count": 413,
