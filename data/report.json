@@ -1666,26 +1666,30 @@
   {
    "count": 416,
    "t": "2026-10-01T14:35:57Z"
+  },
+  {
+   "count": 417,
+   "t": "2026-10-01T18:13:49Z"
+  },
+  {
+   "count": 418,
+   "t": "2026-10-01T19:20:27Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
-  "newly_catalogued": [
-   "LD",
-   "LLO",
-   "MXG"
-  ],
+  "last_checked_count": 1,
+  "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 1
  },
  "counts": {
-  "api_times": 57,
-  "awaiting_catalogue": 0,
-  "catalogued": 416,
+  "api_times": 59,
+  "awaiting_catalogue": 1,
+  "catalogued": 418,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 358,
+  "file_times": 359,
   "observed_times": 0,
   "sign_languages": 68
  },
@@ -5585,9 +5589,48 @@
    ],
    "count_after": 416,
    "t": "2026-10-01T14:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-01T18:13:49Z",
+     "code": "TH",
+     "in_catalog": true,
+     "name": "Tahitian",
+     "source": "api"
+    }
+   ],
+   "count_after": 417,
+   "t": "2026-10-01T18:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-01T19:20:27Z",
+     "code": "CQ",
+     "in_catalog": true,
+     "name": "Cakchiquel (Western)",
+     "source": "api"
+    }
+   ],
+   "count_after": 418,
+   "t": "2026-10-01T19:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-01T20:35:56Z",
+     "code": "BZK",
+     "in_catalog": false,
+     "name": "Belize Kriol",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 419,
+   "t": "2026-10-01T20:00:00Z"
   }
  ],
- "generated": "2026-10-01T15:37:36Z",
+ "generated": "2026-10-01T20:53:22Z",
  "history": [
   {
    "count": 1,
@@ -7252,6 +7295,18 @@
   {
    "count": 416,
    "t": "2026-10-01T14:35:47Z"
+  },
+  {
+   "count": 417,
+   "t": "2026-10-01T18:13:49Z"
+  },
+  {
+   "count": 418,
+   "t": "2026-10-01T19:20:27Z"
+  },
+  {
+   "count": 419,
+   "t": "2026-10-01T20:35:56Z"
   }
  ],
  "integrity": {
@@ -7265,13 +7320,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 78,
-  "files_count": 416,
+  "files_count": 419,
   "last_full_verification": "2026-10-01T10:25:21Z",
-  "listing_count": 413,
+  "listing_count": 418,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-01T15:37:36Z",
+ "last_checked": "2026-10-01T20:53:22Z",
  "pending": [
   {
    "code": "AU",
@@ -7317,15 +7372,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Basaa (Kamerun)"
-  },
-  {
-   "code": "BZK",
-   "direction": "ltr",
-   "locale": "bzj",
-   "name": "Belize Kriol",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Bileez Kriol"
   },
   {
    "code": "ET",
@@ -7632,15 +7678,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Swazi Sign Language"
-  },
-  {
-   "code": "TH",
-   "direction": "ltr",
-   "locale": "ty",
-   "name": "Tahitian",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Tahiti"
   },
   {
    "code": "TAL",
@@ -21133,7 +21170,7 @@
    "first_observed": "2026-10-01T12:37:18Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "llb",
    "name": "Lolo",
    "published_at": "2026-10-01T12:08:38Z",
@@ -21166,7 +21203,7 @@
    "first_observed": "2026-10-01T12:37:18Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "lun",
    "name": "Lunda",
    "published_at": "2026-10-01T12:20:23Z",
@@ -21198,7 +21235,7 @@
    "first_observed": "2026-10-01T14:37:32Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "mxv",
    "name": "Mixtec (Guerrero)",
    "published_at": "2026-10-01T14:35:47Z",
@@ -21209,6 +21246,102 @@
    "title": "Informe na̱ Cuerpo Gobernante 2026 (informe 6)",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MXG",
    "vernacular": "tu’un sâví"
+  },
+  {
+   "api_published_at": "2026-10-01T18:13:49Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-10-01T18:13:49Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-01T20:53:22Z",
+   "code": "TH",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-01T18:13:37Z",
+   "files_at": "2026-10-01T18:13:49Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-01T20:53:22Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "ty",
+   "name": "Tahitian",
+   "published_at": "2026-10-01T18:13:49Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video parau apî n° 6 a te Tino aratai 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TH",
+   "vernacular": "Tahiti"
+  },
+  {
+   "api_published_at": "2026-10-01T19:20:27Z",
+   "beyond_baseline": true,
+   "catalog_at": "2026-10-01T19:20:27Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-01T20:53:22Z",
+   "code": "CQ",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-01T19:20:15Z",
+   "files_at": "2026-10-01T19:20:27Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-01T20:53:22Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "cak",
+   "name": "Cakchiquel (Western)",
+   "published_at": "2026-10-01T19:20:27Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 | Ri rtzjol #6 ri nuyaʼ ri Molaj Ukʼwäy Bʼey",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CQ",
+   "vernacular": "Kaqchikel occidental"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "BZK",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-01T20:35:56Z",
+   "files_at": "2026-10-01T20:35:56Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-01T20:35:56Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-01T20:53:22Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "bzj",
+   "name": "Belize Kriol",
+   "published_at": "2026-10-01T20:35:56Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-01T20:35:56Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Govanin Badi Opdayt #6 fi 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BZK",
+   "vernacular": "Bileez Kriol"
   }
  ],
  "removed": [],
@@ -21218,16 +21351,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 14,
+  "added_1h": 1,
+  "added_24h": 13,
   "added_4h": 3,
-  "catalog_count": 416,
-  "catalog_lag": 0,
-  "catalog_percent": 92.7,
-  "days_since_release": 13.07,
-  "pending_count": 33,
-  "percent": 92.7,
-  "published_count": 416,
+  "catalog_count": 418,
+  "catalog_lag": 1,
+  "catalog_percent": 93.1,
+  "days_since_release": 13.29,
+  "pending_count": 30,
+  "percent": 93.3,
+  "published_count": 419,
   "publisher_percent": 98.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
