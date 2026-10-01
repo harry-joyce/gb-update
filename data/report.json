@@ -1654,19 +1654,35 @@
   {
    "count": 413,
    "t": "2026-10-01T09:55:24Z"
+  },
+  {
+   "count": 414,
+   "t": "2026-10-01T12:08:47Z"
+  },
+  {
+   "count": 415,
+   "t": "2026-10-01T12:20:35Z"
+  },
+  {
+   "count": 416,
+   "t": "2026-10-01T14:35:57Z"
   }
  ],
  "catalog_probe": {
   "last_checked_count": 3,
-  "newly_catalogued": [],
-  "offset": 2,
+  "newly_catalogued": [
+   "LD",
+   "LLO",
+   "MXG"
+  ],
+  "offset": 0,
   "size": 40,
   "unlisted_total": 3
  },
  "counts": {
   "api_times": 57,
-  "awaiting_catalogue": 3,
-  "catalogued": 413,
+  "awaiting_catalogue": 0,
+  "catalogued": 416,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 358,
@@ -5542,14 +5558,14 @@
     {
      "at": "2026-10-01T12:08:38Z",
      "code": "LLO",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Lolo",
      "source": "file_estimated"
     },
     {
      "at": "2026-10-01T12:20:23Z",
      "code": "LD",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Lunda",
      "source": "file_estimated"
     }
@@ -5562,7 +5578,7 @@
     {
      "at": "2026-10-01T14:35:47Z",
      "code": "MXG",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Mixtec (Guerrero)",
      "source": "file_estimated"
     }
@@ -5571,7 +5587,7 @@
    "t": "2026-10-01T14:00:00Z"
   }
  ],
- "generated": "2026-10-01T14:37:32Z",
+ "generated": "2026-10-01T15:37:36Z",
  "history": [
   {
    "count": 1,
@@ -7255,7 +7271,7 @@
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-01T14:37:32Z",
+ "last_checked": "2026-10-01T15:37:36Z",
  "pending": [
   {
    "code": "AU",
@@ -21097,12 +21113,12 @@
    "vernacular": "Esan"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-01T12:08:47Z",
    "beyond_baseline": true,
-   "catalog_at": null,
+   "catalog_at": "2026-10-01T12:08:47Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-01T15:37:36Z",
    "code": "LLO",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -21115,7 +21131,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-01T12:08:38Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-01T12:37:18Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "llb",
@@ -21130,12 +21146,12 @@
    "vernacular": "Ilolo"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-01T12:20:35Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-01T12:20:35Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-01T15:37:36Z",
    "code": "LD",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -21148,7 +21164,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-01T12:20:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-01T12:37:18Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "lun",
@@ -21163,12 +21179,12 @@
    "vernacular": "Lunda"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-01T14:35:57Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-01T14:35:57Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-01T15:37:36Z",
    "code": "MXG",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -21180,7 +21196,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-01T14:35:47Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-01T14:37:32Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "mxv",
@@ -21202,13 +21218,13 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 16,
+  "added_1h": 0,
+  "added_24h": 14,
   "added_4h": 3,
-  "catalog_count": 413,
-  "catalog_lag": 3,
-  "catalog_percent": 92.0,
-  "days_since_release": 13.03,
+  "catalog_count": 416,
+  "catalog_lag": 0,
+  "catalog_percent": 92.7,
+  "days_since_release": 13.07,
   "pending_count": 33,
   "percent": 92.7,
   "published_count": 416,
