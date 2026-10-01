@@ -1657,19 +1657,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 2,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 2
  },
  "counts": {
   "api_times": 57,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 2,
   "catalogued": 413,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 355,
+  "file_times": 357,
   "observed_times": 0,
   "sign_languages": 68
  },
@@ -5536,9 +5536,29 @@
    ],
    "count_after": 413,
    "t": "2026-10-01T09:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-01T12:08:38Z",
+     "code": "LLO",
+     "in_catalog": false,
+     "name": "Lolo",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-10-01T12:20:23Z",
+     "code": "LD",
+     "in_catalog": false,
+     "name": "Lunda",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 415,
+   "t": "2026-10-01T12:00:00Z"
   }
  ],
- "generated": "2026-10-01T12:07:15Z",
+ "generated": "2026-10-01T12:37:18Z",
  "history": [
   {
    "count": 1,
@@ -7191,6 +7211,14 @@
   {
    "count": 413,
    "t": "2026-10-01T09:55:12Z"
+  },
+  {
+   "count": 414,
+   "t": "2026-10-01T12:08:38Z"
+  },
+  {
+   "count": 415,
+   "t": "2026-10-01T12:20:23Z"
   }
  ],
  "integrity": {
@@ -7204,13 +7232,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 78,
-  "files_count": 413,
+  "files_count": 415,
   "last_full_verification": "2026-10-01T10:25:21Z",
   "listing_count": 413,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-01T12:07:15Z",
+ "last_checked": "2026-10-01T12:37:18Z",
  "pending": [
   {
    "code": "AU",
@@ -7445,15 +7473,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Lugbara"
-  },
-  {
-   "code": "LD",
-   "direction": "ltr",
-   "locale": "lun",
-   "name": "Lunda",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Lunda"
   },
   {
    "code": "MWM",
@@ -21068,6 +21087,72 @@
    "title": "Vidio",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=IH",
    "vernacular": "Esan"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": true,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LLO",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-01T12:08:38Z",
+   "files_at": "2026-10-01T12:08:38Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-01T12:08:38Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-01T12:37:18Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "llb",
+   "name": "Lolo",
+   "published_at": "2026-10-01T12:08:38Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-01T12:08:38Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LLO",
+   "vernacular": "Ilolo"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "LD",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-01T12:20:23Z",
+   "files_at": "2026-10-01T12:20:23Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-01T12:20:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-01T12:37:18Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "lun",
+   "name": "Lunda",
+   "published_at": "2026-10-01T12:20:23Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-01T12:20:23Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidiyo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LD",
+   "vernacular": "Lunda"
   }
  ],
  "removed": [],
@@ -21077,17 +21162,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 15,
-  "added_4h": 4,
+  "added_1h": 2,
+  "added_24h": 16,
+  "added_4h": 6,
   "catalog_count": 413,
-  "catalog_lag": 0,
+  "catalog_lag": 2,
   "catalog_percent": 92.0,
-  "days_since_release": 12.92,
-  "pending_count": 36,
-  "percent": 92.0,
-  "published_count": 413,
-  "publisher_percent": 98.6,
+  "days_since_release": 12.94,
+  "pending_count": 34,
+  "percent": 92.4,
+  "published_count": 415,
+  "publisher_percent": 98.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
