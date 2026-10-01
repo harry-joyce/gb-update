@@ -1622,24 +1622,36 @@
   {
    "count": 405,
    "t": "2026-09-30T20:40:45Z"
+  },
+  {
+   "count": 406,
+   "t": "2026-10-01T04:36:03Z"
+  },
+  {
+   "count": 407,
+   "t": "2026-10-01T07:11:30Z"
+  },
+  {
+   "count": 408,
+   "t": "2026-10-01T07:35:26Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 3,
   "newly_catalogued": [],
-  "offset": 0,
+  "offset": 1,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 3
  },
  "counts": {
-  "api_times": 54,
-  "awaiting_catalogue": 0,
-  "catalogued": 405,
+  "api_times": 57,
+  "awaiting_catalogue": 3,
+  "catalogued": 408,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 350,
+  "file_times": 353,
   "observed_times": 0,
-  "sign_languages": 67
+  "sign_languages": 68
  },
  "events": [
   {
@@ -5418,9 +5430,69 @@
    ],
    "count_after": 405,
    "t": "2026-09-30T20:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-01T04:36:03Z",
+     "code": "VL",
+     "in_catalog": true,
+     "name": "Tuvaluan",
+     "source": "api"
+    }
+   ],
+   "count_after": 406,
+   "t": "2026-10-01T04:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-01T07:11:30Z",
+     "code": "SGM",
+     "in_catalog": true,
+     "name": "Songomeno",
+     "source": "api"
+    },
+    {
+     "at": "2026-10-01T07:35:26Z",
+     "code": "HDF",
+     "in_catalog": true,
+     "name": "Hungarian Sign Language",
+     "source": "api"
+    }
+   ],
+   "count_after": 408,
+   "t": "2026-10-01T07:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-01T08:39:17Z",
+     "code": "SAR",
+     "in_catalog": false,
+     "name": "Sar",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-10-01T08:40:12Z",
+     "code": "IG",
+     "in_catalog": false,
+     "name": "Ibanag",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-10-01T08:43:08Z",
+     "code": "BAK",
+     "in_catalog": false,
+     "name": "Bashkir",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 411,
+   "t": "2026-10-01T08:00:00Z"
   }
  ],
- "generated": "2026-10-01T02:12:35Z",
+ "generated": "2026-10-01T09:02:42Z",
  "history": [
   {
    "count": 1,
@@ -7041,6 +7113,30 @@
   {
    "count": 405,
    "t": "2026-09-30T20:40:45Z"
+  },
+  {
+   "count": 406,
+   "t": "2026-10-01T04:36:03Z"
+  },
+  {
+   "count": 407,
+   "t": "2026-10-01T07:11:30Z"
+  },
+  {
+   "count": 408,
+   "t": "2026-10-01T07:35:26Z"
+  },
+  {
+   "count": 409,
+   "t": "2026-10-01T08:39:17Z"
+  },
+  {
+   "count": 410,
+   "t": "2026-10-01T08:40:12Z"
+  },
+  {
+   "count": 411,
+   "t": "2026-10-01T08:43:08Z"
   }
  ],
  "integrity": {
@@ -7054,13 +7150,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 74,
-  "files_count": 405,
+  "files_count": 411,
   "last_full_verification": "2026-09-30T09:58:32Z",
-  "listing_count": 405,
+  "listing_count": 408,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-01T02:12:35Z",
+ "last_checked": "2026-10-01T09:02:42Z",
  "pending": [
   {
    "code": "AU",
@@ -7097,15 +7193,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Banda (Mid-Southern)"
-  },
-  {
-   "code": "BAK",
-   "direction": "ltr",
-   "locale": "ba",
-   "name": "Bashkir",
-   "script": "CYRILLIC",
-   "sign": false,
-   "vernacular": "башҡорт"
   },
   {
    "code": "BS",
@@ -7234,15 +7321,6 @@
    "vernacular": "Otjiherero"
   },
   {
-   "code": "HDF",
-   "direction": "ltr",
-   "locale": "hsh",
-   "name": "Hungarian Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "magyar jelnyelv"
-  },
-  {
    "code": "HSK",
    "direction": "ltr",
    "locale": "hrx",
@@ -7250,15 +7328,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Hunsrik"
-  },
-  {
-   "code": "IG",
-   "direction": "ltr",
-   "locale": "ibg",
-   "name": "Ibanag",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ibanag"
   },
   {
    "code": "ID",
@@ -7459,24 +7528,6 @@
    "vernacular": "Quechua (Ancash)"
   },
   {
-   "code": "SAR",
-   "direction": "ltr",
-   "locale": "mwm",
-   "name": "Sar",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Sar"
-  },
-  {
-   "code": "SGM",
-   "direction": "ltr",
-   "locale": "soe",
-   "name": "Songomeno",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Losongomino"
-  },
-  {
    "code": "SWI",
    "direction": "ltr",
    "locale": "ss",
@@ -7529,15 +7580,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "ciTshwa"
-  },
-  {
-   "code": "VL",
-   "direction": "ltr",
-   "locale": "tvl",
-   "name": "Tuvaluan",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Tuvalu"
   },
   {
    "code": "SLV",
@@ -20732,6 +20774,199 @@
    "title": "2026 | Aianhperakua 6, Grupueri enga Orhejtsïkuajka iámindu kúnguarhikuechani",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=TRS",
    "vernacular": "Purépecha"
+  },
+  {
+   "api_published_at": "2026-10-01T04:36:03Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-10-01T04:36:03Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-01T09:02:42Z",
+   "code": "VL",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-01T04:35:56Z",
+   "files_at": "2026-10-01T04:36:03Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-01T09:02:42Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "tvl",
+   "name": "Tuvaluan",
+   "published_at": "2026-10-01T04:36:03Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Lipoti Fou Mai te Potukau Pule #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=VL",
+   "vernacular": "Tuvalu"
+  },
+  {
+   "api_published_at": "2026-10-01T07:11:30Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-10-01T07:11:30Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-01T09:02:42Z",
+   "code": "SGM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-01T07:11:22Z",
+   "files_at": "2026-10-01T07:11:30Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-01T09:02:42Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "soe",
+   "name": "Songomeno",
+   "published_at": "2026-10-01T07:11:30Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Losango 6 lime Iloyi yɛ lɔndjɛ",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SGM",
+   "vernacular": "Losongomino"
+  },
+  {
+   "api_published_at": "2026-10-01T07:35:26Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-10-01T07:35:26Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-01T09:02:42Z",
+   "code": "HDF",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-09-30T14:21:24Z",
+   "files_at": "2026-10-01T07:35:26Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-01T09:02:42Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "hsh",
+   "name": "Hungarian Sign Language",
+   "published_at": "2026-10-01T07:35:26Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "2026 – Friss hírek a vezetőtestülettől (6. rész)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=HDF",
+   "vernacular": "magyar jelnyelv"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SAR",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-01T08:39:17Z",
+   "files_at": "2026-10-01T08:39:17Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-01T08:39:17Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-01T09:02:42Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "mwm",
+   "name": "Sar",
+   "published_at": "2026-10-01T08:39:17Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-01T08:39:17Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SAR",
+   "vernacular": "Sar"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "IG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-01T08:40:12Z",
+   "files_at": "2026-10-01T08:40:12Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-01T08:40:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-01T09:02:42Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ibg",
+   "name": "Ibanag",
+   "published_at": "2026-10-01T08:40:12Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-01T08:40:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Meka-annam nga Update na Manangngal nga Baggi",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=IG",
+   "vernacular": "Ibanag"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "BAK",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-01T08:43:08Z",
+   "files_at": "2026-10-01T08:43:08Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-01T08:43:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-01T09:02:42Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ba",
+   "name": "Bashkir",
+   "published_at": "2026-10-01T08:43:08Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-01T08:43:08Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "CYRILLIC",
+   "sign": false,
+   "title": "Етәксе кәңәшмәнең мөрәжәғәте № 6 (2026 йыл)",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BAK",
+   "vernacular": "башҡорт"
   }
  ],
  "removed": [],
@@ -20741,16 +20976,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 12,
-  "added_4h": 0,
-  "catalog_count": 405,
-  "catalog_lag": 0,
-  "catalog_percent": 90.2,
-  "days_since_release": 12.51,
-  "pending_count": 44,
-  "percent": 90.2,
-  "published_count": 405,
+  "added_1h": 3,
+  "added_24h": 15,
+  "added_4h": 5,
+  "catalog_count": 408,
+  "catalog_lag": 3,
+  "catalog_percent": 90.9,
+  "days_since_release": 12.79,
+  "pending_count": 38,
+  "percent": 91.5,
+  "published_count": 411,
   "publisher_percent": 98.6,
   "publisher_percent_ceiling": 99.2,
   "target": 449
