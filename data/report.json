@@ -1698,19 +1698,35 @@
   {
    "count": 424,
    "t": "2026-10-02T12:04:57Z"
+  },
+  {
+   "count": 425,
+   "t": "2026-10-02T13:07:30Z"
+  },
+  {
+   "count": 426,
+   "t": "2026-10-02T15:20:54Z"
+  },
+  {
+   "count": 427,
+   "t": "2026-10-02T15:56:18Z"
+  },
+  {
+   "count": 428,
+   "t": "2026-10-02T15:57:10Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 4,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 4
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 59,
-  "awaiting_catalogue": 4,
-  "catalogued": 424,
+  "awaiting_catalogue": 0,
+  "catalogued": 428,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 368,
@@ -5691,7 +5707,7 @@
     {
      "at": "2026-10-02T10:37:51Z",
      "code": "NGT",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Dutch Sign Language",
      "source": "file_estimated"
     }
@@ -5730,21 +5746,21 @@
     {
      "at": "2026-10-02T15:20:45Z",
      "code": "SWI",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Swati",
      "source": "file_estimated"
     },
     {
      "at": "2026-10-02T15:56:09Z",
      "code": "BNM",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Banda (Mid-Southern)",
      "source": "file_estimated"
     },
     {
      "at": "2026-10-02T15:57:02Z",
      "code": "BS",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Bassa (Cameroon)",
      "source": "file_estimated"
     }
@@ -5753,7 +5769,7 @@
    "t": "2026-10-02T15:00:00Z"
   }
  ],
- "generated": "2026-10-02T16:25:20Z",
+ "generated": "2026-10-02T16:55:24Z",
  "history": [
   {
    "count": 1,
@@ -7481,11 +7497,11 @@
   "file_drift_count": 82,
   "files_count": 428,
   "last_full_verification": "2026-10-02T10:01:11Z",
-  "listing_count": 424,
+  "listing_count": 428,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-02T16:25:20Z",
+ "last_checked": "2026-10-02T16:55:24Z",
  "pending": [
   {
    "code": "AU",
@@ -21529,12 +21545,12 @@
    "vernacular": "Alur"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-02T13:07:30Z",
    "beyond_baseline": true,
-   "catalog_at": null,
+   "catalog_at": "2026-10-02T13:07:30Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-02T16:55:24Z",
    "code": "NGT",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -21546,9 +21562,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-02T10:37:51Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-02T13:25:02Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "dse",
    "name": "Dutch Sign Language",
    "published_at": "2026-10-02T10:37:51Z",
@@ -21627,12 +21643,12 @@
    "vernacular": "Swazi Sign Language"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-02T15:20:54Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-02T15:20:54Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-02T16:55:24Z",
    "code": "SWI",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -21644,9 +21660,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-02T15:20:45Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-02T15:25:12Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ss",
    "name": "Swati",
    "published_at": "2026-10-02T15:20:45Z",
@@ -21659,12 +21675,12 @@
    "vernacular": "SiSwati"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-02T15:56:18Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-02T15:56:18Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-02T16:55:24Z",
    "code": "BNM",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -21676,9 +21692,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-02T15:56:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-02T16:25:20Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "bjo",
    "name": "Banda (Mid-Southern)",
    "published_at": "2026-10-02T15:56:09Z",
@@ -21691,12 +21707,12 @@
    "vernacular": "Banda (Mid-Southern)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-02T15:57:10Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-02T15:57:10Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-02T16:55:24Z",
    "code": "BS",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -21708,9 +21724,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-02T15:57:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-02T16:25:20Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "bas",
    "name": "Bassa (Cameroon)",
    "published_at": "2026-10-02T15:57:02Z",
@@ -21733,10 +21749,10 @@
   "added_1h": 2,
   "added_24h": 12,
   "added_4h": 3,
-  "catalog_count": 424,
-  "catalog_lag": 4,
-  "catalog_percent": 94.4,
-  "days_since_release": 14.1,
+  "catalog_count": 428,
+  "catalog_lag": 0,
+  "catalog_percent": 95.3,
+  "days_since_release": 14.12,
   "pending_count": 21,
   "percent": 95.3,
   "published_count": 428,
