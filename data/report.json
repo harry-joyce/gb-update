@@ -1686,21 +1686,23 @@
   {
    "count": 421,
    "t": "2026-10-02T07:14:14Z"
+  },
+  {
+   "count": 422,
+   "t": "2026-10-02T07:25:19Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
-  "newly_catalogued": [
-   "EF"
-  ],
+  "last_checked_count": 0,
+  "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 59,
-  "awaiting_catalogue": 1,
-  "catalogued": 421,
+  "awaiting_catalogue": 0,
+  "catalogued": 422,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 362,
@@ -5668,7 +5670,7 @@
     {
      "at": "2026-10-02T07:25:09Z",
      "code": "ALU",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Alur",
      "source": "file_estimated"
     }
@@ -5677,7 +5679,7 @@
    "t": "2026-10-02T07:00:00Z"
   }
  ],
- "generated": "2026-10-02T09:24:34Z",
+ "generated": "2026-10-02T09:54:37Z",
  "history": [
   {
    "count": 1,
@@ -7381,11 +7383,11 @@
   "file_drift_count": 78,
   "files_count": 422,
   "last_full_verification": "2026-10-01T10:25:21Z",
-  "listing_count": 420,
+  "listing_count": 422,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-02T09:24:34Z",
+ "last_checked": "2026-10-02T09:54:37Z",
  "pending": [
   {
    "code": "AU",
@@ -21429,7 +21431,7 @@
    "first_observed": "2026-10-02T07:24:20Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "efi",
    "name": "Efik",
    "published_at": "2026-10-02T07:14:03Z",
@@ -21442,12 +21444,12 @@
    "vernacular": "Efịk"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-02T07:25:19Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-02T07:25:19Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-02T09:54:37Z",
    "code": "ALU",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -21459,9 +21461,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-02T07:25:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-02T07:54:24Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "alz",
    "name": "Alur",
    "published_at": "2026-10-02T07:25:09Z",
@@ -21484,10 +21486,10 @@
   "added_1h": 0,
   "added_24h": 10,
   "added_4h": 2,
-  "catalog_count": 421,
-  "catalog_lag": 1,
-  "catalog_percent": 93.8,
-  "days_since_release": 13.81,
+  "catalog_count": 422,
+  "catalog_lag": 0,
+  "catalog_percent": 94.0,
+  "days_since_release": 13.83,
   "pending_count": 27,
   "percent": 94.0,
   "published_count": 422,
