@@ -1681,21 +1681,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 59,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 419,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 359,
+  "file_times": 360,
   "observed_times": 0,
-  "sign_languages": 68
+  "sign_languages": 69
  },
  "events": [
   {
@@ -5632,9 +5632,22 @@
    ],
    "count_after": 419,
    "t": "2026-10-01T20:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-02T01:18:17Z",
+     "code": "SLV",
+     "in_catalog": false,
+     "name": "Vietnamese Sign Language",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 420,
+   "t": "2026-10-02T01:00:00Z"
   }
  ],
- "generated": "2026-10-02T03:54:01Z",
+ "generated": "2026-10-02T04:54:07Z",
  "history": [
   {
    "count": 1,
@@ -7311,6 +7324,10 @@
   {
    "count": 419,
    "t": "2026-10-01T20:35:56Z"
+  },
+  {
+   "count": 420,
+   "t": "2026-10-02T01:18:17Z"
   }
  ],
  "integrity": {
@@ -7324,13 +7341,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 78,
-  "files_count": 419,
+  "files_count": 420,
   "last_full_verification": "2026-10-01T10:25:21Z",
   "listing_count": 419,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-02T03:54:01Z",
+ "last_checked": "2026-10-02T04:54:07Z",
  "pending": [
   {
    "code": "AU",
@@ -7700,15 +7717,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "ciTshwa"
-  },
-  {
-   "code": "SLV",
-   "direction": "ltr",
-   "locale": "hab",
-   "name": "Vietnamese Sign Language",
-   "script": "ROMAN",
-   "sign": true,
-   "vernacular": "Việt Nam (Ngôn ngữ ký hiệu)"
   },
   {
    "code": "ZAS",
@@ -21346,6 +21354,39 @@
    "title": "Govanin Badi Opdayt #6 fi 2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BZK",
    "vernacular": "Bileez Kriol"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "SLV",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-02T01:18:17Z",
+   "files_at": "2026-10-02T01:18:17Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-02T01:18:17Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-02T04:54:07Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "hab",
+   "name": "Vietnamese Sign Language",
+   "published_at": "2026-10-02T01:18:17Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-02T01:18:17Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SLV",
+   "vernacular": "Việt Nam (Ngôn ngữ ký hiệu)"
   }
  ],
  "removed": [],
@@ -21357,14 +21398,14 @@
  "stats": {
   "added_1h": 0,
   "added_24h": 13,
-  "added_4h": 0,
+  "added_4h": 1,
   "catalog_count": 419,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 93.3,
-  "days_since_release": 13.58,
-  "pending_count": 30,
-  "percent": 93.3,
-  "published_count": 419,
+  "days_since_release": 13.62,
+  "pending_count": 29,
+  "percent": 93.5,
+  "published_count": 420,
   "publisher_percent": 98.7,
   "publisher_percent_ceiling": 99.2,
   "target": 449
