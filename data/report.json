@@ -1685,19 +1685,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 59,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 420,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 360,
+  "file_times": 361,
   "observed_times": 0,
   "sign_languages": 69
  },
@@ -5649,9 +5649,22 @@
    ],
    "count_after": 420,
    "t": "2026-10-02T01:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-02T07:14:03Z",
+     "code": "EF",
+     "in_catalog": false,
+     "name": "Efik",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 421,
+   "t": "2026-10-02T07:00:00Z"
   }
  ],
- "generated": "2026-10-02T06:54:17Z",
+ "generated": "2026-10-02T07:24:20Z",
  "history": [
   {
    "count": 1,
@@ -7332,6 +7345,10 @@
   {
    "count": 420,
    "t": "2026-10-02T01:18:17Z"
+  },
+  {
+   "count": 421,
+   "t": "2026-10-02T07:14:03Z"
   }
  ],
  "integrity": {
@@ -7345,13 +7362,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 78,
-  "files_count": 420,
+  "files_count": 421,
   "last_full_verification": "2026-10-01T10:25:21Z",
   "listing_count": 420,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-02T06:54:17Z",
+ "last_checked": "2026-10-02T07:24:20Z",
  "pending": [
   {
    "code": "AU",
@@ -7451,15 +7468,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Douala"
-  },
-  {
-   "code": "EF",
-   "direction": "ltr",
-   "locale": "efi",
-   "name": "Efik",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Efịk"
   },
   {
    "code": "EMC",
@@ -21391,6 +21399,39 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SLV",
    "vernacular": "Việt Nam (Ngôn ngữ ký hiệu)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "EF",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-02T07:14:03Z",
+   "files_at": "2026-10-02T07:14:03Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-02T07:14:03Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-02T07:24:20Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "efi",
+   "name": "Efik",
+   "published_at": "2026-10-02T07:14:03Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-02T07:14:03Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vidio",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=EF",
+   "vernacular": "Efịk"
   }
  ],
  "removed": [],
@@ -21400,17 +21441,17 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
+  "added_1h": 1,
   "added_24h": 13,
-  "added_4h": 0,
+  "added_4h": 1,
   "catalog_count": 420,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 93.5,
-  "days_since_release": 13.7,
-  "pending_count": 29,
-  "percent": 93.5,
-  "published_count": 420,
-  "publisher_percent": 98.7,
+  "days_since_release": 13.73,
+  "pending_count": 28,
+  "percent": 93.8,
+  "published_count": 421,
+  "publisher_percent": 99.0,
   "publisher_percent_ceiling": 99.2,
   "target": 449
  },
