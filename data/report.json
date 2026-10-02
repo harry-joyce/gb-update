@@ -1693,19 +1693,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 59,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 422,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 362,
+  "file_times": 363,
   "observed_times": 0,
   "sign_languages": 69
  },
@@ -5677,9 +5677,22 @@
    ],
    "count_after": 422,
    "t": "2026-10-02T07:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-02T11:40:25Z",
+     "code": "DA",
+     "in_catalog": false,
+     "name": "Douala",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 423,
+   "t": "2026-10-02T11:00:00Z"
   }
  ],
- "generated": "2026-10-02T10:54:44Z",
+ "generated": "2026-10-02T11:54:51Z",
  "history": [
   {
    "count": 1,
@@ -7368,6 +7381,10 @@
   {
    "count": 422,
    "t": "2026-10-02T07:25:09Z"
+  },
+  {
+   "count": 423,
+   "t": "2026-10-02T11:40:25Z"
   }
  ],
  "integrity": {
@@ -7381,13 +7398,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 82,
-  "files_count": 422,
+  "files_count": 423,
   "last_full_verification": "2026-10-02T10:01:11Z",
   "listing_count": 422,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-02T10:54:44Z",
+ "last_checked": "2026-10-02T11:54:51Z",
  "pending": [
   {
    "code": "AU",
@@ -7469,15 +7486,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Dinka"
-  },
-  {
-   "code": "DA",
-   "direction": "ltr",
-   "locale": "dua",
-   "name": "Douala",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Douala"
   },
   {
    "code": "EMC",
@@ -21474,6 +21482,39 @@
    "title": "Lembe ma nyen mir 6 m'uai i Guriri m'utelowic, 2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ALU",
    "vernacular": "Alur"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "DA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-02T11:40:25Z",
+   "files_at": "2026-10-02T11:40:25Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-02T11:40:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-02T11:54:51Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "dua",
+   "name": "Douala",
+   "published_at": "2026-10-02T11:40:25Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-02T11:40:25Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Sinima",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=DA",
+   "vernacular": "Douala"
   }
  ],
  "removed": [],
@@ -21483,16 +21524,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 9,
-  "added_4h": 2,
+  "added_1h": 1,
+  "added_24h": 10,
+  "added_4h": 1,
   "catalog_count": 422,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 94.0,
-  "days_since_release": 13.87,
-  "pending_count": 27,
-  "percent": 94.0,
-  "published_count": 422,
+  "days_since_release": 13.91,
+  "pending_count": 26,
+  "percent": 94.2,
+  "published_count": 423,
   "publisher_percent": 99.0,
   "publisher_percent_ceiling": 99.2,
   "target": 449
