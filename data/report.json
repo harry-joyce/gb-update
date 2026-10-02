@@ -1717,19 +1717,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 2,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 2
  },
  "counts": {
   "api_times": 59,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 2,
   "catalogued": 428,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 368,
+  "file_times": 370,
   "observed_times": 0,
   "sign_languages": 71
  },
@@ -5767,9 +5767,29 @@
    ],
    "count_after": 428,
    "t": "2026-10-02T15:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-02T21:01:34Z",
+     "code": "QUN",
+     "in_catalog": false,
+     "name": "Quechua (Ancash)",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-10-02T21:43:33Z",
+     "code": "RA",
+     "in_catalog": false,
+     "name": "Cook Islands Māori",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 430,
+   "t": "2026-10-02T21:00:00Z"
   }
  ],
- "generated": "2026-10-02T19:22:33Z",
+ "generated": "2026-10-02T23:17:37Z",
  "history": [
   {
    "count": 1,
@@ -7482,6 +7502,14 @@
   {
    "count": 428,
    "t": "2026-10-02T15:57:02Z"
+  },
+  {
+   "count": 429,
+   "t": "2026-10-02T21:01:34Z"
+  },
+  {
+   "count": 430,
+   "t": "2026-10-02T21:43:33Z"
   }
  ],
  "integrity": {
@@ -7495,13 +7523,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 82,
-  "files_count": 428,
+  "files_count": 430,
   "last_full_verification": "2026-10-02T10:01:11Z",
   "listing_count": 428,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-02T19:22:33Z",
+ "last_checked": "2026-10-02T23:17:37Z",
  "pending": [
   {
    "code": "AU",
@@ -7547,15 +7575,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Langue des signes congolaise"
-  },
-  {
-   "code": "RA",
-   "direction": "ltr",
-   "locale": "rar",
-   "name": "Cook Islands Māori",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kuki Airani"
   },
   {
    "code": "DI",
@@ -7781,15 +7800,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "poqomchi'"
-  },
-  {
-   "code": "QUN",
-   "direction": "ltr",
-   "locale": "que",
-   "name": "Quechua (Ancash)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Quechua (Ancash)"
   },
   {
    "code": "TAL",
@@ -21737,6 +21747,71 @@
    "title": "Minlegla mi Juu li bakena ntôñ #6 2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BS",
    "vernacular": "Basaa (Kamerun)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "QUN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-02T21:01:34Z",
+   "files_at": "2026-10-02T21:01:34Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-02T21:01:34Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-02T23:17:37Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "que",
+   "name": "Quechua (Ancash)",
+   "published_at": "2026-10-02T21:01:34Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-02T21:01:34Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=QUN",
+   "vernacular": "Quechua (Ancash)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "RA",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-02T21:43:33Z",
+   "files_at": "2026-10-02T21:43:33Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-02T21:43:33Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-02T23:17:37Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "rar",
+   "name": "Cook Islands Māori",
+   "published_at": "2026-10-02T21:43:33Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-02T21:43:33Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Akakiteanga #6 a te Pupu Akaaere",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=RA",
+   "vernacular": "Kuki Airani"
   }
  ],
  "removed": [],
@@ -21747,15 +21822,15 @@
  },
  "stats": {
   "added_1h": 0,
-  "added_24h": 10,
+  "added_24h": 11,
   "added_4h": 2,
   "catalog_count": 428,
-  "catalog_lag": 0,
+  "catalog_lag": 2,
   "catalog_percent": 95.3,
-  "days_since_release": 14.22,
-  "pending_count": 21,
-  "percent": 95.3,
-  "published_count": 428,
+  "days_since_release": 14.39,
+  "pending_count": 19,
+  "percent": 95.8,
+  "published_count": 430,
   "publisher_percent": 99.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
