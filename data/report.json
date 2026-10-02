@@ -1701,19 +1701,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 4,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 4
  },
  "counts": {
   "api_times": 59,
-  "awaiting_catalogue": 2,
+  "awaiting_catalogue": 4,
   "catalogued": 424,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 366,
+  "file_times": 368,
   "observed_times": 0,
   "sign_languages": 71
  },
@@ -5733,13 +5733,27 @@
      "in_catalog": false,
      "name": "Swati",
      "source": "file_estimated"
+    },
+    {
+     "at": "2026-10-02T15:56:09Z",
+     "code": "BNM",
+     "in_catalog": false,
+     "name": "Banda (Mid-Southern)",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-10-02T15:57:02Z",
+     "code": "BS",
+     "in_catalog": false,
+     "name": "Bassa (Cameroon)",
+     "source": "file_estimated"
     }
    ],
-   "count_after": 426,
+   "count_after": 428,
    "t": "2026-10-02T15:00:00Z"
   }
  ],
- "generated": "2026-10-02T15:25:12Z",
+ "generated": "2026-10-02T16:25:20Z",
  "history": [
   {
    "count": 1,
@@ -7444,6 +7458,14 @@
   {
    "count": 426,
    "t": "2026-10-02T15:20:45Z"
+  },
+  {
+   "count": 427,
+   "t": "2026-10-02T15:56:09Z"
+  },
+  {
+   "count": 428,
+   "t": "2026-10-02T15:57:02Z"
   }
  ],
  "integrity": {
@@ -7457,13 +7479,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 82,
-  "files_count": 426,
+  "files_count": 428,
   "last_full_verification": "2026-10-02T10:01:11Z",
   "listing_count": 424,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-02T15:25:12Z",
+ "last_checked": "2026-10-02T16:25:20Z",
  "pending": [
   {
    "code": "AU",
@@ -7482,24 +7504,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "ashaninka"
-  },
-  {
-   "code": "BNM",
-   "direction": "ltr",
-   "locale": "bjo",
-   "name": "Banda (Mid-Southern)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Banda (Mid-Southern)"
-  },
-  {
-   "code": "BS",
-   "direction": "ltr",
-   "locale": "bas",
-   "name": "Bassa (Cameroon)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Basaa (Kamerun)"
   },
   {
    "code": "ET",
@@ -21653,6 +21657,70 @@
    "title": "Kwatiswa Kwakamuva Kwa-2026 Lokuvela ESigungwini Lesibusako #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SWI",
    "vernacular": "SiSwati"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "BNM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-02T15:56:09Z",
+   "files_at": "2026-10-02T15:56:09Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-02T15:56:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-02T16:25:20Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "bjo",
+   "name": "Banda (Mid-Southern)",
+   "published_at": "2026-10-02T15:56:09Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-02T15:56:09Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Tafa sango euné euto mbage ne Bebungbi #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BNM",
+   "vernacular": "Banda (Mid-Southern)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "BS",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-02T15:57:02Z",
+   "files_at": "2026-10-02T15:57:02Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-02T15:57:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-02T16:25:20Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "bas",
+   "name": "Bassa (Cameroon)",
+   "published_at": "2026-10-02T15:57:02Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-02T15:57:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Minlegla mi Juu li bakena ntôñ #6 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=BS",
+   "vernacular": "Basaa (Kamerun)"
   }
  ],
  "removed": [],
@@ -21662,16 +21730,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
-  "added_24h": 10,
+  "added_1h": 2,
+  "added_24h": 12,
   "added_4h": 3,
   "catalog_count": 424,
-  "catalog_lag": 2,
+  "catalog_lag": 4,
   "catalog_percent": 94.4,
-  "days_since_release": 14.06,
-  "pending_count": 23,
-  "percent": 94.9,
-  "published_count": 426,
+  "days_since_release": 14.1,
+  "pending_count": 21,
+  "percent": 95.3,
+  "published_count": 428,
   "publisher_percent": 99.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
