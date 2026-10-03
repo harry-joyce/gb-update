@@ -1714,19 +1714,27 @@
   {
    "count": 428,
    "t": "2026-10-02T15:57:10Z"
+  },
+  {
+   "count": 429,
+   "t": "2026-10-02T21:01:49Z"
+  },
+  {
+   "count": 430,
+   "t": "2026-10-02T21:43:42Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 59,
-  "awaiting_catalogue": 2,
-  "catalogued": 428,
+  "awaiting_catalogue": 0,
+  "catalogued": 430,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 370,
@@ -5773,14 +5781,14 @@
     {
      "at": "2026-10-02T21:01:34Z",
      "code": "QUN",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Quechua (Ancash)",
      "source": "file_estimated"
     },
     {
      "at": "2026-10-02T21:43:33Z",
      "code": "RA",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Cook Islands Māori",
      "source": "file_estimated"
     }
@@ -5789,7 +5797,7 @@
    "t": "2026-10-02T21:00:00Z"
   }
  ],
- "generated": "2026-10-02T23:17:37Z",
+ "generated": "2026-10-03T02:21:40Z",
  "history": [
   {
    "count": 1,
@@ -7525,11 +7533,11 @@
   "file_drift_count": 82,
   "files_count": 430,
   "last_full_verification": "2026-10-02T10:01:11Z",
-  "listing_count": 428,
+  "listing_count": 430,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-02T23:17:37Z",
+ "last_checked": "2026-10-03T02:21:40Z",
  "pending": [
   {
    "code": "AU",
@@ -21749,12 +21757,12 @@
    "vernacular": "Basaa (Kamerun)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-02T21:01:49Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-02T21:01:49Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-03T02:21:40Z",
    "code": "QUN",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -21767,9 +21775,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-02T21:01:34Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-02T23:17:37Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "que",
    "name": "Quechua (Ancash)",
    "published_at": "2026-10-02T21:01:34Z",
@@ -21782,12 +21790,12 @@
    "vernacular": "Quechua (Ancash)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-02T21:43:42Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-02T21:43:42Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-03T02:21:40Z",
    "code": "RA",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -21799,9 +21807,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-02T21:43:33Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-02T23:17:37Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "rar",
    "name": "Cook Islands Māori",
    "published_at": "2026-10-02T21:43:33Z",
@@ -21822,12 +21830,12 @@
  },
  "stats": {
   "added_1h": 0,
-  "added_24h": 11,
-  "added_4h": 2,
-  "catalog_count": 428,
-  "catalog_lag": 2,
-  "catalog_percent": 95.3,
-  "days_since_release": 14.39,
+  "added_24h": 10,
+  "added_4h": 0,
+  "catalog_count": 430,
+  "catalog_lag": 0,
+  "catalog_percent": 95.8,
+  "days_since_release": 14.52,
   "pending_count": 19,
   "percent": 95.8,
   "published_count": 430,
