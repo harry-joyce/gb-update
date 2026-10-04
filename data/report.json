@@ -1722,19 +1722,25 @@
   {
    "count": 430,
    "t": "2026-10-02T21:43:42Z"
+  },
+  {
+   "count": 431,
+   "t": "2026-10-04T16:26:33Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
-  "newly_catalogued": [],
+  "last_checked_count": 1,
+  "newly_catalogued": [
+   "CRE"
+  ],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
-  "api_times": 59,
+  "api_times": 60,
   "awaiting_catalogue": 0,
-  "catalogued": 430,
+  "catalogued": 431,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 370,
@@ -5795,9 +5801,22 @@
    ],
    "count_after": 430,
    "t": "2026-10-02T21:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-04T16:26:33Z",
+     "code": "CRE",
+     "in_catalog": true,
+     "name": "Islander Creole English",
+     "source": "api"
+    }
+   ],
+   "count_after": 431,
+   "t": "2026-10-04T16:00:00Z"
   }
  ],
- "generated": "2026-10-04T12:28:52Z",
+ "generated": "2026-10-04T17:04:49Z",
  "history": [
   {
    "count": 1,
@@ -7518,6 +7537,10 @@
   {
    "count": 430,
    "t": "2026-10-02T21:43:33Z"
+  },
+  {
+   "count": 431,
+   "t": "2026-10-04T16:26:33Z"
   }
  ],
  "integrity": {
@@ -7531,13 +7554,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 85,
-  "files_count": 430,
+  "files_count": 431,
   "last_full_verification": "2026-10-04T10:03:21Z",
   "listing_count": 430,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-04T12:28:52Z",
+ "last_checked": "2026-10-04T17:04:49Z",
  "pending": [
   {
    "code": "AU",
@@ -7664,15 +7687,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Igede"
-  },
-  {
-   "code": "CRE",
-   "direction": "ltr",
-   "locale": "icr",
-   "name": "Islander Creole English",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "San Andrés Creole"
   },
   {
    "code": "GK",
@@ -21820,6 +21834,38 @@
    "title": "2026 Akakiteanga #6 a te Pupu Akaaere",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=RA",
    "vernacular": "Kuki Airani"
+  },
+  {
+   "api_published_at": "2026-10-04T16:26:33Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-10-04T16:26:33Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-04T17:04:49Z",
+   "code": "CRE",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-04T16:26:19Z",
+   "files_at": "2026-10-04T16:26:33Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-04T17:04:49Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "icr",
+   "name": "Islander Creole English",
+   "published_at": "2026-10-04T16:26:33Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Govanin Badi Ripuort #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CRE",
+   "vernacular": "San Andrés Creole"
   }
  ],
  "removed": [],
@@ -21829,16 +21875,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 0,
-  "added_4h": 0,
-  "catalog_count": 430,
+  "added_1h": 1,
+  "added_24h": 1,
+  "added_4h": 1,
+  "catalog_count": 431,
   "catalog_lag": 0,
-  "catalog_percent": 95.8,
-  "days_since_release": 15.94,
-  "pending_count": 19,
-  "percent": 95.8,
-  "published_count": 430,
+  "catalog_percent": 96.0,
+  "days_since_release": 16.13,
+  "pending_count": 18,
+  "percent": 96.0,
+  "published_count": 431,
   "publisher_percent": 99.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
