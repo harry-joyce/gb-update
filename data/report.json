@@ -1729,13 +1729,11 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
-  "newly_catalogued": [
-   "CRE"
-  ],
+  "last_checked_count": 0,
+  "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 60,
@@ -5816,7 +5814,7 @@
    "t": "2026-10-04T16:00:00Z"
   }
  ],
- "generated": "2026-10-04T17:04:49Z",
+ "generated": "2026-10-04T20:13:14Z",
  "history": [
   {
    "count": 1,
@@ -7556,11 +7554,11 @@
   "file_drift_count": 85,
   "files_count": 431,
   "last_full_verification": "2026-10-04T10:03:21Z",
-  "listing_count": 430,
+  "listing_count": 431,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-04T17:04:49Z",
+ "last_checked": "2026-10-04T20:13:14Z",
  "pending": [
   {
    "code": "AU",
@@ -21855,7 +21853,7 @@
    "first_observed": "2026-10-04T17:04:49Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "icr",
    "name": "Islander Creole English",
    "published_at": "2026-10-04T16:26:33Z",
@@ -21875,13 +21873,13 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
+  "added_1h": 0,
   "added_24h": 1,
   "added_4h": 1,
   "catalog_count": 431,
   "catalog_lag": 0,
   "catalog_percent": 96.0,
-  "days_since_release": 16.13,
+  "days_since_release": 16.26,
   "pending_count": 18,
   "percent": 96.0,
   "published_count": 431,
