@@ -1726,19 +1726,35 @@
   {
    "count": 431,
    "t": "2026-10-04T16:26:33Z"
+  },
+  {
+   "count": 432,
+   "t": "2026-10-05T09:50:29Z"
+  },
+  {
+   "count": 433,
+   "t": "2026-10-05T10:42:29Z"
+  },
+  {
+   "count": 434,
+   "t": "2026-10-05T11:46:24Z"
   }
  ],
  "catalog_probe": {
   "last_checked_count": 3,
-  "newly_catalogued": [],
-  "offset": 2,
+  "newly_catalogued": [
+   "DR",
+   "ID",
+   "ZAS"
+  ],
+  "offset": 0,
   "size": 40,
   "unlisted_total": 3
  },
  "counts": {
   "api_times": 60,
-  "awaiting_catalogue": 3,
-  "catalogued": 431,
+  "awaiting_catalogue": 0,
+  "catalogued": 434,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 373,
@@ -5818,7 +5834,7 @@
     {
      "at": "2026-10-05T09:50:20Z",
      "code": "ID",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Idoma",
      "source": "file_estimated"
     }
@@ -5831,7 +5847,7 @@
     {
      "at": "2026-10-05T10:42:18Z",
      "code": "DR",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Uruund",
      "source": "file_estimated"
     }
@@ -5844,7 +5860,7 @@
     {
      "at": "2026-10-05T11:46:12Z",
      "code": "ZAS",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Zambian Sign Language",
      "source": "file_estimated"
     }
@@ -5853,7 +5869,7 @@
    "t": "2026-10-05T11:00:00Z"
   }
  ],
- "generated": "2026-10-05T13:12:20Z",
+ "generated": "2026-10-05T13:42:22Z",
  "history": [
   {
    "count": 1,
@@ -7609,7 +7625,7 @@
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-05T13:12:20Z",
+ "last_checked": "2026-10-05T13:42:22Z",
  "pending": [
   {
    "code": "AU",
@@ -21899,12 +21915,12 @@
    "vernacular": "San Andrés Creole"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-05T09:50:29Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-05T09:50:29Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-05T13:42:22Z",
    "code": "ID",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -21917,7 +21933,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-05T09:50:20Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-05T10:12:01Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "idu",
@@ -21932,12 +21948,12 @@
    "vernacular": "Idoma"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-05T10:42:29Z",
    "beyond_baseline": true,
-   "catalog_at": null,
+   "catalog_at": "2026-10-05T10:42:29Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-05T13:42:22Z",
    "code": "DR",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -21949,7 +21965,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-05T10:42:18Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-05T11:12:08Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "rnd",
@@ -21964,12 +21980,12 @@
    "vernacular": "Uruund"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-05T11:46:24Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-05T11:46:24Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-05T13:42:22Z",
    "code": "ZAS",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -21982,7 +21998,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-05T11:46:12Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-05T12:12:13Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "zsl",
@@ -22007,10 +22023,10 @@
   "added_1h": 0,
   "added_24h": 4,
   "added_4h": 3,
-  "catalog_count": 431,
-  "catalog_lag": 3,
-  "catalog_percent": 96.0,
-  "days_since_release": 16.97,
+  "catalog_count": 434,
+  "catalog_lag": 0,
+  "catalog_percent": 96.7,
+  "days_since_release": 16.99,
   "pending_count": 15,
   "percent": 96.7,
   "published_count": 434,
