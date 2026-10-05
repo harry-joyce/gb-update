@@ -1741,25 +1741,21 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
-  "newly_catalogued": [
-   "DR",
-   "ID",
-   "ZAS"
-  ],
+  "last_checked_count": 2,
+  "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 2
  },
  "counts": {
   "api_times": 60,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 2,
   "catalogued": 434,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 373,
+  "file_times": 375,
   "observed_times": 0,
-  "sign_languages": 72
+  "sign_languages": 73
  },
  "events": [
   {
@@ -5867,9 +5863,29 @@
    ],
    "count_after": 434,
    "t": "2026-10-05T11:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-05T14:32:58Z",
+     "code": "ALS",
+     "in_catalog": false,
+     "name": "Albanian Sign Language",
+     "source": "file_estimated"
+    },
+    {
+     "at": "2026-10-05T14:36:35Z",
+     "code": "OTM",
+     "in_catalog": false,
+     "name": "Otomi (Mezquital Valley)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 436,
+   "t": "2026-10-05T14:00:00Z"
   }
  ],
- "generated": "2026-10-05T13:42:22Z",
+ "generated": "2026-10-05T14:42:31Z",
  "history": [
   {
    "count": 1,
@@ -7606,6 +7622,14 @@
   {
    "count": 434,
    "t": "2026-10-05T11:46:12Z"
+  },
+  {
+   "count": 435,
+   "t": "2026-10-05T14:32:58Z"
+  },
+  {
+   "count": 436,
+   "t": "2026-10-05T14:36:35Z"
   }
  ],
  "integrity": {
@@ -7619,13 +7643,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 86,
-  "files_count": 434,
+  "files_count": 436,
   "last_full_verification": "2026-10-05T10:48:28Z",
-  "listing_count": 431,
+  "listing_count": 434,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-05T13:42:22Z",
+ "last_checked": "2026-10-05T14:42:31Z",
  "pending": [
   {
    "code": "AU",
@@ -7860,15 +7884,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Ngbandi (ya Nɔrdi)"
-  },
-  {
-   "code": "OTM",
-   "direction": "ltr",
-   "locale": "ote",
-   "name": "Otomi (Mezquital Valley)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ñañu"
   },
   {
    "code": "PQM",
@@ -21935,7 +21950,7 @@
    "first_observed": "2026-10-05T10:12:01Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "idu",
    "name": "Idoma",
    "published_at": "2026-10-05T09:50:20Z",
@@ -21967,7 +21982,7 @@
    "first_observed": "2026-10-05T11:12:08Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "rnd",
    "name": "Uruund",
    "published_at": "2026-10-05T10:42:18Z",
@@ -22000,7 +22015,7 @@
    "first_observed": "2026-10-05T12:12:13Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "zsl",
    "name": "Zambian Sign Language",
    "published_at": "2026-10-05T11:46:12Z",
@@ -22011,6 +22026,71 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ZAS",
    "vernacular": "Zambian Sign Language"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": true,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "ALS",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-05T14:32:58Z",
+   "files_at": "2026-10-05T14:32:58Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-05T14:32:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-05T14:42:31Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "sqk",
+   "name": "Albanian Sign Language",
+   "published_at": "2026-10-05T14:32:58Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-05T14:32:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": true,
+   "title": "Raport nga Trupi Udhëheqës nr. 6, 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ALS",
+   "vernacular": "shqipe e shenjave"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "OTM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-05T14:36:35Z",
+   "files_at": "2026-10-05T14:36:35Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-05T14:36:35Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-05T14:42:31Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "ote",
+   "name": "Otomi (Mezquital Valley)",
+   "published_at": "2026-10-05T14:36:35Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-05T14:36:35Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Rä bideo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=OTM",
+   "vernacular": "Ñañu"
   }
  ],
  "removed": [],
@@ -22020,16 +22100,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 4,
+  "added_1h": 2,
+  "added_24h": 6,
   "added_4h": 3,
   "catalog_count": 434,
-  "catalog_lag": 0,
+  "catalog_lag": 2,
   "catalog_percent": 96.7,
-  "days_since_release": 16.99,
-  "pending_count": 15,
-  "percent": 96.7,
-  "published_count": 434,
+  "days_since_release": 17.03,
+  "pending_count": 13,
+  "percent": 97.1,
+  "published_count": 436,
   "publisher_percent": 99.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
