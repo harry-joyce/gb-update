@@ -1729,19 +1729,19 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 60,
-  "awaiting_catalogue": 0,
+  "awaiting_catalogue": 1,
   "catalogued": 431,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 370,
+  "file_times": 371,
   "observed_times": 0,
   "sign_languages": 71
  },
@@ -5812,9 +5812,22 @@
    ],
    "count_after": 431,
    "t": "2026-10-04T16:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-05T09:50:20Z",
+     "code": "ID",
+     "in_catalog": false,
+     "name": "Idoma",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 432,
+   "t": "2026-10-05T09:00:00Z"
   }
  ],
- "generated": "2026-10-05T09:41:59Z",
+ "generated": "2026-10-05T10:12:01Z",
  "history": [
   {
    "count": 1,
@@ -7539,6 +7552,10 @@
   {
    "count": 431,
    "t": "2026-10-04T16:26:33Z"
+  },
+  {
+   "count": 432,
+   "t": "2026-10-05T09:50:20Z"
   }
  ],
  "integrity": {
@@ -7552,13 +7569,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 85,
-  "files_count": 431,
+  "files_count": 432,
   "last_full_verification": "2026-10-04T10:03:21Z",
   "listing_count": 431,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-05T09:41:59Z",
+ "last_checked": "2026-10-05T10:12:01Z",
  "pending": [
   {
    "code": "AU",
@@ -7658,15 +7675,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Hunsrik"
-  },
-  {
-   "code": "ID",
-   "direction": "ltr",
-   "locale": "idu",
-   "name": "Idoma",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Idoma"
   },
   {
    "code": "AA",
@@ -21864,6 +21872,39 @@
    "title": "2026 Govanin Badi Ripuort #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CRE",
    "vernacular": "San Andrés Creole"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "ID",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-05T09:50:20Z",
+   "files_at": "2026-10-05T09:50:20Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-05T09:50:20Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-05T10:12:01Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "idu",
+   "name": "Idoma",
+   "published_at": "2026-10-05T09:50:20Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-05T09:50:20Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Ufilm",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ID",
+   "vernacular": "Idoma"
   }
  ],
  "removed": [],
@@ -21873,16 +21914,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 1,
-  "added_4h": 0,
+  "added_1h": 1,
+  "added_24h": 2,
+  "added_4h": 1,
   "catalog_count": 431,
-  "catalog_lag": 0,
+  "catalog_lag": 1,
   "catalog_percent": 96.0,
-  "days_since_release": 16.82,
-  "pending_count": 18,
-  "percent": 96.0,
-  "published_count": 431,
+  "days_since_release": 16.84,
+  "pending_count": 17,
+  "percent": 96.2,
+  "published_count": 432,
   "publisher_percent": 99.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
