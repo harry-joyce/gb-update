@@ -1738,19 +1738,39 @@
   {
    "count": 434,
    "t": "2026-10-05T11:46:24Z"
+  },
+  {
+   "count": 435,
+   "t": "2026-10-05T14:33:11Z"
+  },
+  {
+   "count": 436,
+   "t": "2026-10-05T14:36:47Z"
+  },
+  {
+   "count": 437,
+   "t": "2026-10-05T15:24:00Z"
+  },
+  {
+   "count": 438,
+   "t": "2026-10-05T17:12:12Z"
+  },
+  {
+   "count": 439,
+   "t": "2026-10-05T17:26:37Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 0
  },
  "counts": {
-  "api_times": 60,
-  "awaiting_catalogue": 2,
-  "catalogued": 434,
+  "api_times": 63,
+  "awaiting_catalogue": 0,
+  "catalogued": 439,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 375,
@@ -5869,23 +5889,56 @@
     {
      "at": "2026-10-05T14:32:58Z",
      "code": "ALS",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Albanian Sign Language",
      "source": "file_estimated"
     },
     {
      "at": "2026-10-05T14:36:35Z",
      "code": "OTM",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Otomi (Mezquital Valley)",
      "source": "file_estimated"
     }
    ],
    "count_after": 436,
    "t": "2026-10-05T14:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-05T15:24:00Z",
+     "code": "NGN",
+     "in_catalog": true,
+     "name": "Ngbandi (Northern)",
+     "source": "api"
+    }
+   ],
+   "count_after": 437,
+   "t": "2026-10-05T15:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-05T17:12:12Z",
+     "code": "MWM",
+     "in_catalog": true,
+     "name": "Makhuwa-Meetto",
+     "source": "api"
+    },
+    {
+     "at": "2026-10-05T17:26:37Z",
+     "code": "GNC",
+     "in_catalog": true,
+     "name": "Guianese Creole",
+     "source": "api"
+    }
+   ],
+   "count_after": 439,
+   "t": "2026-10-05T17:00:00Z"
   }
  ],
- "generated": "2026-10-05T14:42:31Z",
+ "generated": "2026-10-05T18:51:59Z",
  "history": [
   {
    "count": 1,
@@ -7630,6 +7683,18 @@
   {
    "count": 436,
    "t": "2026-10-05T14:36:35Z"
+  },
+  {
+   "count": 437,
+   "t": "2026-10-05T15:24:00Z"
+  },
+  {
+   "count": 438,
+   "t": "2026-10-05T17:12:12Z"
+  },
+  {
+   "count": 439,
+   "t": "2026-10-05T17:26:37Z"
   }
  ],
  "integrity": {
@@ -7643,13 +7708,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 86,
-  "files_count": 436,
+  "files_count": 439,
   "last_full_verification": "2026-10-05T10:48:28Z",
-  "listing_count": 434,
+  "listing_count": 439,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-05T14:42:31Z",
+ "last_checked": "2026-10-05T18:51:59Z",
  "pending": [
   {
    "code": "AU",
@@ -7724,15 +7789,6 @@
    "vernacular": "Garifuna"
   },
   {
-   "code": "GNC",
-   "direction": "ltr",
-   "locale": "gcr",
-   "name": "Guianese Creole",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kréyòl gwiyanè"
-  },
-  {
    "code": "HR",
    "direction": "ltr",
    "locale": "hz",
@@ -7805,15 +7861,6 @@
    "vernacular": "Lugbara"
   },
   {
-   "code": "MWM",
-   "direction": "ltr",
-   "locale": "mgh",
-   "name": "Makhuwa-Meetto",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Imakhuwa Imeetto"
-  },
-  {
    "code": "MHS",
    "direction": "ltr",
    "locale": "vmk",
@@ -7875,15 +7922,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "náhuatl de Veracruz"
-  },
-  {
-   "code": "NGN",
-   "direction": "ltr",
-   "locale": "ngb",
-   "name": "Ngbandi (Northern)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Ngbandi (ya Nɔrdi)"
   },
   {
    "code": "PQM",
@@ -22028,12 +22066,12 @@
    "vernacular": "Zambian Sign Language"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-05T14:33:11Z",
    "beyond_baseline": true,
-   "catalog_at": null,
+   "catalog_at": "2026-10-05T14:33:11Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-05T18:51:59Z",
    "code": "ALS",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -22045,9 +22083,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-05T14:32:58Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-05T14:42:31Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "sqk",
    "name": "Albanian Sign Language",
    "published_at": "2026-10-05T14:32:58Z",
@@ -22060,12 +22098,12 @@
    "vernacular": "shqipe e shenjave"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-05T14:36:47Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-05T14:36:47Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-05T18:51:59Z",
    "code": "OTM",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -22078,9 +22116,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-05T14:36:35Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-05T14:42:31Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "ote",
    "name": "Otomi (Mezquital Valley)",
    "published_at": "2026-10-05T14:36:35Z",
@@ -22091,6 +22129,104 @@
    "title": "Rä bideo",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=OTM",
    "vernacular": "Ñañu"
+  },
+  {
+   "api_published_at": "2026-10-05T15:24:00Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-10-05T15:24:00Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-05T18:51:59Z",
+   "code": "NGN",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-05T15:23:50Z",
+   "files_at": "2026-10-05T15:24:00Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-05T18:51:59Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "ngb",
+   "name": "Ngbandi (Northern)",
+   "published_at": "2026-10-05T15:24:00Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Rapɔrt ti 6 ti Bombi tɛ Adonzi, bulu ti 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NGN",
+   "vernacular": "Ngbandi (ya Nɔrdi)"
+  },
+  {
+   "api_published_at": "2026-10-05T17:12:12Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-10-05T17:12:12Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-05T18:51:59Z",
+   "code": "MWM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-05T17:12:00Z",
+   "files_at": "2026-10-05T17:12:12Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-05T18:51:59Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "mgh",
+   "name": "Makhuwa-Meetto",
+   "published_at": "2026-10-05T17:12:12Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Ihapari yo Mphwinko wo Mahumu Unhoolela N.° 6, 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MWM",
+   "vernacular": "Imakhuwa Imeetto"
+  },
+  {
+   "api_published_at": "2026-10-05T17:26:37Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-10-05T17:26:37Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-05T18:51:59Z",
+   "code": "GNC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-05T17:26:28Z",
+   "files_at": "2026-10-05T17:26:37Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-05T18:51:59Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "gcr",
+   "name": "Guianese Creole",
+   "published_at": "2026-10-05T17:26:37Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Nouvèl di Kolèj santral n° 6 pou 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GNC",
+   "vernacular": "Kréyòl gwiyanè"
   }
  ],
  "removed": [],
@@ -22100,16 +22236,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 6,
+  "added_1h": 0,
+  "added_24h": 8,
   "added_4h": 3,
-  "catalog_count": 434,
-  "catalog_lag": 2,
-  "catalog_percent": 96.7,
-  "days_since_release": 17.03,
-  "pending_count": 13,
-  "percent": 97.1,
-  "published_count": 436,
+  "catalog_count": 439,
+  "catalog_lag": 0,
+  "catalog_percent": 97.8,
+  "days_since_release": 17.2,
+  "pending_count": 10,
+  "percent": 97.8,
+  "published_count": 439,
   "publisher_percent": 99.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
