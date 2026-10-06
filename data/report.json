@@ -1786,22 +1786,42 @@
   {
    "count": 446,
    "t": "2026-10-06T11:47:37Z"
+  },
+  {
+   "count": 447,
+   "t": "2026-10-06T13:16:16Z"
+  },
+  {
+   "count": 448,
+   "t": "2026-10-06T14:09:50Z"
+  },
+  {
+   "count": 449,
+   "t": "2026-10-06T14:26:11Z"
+  },
+  {
+   "count": 450,
+   "t": "2026-10-06T15:35:18Z"
+  },
+  {
+   "count": 451,
+   "t": "2026-10-06T15:57:19Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 3,
+  "last_checked_count": 2,
   "newly_catalogued": [],
   "offset": 1,
   "size": 40,
-  "unlisted_total": 3
+  "unlisted_total": 2
  },
  "counts": {
-  "api_times": 69,
-  "awaiting_catalogue": 3,
-  "catalogued": 446,
+  "api_times": 71,
+  "awaiting_catalogue": 2,
+  "catalogued": 451,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 379,
+  "file_times": 381,
   "observed_times": 0,
   "sign_languages": 76
  },
@@ -6049,7 +6069,7 @@
     {
      "at": "2026-10-06T13:16:06Z",
      "code": "AA",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Igala",
      "source": "file_estimated"
     }
@@ -6062,23 +6082,69 @@
     {
      "at": "2026-10-06T14:09:39Z",
      "code": "KDA",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kunda",
      "source": "file_estimated"
     },
     {
      "at": "2026-10-06T14:26:00Z",
      "code": "HCH",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Wixárika",
      "source": "file_estimated"
     }
    ],
    "count_after": 449,
    "t": "2026-10-06T14:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-06T15:35:18Z",
+     "code": "AW",
+     "in_catalog": true,
+     "name": "Tshwa",
+     "source": "api"
+    },
+    {
+     "at": "2026-10-06T15:57:19Z",
+     "code": "GRF",
+     "in_catalog": true,
+     "name": "Garifuna",
+     "source": "api"
+    }
+   ],
+   "count_after": 451,
+   "t": "2026-10-06T15:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-06T18:11:02Z",
+     "code": "GK",
+     "in_catalog": false,
+     "name": "Kekchi",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 452,
+   "t": "2026-10-06T18:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-06T19:34:38Z",
+     "code": "EMC",
+     "in_catalog": false,
+     "name": "Emberá (Chamí)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 453,
+   "t": "2026-10-06T19:00:00Z"
   }
  ],
- "generated": "2026-10-06T14:30:05Z",
+ "generated": "2026-10-06T19:51:58Z",
  "history": [
   {
    "count": 1,
@@ -7875,6 +7941,22 @@
   {
    "count": 449,
    "t": "2026-10-06T14:26:00Z"
+  },
+  {
+   "count": 450,
+   "t": "2026-10-06T15:35:18Z"
+  },
+  {
+   "count": 451,
+   "t": "2026-10-06T15:57:19Z"
+  },
+  {
+   "count": 452,
+   "t": "2026-10-06T18:11:02Z"
+  },
+  {
+   "count": 453,
+   "t": "2026-10-06T19:34:38Z"
   }
  ],
  "integrity": {
@@ -7888,13 +7970,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 88,
-  "files_count": 449,
+  "files_count": 453,
   "last_full_verification": "2026-10-06T10:43:55Z",
-  "listing_count": 446,
+  "listing_count": 451,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-06T14:30:05Z",
+ "last_checked": "2026-10-06T19:51:58Z",
  "pending": [
   {
    "code": "AHK",
@@ -7933,24 +8015,6 @@
    "vernacular": "Dinka"
   },
   {
-   "code": "EMC",
-   "direction": "ltr",
-   "locale": "cmi",
-   "name": "Emberá (Chamí)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "ẽbẽra beɗea chamí"
-  },
-  {
-   "code": "GRF",
-   "direction": "ltr",
-   "locale": "cab",
-   "name": "Garifuna",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Garifuna"
-  },
-  {
    "code": "HR",
    "direction": "ltr",
    "locale": "hz",
@@ -7967,15 +8031,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Hunsrik"
-  },
-  {
-   "code": "GK",
-   "direction": "ltr",
-   "locale": "kek",
-   "name": "Kekchi",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "q’eqchi’"
   },
   {
    "code": "GB",
@@ -8057,15 +8112,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Talian"
-  },
-  {
-   "code": "AW",
-   "direction": "ltr",
-   "locale": "tsc",
-   "name": "Tshwa",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "ciTshwa"
   }
  ],
  "published": [
@@ -22574,12 +22620,12 @@
    "vernacular": "Kuhane (Subiya)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-06T13:16:16Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-06T13:16:16Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-06T19:51:58Z",
    "code": "AA",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -22592,9 +22638,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-06T13:16:06Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-06T14:30:05Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "igl",
    "name": "Igala",
    "published_at": "2026-10-06T13:16:06Z",
@@ -22607,12 +22653,12 @@
    "vernacular": "Igala"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-06T14:09:50Z",
    "beyond_baseline": true,
-   "catalog_at": null,
+   "catalog_at": "2026-10-06T14:09:50Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-06T19:51:58Z",
    "code": "KDA",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -22625,9 +22671,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-06T14:09:39Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-06T14:30:05Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "kdn",
    "name": "Kunda",
    "published_at": "2026-10-06T14:09:39Z",
@@ -22640,12 +22686,12 @@
    "vernacular": "Kunda"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-06T14:26:11Z",
    "beyond_baseline": true,
-   "catalog_at": null,
+   "catalog_at": "2026-10-06T14:26:11Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-06T19:51:58Z",
    "code": "HCH",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -22658,9 +22704,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-06T14:26:00Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-06T14:30:05Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "hch",
    "name": "Wixárika",
    "published_at": "2026-10-06T14:26:00Z",
@@ -22671,6 +22717,135 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=HCH",
    "vernacular": "wixárika"
+  },
+  {
+   "api_published_at": "2026-10-06T15:35:18Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-10-06T15:35:18Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-06T19:51:58Z",
+   "code": "AW",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-06T15:35:11Z",
+   "files_at": "2026-10-06T15:35:18Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-06T19:51:58Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "tsc",
+   "name": "Tshwa",
+   "published_at": "2026-10-06T15:35:18Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Mubiko N.° 6 wa 2026 wa Hubye yi Fumako",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=AW",
+   "vernacular": "ciTshwa"
+  },
+  {
+   "api_published_at": "2026-10-06T15:57:19Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-10-06T15:57:19Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-06T19:51:58Z",
+   "code": "GRF",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-06T15:57:09Z",
+   "files_at": "2026-10-06T15:57:19Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-06T19:51:58Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "cab",
+   "name": "Garifuna",
+   "published_at": "2026-10-06T15:57:19Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Lisisin ariñahani lúmagiñeti Musu Úaraguati, irumu 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GRF",
+   "vernacular": "Garifuna"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "GK",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-06T18:11:02Z",
+   "files_at": "2026-10-06T18:11:02Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-06T18:11:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-06T19:51:58Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "kek",
+   "name": "Kekchi",
+   "published_at": "2026-10-06T18:11:02Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-06T18:11:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 | Li xwaq esilk’anjel re li Neke’jolomink re Xmolam li Jehob’a",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GK",
+   "vernacular": "q’eqchi’"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "EMC",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-06T19:34:38Z",
+   "files_at": "2026-10-06T19:34:38Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-06T19:34:38Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-06T19:51:58Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "cmi",
+   "name": "Emberá (Chamí)",
+   "published_at": "2026-10-06T19:34:38Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-06T19:34:38Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Chi Juntaba nebʉrʉ ɓuu chi 6, 2026ɗe",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=EMC",
+   "vernacular": "ẽbẽra beɗea chamí"
   }
  ],
  "removed": [],
@@ -22680,16 +22855,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 2,
-  "added_24h": 15,
-  "added_4h": 7,
-  "catalog_count": 446,
-  "catalog_lag": 3,
-  "catalog_percent": 99.3,
-  "days_since_release": 18.02,
+  "added_1h": 1,
+  "added_24h": 13,
+  "added_4h": 3,
+  "catalog_count": 451,
+  "catalog_lag": 2,
+  "catalog_percent": 100.4,
+  "days_since_release": 18.24,
   "pending_count": 0,
-  "percent": 100.0,
-  "published_count": 449,
+  "percent": 100.9,
+  "published_count": 453,
   "publisher_percent": 99.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
