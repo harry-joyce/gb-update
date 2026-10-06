@@ -1806,22 +1806,30 @@
   {
    "count": 451,
    "t": "2026-10-06T15:57:19Z"
+  },
+  {
+   "count": 452,
+   "t": "2026-10-06T18:11:15Z"
+  },
+  {
+   "count": 453,
+   "t": "2026-10-06T19:34:49Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 1,
   "newly_catalogued": [],
-  "offset": 1,
+  "offset": 0,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 1
  },
  "counts": {
   "api_times": 71,
-  "awaiting_catalogue": 2,
-  "catalogued": 451,
+  "awaiting_catalogue": 1,
+  "catalogued": 453,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 381,
+  "file_times": 382,
   "observed_times": 0,
   "sign_languages": 76
  },
@@ -6122,7 +6130,7 @@
     {
      "at": "2026-10-06T18:11:02Z",
      "code": "GK",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kekchi",
      "source": "file_estimated"
     }
@@ -6135,16 +6143,29 @@
     {
      "at": "2026-10-06T19:34:38Z",
      "code": "EMC",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Emberá (Chamí)",
      "source": "file_estimated"
     }
    ],
    "count_after": 453,
    "t": "2026-10-06T19:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-06T23:30:26Z",
+     "code": "GB",
+     "in_catalog": false,
+     "name": "Kiribati",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 454,
+   "t": "2026-10-06T23:00:00Z"
   }
  ],
- "generated": "2026-10-06T19:51:58Z",
+ "generated": "2026-10-06T23:52:09Z",
  "history": [
   {
    "count": 1,
@@ -7957,6 +7978,10 @@
   {
    "count": 453,
    "t": "2026-10-06T19:34:38Z"
+  },
+  {
+   "count": 454,
+   "t": "2026-10-06T23:30:26Z"
   }
  ],
  "integrity": {
@@ -7970,13 +7995,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 88,
-  "files_count": 453,
+  "files_count": 454,
   "last_full_verification": "2026-10-06T10:43:55Z",
-  "listing_count": 451,
+  "listing_count": 453,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-06T19:51:58Z",
+ "last_checked": "2026-10-06T23:52:09Z",
  "pending": [
   {
    "code": "AHK",
@@ -8031,15 +8056,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Hunsrik"
-  },
-  {
-   "code": "GB",
-   "direction": "ltr",
-   "locale": "gil",
-   "name": "Kiribati",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kiribati"
   },
   {
    "code": "LG",
@@ -22784,12 +22800,12 @@
    "vernacular": "Garifuna"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-06T18:11:15Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-06T18:11:15Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-06T23:52:09Z",
    "code": "GK",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -22801,9 +22817,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-06T18:11:02Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-06T19:51:58Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "kek",
    "name": "Kekchi",
    "published_at": "2026-10-06T18:11:02Z",
@@ -22816,12 +22832,12 @@
    "vernacular": "q’eqchi’"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-06T19:34:49Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-06T19:34:49Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-06T23:52:09Z",
    "code": "EMC",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -22833,9 +22849,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-06T19:34:38Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-06T19:51:58Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "cmi",
    "name": "Emberá (Chamí)",
    "published_at": "2026-10-06T19:34:38Z",
@@ -22846,6 +22862,38 @@
    "title": "Chi Juntaba nebʉrʉ ɓuu chi 6, 2026ɗe",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=EMC",
    "vernacular": "ẽbẽra beɗea chamí"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "GB",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-06T23:30:26Z",
+   "files_at": "2026-10-06T23:30:26Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-06T23:30:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-06T23:52:09Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "gil",
+   "name": "Kiribati",
+   "published_at": "2026-10-06T23:30:26Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-06T23:30:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Ana Kaongora te Rabwata n Tautaeka #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GB",
+   "vernacular": "Kiribati"
   }
  ],
  "removed": [],
@@ -22856,15 +22904,15 @@
  },
  "stats": {
   "added_1h": 1,
-  "added_24h": 13,
-  "added_4h": 3,
-  "catalog_count": 451,
-  "catalog_lag": 2,
-  "catalog_percent": 100.4,
-  "days_since_release": 18.24,
+  "added_24h": 14,
+  "added_4h": 1,
+  "catalog_count": 453,
+  "catalog_lag": 1,
+  "catalog_percent": 100.9,
+  "days_since_release": 18.41,
   "pending_count": 0,
-  "percent": 100.9,
-  "published_count": 453,
+  "percent": 101.1,
+  "published_count": 454,
   "publisher_percent": 99.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
