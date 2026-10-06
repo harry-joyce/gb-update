@@ -1758,6 +1758,10 @@
   {
    "count": 439,
    "t": "2026-10-05T17:26:37Z"
+  },
+  {
+   "count": 440,
+   "t": "2026-10-05T19:36:43Z"
   }
  ],
  "catalog_probe": {
@@ -1768,9 +1772,9 @@
   "unlisted_total": 0
  },
  "counts": {
-  "api_times": 63,
+  "api_times": 64,
   "awaiting_catalogue": 0,
-  "catalogued": 439,
+  "catalogued": 440,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 375,
@@ -5936,9 +5940,22 @@
    ],
    "count_after": 439,
    "t": "2026-10-05T17:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-05T19:36:43Z",
+     "code": "MX",
+     "in_catalog": true,
+     "name": "Mixe (North Central)",
+     "source": "api"
+    }
+   ],
+   "count_after": 440,
+   "t": "2026-10-05T19:00:00Z"
   }
  ],
- "generated": "2026-10-05T18:51:59Z",
+ "generated": "2026-10-06T00:50:58Z",
  "history": [
   {
    "count": 1,
@@ -7695,6 +7712,10 @@
   {
    "count": 439,
    "t": "2026-10-05T17:26:37Z"
+  },
+  {
+   "count": 440,
+   "t": "2026-10-05T19:36:43Z"
   }
  ],
  "integrity": {
@@ -7708,13 +7729,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 86,
-  "files_count": 439,
+  "files_count": 440,
   "last_full_verification": "2026-10-05T10:48:28Z",
-  "listing_count": 439,
+  "listing_count": 440,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-05T18:51:59Z",
+ "last_checked": "2026-10-06T00:50:58Z",
  "pending": [
   {
    "code": "AU",
@@ -7886,15 +7907,6 @@
    "script": "ROMAN",
    "sign": true,
    "vernacular": "Melanesian Sign Language"
-  },
-  {
-   "code": "MX",
-   "direction": "ltr",
-   "locale": "mco",
-   "name": "Mixe (North Central)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "ayuk"
   },
   {
    "code": "MXO",
@@ -22227,6 +22239,39 @@
    "title": "Nouvèl di Kolèj santral n° 6 pou 2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GNC",
    "vernacular": "Kréyòl gwiyanè"
+  },
+  {
+   "api_published_at": "2026-10-05T19:36:43Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-10-05T19:36:43Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-06T00:50:58Z",
+   "code": "MX",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-05T19:36:37Z",
+   "files_at": "2026-10-05T19:36:43Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-06T00:50:58Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "mco",
+   "name": "Mixe (North Central)",
+   "published_at": "2026-10-05T19:36:43Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 | Pënaty Wyoowˈyoˈoytyëbë Jyobaa tyestiigëty xytyuknijäˈäwëm myëdëdujk pëky",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MX",
+   "vernacular": "ayuk"
   }
  ],
  "removed": [],
@@ -22237,15 +22282,15 @@
  },
  "stats": {
   "added_1h": 0,
-  "added_24h": 8,
-  "added_4h": 3,
-  "catalog_count": 439,
+  "added_24h": 9,
+  "added_4h": 0,
+  "catalog_count": 440,
   "catalog_lag": 0,
-  "catalog_percent": 97.8,
-  "days_since_release": 17.2,
-  "pending_count": 10,
-  "percent": 97.8,
-  "published_count": 439,
+  "catalog_percent": 98.0,
+  "days_since_release": 17.45,
+  "pending_count": 9,
+  "percent": 98.0,
+  "published_count": 440,
   "publisher_percent": 99.1,
   "publisher_percent_ceiling": 99.2,
   "target": 449
