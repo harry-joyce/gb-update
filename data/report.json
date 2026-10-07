@@ -1814,6 +1814,10 @@
   {
    "count": 453,
    "t": "2026-10-06T19:34:49Z"
+  },
+  {
+   "count": 454,
+   "t": "2026-10-06T23:30:37Z"
   }
  ],
  "catalog_probe": {
@@ -1826,10 +1830,10 @@
  "counts": {
   "api_times": 71,
   "awaiting_catalogue": 1,
-  "catalogued": 453,
+  "catalogued": 454,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 382,
+  "file_times": 383,
   "observed_times": 0,
   "sign_languages": 76
  },
@@ -6156,16 +6160,29 @@
     {
      "at": "2026-10-06T23:30:26Z",
      "code": "GB",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Kiribati",
      "source": "file_estimated"
     }
    ],
    "count_after": 454,
    "t": "2026-10-06T23:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-07T05:50:55Z",
+     "code": "DI",
+     "in_catalog": false,
+     "name": "Dinka",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 455,
+   "t": "2026-10-07T05:00:00Z"
   }
  ],
- "generated": "2026-10-06T23:52:09Z",
+ "generated": "2026-10-07T06:07:50Z",
  "history": [
   {
    "count": 1,
@@ -7982,6 +7999,10 @@
   {
    "count": 454,
    "t": "2026-10-06T23:30:26Z"
+  },
+  {
+   "count": 455,
+   "t": "2026-10-07T05:50:55Z"
   }
  ],
  "integrity": {
@@ -7995,13 +8016,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 88,
-  "files_count": 454,
+  "files_count": 455,
   "last_full_verification": "2026-10-06T10:43:55Z",
-  "listing_count": 453,
+  "listing_count": 454,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-06T23:52:09Z",
+ "last_checked": "2026-10-07T06:07:50Z",
  "pending": [
   {
    "code": "AHK",
@@ -8029,15 +8050,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kariʼnia"
-  },
-  {
-   "code": "DI",
-   "direction": "ltr",
-   "locale": "din",
-   "name": "Dinka",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Dinka"
   },
   {
    "code": "HR",
@@ -22864,12 +22876,12 @@
    "vernacular": "ẽbẽra beɗea chamí"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-06T23:30:37Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-06T23:30:37Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-07T06:07:50Z",
    "code": "GB",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -22881,9 +22893,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-06T23:30:26Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-06T23:52:09Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "gil",
    "name": "Kiribati",
    "published_at": "2026-10-06T23:30:26Z",
@@ -22894,6 +22906,39 @@
    "title": "2026 Ana Kaongora te Rabwata n Tautaeka #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=GB",
    "vernacular": "Kiribati"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "DI",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-07T05:50:55Z",
+   "files_at": "2026-10-07T05:50:55Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-07T05:50:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-07T06:07:50Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "din",
+   "name": "Dinka",
+   "published_at": "2026-10-07T05:50:55Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-07T05:50:55Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Video",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=DI",
+   "vernacular": "Dinka"
   }
  ],
  "removed": [],
@@ -22904,15 +22949,15 @@
  },
  "stats": {
   "added_1h": 1,
-  "added_24h": 14,
+  "added_24h": 15,
   "added_4h": 1,
-  "catalog_count": 453,
+  "catalog_count": 454,
   "catalog_lag": 1,
-  "catalog_percent": 100.9,
-  "days_since_release": 18.41,
+  "catalog_percent": 101.1,
+  "days_since_release": 18.67,
   "pending_count": 0,
-  "percent": 101.1,
-  "published_count": 454,
+  "percent": 101.3,
+  "published_count": 455,
   "publisher_percent": 99.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
