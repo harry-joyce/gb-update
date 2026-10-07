@@ -1826,19 +1826,31 @@
   {
    "count": 456,
    "t": "2026-10-07T15:21:04Z"
+  },
+  {
+   "count": 457,
+   "t": "2026-10-07T16:00:07Z"
+  },
+  {
+   "count": 458,
+   "t": "2026-10-07T18:22:09Z"
+  },
+  {
+   "count": 459,
+   "t": "2026-10-07T20:51:06Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 2,
+  "last_checked_count": 0,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 2
+  "unlisted_total": 0
  },
  "counts": {
-  "api_times": 72,
-  "awaiting_catalogue": 2,
-  "catalogued": 456,
+  "api_times": 73,
+  "awaiting_catalogue": 0,
+  "catalogued": 459,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 385,
@@ -6201,7 +6213,7 @@
     {
      "at": "2026-10-07T15:59:54Z",
      "code": "QIP",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Quichua (Pastaza)",
      "source": "file_estimated"
     }
@@ -6214,16 +6226,29 @@
     {
      "at": "2026-10-07T18:21:57Z",
      "code": "CRB",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Carib",
      "source": "file_estimated"
     }
    ],
    "count_after": 458,
    "t": "2026-10-07T18:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-07T20:51:06Z",
+     "code": "LG",
+     "in_catalog": true,
+     "name": "Lugbara",
+     "source": "api"
+    }
+   ],
+   "count_after": 459,
+   "t": "2026-10-07T20:00:00Z"
   }
  ],
- "generated": "2026-10-07T19:33:51Z",
+ "generated": "2026-10-07T23:52:18Z",
  "history": [
   {
    "count": 1,
@@ -8056,6 +8081,10 @@
   {
    "count": 458,
    "t": "2026-10-07T18:21:57Z"
+  },
+  {
+   "count": 459,
+   "t": "2026-10-07T20:51:06Z"
   }
  ],
  "integrity": {
@@ -8069,13 +8098,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 89,
-  "files_count": 458,
+  "files_count": 459,
   "last_full_verification": "2026-10-07T10:32:16Z",
-  "listing_count": 456,
+  "listing_count": 459,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-07T19:33:51Z",
+ "last_checked": "2026-10-07T23:52:18Z",
  "pending": [
   {
    "code": "AHK",
@@ -8112,15 +8141,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Hunsrik"
-  },
-  {
-   "code": "LG",
-   "direction": "ltr",
-   "locale": "lgg",
-   "name": "Lugbara",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Lugbara"
   },
   {
    "code": "MHS",
@@ -23009,12 +23029,12 @@
    "vernacular": "náhuatl de Veracruz"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-07T16:00:07Z",
    "beyond_baseline": true,
-   "catalog_at": null,
+   "catalog_at": "2026-10-07T16:00:07Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-07T23:52:18Z",
    "code": "QIP",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -23026,9 +23046,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-07T15:59:54Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-07T19:33:51Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "qvz",
    "name": "Quichua (Pastaza)",
    "published_at": "2026-10-07T15:59:54Z",
@@ -23041,12 +23061,12 @@
    "vernacular": "quichua (pastaza)"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-07T18:22:09Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-07T18:22:09Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-07T23:52:18Z",
    "code": "CRB",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -23058,9 +23078,9 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-07T18:21:57Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-07T19:33:51Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "car-x-crb",
    "name": "Carib",
    "published_at": "2026-10-07T18:21:57Z",
@@ -23071,6 +23091,39 @@
    "title": "2026 yako 6 yeʼchopo Jehoba poko Worupïatonon enenamo euran",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CRB",
    "vernacular": "Kariʼnia"
+  },
+  {
+   "api_published_at": "2026-10-07T20:51:06Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-10-07T20:51:06Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-07T23:52:18Z",
+   "code": "LG",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-07T20:50:55Z",
+   "files_at": "2026-10-07T20:51:06Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-07T23:52:18Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "lgg",
+   "name": "Lugbara",
+   "published_at": "2026-10-07T20:51:06Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "O'duko Ti Edriza Amuti Otuta Otupi Ri ni 2026 Vuri #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=LG",
+   "vernacular": "Lugbara"
   }
  ],
  "removed": [],
@@ -23081,15 +23134,15 @@
  },
  "stats": {
   "added_1h": 0,
-  "added_24h": 6,
-  "added_4h": 2,
-  "catalog_count": 456,
-  "catalog_lag": 2,
-  "catalog_percent": 101.6,
-  "days_since_release": 19.23,
+  "added_24h": 5,
+  "added_4h": 1,
+  "catalog_count": 459,
+  "catalog_lag": 0,
+  "catalog_percent": 102.2,
+  "days_since_release": 19.41,
   "pending_count": 0,
-  "percent": 102.0,
-  "published_count": 458,
+  "percent": 102.2,
+  "published_count": 459,
   "publisher_percent": 99.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
