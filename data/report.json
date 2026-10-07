@@ -1822,22 +1822,26 @@
   {
    "count": 455,
    "t": "2026-10-07T05:51:08Z"
+  },
+  {
+   "count": 456,
+   "t": "2026-10-07T15:21:04Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 2,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 2
  },
  "counts": {
-  "api_times": 71,
-  "awaiting_catalogue": 0,
-  "catalogued": 455,
+  "api_times": 72,
+  "awaiting_catalogue": 2,
+  "catalogued": 456,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 383,
+  "file_times": 385,
   "observed_times": 0,
   "sign_languages": 76
  },
@@ -6184,9 +6188,42 @@
    ],
    "count_after": 455,
    "t": "2026-10-07T05:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-07T15:21:04Z",
+     "code": "NHV",
+     "in_catalog": true,
+     "name": "Nahuatl (Veracruz)",
+     "source": "api"
+    },
+    {
+     "at": "2026-10-07T15:59:54Z",
+     "code": "QIP",
+     "in_catalog": false,
+     "name": "Quichua (Pastaza)",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 457,
+   "t": "2026-10-07T15:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-07T18:21:57Z",
+     "code": "CRB",
+     "in_catalog": false,
+     "name": "Carib",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 458,
+   "t": "2026-10-07T18:00:00Z"
   }
  ],
- "generated": "2026-10-07T13:33:12Z",
+ "generated": "2026-10-07T19:33:51Z",
  "history": [
   {
    "count": 1,
@@ -8007,6 +8044,18 @@
   {
    "count": 455,
    "t": "2026-10-07T05:50:55Z"
+  },
+  {
+   "count": 456,
+   "t": "2026-10-07T15:21:04Z"
+  },
+  {
+   "count": 457,
+   "t": "2026-10-07T15:59:54Z"
+  },
+  {
+   "count": 458,
+   "t": "2026-10-07T18:21:57Z"
   }
  ],
  "integrity": {
@@ -8020,13 +8069,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 89,
-  "files_count": 455,
+  "files_count": 458,
   "last_full_verification": "2026-10-07T10:32:16Z",
-  "listing_count": 455,
+  "listing_count": 456,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-07T13:33:12Z",
+ "last_checked": "2026-10-07T19:33:51Z",
  "pending": [
   {
    "code": "AHK",
@@ -8045,15 +8094,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "ˈBhɛtɩgbʋʋ"
-  },
-  {
-   "code": "CRB",
-   "direction": "ltr",
-   "locale": "car-x-crb",
-   "name": "Carib",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Kariʼnia"
   },
   {
    "code": "HR",
@@ -8117,15 +8157,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Motu"
-  },
-  {
-   "code": "NHV",
-   "direction": "ltr",
-   "locale": "nhk",
-   "name": "Nahuatl (Veracruz)",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "náhuatl de Veracruz"
   },
   {
    "code": "PQM",
@@ -22943,6 +22974,103 @@
    "title": "Video",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=DI",
    "vernacular": "Dinka"
+  },
+  {
+   "api_published_at": "2026-10-07T15:21:04Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-10-07T15:21:04Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-07T19:33:51Z",
+   "code": "NHV",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-07T15:20:55Z",
+   "files_at": "2026-10-07T15:21:04Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-07T19:33:51Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "nhk",
+   "name": "Nahuatl (Veracruz)",
+   "published_at": "2026-10-07T15:21:04Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 | Informe 6 del Comité yej teojkuiltiá",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=NHV",
+   "vernacular": "náhuatl de Veracruz"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": true,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "QIP",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-07T15:59:54Z",
+   "files_at": "2026-10-07T15:59:54Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-07T15:59:54Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-07T19:33:51Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "qvz",
+   "name": "Quichua (Pastaza)",
+   "published_at": "2026-10-07T15:59:54Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-07T15:59:54Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Cuerpo Gobernantemanda 6 comunicado",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=QIP",
+   "vernacular": "quichua (pastaza)"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "CRB",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "MP4"
+   ],
+   "file_modified": "2026-10-07T18:21:57Z",
+   "files_at": "2026-10-07T18:21:57Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-07T18:21:57Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-07T19:33:51Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "car-x-crb",
+   "name": "Carib",
+   "published_at": "2026-10-07T18:21:57Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-07T18:21:57Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 yako 6 yeʼchopo Jehoba poko Worupïatonon enenamo euran",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=CRB",
+   "vernacular": "Kariʼnia"
   }
  ],
  "removed": [],
@@ -22953,15 +23081,15 @@
  },
  "stats": {
   "added_1h": 0,
-  "added_24h": 8,
-  "added_4h": 0,
-  "catalog_count": 455,
-  "catalog_lag": 0,
-  "catalog_percent": 101.3,
-  "days_since_release": 18.98,
+  "added_24h": 6,
+  "added_4h": 2,
+  "catalog_count": 456,
+  "catalog_lag": 2,
+  "catalog_percent": 101.6,
+  "days_since_release": 19.23,
   "pending_count": 0,
-  "percent": 101.3,
-  "published_count": 455,
+  "percent": 102.0,
+  "published_count": 458,
   "publisher_percent": 99.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
