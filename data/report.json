@@ -1842,19 +1842,25 @@
   {
    "count": 460,
    "t": "2026-10-08T12:29:20Z"
+  },
+  {
+   "count": 461,
+   "t": "2026-10-09T11:06:14Z"
   }
  ],
  "catalog_probe": {
   "last_checked_count": 1,
-  "newly_catalogued": [],
+  "newly_catalogued": [
+   "HR"
+  ],
   "offset": 0,
   "size": 40,
   "unlisted_total": 1
  },
  "counts": {
   "api_times": 73,
-  "awaiting_catalogue": 1,
-  "catalogued": 460,
+  "awaiting_catalogue": 0,
+  "catalogued": 461,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 387,
@@ -6269,7 +6275,7 @@
     {
      "at": "2026-10-09T11:06:07Z",
      "code": "HR",
-     "in_catalog": false,
+     "in_catalog": true,
      "name": "Herero",
      "source": "file_estimated"
     }
@@ -6278,7 +6284,7 @@
    "t": "2026-10-09T11:00:00Z"
   }
  ],
- "generated": "2026-10-09T12:07:28Z",
+ "generated": "2026-10-09T12:37:31Z",
  "history": [
   {
    "count": 1,
@@ -8142,7 +8148,7 @@
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-09T12:07:28Z",
+ "last_checked": "2026-10-09T12:37:31Z",
  "pending": [
   {
    "code": "AHK",
@@ -23188,12 +23194,12 @@
    "vernacular": "Surinaamse Gebarentaal"
   },
   {
-   "api_published_at": null,
+   "api_published_at": "2026-10-09T11:06:14Z",
    "beyond_baseline": false,
-   "catalog_at": null,
+   "catalog_at": "2026-10-09T11:06:14Z",
    "catalog_at_note": null,
-   "catalog_at_source": null,
-   "catalog_observed": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-09T12:37:31Z",
    "code": "HR",
    "direction": "ltr",
    "discovered_by": "pub-media",
@@ -23205,7 +23211,7 @@
    "files_at_note": "estimated from pub-media's file timestamps (2026-10-09T11:06:07Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
    "files_at_source": "file_estimated",
    "first_observed": "2026-10-09T11:07:24Z",
-   "in_catalog": false,
+   "in_catalog": true,
    "in_files": true,
    "listed_by_api": false,
    "locale": "hz",
@@ -23228,12 +23234,12 @@
  },
  "stats": {
   "added_1h": 0,
-  "added_24h": 2,
+  "added_24h": 1,
   "added_4h": 1,
-  "catalog_count": 460,
-  "catalog_lag": 1,
-  "catalog_percent": 102.4,
-  "days_since_release": 20.92,
+  "catalog_count": 461,
+  "catalog_lag": 0,
+  "catalog_percent": 102.7,
+  "days_since_release": 20.94,
   "pending_count": 0,
   "percent": 102.7,
   "published_count": 461,
