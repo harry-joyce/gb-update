@@ -1849,13 +1849,11 @@
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 1,
-  "newly_catalogued": [
-   "HR"
-  ],
+  "last_checked_count": 0,
+  "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 1
+  "unlisted_total": 0
  },
  "counts": {
   "api_times": 73,
@@ -6284,7 +6282,7 @@
    "t": "2026-10-09T11:00:00Z"
   }
  ],
- "generated": "2026-10-09T12:37:31Z",
+ "generated": "2026-10-09T13:37:38Z",
  "history": [
   {
    "count": 1,
@@ -8144,11 +8142,11 @@
   "file_drift_count": 93,
   "files_count": 461,
   "last_full_verification": "2026-10-09T10:52:23Z",
-  "listing_count": 460,
+  "listing_count": 461,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-09T12:37:31Z",
+ "last_checked": "2026-10-09T13:37:38Z",
  "pending": [
   {
    "code": "AHK",
@@ -23213,7 +23211,7 @@
    "first_observed": "2026-10-09T11:07:24Z",
    "in_catalog": true,
    "in_files": true,
-   "listed_by_api": false,
+   "listed_by_api": true,
    "locale": "hz",
    "name": "Herero",
    "published_at": "2026-10-09T11:06:07Z",
@@ -23239,7 +23237,7 @@
   "catalog_count": 461,
   "catalog_lag": 0,
   "catalog_percent": 102.7,
-  "days_since_release": 20.94,
+  "days_since_release": 20.98,
   "pending_count": 0,
   "percent": 102.7,
   "published_count": 461,
