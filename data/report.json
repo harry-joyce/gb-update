@@ -1846,6 +1846,10 @@
   {
    "count": 461,
    "t": "2026-10-09T11:06:14Z"
+  },
+  {
+   "count": 462,
+   "t": "2026-10-12T22:30:28Z"
   }
  ],
  "catalog_probe": {
@@ -1856,9 +1860,9 @@
   "unlisted_total": 0
  },
  "counts": {
-  "api_times": 73,
+  "api_times": 74,
   "awaiting_catalogue": 0,
-  "catalogued": 461,
+  "catalogued": 462,
   "clamped_times": 0,
   "confirmed_times": 1,
   "file_times": 387,
@@ -6280,9 +6284,22 @@
    ],
    "count_after": 461,
    "t": "2026-10-09T11:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-12T22:30:28Z",
+     "code": "SRM",
+     "in_catalog": true,
+     "name": "Saramaccan",
+     "source": "api"
+    }
+   ],
+   "count_after": 462,
+   "t": "2026-10-12T22:00:00Z"
   }
  ],
- "generated": "2026-10-12T19:50:58Z",
+ "generated": "2026-10-13T02:04:44Z",
  "history": [
   {
    "count": 1,
@@ -8127,6 +8144,10 @@
   {
    "count": 461,
    "t": "2026-10-09T11:06:07Z"
+  },
+  {
+   "count": 462,
+   "t": "2026-10-12T22:30:28Z"
   }
  ],
  "integrity": {
@@ -8140,13 +8161,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 95,
-  "files_count": 461,
+  "files_count": 462,
   "last_full_verification": "2026-10-12T11:16:56Z",
-  "listing_count": 461,
+  "listing_count": 462,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-12T19:50:58Z",
+ "last_checked": "2026-10-13T02:04:44Z",
  "pending": [
   {
    "code": "AHK",
@@ -23222,6 +23243,39 @@
    "title": "Omatjivisiro omape okuza kOrutu Orunane yo-2026 okavidio #6",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=HR",
    "vernacular": "Otjiherero"
+  },
+  {
+   "api_published_at": "2026-10-12T22:30:28Z",
+   "beyond_baseline": true,
+   "catalog_at": "2026-10-12T22:30:28Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-13T02:04:44Z",
+   "code": "SRM",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-12T22:30:18Z",
+   "files_at": "2026-10-12T22:30:28Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-13T02:04:44Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "srm",
+   "name": "Saramaccan",
+   "published_at": "2026-10-12T22:30:28Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Njunsu nö. 6 u di Tii Kulupu u 2026",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SRM",
+   "vernacular": "Saamakatöngö"
   }
  ],
  "removed": [],
@@ -23232,15 +23286,15 @@
  },
  "stats": {
   "added_1h": 0,
-  "added_24h": 0,
-  "added_4h": 0,
-  "catalog_count": 461,
+  "added_24h": 1,
+  "added_4h": 1,
+  "catalog_count": 462,
   "catalog_lag": 0,
-  "catalog_percent": 102.7,
-  "days_since_release": 24.24,
+  "catalog_percent": 102.9,
+  "days_since_release": 24.5,
   "pending_count": 0,
-  "percent": 102.7,
-  "published_count": 461,
+  "percent": 102.9,
+  "published_count": 462,
   "publisher_percent": 99.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
