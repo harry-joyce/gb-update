@@ -1850,22 +1850,26 @@
   {
    "count": 462,
    "t": "2026-10-12T22:30:28Z"
+  },
+  {
+   "count": 463,
+   "t": "2026-10-13T07:51:47Z"
   }
  ],
  "catalog_probe": {
-  "last_checked_count": 0,
+  "last_checked_count": 1,
   "newly_catalogued": [],
   "offset": 0,
   "size": 40,
-  "unlisted_total": 0
+  "unlisted_total": 1
  },
  "counts": {
-  "api_times": 74,
-  "awaiting_catalogue": 0,
-  "catalogued": 462,
+  "api_times": 75,
+  "awaiting_catalogue": 1,
+  "catalogued": 463,
   "clamped_times": 0,
   "confirmed_times": 1,
-  "file_times": 387,
+  "file_times": 388,
   "observed_times": 0,
   "sign_languages": 77
  },
@@ -6297,9 +6301,35 @@
    ],
    "count_after": 462,
    "t": "2026-10-12T22:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-13T07:51:47Z",
+     "code": "ET",
+     "in_catalog": true,
+     "name": "Bété",
+     "source": "api"
+    }
+   ],
+   "count_after": 463,
+   "t": "2026-10-13T07:00:00Z"
+  },
+  {
+   "added": [
+    {
+     "at": "2026-10-13T09:07:24Z",
+     "code": "MKD",
+     "in_catalog": false,
+     "name": "Makonde",
+     "source": "file_estimated"
+    }
+   ],
+   "count_after": 464,
+   "t": "2026-10-13T09:00:00Z"
   }
  ],
- "generated": "2026-10-13T02:04:44Z",
+ "generated": "2026-10-13T09:30:47Z",
  "history": [
   {
    "count": 1,
@@ -8148,6 +8178,14 @@
   {
    "count": 462,
    "t": "2026-10-12T22:30:28Z"
+  },
+  {
+   "count": 463,
+   "t": "2026-10-13T07:51:47Z"
+  },
+  {
+   "count": 464,
+   "t": "2026-10-13T09:07:24Z"
   }
  ],
  "integrity": {
@@ -8161,13 +8199,13 @@
    "pinned": "2026-09-18T11:39:09Z"
   },
   "file_drift_count": 95,
-  "files_count": 462,
+  "files_count": 464,
   "last_full_verification": "2026-10-12T11:16:56Z",
-  "listing_count": 462,
+  "listing_count": 463,
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-13T02:04:44Z",
+ "last_checked": "2026-10-13T09:30:47Z",
  "pending": [
   {
    "code": "AHK",
@@ -8177,15 +8215,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "ashaninka"
-  },
-  {
-   "code": "ET",
-   "direction": "ltr",
-   "locale": "btg",
-   "name": "Bété",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "ˈBhɛtɩgbʋʋ"
   },
   {
    "code": "HSK",
@@ -8204,15 +8233,6 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Makhuwa-Shirima"
-  },
-  {
-   "code": "MKD",
-   "direction": "ltr",
-   "locale": "kde",
-   "name": "Makonde",
-   "script": "ROMAN",
-   "sign": false,
-   "vernacular": "Shimakonde"
   },
   {
    "code": "MXO",
@@ -23276,6 +23296,72 @@
    "title": "Njunsu nö. 6 u di Tii Kulupu u 2026",
    "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=SRM",
    "vernacular": "Saamakatöngö"
+  },
+  {
+   "api_published_at": "2026-10-13T07:51:47Z",
+   "beyond_baseline": false,
+   "catalog_at": "2026-10-13T07:51:47Z",
+   "catalog_at_note": null,
+   "catalog_at_source": "api",
+   "catalog_observed": "2026-10-13T09:30:47Z",
+   "code": "ET",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-13T07:51:38Z",
+   "files_at": "2026-10-13T07:51:47Z",
+   "files_at_note": null,
+   "files_at_source": "api",
+   "first_observed": "2026-10-13T09:30:47Z",
+   "in_catalog": true,
+   "in_files": true,
+   "listed_by_api": true,
+   "locale": "btg",
+   "name": "Bété",
+   "published_at": "2026-10-13T07:51:47Z",
+   "published_at_note": null,
+   "published_at_source": "api",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "2026 Tɩtɩɩ -Muë -gänɩɛ -aˈa ˈwlugïganɩzɩkpaa ˈyuku ɲɩaɲɩɛ #6",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=ET",
+   "vernacular": "ˈBhɛtɩgbʋʋ"
+  },
+  {
+   "api_published_at": null,
+   "beyond_baseline": false,
+   "catalog_at": null,
+   "catalog_at_note": null,
+   "catalog_at_source": null,
+   "catalog_observed": null,
+   "code": "MKD",
+   "direction": "ltr",
+   "discovered_by": "pub-media",
+   "file_formats": [
+    "3GP",
+    "MP4"
+   ],
+   "file_modified": "2026-10-13T09:07:24Z",
+   "files_at": "2026-10-13T09:07:24Z",
+   "files_at_note": "estimated from pub-media's file timestamps (2026-10-13T09:07:24Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "files_at_source": "file_estimated",
+   "first_observed": "2026-10-13T09:30:47Z",
+   "in_catalog": false,
+   "in_files": true,
+   "listed_by_api": false,
+   "locale": "kde",
+   "name": "Makonde",
+   "published_at": "2026-10-13T09:07:24Z",
+   "published_at_note": "estimated from pub-media's file timestamps (2026-10-13T09:07:24Z), which record the last time a file was written rather than when it was first published; bounded by the release and by when the tracker first saw the language",
+   "published_at_source": "file_estimated",
+   "script": "ROMAN",
+   "sign": false,
+   "title": "Vídeo",
+   "url": "https://www.jw.org/finder?lank=docid-1112024060_1_VIDEO&wtlocale=MKD",
+   "vernacular": "Shimakonde"
   }
  ],
  "removed": [],
@@ -23285,16 +23371,16 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 0,
-  "added_24h": 1,
-  "added_4h": 1,
-  "catalog_count": 462,
-  "catalog_lag": 0,
-  "catalog_percent": 102.9,
-  "days_since_release": 24.5,
+  "added_1h": 1,
+  "added_24h": 3,
+  "added_4h": 2,
+  "catalog_count": 463,
+  "catalog_lag": 1,
+  "catalog_percent": 103.1,
+  "days_since_release": 24.81,
   "pending_count": 0,
-  "percent": 102.9,
-  "published_count": 462,
+  "percent": 103.3,
+  "published_count": 464,
   "publisher_percent": 99.2,
   "publisher_percent_ceiling": 99.2,
   "target": 449
