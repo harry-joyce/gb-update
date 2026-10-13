@@ -6346,7 +6346,7 @@
    "t": "2026-10-13T12:00:00Z"
   }
  ],
- "generated": "2026-10-13T13:09:44Z",
+ "generated": "2026-10-13T14:09:49Z",
  "history": [
   {
    "count": 1,
@@ -8226,7 +8226,7 @@
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-13T13:09:44Z",
+ "last_checked": "2026-10-13T14:09:49Z",
  "pending": [
   {
    "code": "AHK",
@@ -23425,13 +23425,13 @@
   "page": "https://www.jw.org/en/library/videos/#en/mediaitems/StudioNewsReports/docid-1112024060_1_VIDEO"
  },
  "stats": {
-  "added_1h": 1,
+  "added_1h": 0,
   "added_24h": 4,
   "added_4h": 1,
   "catalog_count": 464,
   "catalog_lag": 1,
   "catalog_percent": 103.3,
-  "days_since_release": 24.97,
+  "days_since_release": 25.01,
   "pending_count": 0,
   "percent": 103.6,
   "published_count": 465,
