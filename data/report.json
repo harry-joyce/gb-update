@@ -6350,7 +6350,7 @@
    "t": "2026-10-13T12:00:00Z"
   }
  ],
- "generated": "2026-10-15T22:26:54Z",
+ "generated": "2026-10-16T00:49:11Z",
  "history": [
   {
    "count": 1,
@@ -8230,7 +8230,7 @@
   "listing_lag": [],
   "pub_media_unavailable": null
  },
- "last_checked": "2026-10-15T22:26:54Z",
+ "last_checked": "2026-10-16T00:49:11Z",
  "pending": [
   {
    "code": "AHK",
@@ -23435,7 +23435,7 @@
   "catalog_count": 465,
   "catalog_lag": 0,
   "catalog_percent": 103.6,
-  "days_since_release": 27.35,
+  "days_since_release": 27.45,
   "pending_count": 0,
   "percent": 103.6,
   "published_count": 465,
