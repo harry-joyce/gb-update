@@ -1,6 +1,6 @@
 {
- "count": 1161,
- "fetched": "2026-10-10T14:09:40Z",
+ "count": 1162,
+ "fetched": "2026-10-17T14:22:04Z",
  "languages": {
   "A": {
    "direction": "rtl",
@@ -3501,7 +3501,7 @@
   "KFL": {
    "direction": "ltr",
    "locale": "flr",
-   "name": "Kifulero",
+   "name": "Kifuliiru",
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kifuliiru"
@@ -5368,7 +5368,7 @@
    "name": "Martiniquan Creole",
    "script": "ROMAN",
    "sign": false,
-   "vernacular": "Kréyol Matinik"
+   "vernacular": "Kréyòl Matinik"
   },
   "MTN": {
    "direction": "ltr",
@@ -6001,6 +6001,14 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Nauete"
+  },
+  "NTK": {
+   "direction": "ltr",
+   "locale": "tkg",
+   "name": "Antesaka",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Antesaka"
   },
   "NTU": {
    "direction": "ltr",
