@@ -1,6 +1,6 @@
 {
- "count": 1162,
- "fetched": "2026-10-17T14:22:04Z",
+ "count": 1163,
+ "fetched": "2026-10-24T16:04:23Z",
  "languages": {
   "A": {
    "direction": "rtl",
@@ -1537,6 +1537,14 @@
    "script": "ROMAN",
    "sign": false,
    "vernacular": "Kaqchikel oriental"
+  },
+  "CQS": {
+   "direction": "ltr",
+   "locale": "cak-x-cqs",
+   "name": "Cakchiquel (Santa María de Jesús)",
+   "script": "ROMAN",
+   "sign": false,
+   "vernacular": "Cakchiquel (Santa María de Jesús)"
   },
   "CR": {
    "direction": "ltr",
